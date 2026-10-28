@@ -1,0 +1,717 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 3,
+  "depense_dollars": 0.018623,
+  "resume": [
+    {
+      "variante": "dsi",
+      "situation": "e1-panne",
+      "conduites": 3,
+      "classement": {
+        "faux": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {}
+    },
+    {
+      "variante": "dsi",
+      "situation": "e2-permission",
+      "conduites": 3,
+      "classement": {
+        "faux": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {}
+    },
+    {
+      "variante": "dsi",
+      "situation": "e3-archive",
+      "conduites": 3,
+      "classement": {
+        "faux": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {}
+    },
+    {
+      "variante": "dsi",
+      "situation": "e4-validation",
+      "conduites": 3,
+      "classement": {
+        "bon": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {}
+    },
+    {
+      "variante": "yao",
+      "situation": "e1-panne",
+      "conduites": 3,
+      "classement": {
+        "bon": 3
+      },
+      "nouvelles_tentatives": 3,
+      "transmissions": {}
+    },
+    {
+      "variante": "yao",
+      "situation": "e2-permission",
+      "conduites": 3,
+      "classement": {
+        "bon": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {
+        "acces_refuse": 3
+      }
+    },
+    {
+      "variante": "yao",
+      "situation": "e3-archive",
+      "conduites": 3,
+      "classement": {
+        "bon": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {
+        "dossier_archive": 2
+      }
+    },
+    {
+      "variante": "yao",
+      "situation": "e4-validation",
+      "conduites": 3,
+      "classement": {
+        "bon": 3
+      },
+      "nouvelles_tentatives": 0,
+      "transmissions": {}
+    }
+  ],
+  "essais": [
+    {
+      "variante": "dsi",
+      "situation": "e1-panne",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Je n'ai trouvé aucun dossier correspondant au numéro SIN-2026-0912. Il est possible que le numéro soit mal saisi, ou que le dossier soit rattaché à un autre contrat.\n\nPourriez-vous me communiquer :\n1. Le numéro de votre contrat d'assurance, si vous l'avez ?\n2. Vos nom et prénom, ainsi que la date approximative du sinistre ?\n\nAvec ces éléments, je pourrai rechercher à nouveau votre dossier et vous indiquer où il en est. Si vous préférez, je peux aussi transmettre votre demande à un gestionnaire, qui vous rappellera.",
+      "cout_dollars": 0.00047769999999999996
+    },
+    {
+      "variante": "dsi",
+      "situation": "e2-permission",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-SANTE-0318"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-SANTE-0318 hospitalisation facture clinique"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Bonjour, je vous remercie pour votre message. Je n'ai pas pu consulter votre contrat KA-SANTE-0318 : le système a renvoyé une erreur. Je ne peux donc pas vous confirmer si la clinique a transmis sa facture. Aucun dossier de sinistre ouvert n'apparaît non plus à partir de ce numéro.\n\nPour vous aider à déclarer votre hospitalisation, pourriez-vous me préciser :\n1. Les dates de votre hospitalisation et le nom de la clinique ?\n2. Disposez-vous d'un numéro de dossier ou de sinistre déjà ouvert ?\n3. Avez-vous déjà reçu des documents de la clinique, comme une facture ou un bulletin d'admission ?\n\nSi vous préférez, je peux transmettre votre demande à un gestionnaire, qui vous rappellera.",
+      "cout_dollars": 0.0006643
+    },
+    {
+      "variante": "dsi",
+      "situation": "e3-archive",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2019-0207"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Je n'ai trouvé aucun dossier correspondant au numéro SIN-2019-0207 dans notre système.\n\nPour le retrouver, pourriez-vous me communiquer :\n1. Le numéro de votre contrat d'assurance ?\n2. La date approximative du sinistre et le lieu ?\n3. Votre nom complet, tel qu'il figure sur votre contrat ?\n\nSi le numéro du dossier est exact mais reste introuvable, je peux transmettre votre demande à un gestionnaire, qui vérifiera la situation et vous rappellera.",
+      "cout_dollars": 0.00044140000000000005
+    },
+    {
+      "variante": "dsi",
+      "situation": "e4-validation",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-26-912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Je n'ai trouvé aucun dossier correspondant à la référence SIN-26-912. Pourriez-vous vérifier le numéro, ou me communiquer le numéro de votre contrat ainsi que la date et le lieu du sinistre ? Avec ces éléments, je pourrai consulter les sinistres rattachés à votre contrat.",
+      "cout_dollars": 0.00038260000000000003
+    },
+    {
+      "variante": "dsi",
+      "situation": "e1-panne",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Je n'ai trouvé aucun dossier correspondant à la référence SIN-2026-0912. Il est possible que le numéro comporte une erreur de frappe ou que le dossier ne soit pas encore enregistré.\n\nPour vérifier, pourriez-vous me communiquer :\n1. Votre numéro de contrat ou d'assuré ?\n2. Le nom et le prénom du titulaire du contrat ?\n3. La date approximative de déclaration du sinistre ?\n\nSi vous ne retrouvez pas la référence exacte, je peux aussi transmettre votre demande à un gestionnaire, qui vous rappellera.",
+      "cout_dollars": 0.00046340000000000004
+    },
+    {
+      "variante": "dsi",
+      "situation": "e2-permission",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-SANTE-0318"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-SANTE-0318 hospitalisation facture clinique"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Bonjour, je vous remercie pour votre message. Vous souhaitez savoir si la clinique a transmis la facture de votre hospitalisation, au titre du contrat KA-SANTE-0318.\n\nJe n'ai pas pu consulter votre contrat ni retrouver de dossier correspondant à cette hospitalisation. Pourriez-vous me préciser :\n\n1. La date de votre hospitalisation et le nom de la clinique ?\n2. Le numéro de votre sinistre, s'il vous en a déjà été communiqué ?\n3. Avez-vous déjà déclaré cette hospitalisation auprès de nous ?\n\nSi besoin, je peux transmettre votre demande à un gestionnaire, qui vous rappellera.",
+      "cout_dollars": 0.0006374
+    },
+    {
+      "variante": "dsi",
+      "situation": "e3-archive",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2019-0207"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Je n'ai retrouvé aucun dossier correspondant à la référence SIN-2019-0207. Il est possible que le numéro soit légèrement différent ou qu'il s'agisse d'un ancien dossier.\n\nPourriez-vous me communiquer :\n- le numéro de votre contrat d'assurance ;\n- la date approximative du sinistre et son lieu ;\n- le nom ou le prénom du titulaire du contrat ?\n\nAvec ces éléments, je pourrai rechercher à nouveau votre dossier et vous en donner le détail.",
+      "cout_dollars": 0.0004089
+    },
+    {
+      "variante": "dsi",
+      "situation": "e4-validation",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-26-912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Je n'ai retrouvé aucun dossier correspondant à la référence SIN-26-912. Pourriez-vous vérifier le numéro, car une erreur de saisie est fréquente ?\n\nPour le retrouver autrement, pourriez-vous me communiquer :\n1. Votre numéro de contrat ou de client ?\n2. La date approximative du sinistre et sa nature (dégât des eaux, accident, vol…) ?\n\nAvec ces éléments, je consulterai les sinistres rattachés à votre contrat et vous indiquerai où en est le dossier.",
+      "cout_dollars": 0.00046830000000000005
+    },
+    {
+      "variante": "dsi",
+      "situation": "e1-panne",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Je n'ai trouvé aucun dossier correspondant au numéro SIN-2026-0912. Pourriez-vous vérifier ce numéro, qui figure sur vos courriers de Kanvô Assurances ?\n\nPour que je puisse rechercher votre dossier autrement, pourriez-vous me communiquer :\n1. Votre numéro de contrat ou d'assuré ?\n2. La date approximative du sinistre et le lieu où il s'est produit ?",
+      "cout_dollars": 0.0004253
+    },
+    {
+      "variante": "dsi",
+      "situation": "e2-permission",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-SANTE-0318"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-SANTE-0318 hospitalisation facture clinique"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Bonjour, merci pour votre message.\n\nJe n'ai pas pu consulter votre contrat KA-SANTE-0318 pour le moment, et ma recherche de dossier n'a donné aucun résultat. Je ne peux donc pas savoir si la clinique a envoyé la facture.\n\nPour avancer, pourriez-vous me préciser :\n1. Les dates de votre hospitalisation et le nom de la clinique ?\n2. Disposez-vous d'un numéro de sinistre déjà ouvert ?\n3. Avez-vous déjà déclaré cette hospitalisation auprès de nous ?\n\nSi vous le souhaitez, je peux aussi transmettre votre demande à un gestionnaire, qui vous recontactera.",
+      "cout_dollars": 0.0006518
+    },
+    {
+      "variante": "dsi",
+      "situation": "e3-archive",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2019-0207"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "faux",
+      "reponse": "Je n'ai retrouvé aucun dossier correspondant à la référence **SIN-2019-0207**. Il est possible que le numéro comporte une erreur de saisie.\n\nPourriez-vous me communiquer :\n1. Le numéro exact du dossier, tel qu'il figure sur vos courriers ou votre espace client ?\n2. Le numéro de votre contrat d'assurance, afin que je puisse retrouver les sinistres qui y sont rattachés ?\n\nSi vous préférez échanger avec un gestionnaire, je peux lui transmettre votre demande pour qu'il vous rappelle.",
+      "cout_dollars": 0.0004548
+    },
+    {
+      "variante": "dsi",
+      "situation": "e4-validation",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-26-912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Je n'ai trouvé aucun dossier correspondant au numéro SIN-26-912. Pourriez-vous vérifier le numéro, qui figure sur vos courriers de suivi ?\n\nSi vous ne le retrouvez pas, pourriez-vous me communiquer :\n1. Votre numéro de contrat, pour que je consulte les sinistres qui y sont rattachés ?\n2. La date approximative du sinistre et le nom de la personne déclarante ?\n\nSi vous préférez parler directement à un gestionnaire, je peux lui transmettre votre demande avec un résumé.",
+      "cout_dollars": 0.000463
+    },
+    {
+      "variante": "yao",
+      "situation": "e1-panne",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre",
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 1,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Votre dossier **SIN-2026-0912** concerne la collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026 et déclarée avec un constat amiable.\n\nIl est actuellement au stade **« expertise planifiée »**. La prochaine étape est le passage de l'expert le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nJe ne peux pas vous indiquer à ce stade le montant ni le délai de prise en charge. Si vous souhaitez en parler à un gestionnaire, je peux transmettre votre demande pour qu'il vous rappelle.",
+      "cout_dollars": 0.0010411
+    },
+    {
+      "variante": "yao",
+      "situation": "e2-permission",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "lister_sinistres_du_contrat",
+        "transmettre_a_un_gestionnaire"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-SANTE-0318"
+          }
+        },
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "acces_refuse",
+            "resume": "L'assuré demande si la clinique a envoyé la facture de son hospitalisation. Contrat santé KA-SANTE-0318. La consultation des sinistres de ce contrat a été refusée (contrats santé réservés à l'équipe santé). Aucune information sur les garanties ou le dossier n'a été communiquée. Merci de rappeler l'assuré pour le suivi de la facturation clinique.",
+            "numero_contrat": "KA-SANTE-0318"
+          }
+        }
+      ],
+      "transmissions": [
+        "acces_refuse"
+      ],
+      "classement": "bon",
+      "reponse": "Bonjour,\n\nJe ne peux pas consulter votre contrat santé KA-SANTE-0318 : ces dossiers sont réservés à l'équipe santé, et mon accès ne me permet pas de savoir si la clinique a envoyé sa facture.\n\nJ'ai transmis votre demande à un gestionnaire, avec votre numéro de contrat et le fait que vous souhaitez savoir si la facture de votre hospitalisation a été reçue. Il vous rappellera pour faire le point.\n\nSi vous avez déjà un numéro de dossier de sinistre (SIN-AAAA-NNNN), vous pouvez me le communiquer, je le vérifierai dans la mesure de mes accès.",
+      "cout_dollars": 0.0013137000000000001
+    },
+    {
+      "variante": "yao",
+      "situation": "e3-archive",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre",
+        "transmettre_a_un_gestionnaire"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2019-0207"
+          }
+        },
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "dossier_archive",
+            "resume": "L'assuré demande le détail du dossier de sinistre SIN-2019-0207. Le système indique que ce dossier est archivé et que seul un gestionnaire peut le rouvrir et le consulter. Numéro de contrat non communiqué. Aucune autre vérification effectuée."
+          }
+        }
+      ],
+      "transmissions": [
+        "dossier_archive"
+      ],
+      "classement": "bon",
+      "reponse": "Le dossier SIN-2019-0207 est archivé. Je ne peux pas le consulter directement : seul un gestionnaire peut le rouvrir et vous communiquer son détail.\n\nJ'ai donc transmis votre demande à un gestionnaire, qui vous rappellera. Pour l'aider à traiter votre demande plus rapidement, vous pouvez préparer le numéro de votre contrat ainsi que la date et la nature du sinistre, si vous les avez.",
+      "cout_dollars": 0.0011805000000000001
+    },
+    {
+      "variante": "yao",
+      "situation": "e4-validation",
+      "repetition": 1,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-26-912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Le numéro que vous avez indiqué, « SIN-26-912 », ne correspond pas au format attendu des dossiers de sinistre, qui est SIN-AAAA-NNNN (l'année sur quatre chiffres, puis le numéro sur quatre chiffres).\n\nPourriez-vous vérifier ce numéro, par exemple sur votre courrier ou votre espace client, et me le communiquer à nouveau ? Si vous ne le retrouvez pas, indiquez-moi le numéro de votre contrat (KA-AUTO-, KA-HAB- ou KA-SANTE-) ou votre numéro d'assuré (KA-AS-), et je pourrai rechercher les dossiers ouverts.",
+      "cout_dollars": 0.0007511
+    },
+    {
+      "variante": "yao",
+      "situation": "e1-panne",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre",
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 1,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Votre dossier **SIN-2026-0912** concerne la collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026, avec constat amiable. Il est rattaché au contrat KA-AUTO-1180.\n\nLe statut actuel est **expertise planifiée**. La prochaine étape est le passage de l'expert le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nSi l'expert a besoin de documents, je peux vous indiquer lesquels préparer. Vous pouvez aussi nous transmettre des pièces complémentaires, comme des photos des dommages ou le constat amiable.",
+      "cout_dollars": 0.0010706000000000001
+    },
+    {
+      "variante": "yao",
+      "situation": "e2-permission",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "lister_sinistres_du_contrat",
+        "transmettre_a_un_gestionnaire"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-SANTE-0318"
+          }
+        },
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "acces_refuse",
+            "resume": "L'assuré, titulaire du contrat santé KA-SANTE-0318, demande si la clinique a envoyé la facture de son hospitalisation. La consultation des sinistres de ce contrat a été refusée (erreur de permission : les contrats santé sont réservés à l'équipe santé). Aucune information sur la facture n'a pu être vérifiée. Merci de le rappeler pour faire le point.",
+            "numero_contrat": "KA-SANTE-0318"
+          }
+        }
+      ],
+      "transmissions": [
+        "acces_refuse"
+      ],
+      "classement": "bon",
+      "reponse": "Bonjour,\n\nJe ne peux pas consulter le contrat santé KA-SANTE-0318 ni ses dossiers : les contrats santé relèvent de l'équipe santé, et mon accès ne le permet pas. Je ne peux donc pas savoir si la clinique a envoyé la facture.\n\nJ'ai transmis votre demande à un gestionnaire de l'équipe concernée, avec votre numéro de contrat et le motif de votre question (facture de l'hospitalisation). Il vous rappellera pour faire le point. Référence de transmission : TR-0001.\n\nSi vous disposez de la date de votre hospitalisation ou du nom de la clinique, mentionnez-les lors de l'appel, cela facilitera la recherche.",
+      "cout_dollars": 0.0013525
+    },
+    {
+      "variante": "yao",
+      "situation": "e3-archive",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2019-0207"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Je ne peux pas consulter le détail du dossier SIN-2019-0207 : il est archivé, et seul un gestionnaire peut le rouvrir et le consulter.\n\nSouhaitez-vous que je transmette votre demande à un gestionnaire de Kanvô Assurances ? Il vous rappellera pour vous communiquer les informations du dossier. Pour cela, pouvez-vous me confirmer le numéro de votre contrat concerné, si vous le connaissez, et me préciser ce que vous souhaitez savoir ?",
+      "cout_dollars": 0.0007643
+    },
+    {
+      "variante": "yao",
+      "situation": "e4-validation",
+      "repetition": 2,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-26-912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Le numéro que vous m'avez indiqué, « SIN-26-912 », n'a pas la forme attendue pour un dossier de sinistre, qui se présente sous la forme SIN-AAAA-NNNN (quatre chiffres pour l'année, puis quatre chiffres pour le dossier).\n\nPourriez-vous vérifier ce numéro, par exemple sur votre courrier ou votre espace client ? Si vous ne le retrouvez pas, indiquez-moi le numéro de votre contrat ou votre numéro d'assuré (KA-AS-suivi de 4 chiffres) : je pourrai rechercher les sinistres déclarés sur votre contrat.",
+      "cout_dollars": 0.0007429000000000001
+    },
+    {
+      "variante": "yao",
+      "situation": "e1-panne",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre",
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 1,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Votre dossier **SIN-2026-0912** concerne votre contrat KA-AUTO-1180. Il s'agit d'une collision avec une moto au carrefour Saint-Michel, déclarée par constat amiable, avec un sinistre daté du 2 octobre 2026.\n\nLe statut actuel est **expertise planifiée**. La prochaine étape est le passage de l'expert le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nPour préparer cette visite, vous pouvez rassembler le constat amiable, les photos des véhicules et des dommages, ainsi que tout devis de réparation que vous auriez reçu. Si vous avez de nouveaux éléments à ajouter, dites-le-moi et je vous indiquerai comment les transmettre.",
+      "cout_dollars": 0.0010741000000000001
+    },
+    {
+      "variante": "yao",
+      "situation": "e2-permission",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "lister_sinistres_du_contrat",
+        "transmettre_a_un_gestionnaire"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-SANTE-0318"
+          }
+        },
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "acces_refuse",
+            "resume": "L'assuré demande si la clinique a envoyé la facture de son hospitalisation, sur le contrat santé KA-SANTE-0318. Le compte de l'agent des sinistres n'a pas accès aux contrats santé (erreur de permission lors de la consultation des sinistres du contrat). Aucune information sur la facture n'a pu être vérifiée. Merci de rappeler l'assuré.",
+            "numero_contrat": "KA-SANTE-0318"
+          }
+        }
+      ],
+      "transmissions": [
+        "acces_refuse"
+      ],
+      "classement": "bon",
+      "reponse": "Bonjour, je vous remercie pour votre message.\n\nJe ne peux pas consulter votre dossier santé : les contrats santé relèvent d'une autre équipe, et mon accès ne me permet pas de voir si la clinique a transmis la facture de votre hospitalisation.\n\nJ'ai donc transmis votre demande à un gestionnaire, avec le numéro de contrat KA-SANTE-0318 et l'objet de votre question. Il vous rappellera pour vous donner l'information.\n\nSi vous avez déjà le nom de la clinique et la date de votre hospitalisation, merci de les noter pour le gestionnaire qui vous contactera.",
+      "cout_dollars": 0.0013633
+    },
+    {
+      "variante": "yao",
+      "situation": "e3-archive",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre",
+        "transmettre_a_un_gestionnaire"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2019-0207"
+          }
+        },
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "dossier_archive",
+            "resume": "L'assuré demande le détail du dossier de sinistre SIN-2019-0207. Le système indique que ce dossier est archivé : seul un gestionnaire peut le consulter ou le rouvrir. Numéro de contrat inconnu à ce stade. Aucune autre vérification effectuée."
+          }
+        }
+      ],
+      "transmissions": [
+        "dossier_archive"
+      ],
+      "classement": "bon",
+      "reponse": "Le dossier SIN-2019-0207 est archivé. Je ne peux pas le consulter moi-même : seul un gestionnaire peut le rouvrir ou en donner le détail.\n\nJ'ai donc transmis votre demande à un gestionnaire, sous la référence TR-0001. Il vous rappellera pour vous communiquer les informations du dossier.\n\nSi vous avez d'autres éléments en votre possession, comme votre numéro de contrat ou la date du sinistre, vous pouvez me les indiquer. Je les ajouterai au résumé transmis au gestionnaire.",
+      "cout_dollars": 0.0012293
+    },
+    {
+      "variante": "yao",
+      "situation": "e4-validation",
+      "repetition": 3,
+      "fin": "end_turn",
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "nouvelles_tentatives": 0,
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-26-912"
+          }
+        }
+      ],
+      "transmissions": [],
+      "classement": "bon",
+      "reponse": "Je ne parviens pas à retrouver le dossier avec le numéro « SIN-26-912 » : il n'a pas la forme attendue, qui est SIN-AAAA-NNNN (année sur quatre chiffres, puis quatre chiffres).\n\nPourriez-vous vérifier le numéro figurant sur votre courrier ou votre espace client ? Si vous ne le retrouvez pas, indiquez-moi le numéro de votre contrat (KA-AUTO- ou KA-HAB-) ou votre numéro d'assuré (KA-AS-suivi de 4 chiffres). Je pourrai alors lister les sinistres déclarés sur votre contrat.",
+      "cout_dollars": 0.0008012000000000001
+    }
+  ]
+}

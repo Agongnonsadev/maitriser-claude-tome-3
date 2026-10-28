@@ -1,0 +1,543 @@
+{
+  "date": "2026-10-27",
+  "seances": {
+    "tronc": {
+      "cas": "tronc",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, je vous remercie de votre confiance.\n\nVotre dossier **SIN-2026-0912**, relatif à la collision avec une moto au carrefour Saint-Michel le 2 octobre 2026, est actuellement au stade **expertise planifiée**. Le passage de l'expert est prévu **le 29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nJe ne dispose pas d'autres informations sur le calendrier ou l'issue du dossier. Si vous souhaitez en savoir plus ou si vous avez un élément à ajouter, comme un changement de rendez-vous avec l'expert, je peux transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "outils": [
+        "consulter_assure",
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 2,
+      "reponses_outils_texte": 0,
+      "tours": 3,
+      "cout_dollars": 0.0006379199999999999,
+      "tokens_entree": 7326,
+      "tokens_sortie": 510,
+      "usage": {
+        "input_tokens": 6,
+        "cache_creation_input_tokens": 2688,
+        "cache_read_input_tokens": 4632,
+        "output_tokens": 510,
+        "output_tokens_details": {
+          "thinking_tokens": 105
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 2688
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 365,
+            "cache_read_input_tokens": 2413,
+            "cache_creation_input_tokens": 275,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 275,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 510,
+          "cacheReadInputTokens": 4632,
+          "cacheCreationInputTokens": 2688,
+          "webSearchRequests": 0,
+          "costUSD": 0.0006379199999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 105,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00063792,
+      "transmissions": 0,
+      "session_id": "e7f22374-9f41-404c-8e6f-48a4d8094709",
+      "latence_s": 8.65,
+      "duree_s": 4.644,
+      "duree_api_s": 4.034,
+      "erreur": null,
+      "cout_propre": 0.00063792,
+      "a_vu_le_changement": false
+    },
+    "neutre_A_bifurcation_sans_signalement": {
+      "cas": "neutre_A_bifurcation_sans_signalement",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, votre dossier **SIN-2026-0912** a évolué.\n\nLe statut est désormais **rapport d'expertise reçu**. La prochaine étape est **l'étude du rapport par le gestionnaire** de l'équipe automobile 2.\n\nJe ne peux pas vous indiquer la suite ni de délai, ni de décision sur l'indemnisation. Si vous souhaitez un point précis avec un gestionnaire, je peux lui transmettre votre demande pour qu'il vous rappelle. Dites-moi aussi si vous avez de nouveaux documents à joindre au dossier.",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0009339849999999999,
+      "tokens_entree": 6564,
+      "tokens_sortie": 292,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 731,
+        "cache_read_input_tokens": 5829,
+        "output_tokens": 292,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 731
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 217,
+            "cache_read_input_tokens": 3141,
+            "cache_creation_input_tokens": 278,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 278,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 802,
+          "thinkingTokens": 105,
+          "cacheReadInputTokens": 10461,
+          "cacheCreationInputTokens": 3419,
+          "webSearchRequests": 0,
+          "costUSD": 0.0009339849999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000296065,
+      "transmissions": 0,
+      "session_id": "5bb3b243-5a84-4f7b-80fd-a43f1c8a7bb8",
+      "latence_s": 6.03,
+      "duree_s": 3.073,
+      "duree_api_s": 6.961,
+      "erreur": null,
+      "cout_propre": 0.00029606,
+      "a_vu_le_changement": true
+    },
+    "neutre_B_bifurcation_avec_signalement": {
+      "cas": "neutre_B_bifurcation_avec_signalement",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan. Votre dossier **SIN-2026-0912** a évolué depuis ma précédente consultation : le statut est désormais **rapport d'expertise reçu**.\n\nLa prochaine étape est **l'étude du rapport par le gestionnaire** de l'équipe automobile 2. Je n'ai pas le détail du rapport ni de date pour la suite, et je ne peux pas vous indiquer d'issue ou de délai.\n\nSi vous souhaitez un point sur le dossier, je peux transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.00098212,
+      "tokens_entree": 6818,
+      "tokens_sortie": 348,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 884,
+        "cache_read_input_tokens": 5930,
+        "output_tokens": 348,
+        "output_tokens_details": {
+          "thinking_tokens": 49
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 884
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 223,
+            "cache_read_input_tokens": 3242,
+            "cache_creation_input_tokens": 330,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 330,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 858,
+          "thinkingTokens": 154,
+          "cacheReadInputTokens": 10562,
+          "cacheCreationInputTokens": 3572,
+          "webSearchRequests": 0,
+          "costUSD": 0.00098212,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00034420000000000007,
+      "transmissions": 0,
+      "session_id": "6d69cf42-e705-459c-8cc4-aef5081afc20",
+      "latence_s": 7.41,
+      "duree_s": 3.336,
+      "duree_api_s": 7.034,
+      "erreur": null,
+      "cout_propre": 0.0003442,
+      "a_vu_le_changement": true
+    },
+    "neutre_C_nouvelle_seance_avec_resume": {
+      "cas": "neutre_C_nouvelle_seance_avec_resume",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan. Votre dossier SIN-2026-0912 (collision du 2 octobre 2026 au carrefour Saint-Michel) a bien avancé : le rapport d'expertise a été reçu. La prochaine étape est son étude par le gestionnaire de l'équipe automobile 2.\n\nJe ne peux pas vous indiquer de délai ni de montant d'indemnisation. Si vous souhaitez un point précis, je peux transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.000295145,
+      "tokens_entree": 4918,
+      "tokens_sortie": 278,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 927,
+        "cache_read_input_tokens": 3987,
+        "output_tokens": 278,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 927
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 203,
+            "cache_read_input_tokens": 2320,
+            "cache_creation_input_tokens": 274,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 274,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 278,
+          "cacheReadInputTokens": 3987,
+          "cacheCreationInputTokens": 927,
+          "webSearchRequests": 0,
+          "costUSD": 0.000295145,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00029514499999999997,
+      "transmissions": 0,
+      "session_id": "a4f8e84f-52d1-4861-b58b-33ddf32f7e30",
+      "latence_s": 5.82,
+      "duree_s": 2.506,
+      "duree_api_s": 2.343,
+      "erreur": null,
+      "cout_propre": 0.00029515,
+      "a_vu_le_changement": true
+    },
+    "indice_A_bifurcation_sans_signalement": {
+      "cas": "indice_A_bifurcation_sans_signalement",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan,\n\nVotre dossier **SIN-2026-0912** a évolué : le **rapport d'expertise a bien été reçu**. La prochaine étape est **l'étude de ce rapport par le gestionnaire de l'équipe automobile 2**.\n\nJe ne peux pas vous indiquer le contenu du rapport, ni le délai de cette étude, ni l'issue du dossier.\n\nSi vous souhaitez un point précis avec le gestionnaire, je peux transmettre votre demande pour qu'il vous rappelle. Dites-moi aussi si vous avez des documents à ajouter au dossier, comme des photos ou le constat amiable.",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0009445199999999999,
+      "tokens_entree": 6599,
+      "tokens_sortie": 308,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 750,
+        "cache_read_input_tokens": 5845,
+        "output_tokens": 308,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 750
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 233,
+            "cache_read_input_tokens": 3157,
+            "cache_creation_input_tokens": 281,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 281,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 818,
+          "thinkingTokens": 105,
+          "cacheReadInputTokens": 10477,
+          "cacheCreationInputTokens": 3438,
+          "webSearchRequests": 0,
+          "costUSD": 0.0009445199999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.0003066,
+      "transmissions": 0,
+      "session_id": "3b9371e4-4720-4eea-87af-bd9fd78b56e2",
+      "latence_s": 5.83,
+      "duree_s": 2.66,
+      "duree_api_s": 6.458,
+      "erreur": null,
+      "cout_propre": 0.0003066,
+      "a_vu_le_changement": true
+    },
+    "indice_B_bifurcation_avec_signalement": {
+      "cas": "indice_B_bifurcation_avec_signalement",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan. Je viens de consulter à nouveau votre dossier **SIN-2026-0912**, qui est désormais au stade **rapport d'expertise reçu**.\n\nLa prochaine étape est l'étude de ce rapport par le gestionnaire de l'équipe automobile 2. Je ne dispose pas d'information sur les conclusions du rapport, ni sur les suites ou les délais.\n\nSi vous souhaitez un point avec le gestionnaire, je peux transmettre votre demande pour qu'il vous rappelle. Vous pouvez aussi me communiquer tout élément complémentaire à joindre au dossier.",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.000988035,
+      "tokens_entree": 6829,
+      "tokens_sortie": 358,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 891,
+        "cache_read_input_tokens": 5934,
+        "output_tokens": 358,
+        "output_tokens_details": {
+          "thinking_tokens": 58
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 891
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 224,
+            "cache_read_input_tokens": 3246,
+            "cache_creation_input_tokens": 333,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 333,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 868,
+          "thinkingTokens": 163,
+          "cacheReadInputTokens": 10566,
+          "cacheCreationInputTokens": 3579,
+          "webSearchRequests": 0,
+          "costUSD": 0.000988035,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000350115,
+      "transmissions": 0,
+      "session_id": "04ba8932-fdb5-4102-8eef-9942c89319d7",
+      "latence_s": 6.34,
+      "duree_s": 3.178,
+      "duree_api_s": 6.995,
+      "erreur": null,
+      "cout_propre": 0.00035012,
+      "a_vu_le_changement": true
+    },
+    "indice_C_nouvelle_seance_avec_resume": {
+      "cas": "indice_C_nouvelle_seance_avec_resume",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci pour votre message.\n\nVotre dossier SIN-2026-0912 (collision du 2 octobre 2026, carrefour Saint-Michel) est à l'étape suivante : le rapport d'expertise a bien été reçu. Il est maintenant étudié par le gestionnaire de l'équipe automobile 2.\n\nJe ne peux pas vous indiquer à ce stade la suite donnée ni de délai. Si vous souhaitez un point précis, je peux transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.00030387,
+      "tokens_entree": 4945,
+      "tokens_sortie": 291,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 944,
+        "cache_read_input_tokens": 3997,
+        "output_tokens": 291,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 944
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 216,
+            "cache_read_input_tokens": 2330,
+            "cache_creation_input_tokens": 281,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 281,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 291,
+          "cacheReadInputTokens": 3997,
+          "cacheCreationInputTokens": 944,
+          "webSearchRequests": 0,
+          "costUSD": 0.00030387,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00030387000000000003,
+      "transmissions": 0,
+      "session_id": "a0670d18-0878-4337-8ee9-4a3db7bda52a",
+      "latence_s": 5.71,
+      "duree_s": 2.713,
+      "duree_api_s": 2.557,
+      "erreur": null,
+      "cout_propre": 0.00030387,
+      "a_vu_le_changement": true
+    }
+  },
+  "identifiants_distincts": true,
+  "fichiers_de_seance": [
+    "04ba8932-fdb5-4102-8eef-9942c89319d7",
+    "3b9371e4-4720-4eea-87af-bd9fd78b56e2",
+    "5bb3b243-5a84-4f7b-80fd-a43f1c8a7bb8",
+    "6d69cf42-e705-459c-8cc4-aef5081afc20",
+    "a0670d18-0878-4337-8ee9-4a3db7bda52a",
+    "a4f8e84f-52d1-4861-b58b-33ddf32f7e30",
+    "e7f22374-9f41-404c-8e6f-48a4d8094709"
+  ],
+  "depense_dollars": 0.002534,
+  "somme_naive_des_total_cost_usd": 0.005086
+}

@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "taches": [
+    "reprise"
+  ],
+  "variantes": null,
+  "repetitions": 1,
+  "depense_dollars": 0.032891,
+  "resume": {
+    "reprise:base": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.009516,
+      "cout_moyen": 0.009516,
+      "cout_recalcule_total": 0.009516,
+      "tours_moyens": 24,
+      "contexte_final_median": 41099,
+      "lectures_principales_moyennes": 19,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {},
+      "latence_mediane_s": 51.0
+    },
+    "reprise:reprise": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.010282,
+      "cout_moyen": 0.010282,
+      "cout_recalcule_total": 0.010282,
+      "tours_moyens": 1,
+      "contexte_final_median": 41996,
+      "lectures_principales_moyennes": 0,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {},
+      "latence_mediane_s": 8.0,
+      "oui": 0,
+      "non": 1,
+      "relu_echeancier": 0
+    },
+    "reprise:prevenue": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.011015,
+      "cout_moyen": 0.011015,
+      "cout_recalcule_total": 0.011015,
+      "tours_moyens": 2,
+      "contexte_final_median": 42715,
+      "lectures_principales_moyennes": 1,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {},
+      "latence_mediane_s": 10.2,
+      "oui": 1,
+      "non": 0,
+      "relu_echeancier": 1
+    },
+    "reprise:neuve": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.002077,
+      "cout_moyen": 0.002077,
+      "cout_recalcule_total": 0.002077,
+      "tours_moyens": 3,
+      "contexte_final_median": 23324,
+      "lectures_principales_moyennes": 1,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {},
+      "latence_mediane_s": 11.0,
+      "oui": 1,
+      "non": 0,
+      "relu_echeancier": 1
+    }
+  },
+  "seances": [
+    {
+      "tache": "reprise",
+      "variante": "base",
+      "repetition": 0,
+      "fin": "success",
+      "reponse": "La carte est écrite dans `notes/carte.md` (une soixantaine de lignes). C'est le seul fichier modifié. Je n'ai pas exécuté le logiciel : la commande Bash a été refusée, donc tout vient de la lecture du code. Les fichiers de `tarifs/` n'ont pas été ouverts.\n\nCe que la carte contient :\n\n- **Rôle des dossiers** : les sept dossiers du code, plus `config.py` et `tarifs/`.\n- **Points d'entrée** : `lancer.py` ne propose que `creer-base`, `prime`, `rapport` et `export`. Le LISEZMOI annonce un « menu » qui n'existe pas. La création de contrat, les avenants, la résiliation, les sinistres et l'impression des quittances n'ont aucun point d'entrée : il faut les appeler depuis Python.\n- **Chemin d'un contrat** : de `creer_contrat` (numéro, date de fin, prime avec frais, insertion, échéancier, quittances) jusqu'à `imprimer_quittances`.\n- **Arrondis** : un tableau de treize lignes avec, pour chacune, le calcul et la méthode d'arrondi. La prime est tronquée par `int()`, le prorata est arrondi au pair par `round()`, et `arrondir_fcfa()` n'intervient qu'à l'impression, où il ne change rien.\n\nPoints à vérifier avant d'ajouter des tests :\n\n- **Numéros de sinistre** : le compteur est en mémoire et repart de 1 à chaque lancement. Un second lancement peut recréer un numéro déjà présent dans la table : c'est une hypothèse à confirmer sur la base de recette.\n- **Échéancier** : la division tronque, donc les quittances d'une année ne totalisent pas toujours la prime annuelle (10 001 / 4 donne 4 × 2 500 = 10 000).\n- **SQL formaté** : `contrats_branche` et `chercher_assure` construisent leur requête avec `%`, ce que les règles interdisent.\n\nJe n'ai rien corrigé, conformément au CLAUDE.md. Les arrondis existants restent en l'état, par référence au ticket DSI-2019-114.",
+      "tours": 24,
+      "cout_dollars": 0.00951649,
+      "cout_recalcule": 0.009516489999999999,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 14,
+          "outputTokens": 8909,
+          "cacheReadInputTokens": 178184,
+          "cacheCreationInputTokens": 26230,
+          "webSearchRequests": 0,
+          "costUSD": 0.00951649,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 3510
+        }
+      },
+      "outils": [
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Write",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "lancer.py",
+        "contrats/contrat.py",
+        "primes/calcul.py",
+        "util/montants.py",
+        "quittances/echeancier.py",
+        "quittances/quittance.py",
+        "primes/prorata.py",
+        "primes/tarifs.py",
+        "base/requetes.py",
+        "base/connexion.py",
+        "config.py",
+        "contrats/numeros.py",
+        "sinistres/franchise.py",
+        "sinistres/declaration.py",
+        "rapports/portefeuille.py",
+        "rapports/export_csv.py",
+        "util/divers.py",
+        "util/dates.py",
+        "base/schema.sql"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-reprise-9gh6mu7m/depot\" && find . -path ./.git -prune -o -type f -print | sort && echo --- && wc -l $(find . -name \"*.py\" -not -path \"./.git/*\") | tail -1"
+      ],
+      "contexte_final": 41099,
+      "contexte_max": 41099,
+      "fichiers_modifies": [],
+      "plan": "",
+      "controles": {
+        "carte_ecrite": true,
+        "faits": {
+          "point d'entrée lancer.py": true,
+          "échéancier qui tronque": true,
+          "prorata arrondi au pair": true,
+          "quittance par arrondir_fcfa": true,
+          "primes qui tronquent": true,
+          "création du contrat": true,
+          "lecture des tarifs": true,
+          "les sept dossiers": true
+        },
+        "texte": "# Carte du logiciel des contrats\n\nLu : lancer.py, config.py, base/*, contrats/*, primes/*, quittances/*, sinistres/*, rapports/*, util/*, schema.sql, .claude/rules/*. Les fichiers tarifs/ n'ont été ni ouverts ni testés.\n\n## Rôle des dossiers\n\n- `base/` : connexion SQLite unique (`connexion.py`), requêtes (`requetes.py`), schéma (`schema.sql`).\n- `contrats/` : création, avenant, résiliation (`contrat.py`) ; numéros KA-BRANCHE-NNNN (`numeros.py`).\n- `primes/` : calcul des primes (`calcul.py`), lecture des tarifs (`tarifs.py`), remboursement au prorata (`prorata.py`).\n- `quittances/` : échéancier (`echeancier.py`), impression texte (`quittance.py`).\n- `sinistres/` : franchises (`franchise.py`), déclaration (`declaration.py`).\n- `rapports/` : portefeuille par branche (`portefeuille.py`), export CSV (`export_csv.py`).\n- `util/` : dates au format jj/mm/aaaa (`dates.py`), montants (`montants.py`), divers (`divers.py`).\n- `tarifs/` : tables de l'actuariat (auto, habitation, sante). Ne pas modifier.\n- `config.py` : chemins, frais de police (5 000 FCFA), frais de fractionnement (3 %).\n\n## Points d'entrée\n\nSeul `lancer.py` est un point d'entrée en ligne de commande (`main`) :\n- `creer-base` : exécute `schema.sql`.\n- `prime <numero>` : affiche `prime_annuelle` stockée (pas de recalcul).\n- `rapport` : `portefeuille.afficher()`.\n- `export` : écrit `exports/portefeuille.csv`.\n\nLe LISEZMOI annonce un « menu » : il n'existe pas, `lancer.py` affiche seulement l'usage.\nCréation de contrat, avenant, résiliation, déclaration de sinistre et impression des quittances\nn'ont aucun point d'entrée : il faut les appeler depuis Python.\n\n## Chemin d'un contrat, de la création aux quittances\n\n`contrats.contrat.creer_contrat(assure, branche, formule, date_effet, params, fractionnement)` :\n1. `requetes.assure` : vérifie l'assuré ; pour SANTE, `dates.age` (date de naissance).\n2. `numeros.prochain_numero(branche)` : MAX du préfixe, +1.\n3. `dates.ajouter_un_an` : date de fin.\n4. `calcul.prime_avec_frais` : `prime()` (tarifs lus par `tarifs.lire`), puis frais de fractionnement, puis frais de police.\n5. `requetes.enregistrer_contrat` : insertion dans `contrats`.\n6. `echeancier.echeancier` : une ligne par échéance, puis `requetes.enregistrer_quittance` (table `quittances`, `payee` = 0).\n\nAvenant : `UPDATE` des paramètres puis `recalculer_prime`. Résiliation : `prorata.remboursement`\npuis `maj_statut`. Le remboursement est retourné, pas enregistré.\nImpression : `quittance.imprimer_quittances` lit `quittances` et appelle `texte_quittance`.\n\n## Arrondis\n\n| Où | Calcul | Arrondi |\n|---|---|---|\n| `calcul.prime_auto` | base x usage x options, x coef. bonus-malus (0,5 à 3,5) | `int()` : troncature |\n| `calcul.prime_habitation` | surface x prix m2, minimum, options | `int()` : troncature |\n| `calcul.prime_sante` | tranche d'âge, personnes sup. à 80 % | `int()` : troncature |\n| `calcul.prime_avec_frais` | prime x 1,03 si mensuel/trimestriel | `int()` puis + 5 000 : troncature |\n| `echeancier.echeancier` | prime annuelle / nombre d'échéances | `int()` : troncature ; le reste est perdu (10 001 / 4 donne 4 x 2 500 = 10 000) |\n| `prorata.remboursement` | prime x jours restants / jours totaux | `round()` : arrondi au pair (round(2.5) == 2) |\n| `quittance.texte_quittance` | montant à l'impression | `arrondir_fcfa()` : moitié vers le haut ; sans effet, le montant est déjà un entier |\n| `montants.pourcentage` | montant x taux / 100 | aucun ; utilisée seulement par les rapports, non trouvée dans les fichiers lus |\n| `montants.format_fcfa` | affichage | `'%d'` : tronque un flottant |\n| `franchise.calcul_franchise` | montant du dommage, franchise | aucun |\n| `portefeuille.resume_branche` | somme des primes | aucun (entiers) |\n\nConstat : les règles disent que tout nouveau calcul passe par `arrondir_fcfa()`, mais aucun calcul de prime ni d'échéance ne l'utilise. Non corrigé (ticket DSI-2019-114).\n\n## Points à vérifier avant les tests\n\n- `declaration.numero_sinistre` : compteur en mémoire, remis à 1 à chaque lancement. Un second lancement peut\n  recréer `SIN-AAAA-0001`, clé primaire de `sinistres` : doublon possible. À confirmer sur la base de recette.\n- `requetes.contrats_branche` et `chercher_assure` construisent du SQL avec `%` (les règles\n  l'interdisent). Les paramètres ne sont pas saisis par l'utilisateur aujourd'hui, mais c'est un risque.\n- `dates.ajouter_mois` : jour plafonné à 28 pour toutes les échéances.\n- `dates.lire` renvoie `None` si le texte est faux, puis `age()` ou `jours_entre()` lève une exception.\n- `tarifs.lire` : une valeur avec un point devient float, sans point int ; c'est le type que lit `calcul`.\n- Aucun test automatique. Vérification à la main : `creer-base`, puis `rapport` et `export` sur la base de recette.\n",
+        "lu_echeancier": true
+      },
+      "session_id": "26386b70-e153-46eb-b331-73bec9af78bd",
+      "parties": 1,
+      "latence_s": 51.0,
+      "erreur": null
+    },
+    {
+      "tache": "reprise",
+      "variante": "reprise",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Non.\n\nDans `quittances/echeancier.py`, chaque quittance mensuelle vaut `int(prime_annuelle / 12)` : le reste de la division est perdu, donc 12 quittances ne totalisent la prime que si elle est divisible par 12 (par exemple 10 001 FCFA donnent 12 × 833 = 9 996 FCFA).",
+      "tours": 1,
+      "cout_dollars": 0.010282285,
+      "cout_recalcule": 0.010282285,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 16,
+          "outputTokens": 9394,
+          "thinkingTokens": 3868,
+          "cacheReadInputTokens": 219281,
+          "cacheCreationInputTokens": 27127,
+          "webSearchRequests": 0,
+          "costUSD": 0.010282285,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000
+        }
+      },
+      "outils": [],
+      "outils_sous_agent": [],
+      "lectures": [],
+      "lectures_sous_agent": [],
+      "commandes": [],
+      "contexte_final": 41996,
+      "contexte_max": 41996,
+      "fichiers_modifies": [],
+      "plan": "",
+      "controles": {
+        "premiere_ligne": "non",
+        "oui": false,
+        "relu_echeancier": false
+      },
+      "session_id": "c5c13552-4f99-4a5c-ad58-d130d25fe621",
+      "parties": 1,
+      "latence_s": 8.0,
+      "erreur": null
+    },
+    {
+      "tache": "reprise",
+      "variante": "prevenue",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Oui.\n\nLe code calcule `montant = prime_annuelle // n` pour chaque échéance, puis ajoute le reliquat `prime_annuelle - montant * n` à la première, donc la somme vaut exactement `prime_annuelle` (ce que j'ai vérifié par lecture, sans exécution). La première quittance peut donc être plus élevée que les onze autres, d'au plus 11 FCFA.\n\nLa ligne « Échéancier » de `notes/carte.md` décrit encore l'ancien comportement (troncature sans reliquat). Je peux la mettre à jour avant la revue si vous voulez.",
+      "tours": 2,
+      "cout_dollars": 0.011015170000000001,
+      "cout_recalcule": 0.01101517,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 18,
+          "outputTokens": 9839,
+          "thinkingTokens": 4125,
+          "cacheReadInputTokens": 261312,
+          "cacheCreationInputTokens": 27846,
+          "webSearchRequests": 0,
+          "costUSD": 0.011015170000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000
+        }
+      },
+      "outils": [
+        "Read"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [],
+      "contexte_final": 42715,
+      "contexte_max": 42715,
+      "fichiers_modifies": [],
+      "plan": "",
+      "controles": {
+        "premiere_ligne": "oui",
+        "oui": true,
+        "relu_echeancier": true
+      },
+      "session_id": "878ad1d6-960c-48ea-a31c-327a21cd33bc",
+      "parties": 1,
+      "latence_s": 10.2,
+      "erreur": null
+    },
+    {
+      "tache": "reprise",
+      "variante": "neuve",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Oui\n\nPour `mensuel`, `n` vaut 12 : chaque quittance reçoit `prime // 12`, et la première reçoit en plus le reliquat `prime - 12 × (prime // 12)`, donc la somme des 12 montants vaut exactement `prime`, à condition que `prime_annuelle` soit un entier.\n\nJe n'ai pas pu vérifier l'appelant ni l'historique git : l'exécution de commandes shell m'a été refusée. Je n'ai donc pas contrôlé que `prime_annuelle` arrive bien en entier ; `tarifs.lire` peut renvoyer un flottant, et dans ce cas la somme serait égale mais en flottant. Pour vérifier à la main sur la base de recette, il suffit de comparer `total(echeancier(prime, date, 'mensuel'))` avec `prime` pour une prime non divisible par 12, par exemple 10 001.",
+      "tours": 3,
+      "cout_dollars": 0.002076635,
+      "cout_recalcule": 0.0020766350000000003,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 1302,
+          "cacheReadInputTokens": 36836,
+          "cacheCreationInputTokens": 8455,
+          "webSearchRequests": 0,
+          "costUSD": 0.002076635,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 728
+        }
+      },
+      "outils": [
+        "Read",
+        "Bash"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-reprise-9gh6mu7m/depot\" && ls -la quittances && (git log --oneline -5 2>/dev/null || echo \"no git\")"
+      ],
+      "contexte_final": 23324,
+      "contexte_max": 23324,
+      "fichiers_modifies": [],
+      "plan": "",
+      "controles": {
+        "premiere_ligne": "oui",
+        "oui": true,
+        "relu_echeancier": true
+      },
+      "session_id": "ca47b05d-ed8d-499f-9695-97b3d771052c",
+      "parties": 1,
+      "latence_s": 11.0,
+      "erreur": null
+    }
+  ]
+}

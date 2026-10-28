@@ -1,0 +1,8 @@
+# Tarif moto - fourni par l'actuariat - NE PAS MODIFIER sans note signee
+# Note de l'actuariat n. 2026-21 (octobre 2026) : ouverture de la branche moto.
+# Prime annuelle (responsabilite civile) par cylindree en cm3, en FCFA ; coefficients en decimal
+CYLINDREE_1_125;28000
+CYLINDREE_126_500;46000
+CYLINDREE_501_PLUS;72000
+USAGE_TAXI_MOTO;1.65
+OPTION_CASQUE_PASSAGER;4500

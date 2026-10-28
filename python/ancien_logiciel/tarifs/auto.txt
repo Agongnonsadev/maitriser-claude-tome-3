@@ -1,0 +1,15 @@
+# Tarif automobile - fourni par l'actuariat - NE PAS MODIFIER sans note signee
+# Montants en FCFA par an (responsabilite civile), coefficients en decimal
+PUISSANCE_1_4;85000
+PUISSANCE_5_7;112000
+PUISSANCE_8_10;148000
+PUISSANCE_11_PLUS;196000
+USAGE_PROFESSIONNEL;1.20
+USAGE_TAXI;1.85
+OPTION_VOL_INCENDIE;0.18
+OPTION_TOUS_RISQUES;0.42
+OPTION_BRIS_DE_GLACE;15000
+# Note de l'actuariat n. 2026-17 (octobre 2026) : majoration des jeunes conducteurs,
+# permis de moins de DUREE_JEUNE_CONDUCTEUR annees, appliquee apres le bonus-malus
+MAJ_JEUNE_CONDUCTEUR;0.25
+DUREE_JEUNE_CONDUCTEUR;2

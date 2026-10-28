@@ -1,0 +1,5648 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-sonnet-5-5",
+  "depense_dollars": 0.416904,
+  "resume": {
+    "brut": {
+      "v3": {
+        "champs_justes": 0.98,
+        "documents_sans_faute": 6,
+        "documents": 70,
+        "par_difficulte": {
+          "propre": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 0,
+            "sur": 10
+          },
+          "ocr": {
+            "champs_justes": 0.857,
+            "documents_sans_faute": 0,
+            "sur": 10
+          },
+          "plaque_partielle": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 5,
+            "sur": 10
+          },
+          "heure_double": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 1,
+            "sur": 10
+          },
+          "blesses_contradictoire": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 0,
+            "sur": 10
+          },
+          "assureur_abrege": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 0,
+            "sur": 10
+          },
+          "manquant": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 0,
+            "sur": 10
+          }
+        },
+        "erreurs_de_controle": 64,
+        "cout_par_document": 0.005955777142857143
+      }
+    },
+    "corrige": {
+      "v3": {
+        "champs_justes": 1.0,
+        "documents_sans_faute": 70,
+        "documents": 70,
+        "par_difficulte": {
+          "propre": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          },
+          "ocr": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          },
+          "plaque_partielle": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          },
+          "heure_double": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          },
+          "blesses_contradictoire": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          },
+          "assureur_abrege": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          },
+          "manquant": {
+            "champs_justes": 1.0,
+            "documents_sans_faute": 10,
+            "sur": 10
+          }
+        },
+        "erreurs_de_controle": 0,
+        "cout_par_document": 0.005955777142857143
+      }
+    }
+  },
+  "essais": [
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0986",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2024-12-07",
+        "heure": "13:20",
+        "lieu": "Voie Express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "ZC7018YC",
+          "numero_contrat": "KA-AUTO-4183"
+        },
+        "vehicule_b": {
+          "plaque": "DY 6910-NJ",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.8,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.011198,
+      "lecture_cache": 0,
+      "sortie": 406,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « ZC7018YC » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « DY 6910-NJ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.8,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.8,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0811",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2024-11-20",
+        "heure": "16:10",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "BJ 8510-JV",
+          "numero_contrat": "KA-AUTO-6838"
+        },
+        "vehicule_b": {
+          "plaque": "XF 8274 HD",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.011786,
+      "lecture_cache": 0,
+      "sortie": 470,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « BJ 8510-JV » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0524",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2025-01-22",
+        "heure": "15:10",
+        "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "NL 2307 MN",
+          "numero_contrat": "KA-AUTO-3797"
+        },
+        "vehicule_b": {
+          "plaque": "AP-5792-NN",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.011226,
+      "lecture_cache": 0,
+      "sortie": 406,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « AP-5792-NN » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0833",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2025-10-01",
+        "heure": "06:30",
+        "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "KW-1289-WD",
+          "numero_contrat": "KA-AUTO-7284"
+        },
+        "vehicule_b": {
+          "plaque": "NV5518FH",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.01243,
+      "lecture_cache": 0,
+      "sortie": 529,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « KW-1289-WD » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « NV5518FH » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0870",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2024-10-12",
+        "heure": "14:40",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "PW2260HP",
+          "numero_contrat": "KA-AUTO-6249"
+        },
+        "vehicule_b": {
+          "plaque": "CF 9651-WT",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.88,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.01266,
+      "lecture_cache": 0,
+      "sortie": 541,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « PW2260HP » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « CF 9651-WT » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.88,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.88,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0049",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2025-03-02",
+        "heure": "10:20",
+        "lieu": "voie express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "BV-8314-ZR",
+          "numero_contrat": "KA-AUTO-2625"
+        },
+        "vehicule_b": {
+          "plaque": "KN4815BA",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.011614,
+      "lecture_cache": 0,
+      "sortie": 453,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « BV-8314-ZR » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « KN4815BA » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0681",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2025-10-12",
+        "heure": "09:20",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "NT-5654-RA",
+          "numero_contrat": "KA-AUTO-8089"
+        },
+        "vehicule_b": {
+          "plaque": "FV8080FS",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.005658600000000001,
+      "lecture_cache": 1646,
+      "sortie": 484,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « NT-5654-RA » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « FV8080FS » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0460",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2025-09-13",
+        "heure": "17:30",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CB 6358 LL",
+          "numero_contrat": "KA-AUTO-8457"
+        },
+        "vehicule_b": {
+          "plaque": "KJ-2113-CJ",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0051646,
+      "lecture_cache": 1646,
+      "sortie": 449,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « KJ-2113-CJ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1095",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2026-06-24",
+        "heure": "08:50",
+        "lieu": "carrefour Vêdoko, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "TV 3251-MV",
+          "numero_contrat": "KA-AUTO-4910"
+        },
+        "vehicule_b": {
+          "plaque": "ML 8796 AP",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0049426,
+      "lecture_cache": 1646,
+      "sortie": 412,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « TV 3251-MV » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0645",
+      "difficulte": "propre",
+      "arguments": {
+        "date_accident": "2024-10-07",
+        "heure": "09:30",
+        "lieu": "rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "PP-5605-AU",
+          "numero_contrat": "KA-AUTO-9914"
+        },
+        "vehicule_b": {
+          "plaque": "KS7401FJ",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0049366,
+      "lecture_cache": 1646,
+      "sortie": 412,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « PP-5605-AU » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « KS7401FJ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0238",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2026-04-08",
+        "heure": "19:40",
+        "lieu": "route de Porto-Novo, à hauteur de Sèmè-Podji",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "XM 1494 PA",
+          "numero_contrat": "KA-AUTO-7588"
+        },
+        "vehicule_b": {
+          "plaque": "RX 9I25 BT",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0052046,
+      "lecture_cache": 1646,
+      "sortie": 451,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "faux",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « RX 9I25 BT » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1077",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2025-07-17",
+        "heure": "17:40",
+        "lieu": "voie express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "FV-5367-ZT",
+          "numero_contrat": "KA-AUTO-2254"
+        },
+        "vehicule_b": {
+          "plaque": "ET 855B SZ",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004914600000000001,
+      "lecture_cache": 1646,
+      "sortie": 409,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "faux",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « FV-5367-ZT » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « ET 855B SZ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0333",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2026-03-01",
+        "heure": "15:30",
+        "lieu": "rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "VF S263 LA",
+          "numero_contrat": "KA-AUTO-1832"
+        },
+        "vehicule_b": {
+          "plaque": "KF8142BU",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.97,
+          "plaque_b": 0.88,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.006064600000000001,
+      "lecture_cache": 1646,
+      "sortie": 525,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "faux",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « VF S263 LA » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « KF8142BU » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.97,
+          "plaque_b": 0.88,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.97,
+          "plaque_b": 0.88,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0709",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2025-03-10",
+        "heure": "19:10",
+        "lieu": "voie express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "TG 411B DJ",
+          "numero_contrat": "KA-AUTO-9084"
+        },
+        "vehicule_b": {
+          "plaque": "CL8692SF",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.005044600000000001,
+      "lecture_cache": 1646,
+      "sortie": 438,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "faux",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « TG 411B DJ » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « CL8692SF » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1061",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2026-06-28",
+        "heure": "19:10",
+        "lieu": "Avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "PM-3597-YB",
+          "numero_contrat": "KA-AUTO-5564"
+        },
+        "vehicule_b": {
+          "plaque": "NB 2B94 AG",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004848600000000001,
+      "lecture_cache": 1646,
+      "sortie": 414,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "faux",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « PM-3597-YB » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « NB 2B94 AG » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0553",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2025-03-18",
+        "heure": "13:40",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "DE 9999 8P",
+          "numero_contrat": "KA-AUTO-3528"
+        },
+        "vehicule_b": {
+          "plaque": "LC6288VX",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.8,
+          "contrat_a": 0.95,
+          "plaque_b": 0.8,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.005390600000000001,
+      "lecture_cache": 1646,
+      "sortie": 473,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "faux",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « DE 9999 8P » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « LC6288VX » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.8,
+          "contrat_a": 0.95,
+          "plaque_b": 0.8,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.8,
+          "contrat_a": 0.95,
+          "plaque_b": 0.8,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1002",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2025-12-26",
+        "heure": "20:40",
+        "lieu": "carrefour de l'Étoile rouge, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "ST 6041 EJ",
+          "numero_contrat": "KA-AUTO-8448"
+        },
+        "vehicule_b": {
+          "plaque": "JZ 743S Z8",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0066166,
+      "lecture_cache": 1646,
+      "sortie": 578,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "faux",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « JZ 743S Z8 » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0713",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2025-11-04",
+        "heure": "19:50",
+        "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+        "blesses": "oui",
+        "vehicule_a": {
+          "plaque": "FX-7781-NA",
+          "numero_contrat": "KA-AUTO-1194"
+        },
+        "vehicule_b": {
+          "plaque": "EN 972S PN",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.75,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.8,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0064186,
+      "lecture_cache": 1646,
+      "sortie": 569,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "faux",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « FX-7781-NA » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « EN 972S PN » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.75,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.8,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.75,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.8,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0791",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2025-10-11",
+        "heure": "21:00",
+        "lieu": "ROND-POINT DE GODOMEY",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "LH 643S VC",
+          "numero_contrat": "KA-AUTO-9616"
+        },
+        "vehicule_b": {
+          "plaque": "LP 8585 FH",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.8,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004620600000000001,
+      "lecture_cache": 1646,
+      "sortie": 391,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "faux",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « LH 643S VC » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.8,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.8,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0099",
+      "difficulte": "ocr",
+      "arguments": {
+        "date_accident": "2026-03-06",
+        "heure": "19:30",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "RY 5933-XU",
+          "numero_contrat": "KA-AUTO-7409"
+        },
+        "vehicule_b": {
+          "plaque": "UZ II50 CR",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0050626,
+      "lecture_cache": 1646,
+      "sortie": 424,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "faux",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « RY 5933-XU » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « UZ II50 CR » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0815",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2025-07-12",
+        "heure": "15:20",
+        "lieu": "Voie Express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "BS 9638-JR",
+          "numero_contrat": "KA-AUTO-2545"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.93,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.93,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0050926,
+      "lecture_cache": 1646,
+      "sortie": 437,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « BS 9638-JR » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.93,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.93,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.93,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.93,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1016",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2026-02-21",
+        "heure": "21:50",
+        "lieu": "Avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "RW 5507 GM",
+          "numero_contrat": "KA-AUTO-6221"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0048586,
+      "lecture_cache": 1646,
+      "sortie": 415,
+      "brut": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0960",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2025-07-25",
+        "heure": "06:10",
+        "lieu": "boulevard de la Marina, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "BC 4694 BZ",
+          "numero_contrat": "KA-AUTO-9854"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0048706,
+      "lecture_cache": 1646,
+      "sortie": 404,
+      "brut": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0279",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2024-12-14",
+        "heure": "12:40",
+        "lieu": "carrefour Vêdoko, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "XD 9011-GP",
+          "numero_contrat": "KA-AUTO-1540"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0045266,
+      "lecture_cache": 1646,
+      "sortie": 370,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « XD 9011-GP » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0470",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2026-06-24",
+        "heure": "11:30",
+        "lieu": "Rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "TY4574KE",
+          "numero_contrat": "KA-AUTO-9790"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004658600000000001,
+      "lecture_cache": 1646,
+      "sortie": 396,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « TY4574KE » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0024",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2025-05-16",
+        "heure": "16:20",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "AZ 9027 CZ",
+          "numero_contrat": "KA-AUTO-2656"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.98,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004972600000000001,
+      "lecture_cache": 1646,
+      "sortie": 415,
+      "brut": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.98,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.98,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0537",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2025-08-16",
+        "heure": "19:10",
+        "lieu": "rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CA-4961-NA",
+          "numero_contrat": "KA-AUTO-5169"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0044806,
+      "lecture_cache": 1646,
+      "sortie": 366,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « CA-4961-NA » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0028",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2026-04-14",
+        "heure": "12:00",
+        "lieu": "voie express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "ZA 8313 TY",
+          "numero_contrat": "KA-AUTO-7440"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0046706000000000004,
+      "lecture_cache": 1646,
+      "sortie": 400,
+      "brut": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0488",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2026-06-14",
+        "heure": "12:40",
+        "lieu": "Carrefour Vêdoko, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "YH 2079 VG",
+          "numero_contrat": "KA-AUTO-9465"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.5,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0059446,
+      "lecture_cache": 1646,
+      "sortie": 523,
+      "brut": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.5,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.5,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0215",
+      "difficulte": "plaque_partielle",
+      "arguments": {
+        "date_accident": "2025-08-18",
+        "heure": "16:30",
+        "lieu": "Route de Porto-Novo, à hauteur de Sèmè-Podji",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "SY 8880-AH",
+          "numero_contrat": "KA-AUTO-8395"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0052486,
+      "lecture_cache": 1646,
+      "sortie": 449,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « SY 8880-AH » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0048",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2025-08-09",
+        "heure": "15:00",
+        "lieu": "carrefour de l'Étoile rouge, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CU 1870 KH",
+          "numero_contrat": "KA-AUTO-4431"
+        },
+        "vehicule_b": {
+          "plaque": "CU-8204-AE",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0056766,
+      "lecture_cache": 1646,
+      "sortie": 478,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « CU-8204-AE » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0967",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2025-01-07",
+        "heure": "15:30",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "oui",
+        "vehicule_a": {
+          "plaque": "BD 5436-KF",
+          "numero_contrat": "KA-AUTO-2009"
+        },
+        "vehicule_b": {
+          "plaque": "TB 5300 MP",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0045826,
+      "lecture_cache": 1646,
+      "sortie": 385,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « BD 5436-KF » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0839",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2024-12-03",
+        "heure": "12:30",
+        "lieu": "ROND-POINT DE GODOMEY",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "EB 2032 JG",
+          "numero_contrat": "KA-AUTO-2854"
+        },
+        "vehicule_b": {
+          "plaque": "YD 2484 MV",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.85,
+          "blesses": 0.93,
+          "plaque_a": 0.8,
+          "contrat_a": 0.93,
+          "plaque_b": 0.9,
+          "assureur_b": 0.95
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0052626,
+      "lecture_cache": 1646,
+      "sortie": 450,
+      "brut": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.85,
+          "blesses": 0.93,
+          "plaque_a": 0.8,
+          "contrat_a": 0.93,
+          "plaque_b": 0.9,
+          "assureur_b": 0.95
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.85,
+          "blesses": 0.93,
+          "plaque_a": 0.8,
+          "contrat_a": 0.93,
+          "plaque_b": 0.9,
+          "assureur_b": 0.95
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0636",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2026-06-25",
+        "heure": "17:30",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "BA 9922 AU",
+          "numero_contrat": "KA-AUTO-4945"
+        },
+        "vehicule_b": {
+          "plaque": "GN-6312-XJ",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.93,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004678600000000001,
+      "lecture_cache": 1646,
+      "sortie": 378,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « GN-6312-XJ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.93,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.93,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0963",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2026-06-14",
+        "heure": "13:10",
+        "lieu": "route de Porto-Novo, à hauteur de Sèmè-Podji",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "PY 6059-BK",
+          "numero_contrat": "KA-AUTO-4246"
+        },
+        "vehicule_b": {
+          "plaque": "TH 7784 MK",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0056606,
+      "lecture_cache": 1646,
+      "sortie": 474,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « PY 6059-BK » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.95,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0726",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2024-11-20",
+        "heure": "07:30",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CE5664YR",
+          "numero_contrat": "KA-AUTO-4375"
+        },
+        "vehicule_b": {
+          "plaque": "TV 9021-ZR",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.93,
+          "plaque_a": 0.8,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0066606,
+      "lecture_cache": 1646,
+      "sortie": 578,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « CE5664YR » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « TV 9021-ZR » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.93,
+          "plaque_a": 0.8,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.93,
+          "plaque_a": 0.8,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0981",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2025-12-20",
+        "heure": "11:30",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "YM-2875-AH",
+          "numero_contrat": "KA-AUTO-6982"
+        },
+        "vehicule_b": {
+          "plaque": "SZ9582FJ",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.93,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.8,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004770600000000001,
+      "lecture_cache": 1646,
+      "sortie": 389,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « YM-2875-AH » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « SZ9582FJ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.93,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.8,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.9,
+          "blesses": 0.93,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.8,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0800",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2026-02-12",
+        "heure": "16:20",
+        "lieu": "Avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "VE 1636 AU",
+          "numero_contrat": "KA-AUTO-4814"
+        },
+        "vehicule_b": {
+          "plaque": "GV-1293-EE",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.85,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.006220600000000001,
+      "lecture_cache": 1646,
+      "sortie": 545,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « GV-1293-EE » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.85,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.85,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0374",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2024-11-11",
+        "heure": "13:10",
+        "lieu": "Boulevard de la Marina, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "RM3899SJ",
+          "numero_contrat": "KA-AUTO-5508"
+        },
+        "vehicule_b": {
+          "plaque": "VF 6789-AT",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.93,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0047526,
+      "lecture_cache": 1646,
+      "sortie": 397,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « RM3899SJ » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « VF 6789-AT » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.93,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.93,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0084",
+      "difficulte": "heure_double",
+      "arguments": {
+        "date_accident": "2026-01-15",
+        "heure": "09:40",
+        "lieu": "boulevard de la Marina, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "XE 2163 FE",
+          "numero_contrat": "KA-AUTO-6586"
+        },
+        "vehicule_b": {
+          "plaque": "FU-6885-LH",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.93,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.98,
+          "plaque_b": 0.95,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0056866,
+      "lecture_cache": 1646,
+      "sortie": 480,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « FU-6885-LH » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.93,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.98,
+          "plaque_b": 0.95,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.93,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.98,
+          "plaque_b": 0.95,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0103",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2026-08-01",
+        "heure": "07:50",
+        "lieu": "voie express, sortie Akpakpa",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "SF 5035-RA",
+          "numero_contrat": "KA-AUTO-6620"
+        },
+        "vehicule_b": {
+          "plaque": "HH 2987 UP",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.96
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0055986000000000005,
+      "lecture_cache": 1646,
+      "sortie": 486,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « SF 5035-RA » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.96
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.96
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1064",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2026-04-06",
+        "heure": "19:20",
+        "lieu": "Avenue Steinmetz, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "NS 2865 JF",
+          "numero_contrat": "KA-AUTO-3095"
+        },
+        "vehicule_b": {
+          "plaque": "YR-5269-SA",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0057286,
+      "lecture_cache": 1646,
+      "sortie": 496,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « YR-5269-SA » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1073",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2025-05-24",
+        "heure": "16:20",
+        "lieu": "Avenue Steinmetz, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "UZ-1163-NP",
+          "numero_contrat": "KA-AUTO-4443"
+        },
+        "vehicule_b": {
+          "plaque": "FM1883ZY",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.5,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0064726,
+      "lecture_cache": 1646,
+      "sortie": 572,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « UZ-1163-NP » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « FM1883ZY » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.5,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.5,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1047",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2026-03-15",
+        "heure": "10:10",
+        "lieu": "carrefour de l'Étoile rouge, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "TC 7100-VX",
+          "numero_contrat": "KA-AUTO-1300"
+        },
+        "vehicule_b": {
+          "plaque": "FM 3110 GN",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.8,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0061286000000000005,
+      "lecture_cache": 1646,
+      "sortie": 524,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « TC 7100-VX » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.8,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.8,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.96,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1055",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2026-05-26",
+        "heure": "10:10",
+        "lieu": "PONT DE FIDJROSSÈ",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "VD 5114-HG",
+          "numero_contrat": "KA-AUTO-2528"
+        },
+        "vehicule_b": {
+          "plaque": "CT 5342 SX",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.85,
+          "contrat_a": 0.93,
+          "plaque_b": 0.92,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0055386,
+      "lecture_cache": 1646,
+      "sortie": 479,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « VD 5114-HG » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.85,
+          "contrat_a": 0.93,
+          "plaque_b": 0.92,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.85,
+          "contrat_a": 0.93,
+          "plaque_b": 0.92,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0323",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2025-11-26",
+        "heure": "07:30",
+        "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "GB 5207-WT",
+          "numero_contrat": "KA-AUTO-5392"
+        },
+        "vehicule_b": {
+          "plaque": "FP 8007 ES",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0064386,
+      "lecture_cache": 1646,
+      "sortie": 565,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « GB 5207-WT » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.9,
+          "heure": 0.97,
+          "blesses": 0.85,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1035",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2026-08-24",
+        "heure": "20:30",
+        "lieu": "carrefour de l'Étoile rouge, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "WM 6136-XA",
+          "numero_contrat": "KA-AUTO-8107"
+        },
+        "vehicule_b": {
+          "plaque": "TU 4564 JB",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.85,
+          "plaque_a": 0.95,
+          "contrat_a": 0.98,
+          "plaque_b": 0.97,
+          "assureur_b": 0.98
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0056686,
+      "lecture_cache": 1646,
+      "sortie": 477,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « WM 6136-XA » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.85,
+          "plaque_a": 0.95,
+          "contrat_a": 0.98,
+          "plaque_b": 0.97,
+          "assureur_b": 0.98
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.85,
+          "plaque_a": 0.95,
+          "contrat_a": 0.98,
+          "plaque_b": 0.97,
+          "assureur_b": 0.98
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0311",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2025-09-21",
+        "heure": "21:10",
+        "lieu": "Boulevard de la Marina, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "PT 8051-VC",
+          "numero_contrat": "KA-AUTO-1800"
+        },
+        "vehicule_b": {
+          "plaque": "WM 2142 KN",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.005384600000000001,
+      "lecture_cache": 1646,
+      "sortie": 462,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « PT 8051-VC » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.85,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0678",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2026-04-18",
+        "heure": "16:50",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "CL6571AL",
+          "numero_contrat": "KA-AUTO-9981"
+        },
+        "vehicule_b": {
+          "plaque": "JP 3711-NM",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.85,
+          "plaque_a": 0.8,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.005894600000000001,
+      "lecture_cache": 1646,
+      "sortie": 503,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « CL6571AL » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « JP 3711-NM » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.85,
+          "plaque_a": 0.8,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.85,
+          "plaque_a": 0.8,
+          "contrat_a": 0.97,
+          "plaque_b": 0.85,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0298",
+      "difficulte": "blesses_contradictoire",
+      "arguments": {
+        "date_accident": "2025-04-28",
+        "heure": "17:20",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": "WP2211LL",
+          "numero_contrat": "KA-AUTO-3470"
+        },
+        "vehicule_b": {
+          "plaque": "YC 9654-WS",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.85,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.92,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.006220600000000001,
+      "lecture_cache": 1646,
+      "sortie": 549,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « WP2211LL » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « YC 9654-WS » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.85,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.92,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.85,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.92,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0206",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2026-05-14",
+        "heure": "17:10",
+        "lieu": "Carrefour Vêdoko, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CK4561XU",
+          "numero_contrat": "KA-AUTO-8677"
+        },
+        "vehicule_b": {
+          "plaque": "LG 9078-LZ",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.85,
+          "assureur_b": 0.9
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0055766,
+      "lecture_cache": 1646,
+      "sortie": 488,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « CK4561XU » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « LG 9078-LZ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.85,
+          "assureur_b": 0.9
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.85,
+          "contrat_a": 0.96,
+          "plaque_b": 0.85,
+          "assureur_b": 0.9
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0089",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2025-07-04",
+        "heure": "17:20",
+        "lieu": "PONT DE FIDJROSSÈ",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "TF-4103-AE",
+          "numero_contrat": "KA-AUTO-7931"
+        },
+        "vehicule_b": {
+          "plaque": "HB4366HB",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.88,
+          "assureur_b": 0.85
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0062266000000000005,
+      "lecture_cache": 1646,
+      "sortie": 553,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « TF-4103-AE » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « HB4366HB » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.88,
+          "assureur_b": 0.85
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.88,
+          "assureur_b": 0.85
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0696",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2026-08-22",
+        "heure": "07:00",
+        "lieu": "rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "MS 5067 AA",
+          "numero_contrat": "KA-AUTO-7939"
+        },
+        "vehicule_b": {
+          "plaque": "KB-6074-RP",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.9
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004554600000000001,
+      "lecture_cache": 1646,
+      "sortie": 374,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « KB-6074-RP » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.9
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.9
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0640",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2025-10-06",
+        "heure": "14:40",
+        "lieu": "rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "VR 5434 SS",
+          "numero_contrat": "KA-AUTO-7819"
+        },
+        "vehicule_b": {
+          "plaque": "MC-2710-DE",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.93
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.006488600000000001,
+      "lecture_cache": 1646,
+      "sortie": 583,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « MC-2710-DE » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.93
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.93
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0104",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2024-10-20",
+        "heure": "18:40",
+        "lieu": "Avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CW 2540 GT",
+          "numero_contrat": "KA-AUTO-4492"
+        },
+        "vehicule_b": {
+          "plaque": "XF-8751-WL",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.93
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0052566,
+      "lecture_cache": 1646,
+      "sortie": 455,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « XF-8751-WL » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.93
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.95,
+          "plaque_a": 0.95,
+          "contrat_a": 0.96,
+          "plaque_b": 0.93,
+          "assureur_b": 0.93
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0444",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2025-02-09",
+        "heure": "12:00",
+        "lieu": "boulevard de la Marina, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "SC 9087 RB",
+          "numero_contrat": "KA-AUTO-9854"
+        },
+        "vehicule_b": {
+          "plaque": "CN-4574-JP",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.85
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0045966,
+      "lecture_cache": 1646,
+      "sortie": 377,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « CN-4574-JP » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.85
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.85
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0685",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2025-12-08",
+        "heure": "10:10",
+        "lieu": "rond-point de Godomey",
+        "blesses": "oui",
+        "vehicule_a": {
+          "plaque": "HR-9716-LS",
+          "numero_contrat": "KA-AUTO-1940"
+        },
+        "vehicule_b": {
+          "plaque": "RZ5290LZ",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.97,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.9
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.006410600000000001,
+      "lecture_cache": 1646,
+      "sortie": 576,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « HR-9716-LS » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « RZ5290LZ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.97,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.9
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.85,
+          "heure": 0.97,
+          "blesses": 0.97,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.9
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0651",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2025-10-08",
+        "heure": "16:00",
+        "lieu": "boulevard de la Marina, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "GV 5301-CG",
+          "numero_contrat": "KA-AUTO-2235"
+        },
+        "vehicule_b": {
+          "plaque": "UA 5287 FK",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.96,
+          "assureur_b": 0.9
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0046386000000000005,
+      "lecture_cache": 1646,
+      "sortie": 380,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « GV 5301-CG » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.96,
+          "assureur_b": 0.9
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.96,
+          "plaque_b": 0.96,
+          "assureur_b": 0.9
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0081",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2024-10-10",
+        "heure": "09:00",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "EZ-1069-DF",
+          "numero_contrat": "KA-AUTO-5722"
+        },
+        "vehicule_b": {
+          "plaque": "KN5553BS",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.8,
+          "assureur_b": 0.93
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0049046,
+      "lecture_cache": 1646,
+      "sortie": 408,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « EZ-1069-DF » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « KN5553BS » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.8,
+          "assureur_b": 0.93
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.93,
+          "contrat_a": 0.97,
+          "plaque_b": 0.8,
+          "assureur_b": 0.93
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0565",
+      "difficulte": "assureur_abrege",
+      "arguments": {
+        "date_accident": "2026-07-14",
+        "heure": "09:10",
+        "lieu": "carrefour de l'Étoile rouge, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "PL-5522-DE",
+          "numero_contrat": "KA-AUTO-3167"
+        },
+        "vehicule_b": {
+          "plaque": "AB3129SB",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.6,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.85,
+          "assureur_b": 0.85
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.007704600000000001,
+      "lecture_cache": 1646,
+      "sortie": 703,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « PL-5522-DE » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « AB3129SB » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.6,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.85,
+          "assureur_b": 0.85
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.6,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.85,
+          "assureur_b": 0.85
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0983",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2025-10-07",
+        "heure": null,
+        "lieu": "Rond-point de Godomey",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "GW 4615-MU",
+          "numero_contrat": "KA-AUTO-7997"
+        },
+        "vehicule_b": {
+          "plaque": "BR 1481 BT",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.75,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.92,
+          "assureur_b": 0.95
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0059386000000000005,
+      "lecture_cache": 1646,
+      "sortie": 524,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « GW 4615-MU » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.75,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.92,
+          "assureur_b": 0.95
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.75,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.92,
+          "assureur_b": 0.95
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0708",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2026-05-07",
+        "heure": null,
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "PZ 7092 UD",
+          "numero_contrat": "KA-AUTO-6604"
+        },
+        "vehicule_b": {
+          "plaque": "AD-5589-UH",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0049686,
+      "lecture_cache": 1646,
+      "sortie": 415,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « AD-5589-UH » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.95,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-1037",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2026-09-17",
+        "heure": null,
+        "lieu": "Voie Express, sortie Akpakpa",
+        "blesses": "oui",
+        "vehicule_a": {
+          "plaque": "VP-2222-MS",
+          "numero_contrat": "KA-AUTO-1817"
+        },
+        "vehicule_b": {
+          "plaque": "UD9567FZ",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.97,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0061726,
+      "lecture_cache": 1646,
+      "sortie": 544,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « VP-2222-MS » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « UD9567FZ » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.97,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.95,
+          "blesses": 0.97,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.9,
+          "assureur_b": 0.96
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0216",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2025-04-19",
+        "heure": null,
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "CE 6254 FA",
+          "numero_contrat": "KA-AUTO-3413"
+        },
+        "vehicule_b": {
+          "plaque": "YW-4610-BW",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0051806000000000005,
+      "lecture_cache": 1646,
+      "sortie": 435,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « YW-4610-BW » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.96,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0178",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2026-09-19",
+        "heure": "12:30",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "ER6404DJ",
+          "numero_contrat": "KA-AUTO-2820"
+        },
+        "vehicule_b": {
+          "plaque": "TG 1994-ZH",
+          "assureur": null
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.96,
+          "plaque_a": 0.85,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.95
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.004462600000000001,
+      "lecture_cache": 1646,
+      "sortie": 379,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « ER6404DJ » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « TG 1994-ZH » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.96,
+          "plaque_a": 0.85,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.95
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.96,
+          "blesses": 0.96,
+          "plaque_a": 0.85,
+          "contrat_a": 0.97,
+          "plaque_b": 0.9,
+          "assureur_b": 0.95
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0463",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2026-06-25",
+        "heure": null,
+        "lieu": "voie express, sortie Akpakpa",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "EM 3866-WT",
+          "numero_contrat": "KA-AUTO-6013"
+        },
+        "vehicule_b": {
+          "plaque": "PT 4791 CW",
+          "assureur": "Ouémé Mutuelle"
+        },
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0048706,
+      "lecture_cache": 1646,
+      "sortie": 420,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « EM 3866-WT » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.95,
+          "heure": 0.97,
+          "blesses": 0.95,
+          "plaque_a": 0.9,
+          "contrat_a": 0.95,
+          "plaque_b": 0.93,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0166",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2025-05-28",
+        "heure": null,
+        "lieu": "route de Porto-Novo, à hauteur de Sèmè-Podji",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "BG6071WH",
+          "numero_contrat": "KA-AUTO-5622"
+        },
+        "vehicule_b": {
+          "plaque": "RY 4371-NH",
+          "assureur": "Atacora Garantie"
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.8,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0048406000000000005,
+      "lecture_cache": 1646,
+      "sortie": 415,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « BG6071WH » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « RY 4371-NH » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.8,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.95,
+          "blesses": 0.95,
+          "plaque_a": 0.8,
+          "contrat_a": 0.96,
+          "plaque_b": 0.9,
+          "assureur_b": 0.97
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0317",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2026-09-13",
+        "heure": null,
+        "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "KW-4848-WJ",
+          "numero_contrat": "KA-AUTO-4741"
+        },
+        "vehicule_b": {
+          "plaque": "XT5427YA",
+          "assureur": "Lagune Assurances"
+        },
+        "confiance": {
+          "date_accident": 0.93,
+          "heure": 0.93,
+          "blesses": 0.93,
+          "plaque_a": 0.88,
+          "contrat_a": 0.93,
+          "plaque_b": 0.88,
+          "assureur_b": 0.95
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.005560600000000001,
+      "lecture_cache": 1646,
+      "sortie": 482,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « KW-4848-WJ » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « XT5427YA » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.93,
+          "heure": 0.93,
+          "blesses": 0.93,
+          "plaque_a": 0.88,
+          "contrat_a": 0.93,
+          "plaque_b": 0.88,
+          "assureur_b": 0.95
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.93,
+          "heure": 0.93,
+          "blesses": 0.93,
+          "plaque_a": 0.88,
+          "contrat_a": 0.93,
+          "plaque_b": 0.88,
+          "assureur_b": 0.95
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0528",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2024-10-21",
+        "heure": "17:50",
+        "lieu": "avenue Steinmetz, Cotonou",
+        "blesses": "oui",
+        "vehicule_a": {
+          "plaque": "BB 9306 NM",
+          "numero_contrat": "KA-AUTO-2315"
+        },
+        "vehicule_b": {
+          "plaque": "AH-5235-AC",
+          "assureur": null
+        },
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.95
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0049386000000000005,
+      "lecture_cache": 1646,
+      "sortie": 412,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_b.plaque : « AH-5235-AC » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.95
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.98,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.97,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.95
+        }
+      }
+    },
+    {
+      "version": "v3",
+      "modele": "claude-sonnet-5-5",
+      "document": "arch-0714",
+      "difficulte": "manquant",
+      "arguments": {
+        "date_accident": "2025-01-21",
+        "heure": "16:50",
+        "lieu": "carrefour Vêdoko, Cotonou",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "HH5536BP",
+          "numero_contrat": "KA-AUTO-7730"
+        },
+        "vehicule_b": {
+          "plaque": "GM 1125-CS",
+          "assureur": null
+        },
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.96
+        }
+      },
+      "stop_reason": "tool_use",
+      "cout_dollars": 0.0054606,
+      "lecture_cache": 1646,
+      "sortie": 465,
+      "brut": {
+        "reussi": false,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [
+          "vehicule_a.plaque : « HH5536BP » n'est pas au format AA 9999 AA.",
+          "vehicule_b.plaque : « GM 1125-CS » n'est pas au format AA 9999 AA."
+        ],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.96
+        }
+      },
+      "corrige": {
+        "reussi": true,
+        "issues": {
+          "date_accident": "juste",
+          "heure": "juste",
+          "blesses": "juste",
+          "plaque_a": "juste",
+          "contrat_a": "juste",
+          "plaque_b": "juste",
+          "assureur_b": "juste"
+        },
+        "erreurs": [],
+        "confiance": {
+          "date_accident": 0.97,
+          "heure": 0.97,
+          "blesses": 0.96,
+          "plaque_a": 0.9,
+          "contrat_a": 0.97,
+          "plaque_b": 0.93,
+          "assureur_b": 0.96
+        }
+      }
+    }
+  ]
+}

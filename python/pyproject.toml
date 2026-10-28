@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kanvo-ebene"
+version = "0.1.0"
+description = "Les missions de Yao chez Kanvô Assurances et aux Cliniques Ébène : code d'accompagnement du Tome 3 de « Maîtriser Claude » (Botlyx Academy)"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=2.3,<3",
+]
+
+[project.optional-dependencies]
+tests = ["pytest>=8"]
+# Chapitres 5 et suivants : le Claude Agent SDK, qui embarque le binaire de Claude Code
+agents = ["claude-agent-sdk>=0.2.174,<0.3"]
+# Chapitre 7 : le serveur MCP de Kanvô Assurances (le SDK MCP officiel pour Python)
+serveur = ["mcp>=2.3,<3"]
+
+[tool.setuptools]
+packages = ["assureur", "cliniques"]
+
+[tool.setuptools.package-data]
+assureur = ["donnees/*.json", "donnees/souscription/*.md", "prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

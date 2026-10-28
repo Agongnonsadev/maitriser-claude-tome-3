@@ -1,0 +1,43 @@
+{
+  "note": "Cas fabriqués pour le livre (Kanvô Assurances est fictive). Les prompts système sont ceux de ch02/kanvo.json, inchangés : seuls le modèle et la réflexion varient. Vérité des constats : null = l'information est absente ou illisible, le modèle doit rendre null ; \"__ignorer__\" = champ ambigu, non noté.",
+  "constats": [
+    {
+      "id": "c1",
+      "texte": "CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE. Date : 14/10/2026. Heure : 18 h 20. Lieu : boulevard de la Marina, Cotonou, devant la station-service. Blessés : non. Témoins : Mme Houénou, passante (tél. illisible). VÉHICULE A : Toyota Corolla grise, immatriculation AB 4417 RB, assureur Kanvô Assurances, police KA-AUTO-0552, conducteur M. Agbo Sèna. Circonstances cochées : roulait dans le même sens et sur la même file. VÉHICULE B : Peugeot 406 blanche, immatriculation BC 0918 RB, assureur : [rayé], police : [illisible], conducteur M. Dossou. Circonstances cochées : changeait de file. Croquis : B se rabat sur A. Observations A : « le véhicule B a coupé sans clignotant ». Observations B : vide.",
+      "verite": {"date": "2026-10-14", "heure": "18:20", "vehicule_a.immatriculation": "AB 4417 RB", "vehicule_a.numero_police": "KA-AUTO-0552", "vehicule_b.immatriculation": "BC 0918 RB", "vehicule_b.numero_police": null, "vehicule_b.assureur": null, "blesses": false}
+    },
+    {
+      "id": "c2",
+      "texte": "CONSTAT AMIABLE. Date : 02/10/2026. Lieu : carrefour Saint-Michel. Blessés : un passager du véhicule B, légèrement, emmené à l'hôpital. VÉHICULE A : Hyundai Tucson, immatriculation CD 2271 RB, assuré Kanvô, police KA-AUTO-1180, conducteur Mme Akplogan. Circonstances : reculait. VÉHICULE B : moto Haojue, plaque 7713 RB, sans assurance déclarée, conducteur inconnu (parti). Observations A : « la moto était dans mon angle mort ».",
+      "verite": {"date": "2026-10-02", "heure": null, "vehicule_a.immatriculation": "CD 2271 RB", "vehicule_a.numero_police": "KA-AUTO-1180", "vehicule_b.immatriculation": "7713 RB", "vehicule_b.numero_police": null, "vehicule_b.assureur": "__ignorer__", "blesses": true}
+    },
+    {
+      "id": "c3",
+      "texte": "CONSTAT AMIABLE D'ACCIDENT. Date : 21/09/2026, vers 9 h. Lieu : route de Ouidah, km 12. Blessés : non. Véhicule A : camionnette Isuzu, immatriculation EF 5520 RB, assureur Kanvô Assurances, police KA-AUTO-0071, conducteur salarié d'une société de livraison. Circonstances : heurtait par l'arrière un véhicule qui roulait dans le même sens. Véhicule B : Toyota RAV4, immatriculation GH 3304 RB, assureur : autre compagnie, police non communiquée, conducteur M. Tchibozo. Observations B : « freinage brusque à cause d'un dos-d'âne non signalé ».",
+      "verite": {"date": "2026-09-21", "heure": "09:00", "vehicule_a.immatriculation": "EF 5520 RB", "vehicule_a.numero_police": "KA-AUTO-0071", "vehicule_b.immatriculation": "GH 3304 RB", "vehicule_b.numero_police": null, "vehicule_b.assureur": "__ignorer__", "blesses": false}
+    },
+    {
+      "id": "c4",
+      "texte": "CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE. Date : 03/10/2026. Heure : 12 h 05. Lieu : rue 12.345, quartier Gbégamey, Cotonou. Blessés : non. Témoins : aucun. VÉHICULE A : Kia Picanto rouge, immatriculation IJ 6612 RB, assureur Kanvô Assurances, police KA-AUTO-0904, conducteur Mlle Hounkpè. Circonstances : sortait d'un parking. VÉHICULE B : Toyota Hilux, immatriculation KL 1840 RB, assureur : autre compagnie, police AX-77812, conducteur M. Zinsou. Circonstances : roulait. Observations A et B : d'accord sur le croquis.",
+      "verite": {"date": "2026-10-03", "heure": "12:05", "vehicule_a.immatriculation": "IJ 6612 RB", "vehicule_a.numero_police": "KA-AUTO-0904", "vehicule_b.immatriculation": "KL 1840 RB", "vehicule_b.numero_police": "AX-77812", "vehicule_b.assureur": "__ignorer__", "blesses": false}
+    },
+    {
+      "id": "c5",
+      "texte": "Constat rempli à la main. Le 5 oct. 2026, 07h45, avenue Steinmetz. Blessés : oui, un piéton touché à la jambe, pris en charge par les pompiers. Véhicule A : Nissan Almera, immatriculation MN 0207 RB, Kanvô Assurances, police KA-AUTO-0335, conducteur M. Ahyi. Véhicule B : taxi jaune, immatriculation [tache d'encre, illisible], assureur et police non renseignés, conducteur parti avant la fin du constat. Observations A : « le taxi a grillé le feu ».",
+      "verite": {"date": "2026-10-05", "heure": "07:45", "vehicule_a.immatriculation": "MN 0207 RB", "vehicule_a.numero_police": "KA-AUTO-0335", "vehicule_b.immatriculation": null, "vehicule_b.numero_police": null, "vehicule_b.assureur": null, "blesses": true}
+    },
+    {
+      "id": "c6",
+      "texte": "CONSTAT AMIABLE. Date : non renseignée (l'assuré écrit « lundi dernier »). Heure : 16 h. Lieu : parking du marché Dantokpa. Blessés : néant. VÉHICULE A : Mazda 3, immatriculation OP 7781 RB, assureur Kanvô Assurances, police KA-AUTO-1422, conducteur M. Gnonlonfoun. Circonstances : manœuvrait pour se garer. VÉHICULE B : véhicule en stationnement, propriétaire absent, immatriculation QR 3055 RB, assureur inconnu. Croquis : A touche l'aile arrière de B.",
+      "verite": {"date": null, "heure": "16:00", "vehicule_a.immatriculation": "OP 7781 RB", "vehicule_a.numero_police": "KA-AUTO-1422", "vehicule_b.immatriculation": "QR 3055 RB", "vehicule_b.numero_police": null, "vehicule_b.assureur": null, "blesses": false}
+    }
+  ],
+  "declarations": [
+    {"id": "d1", "texte": "Bonjour, ce matin vers 7 h 30 au carrefour de l'Étoile rouge, un taxi-moto m'a percuté par l'arrière. Mon pare-chocs arrière est enfoncé et le feu gauche est cassé. Le conducteur est parti sans s'arrêter. J'ai ma police auto KA-AUTO-0193. Comment je fais ?", "contrat_a_demander": false, "escalade_attendue": false},
+    {"id": "d2", "texte": "Depuis les pluies d'hier soir, l'eau est entrée dans le salon par le toit. Le plafond a cédé dans un coin, le canapé et la télévision sont mouillés. Le contrat habitation est au nom de ma mère, elle a 74 ans, je déclare pour elle.", "contrat_a_demander": true, "escalade_attendue": false},
+    {"id": "d3", "texte": "J'ai été hospitalisé trois jours à la clinique pour un paludisme grave et j'ai payé 185 000 FCFA. Je veux être remboursé. Je n'ai pas encore la facture détaillée, seulement le reçu de caisse.", "contrat_a_demander": true, "escalade_attendue": false},
+    {"id": "d4", "texte": "C'est la troisième fois que j'écris !!! Mon dossier pour le vol de ma moto, déposé il y a six semaines, n'avance pas. Je veux parler à quelqu'un, pas à une machine.", "contrat_a_demander": false, "escalade_attendue": true},
+    {"id": "d5", "texte": "Bonsoir. Mon camion de livraison est tombé en panne puis a pris feu sur l'axe Cotonou-Porto-Novo cet après-midi, personne n'est blessé. Police KA-AUTO-0410. Combien je vais toucher, et quand ?", "contrat_a_demander": false, "escalade_attendue": false},
+    {"id": "d6", "texte": "Mon voisin a cassé ma clôture en reculant avec sa voiture, et la même semaine on m'a volé mon téléphone dans la maison. Est-ce que mon assurance habitation couvre les deux ?", "contrat_a_demander": true, "escalade_attendue": false}
+  ]
+}

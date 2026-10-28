@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 1,
+  "depense_dollars": 0.000606,
+  "resume": {
+    "seances": 1,
+    "fins": {
+      "success": 1
+    },
+    "stop_reasons": {
+      "end_turn": 1
+    },
+    "exceptions": 0,
+    "tours_max": 3,
+    "tours_moyens": 3,
+    "reponses_avec_outils": 2,
+    "reponses_outils_avec_texte": 0,
+    "outils_attendus_appeles": 1,
+    "transmissions_conformes": 1,
+    "hors_sujet_sans_outil": 0,
+    "hors_sujet": 0,
+    "cout_moyen": 0.000605515,
+    "cout_max": 0.000605515,
+    "tokens_entree_moyens": 7316,
+    "latence_mediane_s": 10.17
+  },
+  "seances": [
+    {
+      "cas": "d7",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci pour ces informations. Votre dossier **SIN-2026-0912**, concernant la collision avec une moto au carrefour Saint-Michel le 2 octobre 2026, est au statut **expertise planifiée**. Le passage de l'expert est fixé au **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nPour toute question sur le déroulement de l'expertise, vous pouvez demander à être rappelé par un gestionnaire. Avez-vous d'autres éléments à ajouter à votre dossier, comme des photos ou le constat amiable ?",
+      "outils": [
+        "consulter_assure",
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 2,
+      "reponses_outils_texte": 0,
+      "tours": 3,
+      "cout_dollars": 0.000605515,
+      "tokens_entree": 7316,
+      "tokens_sortie": 447,
+      "transmissions": 0,
+      "session_id": "f91b3721-e76b-4f95-b69e-70d48f1bca5c",
+      "latence_s": 10.17,
+      "erreur": null
+    }
+  ]
+}

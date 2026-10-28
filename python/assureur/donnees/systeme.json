@@ -1,0 +1,427 @@
+{
+  "note": "Données fabriquées pour le livre : Kanvô Assurances, ses assurés, ses contrats et ses sinistres sont fictifs. Aucune donnée réelle.",
+  "assures": [
+    {
+      "numero": "KA-AS-1001",
+      "nom": "M. Comlan Dossa",
+      "ville": "Cotonou",
+      "contrats": [
+        "KA-AUTO-0193"
+      ],
+      "date_naissance": "1984-03-12"
+    },
+    {
+      "numero": "KA-AS-1002",
+      "nom": "Mme Félicité Akplogan",
+      "ville": "Cotonou",
+      "contrats": [
+        "KA-AUTO-1180"
+      ],
+      "date_naissance": "1979-07-02"
+    },
+    {
+      "numero": "KA-AS-1003",
+      "nom": "M. Arnaud Tossou",
+      "ville": "Porto-Novo",
+      "contrats": [
+        "KA-AUTO-0410"
+      ],
+      "date_naissance": "1990-11-25"
+    },
+    {
+      "numero": "KA-AS-1004",
+      "nom": "M. Sèna Agbo",
+      "ville": "Cotonou",
+      "contrats": [
+        "KA-AUTO-0552"
+      ],
+      "date_naissance": "1987-05-30"
+    },
+    {
+      "numero": "KA-AS-1005",
+      "nom": "Mme Rosalie Houngbédji",
+      "ville": "Abomey-Calavi",
+      "contrats": [
+        "KA-HAB-0264"
+      ],
+      "date_naissance": "1952-01-18"
+    },
+    {
+      "numero": "KA-AS-1006",
+      "nom": "M. Marius Zinsou",
+      "ville": "Cotonou",
+      "contrats": [
+        "KA-AUTO-0731"
+      ],
+      "date_naissance": "1995-09-09"
+    },
+    {
+      "numero": "KA-AS-1007",
+      "nom": "M. Rodrigue Hounsa",
+      "ville": "Cotonou",
+      "contrats": [
+        "KA-SANTE-0318"
+      ],
+      "date_naissance": "1968-04-21"
+    },
+    {
+      "numero": "KA-AS-1008",
+      "nom": "Mme Adjoa Dossa",
+      "ville": "Ouidah",
+      "contrats": [
+        "KA-AUTO-0388",
+        "KA-HAB-0390"
+      ],
+      "date_naissance": "1992-12-03"
+    },
+    {
+      "numero": "KA-AS-1009",
+      "nom": "M. Gildas Kiki",
+      "ville": "Cotonou",
+      "contrats": [
+        "KA-AUTO-0619"
+      ],
+      "date_naissance": "1981-06-14"
+    },
+    {
+      "numero": "KA-AS-1010",
+      "nom": "Mme Bernadette Assogba",
+      "ville": "Porto-Novo",
+      "contrats": [
+        "KA-HAB-0455"
+      ],
+      "date_naissance": "1949-08-27"
+    }
+  ],
+  "contrats": [
+    {
+      "numero": "KA-AUTO-0193",
+      "assure": "KA-AS-1001",
+      "type": "automobile",
+      "formule": "Tiers étendu",
+      "vehicule": "Toyota Yaris, AA 2290 RB",
+      "statut": "actif",
+      "date_effet": "2026-02-01",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "collision_avec_tiers_identifie": {
+          "couverte": true,
+          "franchise_fcfa": 50000
+        },
+        "dommages_tous_accidents": {
+          "couverte": false
+        },
+        "vol_incendie": {
+          "couverte": true,
+          "franchise_fcfa": 75000
+        },
+        "bris_de_glace": {
+          "couverte": true,
+          "franchise_fcfa": 15000
+        }
+      }
+    },
+    {
+      "numero": "KA-AUTO-1180",
+      "assure": "KA-AS-1002",
+      "type": "automobile",
+      "formule": "Tous risques",
+      "vehicule": "Hyundai Tucson, CD 2271 RB",
+      "statut": "actif",
+      "date_effet": "2025-11-15",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "dommages_tous_accidents": {
+          "couverte": true,
+          "franchise_fcfa": 100000
+        },
+        "vol_incendie": {
+          "couverte": true,
+          "franchise_fcfa": 100000
+        },
+        "bris_de_glace": {
+          "couverte": true,
+          "franchise_fcfa": 15000
+        }
+      }
+    },
+    {
+      "numero": "KA-AUTO-0410",
+      "assure": "KA-AS-1003",
+      "type": "automobile",
+      "formule": "Tiers, vol et incendie",
+      "vehicule": "Camion de livraison Isuzu NPR, EF 7781 RB, usage professionnel",
+      "statut": "actif",
+      "date_effet": "2026-06-01",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "vol_incendie": {
+          "couverte": true,
+          "franchise_pourcentage": 10,
+          "plafond": "valeur à dire d'expert"
+        },
+        "dommages_tous_accidents": {
+          "couverte": false
+        },
+        "marchandises_transportees": {
+          "couverte": false
+        }
+      }
+    },
+    {
+      "numero": "KA-AUTO-0552",
+      "assure": "KA-AS-1004",
+      "type": "automobile",
+      "formule": "Tiers étendu",
+      "vehicule": "Toyota Corolla grise, AB 4417 RB",
+      "statut": "actif",
+      "date_effet": "2026-01-10",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "collision_avec_tiers_identifie": {
+          "couverte": true,
+          "franchise_fcfa": 50000
+        },
+        "dommages_tous_accidents": {
+          "couverte": false
+        },
+        "vol_incendie": {
+          "couverte": true,
+          "franchise_fcfa": 75000
+        }
+      }
+    },
+    {
+      "numero": "KA-HAB-0264",
+      "assure": "KA-AS-1005",
+      "type": "habitation",
+      "formule": "Habitation confort",
+      "bien": "Maison individuelle, Abomey-Calavi",
+      "statut": "actif",
+      "date_effet": "2024-04-01",
+      "garanties": {
+        "degats_des_eaux": {
+          "couverte": true,
+          "franchise_fcfa": 25000
+        },
+        "tempete_et_inondation": {
+          "couverte": true,
+          "franchise_fcfa": 50000
+        },
+        "vol": {
+          "couverte": true,
+          "condition": "avec effraction constatée",
+          "franchise_fcfa": 25000
+        },
+        "responsabilite_civile_vie_privee": {
+          "couverte": true
+        }
+      }
+    },
+    {
+      "numero": "KA-AUTO-0731",
+      "assure": "KA-AS-1006",
+      "type": "automobile",
+      "formule": "Deux-roues vol",
+      "vehicule": "Moto Bajaj Boxer, 4471 RB",
+      "statut": "actif",
+      "date_effet": "2025-08-20",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "vol_incendie": {
+          "couverte": true,
+          "franchise_fcfa": 30000
+        }
+      }
+    },
+    {
+      "numero": "KA-SANTE-0318",
+      "assure": "KA-AS-1007",
+      "type": "santé",
+      "formule": "Santé famille",
+      "statut": "actif",
+      "date_effet": "2025-01-01",
+      "garanties": {
+        "hospitalisation": {
+          "couverte": true,
+          "taux_remboursement": 80
+        },
+        "consultations": {
+          "couverte": true,
+          "taux_remboursement": 70
+        }
+      }
+    },
+    {
+      "numero": "KA-AUTO-0388",
+      "assure": "KA-AS-1008",
+      "type": "automobile",
+      "formule": "Tiers étendu",
+      "vehicule": "Kia Picanto rouge, AC 7702 RB",
+      "statut": "actif",
+      "date_effet": "2025-03-01",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "collision_avec_tiers_identifie": {
+          "couverte": true,
+          "franchise_fcfa": 50000
+        },
+        "vol_incendie": {
+          "couverte": true,
+          "franchise_fcfa": 75000
+        },
+        "bris_de_glace": {
+          "couverte": true,
+          "franchise_fcfa": 15000
+        }
+      }
+    },
+    {
+      "numero": "KA-HAB-0390",
+      "assure": "KA-AS-1008",
+      "type": "habitation",
+      "formule": "Habitation essentielle",
+      "bien": "Appartement, Ouidah",
+      "statut": "actif",
+      "date_effet": "2025-09-01",
+      "garanties": {
+        "degats_des_eaux": {
+          "couverte": true,
+          "franchise_fcfa": 25000
+        },
+        "vol": {
+          "couverte": false
+        }
+      }
+    },
+    {
+      "numero": "KA-AUTO-0619",
+      "assure": "KA-AS-1009",
+      "type": "automobile",
+      "formule": "Tous risques",
+      "vehicule": "Toyota Hilux, BD 3318 RB",
+      "statut": "actif",
+      "date_effet": "2024-07-01",
+      "garanties": {
+        "responsabilite_civile": {
+          "couverte": true
+        },
+        "dommages_tous_accidents": {
+          "couverte": true,
+          "franchise_fcfa": 50000
+        }
+      }
+    },
+    {
+      "numero": "KA-HAB-0455",
+      "assure": "KA-AS-1010",
+      "type": "habitation",
+      "formule": "Habitation confort",
+      "bien": "Maison individuelle, Porto-Novo",
+      "statut": "actif",
+      "date_effet": "2023-02-01",
+      "garanties": {
+        "degats_des_eaux": {
+          "couverte": true,
+          "franchise_fcfa": 25000
+        },
+        "tempete_et_inondation": {
+          "couverte": true,
+          "franchise_fcfa": 50000
+        }
+      }
+    }
+  ],
+  "sinistres": [
+    {
+      "numero": "SIN-2026-0912",
+      "contrat": "KA-AUTO-1180",
+      "date": "2026-10-02",
+      "nature": "Collision avec une moto au carrefour Saint-Michel, constat amiable",
+      "statut": "expertise planifiée",
+      "prochaine_etape": "passage de l'expert le 29 octobre 2026",
+      "gestionnaire": "Équipe automobile 2"
+    },
+    {
+      "numero": "SIN-2026-0788",
+      "contrat": "KA-AUTO-0731",
+      "date": "2026-09-14",
+      "nature": "Vol de la moto devant le domicile",
+      "statut": "en attente de pièces",
+      "prochaine_etape": "copie du dépôt de plainte à recevoir",
+      "gestionnaire": "Équipe automobile 1"
+    },
+    {
+      "numero": "SIN-2025-1470",
+      "contrat": "KA-HAB-0264",
+      "date": "2025-07-03",
+      "nature": "Infiltration d'eau dans une chambre",
+      "statut": "clos",
+      "prochaine_etape": null,
+      "gestionnaire": "Équipe habitation"
+    },
+    {
+      "numero": "SIN-2019-0207",
+      "contrat": "KA-HAB-0264",
+      "date": "2019-03-11",
+      "nature": "Dégâts des eaux dans la cuisine",
+      "statut": "archivé",
+      "prochaine_etape": null,
+      "gestionnaire": "Équipe habitation"
+    },
+    {
+      "numero": "SIN-2026-0855",
+      "contrat": "KA-SANTE-0318",
+      "date": "2026-10-06",
+      "nature": "Hospitalisation de deux jours",
+      "statut": "en attente de pièces",
+      "prochaine_etape": "facture détaillée de la clinique à recevoir",
+      "gestionnaire": "Équipe santé"
+    },
+    {
+      "numero": "SIN-2026-0903",
+      "contrat": "KA-AUTO-0388",
+      "date": "2026-10-20",
+      "nature": "Bris du pare-brise",
+      "statut": "évalué",
+      "prochaine_etape": "règlement",
+      "gestionnaire": "Équipe automobile 1",
+      "garantie": "bris_de_glace",
+      "montant_evalue_fcfa": 95000
+    },
+    {
+      "numero": "SIN-2026-0931",
+      "contrat": "KA-AUTO-0619",
+      "date": "2026-10-12",
+      "nature": "Collision par l'arrière, tiers identifié",
+      "statut": "évalué",
+      "prochaine_etape": "règlement",
+      "gestionnaire": "Équipe automobile 2",
+      "garantie": "dommages_tous_accidents",
+      "montant_evalue_fcfa": 420000
+    },
+    {
+      "numero": "SIN-2026-0944",
+      "contrat": "KA-HAB-0455",
+      "date": "2026-10-16",
+      "nature": "Dégâts des eaux dans le salon",
+      "statut": "évalué",
+      "prochaine_etape": "règlement",
+      "gestionnaire": "Équipe habitation",
+      "garantie": "degats_des_eaux",
+      "montant_evalue_fcfa": 130000
+    }
+  ]
+}

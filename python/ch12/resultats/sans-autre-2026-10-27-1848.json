@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "depense_dollars": 0.002337,
+  "resume": {
+    "sans-autre": {
+      "extractions": 6,
+      "sans_outil": 0,
+      "type_juste": 0,
+      "precision_globale": null,
+      "precision_par_type": {
+        "constat": null,
+        "facture": null,
+        "rapport_expert": null
+      },
+      "inventions": 0,
+      "substituts": 0,
+      "omissions": 0,
+      "avec_erreurs_de_format": 0,
+      "relances": 0,
+      "erreurs_restantes_apres_relance": 0,
+      "inventions_creees_par_la_relance": 0,
+      "conflits_signales": [],
+      "par_champ": {
+        "autre.type": {
+          "faux": 6
+        }
+      },
+      "cout_par_document": 0.00038952499999999994
+    }
+  },
+  "essais": [
+    {
+      "variante": "sans-autre",
+      "document": "autre-01",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": null,
+        "heure": null,
+        "lieu": "",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": null,
+          "numero_contrat": null
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": null
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00039052499999999997
+    },
+    {
+      "variante": "sans-autre",
+      "document": "autre-02",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": null,
+        "heure": null,
+        "lieu": "",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": null,
+          "numero_contrat": null
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": null
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00038852499999999997
+    },
+    {
+      "variante": "sans-autre",
+      "document": "autre-01",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": null,
+        "heure": null,
+        "lieu": "",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": null,
+          "numero_contrat": null
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": null
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00039052499999999997
+    },
+    {
+      "variante": "sans-autre",
+      "document": "autre-02",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": null,
+        "heure": null,
+        "lieu": "",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": null,
+          "numero_contrat": null
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": null
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00038852499999999997
+    },
+    {
+      "variante": "sans-autre",
+      "document": "autre-01",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": null,
+        "heure": null,
+        "lieu": "",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": null,
+          "numero_contrat": null
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": null
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00039052499999999997
+    },
+    {
+      "variante": "sans-autre",
+      "document": "autre-02",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": null,
+        "heure": null,
+        "lieu": "",
+        "blesses": "unclear",
+        "vehicule_a": {
+          "plaque": null,
+          "numero_contrat": null
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": null
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00038852499999999997
+    }
+  ]
+}

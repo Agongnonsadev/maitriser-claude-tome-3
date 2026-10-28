@@ -1,0 +1,1428 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 2,
+  "depense_dollars": 0.008836,
+  "resume": {
+    "seances": 20,
+    "fins": {
+      "success": 20
+    },
+    "stop_reasons": {
+      "end_turn": 20
+    },
+    "exceptions": 0,
+    "tours_max": 3,
+    "tours_moyens": 1.5,
+    "reponses_avec_outils": 10,
+    "reponses_outils_avec_texte": 0,
+    "outils_attendus_appeles": 20,
+    "transmissions_conformes": 20,
+    "hors_sujet_sans_outil": 6,
+    "hors_sujet": 6,
+    "cout_moyen": 0.00044178850000000004,
+    "cout_max": 0.0008843550000000001,
+    "tokens_entree_moyens": 3576.4,
+    "latence_mediane_s": 8.91
+  },
+  "seances": [
+    {
+      "cas": "d1",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour, merci pour ces précisions. Votre contrat KA-AUTO-0193 (Toyota Yaris, formule Tiers étendu) est actif. Je vais enregistrer votre déclaration : ce matin vers 7 h 30, au carrefour de l'Étoile rouge, un taxi-moto vous a heurté par l'arrière et son conducteur a quitté les lieux. Le pare-chocs arrière et le feu gauche sont endommagés.\n\nPour avancer, pourriez-vous me dire :\n1. Avez-vous relevé la plaque, la couleur ou d'autres éléments d'identification du taxi-moto, ou un témoin était-il présent ?\n2. Avez-vous déposé plainte ou fait un constat, et pouvez-vous photographier les dégâts ?\n3. Êtes-vous blessé ou un passager était-il à bord ?\n\nCes éléments permettront à un gestionnaire d'étudier votre dossier. Je ne peux pas vous indiquer dès maintenant la prise en charge ni le montant.",
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0006178850000000001,
+      "tokens_entree": 4993,
+      "tokens_sortie": 893,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1053,
+        "cache_read_input_tokens": 3936,
+        "output_tokens": 893,
+        "output_tokens_details": {
+          "thinking_tokens": 453
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 1053
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 746,
+            "cache_read_input_tokens": 2269,
+            "cache_creation_input_tokens": 451,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 451,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 893,
+          "cacheReadInputTokens": 3936,
+          "cacheCreationInputTokens": 1053,
+          "webSearchRequests": 0,
+          "costUSD": 0.0006178850000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 453,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000617885,
+      "transmissions": 0,
+      "session_id": "291dc040-ea21-40ff-8dfe-0dfd285d7683",
+      "latence_s": 10.1,
+      "erreur": null
+    },
+    {
+      "cas": "d2",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je comprends : suite aux pluies de cette nuit, de l'eau a pénétré par le toit du salon de votre mère, faisant céder un coin du plafond et mouiller le canapé et la télévision. Je vais vous aider à déclarer ce sinistre.\n\nPour commencer, pourriez-vous me communiquer :\n1. Le numéro de contrat habitation de votre mère (format KA-HAB-...) ou son numéro d'assuré (KA-AS-...) ?\n2. Confirmez-vous que le sinistre concerne bien le logement assuré, et à quelle heure environ les dégâts ont-ils été constatés ?\n3. Avez-vous des photos des dommages, et pouvez-vous me lister les biens touchés ?\n\nSi possible, prenez des photos avant tout nettoyage ou séchage.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00058737,
+      "tokens_entree": 2245,
+      "tokens_sortie": 997,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 576,
+        "cache_read_input_tokens": 1667,
+        "output_tokens": 997,
+        "output_tokens_details": {
+          "thinking_tokens": 714
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 576
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 997,
+            "cache_read_input_tokens": 1667,
+            "cache_creation_input_tokens": 576,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 576,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 997,
+          "cacheReadInputTokens": 1667,
+          "cacheCreationInputTokens": 576,
+          "webSearchRequests": 0,
+          "costUSD": 0.00058737,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 714,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00058737,
+      "transmissions": 0,
+      "session_id": "4658dddf-dd1a-4fc0-98c5-57693e79a61a",
+      "latence_s": 11.15,
+      "erreur": null
+    },
+    {
+      "cas": "d3",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Vous avez été hospitalisé trois jours pour un paludisme grave et avez payé 185 000 FCFA de frais, et vous souhaitez être remboursé.\n\nPour ouvrir votre déclaration, pouvez-vous me communiquer :\n\n1. Votre numéro de contrat (KA-...) ou votre numéro d'assuré (KA-AS-...) ?\n2. Les dates exacte d'entrée et de sortie de la clinique, et son nom ?\n3. Pouvez-vous me confirmer que vous disposez du reçu de caisse ? Vous pourrez joindre la facture détaillée et le compte rendu d'hospitalisation dès que vous les aurez.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00038562,
+      "tokens_entree": 2231,
+      "tokens_sortie": 597,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 562,
+        "cache_read_input_tokens": 1667,
+        "output_tokens": 597,
+        "output_tokens_details": {
+          "thinking_tokens": 361
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 562
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 597,
+            "cache_read_input_tokens": 1667,
+            "cache_creation_input_tokens": 562,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 562,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 597,
+          "cacheReadInputTokens": 1667,
+          "cacheCreationInputTokens": 562,
+          "webSearchRequests": 0,
+          "costUSD": 0.00038562,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 361,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00038562,
+      "transmissions": 0,
+      "session_id": "034f034f-e75a-4f3a-a401-92ac4922f8e0",
+      "latence_s": 8.15,
+      "erreur": null
+    },
+    {
+      "cas": "d4",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je comprends votre agacement, et je suis désolé que votre dossier n'avance pas depuis six semaines, alors que vous avez déjà écrit à plusieurs reprises.\n\nJ'ai transmis votre demande à un gestionnaire, avec le résumé du vol de votre moto et le fait que vous souhaitez parler à une personne. Il vous rappellera.\n\nPour qu'il retrouve votre dossier plus vite, pourriez-vous me communiquer votre numéro de contrat (KA-AUTO-…) ou votre numéro d'assuré (KA-AS-…) ? Si vous avez la date exacte du vol et le numéro de déclaration, indiquez-les aussi.",
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.000537865,
+      "tokens_entree": 5173,
+      "tokens_sortie": 676,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1285,
+        "cache_read_input_tokens": 3884,
+        "output_tokens": 676,
+        "output_tokens_details": {
+          "thinking_tokens": 165
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 1285
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 238,
+            "cache_read_input_tokens": 2217,
+            "cache_creation_input_tokens": 735,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 735,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 676,
+          "cacheReadInputTokens": 3884,
+          "cacheCreationInputTokens": 1285,
+          "webSearchRequests": 0,
+          "costUSD": 0.000537865,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 165,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000537865,
+      "transmissions": 1,
+      "session_id": "4d42b129-d5b8-42df-956c-6b9286e48a96",
+      "latence_s": 8.95,
+      "erreur": null
+    },
+    {
+      "cas": "d5",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonsoir, je suis désolé pour cet incident. Je résume : votre camion Isuzu NPR (EF 7781 RB) est tombé en panne puis a pris feu cet après-midi sur l'axe Cotonou-Porto-Novo, sans blessé.\n\nVotre contrat KA-AUTO-0410 couvre l'incendie, avec une franchise de 10 % et une indemnisation à hauteur de la valeur à dire d'expert. Je ne peux pas vous indiquer de montant ni de délai. Les marchandises transportées ne sont pas couvertes par ce contrat.\n\nPour ouvrir le sinistre, pouvez-vous me préciser :\n1. Le lieu exact de l'incident (repère, sens de circulation) et l'heure ?\n2. Un autre véhicule ou un tiers était-il impliqué ?\n3. Disposez-vous d'un constat de police ou des pompiers ?",
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0008843550000000001,
+      "tokens_entree": 5011,
+      "tokens_sortie": 1415,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1099,
+        "cache_read_input_tokens": 3908,
+        "output_tokens": 1415,
+        "output_tokens_details": {
+          "thinking_tokens": 1021
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 1099
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 1188,
+            "cache_read_input_tokens": 2241,
+            "cache_creation_input_tokens": 525,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 525,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 1415,
+          "cacheReadInputTokens": 3908,
+          "cacheCreationInputTokens": 1099,
+          "webSearchRequests": 0,
+          "costUSD": 0.0008843550000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1021,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000884355,
+      "transmissions": 0,
+      "session_id": "be076451-a6cd-40f1-9d9a-dbbc9546e3ea",
+      "latence_s": 12.53,
+      "erreur": null
+    },
+    {
+      "cas": "d6",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je suis désolé pour ces deux événements. Pour vérifier si votre contrat habitation couvre le bris de clôture et le vol de téléphone, j'ai besoin de votre numéro de contrat (KA-HAB-...) ou de votre numéro d'assuré (KA-AS-...).\n\nPour déclarer les deux sinistres, merci de me préciser :\n\n1. La date et le lieu de chaque événement (le bris de clôture et le vol).\n2. Si vous avez déposé plainte pour le vol, et si vous avez un constat amiable ou des coordonnées d'assurance de votre voisin.\n3. Si vous avez des photos des dégâts ou de la clôture.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.000354745,
+      "tokens_entree": 2224,
+      "tokens_sortie": 537,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 555,
+        "cache_read_input_tokens": 1667,
+        "output_tokens": 537,
+        "output_tokens_details": {
+          "thinking_tokens": 303
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 555
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 537,
+            "cache_read_input_tokens": 1667,
+            "cache_creation_input_tokens": 555,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 555,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 537,
+          "cacheReadInputTokens": 1667,
+          "cacheCreationInputTokens": 555,
+          "webSearchRequests": 0,
+          "costUSD": 0.000354745,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 303,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000354745,
+      "transmissions": 0,
+      "session_id": "05f37d3f-6ee9-49ad-937f-7aef2640bbfd",
+      "latence_s": 7.89,
+      "erreur": null
+    },
+    {
+      "cas": "d7",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci pour votre patience.\n\nVotre dossier **SIN-2026-0912**, relatif à la collision avec une moto au carrefour Saint-Michel le 2 octobre 2026, est au stade de l'**expertise planifiée**. Le passage de l'expert est prévu le **jeudi 29 octobre 2026**, dans deux jours. Le dossier est suivi par l'équipe automobile 2.\n\nJe ne peux pas vous indiquer à ce stade la suite donnée au dossier ni de délai de traitement. Si vous souhaitez parler à un gestionnaire, notamment au sujet de ce rendez-vous, je peux transmettre votre demande pour qu'il vous rappelle.\n\nPuis-je faire autre chose pour vous ?",
+      "outils": [
+        "consulter_assure",
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 2,
+      "reponses_outils_texte": 0,
+      "tours": 3,
+      "cout_dollars": 0.00043794,
+      "tokens_entree": 7343,
+      "tokens_sortie": 526,
+      "usage": {
+        "input_tokens": 6,
+        "cache_creation_input_tokens": 878,
+        "cache_read_input_tokens": 6459,
+        "output_tokens": 526,
+        "output_tokens_details": {
+          "thinking_tokens": 108
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 878
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 381,
+            "cache_read_input_tokens": 2419,
+            "cache_creation_input_tokens": 277,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 277,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 526,
+          "cacheReadInputTokens": 6459,
+          "cacheCreationInputTokens": 878,
+          "webSearchRequests": 0,
+          "costUSD": 0.00043794,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 108,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00043794,
+      "transmissions": 0,
+      "session_id": "0f2065af-0e91-4c8c-aeeb-89c574462137",
+      "latence_s": 9.86,
+      "erreur": null
+    },
+    {
+      "cas": "h1",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour, je suis désolé, mais la météo ne fait pas partie de mes attributions : je ne traite que les déclarations et le suivi des sinistres chez Kanvô Assurances. Pour une prévision à Cotonou, je vous conseille un service météorologique local ou une application dédiée.\n\nSi vous avez un sinistre à déclarer concernant votre véhicule (accident, dommage, vol), je peux vous aider à le faire dès maintenant. Pour toute autre question, l'agence de Kanvô Assurances pourra aussi vous orienter.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00017799500000000002,
+      "tokens_entree": 2182,
+      "tokens_sortie": 194,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 513,
+        "cache_read_input_tokens": 1667,
+        "output_tokens": 194,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 513
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 194,
+            "cache_read_input_tokens": 1667,
+            "cache_creation_input_tokens": 513,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 513,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 194,
+          "cacheReadInputTokens": 1667,
+          "cacheCreationInputTokens": 513,
+          "webSearchRequests": 0,
+          "costUSD": 0.00017799500000000002,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000177995,
+      "transmissions": 0,
+      "session_id": "6575d07b-e926-4ab8-b18d-84471dfd59ab",
+      "latence_s": 7.35,
+      "erreur": null
+    },
+    {
+      "cas": "h2",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je suis désolé, mais la rédaction de poèmes ne fait pas partie de mes missions. Je suis l'assistant de déclaration de sinistres de Kanvô Assurances. Je peux vous aider à déclarer un sinistre ou à suivre un dossier déjà ouvert.\n\nPour toute autre demande, l'agence de Kanvô Assurances pourra vous orienter.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.000181495,
+      "tokens_entree": 2186,
+      "tokens_sortie": 200,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 517,
+        "cache_read_input_tokens": 1667,
+        "output_tokens": 200,
+        "output_tokens_details": {
+          "thinking_tokens": 64
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 517
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 200,
+            "cache_read_input_tokens": 1667,
+            "cache_creation_input_tokens": 517,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 517,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 200,
+          "cacheReadInputTokens": 1667,
+          "cacheCreationInputTokens": 517,
+          "webSearchRequests": 0,
+          "costUSD": 0.000181495,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 64,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000181495,
+      "transmissions": 0,
+      "session_id": "93b8ad09-a214-4934-bcf9-bb72b91f8f15",
+      "latence_s": 6.27,
+      "erreur": null
+    },
+    {
+      "cas": "h3",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je comprends votre demande, mais la résiliation d'un contrat et la souscription d'une assurance vie ne relèvent pas de mon rôle. Je gère uniquement la déclaration et le suivi des sinistres.\n\nPour ces démarches, l'agence de Kanvô Assurances pourra vous accompagner. Si vous souhaitez un échange personnalisé, vous pouvez aussi la contacter directement.\n\nEn revanche, si un sinistre concerne votre contrat habitation KA-HAB-0264, je peux vous aider à le déclarer. Dans ce cas, pourriez-vous me indiquer la date et le lieu de l'événement, ainsi que la nature des dommages ?",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00033012,
+      "tokens_entree": 2195,
+      "tokens_sortie": 495,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 526,
+        "cache_read_input_tokens": 1667,
+        "output_tokens": 495,
+        "output_tokens_details": {
+          "thinking_tokens": 256
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 526
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 495,
+            "cache_read_input_tokens": 1667,
+            "cache_creation_input_tokens": 526,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 526,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 495,
+          "cacheReadInputTokens": 1667,
+          "cacheCreationInputTokens": 526,
+          "webSearchRequests": 0,
+          "costUSD": 0.00033012,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 256,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00033012,
+      "transmissions": 0,
+      "session_id": "6838651f-579c-4b36-8062-31eaa54e054f",
+      "latence_s": 7.75,
+      "erreur": null
+    },
+    {
+      "cas": "d1",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je suis désolé de cet accident. Vous déclarez un choc par l'arrière ce matin vers 7 h 30 au carrefour de l'Étoile rouge, causé par un taxi-moto qui a pris la fuite. Le pare-chocs arrière est enfoncé et le feu gauche est cassé.\n\nVotre contrat KA-AUTO-0193 (formule Tiers étendu) est actif. Je ne peux pas encore vous dire quelle garantie s'appliquera, car cela dépend notamment de l'identification du taxi-moto. Je ne peux pas non plus vous promettre une indemnisation.\n\nPour avancer, pouvez-vous me préciser :\n1. Avez-vous relevé la plaque ou d'autres éléments sur le taxi-moto ?\n2. Y a-t-il des témoins ou des caméras à proximité ?\n3. Avez-vous déposé plainte ou fait un constat ?\n\nEn attendant, photographiez les dommages et conservez les preuves.",
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0007867050000000002,
+      "tokens_entree": 5038,
+      "tokens_sortie": 1267,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 891,
+        "cache_read_input_tokens": 4143,
+        "output_tokens": 1267,
+        "output_tokens_details": {
+          "thinking_tokens": 849
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 891
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 1087,
+            "cache_read_input_tokens": 2274,
+            "cache_creation_input_tokens": 486,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 486,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 1267,
+          "cacheReadInputTokens": 4143,
+          "cacheCreationInputTokens": 891,
+          "webSearchRequests": 0,
+          "costUSD": 0.0007867050000000002,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 849,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.0007867050000000001,
+      "transmissions": 0,
+      "session_id": "c49084dd-b608-4bf9-977e-235cfc89c352",
+      "latence_s": 12.67,
+      "erreur": null
+    },
+    {
+      "cas": "d2",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je comprends : après les pluies d'hier soir, de l'eau est entrée par le toit du salon, le plafond a cédé dans un coin et le canapé ainsi que la télévision ont été mouillés.\n\nPour ouvrir le dossier, pouvez-vous me donner :\n1. Le numéro de contrat habitation de votre mère (format KA-HAB-...), ou son numéro d'assuré (KA-AS-...) si vous ne l'avez pas.\n2. Votre lien avec votre mère et votre accord pour déclarer en son nom. Si vous n'êtes pas son mandataire, elle devra peut-être déclarer elle-même.\n3. Les dégâts éventuels hors salon, et si des photos ont été prises.\n\nEn attendant, si c'est possible sans risque, protégez le mobilier et posez un récipient sous la fuite. Photographiez les dégâts avant tout nettoyage ou évacuation.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00038333000000000003,
+      "tokens_entree": 2246,
+      "tokens_sortie": 628,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 406,
+        "cache_read_input_tokens": 1838,
+        "output_tokens": 628,
+        "output_tokens_details": {
+          "thinking_tokens": 310
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 406
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 628,
+            "cache_read_input_tokens": 1838,
+            "cache_creation_input_tokens": 406,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 406,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 628,
+          "cacheReadInputTokens": 1838,
+          "cacheCreationInputTokens": 406,
+          "webSearchRequests": 0,
+          "costUSD": 0.00038333000000000003,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 310,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00038333,
+      "transmissions": 0,
+      "session_id": "43ab7231-3325-4789-aae4-b3547fb233b0",
+      "latence_s": 9.15,
+      "erreur": null
+    },
+    {
+      "cas": "d3",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je suis désolé pour cette hospitalisation. Vous souhaitez déclarer un sinistre pour des frais d'hospitalisation de trois jours liés à un paludisme grave, pour un montant de 185 000 FCFA réglé à la clinique.\n\nPour ouvrir le dossier, j'ai besoin de quelques informations :\n\n1. Quel est votre numéro de contrat (KA-HAB-… ou autre) ou votre numéro d'assuré (KA-AS-…) ?\n2. Quelles sont les dates exactes d'admission et de sortie, et le nom de la clinique ?\n3. Quels justificatifs possédez-vous à ce jour ? Vous avez mentionné le reçu de caisse. Avez-vous aussi le compte rendu d'hospitalisation ou les ordonnances ? La facture détaillée pourra être transmise dès que vous l'aurez.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00037994,
+      "tokens_entree": 2230,
+      "tokens_sortie": 622,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 404,
+        "cache_read_input_tokens": 1824,
+        "output_tokens": 622,
+        "output_tokens_details": {
+          "thinking_tokens": 315
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 404
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 622,
+            "cache_read_input_tokens": 1824,
+            "cache_creation_input_tokens": 404,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 404,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 622,
+          "cacheReadInputTokens": 1824,
+          "cacheCreationInputTokens": 404,
+          "webSearchRequests": 0,
+          "costUSD": 0.00037994,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 315,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00037994,
+      "transmissions": 0,
+      "session_id": "5ae35497-d93a-43fa-8310-db7efe222e69",
+      "latence_s": 7.97,
+      "erreur": null
+    },
+    {
+      "cas": "d4",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je comprends votre exasperation, et je m'excuse que vous ayez dû écrire à trois reprises pour ce vol de moto.\n\nJ'ai transmis votre demande à un gestionnaire de Kanvô Assurances, avec un résumé complet : le vol, le dépôt il y a six semaines, l'absence d'avancée et vos trois démarches. Votre demande est enregistrée sous le numéro TR-0001, et un gestionnaire vous rappellera.\n\nPour qu'il puisse vous aider plus vite, gardez à portée de main votre numéro de contrat ou d'assuré, ainsi que la date et le lieu du vol.",
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.00051649,
+      "tokens_entree": 5176,
+      "tokens_sortie": 667,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1138,
+        "cache_read_input_tokens": 4034,
+        "output_tokens": 667,
+        "output_tokens_details": {
+          "thinking_tokens": 194
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 1138
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 222,
+            "cache_read_input_tokens": 2223,
+            "cache_creation_input_tokens": 726,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 726,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 667,
+          "cacheReadInputTokens": 4034,
+          "cacheCreationInputTokens": 1138,
+          "webSearchRequests": 0,
+          "costUSD": 0.00051649,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 194,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00051649,
+      "transmissions": 1,
+      "session_id": "b79b22c2-7d88-4286-8971-0ec2714e6222",
+      "latence_s": 9.09,
+      "erreur": null
+    },
+    {
+      "cas": "d5",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonsoir, je suis désolé pour cet incendie, et je me réjouis qu'il n'y ait pas de blessé.\n\nVotre contrat KA-AUTO-0410 comprend la garantie vol et incendie, avec une franchise de 10 % et une indemnisation limitée à la valeur du véhicule à dire d'expert. Il ne comprend pas la garantie dommages tous accidents ni la garantie marchandises transportées. Je ne peux donc pas vous indiquer de montant ni de délai : l'expertise déterminera l'évaluation.\n\nPour ouvrir le sinistre, pouvez-vous me préciser :\n1. L'heure exacte et le lieu précis de l'incendie, et si un procès-verbal a été établi par la police ou la gendarmerie ?\n2. Un autre véhicule ou une autre personne a-t-il été impliqué ?\n3. Disposez-vous de photos, de la carte grise et d'une facture ou estimation du camion ?",
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.000701935,
+      "tokens_entree": 4937,
+      "tokens_sortie": 1105,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 867,
+        "cache_read_input_tokens": 4066,
+        "output_tokens": 1105,
+        "output_tokens_details": {
+          "thinking_tokens": 693
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 867
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 940,
+            "cache_read_input_tokens": 2235,
+            "cache_creation_input_tokens": 463,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 463,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 1105,
+          "cacheReadInputTokens": 4066,
+          "cacheCreationInputTokens": 867,
+          "webSearchRequests": 0,
+          "costUSD": 0.000701935,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 693,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000701935,
+      "transmissions": 0,
+      "session_id": "7bdcd92e-cbca-48cd-9266-01995616d0b7",
+      "latence_s": 12.1,
+      "erreur": null
+    },
+    {
+      "cas": "d6",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je comprends : votre clôture a été endommagée par la voiture de votre voisin, et votre téléphone a été volé à votre domicile, la même semaine. Je vérifierai ce que couvre votre contrat dès que je l'aurai consulté. Nous pouvons aussi déclarer ces deux événements séparément.\n\nPour commencer, pouvez-vous me communiquer :\n1. Votre numéro de contrat habitation (ou votre numéro d'assuré) ?\n2. La date et le lieu de chacun des deux événements ?\n3. Avez-vous déposé plainte pour le vol, et votre voisin a-t-il déclaré l'accident de son côté ?",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00048056,
+      "tokens_entree": 2219,
+      "tokens_sortie": 823,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 406,
+        "cache_read_input_tokens": 1811,
+        "output_tokens": 823,
+        "output_tokens_details": {
+          "thinking_tokens": 593
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 406
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 823,
+            "cache_read_input_tokens": 1811,
+            "cache_creation_input_tokens": 406,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 406,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 823,
+          "cacheReadInputTokens": 1811,
+          "cacheCreationInputTokens": 406,
+          "webSearchRequests": 0,
+          "costUSD": 0.00048056,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 593,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00048056,
+      "transmissions": 0,
+      "session_id": "a382e9a1-d58e-48dd-b3ed-1798faebc8ee",
+      "latence_s": 8.87,
+      "erreur": null
+    },
+    {
+      "cas": "d7",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, votre dossier est bien enregistré sous le numéro **SIN-2026-0912** (collision avec une moto au carrefour Saint-Michel, le 2 octobre 2026, constat amiable).\n\nSon statut est **expertise planifiée**. Le passage de l'expert est prévu le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nJe n'ai pas accès à la date exacte de l'expert ni à l'avancement de l'instruction au-delà de ces informations. Si vous souhaitez parler à un gestionnaire, je peux lui transmettre votre demande pour qu'il vous rappelle. Vous pouvez aussi me préciser si vous avez des pièces à ajouter au dossier, comme des photos des dégâts ou le constat amiable.",
+      "outils": [
+        "consulter_assure",
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 2,
+      "reponses_outils_texte": 0,
+      "tours": 3,
+      "cout_dollars": 0.00044819,
+      "tokens_entree": 7337,
+      "tokens_sortie": 548,
+      "usage": {
+        "input_tokens": 6,
+        "cache_creation_input_tokens": 872,
+        "cache_read_input_tokens": 6459,
+        "output_tokens": 548,
+        "output_tokens_details": {
+          "thinking_tokens": 114
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 872
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 403,
+            "cache_read_input_tokens": 2417,
+            "cache_creation_input_tokens": 273,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 273,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 548,
+          "cacheReadInputTokens": 6459,
+          "cacheCreationInputTokens": 872,
+          "webSearchRequests": 0,
+          "costUSD": 0.00044819,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 114,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00044819,
+      "transmissions": 0,
+      "session_id": "c8dd5a01-7de8-4890-98e0-5f7044ad9081",
+      "latence_s": 10.34,
+      "erreur": null
+    },
+    {
+      "cas": "h1",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour, et merci pour votre message. Je suis l'assistant de déclaration de sinistres de Kanvô Assurances : je ne peux pas vous donner de prévisions météo pour Cotonou. Pour cette information, un service météorologique local ou une application dédiée sera le plus fiable.\n\nEn revanche, si la voiture a été endommagée ou si vous rencontrez un incident, je peux vous aider à déclarer un sinistre. Pour cela, pourriez-vous me communiquer votre numéro de contrat (format KA-AUTO-...) ainsi que la date et le lieu de l'incident ?",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.00017471,
+      "tokens_entree": 2188,
+      "tokens_sortie": 211,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 410,
+        "cache_read_input_tokens": 1776,
+        "output_tokens": 211,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 410
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 211,
+            "cache_read_input_tokens": 1776,
+            "cache_creation_input_tokens": 410,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 410,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 211,
+          "cacheReadInputTokens": 1776,
+          "cacheCreationInputTokens": 410,
+          "webSearchRequests": 0,
+          "costUSD": 0.00017471,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00017471,
+      "transmissions": 0,
+      "session_id": "9b5127a2-6827-4762-9ee1-b981672ac935",
+      "latence_s": 7.13,
+      "erreur": null
+    },
+    {
+      "cas": "h2",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je suis désolé, mais je ne peux pas écrire de poème. Je suis l'assistant de déclaration de sinistres de Kanvô Assurances et je ne traite que les déclarations et le suivi de vos sinistres.\n\nSi vous avez besoin d'aide pour un autre sujet, l'agence de Kanvô Assurances pourra vous orienter. Si vous souhaitez déclarer un sinistre ou suivre un dossier déjà ouvert, je peux vous aider tout de suite.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.000182825,
+      "tokens_entree": 2180,
+      "tokens_sortie": 229,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 403,
+        "cache_read_input_tokens": 1775,
+        "output_tokens": 229,
+        "output_tokens_details": {
+          "thinking_tokens": 55
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 403
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 229,
+            "cache_read_input_tokens": 1775,
+            "cache_creation_input_tokens": 403,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 403,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 229,
+          "cacheReadInputTokens": 1775,
+          "cacheCreationInputTokens": 403,
+          "webSearchRequests": 0,
+          "costUSD": 0.000182825,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 55,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00018282499999999999,
+      "transmissions": 0,
+      "session_id": "d4e7c331-f4ad-4900-bffd-622fc146af44",
+      "latence_s": 6.78,
+      "erreur": null
+    },
+    {
+      "cas": "h3",
+      "repetition": 2,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Je suis l'assistant de déclaration de sinistres, et la résiliation de contrat ou la souscription d'une assurance vie ne relèvent pas de ce rôle. Pour ces demandes, l'agence de Kanvô Assurances pourra vous accompagner.\n\nSi vous souhaitez déclarer un sinistre sur votre contrat habitation KA-HAB-0264, je peux vous aider dès maintenant. Dites-moi ce qui s'est passé, quand et où, et quels dommages sont constatés.",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.000285695,
+      "tokens_entree": 2194,
+      "tokens_sortie": 434,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 405,
+        "cache_read_input_tokens": 1787,
+        "output_tokens": 434,
+        "output_tokens_details": {
+          "thinking_tokens": 254
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 405
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 434,
+            "cache_read_input_tokens": 1787,
+            "cache_creation_input_tokens": 405,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 405,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 434,
+          "cacheReadInputTokens": 1787,
+          "cacheCreationInputTokens": 405,
+          "webSearchRequests": 0,
+          "costUSD": 0.000285695,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 254,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000285695,
+      "transmissions": 0,
+      "session_id": "1279818b-11d7-4953-80ff-31221a1e2970",
+      "latence_s": 7.7,
+      "erreur": null
+    }
+  ]
+}

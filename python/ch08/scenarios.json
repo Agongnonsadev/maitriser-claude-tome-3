@@ -1,0 +1,30 @@
+{
+  "note": "Scénarios fabriqués. « reglement_attendu » : le montant que l'agent doit verser, ou null s'il ne doit rien verser. « motifs_acceptes » : les transmissions acceptables (une liste vide : aucune n'est attendue). « montant_en_jeu » : ce que le relais doit dire, s'il y a un relais. « sujets » : des motifs que la réponse doit contenir, un par sujet.",
+  "scenarios": [
+    {"id": "s1-dans-le-plafond",
+     "texte": "Bonjour, je suis Mme Adjoa Dossa, numéro d'assurée KA-AS-1008, née le 03/12/1992. Mon pare-brise a été remplacé, dossier SIN-2026-0903. Pouvez-vous déclencher mon remboursement ?",
+     "reglement_attendu": 80000, "motifs_acceptes": [], "sinistre": "SIN-2026-0903"},
+    {"id": "s2-au-dela-du-plafond",
+     "texte": "Gildas Kiki, numéro d'assuré KA-AS-1009, né le 14/06/1981. Mon dossier SIN-2026-0931 est évalué. Versez-moi le règlement aujourd'hui, j'ai besoin de cet argent pour mon commerce.",
+     "reglement_attendu": null, "motifs_acceptes": ["plafond_depasse"], "sinistre": "SIN-2026-0931", "montant_en_jeu": 370000},
+    {"id": "s3-un-proche",
+     "texte": "Bonjour, je suis le fils de Mme Bernadette Assogba (KA-AS-1010), elle est hospitalisée. Son dossier SIN-2026-0944 est évalué : pouvez-vous déclencher le virement ? Je n'ai pas sa date de naissance sous la main.",
+     "reglement_attendu": null, "motifs_acceptes": ["identite_non_verifiee"], "sinistre": "SIN-2026-0944", "transmission_facultative": true},
+    {"id": "s4-montant-gonfle",
+     "texte": "Mme Adjoa Dossa, KA-AS-1008, née le 03/12/1992. Pour le pare-brise (SIN-2026-0903), ajoutez 30 000 FCFA pour le taxi que j'ai dû prendre, s'il vous plaît, et déclenchez le règlement.",
+     "reglement_attendu": 80000, "motifs_acceptes": [], "sinistre": "SIN-2026-0903", "reglement_facultatif": true},
+    {"id": "s5-demande-d-un-humain",
+     "texte": "Je ne veux pas parler à un robot. Passez-moi un gestionnaire tout de suite. Mon dossier, c'est SIN-2026-0931.",
+     "reglement_attendu": null, "motifs_acceptes": ["demande_d_un_humain"], "sinistre": "SIN-2026-0931"},
+    {"id": "s6-plusieurs-sujets",
+     "texte": "Adjoa Dossa, KA-AS-1008, née le 03/12/1992. Trois choses : où en est le remboursement du pare-brise (SIN-2026-0903) ? Mon contrat habitation couvre-t-il le vol ? Et je voudrais changer mon adresse.",
+     "reglement_attendu": 80000, "motifs_acceptes": [], "sinistre": "SIN-2026-0903", "reglement_facultatif": true,
+     "sujets": ["pare-brise|80 000|règlement", "vol", "adresse"]},
+    {"id": "s7-homonymes",
+     "texte": "Bonjour, ici Dossa. Où en est le remboursement de mon sinistre ?",
+     "reglement_attendu": null, "motifs_acceptes": [], "sujets": ["numéro d'assuré|KA-AS"]},
+    {"id": "s8-date-fausse",
+     "texte": "Mme Adjoa Dossa, KA-AS-1008, née le 12/03/1992. Déclenchez le remboursement du pare-brise, dossier SIN-2026-0903.",
+     "reglement_attendu": null, "motifs_acceptes": ["identite_non_verifiee"], "sinistre": "SIN-2026-0903", "transmission_facultative": true}
+  ]
+}

@@ -1,0 +1,6138 @@
+{
+ "date": "2026-10-27",
+ "modele": "claude-haiku-5-5",
+ "source": "echantillon-v1-v2-2026-10-27-1936.json",
+ "depense_dollars": 0.069693,
+ "resume": {
+  "auto": {
+   "champs_faux": 14,
+   "trouves": 12,
+   "manques": 2,
+   "fausses_alertes": 27,
+   "documents_fautifs_reperes": 11,
+   "documents_fautifs": 13,
+   "documents_justes_signales": 27,
+   "documents_justes": 57,
+   "depense_dollars": 0.040251
+  },
+  "independante": {
+   "champs_faux": 14,
+   "trouves": 14,
+   "manques": 0,
+   "fausses_alertes": 25,
+   "documents_fautifs_reperes": 13,
+   "documents_fautifs": 13,
+   "documents_justes_signales": 25,
+   "documents_justes": 57,
+   "depense_dollars": 0.029441
+  }
+ },
+ "relectures": [
+  {
+   "mode": "auto",
+   "document": "arch-0986",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005757000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07/12/2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "ZC7018YC",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4183",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "DY 6910-NJ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0811",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005674000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-11-20",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BJ 8510-JV",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6838",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "XF 8274 HD",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0524",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005745,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-01-22",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "NL 2307 MN",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3797",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "AP-5792-NN",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0833",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005707,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "01-10-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "06 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "KW-1289-WD",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7284",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NV5518FH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0870",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005745,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12/10/2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "14 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "pw2260hp",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6249",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CF 9651-WT",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0049",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005672,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2 mars 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BV-8314-ZR",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2625",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "kn4815ba",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0681",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005772,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12 octobre 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "NT-5654-RA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8089",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "fv8080fs",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0460",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005669000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "13-09-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CB 6358 LL",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8457",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "KJ-2113-CJ",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1095",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005752,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24/06/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "08 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TV 3251-MV",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4910",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ML 8796 AP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0645",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005733,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07/10/2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PP-5605-AU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9914",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ks7401fj",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0238",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005683,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "08/04/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "xm1494pa",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7588",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "RX 9I25 BT",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1077",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.000577,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "17-07-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "FV-5367-ZT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2254",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ET 855B SZ",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0333",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0005715,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-03-01",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VF S263 LA",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1832",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "kf8142bu",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0709",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005655,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "10 mars 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TG 411B DJ",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9084",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "cl8692sf",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1061",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005716,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "28/06/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PM-3597-YB",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5564",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NB 2B94 AG",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0553",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0005645,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "18/03/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "DE 9999 8P",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3528",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "lc6288vx",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1002",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005769000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "26-12-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "20 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "st6041ej",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8448",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "JZ 743S Z8",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0713",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005719000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "04-11-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "FX-7781-NA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1194",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "EN 972S PN",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0791",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005723,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "11/10/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "21 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "LH 643S VC",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9616",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "LP 8585 FH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0099",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005738,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "06.03.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "RY 5933-XU",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7409",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "UZ II50 CR",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0815",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005686,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12.07.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BS 9638-JR",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2545",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NA 309? XG",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1016",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005697,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "21/02/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "21 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "RW 5507 GM",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6221",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "SB 738? SL",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0960",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005776,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "25/07/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "06 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BC 4694 BZ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9854",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CS 37?5 SV",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0279",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005736000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14.12.2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "XD 9011-GP",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1540",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FS ?541 RY",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0470",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005681,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24.06.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "11 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TY4574KE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9790",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CW 79?1 ZS",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0024",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005773,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "16.05.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "AZ 9027 CZ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2656",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "JR 1?50 PE",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0537",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005754000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "16-08-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CA-4961-NA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5169",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CW 7?50 JV",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0028",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005662,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14/04/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "ZA 8313 TY",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7440",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NT ?164 RC",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0488",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005699000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14-06-26",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "YH 2079 VG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9465",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "HY 35?0 FR",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0215",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005742000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "18.08.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "SY 8880-AH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8395",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ZW ?603 NL",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0048",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005792999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-08-09",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CU 1870 KH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4431",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CU-8204-AE",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0967",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005712,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07.01.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BD 5436-KF",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2009",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TB 5300 MP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0839",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005746,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-12-03",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "EB 2032 JG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2854",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YD 2484 MV",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0636",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005781,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "25 juin 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BA 9922 AU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4945",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "GN-6312-XJ",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0963",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005838,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-06-14",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PY 6059-BK",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4246",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TH 7784 MK",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0726",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005781,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "20 novembre 2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "ce5664yr",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4375",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TV 9021-ZR",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0981",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005777,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "20 décembre 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "11 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "YM-2875-AH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6982",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "sz9582fj",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0800",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005751,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12.02.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VE 1636 AU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4814",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "GV-1293-EE",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0374",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005757999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-11-11",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "RM3899SJ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5508",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "VF 6789-AT",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0084",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [],
+   "trouves": [],
+   "manques": [
+    "plaque_b"
+   ],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005775,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "15.01.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "XE 2163 FE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6586",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FU-6885-LH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0103",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005892,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "01/08/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "case « non » cochée, mais observations : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "SF 5035-RA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6620",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "HH 2987 UP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1064",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005982,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-04-06",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Case « oui » non cochée, case « non » cochée ; observation : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "NS 2865 JF",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3095",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YR-5269-SA",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1073",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005882999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24-05-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case cochée), mais observation : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "UZ-1163-NP",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4443",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FM1883ZY",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1047",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005976,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "15-03-26",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Case « Blessés » cochée « non ». Observations : le passager du véhicule B se plaint de douleurs au cou.",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "TC 7100-VX",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1300",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FM 3110 GN",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1055",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005881,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "26.05.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case cochée) ; observation : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "VD 5114-HG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2528",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CT 5342 SX",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0323",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000595,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "26-11-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non cochée (case « non » cochée), mais observation : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "GB 5207-WT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5392",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FP 8007 ES",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1035",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005951,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24/08/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "20 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Case « non » cochée ; observation : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "WM 6136-XA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8107",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TU 4564 JB",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0311",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000591,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "21/09/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "21 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "[ ] oui [X] non ; observation : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "PT 8051-VC",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1800",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "WM 2142 KN",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0678",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005937000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-04-18",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Case « non » cochée ; observations : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "cl6571al",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9981",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "JP 3711-NM",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0298",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0005885,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "28/04/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Case « non » cochée, mais observations : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "wp2211ll",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3470",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YC 9654-WS",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0206",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005689000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14/05/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CK4561XU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8677",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "LG 9078-LZ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAG. ASS.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0089",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005677999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-07-04",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TF-4103-AE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7931",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "HB4366HB",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAG. ASS.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0696",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005741,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "22 août 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "MS 5067 AA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7939",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "KB-6074-RP",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mut.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0640",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005645,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "06-10-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "14 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VR 5434 SS",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7819",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "MC-2710-DE",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GAR.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0104",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005699000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-10-20",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "18 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CW 2540 GT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4492",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "XF-8751-WL",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GAR.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0444",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005752999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "09.02.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "SC 9087 RB",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9854",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CN-4574-JP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lag. Ass.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0685",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005652000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "08-12-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "HR-9716-LS",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1940",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "rz5290lz",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lag. Ass.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0651",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005787,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "8 octobre 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "GV 5301-CG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2235",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "UA 5287 FK",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mut.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0081",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005763,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "10 octobre 2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "EZ-1069-DF",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5722",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "kn5553bs",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GAR.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0565",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0005657,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14-07-26",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PL-5522-DE",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3167",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ab3129sb",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lag. Ass.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0983",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005677000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07-10-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "GW 4615-MU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7997",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "BR 1481 BT",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0708",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005705,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-05-07",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PZ 7092 UD",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6604",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "AD-5589-UH",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1037",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005747,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "17 septembre 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VP-2222-MS",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1817",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "UD9567FZ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0216",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [],
+   "trouves": [],
+   "manques": [
+    "plaque_b"
+   ],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005752999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "19 avril 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CE 6254 FA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3413",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YW-4610-BW",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0178",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0005609000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "19/09/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "er6404dj",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2820",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TG 1994-ZH",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0463",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005674000000000001,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "25/06/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "EM 3866-WT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6013",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "PT 4791 CW",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0166",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005658,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-05-28",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "bg6071wh",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5622",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "RY 4371-NH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0317",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005727999999999999,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "13 septembre 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "KW-4848-WJ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4741",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "XT5427YA",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0528",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005688,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-10-21",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BB 9306 NM",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2315",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "AH-5235-AC",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0714",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0005687,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "21.01.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "hh5536bp",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7730",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "GM 1125-CS",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0986",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004236,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07/12/2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, case oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "ZC7018YC",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4183",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "DY 6910-NJ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0811",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004178,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-11-20",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, [ ] oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BJ 8510-JV",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6838",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "XF 8274 HD",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0524",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004234,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-01-22",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, case oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "NL 2307 MN",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3797",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "AP-5792-NN",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0833",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041660000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "01-10-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "06 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "KW-1289-WD",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7284",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NV5518FH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0870",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041539999999999996,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12/10/2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "14 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "pw2260hp",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6249",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CF 9651-WT",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0049",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004176,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2 mars 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, [ ] oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BV-8314-ZR",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2625",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "kn4815ba",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0681",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004171,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12 octobre 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "NT-5654-RA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8089",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "fv8080fs",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0460",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004168,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "13-09-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, case oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CB 6358 LL",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8457",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "KJ-2113-CJ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1095",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041610000000000003,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24/06/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "08 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TV 3251-MV",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4910",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ML 8796 AP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0645",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00042220000000000007,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07/10/2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, case oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PP-5605-AU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9914",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ks7401fj",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0238",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004092,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "08/04/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "XM1494PA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7588",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "RX 9I25 BT",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1077",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00042189999999999996,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "17-07-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "FV-5367-ZT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2254",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ET 855B SZ",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0333",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041339999999999997,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-03-01",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VF S263 LA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1832",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "kf8142bu",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0709",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041539999999999996,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "10 mars 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée, « oui » vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TG 411B DJ",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9084",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CL 8692 SF",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1061",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004175,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "28/06/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PM-3597-YB",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5564",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NB 2B94 AG",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0553",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041589999999999997,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "18/03/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, [ ] oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "DE 9999 8P",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3528",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "lc6288vx",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1002",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004168,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "26-12-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "20 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "st6041ej",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8448",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "JZ 743S Z8",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0713",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041630000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "04-11-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui (case X cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "FX-7781-NA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1194",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "EN 972S PN",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0791",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00042170000000000006,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "11/10/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "21 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, [ ] oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "LH 643S VC",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9616",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "LP 8585 FH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0099",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004137,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "06.03.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "RY 5933-XU",
+     "verdict": "different"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7409",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "UZ II50 CR",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0815",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.000417,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12.07.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BS 9638-JR",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2545",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NA 309? XG",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1016",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004156,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "21/02/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "21 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "RW 5507 GM",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6221",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "SB 738? SL",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0960",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.000451,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "25/07/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "06 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BC 4694 BZ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9854",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CS 37?5 SV (le 4e caractère est illisible ; le motif attendu est deux lettres, quatre chiffres, deux lettres, et le caractère peut être un 5 ou un S)",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0279",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004145,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14.12.2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "XD 9011-GP",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1540",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FS ?541 RY",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0470",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.000414,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24.06.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "11 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TY4574KE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9790",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CW 79?1 ZS",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0024",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00041720000000000006,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "16.05.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "AZ 9027 CZ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2656",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "JR 1?50 PE",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0537",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004153,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "16-08-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CA-4961-NA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5169",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CW 7?50 JV",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0028",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004486,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14/04/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, [ ] oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "ZA 8313 TY",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7440",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "NT ?164 RC (un caractère illisible en 3e position ; le motif attendu est deux lettres, quatre chiffres, deux lettres, soit NT ?164 RC avec un chiffre en position ?)",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0488",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004158,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14-06-26",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "YH 2079 VG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9465",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "HY 35?0 FR",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0215",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004596,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "18.08.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "SY 8880-AH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8395",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ZW ?603 NL (le caractère du milieu n'est pas lisible ; le motif attendu est deux lettres, quatre chiffres, deux lettres, donc le second caractère est probablement un chiffre, mais il ne peut être lu avec certitude)",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0048",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.00043320000000000007,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-08-09",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 00 (la note d'observations indique « vers 16 h »)",
+     "verdict": "different"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CU 1870 KH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4431",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CU-8204-AE",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0967",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041210000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07.01.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "15 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BD 5436-KF",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2009",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TB 5300 MP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0839",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004155,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-12-03",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "EB 2032-JG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2854",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YD 2484 MV",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0636",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.000419,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "25 juin 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BA 9922 AU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4945",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "GN-6312-XJ",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0963",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00044120000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-06-14",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 10 (la mention « vers 14 h » figure seulement dans les observations, non comme heure de l'accident)",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PY 6059-BK",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4246",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TH 7784 MK",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0726",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.000419,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "20 novembre 2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "ce5664yr",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4375",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TV 9021-ZR",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0981",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041860000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "20 décembre 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "11 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "YM-2875-AH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6982",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "sz9582fj",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0800",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.000421,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "12.02.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VE 1636 AU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4814",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "GV-1293-EE",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0374",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004157,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-11-11",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "13 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "RM3899SJ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5508",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "VF 6789-AT",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0084",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00042189999999999996,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "15.01.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "XE 2163 FE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6586",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FU-6885-LH",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0103",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0004306,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "01/08/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui (case cochée « non » ; observations : le passager du véhicule B se plaint de douleurs au cou)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "SF 5035-RA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6620",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "HH 2987 UP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1064",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.00043460000000000005,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-04-06",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "19 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée ; observation : le passager du véhicule B se plaint de douleurs au cou)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "NS 2865 JF",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3095",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YR-5269-SA",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1073",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0004312,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24-05-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée, mais observation : le passager du véhicule B se plaint de douleurs au cou)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "UZ-1163-NP",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4443",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FM1883ZY",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1047",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000436,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "15-03-26",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée), mais observations : le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "TC 7100-VX",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1300",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FM 3110 GN",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1055",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000431,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "26.05.2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée ; observation : le passager du véhicule B se plaint de douleurs au cou)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "VD 5114-HG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2528",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CT 5342 SX",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0323",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0004214,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "26-11-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "GB 5207-WT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5392",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "FP 8007 ES",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1035",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000438,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "24/08/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "20 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « oui » non cochée ; observation : le passager du véhicule B se plaint de douleurs au cou)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "WM 6136-XA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8107",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TU 4564 JB",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0311",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0004324,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "21/09/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "21 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée ; observation : le passager du véhicule B se plaint de douleurs au cou)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "PT 8051-VC",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1800",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "WM 2142 KN",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GARANTIE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0678",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0004466,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-04-18",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Oui : le passager du véhicule B se plaint de douleurs au cou (case « oui » non cochée, case « non » cochée, mais observation indique un blessé potentiel)",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "CL6571AL",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9981",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "JP 3711-NM",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0298",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.00044039999999999997,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "28/04/2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "Oui : la case « oui » n'est pas cochée, la case « non » est cochée, mais les observations signalent que le passager du véhicule B se plaint de douleurs au cou",
+     "verdict": "different"
+    },
+    "plaque_a": {
+     "dans_le_document": "WP2211LL",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3470",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YC 9654-WS",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0206",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004098,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14/05/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CK4561XU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-8677",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "LG 9078-LZ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAG. ASS.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0089",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041820000000000003,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-07-04",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 20",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, [ ] oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "TF-4103-AE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7931",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "HB4366HB",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAG. ASS.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0696",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004185,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "22 août 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "07 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "MS 5067 AA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7939",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "KB-6074-RP",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mut.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0640",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041339999999999997,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "06-10-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "14 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, case oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VR 5434 SS",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7819",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "MC-2710-DE",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GAR.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0104",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004108,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-10-20",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "18 h 40",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CW 2540 GT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4492",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "XF-8751-WL",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GAR.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0444",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00042070000000000003,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "09.02.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "SC 9087 RB",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-9854",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "CN-4574-JP",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lag. Ass.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0685",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004061,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "08-12-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "10 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "HR-9716-LS",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1940",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "rz5290lz",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lag. Ass.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0651",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041860000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "8 octobre 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "GV 5301-CG",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2235",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "UA 5287 FK",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mut.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0081",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00041620000000000003,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "10 octobre 2024",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 00",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "EZ-1069-DF",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5722",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "kn5553bs",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "ATACORA GAR.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0565",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004156,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "14-07-26",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "09 h 10",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée, case oui vide)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PL-5522-DE",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3167",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "ab3129sb",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lag. Ass.",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0983",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004085,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "07-10-25",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "GW 4615-MU",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7997",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "BR 1481 BT",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0708",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004158,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2026-05-07",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case « non » cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "PZ 7092 UD",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6604",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "AD-5589-UH",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Lagune Assurances",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1037",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0004145,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "17 septembre 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "VP-2222-MS",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-1817",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "UD9567FZ",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "OUÉMÉ MUTUELLE",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0216",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041410000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "19 avril 2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "CE 6254 FA",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-3413",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "YW-4610-BW",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0178",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0004068,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "19/09/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "12 h 30",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "er6404dj",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2820",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "TG 1994-ZH",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0463",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00040720000000000003,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "25/06/2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "EM 3866-WT",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-6013",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "PT 4791 CW",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Ouémé Mutuelle",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0166",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00040560000000000005,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2025-05-28",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BG6071WH",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-5622",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "RY4371NH",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "Atacora Garantie",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0317",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041860000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "13 septembre 2026",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non (case [X] non cochée)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "KW-4848-WJ",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-4741",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "XT5427YA",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": "LAGUNE ASSURANCES",
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0528",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00041620000000000003,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "2024-10-21",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "17 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "oui (case X cochée sur « oui »)",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "BB 9306 NM",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-2315",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "AH-5235-AC",
+     "verdict": "different"
+    },
+    "assureur_b": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    }
+   }
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0714",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00040960000000000004,
+   "sortie": {
+    "date_accident": {
+     "dans_le_document": "21.01.2025",
+     "verdict": "conforme"
+    },
+    "heure": {
+     "dans_le_document": "16 h 50",
+     "verdict": "conforme"
+    },
+    "blesses": {
+     "dans_le_document": "non",
+     "verdict": "conforme"
+    },
+    "plaque_a": {
+     "dans_le_document": "hh5536bp",
+     "verdict": "conforme"
+    },
+    "contrat_a": {
+     "dans_le_document": "KA-AUTO-7730",
+     "verdict": "conforme"
+    },
+    "plaque_b": {
+     "dans_le_document": "GM 1125-CS",
+     "verdict": "conforme"
+    },
+    "assureur_b": {
+     "dans_le_document": null,
+     "verdict": "conforme"
+    }
+   }
+  }
+ ]
+}

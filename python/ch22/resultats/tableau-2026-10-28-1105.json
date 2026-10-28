@@ -1,0 +1,153 @@
+{
+  "source": "exploitation-2026-10-28-1105.json",
+  "tableau": {
+    "vendredi": {
+      "cout_dollars": 0.007368,
+      "api": {
+        "appels": 20,
+        "lents": 3,
+        "t_api_p50_s": 5.33,
+        "t_api_p95_s": 25.99,
+        "t_api_max_s": 27.54
+      },
+      "sites": {
+        "Cotonou": {
+          "consultations": 7,
+          "issues": {
+            "brouillon": 7
+          },
+          "t_total_p50_s": 6.24,
+          "t_total_max_s": 14.37,
+          "t_local_p50_s": 0.35,
+          "t_api_p50_s": 5.74,
+          "file_traitee": 0
+        },
+        "Abidjan": {
+          "consultations": 7,
+          "issues": {
+            "brouillon": 7
+          },
+          "t_total_p50_s": 4.34,
+          "t_total_max_s": 6.78,
+          "t_local_p50_s": 0.39,
+          "t_api_p50_s": 4.03,
+          "file_traitee": 0
+        },
+        "Dakar": {
+          "consultations": 6,
+          "issues": {
+            "brouillon": 6
+          },
+          "t_total_p50_s": 4.61,
+          "t_total_max_s": 28.0,
+          "t_local_p50_s": 0.38,
+          "t_api_p50_s": 4.3,
+          "file_traitee": 0
+        }
+      }
+    },
+    "lundi": {
+      "cout_dollars": 0.007324,
+      "api": {
+        "appels": 20,
+        "lents": 8,
+        "t_api_p50_s": 5.75,
+        "t_api_p95_s": 18.53,
+        "t_api_max_s": 23.49
+      },
+      "sites": {
+        "Cotonou": {
+          "consultations": 7,
+          "issues": {
+            "brouillon": 7
+          },
+          "t_total_p50_s": 5.64,
+          "t_total_max_s": 16.84,
+          "t_local_p50_s": 0.36,
+          "t_api_p50_s": 5.24,
+          "file_traitee": 0
+        },
+        "Abidjan": {
+          "consultations": 7,
+          "issues": {
+            "brouillon": 7
+          },
+          "t_total_p50_s": 11.19,
+          "t_total_max_s": 23.76,
+          "t_local_p50_s": 0.44,
+          "t_api_p50_s": 10.73,
+          "file_traitee": 0
+        },
+        "Dakar": {
+          "consultations": 6,
+          "issues": {
+            "brouillon": 6
+          },
+          "t_total_p50_s": 12.21,
+          "t_total_max_s": 24.54,
+          "t_local_p50_s": 6.28,
+          "t_api_p50_s": 5.75,
+          "file_traitee": 0
+        }
+      }
+    },
+    "mardi": {
+      "cout_dollars": 0.007353,
+      "api": {
+        "appels": 20,
+        "lents": 2,
+        "t_api_p50_s": 5.13,
+        "t_api_p95_s": 17.36,
+        "t_api_max_s": 25.58
+      },
+      "sites": {
+        "Cotonou": {
+          "consultations": 7,
+          "issues": {
+            "brouillon": 7
+          },
+          "t_total_p50_s": 5.61,
+          "t_total_max_s": 25.95,
+          "t_local_p50_s": 0.37,
+          "t_api_p50_s": 5.12,
+          "file_traitee": 0
+        },
+        "Abidjan": {
+          "consultations": 7,
+          "issues": {
+            "echec": 3,
+            "repli": 4
+          },
+          "t_total_p50_s": null,
+          "t_total_max_s": null,
+          "t_local_p50_s": 0.36,
+          "t_api_p50_s": null,
+          "file_traitee": 7
+        },
+        "Dakar": {
+          "consultations": 6,
+          "issues": {
+            "brouillon": 6
+          },
+          "t_total_p50_s": 4.94,
+          "t_total_max_s": 7.15,
+          "t_local_p50_s": 0.33,
+          "t_api_p50_s": 4.47,
+          "file_traitee": 0
+        }
+      }
+    }
+  },
+  "api_periode": {
+    "appels": 60,
+    "lents": 13,
+    "t_api_p50_s": 5.33,
+    "t_api_p95_s": 23.49,
+    "t_api_max_s": 27.54
+  },
+  "alertes": [
+    "lundi Dakar : temps local médian 6,28 s (autres cliniques : 0,36 et 0,44 s) ; cause locale, avant l'appel à l'API",
+    "lundi : 8 appels à l'API sur 20 au-delà de 10 s, à Abidjan, Cotonou, Dakar ; côté API : voir la page d'état",
+    "mardi Abidjan : 3 échec(s), 4 repli(s) ; file traitée : 7"
+  ]
+}

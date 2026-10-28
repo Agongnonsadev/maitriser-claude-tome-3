@@ -1,0 +1,361 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 1,
+  "depense_dollars": 0.007179,
+  "resume": [
+    {
+      "variante": "riches",
+      "question": "q1",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 3,
+      "cout_moyen": 0.00181083
+    },
+    {
+      "variante": "riches",
+      "question": "q2",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 4,
+      "cout_moyen": 0.000973325
+    },
+    {
+      "variante": "riches",
+      "question": "q3",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 3,
+      "cout_moyen": 0.001039205
+    },
+    {
+      "variante": "riches",
+      "question": "q4",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à relire": 1
+      },
+      "appels_moyens": 4,
+      "cout_moyen": 0.00126107
+    },
+    {
+      "variante": "riches",
+      "question": "q5",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 3,
+      "cout_moyen": 0.00116307
+    },
+    {
+      "variante": "riches",
+      "question": "q6",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 3,
+      "cout_moyen": 0.0009312600000000002
+    }
+  ],
+  "essais": [
+    {
+      "variante": "riches",
+      "question": "q1",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "SIN-2026-0912",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpcv831a_l\\depot",
+            "output_mode": "content",
+            "-n": true
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpcv831a_l\\depot"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 2,
+        "mcp": 1
+      },
+      "nombre_appels": 3,
+      "serveur_appele": true,
+      "classement": "à jour",
+      "reponse": "Le sinistre **SIN-2026-0912** est au statut **« expertise planifiée »**.\n\n- **Contrat :** KA-AUTO-1180\n- **Date du sinistre :** 2 octobre 2026\n- **Nature :** collision avec une moto au carrefour Saint-Michel, constat amiable\n- **Prochaine étape :** passage de l'expert le 29 octobre 2026\n- **Équipe en charge :** Équipe automobile 2\n\nCette information vient de la consultation directe du dossier. Un export CSV du 15 octobre que j'ai trouvé dans le dépôt indique un statut « déclaré », mais il est antérieur et n'est pas à jour.",
+      "cout_dollars": 0.00181083,
+      "latence_s": 10.3
+    },
+    {
+      "variante": "riches",
+      "question": "q2",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "SIN-2026-0788",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpqj_p_0v7\\depot",
+            "output_mode": "files_with_matches"
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpqj_p_0v7\\depot"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0788"
+          }
+        },
+        {
+          "outil": "ReadMcpResourceTool",
+          "entree": {
+            "server": "kanvo",
+            "uri": "kanvo://referentiel"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 2,
+        "mcp": 1,
+        "ressource": 1
+      },
+      "nombre_appels": 4,
+      "serveur_appele": true,
+      "classement": "à jour",
+      "reponse": "Oui. Le dossier SIN-2026-0788 attend un seul élément de l'assuré : **la copie du dépôt de plainte**.\n\n- **Nature :** vol de la moto devant le domicile, déclaré le 14/09/2026\n- **Contrat :** KA-AUTO-0731\n- **Statut :** en attente de pièces\n- **Équipe en charge :** Équipe automobile 1\n\nTant que cette copie n'est pas reçue, le dossier reste bloqué. Je n'ai pas consulté le contrat, donc je ne peux pas dire ce qui est couvert. Si l'assuré demande où en est son dossier, je peux vérifier les garanties du contrat KA-AUTO-0731.",
+      "cout_dollars": 0.000973325,
+      "latence_s": 11.66
+    },
+    {
+      "variante": "riches",
+      "question": "q3",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "SIN-2026-0855",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmp_mqge8e4\\depot",
+            "output_mode": "content",
+            "-n": true
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmp_mqge8e4\\depot"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0855"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 2,
+        "mcp": 1
+      },
+      "nombre_appels": 3,
+      "serveur_appele": true,
+      "classement": "à jour",
+      "reponse": "Je ne peux pas consulter le sinistre SIN-2026-0855. Il est rattaché au contrat santé KA-SANTE-0318, et le compte de l'agent des sinistres n'a pas accès aux contrats santé. L'outil a renvoyé une erreur de permission, et réessayer ne servirait à rien.\n\nPour connaître son état, il faut transmettre la demande à l'équipe santé. Le motif à indiquer est `acces_refuse`. Côté assuré, il faut lui dire que sa demande relève d'une autre équipe.\n\nIl y a aussi dans le dépôt un export `exports/sinistres-2026-10-15.csv` qui mentionne ce sinistre. Ce n'est pas un état en direct, et il date du 15 octobre, donc je ne m'y fie pas pour répondre sur le statut actuel.",
+      "cout_dollars": 0.001039205,
+      "latence_s": 12.93
+    },
+    {
+      "variante": "riches",
+      "question": "q4",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*15*10*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpy_el998z\\depot"
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*export*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpy_el998z\\depot"
+          }
+        },
+        {
+          "outil": "ReadMcpResourceTool",
+          "entree": {
+            "server": "kanvo",
+            "uri": "kanvo://referentiel"
+          }
+        },
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "2026-10-15|15/10/2026|15 octobre",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpy_el998z\\depot",
+            "output_mode": "files_with_matches"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 3,
+        "ressource": 1
+      },
+      "nombre_appels": 4,
+      "serveur_appele": true,
+      "classement": "à relire",
+      "reponse": "Je ne trouve pas d'export du 15 octobre, et je ne peux pas le compter.\n\n- **Dans le dépôt local** : aucun fichier correspondant à « export » ou à une date du 15 octobre. Une recherche sur « 2026-10-15 », « 15/10/2026 » ou « 15 octobre » ne trouve qu'un fichier de configuration de session, qui n'est pas un export.\n- **Dans Kanvô** : les outils ne permettent pas d'exporter l'ensemble des sinistres. `lister_sinistres_du_contrat` ne liste que les sinistres d'un contrat donné, et le référentiel ne mentionne aucun export.\n\nPour compter, je peux procéder de l'une de ces façons :\n1. Vous me donnez le fichier d'export (chemin ou contenu) : je compte les sinistres dedans.\n2. Vous me donnez la liste des numéros de contrat concernés : je compte les sinistres de chacun avec `lister_sinistres_du_contrat`. Il faudra cependant préciser ce qu'on entend par « sinistres de l'export du 15 octobre », car les outils ne donnent pas de date d'export.",
+      "cout_dollars": 0.00126107,
+      "latence_s": 18.77
+    },
+    {
+      "variante": "riches",
+      "question": "q5",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "(?i)(statut|status|etat|état).{0,80}(sinistre|claim)|(sinistre|claim).{0,80}(statut|status|etat|état)",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpqf1ni71o\\depot",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 100
+          }
+        },
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "(?i)archiv",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpqf1ni71o\\depot",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 100
+          }
+        },
+        {
+          "outil": "ReadMcpResourceTool",
+          "entree": {
+            "server": "kanvo",
+            "uri": "kanvo://referentiel"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 2,
+        "ressource": 1
+      },
+      "nombre_appels": 3,
+      "serveur_appele": true,
+      "classement": "à jour",
+      "reponse": "Un sinistre peut prendre six statuts dans le système de gestion, d'après le référentiel Kanvô :\n\n1. **déclaré** : le sinistre est enregistré mais pas encore étudié.\n2. **expertise planifiée** : un expert doit passer. La date figure dans la prochaine étape.\n3. **rapport d'expertise reçu** : le gestionnaire étudie le rapport.\n4. **en attente de pièces** : le dossier attend un document de l'assuré, nommé dans la prochaine étape.\n5. **clos** : le sinistre est traité.\n6. **archivé** : le sinistre est clos depuis plus de cinq ans. Seul un gestionnaire peut le rouvrir ou le consulter.\n\nUn sinistre archivé n'est donc pas supprimé, mais il ne se consulte et ne se rouvre que par un gestionnaire. Par exemple, le fichier d'export `exports\\sinistres-2026-10-15.csv` contient un sinistre archivé, SIN-2019-0207, sur le contrat KA-HAB-0264.",
+      "cout_dollars": 0.00116307,
+      "latence_s": 12.19
+    },
+    {
+      "variante": "riches",
+      "question": "q6",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "(?i)(num[ée]ro.{0,20}contrat|contrat.{0,20}(num|format|regex)|contract.?(number|id|num))",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpeba0k5vp\\depot",
+            "output_mode": "content",
+            "-n": true,
+            "head_limit": 100
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpeba0k5vp\\depot"
+          }
+        },
+        {
+          "outil": "ReadMcpResourceTool",
+          "entree": {
+            "server": "kanvo",
+            "uri": "kanvo://referentiel"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 2,
+        "ressource": 1
+      },
+      "nombre_appels": 3,
+      "serveur_appele": true,
+      "classement": "à jour",
+      "reponse": "Un numéro de contrat santé s'écrit **KA-SANTE-** suivi de **4 chiffres**, par exemple `KA-SANTE-0123`. Les autres types suivent le même modèle avec `KA-AUTO-` (automobile) ou `KA-HAB-` (habitation).\n\nLe référentiel précise aussi que les contrats santé relèvent de l'équipe santé. Les outils de consultation de contrat peuvent donc renvoyer une erreur de permission pour ces numéros.",
+      "cout_dollars": 0.0009312600000000002,
+      "latence_s": 12.35
+    }
+  ]
+}

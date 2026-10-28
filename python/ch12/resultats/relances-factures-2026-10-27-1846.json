@@ -1,0 +1,1645 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "depense_dollars": 0.007257,
+  "resume": {
+    "soigne": {
+      "extractions": 12,
+      "sans_outil": 0,
+      "type_juste": 12,
+      "precision_globale": 1.0,
+      "precision_par_type": {
+        "constat": null,
+        "facture": 1.0,
+        "rapport_expert": null
+      },
+      "inventions": 0,
+      "substituts": 0,
+      "omissions": 0,
+      "avec_erreurs_de_format": 6,
+      "relances": 6,
+      "erreurs_restantes_apres_relance": 0,
+      "inventions_creees_par_la_relance": 0,
+      "conflits_signales": [
+        "facture-04"
+      ],
+      "par_champ": {
+        "facture.date_facture": {
+          "juste": 12
+        },
+        "facture.lignes": {
+          "juste": 12
+        },
+        "facture.numero_facture": {
+          "juste": 12
+        },
+        "facture.plaque": {
+          "juste": 12
+        },
+        "facture.total_declare": {
+          "juste": 12
+        },
+        "facture.type": {
+          "juste": 12
+        }
+      },
+      "cout_par_document": 0.00030297833333333335
+    },
+    "exiger": {
+      "extractions": 12,
+      "sans_outil": 0,
+      "type_juste": 12,
+      "precision_globale": 1.0,
+      "precision_par_type": {
+        "constat": null,
+        "facture": 1.0,
+        "rapport_expert": null
+      },
+      "inventions": 0,
+      "substituts": 0,
+      "omissions": 0,
+      "avec_erreurs_de_format": 6,
+      "relances": 6,
+      "erreurs_restantes_apres_relance": 0,
+      "inventions_creees_par_la_relance": 0,
+      "conflits_signales": [
+        "facture-04"
+      ],
+      "par_champ": {
+        "facture.date_facture": {
+          "juste": 12
+        },
+        "facture.lignes": {
+          "juste": 12
+        },
+        "facture.numero_facture": {
+          "juste": 12
+        },
+        "facture.plaque": {
+          "juste": 12
+        },
+        "facture.total_declare": {
+          "juste": 12
+        },
+        "facture.type": {
+          "juste": 12
+        }
+      },
+      "cout_par_document": 0.00030179916666666663
+    }
+  },
+  "essais": [
+    {
+      "variante": "soigne",
+      "document": "facture-02",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM-5582-GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « MM-5582-GZ » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux \té\tl\técuments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00038931999999999997
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-04",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\\u00e8re avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\\u0153uvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00044061
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-10",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-02",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00019266999999999998
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-04",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\\u00e8re avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\\u0153uvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00044061
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-10",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-02",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM-5582-GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « MM-5582-GZ » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00039232
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-04",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\\u00e8re avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\\u0153uvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00044061
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-10",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-02",
+      "repetition": 4,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00019266999999999998
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-04",
+      "repetition": 4,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\nère avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00043061
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-10",
+      "repetition": 4,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-02",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00019266999999999998
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-04",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\\u00e8re avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\\u0153uvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00044061
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-10",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-02",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM-5582-GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « MM-5582-GZ » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00039232
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-04",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\\u00e8re avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\\u0153uvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00044061
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-10",
+      "repetition": 2,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-02",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM-5582-GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « MM-5582-GZ » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00039232
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-04",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\\u00e8re avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\\u0153uvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00044061
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-10",
+      "repetition": 3,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-02",
+      "repetition": 4,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM-5582-GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « MM-5582-GZ » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "lignes": [
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Peinture, deux \\u00e9l\\u00e9ments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 254000,
+        "total_calcule_fcfa": 254000,
+        "incoherence": false
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "stop_reason_apres": "tool_use",
+      "champs_manquants_apres": [],
+      "cout_dollars": 0.00039232
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-04",
+      "repetition": 4,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00021381000000000001
+    },
+    {
+      "variante": "exiger",
+      "document": "facture-10",
+      "repetition": 4,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "ATELIER AKPAKPA AUTO",
+        "plaque": "KG 1402 UK",
+        "lignes": [
+          {
+            "designation": "Calandre",
+            "montant_fcfa": 39000
+          },
+          {
+            "designation": "Phare avant droit",
+            "montant_fcfa": 41000
+          }
+        ],
+        "total_declare_fcfa": 80000,
+        "total_calcule_fcfa": 80000,
+        "incoherence": false
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "stop_reason_apres": null,
+      "champs_manquants_apres": null,
+      "cout_dollars": 0.00017907999999999997
+    }
+  ]
+}

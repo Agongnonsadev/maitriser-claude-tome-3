@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "taches": [
+    "defaut"
+  ],
+  "variantes": [
+    "tests"
+  ],
+  "repetitions": 1,
+  "depense_dollars": 0.004479,
+  "resume": {
+    "defaut:tests": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.004479,
+      "cout_moyen": 0.004479,
+      "cout_recalcule_total": 0.004479,
+      "tours_moyens": 8,
+      "contexte_final_median": 26314,
+      "lectures_principales_moyennes": 3,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "quittances/echeancier.py": 1
+      },
+      "latence_mediane_s": 32.9,
+      "conventions": {
+        "reliquat sur la première": 1
+      },
+      "conformes": 1,
+      "total_juste": 1,
+      "autres_fichiers_modifies": {},
+      "commandes_pytest_moyennes": 1,
+      "tests_intacts": 1
+    }
+  },
+  "seances": [
+    {
+      "tache": "defaut",
+      "variante": "tests",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Le total des quittances est maintenant égal à la prime annuelle. Les 5 tests de `tests/test_echeancier.py` passent (`python -m pytest tests/test_echeancier.py`), sans modification du fichier de tests.\n\n**Correction dans `quittances/echeancier.py`**\n- Chaque quittance vaut `prime // n` (division entière). Le reliquat `prime - montant * n` est ajouté à la première quittance.\n- Pour KA-AUTO-0412 : 11 195 FCFA puis 11 193 FCFA × 11, soit 134 318 FCFA.\n\n**Choix à relire**\n- La règle `.claude/rules/montants.md` demande de passer les nouveaux calculs par `arrondir_fcfa()`. Je l'utilise pour ramener la prime en entier (`prime = arrondir_fcfa(prime_annuelle)`), mais pas pour la part mensuelle. `arrondir_fcfa` arrondit à l'entier le plus proche, et les tests attendent un arrondi au franc inférieur (100 006 / 12 doit donner 8 333, pas 8 334). J'ai donc pris le quotient entier pour la part. Il n'y a pas de franc perdu, puisque le reliquat est reporté sur la première quittance.\n- L'arrondi de la prime d'entrée change le comportement pour une prime non entière : avant, `int()` tronquait ; maintenant elle est arrondie au franc le plus proche. Les primes déjà facturées ne sont pas touchées tant qu'elles sont entières.\n- Je n'ai pas touché à `contrat.py`, qui est l'appelant, ni aux autres calculs d'arrondi (règle DSI-2019-114).\n\n**À vérifier à la main sur la base de recette**\n- Lancer `python lancer.py creer-base`, puis examiner les échéances de KA-AUTO-0412 (fractionnement mensuel). Je n'ai pas vérifié quelle commande du menu appelle `echeancier` (`contrats/contrat.py`, ligne 31). Il faut donc passer par le menu ou par une commande qui l'utilise.\n- Attendu : 12 quittances dont la somme fait 134 318 FCFA, la première à 11 195 FCFA.\n\n**Signalé, non corrigé**\n- `NB_ECHEANCES.get(fractionnement, 1)` : un fractionnement inconnu bascule en annuel sans erreur. C'est peut-être voulu, mais à confirmer.",
+      "tours": 8,
+      "cout_dollars": 0.004478945,
+      "cout_recalcule": 0.004478945,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 4494,
+          "cacheReadInputTokens": 80052,
+          "cacheCreationInputTokens": 11445,
+          "webSearchRequests": 0,
+          "costUSD": 0.004478945,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2380
+        }
+      },
+      "outils": [
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Grep",
+        "Edit",
+        "Bash"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "tests/test_echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "python -m pytest tests/test_echeancier.py"
+      ],
+      "contexte_final": 26314,
+      "contexte_max": 26314,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +11,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    prime = arrondir_fcfa(prime_annuelle)\n+    # quittances egales, au franc inferieur ; le reliquat va sur la premiere\n+    montant = prime // n\n+    reliquat = prime - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "tests_intacts": true,
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "aaad44fa-b7ac-4cd6-84fc-09ac724c7fc8",
+      "parties": 1,
+      "latence_s": 32.9,
+      "erreur": null
+    }
+  ]
+}

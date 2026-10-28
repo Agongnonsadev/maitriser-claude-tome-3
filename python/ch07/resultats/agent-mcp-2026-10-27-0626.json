@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "depense_dollars": 0.000829,
+  "resume": {
+    "seances": 2,
+    "fins": {
+      "success": 2
+    },
+    "premier_choix_juste": 1.0,
+    "fausses_conclusions": 0,
+    "appels_moyens": 1,
+    "cout_moyen": 0.00041443999999999997,
+    "latence_mediane_s": 10.305,
+    "duree_mediane_s": 4.0515,
+    "audit": {
+      "agent-sinistres:trouver_assure:ok": 1,
+      "agent-sinistres:lister_sinistres_du_contrat:ok": 1
+    }
+  },
+  "essais": [
+    {
+      "demande": "c06",
+      "fin": "success",
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "reponse": "Oui, vous avez un dossier ouvert, rattaché à votre contrat automobile KA-AUTO-0731 :\n\n- **Numéro :** SIN-2026-0788\n- **Nature :** vol de la moto devant votre domicile, déclaré le 14 septembre 2026\n- **Statut :** en attente de pièces\n- **Prochaine étape :** réception de la copie du dépôt de plainte\n- **Équipe en charge :** Équipe automobile 1\n\nPour avancer, il vous faut transmettre cette copie du dépôt de plainte. Si vous ne l'avez pas encore, vous pouvez la demander auprès du commissariat ou de la gendarmerie où la plainte a été déposée. Souhaitez-vous que je vous aide sur autre chose concernant ce dossier ?",
+      "cout_dollars": 0.000478175,
+      "latence_s": 10.97,
+      "duree_s": 4.491,
+      "erreur": null,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "demande": "c10",
+      "fin": "success",
+      "outils": [],
+      "appels": [],
+      "reponse": "Je suis désolé, mais la résiliation de contrat ne fait pas partie de mes missions. Je ne traite que la déclaration et le suivi des sinistres.\n\nPour résilier votre contrat KA-HAB-0264 et pour toute question liée à votre déménagement, l'agence de Kanvô Assurances pourra vous aider. Vous pouvez la contacter directement.\n\nSi vous avez un sinistre à déclarer sur ce contrat, par exemple un dégât survenu avant votre départ, je peux vous aider à le déclarer dès maintenant.",
+      "cout_dollars": 0.000350705,
+      "latence_s": 9.64,
+      "duree_s": 3.612,
+      "erreur": null,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    }
+  ]
+}

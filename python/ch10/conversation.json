@@ -1,0 +1,103 @@
+{
+  "_note": "Conversation fictive de 40 tours avec M. Gildas Kiki (KA-AS-1009, données de assureur/donnees/systeme.json). Les faits marqués « assuré » ne sont dans aucun système : seul l'assuré les donne, au fil de la conversation. Les motifs repèrent chaque fait dans le point final ; ils sont à relire.",
+  "tours": [
+    "Bonjour, je suis Gildas Kiki, numéro d'assuré KA-AS-1009, né le 14/06/1981. On m'a percuté par l'arrière le 12 octobre avec mon Hilux.",
+    "Le garage de Houéyiho m'a remis un devis de 412 500 FCFA, daté du 14 octobre. Mon dossier est-il bien ouvert ?",
+    "Quel est le numéro de mon dossier, que je le note ?",
+    "Où en est-il exactement ?",
+    "Je loue une voiture depuis le 13 octobre, à 18 000 FCFA par jour. Est-ce que mon contrat prend ça en charge ?",
+    "Quelle est ma franchise sur ce sinistre ?",
+    "Combien vais-je toucher, alors ?",
+    "Il me faut l'argent avant le 20 novembre : c'est la date à laquelle je dois rendre la voiture de location.",
+    "Pouvez-vous déclencher le paiement aujourd'hui ?",
+    "D'accord. Qui va s'occuper de mon dossier maintenant ?",
+    "Le tiers est bien identifié, vous avez son assurance ?",
+    "Faut-il que j'envoie le devis du garage, ou vous l'avez déjà ?",
+    "Par quel moyen dois-je envoyer les documents ?",
+    "Mon contrat couvre-t-il le vol de la voiture ?",
+    "Et l'incendie ?",
+    "Ma formule est bien tous risques ?",
+    "Depuis quand mon contrat est-il en vigueur ?",
+    "Combien de sinistres ai-je déclarés sur ce contrat ?",
+    "Le gestionnaire peut-il m'appeler ?",
+    "En combien de temps un gestionnaire répond-il, en général ?",
+    "Autre chose : mon pare-brise a été fissuré par un caillou le 24 octobre, sur la route de Porto-Novo. Comment je le déclare ?",
+    "Le pare-brise est-il couvert par mon contrat ?",
+    "Dois-je faire réparer le pare-brise avant ou après votre accord ?",
+    "Pouvez-vous déclarer ce sinistre pour moi ?",
+    "Quelles photos faut-il prendre ?",
+    "Merci. Revenons à mon accident : le montant a-t-il changé depuis tout à l'heure ?",
+    "Je serai à Parakou du 5 au 12 novembre, joignable seulement par courriel. Notez-le pour le gestionnaire.",
+    "Mon adresse électronique figure-t-elle dans mon dossier ?",
+    "Si je change de garage, le montant change-t-il ?",
+    "Le garage me demande un acompte : est-ce normal ?",
+    "Que se passe-t-il si le tiers conteste ?",
+    "Ma prime va-t-elle augmenter après ce sinistre ?",
+    "Combien coûte mon contrat par an ?",
+    "Puis-je ajouter une garantie de véhicule de remplacement ?",
+    "Comment résilier si je vends la voiture ?",
+    "Avez-vous bien transmis mon dossier au gestionnaire ?",
+    "Que dois-je faire si je n'ai pas de nouvelles dans une semaine ?",
+    "Mon dossier pare-brise a-t-il un numéro ?",
+    "Merci pour votre patience.",
+    "Avant de raccrocher, faites-moi le point complet, sans rien oublier : le montant et la date du devis du garage, ce que me coûte la voiture de location et depuis quand, ma date limite et pourquoi, mon second problème avec sa date et son lieu, mes dates de déplacement et comment me joindre, et où en est chaque dossier, avec son numéro et son montant."
+  ],
+  "faits": {
+    "devis_montant": {
+      "source": "assuré, tour 2",
+      "motif": "412[\\s\\u202f\\u00a0.]?500"
+    },
+    "devis_date": {
+      "source": "assuré, tour 2",
+      "motif": "14 octobre|14/10"
+    },
+    "location_prix": {
+      "source": "assuré, tour 5",
+      "motif": "18[\\s\\u202f\\u00a0.]?000"
+    },
+    "location_debut": {
+      "source": "assuré, tour 5",
+      "motif": "13 octobre|13/10"
+    },
+    "date_limite": {
+      "source": "assuré, tour 8",
+      "motif": "20 novembre|20/11"
+    },
+    "motif_limite": {
+      "source": "assuré, tour 8",
+      "motif": "rend|restitu|retour|fin de (votre |la )?location"
+    },
+    "parebrise": {
+      "source": "assuré, tour 21",
+      "motif": "pare-brise|bris de glace"
+    },
+    "parebrise_date": {
+      "source": "assuré, tour 21",
+      "motif": "24 octobre|24/10"
+    },
+    "parebrise_lieu": {
+      "source": "assuré, tour 21",
+      "motif": "Porto-Novo"
+    },
+    "deplacement_lieu": {
+      "source": "assuré, tour 27",
+      "motif": "Parakou"
+    },
+    "deplacement_dates": {
+      "source": "assuré, tour 27",
+      "motif": "5 au 12 novembre|5 novembre|du 5 au 12"
+    },
+    "contact": {
+      "source": "assuré, tour 27",
+      "motif": "courriel|e-mail|mail"
+    },
+    "numero_sinistre": {
+      "source": "système",
+      "motif": "SIN-2026-0931"
+    },
+    "montant_dossier": {
+      "source": "système",
+      "motif": "370[\\s\\u202f\\u00a0.]?000|420[\\s\\u202f\\u00a0.]?000"
+    }
+  }
+}

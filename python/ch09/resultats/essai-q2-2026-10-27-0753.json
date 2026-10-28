@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "variantes": [
+    "objectifs"
+  ],
+  "attendre": false,
+  "depense_dollars": 0.004653,
+  "resume": {
+    "objectifs:q2-motos": {
+      "etudes": 1,
+      "fins": [
+        "success"
+      ],
+      "sous_agents_lances": [
+        [
+          "analyste-documents"
+        ]
+      ],
+      "sous_agents_inutiles": [
+        []
+      ],
+      "reponses_multi_agents": [
+        0
+      ],
+      "simultanes_max": [
+        1
+      ],
+      "recherches_web": [
+        0
+      ],
+      "documents_lus": [
+        [
+          "SOUS-05",
+          "SOUS-01"
+        ]
+      ],
+      "hors_role": [
+        []
+      ],
+      "refus": [
+        0
+      ],
+      "aspects_couverts": [
+        2
+      ],
+      "aspects": 2,
+      "aspects_manques": [
+        []
+      ],
+      "rapport": [
+        false
+      ],
+      "cout_moyen": 0.00465295,
+      "duree_mediane_s": 26.98
+    }
+  },
+  "etudes": [
+    {
+      "question": "q2-motos",
+      "variante": "objectifs",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "**Oui, la fréquence a augmenté.** En 2025, nous avons eu **1 385 déclarations de vol de motos**, contre **1 140 en 2024**, soit **+21,5 % en nombre**. Rapportée aux contrats moto avec garantie vol, la fréquence passe de **11,6 % à 12,4 %** (+0,8 point). Le portefeuille a progressé de 14,3 % (9 800 à 11 200 contrats), donc la hausse des vols dépasse celle du portefeuille.\n\nSource : SOUS-05, « Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026 », section 2 « Évolution annuelle » (document daté du 6 octobre 2026). Les calculs de la fréquence (11,63 % et 12,37 % avant arrondi) et de l'évolution en nombre sont les miens, à partir des chiffres du tableau.\n\nPoints à garder en tête :\n- **Périmètre limité** aux communes de Cotonou, Abomey-Calavi et Sèmè-Podji. Le document ne dit pas si ce périmètre était le même en 2024 et en 2025.\n- **Définition incertaine** : le document parle de « déclarations de vol » sans préciser si tentatives et sinistres sans suite sont comptés, ni à quelle date (survenance ou déclaration).\n- **Base de la fréquence** non précisée (contrats en fin d'année ou moyenne annuelle).\n- Les chiffres de **2026** (1 012 déclarations sur janvier à septembre) sont provisoires et ne se comparent pas directement à une année pleine.\n- Pour 2025, 58 % des vols ont eu lieu la nuit et 31 % des motos volées n'avaient pas d'antivol déclaré (SOUS-05, section 3). Ces données n'existent pas pour 2024.\n\nJe n'ai pas lancé de rapport, la question ne demandant qu'un chiffre et une tendance.",
+      "rapport": "",
+      "outils_seance": [
+        "Task",
+        "WebSearch",
+        "mcp__etudes__enregistrer_rapport",
+        "mcp__etudes__lire_document",
+        "mcp__etudes__lister_documents"
+      ],
+      "delegations": [
+        {
+          "type": "analyste-documents",
+          "description": "Vols de motos 2024-2025",
+          "t": 7.06,
+          "prompt": "Question de Mme Sossa (souscription, Kanvô Assurances) : combien de vols de motos avons-nous eus en 2025, et la fréquence a-t-elle augmenté depuis 2024 ?\n\nPérimètre : uniquement les documents internes de la souscription. Commencez par lister_documents, puis lisez tous les documents susceptibles de contenir des données de sinistralité (vols, deux-roues, motos, sinistres, fréquence, exercices 2024 et 2025).\n\nRendez :\n- le nombre de vols de motos pour 2025, et pour 2024, avec le document (identifiant SOUS-xx, titre) et la section exacte de chaque chiffre ;\n- le calcul de l'évolution (en nombre et, si possible, en fréquence rapportée au portefeuille ou à l'exposition, avec la base utilisée) ;\n- les éventuelles divergences entre documents, et ce qui manque (période, périmètre, définition d'un vol, données non disponibles) ;\n- si aucun document ne couvre ces chiffres, dites-le explicitement.\n\nNe cherchez pas sur le web.",
+          "run_in_background": false
+        }
+      ],
+      "reponses_multi_agents": 0,
+      "sous_agents": [
+        {
+          "agent_id": "a769d0f1ce6fd6ba8",
+          "type": "analyste-documents",
+          "debut": 7.13,
+          "fin": 25.94,
+          "outils": [
+            "mcp__etudes__lister_documents",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document"
+          ],
+          "dernier_message": "```json\n{\"resultats\": [\n{\"affirmation\": \"Nombre de déclarations de vol de motos en 2025 : 1 385 (contrats moto avec garantie vol : 11 200).\", \"extrait\": \"| 2025 | 11 200 | 1 385 | 12,4 % | 19 % | 538 |\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Nombre de déclarations de vol de motos en 2024 : 1 140 (contrats moto avec garantie vol : 9 800).\", \"extrait\": \"| 2024 | 9 800 | 1 140 | 11,6 % | 23 % | 412 |\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Évolution en nombre 2024 à 2025 : +245 déclarations, soit environ +21,5 % (calcul de l'analyste à partir des deux chiffres de la table).\", \"extrait\": \"1 385 - 1 140 = 245 ; 245 / 1 140 = 21,5 %\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Fréquence (déclarations de vol rapportées aux contrats avec garantie vol) : 11,6 % en 2024, 12,4 % en 2025, soit +0,8 point selon les chiffres arrondis du document. Recalcul de l'analyste : 1 140/9 800 = 11,63 % et 1 385/11 200 = 12,37 %, soit +0,74 point, et +6,4 % en valeur relative.\", \"extrait\": \"Fréquence 11,6 % (2024) ; 12,4 % (2025)\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Le portefeuille de contrats moto avec garantie vol a augmenté de 9 800 à 11 200 (+14,3 %, calcul de l'analyste). La hausse du nombre de vols (+21,5 %) dépasse donc celle du portefeuille, ce qui explique la hausse de fréquence.\", \"extrait\": \"| 2024 | 9 800 | ... | 2025 | 11 200 | ...\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Motos retrouvées : 23 % en 2024, 19 % en 2025 (baisse de 4 points). Charge : 412 M FCFA en 2024, 538 M FCFA en 2025 (+30,6 %, calcul de l'analyste).\", \"extrait\": \"| 2024 | ... | 23 % | 412 | ; | 2025 | ... | 19 % | 538 |\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Circonstances 2025 : 58 % des vols ont eu lieu la nuit ; 31 % des motos volées n'avaient pas d'antivol déclaré.\", \"extrait\": \"- 58 % des vols ont eu lieu la nuit. - 31 % des motos volées n'avaient pas d'antivol déclaré.\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"3. Circonstances, année 2025\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Données 2026 (janvier à septembre, provisoires) : 1 012 déclarations de vol pour 11 900 contrats, soit 8,5 % sur neuf mois. Ce chiffre ne se compare pas directement à une fréquence annuelle.\", \"extrait\": \"| 2026, janvier à septembre | 11 900 | 1 012 | 8,5 % sur neuf mois | 21 % | 401 |\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"2. Évolution annuelle ; 1. Périmètre\", \"date_document\": \"2026-10-06\"},\n{\"affirmation\": \"Périmètre : contrats moto de Kanvô Assurances comportant la garantie vol, dans les communes de Cotonou, Abomey-Calavi et Sèmè-Podji. Montants en millions de FCFA.\", \"extrait\": \"Contrats moto de Kanvô Assurances qui comportent la garantie vol, dans les communes de Cotonou, d'Abomey-Calavi et de Sèmè-Podji.\", \"document\": \"SOUS-05 (Vols de deux-roues : sinistralité de l'assurance moto, 2024 à septembre 2026)\", \"section\": \"1. Périmètre\", \"date_document\": \"2026-10-06\"}\n],\n\"limites\": [\n\"Réponse à la question : 1 385 vols (déclarations) de motos en 2025 contre 1 140 en 2024, soit +21,5 % en nombre et une fréquence passée de 11,6 % à 12,4 % (+6,4 % en relatif). La fréquence est rapportée aux contrats moto avec garantie vol, et non à des années-contrats ni à des véhicules exposés : la base exacte (contrats en fin d'année ou moyenne annuelle) n'est pas précisée.\",\n\"Le périmètre est limité aux communes de Cotonou, d'Abomey-Calavi et de Sèmè-Podji. Le document ne dit pas si cette couverture géographique était identique en 2024 et en 2025, ni quelle part du portefeuille national elle représente.\",\n\"Les chiffres 2026 (janvier à septembre) sont provisoires selon le document et ne sont pas comparables à une année pleine.\",\n\"Le document parle de « déclarations de vol » sans définir ce qui est compté : vols déclarés, vols confirmés, tentatives ou sinistres sans suite ne sont pas distingués.\",\n\"Les chiffres de fréquence sont arrondis dans le document (11,6 % et 12,4 %) ; les recalculs (11,63 % et 12,37 %) sont de l'analyste.\",\n\"Les montants sont en millions de FCFA. Le document ne précise pas s'ils sont réserves comprises, contrairement à SOUS-01 pour l'inondation.\"\n],\n\"non_trouve\": [\n\"Aucune définition du « vol » ni de la date de comptage (survenance ou déclaration) pour les motos. SOUS-05 n'indique pas la méthode, alors que SOUS-01 précise que ses sinistres sont comptés à la date de survenance.\",\n\"Aucune ventilation des vols par commune, par type de moto ou par tranche d'âge pour 2024 ou 2025. Les circonstances (nuit, antivol) sont données pour 2025 uniquement, pas pour 2024.\",\n\"Aucune donnée d'exposition en années-contrats ou en nombre de motos réellement exposées au risque.\",\n\"Aucun document ne précise le nombre de vols sur l'ensemble du portefeuille moto de Kanvô Assurances, hors zone des trois communes.\",\n\"Documents non lus : SOUS-01 (inondation, lu car il contient des données habitation et non moto, sans chiffre moto), SOUS-02, SOUS-03, SOUS-04 et SOUS-06. Leurs objets, tels que listés, portent sur l'option inondation de l'habitation, la note du réassureur, le comité de souscription ou une ancienne étude inondation ; aucun n'annonce de données de vols de motos. Un contrôle de SOUS-04 (comité du 29 septembre 2026) pourrait confirmer s'il cite d'autres chiffres moto.\"\n]}\n```",
+          "duree": 18.81
+        }
+      ],
+      "simultanes_max": 1,
+      "documents_lus": [
+        "SOUS-05",
+        "SOUS-01"
+      ],
+      "recherches_web": 0,
+      "hors_role": [],
+      "refus": [],
+      "aspects": {
+        "vols_2025": true,
+        "frequences": true
+      },
+      "transmis_au_synthetiseur": {
+        "appels": []
+      },
+      "evenements_taches": [
+        {
+          "subtype": "task_started",
+          "task_id": "a769d0f1ce6fd6ba8",
+          "description": "Vols de motos 2024-2025"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a769d0f1ce6fd6ba8",
+          "description": "Vols de motos 2024-2025"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a769d0f1ce6fd6ba8",
+          "description": "Vols de motos 2024-2025"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a769d0f1ce6fd6ba8",
+          "description": "Vols de motos 2024-2025"
+        },
+        {
+          "subtype": "task_updated",
+          "task_id": "a769d0f1ce6fd6ba8"
+        },
+        {
+          "subtype": "task_notification",
+          "task_id": "a769d0f1ce6fd6ba8",
+          "status": "completed"
+        }
+      ],
+      "tours": 2,
+      "cout_dollars": 0.00465295,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 5613,
+          "cacheReadInputTokens": 10120,
+          "cacheCreationInputTokens": 13954,
+          "webSearchRequests": 0,
+          "costUSD": 0.00465295,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1323,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "duree_s": 26.98,
+      "erreur": null
+    }
+  ]
+}

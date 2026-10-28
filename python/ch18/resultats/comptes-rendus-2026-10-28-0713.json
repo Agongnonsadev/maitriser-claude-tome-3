@@ -1,0 +1,691 @@
+{
+  "date": "2026-10-28",
+  "modeles": [
+    "claude-sonnet-5-5"
+  ],
+  "variantes": [
+    "reprise",
+    "mission2"
+  ],
+  "repetitions": 1,
+  "depense_dollars": 0.124916,
+  "resume": {
+    "claude-sonnet-5-5:reprise": {
+      "comptes_rendus": 10,
+      "rendus": 10,
+      "conclusions_inventees": "0 sur 3",
+      "reserves_perdues": "0 sur 3",
+      "conclusions_omises": "0 sur 7",
+      "comptes_rendus_avec_ajout": 0,
+      "ajouts": {},
+      "elements_absents_moyens": 4.5,
+      "cout_total": 0.054398,
+      "cout_moyen": 0.00544,
+      "tokens_entree_moyens": 917,
+      "tokens_sortie_moyens": 361
+    },
+    "claude-sonnet-5-5:mission2": {
+      "comptes_rendus": 10,
+      "rendus": 10,
+      "conclusions_inventees": "0 sur 3",
+      "reserves_perdues": "0 sur 3",
+      "conclusions_omises": "0 sur 7",
+      "comptes_rendus_avec_ajout": 0,
+      "ajouts": {},
+      "elements_absents_moyens": 6.3,
+      "cout_total": 0.070518,
+      "cout_moyen": 0.007052,
+      "tokens_entree_moyens": 1140,
+      "tokens_sortie_moyens": 477
+    }
+  },
+  "redactions": [
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N01",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Chute survenue la veille en descendant un escalier, avec traumatisme de la cheville droite.",
+        "examen": "Le patient présente une douleur de la malléole externe de la cheville droite et un œdème modéré. L'appui est possible. Il n'y a pas de déformation.",
+        "conclusion_du_medecin": "Probable entorse bénigne de la cheville droite, à confirmer si la douleur persiste au-delà de 8 jours.",
+        "suite": "Revoir le patient à la demande.",
+        "elements_absents": [
+          "Traitement prescrit ou conseils donnés (repos, glaçage, contention, antalgiques)",
+          "Examen d'imagerie (radiographie) : ni réalisé ni mentionné",
+          "Antécédents du patient",
+          "Constantes et autres éléments de l'examen clinique (stabilité ligamentaire, mobilité, sensibilité, état cutané)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "cout_dollars": 0.006014,
+      "tokens_entree": 932,
+      "tokens_sortie": 415,
+      "latence_s": 11.58,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N02",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Toux sèche évoluant depuis 5 jours, accompagnée d'une rhinorrhée, sans fièvre.",
+        "examen": "L'auscultation est normale. La gorge est un peu rouge. Le patient ne présente pas de fièvre.",
+        "conclusion_du_medecin": "Rhinopharyngite.",
+        "suite": "Le patient devra être revu en cas de fièvre ou si la toux dure plus de 3 semaines.",
+        "elements_absents": [
+          "Constantes (température mesurée, tension, fréquence cardiaque, saturation)",
+          "Traitement prescrit",
+          "Antécédents et allergies du patient"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 3
+      },
+      "cout_dollars": 0.005136,
+      "tokens_entree": 923,
+      "tokens_sortie": 329,
+      "latence_s": 3.82,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N03",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Plaque rouge prurigineuse de l'avant-bras gauche évoluant depuis 2 semaines.",
+        "examen": "Plaque rouge, avec prurit, située sur l'avant-bras gauche, apparue il y a 2 semaines. Le patient a changé de bracelet de montre il y a 3 semaines. Aucune autre lésion n'est constatée.",
+        "conclusion_du_medecin": "Eczéma de contact possible, dont l'origine reste à préciser.",
+        "suite": "Le patient sera revu dans 1 mois.",
+        "elements_absents": [
+          "Taille, aspect précis et caractéristiques de la plaque (squames, vésicules, suintement)",
+          "Antécédents du patient (atopie, allergies, eczéma)",
+          "Traitement prescrit ou conseils donnés",
+          "Examens complémentaires (tests allergologiques, patch tests)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "cout_dollars": 0.00599,
+      "tokens_entree": 935,
+      "tokens_sortie": 412,
+      "latence_s": 5.48,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N04",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleur de l'oreille droite évoluant depuis 3 jours, sans écoulement.",
+        "examen": "Le patient, âgé de 52 ans, ne présente pas de fièvre. Il n'y a pas d'écoulement de l'oreille droite. Le tympan droit est difficile à visualiser en raison de la présence de cérumen.",
+        "conclusion_du_medecin": null,
+        "suite": "Le médecin a été appelé en urgence ; la consultation est à reprendre.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Traitement prescrit",
+          "Examen de l'oreille gauche",
+          "Date ou délai de la reprise de consultation",
+          "Antécédents du patient"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.005388,
+      "tokens_entree": 904,
+      "tokens_sortie": 358,
+      "latence_s": 2.99,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N05",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Visite de contrôle annuelle demandée par l'employeur. Le patient ne signale aucune plainte.",
+        "examen": "L'examen clinique est normal. La tension artérielle est de 12/8.",
+        "conclusion_du_medecin": "Examen normal.",
+        "suite": "Prochain contrôle dans 1 an.",
+        "elements_absents": []
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 0
+      },
+      "cout_dollars": 0.004164,
+      "tokens_entree": 912,
+      "tokens_sortie": 234,
+      "latence_s": 2.2,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N06",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Chute sur la main tendue lors d'un match de football, avec douleur du poignet droit à la base du pouce.",
+        "examen": "Le patient, âgé de 23 ans, présente une douleur du poignet droit, située à la base du pouce. La mobilité du poignet est limitée par la douleur.",
+        "conclusion_du_medecin": "Suspicion de fracture du scaphoïde.",
+        "suite": "Une radiographie a été demandée. Le patient sera revu avec la radiographie.",
+        "elements_absents": [
+          "Date de la consultation et délai écoulé depuis la chute",
+          "Constantes et signes généraux",
+          "Recherche d'une douleur à la palpation de la tabatière anatomique ou d'un gonflement",
+          "Examen vasculo-nerveux",
+          "Antécédents du patient",
+          "Traitement ou immobilisation prescrit dans l'attente de la radiographie",
+          "Date du prochain rendez-vous"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "cout_dollars": 0.006108,
+      "tokens_entree": 924,
+      "tokens_sortie": 426,
+      "latence_s": 4.68,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N07",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleurs abdominales intermittentes évoluant depuis 10 jours, survenant surtout après les repas.",
+        "examen": "Le patient, âgé de 38 ans, ne présente pas de vomissement et son transit est normal. À l'examen, l'abdomen est souple. Le patient était pressé lors de la consultation.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient est à revoir.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Localisation précise et caractéristiques de la douleur",
+          "Constantes (température, tension artérielle, pouls, poids)",
+          "Détails de l'examen abdominal (palpation, sensibilité, bruits hydro-aériens)",
+          "Examens complémentaires",
+          "Traitement prescrit",
+          "Délai ou modalités de la nouvelle consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "cout_dollars": 0.005822,
+      "tokens_entree": 901,
+      "tokens_sortie": 402,
+      "latence_s": 3.85,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N08",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Œil gauche rouge depuis la veille, avec larmoiement et sensation de sable dans l'œil.",
+        "examen": "Le patient présente un œil gauche rouge, associé à un larmoiement et à une sensation de sable. La vision est normale.",
+        "conclusion_du_medecin": "Conjonctivite.",
+        "suite": "Le patient devra être revu si la vision baisse.",
+        "elements_absents": [
+          "Acuité visuelle chiffrée",
+          "Examen à la lampe à fente",
+          "Examen de l'œil droit",
+          "Antécédents du patient",
+          "Traitement prescrit"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.004938,
+      "tokens_entree": 899,
+      "tokens_sortie": 314,
+      "latence_s": 6.18,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N09",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Fatigue évoluant depuis 2 mois chez un patient de 56 ans. Le sommeil est correct et l'appétit est conservé.",
+        "examen": "L'examen clinique est sans particularité.",
+        "conclusion_du_medecin": "Conclusion réservée par le médecin, à discuter avec le patient lors de la prochaine consultation.",
+        "suite": "Discussion de la conclusion avec le patient lors de la prochaine consultation.",
+        "elements_absents": [
+          "Date de la prochaine consultation",
+          "Constantes (tension artérielle, pouls, température, poids)",
+          "Examens complémentaires prescrits ou réalisés",
+          "Antécédents et traitements en cours",
+          "Traitement prescrit"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.005354,
+      "tokens_entree": 902,
+      "tokens_sortie": 355,
+      "latence_s": 3.05,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "reprise",
+      "note": "N10",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Coupure de la paume de la main gauche avec un couteau de cuisine, survenue 2 heures avant la consultation.",
+        "examen": "La plaie mesure 2 cm. Elle est peu profonde et propre. La mobilité et la sensibilité des doigts sont normales.",
+        "conclusion_du_medecin": "Plaie superficielle de la paume gauche.",
+        "suite": "Surveiller la cicatrisation.",
+        "elements_absents": [
+          "Soins réalisés (nettoyage, suture, pansement) non précisés",
+          "Statut vaccinal antitétanique non précisé",
+          "Antécédents et allergies du patient non précisés",
+          "Traitement prescrit non précisé",
+          "Date et modalités du suivi non précisées"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.005484,
+      "tokens_entree": 937,
+      "tokens_sortie": 361,
+      "latence_s": 3.04,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N01",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Chute survenue la veille en descendant un escalier, avec traumatisme de la cheville droite.",
+        "examen": "Douleur au niveau de la malléole externe de la cheville droite. Œdème modéré. Appui possible. Absence de déformation.",
+        "conclusion_du_medecin": "Probable entorse bénigne de la cheville droite, à confirmer si la douleur persiste au-delà de 8 jours.",
+        "suite": "Revoir le patient à la demande.",
+        "elements_absents": [
+          "Antécédents du patient non mentionnés",
+          "Constantes et signes généraux non mentionnés",
+          "Examen complémentaire (radiographie notamment) non mentionné",
+          "Traitement ou soins (antalgiques, contention, repos, etc.) non mentionnés",
+          "Examen de la stabilité ligamentaire et de la mobilité de la cheville non mentionné",
+          "Date de la consultation non précisée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "cout_dollars": 0.00651,
+      "tokens_entree": 1155,
+      "tokens_sortie": 420,
+      "latence_s": 3.44,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N02",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Toux sèche évoluant depuis 5 jours, associée à une rhinorrhée, sans fièvre.",
+        "examen": "L'auscultation est normale. La gorge est un peu rouge. Le patient ne présente pas de fièvre.",
+        "conclusion_du_medecin": "Rhinopharyngite.",
+        "suite": "À revoir en cas de fièvre ou si la toux dure plus de 3 semaines.",
+        "elements_absents": [
+          "Température mesurée (seule l'absence de fièvre est notée)",
+          "Constantes (tension artérielle, fréquence cardiaque, saturation en oxygène, fréquence respiratoire)",
+          "Antécédents et traitements en cours du patient",
+          "Traitement prescrit",
+          "Examens complémentaires"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.005992,
+      "tokens_entree": 1146,
+      "tokens_sortie": 370,
+      "latence_s": 4.67,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N03",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Plaque rouge prurigineuse de l'avant-bras gauche, évoluant depuis 2 semaines.",
+        "examen": "Le patient, âgé de 29 ans, présente une plaque rouge qui gratte au niveau de l'avant-bras gauche, depuis 2 semaines. Il a changé de bracelet de montre il y a 3 semaines. Il n'y a pas d'autre lésion.",
+        "conclusion_du_medecin": "Eczéma de contact possible, origine à préciser.",
+        "suite": "Revoir le patient dans 1 mois.",
+        "elements_absents": [
+          "Taille et description précise de la plaque (aspect, limites, surface, état de la peau)",
+          "Antécédents du patient (atopie, allergies connues, antécédents dermatologiques)",
+          "Traitement prescrit ou conseils donnés",
+          "Examens complémentaires éventuels (tests allergologiques, par exemple)",
+          "Matériau du bracelet de montre",
+          "Constantes ou autres éléments de l'examen clinique général"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "cout_dollars": 0.006926,
+      "tokens_entree": 1158,
+      "tokens_sortie": 461,
+      "latence_s": 3.98,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N04",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleur de l'oreille droite évoluant depuis 3 jours, sans écoulement.",
+        "examen": "Le tympan droit est difficile à voir en raison de la présence de cérumen. Il n'y a pas d'écoulement. Le patient n'a pas de fièvre. Le médecin a été appelé en urgence pendant la consultation.",
+        "conclusion_du_medecin": null,
+        "suite": "La consultation est à reprendre.",
+        "elements_absents": [
+          "Conclusion ou hypothèse diagnostique du médecin",
+          "Aspect du tympan droit (non visualisé à cause du cérumen)",
+          "Examen de l'oreille gauche",
+          "Examen du conduit auditif externe (douleur à la mobilisation du pavillon ou à la pression du tragus)",
+          "Évaluation de l'audition",
+          "Antécédents du patient",
+          "Traitement prescrit ou geste réalisé (par exemple nettoyage du cérumen)",
+          "Date et délai de la reprise de consultation",
+          "Date de la consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 9
+      },
+      "cout_dollars": 0.010744,
+      "tokens_entree": 1127,
+      "tokens_sortie": 849,
+      "latence_s": 7.48,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N05",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Visite de contrôle annuelle demandée par l'employeur. Le patient (47 ans) ne rapporte aucune plainte.",
+        "examen": "L'examen clinique est normal. La tension artérielle est de 12/8.",
+        "conclusion_du_medecin": "Examen normal.",
+        "suite": "Prochain contrôle dans 1 an.",
+        "elements_absents": [
+          "Poids, taille et autres constantes (fréquence cardiaque, température, etc.) non précisés",
+          "Détail de l'examen clinique par appareil non précisé",
+          "Antécédents et traitements en cours non mentionnés",
+          "Examens complémentaires (biologie, vision, audition, etc.) non mentionnés",
+          "Conclusion d'aptitude au poste non mentionnée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.00597,
+      "tokens_entree": 1135,
+      "tokens_sortie": 370,
+      "latence_s": 3.12,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N06",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Chute sur la main tendue lors d'une partie de football, avec douleur du poignet droit à la base du pouce.",
+        "examen": "Le patient présente une douleur du poignet droit, située à la base du pouce. La mobilité du poignet est limitée par la douleur.",
+        "conclusion_du_medecin": "Suspicion de fracture du scaphoïde.",
+        "suite": "Une radiographie est demandée. Le patient sera revu avec la radiographie.",
+        "elements_absents": [
+          "Date de la chute et délai écoulé depuis le traumatisme",
+          "Antécédents du patient",
+          "Signes locaux : gonflement, ecchymose, déformation",
+          "Recherche d'une douleur à la palpation de la tabatière anatomique ou d'autres points douloureux précis",
+          "Examen vasculo-nerveux",
+          "Mesure précise de l'amplitude de la mobilité",
+          "Traitement ou immobilisation éventuels",
+          "Type de radiographie demandée (incidences)",
+          "Date du prochain rendez-vous"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 9
+      },
+      "cout_dollars": 0.006874,
+      "tokens_entree": 1147,
+      "tokens_sortie": 458,
+      "latence_s": 4.44,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N07",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleurs abdominales intermittentes depuis 10 jours, survenant surtout après les repas.",
+        "examen": "Le patient ne présente pas de vomissement et son transit est normal. À l'examen, l'abdomen est souple. Le patient était pressé.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient est à revoir. Le délai n'est pas précisé.",
+        "elements_absents": [
+          "Conclusion ou hypothèse diagnostique du médecin",
+          "Localisation précise et caractéristiques de la douleur (intensité, type, irradiation)",
+          "Constantes (température, tension artérielle, pouls, poids)",
+          "Détail de l'examen abdominal (palpation douloureuse, défense, etc.)",
+          "Examens complémentaires",
+          "Traitement prescrit",
+          "Délai et modalités de la consultation de suivi"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "cout_dollars": 0.006278,
+      "tokens_entree": 1124,
+      "tokens_sortie": 403,
+      "latence_s": 3.35,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N08",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Œil gauche rouge depuis la veille, avec larmoiement et sensation de sable.",
+        "examen": "Le patient présente un œil gauche rouge depuis hier, avec larmoiement et sensation de sable. La vision est normale.",
+        "conclusion_du_medecin": "Conjonctivite.",
+        "suite": "À revoir si la vision baisse.",
+        "elements_absents": [
+          "Acuité visuelle chiffrée non précisée",
+          "Examen à la lampe à fente non mentionné",
+          "Aspect de la conjonctive et présence de sécrétions non précisés",
+          "Atteinte de l'œil droit non précisée",
+          "Antécédents et facteurs de risque (port de lentilles, contage, allergie) non précisés",
+          "Traitement prescrit non mentionné"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "cout_dollars": 0.005984,
+      "tokens_entree": 1122,
+      "tokens_sortie": 374,
+      "latence_s": 3.0,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N09",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Fatigue évoluant depuis 2 mois chez un patient de 56 ans.",
+        "examen": "Le patient rapporte un sommeil correct et un appétit conservé. L'examen clinique est sans particularité.",
+        "conclusion_du_medecin": null,
+        "suite": "La conclusion est réservée. Elle sera à discuter avec le patient lors de la prochaine consultation.",
+        "elements_absents": [
+          "Conclusion ou hypothèse diagnostique du médecin (conclusion réservée)",
+          "Détail de l'examen clinique (constantes, poids, examen par appareil)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires réalisés ou prescrits",
+          "Date de la prochaine consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.0091,
+      "tokens_entree": 1125,
+      "tokens_sortie": 685,
+      "latence_s": 5.2,
+      "erreur": null
+    },
+    {
+      "modele": "claude-sonnet-5-5",
+      "variante": "mission2",
+      "note": "N10",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Coupure de la paume de la main gauche avec un couteau de cuisine, survenue il y a 2 heures.",
+        "examen": "Plaie de 2 cm de la paume de la main gauche, peu profonde et propre. La mobilité et la sensibilité des doigts sont normales.",
+        "conclusion_du_medecin": "Plaie superficielle de la paume gauche.",
+        "suite": "Surveiller la cicatrisation.",
+        "elements_absents": [
+          "Soins réalisés lors de la consultation (nettoyage, suture, pansement) non précisés",
+          "Statut vaccinal antitétanique non précisé",
+          "Antécédents et allergies du patient non précisés",
+          "Modalités de la surveillance (délai, consignes, date de revue) non précisées",
+          "Traitement prescrit non précisé"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "cout_dollars": 0.00614,
+      "tokens_entree": 1160,
+      "tokens_sortie": 382,
+      "latence_s": 3.17,
+      "erreur": null
+    }
+  ]
+}

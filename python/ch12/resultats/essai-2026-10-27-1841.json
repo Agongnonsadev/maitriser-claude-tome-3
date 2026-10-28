@@ -1,0 +1,511 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "depense_dollars": 0.003625,
+  "resume": {
+    "naif": {
+      "extractions": 4,
+      "sans_outil": 1,
+      "type_juste": 3,
+      "precision_globale": 0.889,
+      "precision_par_type": {
+        "constat": 0.857,
+        "facture": 1.0,
+        "rapport_expert": 0.833
+      },
+      "inventions": 0,
+      "substituts": 1,
+      "omissions": 0,
+      "avec_erreurs_de_format": 2,
+      "relances": 0,
+      "erreurs_restantes_apres_relance": 0,
+      "inventions_creees_par_la_relance": 0,
+      "conflits_signales": [
+        "facture-04"
+      ],
+      "par_champ": {
+        "autre.type": {
+          "faux": 1
+        },
+        "constat.assureur_b": {
+          "juste": 1
+        },
+        "constat.blesses": {
+          "juste": 1
+        },
+        "constat.contrat_a": {
+          "juste": 1
+        },
+        "constat.date_accident": {
+          "juste": 1
+        },
+        "constat.heure": {
+          "juste": 1
+        },
+        "constat.plaque_a": {
+          "juste": 1
+        },
+        "constat.plaque_b": {
+          "substitut": 1
+        },
+        "constat.type": {
+          "juste": 1
+        },
+        "facture.date_facture": {
+          "juste": 1
+        },
+        "facture.lignes": {
+          "juste": 1
+        },
+        "facture.numero_facture": {
+          "juste": 1
+        },
+        "facture.plaque": {
+          "juste": 1
+        },
+        "facture.total_declare": {
+          "juste": 1
+        },
+        "facture.type": {
+          "juste": 1
+        },
+        "rapport_expert.conclusion": {
+          "faux": 1
+        },
+        "rapport_expert.date_expertise": {
+          "juste": 1
+        },
+        "rapport_expert.montant_evalue": {
+          "juste": 1
+        },
+        "rapport_expert.numero_sinistre": {
+          "juste": 1
+        },
+        "rapport_expert.plaque": {
+          "juste": 1
+        },
+        "rapport_expert.type": {
+          "juste": 1
+        },
+        "rapport_expert.vetuste_pct": {
+          "juste": 1
+        }
+      },
+      "cout_par_document": 0.0003939625
+    },
+    "soigne": {
+      "extractions": 4,
+      "sans_outil": 0,
+      "type_juste": 4,
+      "precision_globale": 1.0,
+      "precision_par_type": {
+        "constat": 1.0,
+        "facture": 1.0,
+        "rapport_expert": 1.0
+      },
+      "inventions": 0,
+      "substituts": 0,
+      "omissions": 0,
+      "avec_erreurs_de_format": 1,
+      "relances": 1,
+      "erreurs_restantes_apres_relance": 0,
+      "inventions_creees_par_la_relance": 0,
+      "conflits_signales": [
+        "facture-04"
+      ],
+      "par_champ": {
+        "autre.type": {
+          "juste": 1
+        },
+        "constat.assureur_b": {
+          "juste": 1
+        },
+        "constat.blesses": {
+          "juste": 1
+        },
+        "constat.contrat_a": {
+          "juste": 1
+        },
+        "constat.date_accident": {
+          "juste": 1
+        },
+        "constat.heure": {
+          "juste": 1
+        },
+        "constat.plaque_a": {
+          "juste": 1
+        },
+        "constat.plaque_b": {
+          "juste": 1
+        },
+        "constat.type": {
+          "juste": 1
+        },
+        "facture.date_facture": {
+          "juste": 1
+        },
+        "facture.lignes": {
+          "juste": 1
+        },
+        "facture.numero_facture": {
+          "juste": 1
+        },
+        "facture.plaque": {
+          "juste": 1
+        },
+        "facture.total_declare": {
+          "juste": 1
+        },
+        "facture.type": {
+          "juste": 1
+        },
+        "rapport_expert.conclusion": {
+          "juste": 1
+        },
+        "rapport_expert.date_expertise": {
+          "juste": 1
+        },
+        "rapport_expert.montant_evalue": {
+          "juste": 1
+        },
+        "rapport_expert.numero_sinistre": {
+          "juste": 1
+        },
+        "rapport_expert.plaque": {
+          "juste": 1
+        },
+        "rapport_expert.type": {
+          "juste": 1
+        },
+        "rapport_expert.vetuste_pct": {
+          "juste": 1
+        }
+      },
+      "cout_par_document": 0.00051234625
+    }
+  },
+  "essais": [
+    {
+      "variante": "naif",
+      "document": "constat-04",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": "2026-10-16",
+        "heure": "06 h 00",
+        "lieu": "pont de Fidjrossè",
+        "blesses": false,
+        "vehicule_a": {
+          "plaque": "GY 5285 MM",
+          "numero_contrat": "KA-AUTO-7317"
+        },
+        "vehicule_b": {
+          "plaque": "",
+          "assureur": "Atacora Garantie"
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "heure : « 06 h 00 » n'est pas au format HH:MM.",
+        "vehicule_b.plaque : «  » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "date_accident": "juste",
+        "heure": "juste",
+        "blesses": "juste",
+        "plaque_a": "juste",
+        "contrat_a": "juste",
+        "plaque_b": "substitut",
+        "assureur_b": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.000398025
+    },
+    {
+      "variante": "naif",
+      "document": "facture-04",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "Garage de Houéyiho",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.00041177499999999997
+    },
+    {
+      "variante": "naif",
+      "document": "rapport-08",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_rapport_expert",
+      "arguments": {
+        "numero_sinistre": "SIN-2026-1305",
+        "date_expertise": "2026-10-02",
+        "plaque": "DS 3239 YJ",
+        "montant_evalue_fcfa": 690000,
+        "vetuste_pct": 10,
+        "conclusion": false,
+        "expert": "Cabinet Expertises Lokossa"
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_sinistre": "juste",
+        "date_expertise": "juste",
+        "plaque": "juste",
+        "montant_evalue": "juste",
+        "vetuste_pct": "juste",
+        "conclusion": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.00037502499999999997
+    },
+    {
+      "variante": "naif",
+      "document": "autre-01",
+      "repetition": 1,
+      "stop_reason": "end_turn",
+      "outil": null,
+      "arguments": null,
+      "texte_sans_outil": "This document is a legal letter (mise en demeure) from a lawyer, not a constat, invoice, or expert report. None of the three available extraction tools matches it, so I won't call any of them.\n\nI can't extract structured data from it with the current tools. Here is what the letter contains:\n\n- **Type** : mise en demeure (formal demand letter)\n- **Expéditeur** : Cabinet de Maître Adoukonou, avocat au barreau de Cotonou (marked \"fictif\")\n- **Client représenté** : M. Firmin Zannou\n- **Demande** : payment of the compensation he considers owed, within 15 days\n- **Menace** : if unpaid, the lawyer will bring the matter before the competent court\n\nThe letter does not mention a claim number (numéro de sinistre), a plate number, a contract number, or an amount, so it can't be matched to a specific claim from this text alone.\n\nTo process it, you could:\n- Log it manually in the claim file for M. Firmin Zannou, and check whether a sinistre is already open under that name.\n- Send the associated constat, facture, or expert report if you have them, so I can extract their data.",
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "faux"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.000391025
+    },
+    {
+      "variante": "soigne",
+      "document": "constat-04",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_constat",
+      "arguments": {
+        "date_accident": "2026-10-16",
+        "heure": "06:00",
+        "lieu": "pont de Fidjrossè",
+        "blesses": "non",
+        "vehicule_a": {
+          "plaque": "GY 5285 MM",
+          "numero_contrat": "KA-AUTO-7317"
+        },
+        "vehicule_b": {
+          "plaque": null,
+          "assureur": "Atacora Garantie"
+        }
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "date_accident": "juste",
+        "heure": "juste",
+        "blesses": "juste",
+        "plaque_a": "juste",
+        "contrat_a": "juste",
+        "plaque_b": "juste",
+        "assureur_b": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.00045252499999999995
+    },
+    {
+      "variante": "soigne",
+      "document": "facture-04",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_facture",
+      "arguments": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814-ZN",
+        "lignes": [
+          {
+            "designation": "Portière avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux éléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'œuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "texte_sans_outil": null,
+      "erreurs": [
+        "plaque : « HP 9814-ZN » n'est pas au format AA 9999 AA."
+      ],
+      "conflit_source": true,
+      "issues": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "relance": true,
+      "arguments_apres": {
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "GARAGE DE HOUÉYIHO",
+        "plaque": "HP 9814 ZN",
+        "lignes": [
+          {
+            "designation": "Porti\nre avant droite",
+            "montant_fcfa": 135000
+          },
+          {
+            "designation": "Peinture, deux \nléments",
+            "montant_fcfa": 95000
+          },
+          {
+            "designation": "Radiateur",
+            "montant_fcfa": 118000
+          },
+          {
+            "designation": "Main-d'\nuvre, 3 heures",
+            "montant_fcfa": 24000
+          }
+        ],
+        "total_declare_fcfa": 397000,
+        "total_calcule_fcfa": 372000,
+        "incoherence": true
+      },
+      "erreurs_apres": [],
+      "issues_apres": {
+        "type": "juste",
+        "numero_facture": "juste",
+        "date_facture": "juste",
+        "plaque": "juste",
+        "total_declare": "juste",
+        "lignes": "juste"
+      },
+      "cout_dollars": 0.00077431
+    },
+    {
+      "variante": "soigne",
+      "document": "rapport-08",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "extraire_rapport_expert",
+      "arguments": {
+        "numero_sinistre": "SIN-2026-1305",
+        "date_expertise": "2026-10-02",
+        "plaque": "DS 3239 YJ",
+        "montant_evalue_fcfa": 690000,
+        "vetuste_pct": 10,
+        "conclusion": "unclear",
+        "expert": "Cabinet Expertises Lokossa"
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste",
+        "numero_sinistre": "juste",
+        "date_expertise": "juste",
+        "plaque": "juste",
+        "montant_evalue": "juste",
+        "vetuste_pct": "juste",
+        "conclusion": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.00043702499999999996
+    },
+    {
+      "variante": "soigne",
+      "document": "autre-01",
+      "repetition": 1,
+      "stop_reason": "tool_use",
+      "outil": "document_non_reconnu",
+      "arguments": {
+        "nature": "Lettre d'avocat (mise en demeure) du cabinet de Maître Adoukonou, avocat au barreau de Cotonou, réclamant au nom de M. Firmin Zannou une indemnité sous quinze jours. Ce n'est ni un constat amiable, ni une facture, ni un rapport d'expert."
+      },
+      "texte_sans_outil": null,
+      "erreurs": [],
+      "conflit_source": false,
+      "issues": {
+        "type": "juste"
+      },
+      "relance": false,
+      "arguments_apres": null,
+      "erreurs_apres": null,
+      "issues_apres": null,
+      "cout_dollars": 0.00038552499999999995
+    }
+  ]
+}

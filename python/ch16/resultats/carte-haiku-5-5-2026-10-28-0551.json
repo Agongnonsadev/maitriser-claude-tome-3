@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "taches": [
+    "carte"
+  ],
+  "variantes": [
+    "direct"
+  ],
+  "repetitions": 1,
+  "depense_dollars": 0.02423,
+  "resume": {
+    "carte:direct": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.02423,
+      "cout_moyen": 0.02423,
+      "cout_recalcule_total": 0.02423,
+      "tours_moyens": 33,
+      "contexte_final_median": 61680,
+      "lectures_principales_moyennes": 20,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "notes/carte.md": 1
+      },
+      "latence_mediane_s": 115.9,
+      "faits": {
+        "point d'entrée lancer.py": 1,
+        "échéancier qui tronque": 1,
+        "prorata arrondi au pair": 1,
+        "quittance par arrondir_fcfa": 1,
+        "primes qui tronquent": 1,
+        "création du contrat": 1,
+        "lecture des tarifs": 1,
+        "les sept dossiers": 1
+      },
+      "faits_moyens": 8,
+      "autres_fichiers_modifies": 0
+    }
+  },
+  "seances": [
+    {
+      "tache": "carte",
+      "variante": "direct",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai écrit la carte dans `notes/carte.md` (79 lignes). C'est le seul fichier créé ou modifié.\n\nBash étant refusé dans cette session, j'ai lu et cherché le code avec les outils Read et Grep. La carte couvre les dossiers, les points d'entrée, le chemin d'un contrat et chaque arrondi de montant. Je n'ai pas lancé le skill `verifier-arrondis`, ni exécuté le code.\n\nPoints à retenir :\n\n- **Menu absent** : `python lancer.py` sans argument n'affiche qu'un usage (code 1), alors que `LISEZMOI.txt` décrit un menu.\n- **Creation non accessible** : seuls `creer-base`, `prime`, `rapport` et `export` sont reconnus. Création, avenant, résiliation, sinistre et impression des quittances n'ont aucun appelant : il faut les importer pour les tester.\n- **Arrondis** : `calcul.py`, `echeancier.py` tronquent avec `int()`. `prorata.py` utilise `round()`, qui arrondit au pair. Seul `arrondir_fcfa()` suit la règle, et il n'est appliqué qu'à l'impression, où le montant est déjà entier. Les anciens calculs restent tels quels, comme le demande le ticket DSI-2019-114. Le reste est perdu : par exemple, 10 001 FCFA en trimestriel donnent 4 × 2 500 = 10 000 FCFA.\n- **Anomalies signalées, non corrigées** :\n  - Les échéances sont triées par `ORDER BY echeance` sur du texte `jj/mm/aaaa`, donc l'ordre est faux au passage d'une année.\n  - `ajouter_mois` ramène le jour à 28.\n  - `base/requetes.py` construit deux requêtes SQL avec `%`.\n  - Le compteur de sinistres est en mémoire et peut produire des doublons.\n  - Les franchises sont écrites en dur, hors de `tarifs/`.\n  - Deux clés de `tarifs/auto.txt` ne sont lues nulle part.\n\nLe document se termine par les fonctions que l'on peut tester sans base ni tarifs, en premier : `util/montants.py`, `util/dates.py`, `primes/prorata.py`, `quittances/echeancier.py`.",
+      "tours": 33,
+      "cout_dollars": 0.02423019,
+      "cout_recalcule": 0.024230190000000002,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 26,
+          "outputTokens": 22883,
+          "cacheReadInputTokens": 507634,
+          "cacheCreationInputTokens": 61678,
+          "webSearchRequests": 0,
+          "costUSD": 0.02423019,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 10929
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Write",
+        "Write",
+        "Read",
+        "Write",
+        "Grep",
+        "Edit",
+        "Edit",
+        "Grep"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "lancer.py",
+        "base/requetes.py",
+        "base/connexion.py",
+        "util/montants.py",
+        "contrats/contrat.py",
+        "primes/calcul.py",
+        "quittances/echeancier.py",
+        "quittances/quittance.py",
+        "primes/prorata.py",
+        "primes/tarifs.py",
+        "util/dates.py",
+        "util/divers.py",
+        "contrats/numeros.py",
+        "config.py",
+        "base/schema.sql",
+        "sinistres/franchise.py",
+        "sinistres/declaration.py",
+        "rapports/portefeuille.py",
+        "rapports/export_csv.py",
+        "notes/carte.md"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-93c500n8/depot\" && find . -type f -not -path './.git/*' | sort && echo --- && wc -l $(find . -name '*.py' -o -name '*.sql' | sort) 2>/dev/null | tail -50 && ls -la .claude/rules 2>/dev/null",
+        "cd \"<temp>/kanvo-ch16-93c500n8/depot\" && cat lancer.py && echo ---- && cat base/*.py | head -150"
+      ],
+      "contexte_final": 61680,
+      "contexte_max": 61680,
+      "fichiers_modifies": [
+        "notes/carte.md"
+      ],
+      "plan": "",
+      "controles": {
+        "carte_ecrite": true,
+        "lignes": 79,
+        "faits": {
+          "point d'entrée lancer.py": true,
+          "échéancier qui tronque": true,
+          "prorata arrondi au pair": true,
+          "quittance par arrondir_fcfa": true,
+          "primes qui tronquent": true,
+          "création du contrat": true,
+          "lecture des tarifs": true,
+          "les sept dossiers": true
+        },
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "52291d3a-3370-4217-97e7-c1ed1808ef1c",
+      "parties": 1,
+      "latence_s": 115.9,
+      "erreur": null
+    }
+  ]
+}

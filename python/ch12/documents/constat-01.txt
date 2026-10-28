@@ -1,0 +1,14 @@
+CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE
+1. Date de l'accident : 16/10/2026      Heure : 17 h 15
+2. Lieu : voie express, sortie Akpakpa
+3. Blessés, même légers : [ ] oui  [X] non
+VÉHICULE A
+   Conducteur : Mme Nadège Adjaho
+   Société d'assurance : Kanvô Assurances      Contrat n° KA-AUTO-8540
+   Immatriculation : NA-7139-SJ
+VÉHICULE B
+   Conducteur : M. Serge Dossou-Gbété
+   Société d'assurance : Ouémé Mutuelle
+   Immatriculation : ZW 4729 UA
+12. Circonstances : A cochée(s) : 8 (heurtait à l'arrière) ; B cochée(s) : 1 (en stationnement)
+Signatures : A et B

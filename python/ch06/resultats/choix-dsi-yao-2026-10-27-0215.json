@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 1,
+  "depense_dollars": 0.004239,
+  "resume": [
+    {
+      "variante": "dsi",
+      "conduites": 3,
+      "fins": {
+        "end_turn": 3
+      },
+      "premier_choix_juste": 1.0,
+      "demandes_mal_orientees": {},
+      "premiers_choix_faux": {},
+      "appels_moyens": 2,
+      "outil_interdit_appele": 0,
+      "fausses_conclusions": 2,
+      "cout_moyen": 0.0006654666666666667,
+      "latence_mediane_s": 5.66
+    },
+    {
+      "variante": "yao",
+      "conduites": 3,
+      "fins": {
+        "end_turn": 3
+      },
+      "premier_choix_juste": 1.0,
+      "demandes_mal_orientees": {},
+      "premiers_choix_faux": {},
+      "appels_moyens": 1,
+      "outil_interdit_appele": 0,
+      "fausses_conclusions": 1,
+      "cout_moyen": 0.0007476666666666667,
+      "latence_mediane_s": 6.13
+    }
+  ],
+  "essais": [
+    {
+      "variante": "dsi",
+      "demande": "c06",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Merci. J'ai retrouvé votre dossier d'assuré (M. Marius Zinsou) et votre contrat automobile **KA-AUTO-0731**, actif, pour la moto Bajaj Boxer 4471 RB. Je ne trouve aucun dossier de sinistre ouvert à votre nom.\n\nSouhaitez-vous déclarer un sinistre ? Si oui, merci de me préciser :\n\n1. Quelle est la date et le lieu de l'événement ?\n2. Que s'est-il passé, et quels dommages constatez-vous sur la moto ?\n3. Y a-t-il un tiers impliqué, et disposez-vous de pièces (constat, dépôt de plainte, photos) ?",
+      "cout_dollars": 0.0007895,
+      "latence_s": 5.66,
+      "premier": [
+        "rechercher_client",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c10",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je comprends que vous déménagiez à Parakou. Cependant, la résiliation de contrat ne relève pas de mon rôle : je gère uniquement la déclaration et le suivi des sinistres. Pour résilier le contrat KA-HAB-0264, veuillez vous adresser à l'agence de Kanvô Assurances, qui pourra vous accompagner dans cette démarche.\n\nSi votre déménagement a entraîné un dommage à déclarer (par exemple lors du transport de vos biens), je peux vous aider à enregistrer ce sinistre. Dans ce cas, pouvez-vous me préciser la date et le lieu de l'incident, ainsi que la nature des dommages ?",
+      "cout_dollars": 0.0003584,
+      "latence_s": 2.77,
+      "premier": [],
+      "premier_juste": true,
+      "appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c14",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_dossier",
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour M. Zinsou, j'ai retrouvé votre contrat automobile KA-AUTO-0731, qui couvre votre moto Bajaj Boxer (4471 RB) au titre du vol et de l'incendie.\n\nJe n'ai pas trouvé de dossier de vol ouvert à votre nom avec la recherche effectuée. Pour le retrouver, pourriez-vous me préciser :\n\n1. Le numéro de dossier de sinistre, s'il vous a été communiqué ?\n2. La date du vol et le lieu où la moto a été volée ?\n3. Avez-vous déposé plainte auprès de la police ? Si oui, quel est le numéro de la plainte ?\n\nSi vous préférez échanger directement avec un gestionnaire, je peux transmettre votre demande pour qu'il vous rappelle.",
+      "cout_dollars": 0.0008485,
+      "latence_s": 6.58,
+      "premier": [
+        "rechercher_dossier",
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "yao",
+      "demande": "c06",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour M. Zinsou. Oui, vous avez un dossier ouvert : le sinistre **SIN-2026-0788**, sur votre contrat KA-AUTO-0731, concernant le vol de votre moto devant votre domicile, daté du 14 septembre 2026.\n\nLe dossier est en attente de pièces. La prochaine étape est la réception de la **copie de votre dépôt de plainte**. Vous pouvez la transmettre en réponse à ce message ou à votre gestionnaire, l'équipe automobile 1.\n\nSouhaitez-vous que je vous aide sur un autre point concernant ce dossier ?",
+      "cout_dollars": 0.001008,
+      "latence_s": 13.06,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c10",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je comprends que vous déménagez. La résiliation de votre contrat KA-HAB-0264 ne relève pas de mon rôle, qui se limite à la déclaration et au suivi des sinistres. Pour résilier, rapprochez-vous de l'agence de Kanvô Assurances, qui pourra vous accompagner dans vos démarches.\n\nSi vous avez déjà subi un dommage lié à ce logement, je peux l'enregistrer. Dans ce cas, indiquez-moi la date et le lieu de l'incident, la nature des dommages et, si possible, les pièces justificatives disponibles, comme des photos ou un constat.",
+      "cout_dollars": 0.0005292999999999999,
+      "latence_s": 6.13,
+      "premier": [],
+      "premier_juste": true,
+      "appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c14",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Je suis désolé, je ne trouve aucun assuré au nom de Zinsou dans notre système.\n\nPour retrouver votre dossier, pourriez-vous me communiquer l'un de ces éléments :\n- votre numéro d'assuré (au format KA-AS-suivi de 4 chiffres) ;\n- le numéro de votre contrat auto (KA-AUTO-suivi de 4 chiffres) ;\n- ou le numéro du dossier de sinistre (SIN-AAAA-NNNN), s'il vous a été communiqué.\n\nSi vous ne disposez d'aucun de ces numéros, vous pouvez aussi vérifier l'orthographe de votre nom tel qu'il figure sur votre contrat, et me le redonner.",
+      "cout_dollars": 0.0007057000000000001,
+      "latence_s": 5.0,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    }
+  ]
+}

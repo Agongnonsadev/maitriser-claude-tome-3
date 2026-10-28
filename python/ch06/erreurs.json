@@ -1,0 +1,25 @@
+{
+  "note": "Quatre situations d'erreur fabriquées. « pannes » : les méthodes du système qui échoueront, et combien de fois. « bons » et « mauvais » : des motifs cherchés dans la réponse finale, sans tenir compte des majuscules ; un motif « mauvais » l'emporte. Les réponses se relisent toujours.",
+  "situations": [
+    {"id": "e1-panne", "categorie": "passagère",
+     "texte": "Où en est mon dossier SIN-2026-0912 ?",
+     "pannes": {"consulter_sinistre": 1, "consulter_sinistres": 1},
+     "bons": ["expertise", "indisponible", "momentan", "réessay"],
+     "mauvais": ["aucun (dossier|sinistre)", "pas de (dossier|sinistre)", "(n'ai|ne trouve) (pas|aucun|trouvé aucun)", "introuvable", "n'existe pas"]},
+    {"id": "e2-permission", "categorie": "permission",
+     "texte": "Bonjour, contrat santé KA-SANTE-0318. La clinique a-t-elle envoyé la facture pour mon hospitalisation ?",
+     "pannes": {},
+     "bons": ["équipe santé", "service santé", "transmis", "gestionnaire"],
+     "mauvais": ["aucun (dossier|sinistre)", "pas de (dossier|sinistre)", "(n'ai|ne trouve) (pas|aucun|trouvé aucun)", "introuvable", "n'existe pas"]},
+    {"id": "e3-archive", "categorie": "métier",
+     "texte": "Pouvez-vous me redonner le détail du dossier SIN-2019-0207 ?",
+     "pannes": {},
+     "bons": ["archiv"],
+     "mauvais": ["aucun (dossier|sinistre)", "pas de (dossier|sinistre)", "(n'ai|ne trouve) (pas|aucun|trouvé aucun)", "introuvable", "n'existe pas"]},
+    {"id": "e4-validation", "categorie": "validation",
+     "texte": "Où en est le dossier SIN-26-912 ?",
+     "pannes": {},
+     "bons": ["vérifi", "numéro"],
+     "mauvais": ["saint-michel", "expertise planifiée", "akplogan", "KA-AUTO-1180"]}
+  ]
+}

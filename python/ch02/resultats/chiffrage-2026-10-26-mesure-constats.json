@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-26",
+  "fichier": "kanvo.json",
+  "marge": 1.5,
+  "mesure": true,
+  "depense_mesure_dollars": 0.021362,
+  "chiffrages": [
+    {
+      "cas": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "modele": "claude-haiku-5-5",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "tokens_systeme": 161,
+      "tokens_message": 278,
+      "tokens_reponse": 1016,
+      "reponse_mesuree": true,
+      "tokens_reflexion": 678,
+      "reponses_coupees": 0,
+      "cout_unite": 0.0005519,
+      "cout_mois": 0.60709,
+      "cout_mois_avec_marge": 0.9106350000000001
+    },
+    {
+      "cas": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "modele": "claude-sonnet-5-5",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "tokens_systeme": 161,
+      "tokens_message": 278,
+      "tokens_reponse": 569,
+      "reponse_mesuree": true,
+      "tokens_reflexion": 234,
+      "reponses_coupees": 0,
+      "cout_unite": 0.006568,
+      "cout_mois": 7.2248,
+      "cout_mois_avec_marge": 10.8372
+    }
+  ]
+}

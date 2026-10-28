@@ -1,0 +1,647 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "reglage": "sans-reflexion",
+  "repetitions": 2,
+  "depense_dollars": 0.008613,
+  "resume": {
+    "conduites": 20,
+    "fins": {
+      "end_turn": 20
+    },
+    "garde_fou_atteint": 0,
+    "tours_max": 3,
+    "tours_moyens": 1.45,
+    "tours_outils": 9,
+    "tours_outils_avec_texte": 7,
+    "arrets_premature_si_texte": 7,
+    "outils_attendus_appeles": 20,
+    "transmissions_conformes": 19,
+    "hors_sujet_sans_outil": 6,
+    "hors_sujet": 6,
+    "cout_moyen": 0.00043064000000000004,
+    "cout_max": 0.0007896,
+    "latence_mediane_s": 2.12
+  },
+  "conduites": [
+    {
+      "cas": "d1",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Votre contrat KA-AUTO-0193 est actif. La garantie « collision avec tiers identifié » est couverte, avec une franchise de 50 000 FCFA. Les dommages « tous accidents » ne sont pas couverts par votre formule. Or, le conducteur ayant pris la fuite, il n'est pas identifié, ce qui peut avoir une incidence sur la prise en charge. Je ne peux pas vous indiquer de montant ni de délai à ce stade.\n\nPour déclarer le sinistre, j'ai besoin de quelques précisions :\n\n1. Quelle est la date et l'heure exactes ? Vous indiquez ce matin vers 7 h 30, est-ce bien le cas aujourd'hui ?\n2. Avez-vous des témoins, ou des caméras à proximité du carrefour de l'Étoile rouge ?\n3. Avez-vous relevé une plaque, une description du taxi-moto ou un numéro de la compagnie ?\n\nPensez aussi à déposer une plainte ou une main courante auprès de la police, et à photographier les dégâts.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_contrat",
+            "consulter_sinistres"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1716,
+          "tokens_sortie": 200,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00027160000000000004,
+          "latence_s": 1.65,
+          "texte": "Je suis désolé pour cet accrochage et pour cette situation, surtout avec un conducteur qui a pris la fuite.\n\nJe vais d'abord consulter votre contrat pour vérifier les garanties."
+        },
+        {
+          "numero": 2,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2230,
+          "tokens_sortie": 374,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00041,
+          "latence_s": 2.98,
+          "texte": "Votre contrat KA-AUTO-0193 est actif. La garantie « collision avec tiers identifié » est couverte, avec une franchise de 50 000 FCFA. Les dommages « tous accidents » ne sont pas couverts par votre formule. Or, le conducteur ayant pris la fuite, il n'est pas identifié, ce qui peut avoir une incidence sur la prise en charge. Je ne peux pas vous indiquer de montant ni de délai à ce stade.\n\nPour déclarer le sinistre, j'ai besoin de quelques précisions :\n\n1. Quelle est la date et l'heure exactes ? Vous indiquez ce matin vers 7 h 30, est-ce bien le cas aujourd'hui ?\n2. Avez-vous des témoins, ou des caméras à proximité du carrefour de l'Étoile rouge ?\n3. Avez-vous relevé une plaque, une description du taxi-moto ou un numéro de la compagnie ?\n\nPensez aussi à déposer une plainte ou une main courante auprès de la police, et à photographier les dégâts."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0006816000000000001,
+      "latence_s": 4.63
+    },
+    {
+      "cas": "d2",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé pour ces dégâts causés par les pluies. Je vous aide à déclarer ce sinistre : des infiltrations par la toiture ont entraîné l'effondrement d'un coin du plafond du salon, et le canapé et la télévision ont été endommagés par l'eau.\n\nPour retrouver le contrat, pourriez-vous me communiquer :\n1. Le numéro de contrat habitation de votre mère (format KA-HAB-…), ou son numéro d'assuré (KA-AS-…) si vous l'avez ?\n2. La date exacte des faits et l'adresse du logement assuré ?\n3. Avez-vous déjà pu prendre des photos des dégâts, et savez-vous si d'autres dommages sont visibles (murs, sol, toiture) ?\n\nVous pourrez ensuite nous transmettre les pièces justificatives, comme les photos et, si possible, la liste des biens endommagés avec leurs factures d'achat.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1685,
+          "tokens_sortie": 331,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.000334,
+          "latence_s": 2.15,
+          "texte": "Je suis désolé pour ces dégâts causés par les pluies. Je vous aide à déclarer ce sinistre : des infiltrations par la toiture ont entraîné l'effondrement d'un coin du plafond du salon, et le canapé et la télévision ont été endommagés par l'eau.\n\nPour retrouver le contrat, pourriez-vous me communiquer :\n1. Le numéro de contrat habitation de votre mère (format KA-HAB-…), ou son numéro d'assuré (KA-AS-…) si vous l'avez ?\n2. La date exacte des faits et l'adresse du logement assuré ?\n3. Avez-vous déjà pu prendre des photos des dégâts, et savez-vous si d'autres dommages sont visibles (murs, sol, toiture) ?\n\nVous pourrez ensuite nous transmettre les pièces justificatives, comme les photos et, si possible, la liste des biens endommagés avec leurs factures d'achat."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.000334,
+      "latence_s": 2.15
+    },
+    {
+      "cas": "d3",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé pour votre hospitalisation, et j'espère que vous allez mieux.\n\nJe peux vous aider à déclarer ce sinistre. Pour commencer, pouvez-vous me donner votre numéro de contrat (format KA-HAB-… ou KA-AUTO-…) ou votre numéro d'assuré (KA-AS-…) ? Je pourrai ainsi vérifier les garanties dont vous disposez pour les frais d'hospitalisation.\n\nDès que j'aurai ces informations, je vous poserai les questions restantes, notamment les dates exactes de votre hospitalisation et le nom de la clinique.\n\nVous pourrez joindre le reçu de caisse dès maintenant à votre déclaration ; la facture détaillée pourra être transmise ensuite, lorsque vous l'aurez reçue.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1671,
+          "tokens_sortie": 289,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00031160000000000004,
+          "latence_s": 1.98,
+          "texte": "Je suis désolé pour votre hospitalisation, et j'espère que vous allez mieux.\n\nJe peux vous aider à déclarer ce sinistre. Pour commencer, pouvez-vous me donner votre numéro de contrat (format KA-HAB-… ou KA-AUTO-…) ou votre numéro d'assuré (KA-AS-…) ? Je pourrai ainsi vérifier les garanties dont vous disposez pour les frais d'hospitalisation.\n\nDès que j'aurai ces informations, je vous poserai les questions restantes, notamment les dates exactes de votre hospitalisation et le nom de la clinique.\n\nVous pourrez joindre le reçu de caisse dès maintenant à votre déclaration ; la facture détaillée pourra être transmise ensuite, lorsque vous l'aurez reçue."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.00031160000000000004,
+      "latence_s": 1.98
+    },
+    {
+      "cas": "d4",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Je comprends votre agacement, et je suis désolé que votre dossier n'avance pas depuis six semaines, d'autant que c'est la troisième fois que vous nous écrivez.\n\nJe vais transmettre votre demande à un gestionnaire, qui vous rappellera. Pour que la personne soit bien informée, pourriez-vous me donner votre numéro de contrat ou votre numéro d'assuré (KA-AS-…) ? Si vous avez aussi la date du vol et le numéro de votre dossier, ce sera utile.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1658,
+          "tokens_sortie": 184,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00025780000000000003,
+          "latence_s": 1.62,
+          "texte": "Je comprends votre agacement, et je suis désolé que votre dossier n'avance pas depuis six semaines, d'autant que c'est la troisième fois que vous nous écrivez.\n\nJe vais transmettre votre demande à un gestionnaire, qui vous rappellera. Pour que la personne soit bien informée, pourriez-vous me donner votre numéro de contrat ou votre numéro d'assuré (KA-AS-…) ? Si vous avez aussi la date du vol et le numéro de votre dossier, ce sera utile."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.00025780000000000003,
+      "latence_s": 1.62
+    },
+    {
+      "cas": "d5",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Votre contrat KA-AUTO-0410 est actif et la garantie vol et incendie est couverte, avec une franchise de 10 %. Aucun sinistre n'est encore enregistré. Je ne peux pas vous indiquer de montant ni de délai : ils dépendront de l'expertise du véhicule.\n\nPour ouvrir votre déclaration, pourriez-vous me préciser :\n\n1. L'heure exacte de la panne et de l'incendie, et le lieu précis (repère, sens de circulation) ?\n2. Y a-t-il eu un tiers impliqué (autre véhicule, biens endommagés) ?\n3. Avez-vous fait venir les pompiers ou la gendarmerie, et disposez-vous d'un constat ou d'un procès-verbal ?\n\nVous pourrez ensuite nous transmettre les photos du véhicule et la carte grise.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_contrat",
+            "consulter_sinistres"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1678,
+          "tokens_sortie": 195,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002653,
+          "latence_s": 1.76,
+          "texte": "Bonsoir, je suis désolé pour cet incident, et je suis content que personne ne soit blessé.\n\nJe consulte votre contrat et les éventuels sinistres déjà enregistrés."
+        },
+        {
+          "numero": 2,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2172,
+          "tokens_sortie": 302,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00036820000000000006,
+          "latence_s": 2.55,
+          "texte": "Votre contrat KA-AUTO-0410 est actif et la garantie vol et incendie est couverte, avec une franchise de 10 %. Aucun sinistre n'est encore enregistré. Je ne peux pas vous indiquer de montant ni de délai : ils dépendront de l'expertise du véhicule.\n\nPour ouvrir votre déclaration, pourriez-vous me préciser :\n\n1. L'heure exacte de la panne et de l'incendie, et le lieu précis (repère, sens de circulation) ?\n2. Y a-t-il eu un tiers impliqué (autre véhicule, biens endommagés) ?\n3. Avez-vous fait venir les pompiers ou la gendarmerie, et disposez-vous d'un constat ou d'un procès-verbal ?\n\nVous pourrez ensuite nous transmettre les photos du véhicule et la carte grise."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0006335000000000001,
+      "latence_s": 4.31
+    },
+    {
+      "cas": "d6",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé pour ces deux incidents. Pour vérifier ce que couvre votre contrat, pourriez-vous me communiquer votre numéro de contrat habitation (par exemple KA-HAB-…) ou votre numéro d'assuré (KA-AS-…) ?\n\nPour l'instant, voici les informations utiles à me donner pour votre déclaration :\n\n1. La date approximative et le lieu des deux incidents.\n2. Pour la clôture, les coordonnées de votre voisin et de son assureur auto, si vous les connaissez, ainsi que des photos des dégâts.\n3. Pour le téléphone, s'il a été déclaré à la police ou si vous disposez d'une facture d'achat.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1658,
+          "tokens_sortie": 246,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002888,
+          "latence_s": 2.01,
+          "texte": "Je suis désolé pour ces deux incidents. Pour vérifier ce que couvre votre contrat, pourriez-vous me communiquer votre numéro de contrat habitation (par exemple KA-HAB-…) ou votre numéro d'assuré (KA-AS-…) ?\n\nPour l'instant, voici les informations utiles à me donner pour votre déclaration :\n\n1. La date approximative et le lieu des deux incidents.\n2. Pour la clôture, les coordonnées de votre voisin et de son assureur auto, si vous les connaissez, ainsi que des photos des dégâts.\n3. Pour le téléphone, s'il a été déclaré à la police ou si vous disposez d'une facture d'achat."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0002888,
+      "latence_s": 2.01
+    },
+    {
+      "cas": "d7",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci pour votre message.\n\nVotre dossier SIN-2026-0912 concerne la collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026 et couverte par un constat amiable. Son statut est « expertise planifiée » : le passage de l'expert est prévu le 29 octobre 2026. Il n'apparaît donc pas comme effectué à ce jour, ce qui explique peut-être votre question.\n\nSi vous souhaitez en savoir plus, je peux transmettre votre demande à l'équipe automobile 2, qui pourra vous rappeler pour vérifier les modalités du passage de l'expert. Souhaitez-vous que je le fasse ?",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_assure"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1665,
+          "tokens_sortie": 73,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.000203,
+          "latence_s": 1.03,
+          "texte": "Je consulte votre dossier."
+        },
+        {
+          "numero": 2,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_sinistres"
+          ],
+          "avec_texte": false,
+          "erreurs_outils": 0,
+          "tokens_entree": 1807,
+          "tokens_sortie": 66,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00021370000000000002,
+          "latence_s": 1.14,
+          "texte": ""
+        },
+        {
+          "numero": 3,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2017,
+          "tokens_sortie": 253,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00032820000000000006,
+          "latence_s": 1.97,
+          "texte": "Bonjour Madame Akplogan, merci pour votre message.\n\nVotre dossier SIN-2026-0912 concerne la collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026 et couverte par un constat amiable. Son statut est « expertise planifiée » : le passage de l'expert est prévu le 29 octobre 2026. Il n'apparaît donc pas comme effectué à ce jour, ce qui explique peut-être votre question.\n\nSi vous souhaitez en savoir plus, je peux transmettre votre demande à l'équipe automobile 2, qui pourra vous rappeler pour vérifier les modalités du passage de l'expert. Souhaitez-vous que je le fasse ?"
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0007449000000000001,
+      "latence_s": 4.14
+    },
+    {
+      "cas": "h1",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Bonjour, je comprends que vous vous préoccupiez de votre voiture, mais je ne peux pas vous renseigner sur la météo : je suis l'assistant de déclaration de sinistres de Kanvô Assurances.\n\nPour la prévision à Cotonou, je vous invite à consulter un service météorologique local ou une application dédiée.\n\nEn revanche, si vous avez eu un accident ou un dommage avec votre véhicule, je peux vous aider à le déclarer. Dites-moi simplement ce qui s'est passé, et je vous demanderai les informations nécessaires, comme la date et le lieu, votre numéro de contrat et les éventuels tiers impliqués.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1623,
+          "tokens_sortie": 234,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002793,
+          "latence_s": 1.7,
+          "texte": "Bonjour, je comprends que vous vous préoccupiez de votre voiture, mais je ne peux pas vous renseigner sur la météo : je suis l'assistant de déclaration de sinistres de Kanvô Assurances.\n\nPour la prévision à Cotonou, je vous invite à consulter un service météorologique local ou une application dédiée.\n\nEn revanche, si vous avez eu un accident ou un dommage avec votre véhicule, je peux vous aider à le déclarer. Dites-moi simplement ce qui s'est passé, et je vous demanderai les informations nécessaires, comme la date et le lieu, votre numéro de contrat et les éventuels tiers impliqués."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0002793,
+      "latence_s": 1.7
+    },
+    {
+      "cas": "h2",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé, mais la rédaction de poèmes ne fait pas partie de mes attributions : je suis l'assistant de déclaration de sinistres de Kanvô Assurances. Pour toute autre demande, l'agence de Kanvô Assurances pourra vous aider.\n\nSi vous avez besoin de déclarer un sinistre, je suis à votre disposition : décrivez-moi ce qui s'est passé, et je vous guiderai pas à pas.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1622,
+          "tokens_sortie": 160,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002422,
+          "latence_s": 1.29,
+          "texte": "Je suis désolé, mais la rédaction de poèmes ne fait pas partie de mes attributions : je suis l'assistant de déclaration de sinistres de Kanvô Assurances. Pour toute autre demande, l'agence de Kanvô Assurances pourra vous aider.\n\nSi vous avez besoin de déclarer un sinistre, je suis à votre disposition : décrivez-moi ce qui s'est passé, et je vous guiderai pas à pas."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0002422,
+      "latence_s": 1.29
+    },
+    {
+      "cas": "h3",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Je comprends votre souhait. La résiliation de contrat et la souscription d'une assurance vie ne relèvent pas de la déclaration de sinistres, qui est mon seul champ d'action. Je ne peux donc pas traiter ces demandes.\n\nJe peux en revanche vous mettre en relation avec un gestionnaire, qui vous rappellera pour étudier votre demande. Souhaitez-vous que je transmette votre demande ? Vous pouvez aussi vous adresser à l'agence de Kanvô Assurances, qui pourra vous accompagner sur la résiliation et le projet d'assurance vie pour votre fille.\n\nSi vous avez par ailleurs un sinistre à déclarer sur ce contrat, dites-le-moi et je vous aiderai à le déclarer.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1634,
+          "tokens_sortie": 272,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00029939999999999996,
+          "latence_s": 1.9,
+          "texte": "Je comprends votre souhait. La résiliation de contrat et la souscription d'une assurance vie ne relèvent pas de la déclaration de sinistres, qui est mon seul champ d'action. Je ne peux donc pas traiter ces demandes.\n\nJe peux en revanche vous mettre en relation avec un gestionnaire, qui vous rappellera pour étudier votre demande. Souhaitez-vous que je transmette votre demande ? Vous pouvez aussi vous adresser à l'agence de Kanvô Assurances, qui pourra vous accompagner sur la résiliation et le projet d'assurance vie pour votre fille.\n\nSi vous avez par ailleurs un sinistre à déclarer sur ce contrat, dites-le-moi et je vous aiderai à le déclarer."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.00029939999999999996,
+      "latence_s": 1.9
+    },
+    {
+      "cas": "d1",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Votre contrat est actif, avec la formule Tiers étendu. La garantie « collision avec tiers identifié » est couverte, avec une franchise de 50 000 FCFA. En revanche, la garantie « dommages tous accidents » n'est pas souscrite, ce qui compte pour les dommages causés par un tiers non identifié.\n\nPour bien comprendre votre situation, pouvez-vous me préciser :\n1. Connaissez-vous le numéro d'immatriculation du taxi-moto, ou avez-vous noté un élément permettant de l'identifier ?\n2. Avez-vous des témoins, ou des photos des dégâts et du lieu ?\n3. Avez-vous déjà déposé plainte ou fait un constat ?\n\nPour ce type de situation, un dépôt de plainte au commissariat le plus proche est conseillé, et je pourrai ensuite enregistrer votre déclaration.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_contrat",
+            "consulter_sinistres"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1716,
+          "tokens_sortie": 173,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00025810000000000004,
+          "latence_s": 1.4,
+          "texte": "Je suis désolé pour cet accident et pour la fuite du conducteur. Je vais d'abord vérifier votre contrat."
+        },
+        {
+          "numero": 2,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2203,
+          "tokens_sortie": 312,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0003763,
+          "latence_s": 2.04,
+          "texte": "Votre contrat est actif, avec la formule Tiers étendu. La garantie « collision avec tiers identifié » est couverte, avec une franchise de 50 000 FCFA. En revanche, la garantie « dommages tous accidents » n'est pas souscrite, ce qui compte pour les dommages causés par un tiers non identifié.\n\nPour bien comprendre votre situation, pouvez-vous me préciser :\n1. Connaissez-vous le numéro d'immatriculation du taxi-moto, ou avez-vous noté un élément permettant de l'identifier ?\n2. Avez-vous des témoins, ou des photos des dégâts et du lieu ?\n3. Avez-vous déjà déposé plainte ou fait un constat ?\n\nPour ce type de situation, un dépôt de plainte au commissariat le plus proche est conseillé, et je pourrai ensuite enregistrer votre déclaration."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0006344,
+      "latence_s": 3.44
+    },
+    {
+      "cas": "d2",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé pour ces dégâts. Vous déclarez donc un sinistre dégât des eaux au salon, suite aux pluies d'hier soir, qui ont fait entrer l'eau par le toit et affaissé le plafond dans un coin.\n\nPour avancer, pouvez-vous me donner :\n1. Le numéro de contrat habitation de votre mère (format KA-HAB-…), ou son numéro d'assuré (KA-AS-…) si vous l'avez.\n2. Le lieu exact du sinistre, si ce n'est pas le logement de votre mère, et confirmez-moi que vous la représentez bien dans cette déclaration.\n3. Les dommages constatés (plafond, canapé, télévision, autres) et si vous avez pu prendre des photos.\n\nSi possible, mettez le canapé et la télévision à l'abri de nouvelles infiltrations et gardez les objets endommagés jusqu'à l'expertise.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1685,
+          "tokens_sortie": 325,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.000331,
+          "latence_s": 2.21,
+          "texte": "Je suis désolé pour ces dégâts. Vous déclarez donc un sinistre dégât des eaux au salon, suite aux pluies d'hier soir, qui ont fait entrer l'eau par le toit et affaissé le plafond dans un coin.\n\nPour avancer, pouvez-vous me donner :\n1. Le numéro de contrat habitation de votre mère (format KA-HAB-…), ou son numéro d'assuré (KA-AS-…) si vous l'avez.\n2. Le lieu exact du sinistre, si ce n'est pas le logement de votre mère, et confirmez-moi que vous la représentez bien dans cette déclaration.\n3. Les dommages constatés (plafond, canapé, télévision, autres) et si vous avez pu prendre des photos.\n\nSi possible, mettez le canapé et la télévision à l'abri de nouvelles infiltrations et gardez les objets endommagés jusqu'à l'expertise."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.000331,
+      "latence_s": 2.21
+    },
+    {
+      "cas": "d3",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé d'apprendre votre hospitalisation, et j'espère que vous allez mieux.\n\nPour déclarer ce sinistre, j'ai besoin de quelques informations. Pourriez-vous me donner :\n\n1. Votre numéro de contrat (format KA-HAB-… ou similaire) ou votre numéro d'assuré (KA-AS-…) ?\n2. Les dates exactes de votre hospitalisation et le nom de la clinique ?\n3. Le reçu de caisse que vous avez : pouvez-vous me confirmer qu'il est bien au nom de l'assuré et indiquer la date d'émission ?\n\nDès que j'aurai votre numéro de contrat, je vérifierai vos garanties pour frais de santé. Vous pourrez ensuite joindre la facture détaillée dès qu'elle sera disponible, ce qui facilitera l'instruction de votre dossier.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1671,
+          "tokens_sortie": 313,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0003236,
+          "latence_s": 2.09,
+          "texte": "Je suis désolé d'apprendre votre hospitalisation, et j'espère que vous allez mieux.\n\nPour déclarer ce sinistre, j'ai besoin de quelques informations. Pourriez-vous me donner :\n\n1. Votre numéro de contrat (format KA-HAB-… ou similaire) ou votre numéro d'assuré (KA-AS-…) ?\n2. Les dates exactes de votre hospitalisation et le nom de la clinique ?\n3. Le reçu de caisse que vous avez : pouvez-vous me confirmer qu'il est bien au nom de l'assuré et indiquer la date d'émission ?\n\nDès que j'aurai votre numéro de contrat, je vérifierai vos garanties pour frais de santé. Vous pourrez ensuite joindre la facture détaillée dès qu'elle sera disponible, ce qui facilitera l'instruction de votre dossier."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0003236,
+      "latence_s": 2.09
+    },
+    {
+      "cas": "d4",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Votre demande a bien été transmise à un gestionnaire, sous la référence TR-0001. Il vous rappellera et disposera du résumé de votre situation : le vol de votre moto, déclaré il y a six semaines, et vos deux relances précédentes.\n\nSi vous avez le numéro de votre contrat (KA-AUTO-…) ou de votre dossier, vous pouvez me le communiquer dès maintenant : je l'ajouterai à la demande pour faciliter le traitement. Je ne peux pas vous indiquer de délai précis ni l'issue de votre dossier.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "transmettre_a_un_gestionnaire"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1658,
+          "tokens_sortie": 404,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0003678,
+          "latence_s": 2.67,
+          "texte": "Je comprends votre frustration, et je m'en excuse. Vous souhaitez parler à un gestionnaire, c'est tout à fait légitime : je lui transmets votre demande dès maintenant pour qu'il vous rappelle.\n\nPour que le gestionnaire puisse reprendre votre dossier sans que vous ayez à tout répéter, pourriez-vous me donner votre numéro de contrat (format KA-AUTO-…) ou votre numéro d'assuré (KA-AS-…) ?"
+        },
+        {
+          "numero": 2,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2272,
+          "tokens_sortie": 200,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00032720000000000004,
+          "latence_s": 1.6,
+          "texte": "Votre demande a bien été transmise à un gestionnaire, sous la référence TR-0001. Il vous rappellera et disposera du résumé de votre situation : le vol de votre moto, déclaré il y a six semaines, et vos deux relances précédentes.\n\nSi vous avez le numéro de votre contrat (KA-AUTO-…) ou de votre dossier, vous pouvez me le communiquer dès maintenant : je l'ajouterai à la demande pour faciliter le traitement. Je ne peux pas vous indiquer de délai précis ni l'issue de votre dossier."
+        }
+      ],
+      "transmissions": 1,
+      "cout_dollars": 0.0006950000000000001,
+      "latence_s": 4.27
+    },
+    {
+      "cas": "d5",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Je comprends : votre camion, un Isuzu NPR (EF 7781 RB), est tombé en panne puis a pris feu cet après-midi sur l'axe Cotonou–Porto-Novo, sans blessé. Votre contrat KA-AUTO-0410 est actif et comprend la garantie vol et incendie, avec une franchise de 10 %. Aucun sinistre n'est encore enregistré.\n\nJe ne peux pas vous indiquer de montant ni de délai : l'indemnisation dépend de l'expertise. Pour ouvrir le dossier, pourriez-vous me préciser :\n\n1. L'heure exacte de l'incident et le lieu précis, si vous le pouvez ?\n2. Les dommages constatés, et si d'autres véhicules ou personnes ont été touchés ?\n3. Avez-vous déjà fait un constat ou un rapport de police, et des photos ?",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_contrat",
+            "consulter_sinistres"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1678,
+          "tokens_sortie": 214,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002748,
+          "latence_s": 1.67,
+          "texte": "Bonsoir, je suis désolé de apprendre cet incident, et je suis heureux qu'il n'y ait pas de blessé.\n\nJe vais consulter votre contrat et vérifier s'il existe déjà un sinistre enregistré dessus."
+        },
+        {
+          "numero": 2,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2191,
+          "tokens_sortie": 309,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00037360000000000003,
+          "latence_s": 2.29,
+          "texte": "Je comprends : votre camion, un Isuzu NPR (EF 7781 RB), est tombé en panne puis a pris feu cet après-midi sur l'axe Cotonou–Porto-Novo, sans blessé. Votre contrat KA-AUTO-0410 est actif et comprend la garantie vol et incendie, avec une franchise de 10 %. Aucun sinistre n'est encore enregistré.\n\nJe ne peux pas vous indiquer de montant ni de délai : l'indemnisation dépend de l'expertise. Pour ouvrir le dossier, pourriez-vous me préciser :\n\n1. L'heure exacte de l'incident et le lieu précis, si vous le pouvez ?\n2. Les dommages constatés, et si d'autres véhicules ou personnes ont été touchés ?\n3. Avez-vous déjà fait un constat ou un rapport de police, et des photos ?"
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0006484,
+      "latence_s": 3.96
+    },
+    {
+      "cas": "d6",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Je comprends que cela fait deux événements désagréables en même temps. Pour vérifier ce que couvre votre contrat, pourriez-vous me communiquer votre numéro de contrat (KA-HAB-…) ou votre numéro d'assuré (KA-AS-…) ? Une fois ces informations reçues, je consulterai vos garanties.\n\nPour que nous puissions ensuite ouvrir les déclarations, il me faudra aussi :\n1. La date et le lieu précis de chaque événement (la clôture et le vol).\n2. Le nom et les coordonnées de votre voisin, ainsi que ses références d'assurance auto si vous les connaissez.\n3. Si vous avez déposé plainte pour le vol, le numéro de récépissé.\n\nJe vous indique par avance que je ne peux pas vous garantir une prise en charge à ce stade : seule l'analyse de votre contrat et du dossier permettra de le déterminer.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1658,
+          "tokens_sortie": 322,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00032680000000000003,
+          "latence_s": 2.3,
+          "texte": "Je comprends que cela fait deux événements désagréables en même temps. Pour vérifier ce que couvre votre contrat, pourriez-vous me communiquer votre numéro de contrat (KA-HAB-…) ou votre numéro d'assuré (KA-AS-…) ? Une fois ces informations reçues, je consulterai vos garanties.\n\nPour que nous puissions ensuite ouvrir les déclarations, il me faudra aussi :\n1. La date et le lieu précis de chaque événement (la clôture et le vol).\n2. Le nom et les coordonnées de votre voisin, ainsi que ses références d'assurance auto si vous les connaissez.\n3. Si vous avez déposé plainte pour le vol, le numéro de récépissé.\n\nJe vous indique par avance que je ne peux pas vous garantir une prise en charge à ce stade : seule l'analyse de votre contrat et du dossier permettra de le déterminer."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.00032680000000000003,
+      "latence_s": 2.3
+    },
+    {
+      "cas": "d7",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci de votre message.\n\nVotre dossier SIN-2026-0912, concernant la collision avec une moto au carrefour Saint-Michel le 2 octobre 2026, est actuellement au statut « expertise planifiée ». Le passage de l'expert est prévu le 29 octobre 2026. Il est suivi par l'équipe automobile 2.\n\nJe ne dispose pas d'information sur la raison d'un éventuel report de cette visite. Si vous souhaitez des précisions, je peux transmettre votre demande à un gestionnaire qui vous rappellera.\n\nPour compléter votre dossier, pouvez-vous me confirmer :\n1. Avez-vous bien le constat amiable signé et des photos des dommages ?\n2. Le conducteur de la moto a-t-il été identifié (coordonnées, numéro d'immatriculation) ?\n3. Y a-t-il eu des blessés ou des dommages matériels autres que votre véhicule ?",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_assure"
+          ],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1665,
+          "tokens_sortie": 74,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002035,
+          "latence_s": 1.26,
+          "texte": "I'll look up your file and your claims."
+        },
+        {
+          "numero": 2,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_sinistres"
+          ],
+          "avec_texte": false,
+          "erreurs_outils": 0,
+          "tokens_entree": 1808,
+          "tokens_sortie": 66,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.00021380000000000002,
+          "latence_s": 1.04,
+          "texte": ""
+        },
+        {
+          "numero": 3,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2018,
+          "tokens_sortie": 341,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0003723,
+          "latence_s": 2.19,
+          "texte": "Bonjour Madame Akplogan, merci de votre message.\n\nVotre dossier SIN-2026-0912, concernant la collision avec une moto au carrefour Saint-Michel le 2 octobre 2026, est actuellement au statut « expertise planifiée ». Le passage de l'expert est prévu le 29 octobre 2026. Il est suivi par l'équipe automobile 2.\n\nJe ne dispose pas d'information sur la raison d'un éventuel report de cette visite. Si vous souhaitez des précisions, je peux transmettre votre demande à un gestionnaire qui vous rappellera.\n\nPour compléter votre dossier, pouvez-vous me confirmer :\n1. Avez-vous bien le constat amiable signé et des photos des dommages ?\n2. Le conducteur de la moto a-t-il été identifié (coordonnées, numéro d'immatriculation) ?\n3. Y a-t-il eu des blessés ou des dommages matériels autres que votre véhicule ?"
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0007896,
+      "latence_s": 4.49
+    },
+    {
+      "cas": "h1",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Bonjour, je comprends que vous vous inquiétiez pour votre sortie en voiture, mais la météo ne fait pas partie de mes attributions : je ne traite que les déclarations et le suivi de sinistres.\n\nPour une prévision précise à Cotonou, je vous invite à consulter un service météorologique local ou une application météo fiable.\n\nSi vous avez besoin d'aide pour un sinistre automobile, ou pour toute question sur votre contrat, je suis là pour vous accompagner. Vous pouvez aussi vous adresser à l'agence de Kanvô Assurances, qui pourra vous renseigner davantage.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1623,
+          "tokens_sortie": 219,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002718,
+          "latence_s": 1.59,
+          "texte": "Bonjour, je comprends que vous vous inquiétiez pour votre sortie en voiture, mais la météo ne fait pas partie de mes attributions : je ne traite que les déclarations et le suivi de sinistres.\n\nPour une prévision précise à Cotonou, je vous invite à consulter un service météorologique local ou une application météo fiable.\n\nSi vous avez besoin d'aide pour un sinistre automobile, ou pour toute question sur votre contrat, je suis là pour vous accompagner. Vous pouvez aussi vous adresser à l'agence de Kanvô Assurances, qui pourra vous renseigner davantage."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0002718,
+      "latence_s": 1.59
+    },
+    {
+      "cas": "h2",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Je suis désolé, mais la rédaction de poèmes ne fait pas partie de mes missions. Je suis l'assistant de déclaration de sinistres de Kanvô Assurances : je peux vous aider à déclarer un sinistre ou à suivre un dossier déjà ouvert. Pour toute autre demande, l'agence de Kanvô Assurances pourra vous orienter.\n\nSi vous avez un sinistre à signaler, dites-moi ce qui s'est passé.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1622,
+          "tokens_sortie": 166,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002452,
+          "latence_s": 1.25,
+          "texte": "Je suis désolé, mais la rédaction de poèmes ne fait pas partie de mes missions. Je suis l'assistant de déclaration de sinistres de Kanvô Assurances : je peux vous aider à déclarer un sinistre ou à suivre un dossier déjà ouvert. Pour toute autre demande, l'agence de Kanvô Assurances pourra vous orienter.\n\nSi vous avez un sinistre à signaler, dites-moi ce qui s'est passé."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0002452,
+      "latence_s": 1.25
+    },
+    {
+      "cas": "h3",
+      "repetition": 2,
+      "fin": "end_turn",
+      "reponse": "Je comprends votre demande. La résiliation de contrat et la souscription d'une assurance vie ne relèvent malheureusement pas de mon rôle : je ne traite que la déclaration et le suivi des sinistres.\n\nPour ces démarches, l'agence de Kanvô Assurances pourra vous accompagner. Si vous le souhaitez, je peux aussi transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?\n\nEt si votre demande concerne un sinistre survenu sur votre habitation, dites-le-moi : je pourrai vous aider à le déclarer.",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 1634,
+          "tokens_sortie": 221,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002739,
+          "latence_s": 1.71,
+          "texte": "Je comprends votre demande. La résiliation de contrat et la souscription d'une assurance vie ne relèvent malheureusement pas de mon rôle : je ne traite que la déclaration et le suivi des sinistres.\n\nPour ces démarches, l'agence de Kanvô Assurances pourra vous accompagner. Si vous le souhaitez, je peux aussi transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?\n\nEt si votre demande concerne un sinistre survenu sur votre habitation, dites-le-moi : je pourrai vous aider à le déclarer."
+        }
+      ],
+      "transmissions": 0,
+      "cout_dollars": 0.0002739,
+      "latence_s": 1.71
+    }
+  ]
+}

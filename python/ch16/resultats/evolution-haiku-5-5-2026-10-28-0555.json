@@ -1,0 +1,177 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "taches": [
+    "evolution"
+  ],
+  "variantes": [
+    "plan"
+  ],
+  "repetitions": 1,
+  "depense_dollars": 0.031714,
+  "resume": {
+    "evolution:plan": {
+      "seances": 1,
+      "fins": {
+        "success": 1
+      },
+      "cout_total": 0.031714,
+      "cout_moyen": 0.031714,
+      "cout_recalcule_total": 0.031714,
+      "tours_moyens": 36,
+      "contexte_final_median": 55522,
+      "lectures_principales_moyennes": 21,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "base/schema.sql": 1,
+        "config.py": 1,
+        "contrats/numeros.py": 1,
+        "primes/calcul.py": 1,
+        "sinistres/franchise.py": 1
+      },
+      "latence_mediane_s": 107.6,
+      "reussis": [
+        8
+      ],
+      "par_controle": {
+        "branche_declaree": 1,
+        "numero_valide": 1,
+        "prime_125": 1,
+        "prime_taxi": 1,
+        "prime_casque": 1,
+        "franchises": 1,
+        "autres_primes_intactes": 1,
+        "bout_en_bout_juste": 1,
+        "tarifs_intacts": 1
+      },
+      "plans_obtenus": 1,
+      "hors_plan": {}
+    }
+  },
+  "seances": [
+    {
+      "tache": "evolution",
+      "variante": "plan",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "La branche moto est implémentée, mais je ne l'ai pas exécutée : le lancement de Python a été refusé par le mode de permissions de cette session. Le contrôle a donc été fait par relecture du code et par calcul à la main.\n\n## Modifications\n\n- **`config.py`** : `MOTO` ajouté à `BRANCHES`, libellé « Moto ». Le rapport et l'export itèrent sur `BRANCHES`, donc ils incluent la branche.\n- **`contrats/numeros.py`** : `MOTO` accepté par `valide()`. `prochain_numero('MOTO')` donne `KA-MOTO-0001`.\n- **`primes/calcul.py`** :\n  - nouvelle `prime_moto(cylindree, usage, options)` : tranches ≤125 / ≤500 / 501+, lecture de `tarifs/moto.txt`, majoration taxi, forfait casque ajouté après la majoration, retour via `arrondir_fcfa()` ;\n  - cylindrée absente ou ≤ 0 : erreur explicite ;\n  - branche `MOTO` dans `prime()`.\n- **`sinistres/franchise.py`** : `MOTO` avec collision 20 000 et vol 30 000.\n- **`base/schema.sql`** : commentaire seulement, pas de migration.\n\n`tarifs/moto.txt`, `primes/tarifs.py` et `util/montants.py` n'ont pas été touchés.\n\n## Vérifications\n\n- **Calcul à la main** (prime annuelle frais de police inclus) :\n  - 125 cm³ → 33 000 FCFA ;\n  - 300 cm³, taxi, casque → 85 400 FCFA (brut 80 400) ;\n  - 600 cm³ → 77 000 FCFA.\n- **Script prêt, non exécuté** : `verif/verif_moto.py` (hors dépôt). Il crée une base temporaire dans `verif/recette/`, pas dans `donnees/`. Il couvre la numérotation, les tarifs, deux contrats (annuel et mensuel), les quittances, deux sinistres (franchises), le rapport et l'export. Pour le lancer : `python verif\\verif_moto.py`.\n\n## Choix faits\n\n- Pour les trois points ouverts du plan, j'ai pris les propositions du plan, faute de réponse de votre part : quittances moto inchangées (héritent de `int()`), `formule` passée par l'appelant (la valeur `'standard'` est à donner à la création), cylindrée invalide refusée.\n\n## À surveiller\n\n- **Fractionnement mensuel** : `prime_avec_frais` et `echeancier` utilisent `int()`. Le calcul 80 400 × 1,03 peut tomber juste sous l'entier et perdre 1 FCFA. À vérifier sur la base de recette ; la correction touche aussi les autres branches, donc elle relève de la DSI (ticket DSI-2019-114).\n- **Résiliation moto** : `prorata.py` utilise `round()`, comme pour les autres branches.\n- **Autres points signalés, non corrigés** : SQL formaté avec `%` dans `requetes.py` (lignes 15 et 24), compteur de sinistres en mémoire, `ANNEE_COURANTE = 2016`.\n\nProchaine étape : lancer `verif_moto.py` sur votre poste, ou me relancer une fois Python autorisé.",
+      "tours": 36,
+      "cout_dollars": 0.031714099999999995,
+      "cout_recalcule": 0.0317141,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 40,
+          "outputTokens": 31814,
+          "cacheReadInputTokens": 696985,
+          "cacheCreationInputTokens": 70666,
+          "webSearchRequests": 0,
+          "costUSD": 0.031714099999999995,
+          "contextWindow": 2000000,
+          "maxOutputTokens": 256000,
+          "thinkingTokens": 14055
+        }
+      },
+      "outils": [
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Write",
+        "ToolSearch",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Edit",
+        "Write",
+        "Bash",
+        "Read"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "tarifs/moto.txt",
+        "primes/tarifs.py",
+        "primes/calcul.py",
+        "contrats/numeros.py",
+        "base/schema.sql",
+        ".claude/rules/tarifs.md",
+        "util/montants.py",
+        "config.py",
+        "contrats/contrat.py",
+        "sinistres/franchise.py",
+        "sinistres/declaration.py",
+        "rapports/portefeuille.py",
+        "rapports/export_csv.py",
+        "quittances/quittance.py",
+        "lancer.py",
+        "base/requetes.py",
+        "util/divers.py",
+        "quittances/echeancier.py",
+        "base/connexion.py",
+        "primes/prorata.py",
+        "primes/calcul.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd <temp>/kanvo-ch16-lg59dpvt/verif && PYTHONDONTWRITEBYTECODE=1 python verif_moto.py 2>&1; echo \"exit=$?\""
+      ],
+      "contexte_final": 55522,
+      "contexte_max": 55522,
+      "fichiers_modifies": [
+        "base/schema.sql",
+        "config.py",
+        "contrats/numeros.py",
+        "primes/calcul.py",
+        "sinistres/franchise.py"
+      ],
+      "plan": "Le plan est écrit dans `personnel/plans/note-de-l-actuariat-n-transient-crystal.md`. Je n'ai pas pu appeler `ExitPlanMode` ni `AskUserQuestion` : ces outils ne sont pas disponibles dans cette session. Les questions sont donc posées ici, en texte.\n\n## Approche\n\nAjouter la branche `MOTO` sur le modèle des branches existantes, sans toucher au code commun :\n\n1. **`config.py`** : `'MOTO'` dans `BRANCHES` et `'Moto'` dans `LIBELLES`. Le rapport et l'export itèrent sur `BRANCHES`, donc ils prennent la branche sans autre changement.\n2. **`contrats/numeros.py`** : ajouter `'MOTO'` à `valide()`. `KA-MOTO-0001` sort de `prochain_numero` tel quel.\n3. **`primes/calcul.py`** : nouvelle `prime_moto(cylindree, usage, options)`.\n   - Tarifs lus dans `tarifs/moto.txt` via `tarifs.lire('moto')`, sans taux en dur.\n   - Tranches : ≤125, ≤500, sinon 501+.\n   - Taxi : × 1.65. Casque passager : + 4 500, ajouté après la majoration.\n   - Retour via `arrondir_fcfa()`, pas `int()`, conformément à `montants.md`.\n   - Branche `MOTO` dans `prime()`. Pas de cylindrée par défaut : un contrat sans cylindrée doit échouer.\n4. **`sinistres/franchise.py`** : `'MOTO': {'collision': 20000, 'vol': 30000}`.\n5. **`base/schema.sql`** : commentaire seulement. Pas de `CHECK`, donc pas de migration.\n\nNon modifiés : `tarifs/moto.txt`, `primes/tarifs.py`, `util/montants.py`.\n\n## Questions à trancher\n\n- **Arrondis partagés.** Les quittances moto passent par `prime_avec_frais` (`int(p)`, frais de fractionnement) et `echeancier` (`int(prime / n)`). Ces fonctions communes tronquent. Les corriger change les primes déjà facturées, ce que interdit le ticket DSI-2019-114 sans ticket. Je propose de ne rien changer et de signaler le point à la DSI. Préférez-vous une logique propre à la moto ?\n- **Formule.** La note ne donne pas de valeur de `formule` pour la moto. Je propose `'standard'`.\n- **Cylindrée nulle ou négative.** Je propose de refuser avant le calcul.\n\n## Signalé, non corrigé\n\n- `prorata.py` utilise `round()` : une résiliation moto héritera de l'arrondi au pair.\n- `requetes.py` lignes 15 et 24 : SQL formaté avec `%`, contraire à `base.md`.\n- `declaration.py` : le compteur de sinistres est en mémoire et repart à 1 à chaque lancement.\n- `config.ANNEE_COURANTE = 2016` : valeur périmée.\n- Aucune commande `lancer.py` ne crée de contrat ni de sinistre : la vérification se fait par `python -c` sur la base de recette.\n\n## Vérification prévue\n\nValeurs attendues, calculées depuis `tarifs/moto.txt` et frais de police inclus :\n- 125 cm³ : 33 000 FCFA.\n- 300 cm³, taxi, casque : 85 400 FCFA.\n- 600 cm³ : 77 000 FCFA.\n\nPuis : numéro `KA-MOTO-0001`, quittances, sinistre (franchise 20 000 en collision ; 10 000 si le dommage est de 10 000 en vol), `lancer.py rapport`, `lancer.py export`, et contrôle de non-régression sur un contrat auto existant.\n\nUne fois les trois questions tranchées, je peux appliquer le plan.",
+      "controles": {
+        "branche_declaree": true,
+        "numero_valide": true,
+        "prime_125": true,
+        "prime_taxi": true,
+        "prime_casque": true,
+        "franchises": true,
+        "autres_primes_intactes": true,
+        "bout_en_bout": {
+          "numero": "KA-MOTO-0001",
+          "prime_annuelle": 33000,
+          "quittances": 1,
+          "franchise": 20000,
+          "rapport": 1,
+          "export": true
+        },
+        "bout_en_bout_juste": true,
+        "reussis": 8,
+        "sur": 8,
+        "tarifs_intacts": true,
+        "hors_plan": []
+      },
+      "session_id": "ab346007-3cac-4d8a-8032-1e13cfc750a0",
+      "parties": 2,
+      "latence_s": 107.6,
+      "erreur": null
+    }
+  ]
+}

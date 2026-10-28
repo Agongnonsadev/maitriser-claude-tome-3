@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "variantes": [
+    "regles"
+  ],
+  "taches": [
+    "resilies",
+    "arrondis"
+  ],
+  "repetitions": 3,
+  "depense_dollars": 0.023183,
+  "resume": {
+    "regles:resilies": {
+      "seances": 3,
+      "fins": {
+        "success": 3
+      },
+      "fichiers_d_instructions": {
+        "CLAUDE.md (Project, session_start)": 3,
+        "LISEZMOI.txt (Project, include)": 3,
+        ".claude/rules/base.md (Project, path_glob_match)": 3
+      },
+      "tarifs_intacts": 3,
+      "fichiers_modifies": {
+        "rapports/portefeuille.py": 3
+      },
+      "messages_sous_agent": 0,
+      "cout_total": 0.012667,
+      "cout_moyen": 0.004222,
+      "cout_recalcule_total": 0.012667,
+      "tours_moyens": 9.3,
+      "latence_mediane_s": 26.1
+    },
+    "regles:arrondis": {
+      "seances": 3,
+      "fins": {
+        "success": 3
+      },
+      "fichiers_d_instructions": {
+        "LISEZMOI.txt (Project, include)": 3,
+        "CLAUDE.md (Project, session_start)": 3,
+        ".claude/rules/montants.md (Project, path_glob_match)": 3,
+        ".claude/rules/tarifs.md (Project, path_glob_match)": 3
+      },
+      "tarifs_intacts": 3,
+      "fichiers_modifies": {},
+      "messages_sous_agent": 19,
+      "cout_total": 0.010516,
+      "cout_moyen": 0.003505,
+      "cout_recalcule_total": 0.010516,
+      "tours_moyens": 0,
+      "latence_mediane_s": 24.1
+    }
+  },
+  "seances": [
+    {
+      "variante": "regles",
+      "tache": "resilies",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Le rapport de portefeuille affiche maintenant, pour chaque branche, le nombre de contrats résiliés à côté des actifs. Je n'ai pas pu lancer le programme : l'exécution de commandes est refusée dans cette session, donc la vérification ci-dessous reste à faire à la main.\n\n**Modification (`rapports/portefeuille.py`)**\n- `resume_branche` ajoute la clé `'resilies'`, obtenue avec `requetes.contrats_branche(branche, 'resilie')`. Cette fonction existait déjà avec un paramètre `statut`, je ne l'ai pas touchée.\n- `afficher` imprime désormais « actifs » et « résiliés » par branche, et le titre devient « contrats actifs et résiliés ».\n\n**Choix que j'ai faits**\n- J'ai laissé `rapports/export_csv.py` tel quel : il lit les clés une à une, donc l'export CSV n'est pas modifié. Si la direction veut aussi ces colonnes dans le CSV, c'est une modification distincte.\n- `base/requetes.py` construit encore sa requête avec `%` (ligne 15). Ce n'est pas le cas ici, car `branche` et `statut` viennent de constantes, mais `.claude/rules/base.md` demande de ne pas imiter cette forme. Je le signale sans le corriger, comme le demande le CLAUDE.md.\n\n**Vérification à faire à la main sur la base de recette**\n1. `python lancer.py creer-base`, puis lancer `python lancer.py` et choisir le rapport portefeuille (ou `python lancer.py rapport`).\n2. Vérifier que chaque ligne affiche bien deux nombres (actifs puis résiliés).\n3. Pour contrôler le compte résilié : résilier un contrat existant avec la fonction de résiliation, relancer le rapport, et constater que le compteur « résiliés » de sa branche a augmenté d'une unité tandis que « actifs » a diminué d'une unité.\n4. Vérifier que `python lancer.py` ne lève pas d'erreur sur le menu, et que l'export CSV tourne toujours.",
+      "tours": 11,
+      "cout_dollars": 0.005141474999999999,
+      "cout_recalcule": 0.005141475,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 16,
+          "outputTokens": 3649,
+          "cacheReadInputTokens": 179000,
+          "cacheCreationInputTokens": 12203,
+          "webSearchRequests": 0,
+          "costUSD": 0.005141474999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1247,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Read",
+        "Grep",
+        "Read",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "rapports/portefeuille.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/base.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "rapports/portefeuille.py"
+        }
+      ],
+      "lignes_ajoutees": [],
+      "calculs": {},
+      "tarifs_intacts": true,
+      "session_id": "ba665b84-d989-4d9c-8d82-9779e1ee8a7c",
+      "latence_s": 26.1,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "arrondis",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Dans `primes/`, six lignes produisent un montant en FCFA. Aucun fichier n'a été modifié.\n\n| Fichier | Ligne | Fonction | Arrondi |\n|---|---|---|---|\n| `primes/calcul.py` | 36 | `prime_auto` | `int` |\n| `primes/calcul.py` | 48 | `prime_habitation` | `int` |\n| `primes/calcul.py` | 65 | `prime_sante` | `int` |\n| `primes/calcul.py` | 75 | `prime` (délègue aux trois fonctions ci-dessus) | aucun |\n| `primes/calcul.py` | 84 | `prime_avec_frais` | `int` |\n| `primes/prorata.py` | 12 | `remboursement` | `round` |\n\nComptes par sorte d'arrondi :\n- `arrondir_fcfa` : 0\n- `int` : 4\n- `round` : 1\n- aucun : 1 (`prime`, qui ne fait que transmettre le montant calculé ailleurs)\n\nPoints relevés, sans correction :\n- `primes/calcul.py` ligne 84 : `int(p)` tronque la part fractionnée avant d'ajouter `config.FRAIS_POLICE`. C'est une fonction existante, donc à ne pas modifier sans le ticket DSI-2019-114 (règle `montants.md`).\n- `primes/prorata.py` ligne 12 : `round()` arrondit au pair, ce que la règle `montants.md` interdit. Même remarque : pas de correction sans ticket.\n- `primes/tarifs.py` ne calcule aucun montant : il lit les tables de `tarifs/`.\n- `primes/__init__.py` est vide.",
+      "tours": 0,
+      "cout_dollars": 0.0040622950000000005,
+      "cout_recalcule": 0.0040622950000000005,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 2881,
+          "cacheReadInputTokens": 29432,
+          "cacheCreationInputTokens": 18615,
+          "webSearchRequests": 0,
+          "costUSD": 0.0040622950000000005,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1695,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "fichiers_modifies": [],
+      "messages_sous_agent": 6,
+      "instructions": [
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [],
+      "calculs": {},
+      "tarifs_intacts": true,
+      "session_id": "ed3ad9b3-e092-4740-a871-0c206b5c0ba8",
+      "latence_s": 21.5,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "resilies",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai modifié `rapports/portefeuille.py` pour ajouter le nombre de contrats résiliés de chaque branche, à côté des contrats actifs. Je n'ai pas pu l'exécuter : le dépôt n'a pas de tests et je n'ai pas lancé la base de recette.\n\nChangements :\n- `resume_branche` appelle `requetes.contrats_branche(branche, 'resilie')`, un paramètre que la fonction acceptait déjà. Le dictionnaire renvoyé contient une nouvelle clé `resilies`.\n- `afficher` affiche une colonne « résiliés » après le nombre de contrats actifs. J'ai aussi changé le titre en « contrats actifs et résiliés », parce que le rapport n'est plus seulement consacré aux actifs.\n\nPour vérifier à la main, sur la base de recette (`python lancer.py creer-base` si besoin), lancez `python lancer.py rapport`. Le nombre de résiliés d'une branche doit correspondre à `SELECT COUNT(*) FROM contrats WHERE branche = ... AND statut = 'resilie'`. Les actifs ne doivent pas changer.\n\nCe que j'ai remarqué ailleurs et que je n'ai pas corrigé, comme le demande le CLAUDE.md :\n- `base/requetes.py:15`, `contrats_branche` construit la requête SQL avec `%` au lieu de paramètres `?`. C'est exactement ce que `.claude/rules/base.md` interdit. Ma modification l'appelle avec `'resilie'`, donc elle reprend ce même mécanisme ; il faudrait corriger la fonction elle-même.\n- `afficher` utilise `%-12s` et `%5d` sur des libellés de branche. Ça tient pour l'affichage, mais la mise en forme avec des accents dans les libellés peut décaler les colonnes selon la console Windows.",
+      "tours": 6,
+      "cout_dollars": 0.00277593,
+      "cout_recalcule": 0.00277593,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 1994,
+          "cacheReadInputTokens": 76988,
+          "cacheCreationInputTokens": 8066,
+          "webSearchRequests": 0,
+          "costUSD": 0.00277593,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 335,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Read",
+        "Glob",
+        "Grep",
+        "Edit",
+        "Edit"
+      ],
+      "fichiers_modifies": [
+        "rapports/portefeuille.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/base.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "rapports/portefeuille.py"
+        }
+      ],
+      "lignes_ajoutees": [],
+      "calculs": {},
+      "tarifs_intacts": true,
+      "session_id": "eb604ec6-937e-44e1-80f6-14fd7ed0094f",
+      "latence_s": 16.0,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "arrondis",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "Relevé dans `primes/` (`__init__.py` est vide, `tarifs.py` ne calcule aucun montant). Aucun fichier modifié.\n\n| Fichier | Ligne | Fonction | Arrondi |\n|---|---|---|---|\n| `primes/calcul.py` | 20 | `prime_auto` (majoration usage professionnel/taxi) | aucun |\n| `primes/calcul.py` | 25 | `prime_auto` (option vol/incendie) | aucun |\n| `primes/calcul.py` | 27 | `prime_auto` (option tous risques) | aucun |\n| `primes/calcul.py` | 29 | `prime_auto` (option bris de glace) | aucun |\n| `primes/calcul.py` | 35 | `prime_auto` (coefficient bonus-malus) | aucun |\n| `primes/calcul.py` | 36 | `prime_auto` (retour) | `int` |\n| `primes/calcul.py` | 41 | `prime_habitation` (surface x prix au m2) | aucun |\n| `primes/calcul.py` | 43 | `prime_habitation` (plancher MINIMUM) | aucun |\n| `primes/calcul.py` | 45 | `prime_habitation` (majoration objets de valeur) | aucun |\n| `primes/calcul.py` | 47 | `prime_habitation` (forfait dépendances) | aucun |\n| `primes/calcul.py` | 48 | `prime_habitation` (retour) | `int` |\n| `primes/calcul.py` | 64 | `prime_sante` (personnes supplémentaires à 80 %) | aucun |\n| `primes/calcul.py` | 65 | `prime_sante` (retour) | `int` |\n| `primes/calcul.py` | 82 | `prime_avec_frais` (fractionnement) | aucun |\n| `primes/calcul.py` | 83 | `prime_avec_frais` (retour, frais de police ajoutés) | `int` |\n| `primes/prorata.py` | 12 | `remboursement` (part non consommée) | `round` |\n\n`prime()` (calcul.py, l. 68-76) ne calcule rien lui-même : il délègue à `prime_auto`, `prime_habitation` ou `prime_sante`.\n\n**Compte par type d'arrondi (16 calculs)**\n- `arrondir_fcfa` : 0\n- `int` : 4 (calcul.py l. 36, 48, 65, 83)\n- `round` : 1 (prorata.py l. 12)\n- aucun : 11 (intermédiaires ; le montant est arrondi plus loin, ou jamais)\n\n**Points à signaler (non corrigés)**\n- Les quatre `int()` tronquent et le `round()` de Python arrondit au pair, ce que `.claude/rules/montants.md` interdit pour tout nouveau calcul. Les arrondis existants ne doivent pas être corrigés sans ticket (DSI-2019-114).\n- calcul.py l. 64 : le taux `0.8` est écrit en dur, alors que `.claude/rules/tarifs.md` demande de lire les taux dans `tarifs/`. Les bornes du coefficient bonus-malus (0.5 et 3.5, l. 31-34) sont aussi en dur.\n- Je n'ai pas ouvert `util/montants.py`, donc je n'ai pas vérifié que `arrondir_fcfa` y existe.\n\n**Vérification à la main sur la base de recette** : `python lancer.py prime KA-AUTO-0193` affiche la prime d'un contrat auto ; comparer le montant avec un calcul manuel pour repérer un écart d'arrondi.",
+      "tours": 0,
+      "cout_dollars": 0.003484125,
+      "cout_recalcule": 0.003484125,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 3960,
+          "cacheReadInputTokens": 38540,
+          "cacheCreationInputTokens": 8945,
+          "webSearchRequests": 0,
+          "costUSD": 0.003484125,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2002,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "fichiers_modifies": [],
+      "messages_sous_agent": 7,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [],
+      "calculs": {},
+      "tarifs_intacts": true,
+      "session_id": "9c21cc92-3738-44c5-b122-6759faa5238b",
+      "latence_s": 24.1,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "resilies",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "J'ai ajouté le nombre de contrats résiliés de chaque branche dans `rapports/portefeuille.py`, à côté du nombre de contrats actifs. Je n'ai pas lancé le programme : il n'y a pas de tests automatiques, et je n'ai pas de base de recette ici.\n\nModifications :\n- `resume_branche` appelle `requetes.contrats_branche(branche, 'resilie')` et ajoute la clé `'resilies'` au résumé de la branche. La fonction existait déjà avec un paramètre `statut`, je ne l'ai pas touchée.\n- `afficher` affiche une colonne « resilies » après « contrats », et le titre devient « contrats actifs et resilies ».\n- Les montants de primes restent calculés sur les seuls contrats actifs, comme avant.\n- J'ai écrit « resilies » sans accent, car les autres `.py` du dépôt n'en contiennent pas.\n\n`rapports/export_csv.py` lit les clés de `rapport()` une à une, donc le CSV ne change pas.\n\nVérification à la main sur la base de recette :\n1. `python lancer.py creer-base`, puis lancer `python lancer.py rapport`. Chaque branche doit afficher `0 resilies` tant qu'aucun contrat n'est résilié.\n2. Résilier un contrat AUTO, par le menu ou avec la fonction `contrats.contrat.resilier`, puis relancer le rapport. Le compteur « resilies » de AUTO doit passer à 1, et le nombre de contrats actifs doit baisser de 1.\n3. Relancer `python lancer.py rapport` et vérifier que `donnees/exports/portefeuille.csv` (ou l'export correspondant) a toujours les trois colonnes d'origine.\n\nSignalé mais non corrigé, comme demandé par le CLAUDE.md : `base/requetes.py`, ligne 15, `contrats_branche` construit sa requête SQL avec `%` au lieu de paramètres `?`, ce que le `.claude/rules/base.md` interdit. Ma modification l'appelle avec une valeur fixe, donc elle n'ajoute pas de risque, mais la fonction elle-même reste à corriger.",
+      "tours": 11,
+      "cout_dollars": 0.004749765,
+      "cout_recalcule": 0.004749765,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 14,
+          "outputTokens": 3681,
+          "cacheReadInputTokens": 152274,
+          "cacheCreationInputTokens": 11081,
+          "webSearchRequests": 0,
+          "costUSD": 0.004749765,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1152,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Read",
+        "Glob",
+        "Glob",
+        "Grep",
+        "Read",
+        "Grep",
+        "Edit",
+        "Edit",
+        "Grep",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "rapports/portefeuille.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/base.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "rapports/portefeuille.py"
+        }
+      ],
+      "lignes_ajoutees": [],
+      "calculs": {},
+      "tarifs_intacts": true,
+      "session_id": "ec297478-f597-4d62-aa82-d1ae32687fa7",
+      "latence_s": 26.6,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "arrondis",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "Dans `primes/`, je relève 5 lignes qui produisent un montant final en FCFA. Aucun n'utilise `arrondir_fcfa`, ce que la règle `.claude/rules/montants.md` demande pour tout nouveau calcul. Aucun fichier n'a été modifié.\n\n| Fichier | Ligne | Fonction | Arrondi |\n|---|---|---|---|\n| `primes/calcul.py` | 36 | `prime_auto` | `int` |\n| `primes/calcul.py` | 48 | `prime_habitation` | `int` |\n| `primes/calcul.py` | 65 | `prime_sante` | `int` |\n| `primes/calcul.py` | 83 | `prime_avec_frais` | `int` |\n| `primes/prorata.py` | 12 | `remboursement` | `round` |\n\nCes lignes ne sont pas des calculs finaux, mais elles contiennent des montants intermédiaires non arrondis :\n- `primes/calcul.py`, ligne 82, `prime_avec_frais` : `p = p * (1 + config.FRAIS_FRACTIONNEMENT)`, sans arrondi. Le `int` de la ligne 83 tronque ensuite.\n- `primes/calcul.py`, lignes 70-75, `prime` : elle ne fait que transmettre le résultat des trois fonctions ci-dessus, sans arrondi propre.\n\nCompte par sorte d'arrondi :\n- `arrondir_fcfa` : 0\n- `int` : 4 (lignes 36, 48, 65, 83), qui tronquent\n- `round` : 1 (ligne 12, `prorata.py`), qui arrondit au pair en Python 3\n- aucun : 0 ligne finale (les lignes 82 et 70-75 sont des intermédiaires)\n\n`primes/tarifs.py` et `primes/__init__.py` ne calculent aucun montant. `__init__.py` est vide.\n\nPoints à signaler, sans les corriger :\n- Les arrondis existants ne suivent pas la règle `montants.md`. D'après le ticket DSI-2019-114 cité dans cette règle, leur correction change des primes déjà facturées, donc elle reste à traiter par ticket.\n- Le `LISEZMOI.txt` indique que l'arrondi a été corrigé en 2019 dans `util/montants.py`. Ce fichier n'est pas dans `primes/` et je ne l'ai pas lu. Les fonctions de `primes/` ne l'utilisent pas.\n- `prime_avec_frais` ajoute `config.FRAIS_POLICE` après l'arrondi. Le fichier `config.py` n'est pas dans le dossier relevé, donc je ne vois pas si ce frais est un entier.",
+      "tours": 0,
+      "cout_dollars": 0.00296956,
+      "cout_recalcule": 0.00296956,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 3033,
+          "cacheReadInputTokens": 38571,
+          "cacheCreationInputTokens": 8534,
+          "webSearchRequests": 0,
+          "costUSD": 0.00296956,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1488,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Glob",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "fichiers_modifies": [],
+      "messages_sous_agent": 6,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [],
+      "calculs": {},
+      "tarifs_intacts": true,
+      "session_id": "b8413a4a-c605-44ac-b815-fcbec1ea2cb4",
+      "latence_s": 24.7,
+      "erreur": null
+    }
+  ]
+}

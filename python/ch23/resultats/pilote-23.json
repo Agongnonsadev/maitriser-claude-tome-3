@@ -1,0 +1,289 @@
+{
+  "graine": 23,
+  "fabrique": true,
+  "semaines": [
+    {
+      "semaine": -2,
+      "cohorte_min": 14.6,
+      "temoins_min": 12.5,
+      "adoption": null,
+      "corrections": null
+    },
+    {
+      "semaine": -1,
+      "cohorte_min": 13.9,
+      "temoins_min": 11.9,
+      "adoption": null,
+      "corrections": null
+    },
+    {
+      "semaine": 1,
+      "cohorte_min": 13.9,
+      "temoins_min": 12.2,
+      "adoption": 0.61,
+      "corrections": 0.24
+    },
+    {
+      "semaine": 2,
+      "cohorte_min": 15.2,
+      "temoins_min": 12.5,
+      "adoption": 0.55,
+      "corrections": 0.2
+    },
+    {
+      "semaine": 3,
+      "cohorte_min": 10.6,
+      "temoins_min": 11.7,
+      "adoption": 0.78,
+      "corrections": 0.19
+    },
+    {
+      "semaine": 4,
+      "cohorte_min": 9.1,
+      "temoins_min": 11.6,
+      "adoption": 0.87,
+      "corrections": 0.22
+    },
+    {
+      "semaine": 5,
+      "cohorte_min": 7.7,
+      "temoins_min": 11.8,
+      "adoption": 0.88,
+      "corrections": 0.11
+    },
+    {
+      "semaine": 6,
+      "cohorte_min": 7.2,
+      "temoins_min": 10.7,
+      "adoption": 0.88,
+      "corrections": 0.14
+    }
+  ],
+  "situation_de_depart_min": 14.4,
+  "semaines_5_6_min": 7.4,
+  "gain_naif": 0.486,
+  "changement_cohorte": {
+    "M1": -0.549,
+    "M2": -0.538,
+    "M3": -0.423,
+    "M4": -0.525,
+    "M5": -0.32,
+    "M6": -0.5,
+    "M7": -0.517,
+    "M8": -0.483
+  },
+  "changement_temoins": {
+    "T1": -0.059,
+    "T2": -0.176,
+    "T3": -0.025,
+    "T4": -0.09,
+    "T5": -0.08,
+    "T6": -0.078
+  },
+  "temoins_moyen": -0.084,
+  "gain_net": 0.397,
+  "intervalle_95": [
+    0.331,
+    0.452
+  ],
+  "criteres": {
+    "gain_net": {
+      "valeur": 0.397,
+      "seuil": 0.3,
+      "atteint": true
+    },
+    "conclusions_inventees": {
+      "valeur": 0,
+      "seuil": 0,
+      "atteint": true
+    },
+    "adoption_semaine_6": {
+      "valeur": 0.88,
+      "seuil": 0.7,
+      "atteint": true
+    },
+    "niveau_de_service": {
+      "valeur": "29 jours sur 30",
+      "seuil": 0.95,
+      "atteint": false
+    }
+  },
+  "declencheurs": [
+    "semaine 4 : M8 corrige 9 brouillons sur 17 (53 %, les autres 18 %)",
+    "semaine 5 : M4 corrige 4 brouillons sur 18 (22 %, les autres 9 %)",
+    "semaine 3, jeudi : 91 % des brouillons à temps (niveau de service : 95 %)"
+  ],
+  "premiere_annee": {
+    "minutes_gagnees_par_compte_rendu": 5.7,
+    "heures_rendues": 1209,
+    "valeur_fcfa": 18129923,
+    "couts_fcfa": {
+      "honoraires_pilote": 4500000,
+      "dsi": 720000,
+      "formation": 240000,
+      "creux_semaine_2": 32000,
+      "api_an": 8208,
+      "exploitation_an": 1800000
+    },
+    "total_couts_fcfa": 7300208,
+    "retour_sur_investissement": 1.48,
+    "prudent": {
+      "heures_rendues": 950,
+      "valeur_fcfa": 14244940,
+      "retour_sur_investissement": 0.95
+    },
+    "mois_pour_rembourser": 5
+  },
+  "jours": [
+    {
+      "semaine": 1,
+      "jour": "lundi",
+      "a_temps": 0.968
+    },
+    {
+      "semaine": 1,
+      "jour": "mardi",
+      "a_temps": 0.987
+    },
+    {
+      "semaine": 1,
+      "jour": "mercredi",
+      "a_temps": 0.973
+    },
+    {
+      "semaine": 1,
+      "jour": "jeudi",
+      "a_temps": 0.983
+    },
+    {
+      "semaine": 1,
+      "jour": "vendredi",
+      "a_temps": 0.995
+    },
+    {
+      "semaine": 2,
+      "jour": "lundi",
+      "a_temps": 0.992
+    },
+    {
+      "semaine": 2,
+      "jour": "mardi",
+      "a_temps": 0.987
+    },
+    {
+      "semaine": 2,
+      "jour": "mercredi",
+      "a_temps": 0.966
+    },
+    {
+      "semaine": 2,
+      "jour": "jeudi",
+      "a_temps": 0.978
+    },
+    {
+      "semaine": 2,
+      "jour": "vendredi",
+      "a_temps": 0.982
+    },
+    {
+      "semaine": 3,
+      "jour": "lundi",
+      "a_temps": 0.965
+    },
+    {
+      "semaine": 3,
+      "jour": "mardi",
+      "a_temps": 0.996
+    },
+    {
+      "semaine": 3,
+      "jour": "mercredi",
+      "a_temps": 0.967
+    },
+    {
+      "semaine": 3,
+      "jour": "jeudi",
+      "a_temps": 0.91
+    },
+    {
+      "semaine": 3,
+      "jour": "vendredi",
+      "a_temps": 0.969
+    },
+    {
+      "semaine": 4,
+      "jour": "lundi",
+      "a_temps": 0.963
+    },
+    {
+      "semaine": 4,
+      "jour": "mardi",
+      "a_temps": 0.961
+    },
+    {
+      "semaine": 4,
+      "jour": "mercredi",
+      "a_temps": 0.976
+    },
+    {
+      "semaine": 4,
+      "jour": "jeudi",
+      "a_temps": 0.972
+    },
+    {
+      "semaine": 4,
+      "jour": "vendredi",
+      "a_temps": 0.996
+    },
+    {
+      "semaine": 5,
+      "jour": "lundi",
+      "a_temps": 0.985
+    },
+    {
+      "semaine": 5,
+      "jour": "mardi",
+      "a_temps": 0.989
+    },
+    {
+      "semaine": 5,
+      "jour": "mercredi",
+      "a_temps": 1.0
+    },
+    {
+      "semaine": 5,
+      "jour": "jeudi",
+      "a_temps": 0.972
+    },
+    {
+      "semaine": 5,
+      "jour": "vendredi",
+      "a_temps": 0.966
+    },
+    {
+      "semaine": 6,
+      "jour": "lundi",
+      "a_temps": 0.971
+    },
+    {
+      "semaine": 6,
+      "jour": "mardi",
+      "a_temps": 0.999
+    },
+    {
+      "semaine": 6,
+      "jour": "mercredi",
+      "a_temps": 0.97
+    },
+    {
+      "semaine": 6,
+      "jour": "jeudi",
+      "a_temps": 0.969
+    },
+    {
+      "semaine": 6,
+      "jour": "vendredi",
+      "a_temps": 0.961
+    }
+  ]
+}

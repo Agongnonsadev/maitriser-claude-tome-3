@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "fichier": "kanvo.json",
+  "marge": 1.5,
+  "mesure": true,
+  "depense_mesure_dollars": 0.049201,
+  "chiffrages": [
+    {
+      "cas": "declaration",
+      "nom": "Aider l'assuré à déclarer son sinistre",
+      "modele": "claude-sonnet-5-5",
+      "unite": "déclaration",
+      "unites_par_mois": 2400,
+      "tours": 6,
+      "tokens_systeme": 245,
+      "tokens_message": 106,
+      "tokens_reponse": 560,
+      "reponse_mesuree": true,
+      "tokens_reflexion": 282,
+      "cout_unite": 0.057791999999999996,
+      "cout_mois": 138.7008,
+      "cout_mois_avec_marge": 208.0512
+    },
+    {
+      "cas": "declaration",
+      "nom": "Aider l'assuré à déclarer son sinistre",
+      "modele": "claude-haiku-5-5",
+      "unite": "déclaration",
+      "unites_par_mois": 2400,
+      "tours": 6,
+      "tokens_systeme": 245,
+      "tokens_message": 106,
+      "tokens_reponse": 640,
+      "reponse_mesuree": true,
+      "tokens_reflexion": 356,
+      "cout_unite": 0.0032496,
+      "cout_mois": 7.79904,
+      "cout_mois_avec_marge": 11.69856
+    },
+    {
+      "cas": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "modele": "claude-haiku-5-5",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "tokens_systeme": 161,
+      "tokens_message": 278,
+      "tokens_reponse": 800,
+      "reponse_mesuree": true,
+      "tokens_reflexion": 576,
+      "cout_unite": 0.0004439,
+      "cout_mois": 0.48829,
+      "cout_mois_avec_marge": 0.732435
+    },
+    {
+      "cas": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "modele": "claude-sonnet-5-5",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "tokens_systeme": 161,
+      "tokens_message": 278,
+      "tokens_reponse": 621,
+      "reponse_mesuree": true,
+      "tokens_reflexion": 373,
+      "cout_unite": 0.007088,
+      "cout_mois": 7.796799999999999,
+      "cout_mois_avec_marge": 11.6952
+    }
+  ]
+}

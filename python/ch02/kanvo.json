@@ -1,0 +1,47 @@
+{
+  "client": "Kanvô Assurances (entreprise fictive)",
+  "source": "Hypothèses de Yao après les entretiens de découverte du chapitre 2 ; volumes donnés par la direction des sinistres, à confirmer sur trois mois d'historique.",
+  "marge": 1.5,
+  "cas": [
+    {
+      "id": "declaration",
+      "nom": "Aider l'assuré à déclarer son sinistre",
+      "unite": "déclaration",
+      "unites_par_mois": 2400,
+      "tours": 6,
+      "modeles": ["claude-sonnet-5-5", "claude-haiku-5-5"],
+      "max_tokens": 1024,
+      "sortie_supposee": 250,
+      "systeme": "Tu es l'assistant de déclaration de sinistres de Kanvô Assurances, une entreprise fictive. Tu aides l'assuré à déclarer son sinistre : tu reformules en une phrase ce qui s'est passé, puis tu demandes les informations qui manquent (date et lieu, numéro de contrat, dommages, tiers impliqués, pièces justificatives), au plus trois questions à la fois. Tu ne promets jamais d'indemnisation, ni de montant, ni de délai. Si l'assuré demande à parler à quelqu'un, tu lui proposes d'être rappelé par un gestionnaire. Vouvoie l'assuré. Réponds en français, en 120 mots au plus.",
+      "exemples": [
+        "Bonjour, ce matin vers 7 h 30 au carrefour de l'Étoile rouge, un taxi-moto m'a percuté par l'arrière. Mon pare-chocs arrière est enfoncé et le feu gauche est cassé. Le conducteur est parti sans s'arrêter. J'ai ma police auto KA-AUTO-0193. Comment je fais ?",
+        "Depuis les pluies d'hier soir, l'eau est entrée dans le salon par le toit. Le plafond a cédé dans un coin, le canapé et la télévision sont mouillés. Le contrat habitation est au nom de ma mère, elle a 74 ans, je déclare pour elle.",
+        "J'ai été hospitalisé trois jours à la clinique pour un paludisme grave et j'ai payé 185 000 FCFA. Je veux être remboursé. Je n'ai pas encore la facture détaillée, seulement le reçu de caisse.",
+        "C'est la troisième fois que j'écris !!! Mon dossier pour le vol de ma moto, déposé il y a six semaines, n'avance pas. Je veux parler à quelqu'un, pas à une machine."
+      ]
+    },
+    {
+      "id": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "modeles": ["claude-haiku-5-5", "claude-sonnet-5-5"],
+      "max_tokens": 2000,
+      "sortie_supposee": 300,
+      "note": "Les vrais constats arrivent en photo ou en PDF, qui coûtent plus de tokens qu'un texte : ordre de grandeur à remplacer par la mesure du chapitre 12.",
+      "systeme": "Tu extrais les données d'un constat amiable d'accident automobile, transcrit en texte. Réponds uniquement par un objet JSON avec ces clés : date, heure, lieu, vehicule_a et vehicule_b (chacun : marque, immatriculation, assureur, numero_police, conducteur), circonstances_a, circonstances_b, blesses (true, false ou null), temoins (liste). Mets null pour toute information absente ou illisible : n'invente rien.",
+      "exemples": [
+        "CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE. Date : 14/10/2026. Heure : 18 h 20. Lieu : boulevard de la Marina, Cotonou, devant la station-service. Blessés : non. Témoins : Mme Houénou, passante (tél. illisible). VÉHICULE A : Toyota Corolla grise, immatriculation AB 4417 RB, assureur Kanvô Assurances, police KA-AUTO-0552, conducteur M. Agbo Sèna. Circonstances cochées : roulait dans le même sens et sur la même file. VÉHICULE B : Peugeot 406 blanche, immatriculation BC 0918 RB, assureur : [rayé], police : [illisible], conducteur M. Dossou. Circonstances cochées : changeait de file. Croquis : B se rabat sur A. Observations A : « le véhicule B a coupé sans clignotant ». Observations B : vide.",
+        "CONSTAT AMIABLE. Date : 02/10/2026. Lieu : carrefour Saint-Michel. Blessés : un passager du véhicule B, légèrement, emmené à l'hôpital. VÉHICULE A : Hyundai Tucson, immatriculation CD 2271 RB, assuré Kanvô, police KA-AUTO-1180, conducteur Mme Akplogan. Circonstances : reculait. VÉHICULE B : moto Haojue, plaque 7713 RB, sans assurance déclarée, conducteur inconnu (parti). Observations A : « la moto était dans mon angle mort ».",
+        "CONSTAT AMIABLE D'ACCIDENT. Date : 21/09/2026, vers 9 h. Lieu : route de Ouidah, km 12. Blessés : non. Véhicule A : camionnette Isuzu, immatriculation EF 5520 RB, assureur Kanvô Assurances, police KA-AUTO-0071, conducteur salarié d'une société de livraison. Circonstances : heurtait par l'arrière un véhicule qui roulait dans le même sens. Véhicule B : Toyota RAV4, immatriculation GH 3304 RB, assureur : autre compagnie, police non communiquée, conducteur M. Tchibozo. Observations B : « freinage brusque à cause d'un dos-d'âne non signalé »."
+      ]
+    }
+  ],
+  "ecartes": [
+    {
+      "nom": "Fixer le montant de l'indemnisation",
+      "raison": "Le calcul suit le barème du contrat : c'est le rôle du code. La décision engage l'assureur : c'est le rôle du gestionnaire. Claude peut préparer le dossier, pas trancher."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE
+1. Date de l'accident : 02.10.2026      Heure : 07 h 45
+2. Lieu : carrefour de l'Étoile rouge, Cotonou
+3. Blessés, même légers : [ ] oui  [X] non
+VÉHICULE A
+   Conducteur : Mme Viviane Gnonlonfoun
+   Société d'assurance : Kanvô Assurances      Contrat n° KA-AUTO-6693
+   Immatriculation : pv2521ng
+VÉHICULE B
+   Conducteur : M. Serge Dossou-Gbété
+   Société d'assurance : Lagune Assurances
+   Immatriculation : [illisible : tache d'encre]
+12. Circonstances : A cochée(s) : 8 (heurtait à l'arrière) ; B cochée(s) : 1 (en stationnement)
+Signatures : A et B

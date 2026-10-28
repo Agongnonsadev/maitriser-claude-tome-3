@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-sonnet-5-5",
+  "depense_dollars": 0.11595,
+  "themes_sans_reponse": {
+    "patient": 3,
+    "equite": 3,
+    "gouvernance": 1
+  },
+  "tirages": [
+    {
+      "tirage": 1,
+      "cout_dollars": 0.03772,
+      "questions": [
+        {
+          "question": "Les patients seront-ils informés que leurs notes de consultation sont traitées par une IA, et pourront-ils s'y opposer ? Avec quelle base légale dans chacun des trois pays et pour les envois aux hôpitaux français ?",
+          "pourquoi": "Des données de santé sont envoyées à un prestataire extérieur. Le patient doit savoir comment son dossier est rédigé, et le comité doit s'assurer que le traitement repose sur une base légale valable.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "patient"
+        },
+        {
+          "question": "L'outil a-t-il été testé sur des notes réelles, avec des accents, des langues mêlées, des noms locaux, des abréviations propres à chaque clinique et des dictées bruitées ? Si ce n'est pas le cas, comment éviter qu'il soit moins fiable pour certains médecins ou patients ?",
+          "pourquoi": "Un outil évalué sur des notes fabriquées peut bien fonctionner à Cotonou et dériver à Dakar ou Abidjan. Une erreur plus fréquente sur certains profils serait une inégalité de qualité du dossier. Le dossier ne décrit pas non plus l'étape de transcription de la dictée.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "equite"
+        },
+        {
+          "question": "Quels sont les critères de succès et d'arrêt du pilote (taux de corrections, erreurs détectées, incidents) ? Qui les surveille, et que se passe-t-il si une erreur atteint un dossier patient ou un partenaire ?",
+          "pourquoi": "Un pilote sans seuils ni procédure d'incident ne permet pas de décider de l'arrêter ou de l'étendre. Le comité veut des règles fixées avant le démarrage, pas après un problème.",
+          "ce_que_dit_le_dossier": "Retour arrière : le service se coupe par clinique ; les médecins gardent leur façon de faire.",
+          "theme": "gouvernance"
+        },
+        {
+          "question": "Trente comptes rendus fabriqués suffisent-ils pour affirmer l'absence de conclusion inventée, de réserve perdue ou d'examen ajouté ? Comment les contrôles par le code détectent-ils une conclusion implicite ou une formulation atténuée ?",
+          "pourquoi": "Un résultat de zéro erreur sur 30 cas ne dit presque rien du taux réel d'erreur. Les erreurs graves sont rares mais coûteuses, et un contrôle par code attrape mal les glissements de sens.",
+          "ce_que_dit_le_dossier": "Mesurée sur 30 comptes rendus fabriqués : aucune conclusion inventée, aucune réserve du médecin perdue, aucun examen ajouté",
+          "theme": "securite"
+        },
+        {
+          "question": "Comment s'assure-t-on que la relecture du médecin est réelle et non un clic de validation, surtout en fin de journée et quand le brouillon est presque toujours juste ? Mesure-t-on le temps de relecture, les corrections et les validations sans modification ?",
+          "pourquoi": "Le biais d'automatisation fait que le médecin valide ce qui paraît plausible. Si la validation devient une formalité, la sécurité du dispositif repose sur une garantie qui n'existe plus, et la responsabilité du médecin reste pourtant engagée.",
+          "ce_que_dit_le_dossier": "Le médecin relit, corrige et valide. Rien n'entre au dossier sans sa validation.",
+          "theme": "medecin"
+        },
+        {
+          "question": "Les corrections des médecins, qui contiennent des données de santé, alimenteront un banc d'évaluation. Sont-elles anonymisées, qui y a accès, combien de temps sont-elles conservées et sur quelle base légale ?",
+          "pourquoi": "Réutiliser des notes et des comptes rendus réels pour améliorer l'outil est une finalité distincte du soin. Elle exige une information, une minimisation et une durée de conservation définies, d'autant que le dossier cherche la non-conservation côté fournisseur.",
+          "ce_que_dit_le_dossier": "Les corrections des médecins nourrissent le banc d'évaluation (chapitre 19).",
+          "theme": "donnees"
+        },
+        {
+          "question": "Si la non-conservation des données n'est pas obtenue d'Anthropic, ou si l'inférence ne peut pas se faire en Europe, le pilote est-il suspendu ? Que se passe-t-il pour les données déjà envoyées ?",
+          "pourquoi": "Le dossier laisse ouvertes la conservation, le lieu de traitement et la route, alors que ce sont des conditions de licéité du traitement. Le comité ne peut pas autoriser un pilote dont ces garanties ne sont pas acquises.",
+          "ce_que_dit_le_dossier": "La non-conservation (ZDR) se demande à Anthropic, par organisation. [...] Si le délégué exige un traitement en Europe pour les données envoyées aux partenaires français, la route change.",
+          "theme": "donnees"
+        },
+        {
+          "question": "Le temps rendu aux médecins leur reviendra-t-il vraiment, ou servira-t-il à augmenter le nombre de consultations ? Les médecins ont-ils leur mot à dire sur l'usage de l'outil, y compris pour refuser de s'en servir ?",
+          "pourquoi": "Le bénéfice annoncé est le temps rendu aux médecins, mais la direction pourrait le convertir en productivité. Un outil imposé ou lié à des objectifs de volume transformerait la relecture en pression, avec un effet sur la qualité des soins.",
+          "ce_que_dit_le_dossier": "La direction médicale des Cliniques Ébène (Cotonou, Abidjan, Dakar) veut rendre leurs soirées aux médecins.",
+          "theme": "medecin"
+        }
+      ]
+    },
+    {
+      "tirage": 2,
+      "cout_dollars": 0.0393,
+      "questions": [
+        {
+          "question": "Les patients sont-ils informés que les notes de leur consultation sont traitées par une IA, et peuvent-ils s'y opposer sans conséquence sur leur prise en charge ?",
+          "pourquoi": "Des données de santé sont envoyées à un service externe. Le comité veut savoir si le patient en est informé, si son consentement est recueilli ou si son opposition est possible, et si la démarche est conforme aux lois des trois pays et au RGPD pour les partenaires français.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "patient"
+        },
+        {
+          "question": "Comment la dictée est-elle transcrite, par quel prestataire, et l'outil a-t-il été testé sur les accents, les langues et le vocabulaire médical local des trois pays ?",
+          "pourquoi": "Le dossier parle de notes dictées, mais n'indique ni l'outil de transcription ni le sous-traitant impliqué. Une transcription moins fiable pour certains accents ou certaines langues se répercute sur les brouillons et pénalise certains médecins et certains patients.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "equite"
+        },
+        {
+          "question": "Le compte rendu final indique-t-il qu'il a été rédigé avec une aide automatique, et conserve-t-on la trace du brouillon, des corrections et de la validation ?",
+          "pourquoi": "En cas de litige, d'erreur ou d'avis d'un hôpital partenaire, il faut pouvoir reconstituer ce qui venait de l'IA et ce que le médecin a validé. Le partenaire français doit aussi savoir comment le document a été produit.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "gouvernance"
+        },
+        {
+          "question": "Où les données de santé sont-elles traitées, avec quelle garantie de non-conservation, et le pilote peut-il démarrer tant que la route n'est pas arrêtée ?",
+          "pourquoi": "Le transfert transfrontalier de données de santé est le risque juridique le plus lourd. Le dossier laisse la décision ouverte et parle de non-conservation à demander, sans dire si elle est obtenue. Le comité ne peut pas autoriser un pilote sur des données réelles avant cette décision.",
+          "ce_que_dit_le_dossier": "La route : à décider avec le délégué à la protection des données et la DSI, au chapitre 21.",
+          "theme": "donnees"
+        },
+        {
+          "question": "Les corrections des médecins, qui contiennent des données de patients, sont-elles anonymisées avant de rejoindre le banc d'évaluation, et qui y accède pendant combien de temps ?",
+          "pourquoi": "Réutiliser des notes et des corrections réelles pour l'évaluation est une finalité distincte de la rédaction du compte rendu. Elle exige une base légale, une durée de conservation et une anonymisation, ce que le dossier ne précise pas.",
+          "ce_que_dit_le_dossier": "Les corrections des médecins nourrissent le banc d'évaluation (chapitre 19).",
+          "theme": "donnees"
+        },
+        {
+          "question": "Comment mesure-t-on que le médecin relit vraiment le brouillon, et comment évite-t-on que la pression sur le temps gagné transforme la validation en simple clic ?",
+          "pourquoi": "Toute la sécurité repose sur la relecture humaine. Un brouillon généralement juste endort la vigilance, et la direction mesure le temps rendu. Le comité veut des indicateurs, comme le taux de brouillons validés sans aucune modification ou le temps de relecture, et un engagement de ne pas les utiliser contre les médecins.",
+          "ce_que_dit_le_dossier": "Le médecin relit, corrige et valide. Rien n'entre au dossier sans sa validation.",
+          "theme": "medecin"
+        },
+        {
+          "question": "Les contrôles par le code et l'évaluation sont-ils assez solides pour justifier un pilote : que détectent-ils exactement, que manque-t-il, et sur quelles données réelles seront-ils mesurés ?",
+          "pourquoi": "Les résultats viennent de 30 comptes rendus fabriqués. Un code ne détecte pas facilement une nuance, une négation inversée ou un détail clinique déformé. Le comité veut connaître les limites des contrôles et un plan de mesure sur de vraies consultations avant tout élargissement.",
+          "ce_que_dit_le_dossier": "Mesurée sur 30 comptes rendus fabriqués : aucune conclusion inventée, aucune réserve du médecin perdue, aucun examen ajouté",
+          "theme": "securite"
+        },
+        {
+          "question": "Quels seuils d'erreur déclenchent l'arrêt du pilote, qui peut décider de la coupure, et comment les incidents sont-ils déclarés et analysés ?",
+          "pourquoi": "Le dossier prévoit une coupure par clinique, mais ne fixe ni critère, ni responsable, ni procédure de signalement. Un pilote éthique a des conditions d'arrêt définies à l'avance, ainsi qu'une règle claire de responsabilité entre médecin, clinique et fournisseur.",
+          "ce_que_dit_le_dossier": "Retour arrière : le service se coupe par clinique ; les médecins gardent leur façon de faire.",
+          "theme": "gouvernance"
+        }
+      ]
+    },
+    {
+      "tirage": 3,
+      "cout_dollars": 0.03893,
+      "questions": [
+        {
+          "question": "Les patients sont-ils informés que les notes de leur consultation sont traitées par une IA, et peuvent-ils s'y opposer ? Quelle est la base légale dans chacun des trois pays et pour les partenaires français ?",
+          "pourquoi": "Les données de santé sont parmi les plus sensibles. Le patient doit savoir qui traite ses données et comment. Il doit aussi garder un moyen de refuser sans perdre l'accès aux soins.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "patient"
+        },
+        {
+          "question": "L'outil a-t-il été testé sur la dictée avec des accents ouest-africains, des mots de langues locales, des noms de personnes et de lieux, des termes médicaux mélangés, et sur le français écrit rapidement ? Les erreurs se répartissent-elles de façon égale entre cliniques, médecins et patients ?",
+          "pourquoi": "Un outil réglé sur un français standard peut déformer davantage certains discours. Il peut ainsi dégrader le dossier de certains patients ou charger certains médecins de plus de corrections. Le comité veut éviter une inégalité de qualité entre les trois villes.",
+          "ce_que_dit_le_dossier": null,
+          "theme": "equite"
+        },
+        {
+          "question": "Les corrections des médecins contiennent des données de santé. Où sont-elles stockées, combien de temps, qui y accède, sont-elles anonymisées, et le patient en est-il informé avant leur réutilisation dans le banc d'évaluation ?",
+          "pourquoi": "Réutiliser des notes et des corrections réelles est une finalité distincte de la rédaction du compte rendu. Elle exige une base légale, une durée limitée et un accès restreint.",
+          "ce_que_dit_le_dossier": "Les corrections des médecins nourrissent le banc d'évaluation (chapitre 19).",
+          "theme": "donnees"
+        },
+        {
+          "question": "La non-conservation des données (ZDR) sera-t-elle obtenue et vérifiée avant le premier patient réel ? Sinon, que se passe-t-il pendant le pilote ?",
+          "pourquoi": "Le dossier présente la ZDR comme une démarche à faire, pas comme un acquis. Sans elle, des notes de patients seraient conservées chez le fournisseur. Le comité ne peut pas autoriser sur une promesse.",
+          "ce_que_dit_le_dossier": "la non-conservation (ZDR) se demande à Anthropic, par organisation",
+          "theme": "donnees"
+        },
+        {
+          "question": "Où les données des patients seront-elles traitées pendant le pilote ? Peut-on autoriser un traitement global ou aux États-Unis avant la décision du délégué à la protection des données ?",
+          "pourquoi": "Le lieu de traitement n'est pas tranché. Les lois des trois pays et le RGPD pour les partenaires français peuvent imposer des contraintes différentes. Le comité doit savoir si le pilote commence avant cette décision.",
+          "ce_que_dit_le_dossier": "Si le délégué exige un traitement en Europe pour les données envoyées aux partenaires français, la route change (chapitre 4 : Bedrock et ses profils EU).",
+          "theme": "donnees"
+        },
+        {
+          "question": "Les 30 comptes rendus fabriqués suffisent-ils à prouver l'absence de conclusion inventée ou de réserve perdue ? Quel test sera fait sur des notes réelles, de spécialités variées, avant d'étendre le pilote ?",
+          "pourquoi": "Trente cas inventés ne couvrent ni la diversité des consultations ni les notes ambiguës, abrégées ou contradictoires. Une erreur rare peut rester invisible. Pourtant, un seul faux compte rendu dans un dossier peut nuire à un patient.",
+          "ce_que_dit_le_dossier": "Mesurée sur 30 comptes rendus fabriqués : aucune conclusion inventée, aucune réserve du médecin perdue, aucun examen ajouté",
+          "theme": "securite"
+        },
+        {
+          "question": "Comment éviter que le médecin valide le brouillon sans le relire, surtout le soir quand il est fatigué ? Le dossier indique-t-il que le texte a été préparé par une IA, et le taux de validation sans correction est-il suivi ?",
+          "pourquoi": "La validation humaine ne protège que si la relecture est réelle. Un brouillon plausible pousse à accepter sans vérifier. Or la responsabilité reste au médecin, même quand l'erreur vient de l'outil.",
+          "ce_que_dit_le_dossier": "Le médecin relit, corrige et valide. Rien n'entre au dossier sans sa validation.",
+          "theme": "medecin"
+        },
+        {
+          "question": "Quels indicateurs, seuils d'arrêt et circuit de signalement des incidents le pilote prévoit-il, et qui décide de suspendre le service ?",
+          "pourquoi": "Un comité autorise un pilote encadré. Il faut des critères de succès et d'arrêt avant le début, un responsable nommé et un signalement des erreurs qui atteignent un dossier ou un partenaire.",
+          "ce_que_dit_le_dossier": "Retour arrière : le service se coupe par clinique ; les médecins gardent leur façon de faire.",
+          "theme": "gouvernance"
+        }
+      ]
+    }
+  ]
+}

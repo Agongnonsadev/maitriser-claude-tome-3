@@ -1,0 +1,1462 @@
+{
+ "date": "2026-10-27",
+ "depense_dollars": 0.033773,
+ "resume": {
+  "structure / reecriture": {
+   "rappel_1": 0.667,
+   "rappel_3": 0.861,
+   "rappel_5": 0.917,
+   "par_genre_rappel_5": {
+    "clause": "10/12",
+    "vocabulaire": "7/8",
+    "tableau": "6/6",
+    "procedure": "6/6",
+    "produit": "4/4"
+   },
+   "duree_mediane_s": 1.583,
+   "dollars_par_question": 0.000137
+  },
+  "structure / reclassement": {
+   "rappel_1": 0.972,
+   "rappel_3": 0.972,
+   "rappel_5": 0.972,
+   "par_genre_rappel_5": {
+    "clause": "11/12",
+    "vocabulaire": "8/8",
+    "tableau": "6/6",
+    "procedure": "6/6",
+    "produit": "4/4"
+   },
+   "duree_mediane_s": 2.702,
+   "dollars_par_question": 0.000704
+  }
+ },
+ "essais": [
+  {
+   "question": "q01",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 1.791,
+   "dollars": 0.0001268
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 1.792,
+   "dollars": 0.0001438
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-22",
+    "TG-AUTO-2026:defense-et-recours",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-18"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.794,
+   "dollars": 0.00013169999999999998
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-28",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-1",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.205,
+   "dollars": 0.00013519999999999998
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-4"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 2.527,
+   "dollars": 0.000127
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "PROC-SIN:proc-8",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-21"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.057,
+   "dollars": 0.0001427
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.45,
+   "dollars": 0.00013769999999999999
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-25"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.328,
+   "dollars": 0.0001439
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.147,
+   "dollars": 0.0001321
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-26",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-12",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.42,
+   "dollars": 0.00014030000000000002
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-25",
+    "TG-AUTO-2026:defense-et-recours"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.521,
+   "dollars": 0.0001384
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.29,
+   "dollars": 0.00013619999999999998
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15",
+    "PROC-SIN:proc-8",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-20"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.926,
+   "dollars": 0.00014310000000000004
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-14"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.625,
+   "dollars": 0.0001363
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-18",
+    "CG-AUTO-2026:art-2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.142,
+   "dollars": 0.000167
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-6",
+    "TG-AUTO-2026:responsabilite-civile",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.21,
+   "dollars": 0.0001374
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-9"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.136,
+   "dollars": 0.0001293
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.403,
+   "dollars": 0.0001444
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-18"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 1.319,
+   "dollars": 0.00015580000000000002
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-9",
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.487,
+   "dollars": 0.0001385
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:vol",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.234,
+   "dollars": 0.0001272
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "TG-AUTO-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.821,
+   "dollars": 0.0001319
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-12",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.803,
+   "dollars": 0.000136
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "TG-AUTO-2026:responsabilite-civile",
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.384,
+   "dollars": 0.000132
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:vol",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:dommages-tous-accidents"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.364,
+   "dollars": 0.0001366
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:defense-et-recours",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-22",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.957,
+   "dollars": 0.00013480000000000002
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-17"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.217,
+   "dollars": 0.0001385
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-8",
+    "CG-AUTO-2026:art-15",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-20"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.996,
+   "dollars": 0.0001349
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.68,
+   "dollars": 0.0001247
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-22"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.866,
+   "dollars": 0.0001399
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.787,
+   "dollars": 0.0001417
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-7"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.347,
+   "dollars": 0.0001384
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:vol",
+    "TG-HAB-2026:incendie",
+    "TG-HAB-2026:responsabilite-civile-vie-privee",
+    "TG-HAB-2026:bris-de-glace",
+    "TG-HAB-2026:tempete-et-inondation"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.198,
+   "dollars": 0.00012560000000000002
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:bris-de-glace",
+    "PROC-SIN:proc-8",
+    "TG-HAB-2026:incendie",
+    "TG-HAB-2026:responsabilite-civile-vie-privee",
+    "TG-HAB-2026:tempete-et-inondation"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.25,
+   "dollars": 0.0001309
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-12",
+    "TG-HAB-2026:degats-des-eaux",
+    "CG-HAB-2026:art-9",
+    "CG-HAB-2026:art-1",
+    "TG-HAB-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 1.26,
+   "dollars": 0.0001254
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:vol",
+    "PROC-SIN:proc-7",
+    "CG-HAB-2026:art-11",
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-5"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 1.263,
+   "dollars": 0.00014419999999999998
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-22",
+    "TG-AUTO-2026:responsabilite-civile",
+    "CG-AUTO-2026:art-28",
+    "CG-AUTO-2026:art-29"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 1.136,
+   "dollars": 0.00014030000000000002
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-10"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 1.376,
+   "dollars": 0.00014610000000000003
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-29",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-9"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 1.196,
+   "dollars": 0.0001271
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "strategie": "reecriture",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-20",
+    "CG-AUTO-2026:art-12",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-5"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 1.286,
+   "dollars": 0.0001418
+  },
+  {
+   "question": "q01",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.3,
+   "dollars": 0.0007043
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.842,
+   "dollars": 0.0007054
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.403,
+   "dollars": 0.0007323000000000001
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-28",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-29",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.344,
+   "dollars": 0.0007208000000000001
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-5"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 2.635,
+   "dollars": 0.0006727
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-22"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.621,
+   "dollars": 0.0007417
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.701,
+   "dollars": 0.0007033
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-23"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 4.234,
+   "dollars": 0.0007272000000000001
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-23",
+    "PROC-SIN:proc-4",
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-26",
+    "PROC-SIN:proc-3"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.714,
+   "dollars": 0.0007223
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-26",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-23"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.416,
+   "dollars": 0.0006844
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.416,
+   "dollars": 0.0006996999999999999
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.257,
+   "dollars": 0.0006711
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15",
+    "PROC-SIN:proc-8",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-22"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.009,
+   "dollars": 0.0007307
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.767,
+   "dollars": 0.0006959000000000001
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.538,
+   "dollars": 0.0007584
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-6",
+    "TG-AUTO-2026:responsabilite-civile",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.617,
+   "dollars": 0.0007384000000000001
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-18",
+    "PROC-SIN:proc-6"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.299,
+   "dollars": 0.0007136000000000001
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-29"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.074,
+   "dollars": 0.0007404
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-6"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.689,
+   "dollars": 0.0007557
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-9",
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-17"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.313,
+   "dollars": 0.0006911
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.498,
+   "dollars": 0.0007085
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15",
+    "PROC-SIN:proc-8",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.436,
+   "dollars": 0.0006769
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-2",
+    "TG-AUTO-2026:defense-et-recours"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 4.034,
+   "dollars": 0.0007232
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.246,
+   "dollars": 0.0007052
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-22",
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.777,
+   "dollars": 0.0006933000000000001
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.268,
+   "dollars": 0.0006944000000000001
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-8",
+    "CG-AUTO-2026:art-23"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.911,
+   "dollars": 0.0007126
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-8",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-20"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.356,
+   "dollars": 0.0007107999999999999
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.423,
+   "dollars": 0.0006969999999999999
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-6"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 4.16,
+   "dollars": 0.0006877000000000001
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-12",
+    "PROC-SIN:proc-4",
+    "TG-AUTO-2026:garantie-du-conducteur"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.076,
+   "dollars": 0.0007138
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.001,
+   "dollars": 0.0006969999999999999
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:vol",
+    "CG-HAB-2026:art-5",
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-2",
+    "CG-HAB-2026:art-12"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.474,
+   "dollars": 0.0006586
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:bris-de-glace",
+    "CG-HAB-2026:art-6",
+    "PROC-SIN:proc-8",
+    "CG-HAB-2026:art-2",
+    "CG-HAB-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.979,
+   "dollars": 0.0006614
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-12",
+    "CG-HAB-2026:art-1",
+    "CG-HAB-2026:art-2",
+    "CG-HAB-2026:art-9",
+    "TG-HAB-2026:degats-des-eaux"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 3.041,
+   "dollars": 0.0006523999999999999
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-5",
+    "CG-HAB-2026:art-2",
+    "CG-HAB-2026:art-9",
+    "TG-HAB-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 2.485,
+   "dollars": 0.0006579
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-4",
+    "CG-AUTO-2026:art-23"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 2.587,
+   "dollars": 0.0007335000000000001
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-22"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 2.615,
+   "dollars": 0.0007314000000000001
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-29",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-20",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 2.622,
+   "dollars": 0.0007269000000000002
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "strategie": "reclassement",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-5"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 2.411,
+   "dollars": 0.0007359
+  }
+ ]
+}

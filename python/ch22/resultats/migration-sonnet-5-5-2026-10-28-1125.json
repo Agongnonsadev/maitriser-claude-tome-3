@@ -1,0 +1,2085 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-sonnet-5-5",
+  "juge": "v2",
+  "repetitions": 3,
+  "depense_dollars": 0.416863,
+  "resume": {
+    "B": {
+      "comptes_rendus": 60,
+      "a_corriger": 4,
+      "part": 0.067,
+      "intervalle_95": [
+        0.026,
+        0.159
+      ],
+      "par_le_juge": 4,
+      "par_le_code": 0,
+      "defauts_du_juge": {
+        "ajout": 3,
+        "constatation_modifiee": 1
+      },
+      "notes_a_corriger": {
+        "N01": 0,
+        "N02": 0,
+        "N03": 0,
+        "N04": 0,
+        "N05": 0,
+        "N06": 1,
+        "N07": 0,
+        "N08": 0,
+        "N09": 1,
+        "N10": 0,
+        "N11": 0,
+        "N12": 0,
+        "N13": 0,
+        "N14": 2,
+        "N15": 0,
+        "N16": 0,
+        "N17": 0,
+        "N18": 0,
+        "N19": 0,
+        "N20": 0
+      },
+      "cout_redaction_moyen": 0.006659,
+      "cout_juge_moyen": 0.000289,
+      "latence_mediane_s": 7.17
+    }
+  },
+  "comptes_rendus": [
+    {
+      "bras": "B",
+      "note": "N01",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Chute hier en descendant un escalier, avec traumatisme de la cheville droite.",
+        "examen": "Douleur à la malléole externe de la cheville droite. Œdème modéré. Appui possible. Pas de déformation.",
+        "conclusion_du_medecin": "Probable entorse bénigne de la cheville droite, à confirmer si la douleur persiste au-delà de 8 jours.",
+        "suite": "À revoir à la demande.",
+        "elements_absents": [
+          "Traitement prescrit ou conseils donnés (non mentionnés dans les notes)",
+          "Examens complémentaires (non mentionnés dans les notes, notamment aucune radiographie)",
+          "Antécédents du patient",
+          "Constantes ou autres éléments de l'examen clinique (stabilité ligamentaire, par exemple)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute, la cheville droite, la douleur de la malléole externe, l'œdème modéré, l'appui possible et l'absence de déformation sont présents. La conclusion conserve le « probable » et la condition « à confirmer si douleur > 8 j », reformulée en « au-delà de 8 jours ». La suite « revoir à la demande » est identique. Aucune constatation n'est omise, aucun doute retiré et aucun élément ajouté.",
+      "cout_redaction": 0.006406,
+      "cout_juge": 0.00027410000000000005,
+      "tokens_sortie": 384,
+      "latence_s": 9.08
+    },
+    {
+      "bras": "B",
+      "note": "N02",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Toux sèche évoluant depuis 5 jours, avec écoulement nasal, sans fièvre.",
+        "examen": "L'auscultation est normale. La gorge est un peu rouge. Le patient ne présente pas de fièvre.",
+        "conclusion_du_medecin": "Rhinopharyngite.",
+        "suite": "À revoir en cas de fièvre ou si la toux dure plus de 3 semaines.",
+        "elements_absents": [
+          "Constantes (température mesurée, fréquence cardiaque, saturation, tension)",
+          "Traitement prescrit ou conseils donnés",
+          "Antécédents et allergies du patient",
+          "Examen détaillé de la gorge et des oreilles non précisé"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : toux sèche depuis 5 jours, écoulement nasal, absence de fièvre, auscultation normale, gorge un peu rouge, conclusion de rhinopharyngite et consigne de revoir si fièvre ou toux de plus de 3 semaines. Aucun doute retiré, aucune durée, chiffre ou côté modifié, et aucun ajout ni omission.",
+      "cout_redaction": 0.006048,
+      "cout_juge": 0.0002695,
+      "tokens_sortie": 350,
+      "latence_s": 6.57
+    },
+    {
+      "bras": "B",
+      "note": "N03",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Plaque rouge qui gratte (prurigineuse) sur l'avant-bras gauche, évoluant depuis 2 semaines.",
+        "examen": "Plaque rouge prurigineuse de l'avant-bras gauche, présente depuis 2 semaines. Le patient a changé de bracelet de montre il y a 3 semaines. Pas d'autre lésion.",
+        "conclusion_du_medecin": "Eczéma de contact possible, origine à préciser.",
+        "suite": "À revoir dans 1 mois.",
+        "elements_absents": [
+          "Taille, aspect précis et caractéristiques de la plaque (vésicules, suintement, desquamation, limites)",
+          "Traitement prescrit ou conseils donnés",
+          "Examens complémentaires (tests allergologiques, patch tests)",
+          "Antécédents du patient (atopie, allergies connues)",
+          "Matériau du bracelet de montre",
+          "Côté du poignet où la montre est portée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu conserve fidèlement les notes : la plaque prurigineuse de l'avant-bras gauche depuis 2 semaines, le nouveau bracelet de montre il y a 3 semaines, l'absence d'autre lésion, le doute diagnostique (eczéma de contact possible, origine à préciser) et le contrôle à 1 mois. La reformulation « nouveau bracelet » devient « a changé de bracelet », sans modification du sens. Aucun ajout ni omission.",
+      "cout_redaction": 0.006912,
+      "cout_juge": 0.0003218,
+      "tokens_sortie": 434,
+      "latence_s": 7.13
+    },
+    {
+      "bras": "B",
+      "note": "N04",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleur de l'oreille droite évoluant depuis 3 jours, sans écoulement.",
+        "examen": "Le tympan droit est difficile à voir en raison de la présence de cérumen. Absence de fièvre. Pas d'écoulement de l'oreille droite.",
+        "conclusion_du_medecin": null,
+        "suite": "Le médecin ayant été appelé en urgence, la consultation est à reprendre.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Examen de l'oreille gauche",
+          "Aspect du tympan droit (non visualisé)",
+          "Traitement prescrit ou soins réalisés (notamment sur le cérumen)",
+          "Antécédents et traitements en cours du patient",
+          "Date ou délai de la reprise de la consultation",
+          "Examens complémentaires éventuels"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'oreille droite depuis 3 jours sans écoulement, tympan droit difficile à voir à cause du cérumen, absence de fièvre, aucune conclusion, consultation à reprendre suite à l'appel en urgence. Aucune constatation n'est omise, ajoutée ou modifiée, et aucun doute n'est retiré.",
+      "cout_redaction": 0.00646,
+      "cout_juge": 0.00031939999999999996,
+      "tokens_sortie": 395,
+      "latence_s": 7.51
+    },
+    {
+      "bras": "B",
+      "note": "N05",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Visite de contrôle annuelle demandée par l'employeur. Le patient ne signale aucune plainte.",
+        "examen": "L'examen clinique est normal. La tension artérielle est mesurée à 12/8.",
+        "conclusion_du_medecin": "Examen normal.",
+        "suite": "Prochain contrôle dans 1 an.",
+        "elements_absents": [
+          "Détail de l'examen clinique par appareil ou système (les notes indiquent seulement « examen clinique normal »)",
+          "Poids, taille, fréquence cardiaque et autres constantes en dehors de la tension",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires éventuels",
+          "Aptitude au poste de travail (non mentionnée dans les notes)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend toutes les constatations des notes (visite de contrôle demandée par l'employeur, absence de plainte, examen clinique normal, tension 12/8, conclusion d'examen normal, prochain contrôle dans 1 an) sans rien retirer, modifier ni ajouter. Les seules différences sont des développements d'abréviations et des reformulations, qui ne constituent pas des défauts.",
+      "cout_redaction": 0.006166,
+      "cout_juge": 0.0002722,
+      "tokens_sortie": 364,
+      "latence_s": 6.52
+    },
+    {
+      "bras": "B",
+      "note": "N06",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Chute sur la main tendue lors d'une partie de football, avec douleur du poignet droit, à la base du pouce.",
+        "examen": "Douleur du poignet droit, située à la base du pouce. Mobilité limitée par la douleur.",
+        "conclusion_du_medecin": "Suspicion de fracture du scaphoïde.",
+        "suite": "Radiographie demandée. Le patient sera revu avec la radiographie.",
+        "elements_absents": [
+          "Date de la consultation et délai écoulé depuis la chute",
+          "Côté dominant du patient",
+          "Signes locaux (gonflement, ecchymose, déformation)",
+          "Résultat de la palpation (notamment de la tabatière anatomique)",
+          "Examen vasculaire et neurologique de la main",
+          "Traitement ou immobilisation prescrit",
+          "Date du rendez-vous de révision"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la suspicion de fracture du scaphoïde est maintenue comme telle, le côté droit est correct, la radiographie demandée et la reprise de consultation avec le résultat figurent bien, et aucune constatation n'est omise ou ajoutée.",
+      "cout_redaction": 0.00653,
+      "cout_juge": 0.00025780000000000003,
+      "tokens_sortie": 398,
+      "latence_s": 6.7
+    },
+    {
+      "bras": "B",
+      "note": "N07",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleurs abdominales intermittentes depuis 10 jours, survenant surtout après les repas.",
+        "examen": "Le patient ne présente pas de vomissement et son transit est normal. À l'examen, l'abdomen est souple. Le patient était pressé.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient est à revoir. Les notes ne précisent pas le délai.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Localisation précise de la douleur abdominale",
+          "Intensité de la douleur",
+          "Constantes (température, tension artérielle, pouls, poids)",
+          "Détail de l'examen abdominal (sensibilité, défense, palpation par région)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires",
+          "Traitement prescrit",
+          "Délai et modalités de la revue du patient"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 9
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleurs intermittentes depuis 10 jours surtout après les repas, absence de vomissement, transit normal, abdomen souple, patient pressé, à revoir. Aucune constatation n'est omise ou ajoutée, aucun chiffre ni côté n'est modifié, et aucune conclusion n'est inventée (la mention « aucune » correspond aux notes). La précision que le délai de revue n'est pas indiqué reflète aussi les notes.",
+      "cout_redaction": 0.006574,
+      "cout_juge": 0.00031539999999999997,
+      "tokens_sortie": 407,
+      "latence_s": 7.15
+    },
+    {
+      "bras": "B",
+      "note": "N08",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Œil gauche rouge depuis hier, avec larmoiement et sensation de sable.",
+        "examen": "Œil gauche rouge, larmoiement et sensation de sable. La vision est normale.",
+        "conclusion_du_medecin": "Conjonctivite.",
+        "suite": "À revoir si la vision baisse.",
+        "elements_absents": [
+          "Acuité visuelle chiffrée non précisée",
+          "Examen à la lampe à fente non mentionné",
+          "Aspect des sécrétions non précisé",
+          "Atteinte de l'œil droit non précisée",
+          "Antécédents du patient non précisés",
+          "Traitement prescrit non mentionné"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (G), rougeur depuis hier, larmoiement, sensation de sable, vision normale, conclusion conjonctivite et suite « revoir si la vision baisse ». Les constatations sont seulement réparties différemment entre les rubriques Motif et Examen, ce qui est une reformulation et non un défaut. Aucun doute n'est retiré, aucun chiffre ni côté n'est modifié, et rien n'est ajouté ni omis.",
+      "cout_redaction": 0.0058,
+      "cout_juge": 0.0003227,
+      "tokens_sortie": 330,
+      "latence_s": 7.18
+    },
+    {
+      "bras": "B",
+      "note": "N09",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Fatigue évoluant depuis 2 mois.",
+        "examen": "Le sommeil est correct et l'appétit est conservé. L'examen est sans particularité.",
+        "conclusion_du_medecin": null,
+        "suite": "La conclusion est à discuter avec le patient lors de la prochaine consultation.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin (les notes indiquent seulement une conclusion réservée)",
+          "Détail de l'examen (constantes, poids, examen par appareil)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires éventuels",
+          "Traitement ou conseils prescrits",
+          "Date de la prochaine consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : fatigue depuis 2 mois, sommeil et appétit conservés, examen sans particularité. La conclusion réservée est rendue par « aucune », avec la suite à discuter à la prochaine consultation. Aucun doute n'est retiré, aucun ajout, omission ou changement de durée n'apparaît.",
+      "cout_redaction": 0.009836,
+      "cout_juge": 0.0002549,
+      "tokens_sortie": 733,
+      "latence_s": 8.1
+    },
+    {
+      "bras": "B",
+      "note": "N10",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Coupure de la paume de la main gauche avec un couteau de cuisine, survenue il y a 2 heures.",
+        "examen": "Plaie de 2 cm à la paume de la main gauche, peu profonde et propre. La mobilité et la sensibilité des doigts sont normales.",
+        "conclusion_du_medecin": "Plaie superficielle de la paume gauche.",
+        "suite": "Surveiller la cicatrisation.",
+        "elements_absents": [
+          "Soins réalisés (nettoyage, désinfection, suture ou autre) non précisés",
+          "Statut vaccinal antitétanique non précisé",
+          "Antécédents et traitements en cours du patient non précisés",
+          "Modalités de surveillance (délai, consigne de reconsultation) non précisées"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : côté gauche conservé, durée de 2 heures, plaie de 2 cm peu profonde et propre, mobilité et sensibilité des doigts normales, conclusion de plaie superficielle et suivi de la cicatrisation. Aucune constatation omise, ajoutée ou modifiée ; seules les abréviations sont développées et les phrases complétées.",
+      "cout_redaction": 0.006266,
+      "cout_juge": 0.00018680000000000001,
+      "tokens_sortie": 369,
+      "latence_s": 5.72
+    },
+    {
+      "bras": "B",
+      "note": "N11",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Mal de gorge évoluant depuis 2 jours, avec une fièvre à 38,5 la veille au soir.",
+        "examen": "Les amygdales sont rouges, sans dépôt.",
+        "conclusion_du_medecin": "Angine probablement virale.",
+        "suite": "À revoir si la fièvre dure plus de 3 jours.",
+        "elements_absents": [
+          "Traitement prescrit non précisé",
+          "Température le jour de la consultation non précisée",
+          "Examen des aires ganglionnaires cervicales non précisé",
+          "Antécédents et allergies du patient non précisés",
+          "Test de diagnostic rapide (angine) non mentionné"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la durée de 2 jours, la fièvre à 38,5 la veille au soir, les amygdales rouges sans dépôt, et l'angine « probablement virale » conserve son doute. La condition de revoir si la fièvre dépasse 3 jours reste une condition et non une décision. Les reformulations (« la veille au soir », « dure plus de 3 jours ») ne modifient pas le sens.",
+      "cout_redaction": 0.005846,
+      "cout_juge": 0.0002609,
+      "tokens_sortie": 332,
+      "latence_s": 6.33
+    },
+    {
+      "bras": "B",
+      "note": "N12",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Torsion du genou gauche survenue au basket il y a 3 jours.",
+        "examen": "Le genou gauche est un peu gonflé. Il n'y a pas de blocage.",
+        "conclusion_du_medecin": "Entorse du genou gauche possible, à revoir.",
+        "suite": "Revoir le patient dans 10 jours.",
+        "elements_absents": [
+          "Examen clinique détaillé (stabilité ligamentaire, mobilité, douleur à la palpation) non précisé",
+          "Aucun examen complémentaire (imagerie) mentionné",
+          "Aucun traitement ni prescription mentionné",
+          "Antécédents du patient non précisés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : côté gauche, durée de 3 jours, genou un peu gonflé, absence de blocage, entorse possible à revoir et contrôle à 10 jours. Le doute du médecin (« possible ») est conservé, et aucun examen, soin ou diagnostic n'est ajouté.",
+      "cout_redaction": 0.005856,
+      "cout_juge": 0.0002382,
+      "tokens_sortie": 334,
+      "latence_s": 5.85
+    },
+    {
+      "bras": "B",
+      "note": "N13",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Le patient de 63 ans est vu en consultation pour des vertiges évoluant depuis 1 semaine, survenant surtout au lever.",
+        "examen": "La tension artérielle est de 13/8 en position couchée et de 11/7 en position debout. Le patient n'a pas fait de chute.",
+        "conclusion_du_medecin": "Vertiges positionnels, à préciser.",
+        "suite": "Revoir le patient dans 15 jours.",
+        "elements_absents": [
+          "Unité des valeurs de tension artérielle non précisée",
+          "Fréquence du pouls non précisée",
+          "Examen neurologique non précisé",
+          "Examen ORL ou manœuvres positionnelles non précisés",
+          "Antécédents du patient non précisés",
+          "Traitements en cours non précisés",
+          "Examens complémentaires non précisés",
+          "Traitement ou prescription non précisés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 8
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif, vertiges depuis une semaine surtout au lever, tension couchée 13/8 et debout 11/7, absence de chute, conclusion « vertiges positionnels, à préciser » (le doute est conservé), et revue dans quinze jours. Les seules modifications sont des développements d'abréviations et une mise en forme en phrases complètes, qui ne constituent pas des défauts.",
+      "cout_redaction": 0.009744,
+      "cout_juge": 0.0002708,
+      "tokens_sortie": 723,
+      "latence_s": 12.64
+    },
+    {
+      "bras": "B",
+      "note": "N14",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Grain de beauté du dos, présent depuis l'enfance, que le patient trouve modifié.",
+        "examen": "Lésion de 6 mm de diamètre, aux bords réguliers, située au dos.",
+        "conclusion_du_medecin": "Lésion à surveiller. L'avis du partenaire de Paris a été demandé.",
+        "suite": "Envoi des photos au partenaire de Paris.",
+        "elements_absents": [
+          "Couleur de la lésion non précisée",
+          "Localisation précise sur le dos non précisée",
+          "Nature de l'évolution décrite par le patient (taille, couleur, forme, symptômes) non précisée",
+          "Résultat de la dermoscopie non mentionné",
+          "Rythme et modalités de la surveillance non précisés",
+          "Antécédents personnels et familiaux non mentionnés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "La phrase « Lésion de 6 mm de diamètre » ajoute la précision « de diamètre », absente des notes, qui indiquent seulement « 6 mm ». Le reste est fidèle : le doute « à surveiller » est conservé, l'avis du partenaire de Paris est bien demandé, les photos sont envoyées et les bords réguliers sont rapportés. Il faut retirer « de diamètre ».",
+      "cout_redaction": 0.006466,
+      "cout_juge": 0.0004389,
+      "tokens_sortie": 389,
+      "latence_s": 8.27
+    },
+    {
+      "bras": "B",
+      "note": "N15",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Contrôle de la glycémie demandé par le patient, inquiet en raison d'un père diabétique.",
+        "examen": "Le patient ne présente aucun symptôme. La glycémie capillaire à jeun est de 0,95 g/l.",
+        "conclusion_du_medecin": "Glycémie normale ce jour.",
+        "suite": "Aucune suite prévue.",
+        "elements_absents": [
+          "Poids, taille et indice de masse corporelle",
+          "Tension artérielle",
+          "Autres éléments de l'examen clinique",
+          "Antécédents personnels du patient",
+          "Heure ou durée exacte du jeûne"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif, absence de symptôme, glycémie capillaire à jeun de 0,95 g/l, conclusion de glycémie normale et absence de suite. La seule différence, « Aucune suite prévue » pour « Suite : aucune », ne modifie pas le sens.",
+      "cout_redaction": 0.005746,
+      "cout_juge": 0.0002217,
+      "tokens_sortie": 320,
+      "latence_s": 6.02
+    },
+    {
+      "bras": "B",
+      "note": "N16",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Douleur de l'épaule droite depuis 1 mois, avec une gêne pour lever le bras.",
+        "examen": "L'examen est limité par la douleur.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient doit revenir avec ses anciens examens.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Constatations détaillées de l'examen (inspection, mobilité, force, tests spécifiques de l'épaule)",
+          "Antécédents du patient et circonstances de début de la douleur (traumatisme éventuel)",
+          "Traitement prescrit ou examens complémentaires demandés",
+          "Nature des anciens examens à apporter",
+          "Date ou délai du prochain rendez-vous"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'épaule droite depuis 1 mois avec gêne pour lever le bras, examen limité par la douleur, et retour du patient avec ses anciens examens. La mention « Conclusion du médecin : aucune » correspond à l'absence de conclusion dans les notes et n'invente aucun diagnostic. Aucun doute, côté, durée, examen ou constatation n'est modifié ou omis.",
+      "cout_redaction": 0.006142,
+      "cout_juge": 0.0002458,
+      "tokens_sortie": 365,
+      "latence_s": 5.43
+    },
+    {
+      "bras": "B",
+      "note": "N17",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Baisse progressive de la vision de loin depuis 1 an chez un patient de 36 ans.",
+        "examen": "Le patient lit bien de près. Il signale une baisse progressive de la vision de loin évoluant depuis 1 an.",
+        "conclusion_du_medecin": "Myopie probable, à confirmer par une mesure de la vue.",
+        "suite": "Rendez-vous chez l'opticien.",
+        "elements_absents": [
+          "Acuité visuelle chiffrée, œil par œil (droite et gauche)",
+          "Résultat de la mesure de la vue (réfraction)",
+          "Examen du fond d'œil et du segment antérieur",
+          "Antécédents ophtalmologiques et générales du patient",
+          "Port actuel de lunettes ou de lentilles",
+          "Délai ou date du rendez-vous chez l'opticien"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la baisse progressive de la vision de loin depuis 1 an, la bonne lecture de près, la conclusion « myopie probable, à confirmer par une mesure de la vue » (le doute est conservé) et la suite (rendez-vous chez l'opticien). L'âge de 36 ans figure bien dans les notes. Le seul ajout, « il signale », reformule la plainte du patient sans changer le contenu.",
+      "cout_redaction": 0.006458,
+      "cout_juge": 0.00030619999999999996,
+      "tokens_sortie": 393,
+      "latence_s": 6.34
+    },
+    {
+      "bras": "B",
+      "note": "N18",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Patiente de 42 ans vue en consultation de médecine générale pour des maux de tête évoluant depuis trois jours.",
+        "examen": "La patiente ne présente pas de fièvre. Il n'y a pas de raideur de la nuque. L'examen neurologique est normal.",
+        "conclusion_du_medecin": "Céphalées de tension probables.",
+        "suite": "À revoir en cas d'aggravation.",
+        "elements_absents": [
+          "Caractéristiques de la douleur (localisation, type, intensité, horaire)",
+          "Constantes (tension artérielle, température mesurée, etc.)",
+          "Antécédents et traitements en cours",
+          "Traitement prescrit ou conseils donnés",
+          "Examens complémentaires"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : les trois jours d'évolution, l'absence de fièvre et de raideur de la nuque, l'examen neurologique normal, la conclusion « céphalées de tension probables » avec son doute conservé, et la condition de revoir en cas d'aggravation. Aucune constatation n'est omise, ajoutée ou modifiée.",
+      "cout_redaction": 0.006086,
+      "cout_juge": 0.00022180000000000002,
+      "tokens_sortie": 358,
+      "latence_s": 7.48
+    },
+    {
+      "bras": "B",
+      "note": "N19",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Bourdonnements de l'oreille gauche depuis 2 semaines.",
+        "examen": "Le patient, âgé de 61 ans, ne présente pas de douleur. L'otoscopie est normale.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient demande un avis spécialisé ; ce point est à discuter.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Côté de l'otoscopie (oreille gauche, droite ou les deux) non précisé",
+          "Examen audiométrique ou autre examen complémentaire",
+          "Traitement prescrit",
+          "Décision définitive sur l'avis spécialisé demandé par le patient",
+          "Antécédents et autres symptômes associés (audition, vertiges)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : bourdonnements de l'oreille gauche depuis 2 semaines, absence de douleur, otoscopie normale, demande d'avis spécialisé à discuter. Il n'ajoute aucune conclusion, et l'absence de conclusion correspond aux notes. Aucun côté, durée ni constatation n'est modifié ou omis.",
+      "cout_redaction": 0.006206,
+      "cout_juge": 0.00023660000000000003,
+      "tokens_sortie": 372,
+      "latence_s": 6.29
+    },
+    {
+      "bras": "B",
+      "note": "N20",
+      "repetition": 1,
+      "compte_rendu": {
+        "motif": "Patient de 33 ans, vu pour une douleur persistante à la marche, au décours d'une entorse de la cheville gauche survenue il y a 3 semaines et prise en charge ailleurs.",
+        "examen": "Œdème léger constaté. Douleur persistant à la marche, rapportée par le patient.",
+        "conclusion_du_medecin": "Suites d'entorse, avec une évolution lente.",
+        "suite": "Radiographie demandée afin d'éliminer une fracture.",
+        "elements_absents": [
+          "Prise en charge initiale de l'entorse (lieu, traitement, immobilisation) non détaillée",
+          "Examen clinique détaillé (localisation précise de la douleur, mobilité, stabilité de la cheville, appui) non précisé",
+          "Traitement antalgique ou autre traitement actuel non mentionné",
+          "Zone de la radiographie et incidences non précisées",
+          "Modalités de suivi après la radiographie non précisées"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : entorse gauche il y a 3 semaines prise en charge ailleurs, douleur persistante à la marche, œdème léger, conclusion « suites d'entorse, évolution lente » et radiographie demandée pour éliminer une fracture. Aucun doute n'est retiré, aucune condition n'est transformée en décision, aucun examen ni diagnostic n'est ajouté et aucune constatation n'est omise. La mention « rapportée par le patient » ne figure pas dans les notes, mais elle ne change ni le diagnostic ni la conduite et ne relève d'aucune des erreurs listées.",
+      "cout_redaction": 0.006904,
+      "cout_juge": 0.0006101,
+      "tokens_sortie": 434,
+      "latence_s": 17.67
+    },
+    {
+      "bras": "B",
+      "note": "N01",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Chute survenue la veille en descendant un escalier, avec traumatisme de la cheville droite.",
+        "examen": "Douleur à la malléole externe de la cheville droite. Œdème modéré. Appui possible. Pas de déformation.",
+        "conclusion_du_medecin": "Probable entorse bénigne de la cheville droite, à confirmer si la douleur persiste au-delà de 8 jours.",
+        "suite": "À revoir à la demande.",
+        "elements_absents": [
+          "Aucun examen complémentaire (radiographie, par exemple) n'est mentionné dans les notes.",
+          "Aucun traitement ni soin (antalgique, contention, repos, etc.) n'est mentionné dans les notes.",
+          "Les antécédents du patient ne sont pas indiqués.",
+          "Aucune constatation sur la mobilité de la cheville ni sur l'état cutané ou neurovasculaire n'est mentionnée."
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute en descendant un escalier la veille, la douleur à la malléole externe droite, l'œdème modéré, l'appui possible et l'absence de déformation. Le doute du médecin est conservé avec « probable entorse bénigne » et la condition « à confirmer si la douleur persiste au-delà de 8 jours » n'est pas transformée en décision. La mention « à revoir à la demande » correspond aux notes. Aucune constatation n'est omise et aucun ajout n'a été relevé.",
+      "cout_redaction": 0.006806,
+      "cout_juge": 0.0002635,
+      "tokens_sortie": 424,
+      "latence_s": 14.44
+    },
+    {
+      "bras": "B",
+      "note": "N02",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Toux sèche évoluant depuis 5 jours, accompagnée d'un écoulement nasal, sans fièvre.",
+        "examen": "L'auscultation est normale. La gorge est un peu rouge. Le patient ne présente pas de fièvre.",
+        "conclusion_du_medecin": "Rhinopharyngite.",
+        "suite": "À revoir en cas de fièvre ou si la toux persiste au-delà de 3 semaines.",
+        "elements_absents": [
+          "Aucun traitement prescrit n'est mentionné dans les notes.",
+          "Les constantes (température mesurée, fréquence cardiaque, saturation, etc.) ne sont pas indiquées.",
+          "Les antécédents et les allergies du patient ne sont pas mentionnés.",
+          "La date de la consultation n'est pas indiquée."
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : toux sèche de 5 jours, écoulement nasal, absence de fièvre, auscultation normale, gorge un peu rouge, conclusion de rhinopharyngite. La consigne de revoir en cas de fièvre ou de toux au-delà de 3 semaines est conservée comme condition, sans être transformée en décision. Les reformulations (écoulement nasal, phrases complètes, « au-delà de 3 semaines ») ne changent pas le sens.",
+      "cout_redaction": 0.006428,
+      "cout_juge": 0.00036389999999999995,
+      "tokens_sortie": 388,
+      "latence_s": 8.62
+    },
+    {
+      "bras": "B",
+      "note": "N03",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Plaque rouge qui gratte (prurigineuse) de l'avant-bras gauche, évoluant depuis 2 semaines.",
+        "examen": "Plaque rouge prurigineuse de l'avant-bras gauche, présente depuis 2 semaines. Le patient a changé de bracelet de montre il y a 3 semaines. Pas d'autre lésion.",
+        "conclusion_du_medecin": "Eczéma de contact possible, origine à préciser.",
+        "suite": "À revoir dans 1 mois.",
+        "elements_absents": [
+          "Taille, aspect précis (limites, squames, vésicules, etc.) et localisation exacte de la plaque sur l'avant-bras gauche",
+          "Antécédents du patient (atopie, allergies, eczéma)",
+          "Traitement prescrit ou conseils donnés (par exemple éviction du bracelet)",
+          "Examens complémentaires éventuels (tests allergologiques)",
+          "Matériau du bracelet de montre"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : plaque rouge prurigineuse de l'avant-bras gauche depuis 2 semaines, nouveau bracelet de montre il y a 3 semaines, absence d'autre lésion, eczéma de contact possible à préciser, et revue dans 1 mois. Le doute est conservé, aucune durée, côté ou conclusion n'est modifié, et aucune constatation n'est omise.",
+      "cout_redaction": 0.007002,
+      "cout_juge": 0.0003772,
+      "tokens_sortie": 443,
+      "latence_s": 8.55
+    },
+    {
+      "bras": "B",
+      "note": "N04",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Douleur de l'oreille droite évoluant depuis 3 jours, sans écoulement.",
+        "examen": "Le tympan droit est difficile à voir en raison de la présence de cérumen. Absence de fièvre. Absence d'écoulement de l'oreille droite.",
+        "conclusion_du_medecin": null,
+        "suite": "Le médecin a été appelé en urgence ; la consultation est à reprendre.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Examen de l'oreille gauche",
+          "Aspect du tympan droit (non visualisé en raison du cérumen)",
+          "Traitement ou soin prescrit ou réalisé",
+          "Examens complémentaires",
+          "Date et modalités de la reprise de la consultation",
+          "Antécédents du patient",
+          "Motif précis de l'appel en urgence"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 8
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'oreille droite depuis 3 jours sans écoulement, tympan droit difficile à voir à cause du cérumen, absence de fièvre, aucune conclusion, consultation à reprendre après un appel en urgence. Aucune constatation n'est omise, ajoutée ou modifiée, et aucun côté, durée ou chiffre n'est changé.",
+      "cout_redaction": 0.00648,
+      "cout_juge": 0.0003063,
+      "tokens_sortie": 397,
+      "latence_s": 6.9
+    },
+    {
+      "bras": "B",
+      "note": "N05",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Visite de contrôle annuelle demandée par l'employeur. Le patient ne signale aucune plainte.",
+        "examen": "L'examen clinique est normal. La tension artérielle est de 12/8.",
+        "conclusion_du_medecin": "Examen normal.",
+        "suite": "Prochain contrôle dans 1 an.",
+        "elements_absents": [
+          "Détail de l'examen clinique par appareil (cardiaque, pulmonaire, etc.) non précisé",
+          "Poids, taille, fréquence cardiaque et autres constantes non renseignés",
+          "Antécédents et traitements en cours non renseignés",
+          "Examens complémentaires non mentionnés",
+          "Aptitude au poste de travail non précisée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend toutes les informations des notes : motif (visite de contrôle annuelle demandée par l'employeur), absence de plainte, examen clinique normal, tension 12/8, conclusion (examen normal) et suite (prochain contrôle dans 1 an). Aucun doute n'a été retiré, aucun chiffre ou côté modifié, rien n'a été ajouté ni omis. Les seules différences sont des reformulations (abréviations développées, phrases complètes), qui ne constituent pas des défauts.",
+      "cout_redaction": 0.006056,
+      "cout_juge": 0.0002898,
+      "tokens_sortie": 353,
+      "latence_s": 7.03
+    },
+    {
+      "bras": "B",
+      "note": "N06",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Chute sur la main tendue lors d'une partie de football, avec douleur du poignet droit à la base du pouce.",
+        "examen": "Douleur du poignet droit, située à la base du pouce. Mobilité limitée par la douleur.",
+        "conclusion_du_medecin": "Suspicion de fracture du scaphoïde.",
+        "suite": "Radiographie demandée. Le patient sera revu avec la radiographie.",
+        "elements_absents": [
+          "Date et heure de la chute",
+          "Antécédents du patient",
+          "Gonflement, ecchymose ou déformation du poignet (non mentionnés)",
+          "Résultat de la palpation de la tabatière anatomique (non mentionné)",
+          "Immobilisation ou traitement antalgique (non mentionnés)",
+          "Date du rendez-vous de contrôle",
+          "Constatations sur la main gauche ou sur l'état neurovasculaire (non mentionnées)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu conserve la suspicion de fracture du scaphoïde, le côté droit, la localisation à la base du pouce et la mobilité limitée. La suite (radiographie demandée, revoir avec la radiographie) est reformulée sans changer le sens et sans ajout.",
+      "cout_redaction": 0.00675,
+      "cout_juge": 0.0002272,
+      "tokens_sortie": 420,
+      "latence_s": 6.89
+    },
+    {
+      "bras": "B",
+      "note": "N07",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Douleurs abdominales intermittentes depuis 10 jours, survenant surtout après les repas.",
+        "examen": "Le patient, âgé de 38 ans, ne présente pas de vomissement et son transit est normal. À l'examen, l'abdomen est souple. Le patient était pressé lors de la consultation.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient est à revoir (le délai n'est pas précisé dans les notes).",
+        "elements_absents": [
+          "Conclusion ou hypothèse diagnostique du médecin",
+          "Localisation précise et caractéristiques de la douleur (intensité, type, irradiation)",
+          "Constantes (température, tension artérielle, pouls, poids)",
+          "Détails de l'examen abdominal (palpation douloureuse, défense, etc.)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires ou traitement prescrits",
+          "Délai et modalités de la revoyure"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : durée de 10 jours, douleurs surtout après les repas, absence de vomissement, transit normal, abdomen souple, patient pressé et à revoir. Aucune constatation n'est omise, aucun élément n'est ajouté, et la conclusion est correctement indiquée comme absente.",
+      "cout_redaction": 0.006854,
+      "cout_juge": 0.0002564,
+      "tokens_sortie": 435,
+      "latence_s": 6.95
+    },
+    {
+      "bras": "B",
+      "note": "N08",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Œil gauche rouge depuis hier, avec larmoiement et sensation de sable.",
+        "examen": "Œil gauche rouge, larmoiement et sensation de sable, évoluant depuis hier. La vision est normale.",
+        "conclusion_du_medecin": "Conjonctivite.",
+        "suite": "À revoir si la vision baisse.",
+        "elements_absents": [
+          "Traitement prescrit non précisé",
+          "Acuité visuelle chiffrée non précisée",
+          "Résultats détaillés de l'examen à la lampe à fente ou du segment antérieur non précisés",
+          "Antécédents et allergies non précisés",
+          "Caractère unilatéral ou non de l'atteinte (œil droit) non précisé",
+          "Conseils d'hygiène ou d'éviction non précisés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (abréviation G), rougeur depuis hier, larmoiement, sensation de sable, vision normale, conclusion conjonctivite et suite conditionnelle « revoir si la vision baisse ». Aucune constatation n'est omise, aucun côté, durée ni conclusion n'est modifié, et aucun ajout n'apparaît. Les seules différences sont des reformulations (abréviations développées, phrases complètes), qui ne constituent pas des défauts.",
+      "cout_redaction": 0.00628,
+      "cout_juge": 0.0002577,
+      "tokens_sortie": 378,
+      "latence_s": 9.54
+    },
+    {
+      "bras": "B",
+      "note": "N09",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Fatigue évoluant depuis 2 mois.",
+        "examen": "Le patient rapporte un sommeil correct et un appétit conservé. L'examen clinique est sans particularité.",
+        "conclusion_du_medecin": "Conclusion réservée, à discuter avec le patient à la prochaine consultation.",
+        "suite": "À discuter avec le patient à la prochaine consultation.",
+        "elements_absents": [
+          "Aucun diagnostic ni hypothèse diagnostique précisés dans les notes",
+          "Constantes (tension, pouls, température, poids) non précisées",
+          "Détail de l'examen clinique non précisé (examen noté « sans particularité »)",
+          "Antécédents et traitements en cours non précisés",
+          "Examens complémentaires non mentionnés",
+          "Traitement ou prescription non mentionnés",
+          "Date de la prochaine consultation non précisée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "a_corriger",
+      "defauts": [
+        "constatation_modifiee"
+      ],
+      "explication": "Le compte rendu écrit « Fatigue évoluant depuis 2 mois », alors que les notes disent seulement « Fatigue depuis 2 mois ». Le mot « évoluant » suggère une progression que le médecin n'a pas notée. Le reste est fidèle : sommeil correct, appétit conservé, examen sans particularité, et conclusion réservée à discuter à la prochaine consultation.",
+      "cout_redaction": 0.006556,
+      "cout_juge": 0.0003413,
+      "tokens_sortie": 405,
+      "latence_s": 7.59
+    },
+    {
+      "bras": "B",
+      "note": "N10",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Coupure de la paume de la main gauche avec un couteau de cuisine, survenue il y a 2 heures.",
+        "examen": "Plaie de 2 cm de la paume de la main gauche, peu profonde et propre. La mobilité et la sensibilité des doigts sont normales.",
+        "conclusion_du_medecin": "Plaie superficielle de la paume gauche.",
+        "suite": "Surveiller la cicatrisation.",
+        "elements_absents": [
+          "Soins réalisés (nettoyage, suture, pansement) non précisés",
+          "Statut vaccinal antitétanique non précisé",
+          "Antécédents et traitements en cours du patient non précisés",
+          "Modalités et délai de la surveillance (date de contrôle, signes d'alerte) non précisés",
+          "Latéralité dominante du patient non précisée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : côté gauche, durée de 2 heures, plaie de 2 cm peu profonde et propre, mobilité et sensibilité des doigts normales, conclusion de plaie superficielle de la paume gauche et suite de surveillance de la cicatrisation. Aucune constatation omise, ajoutée ou modifiée ; seules des abréviations ont été développées et les phrases complétées.",
+      "cout_redaction": 0.006446,
+      "cout_juge": 0.00019130000000000001,
+      "tokens_sortie": 387,
+      "latence_s": 5.72
+    },
+    {
+      "bras": "B",
+      "note": "N11",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Mal de gorge depuis 2 jours, avec une fièvre à 38,5 la veille au soir.",
+        "examen": "Les amygdales sont rouges, sans dépôt.",
+        "conclusion_du_medecin": "Angine probablement virale.",
+        "suite": "À revoir si la fièvre dure plus de 3 jours.",
+        "elements_absents": [
+          "Température mesurée lors de la consultation non précisée",
+          "Examen des autres éléments (ganglions cervicaux, otoscopie, auscultation) non précisé",
+          "Absence de test diagnostic (test rapide streptocoque) non mentionnée dans les notes",
+          "Aucun traitement prescrit ou recommandé mentionné",
+          "Antécédents du patient non précisés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu conserve le doute « probablement virale », la condition « revoir si fièvre > 3 j » reste une condition, les chiffres (2 jours, 38,5, 3 jours) et la constatation sur les amygdales (rouges, sans dépôt) sont identiques aux notes. Ce sont des reformulations fidèles, sans ajout ni omission.",
+      "cout_redaction": 0.006146,
+      "cout_juge": 0.0002645,
+      "tokens_sortie": 362,
+      "latence_s": 7.18
+    },
+    {
+      "bras": "B",
+      "note": "N12",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Torsion du genou gauche survenue au basket il y a 3 jours.",
+        "examen": "Le genou gauche est un peu gonflé. Il n'y a pas de blocage.",
+        "conclusion_du_medecin": "Entorse du genou gauche possible, à revoir.",
+        "suite": "Revoir le patient dans 10 jours.",
+        "elements_absents": [
+          "Examen clinique détaillé (stabilité ligamentaire, amplitude articulaire, douleur à la palpation, etc.) non précisé",
+          "Examens complémentaires (imagerie) non mentionnés",
+          "Traitement ou soins prescrits non mentionnés",
+          "Antécédents du patient non mentionnés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la torsion du genou gauche au basket il y a 3 jours, le genou un peu gonflé sans blocage, l'entorse 'possible, à revoir' conservée comme un doute, et le retour dans 10 jours. Aucun côté, durée, chiffre, examen ou diagnostic n'est modifié, ajouté ou omis.",
+      "cout_redaction": 0.005966,
+      "cout_juge": 0.0002647,
+      "tokens_sortie": 345,
+      "latence_s": 6.76
+    },
+    {
+      "bras": "B",
+      "note": "N13",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Patient de 63 ans vu en consultation pour des vertiges évoluant depuis une semaine, survenant surtout au lever.",
+        "examen": "La tension artérielle est de 13/8 en position couchée et de 11/7 en position debout. Le patient n'a pas fait de chute.",
+        "conclusion_du_medecin": "Vertiges positionnels, à préciser.",
+        "suite": "Revoir le patient dans quinze jours.",
+        "elements_absents": [
+          "Unité de mesure de la tension artérielle (non précisée dans les notes)",
+          "Fréquence cardiaque",
+          "Durée et caractéristiques des épisodes de vertiges",
+          "Antécédents du patient",
+          "Traitements en cours",
+          "Examen neurologique et examen ORL, manœuvres positionnelles",
+          "Examens complémentaires éventuels",
+          "Traitement ou conseils prescrits"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 8
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : tension de 13/8 couché et 11/7 debout, absence de chute, vertiges évoluant depuis une semaine et surtout au lever, conclusion « vertiges positionnels, à préciser » (le doute est conservé), et revue à quinze jours. Aucune constatation n'est omise, ajoutée ou modifiée.",
+      "cout_redaction": 0.010044,
+      "cout_juge": 0.0002779,
+      "tokens_sortie": 753,
+      "latence_s": 8.7
+    },
+    {
+      "bras": "B",
+      "note": "N14",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Grain de beauté du dos, présent depuis l'enfance, que le patient trouve modifié.",
+        "examen": "Lésion de 6 mm de diamètre, aux bords réguliers.",
+        "conclusion_du_medecin": "Lésion à surveiller. Avis du partenaire de Paris demandé.",
+        "suite": "Envoi des photos au partenaire de Paris.",
+        "elements_absents": [
+          "Localisation précise de la lésion sur le dos (région, côté droit ou gauche)",
+          "Couleur de la lésion",
+          "Description de l'évolution rapportée par le patient (nature du changement, délai d'apparition)",
+          "Examen dermoscopique",
+          "Antécédents personnels et familiaux (dermatologiques, cancers cutanés)",
+          "Rythme et modalités de la surveillance",
+          "Délai de la réponse attendue du partenaire de Paris"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu écrit « Lésion de 6 mm de diamètre », alors que les notes indiquent seulement « Lésion de 6 mm ». La précision « de diamètre » n'figure pas dans les notes et ajoute une information sur la mesure. Le reste est fidèle : le doute « lésion à surveiller », la demande d'avis au partenaire de Paris et l'envoi des photos correspondent aux notes.",
+      "cout_redaction": 0.006636,
+      "cout_juge": 0.0004661,
+      "tokens_sortie": 406,
+      "latence_s": 8.92
+    },
+    {
+      "bras": "B",
+      "note": "N15",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Contrôle de la glycémie à la demande du patient, inquiet en raison d'un père diabétique.",
+        "examen": "Le patient, âgé de 50 ans, ne présente aucun symptôme. La glycémie capillaire à jeun est de 0,95 g/l.",
+        "conclusion_du_medecin": "Glycémie normale ce jour.",
+        "suite": "Aucune suite prévue.",
+        "elements_absents": [
+          "Constantes (tension artérielle, poids, taille, IMC)",
+          "Examen clinique détaillé",
+          "Antécédents personnels du patient",
+          "Autres examens biologiques (HbA1c, glycémie veineuse)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif, absence de symptômes, glycémie capillaire à jeun de 0,95 g/l, conclusion de glycémie normale ce jour et absence de suite. La formulation « aucune suite prévue » ne change pas le sens de « suite : aucune ». Aucun doute, chiffre, côté, examen ajouté ou constatation omise n'a été relevé.",
+      "cout_redaction": 0.005886,
+      "cout_juge": 0.0002888,
+      "tokens_sortie": 334,
+      "latence_s": 7.75
+    },
+    {
+      "bras": "B",
+      "note": "N16",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Douleur de l'épaule droite évoluant depuis 1 mois, avec une gêne pour lever le bras.",
+        "examen": "L'examen est limité par la douleur.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient doit revenir avec ses anciens examens.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Détail des constatations de l'examen clinique (mobilité, force, tests spécifiques) : l'examen est seulement noté comme limité par la douleur",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires prescrits ou réalisés lors de cette consultation",
+          "Traitement ou soins prescrits",
+          "Date ou délai du prochain rendez-vous",
+          "Nature des anciens examens à apporter"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'épaule droite depuis 1 mois avec gêne pour lever le bras, examen limité par la douleur, absence de conclusion (les notes n'en contiennent pas), et retour du patient avec ses anciens examens. Aucune constatation n'est omise, modifiée ou ajoutée.",
+      "cout_redaction": 0.006312,
+      "cout_juge": 0.0002437,
+      "tokens_sortie": 382,
+      "latence_s": 5.85
+    },
+    {
+      "bras": "B",
+      "note": "N17",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Baisse progressive de la vision de loin depuis 1 an.",
+        "examen": "Le patient, âgé de 36 ans, signale une baisse progressive de la vision de loin évoluant depuis 1 an. Il lit bien de près.",
+        "conclusion_du_medecin": "Myopie probable, à confirmer par une mesure de la vue.",
+        "suite": "Rendez-vous chez l'opticien.",
+        "elements_absents": [
+          "Acuité visuelle chiffrée (œil droit, œil gauche)",
+          "Résultat de la mesure de la vue (réfraction)",
+          "Examen du fond d'œil et du segment antérieur",
+          "Antécédents ophtalmologiques et antécédents familiaux",
+          "Port éventuel de lunettes ou de lentilles actuellement",
+          "Latéralité éventuelle de la baisse de vision (œil droit ou gauche)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la baisse de vision de loin depuis 1 an, la lecture de près conservée, le doute « myopie probable, à confirmer par une mesure de la vue » et le rendez-vous chez l'opticien. Aucune certitude n'est ajoutée et aucune constatation n'est omise ou modifiée.",
+      "cout_redaction": 0.006608,
+      "cout_juge": 0.0001747,
+      "tokens_sortie": 408,
+      "latence_s": 5.03
+    },
+    {
+      "bras": "B",
+      "note": "N18",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Patiente de 42 ans vue en consultation de médecine générale pour des maux de tête évoluant depuis trois jours.",
+        "examen": "Absence de fièvre. Absence de raideur de la nuque. L'examen neurologique est normal.",
+        "conclusion_du_medecin": "Céphalées de tension probables.",
+        "suite": "À revoir en cas d'aggravation.",
+        "elements_absents": [
+          "Caractéristiques de la douleur (localisation, type, intensité, horaire)",
+          "Antécédents de la patiente",
+          "Constantes (tension artérielle, température mesurée, etc.)",
+          "Traitement prescrit ou conseils donnés",
+          "Délai précis ou modalités de la nouvelle consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : durée de trois jours, absence de fièvre et de raideur de la nuque, examen neurologique normal, conclusion « céphalées de tension probables » avec le doute conservé, et revue en cas d'aggravation. Aucun doute n'a été retiré, aucune conclusion ni examen n'a été ajouté.",
+      "cout_redaction": 0.006066,
+      "cout_juge": 0.00017410000000000003,
+      "tokens_sortie": 356,
+      "latence_s": 5.11
+    },
+    {
+      "bras": "B",
+      "note": "N19",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Bourdonnements de l'oreille gauche depuis 2 semaines.",
+        "examen": "Le patient ne présente pas de douleur. L'otoscopie est normale.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient demande un avis spécialisé ; ce point est à discuter. Aucune décision n'est notée à ce stade.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Côté de l'otoscopie normale non précisé (oreille gauche, droite ou les deux)",
+          "Examen audiométrique ou autre examen complémentaire",
+          "Traitement prescrit",
+          "Décision concernant l'avis spécialisé demandé par le patient",
+          "Antécédents et signes associés (baisse d'audition, vertiges, etc.)",
+          "Date de la consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : bourdonnements de l'oreille gauche depuis 2 semaines, absence de douleur, otoscopie normale, demande d'avis spécialisé à discuter. Il ne donne aucune conclusion, comme les notes, et n'ajoute aucune décision.",
+      "cout_redaction": 0.006406,
+      "cout_juge": 0.0002217,
+      "tokens_sortie": 392,
+      "latence_s": 6.54
+    },
+    {
+      "bras": "B",
+      "note": "N20",
+      "repetition": 2,
+      "compte_rendu": {
+        "motif": "Douleur persistante à la marche après une entorse de la cheville gauche survenue il y a 3 semaines, initialement prise en charge dans un autre établissement.",
+        "examen": "Œdème léger de la cheville gauche. Le patient, âgé de 33 ans, rapporte une douleur qui persiste à la marche.",
+        "conclusion_du_medecin": "Suites d'entorse, avec une évolution lente.",
+        "suite": "Radiographie demandée pour éliminer une fracture.",
+        "elements_absents": [
+          "Prise en charge et traitement reçus lors de la première consultation ailleurs (non précisés)",
+          "Intensité et localisation précise de la douleur",
+          "Examen clinique détaillé (palpation, stabilité ligamentaire, mobilité, appui) non précisé",
+          "Traitement actuel non précisé",
+          "Antécédents du patient non précisés",
+          "Date et modalités du rendez-vous de contrôle non précisées"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : côté gauche, délai de 3 semaines, prise en charge dans un autre établissement, douleur persistante à la marche, œdème léger, conclusion « suites d'entorse, évolution lente » et radiographie demandée pour éliminer une fracture. Aucune constatation n'est omise, modifiée ou ajoutée, et l'âge de 33 ans figure dans les notes.",
+      "cout_redaction": 0.006874,
+      "cout_juge": 0.0003298,
+      "tokens_sortie": 431,
+      "latence_s": 7.8
+    },
+    {
+      "bras": "B",
+      "note": "N01",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Chute survenue la veille en descendant un escalier, avec traumatisme de la cheville droite.",
+        "examen": "Douleur de la malléole externe de la cheville droite. Œdème modéré. Appui possible. Absence de déformation.",
+        "conclusion_du_medecin": "Probable entorse bénigne de la cheville droite, à confirmer si la douleur dure plus de 8 jours.",
+        "suite": "À revoir à la demande.",
+        "elements_absents": [
+          "Examen d'imagerie (radiographie) : non mentionné dans les notes",
+          "Traitement ou soins prescrits : non mentionnés",
+          "Antécédents du patient : non mentionnés",
+          "Constantes et autres éléments de l'examen clinique (stabilité ligamentaire, par exemple) : non mentionnés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute de la veille en descendant un escalier, la douleur de la malléole externe droite, l'œdème modéré, l'appui possible et l'absence de déformation. La conclusion conserve le doute (« probable entorse bénigne ») et la condition (« à confirmer si la douleur dure plus de 8 jours »), sans la transformer en certitude ni en décision. La suite « à revoir à la demande » est identique aux notes. Aucun ajout ni omission.",
+      "cout_redaction": 0.006386,
+      "cout_juge": 0.00031969999999999996,
+      "tokens_sortie": 382,
+      "latence_s": 6.66
+    },
+    {
+      "bras": "B",
+      "note": "N02",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Toux sèche depuis 5 jours, associée à une rhinorrhée (nez qui coule), sans fièvre.",
+        "examen": "L'auscultation est normale. La gorge est un peu rouge. Le patient ne présente pas de fièvre.",
+        "conclusion_du_medecin": "Rhinopharyngite.",
+        "suite": "À revoir en consultation en cas de fièvre ou si la toux dure plus de 3 semaines.",
+        "elements_absents": [
+          "Température mesurée (seule l'absence de fièvre est notée)",
+          "Constantes (fréquence cardiaque, saturation en oxygène, tension artérielle)",
+          "Antécédents du patient",
+          "Traitement prescrit ou conseils donnés",
+          "Examens complémentaires"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : durée de la toux (5 jours), rhinorrhée, absence de fièvre, auscultation normale, gorge un peu rouge, conclusion de rhinopharyngite et condition de reconsultation (fièvre ou toux de plus de 3 semaines). Aucune certitude ajoutée, aucun élément omis ni modifié ; les seules différences sont des développements d'abréviations et une reformulation.",
+      "cout_redaction": 0.006228,
+      "cout_juge": 0.0002899,
+      "tokens_sortie": 368,
+      "latence_s": 9.2
+    },
+    {
+      "bras": "B",
+      "note": "N03",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Plaque rouge qui gratte (prurigineuse) de l'avant-bras gauche, évoluant depuis 2 semaines.",
+        "examen": "Plaque rouge prurigineuse de l'avant-bras gauche, présente depuis 2 semaines. Le patient a changé de bracelet de montre il y a 3 semaines. Pas d'autre lésion.",
+        "conclusion_du_medecin": "Eczéma de contact possible, origine à préciser.",
+        "suite": "À revoir dans 1 mois.",
+        "elements_absents": [
+          "Taille, aspect précis (limites, squames, vésicules, suintement) et localisation exacte de la plaque sur l'avant-bras gauche",
+          "Antécédents du patient (eczéma, atopie, allergies)",
+          "Traitement prescrit ou conseils donnés (par exemple éviction du bracelet)",
+          "Examens complémentaires envisagés (par exemple tests allergologiques)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la plaque rouge prurigineuse de l'avant-bras gauche depuis 2 semaines, le nouveau bracelet de montre il y a 3 semaines, l'absence d'autre lésion, la conclusion « eczéma de contact possible, origine à préciser » (doute conservé) et le suivi à 1 mois. Aucun doute n'a été retiré, aucun chiffre ou côté modifié, aucun ajout ni omission.",
+      "cout_redaction": 0.006902,
+      "cout_juge": 0.0003102,
+      "tokens_sortie": 433,
+      "latence_s": 7.17
+    },
+    {
+      "bras": "B",
+      "note": "N04",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Douleur de l'oreille droite évoluant depuis 3 jours, sans écoulement.",
+        "examen": "Le tympan droit est difficile à voir en raison de la présence de cérumen. Il n'y a pas de fièvre. Pas d'écoulement de l'oreille droite.",
+        "conclusion_du_medecin": null,
+        "suite": "Le médecin a été appelé en urgence ; la consultation est à reprendre.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Examen de l'oreille gauche",
+          "Aspect du tympan droit (non visualisé)",
+          "Traitement prescrit ou soins réalisés (notamment extraction du cérumen)",
+          "Examens complémentaires",
+          "Date et modalités de la reprise de la consultation",
+          "Constantes (température mesurée, etc.)",
+          "Antécédents du patient"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 8
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'oreille droite depuis 3 jours sans écoulement, tympan droit difficile à voir à cause du cérumen, absence de fièvre, aucune conclusion, et consultation à reprendre après appel en urgence. Aucun doute retiré, aucun ajout, aucune omission, et côté, durée et chiffres sont conservés.",
+      "cout_redaction": 0.00657,
+      "cout_juge": 0.0002928,
+      "tokens_sortie": 406,
+      "latence_s": 13.43
+    },
+    {
+      "bras": "B",
+      "note": "N05",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Visite de contrôle annuelle demandée par l'employeur. Le patient ne signale aucune plainte.",
+        "examen": "L'examen clinique est normal. La tension artérielle est de 12/8.",
+        "conclusion_du_medecin": "Examen normal.",
+        "suite": "Prochain contrôle dans 1 an.",
+        "elements_absents": [
+          "Détail de l'examen clinique par appareil ou système (non précisé dans les notes)",
+          "Autres constantes (poids, taille, fréquence cardiaque, etc.)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires éventuels"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : visite de contrôle annuelle demandée par l'employeur, absence de plainte, examen clinique normal, tension 12/8, conclusion « examen normal » et suivi à 1 an. Aucune constatation n'est omise, ajoutée ou modifiée ; seules la mise en forme et le développement de l'abréviation « Tension » en « tension artérielle » ont été faits.",
+      "cout_redaction": 0.005736,
+      "cout_juge": 0.00025130000000000004,
+      "tokens_sortie": 321,
+      "latence_s": 6.75
+    },
+    {
+      "bras": "B",
+      "note": "N06",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Chute sur la main tendue lors d'un match de football, avec douleur du poignet droit à la base du pouce.",
+        "examen": "Douleur du poignet droit, située à la base du pouce. Mobilité limitée par la douleur.",
+        "conclusion_du_medecin": "Suspicion de fracture du scaphoïde.",
+        "suite": "Radiographie demandée. Le patient sera revu avec la radiographie.",
+        "elements_absents": [
+          "Date de la consultation et date de l'accident",
+          "Antécédents du patient et latéralité (main dominante)",
+          "Signes vitaux et état cutanéo-vasculaire et neurologique de la main",
+          "Détail de l'examen clinique (inflammation ou gonflement, ecchymose, douleur à la palpation de la tabatière anatomique, tests spécifiques)",
+          "Incidences radiographiques précisées",
+          "Traitement ou immobilisation prescrits",
+          "Délai du rendez-vous de contrôle"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu précise « lors d'un match de football », alors que les notes indiquent seulement « au football ». Le mot « match » n'est pas dans les notes et ajoute une précision non documentée. Le reste est fidèle : la suspicion de fracture du scaphoïde est maintenue comme suspicion, la douleur à la base du pouce droit, la mobilité limitée et la revue avec la radiographie correspondent aux notes, et aucune constatation n'est omise.",
+      "cout_redaction": 0.00692,
+      "cout_juge": 0.0003711,
+      "tokens_sortie": 437,
+      "latence_s": 8.91
+    },
+    {
+      "bras": "B",
+      "note": "N07",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Douleurs abdominales intermittentes depuis 10 jours, survenant surtout après les repas.",
+        "examen": "Le patient, âgé de 38 ans, ne présente pas de vomissement et son transit est normal. À l'examen, l'abdomen est souple. Le patient était pressé lors de la consultation.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient est à revoir (délai non précisé).",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Localisation précise de la douleur abdominale",
+          "Intensité et caractère de la douleur",
+          "Constantes (température, tension artérielle, pouls, poids)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires",
+          "Traitement prescrit",
+          "Délai du rendez-vous de revoyure"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 8
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend toutes les constatations des notes (douleurs intermittentes depuis 10 jours, surtout après les repas, pas de vomissement, transit normal, abdomen souple, patient pressé, à revoir). Il n'ajoute ni examen ni conclusion, et précise que le délai de revue n'est pas indiqué, comme dans les notes.",
+      "cout_redaction": 0.006424,
+      "cout_juge": 0.0002509,
+      "tokens_sortie": 392,
+      "latence_s": 7.26
+    },
+    {
+      "bras": "B",
+      "note": "N08",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Œil gauche rouge depuis hier, avec larmoiement et sensation de sable.",
+        "examen": "Œil gauche rouge, larmoiement et sensation de sable. La vision est normale.",
+        "conclusion_du_medecin": "Conjonctivite.",
+        "suite": "À revoir si la vision baisse.",
+        "elements_absents": [
+          "Aucun traitement prescrit ou mentionné dans les notes",
+          "Acuité visuelle chiffrée non précisée",
+          "Atteinte de l'œil droit non précisée",
+          "Antécédents du patient non précisés",
+          "Délai de réévaluation non précisé"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (G), rougeur depuis hier, larmoiement, sensation de sable, vision normale, conclusion conjonctivite, et suite conditionnelle « revoir si la vision baisse ». Aucune constatation n'est omise, modifiée ou ajoutée, et la condition de suivi n'est pas transformée en décision.",
+      "cout_redaction": 0.0057,
+      "cout_juge": 0.0002652,
+      "tokens_sortie": 320,
+      "latence_s": 6.05
+    },
+    {
+      "bras": "B",
+      "note": "N09",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Consultation de médecine générale pour une fatigue évoluant depuis 2 mois. Le sommeil est correct et l'appétit est conservé.",
+        "examen": "L'examen est sans particularité.",
+        "conclusion_du_medecin": null,
+        "suite": "La conclusion du médecin est réservée ; elle sera discutée avec le patient lors de la prochaine consultation.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin (conclusion réservée)",
+          "Détail de l'examen clinique (constantes, examen par appareil)",
+          "Antécédents et traitements en cours",
+          "Examens complémentaires prescrits ou réalisés",
+          "Date de la prochaine consultation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : fatigue de 2 mois, sommeil correct, appétit conservé, examen sans particularité, et conclusion réservée à discuter à la prochaine consultation. Aucun doute n'est retiré, aucune conclusion n'est ajoutée et aucun chiffre ou élément n'est modifié ou omis.",
+      "cout_redaction": 0.009616,
+      "cout_juge": 0.00023830000000000002,
+      "tokens_sortie": 711,
+      "latence_s": 8.1
+    },
+    {
+      "bras": "B",
+      "note": "N10",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Coupure de la paume de la main gauche avec un couteau de cuisine, survenue il y a 2 heures.",
+        "examen": "Plaie de 2 cm de la paume de la main gauche, peu profonde et propre. La mobilité et la sensibilité des doigts sont normales.",
+        "conclusion_du_medecin": "Plaie superficielle de la paume gauche.",
+        "suite": "Surveiller la cicatrisation.",
+        "elements_absents": [
+          "Soins réalisés (nettoyage, désinfection, suture ou autre pansement) : non précisés dans les notes",
+          "Statut vaccinal antitétanique / prophylaxie : non précisé",
+          "Traitement prescrit (antalgiques, antibiotiques) : non précisé",
+          "Modalités de la surveillance (délai, date de contrôle, signes d'alerte) : non précisées",
+          "Antécédents et allergies du patient : non précisés",
+          "Main dominante : non précisée"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : coupure de la paume gauche au couteau de cuisine il y a 2 heures, plaie de 2 cm peu profonde et propre, mobilité et sensibilité des doigts normales, conclusion de plaie superficielle de la paume gauche et suite de surveillance de la cicatrisation. Les seules différences sont des développements d'abréviations (G en gauche, h en heures, Concl. en Conclusion du médecin) et une réorganisation en phrases complètes, qui ne constituent pas des défauts.",
+      "cout_redaction": 0.006896,
+      "cout_juge": 0.0002793,
+      "tokens_sortie": 432,
+      "latence_s": 7.47
+    },
+    {
+      "bras": "B",
+      "note": "N11",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Mal de gorge depuis 2 jours, avec fièvre à 38,5 la veille au soir.",
+        "examen": "Les amygdales sont rouges, sans dépôt.",
+        "conclusion_du_medecin": "Angine probablement virale.",
+        "suite": "À revoir si la fièvre dure plus de 3 jours.",
+        "elements_absents": [
+          "Température mesurée lors de la consultation",
+          "Antécédents du patient",
+          "Traitement prescrit ou conseils donnés",
+          "Examen des autres éléments (ganglions cervicaux, etc.)",
+          "Test diagnostique (test rapide streptocoque, par exemple)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : le mal de gorge depuis 2 jours, la fièvre à 38,5 la veille au soir, les amygdales rouges sans dépôt, la conclusion « probablement virale » conservée avec son doute, et la condition « revoir si fièvre > 3 j » devenue « à revoir si la fièvre dure plus de 3 jours » sans passer en décision. Seules des reformulations et développements d'abréviations ont été faits, sans ajout, omission ni modification.",
+      "cout_redaction": 0.005806,
+      "cout_juge": 0.00029089999999999997,
+      "tokens_sortie": 328,
+      "latence_s": 6.64
+    },
+    {
+      "bras": "B",
+      "note": "N12",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Torsion du genou gauche survenue au basket il y a 3 jours.",
+        "examen": "Le genou gauche est un peu gonflé. Il n'y a pas de blocage.",
+        "conclusion_du_medecin": "Entorse du genou gauche possible, à revoir.",
+        "suite": "Revoir le patient dans 10 jours.",
+        "elements_absents": [
+          "Examen clinique détaillé du genou (stabilité ligamentaire, douleur à la palpation, mobilité) non précisé",
+          "Aucun examen d'imagerie mentionné",
+          "Aucun traitement ou soin prescrit mentionné",
+          "Antécédents du patient non mentionnés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la torsion du genou gauche il y a 3 jours, le genou un peu gonflé sans blocage, l'entorse du genou gauche présentée comme possible et à revoir, et la reconsultation dans 10 jours. Le doute du médecin est conservé, aucun côté, durée ou chiffre n'est modifié, et rien n'est ajouté ni omis.",
+      "cout_redaction": 0.005886,
+      "cout_juge": 0.0002557,
+      "tokens_sortie": 337,
+      "latence_s": 6.55
+    },
+    {
+      "bras": "B",
+      "note": "N13",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Patient de 63 ans vu en consultation de médecine générale pour des vertiges évoluant depuis une semaine, survenant surtout au lever.",
+        "examen": "La tension artérielle est de 13/8 en position couchée et de 11/7 en position debout. Le patient n'a pas fait de chute.",
+        "conclusion_du_medecin": "Vertiges positionnels, à préciser.",
+        "suite": "Le patient sera revu dans 15 jours.",
+        "elements_absents": [
+          "Antécédents du patient",
+          "Traitements en cours",
+          "Unité de mesure des chiffres tensionnels (notés 13/8 et 11/7)",
+          "Fréquence cardiaque",
+          "Examen neurologique ou ORL, recherche de nystagmus ou manœuvres positionnelles",
+          "Caractéristiques des vertiges (durée des épisodes, sensation de rotation, signes associés)",
+          "Examens complémentaires",
+          "Traitement ou conseils prescrits"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 8
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : vertiges depuis une semaine surtout au lever, TA 13/8 couché et 11/7 debout, absence de chute, conclusion « vertiges positionnels, à préciser » (doute conservé), revue dans 15 jours. Aucune constatation omise, aucun chiffre modifié, aucune conclusion ajoutée.",
+      "cout_redaction": 0.010594,
+      "cout_juge": 0.0002586,
+      "tokens_sortie": 808,
+      "latence_s": 9.43
+    },
+    {
+      "bras": "B",
+      "note": "N14",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Grain de beauté du dos, présent depuis l'enfance ; le patient trouve qu'il a changé.",
+        "examen": "Lésion de 6 mm, aux bords réguliers.",
+        "conclusion_du_medecin": "Lésion à surveiller. L'avis du partenaire de Paris a été demandé.",
+        "suite": "Envoi des photos au partenaire de Paris.",
+        "elements_absents": [
+          "Couleur de la lésion non précisée",
+          "Nature précise du changement perçu par le patient non précisée (taille, couleur, forme, symptômes)",
+          "Localisation exacte sur le dos non précisée",
+          "Antécédents personnels et familiaux non précisés",
+          "Délai ou modalités de la surveillance non précisés",
+          "Examen dermoscopique non mentionné",
+          "Aucun diagnostic formulé dans les notes"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Chaque phrase du compte rendu reprend fidèlement les notes : le motif, la lésion de 6 mm aux bords réguliers, la conclusion « à surveiller » et la demande d'avis au partenaire de Paris, ainsi que l'envoi des photos. Les reformulations (phrases complètes, « aux bords ») ne modifient pas le sens, et « de Paris » figure déjà dans les notes. Aucune constatation n'est omise, ajoutée ni transformée.",
+      "cout_redaction": 0.006546,
+      "cout_juge": 0.0003308,
+      "tokens_sortie": 397,
+      "latence_s": 6.76
+    },
+    {
+      "bras": "B",
+      "note": "N15",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Contrôle de la glycémie à la demande du patient, inquiet en raison d'un père diabétique.",
+        "examen": "Le patient, âgé de 50 ans, ne présente aucun symptôme. La glycémie capillaire à jeun est de 0,95 g/l.",
+        "conclusion_du_medecin": "Glycémie normale ce jour.",
+        "suite": "Aucune suite prévue.",
+        "elements_absents": [
+          "Examen clinique (poids, tension artérielle, etc.) non mentionné",
+          "Antécédents personnels du patient non précisés",
+          "Autres examens biologiques (HbA1c, glycémie veineuse) non mentionnés",
+          "Conseils donnés au patient non mentionnés"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 4
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif, absence de symptôme, glycémie capillaire à jeun de 0,95 g/l, conclusion de glycémie normale ce jour et absence de suite. La formulation « Aucune suite prévue » équivaut à « Suite : aucune ». Aucun doute, chiffre, côté, examen ou conclusion n'a été modifié, ajouté ou omis.",
+      "cout_redaction": 0.006086,
+      "cout_juge": 0.0002833,
+      "tokens_sortie": 354,
+      "latence_s": 15.76
+    },
+    {
+      "bras": "B",
+      "note": "N16",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Douleur de l'épaule droite depuis 1 mois, avec une gêne pour lever le bras.",
+        "examen": "L'examen a été limité par la douleur.",
+        "conclusion_du_medecin": null,
+        "suite": "Le patient doit revenir avec ses anciens examens.",
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Détail des constatations de l'examen clinique (mobilité, force, tests spécifiques) : examen limité par la douleur",
+          "Antécédents du patient",
+          "Nature des anciens examens à apporter",
+          "Examens complémentaires prescrits",
+          "Traitement prescrit",
+          "Date ou délai du prochain rendez-vous"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : épaule droite (D), durée de 1 mois, gêne pour lever le bras, examen limité par la douleur, et retour avec les anciens examens. La mention « Conclusion : aucune » correspond à l'absence de conclusion dans les notes et n'invente rien. Aucune constatation n'est omise et aucun élément n'est ajouté.",
+      "cout_redaction": 0.005962,
+      "cout_juge": 0.00026839999999999996,
+      "tokens_sortie": 347,
+      "latence_s": 9.05
+    },
+    {
+      "bras": "B",
+      "note": "N17",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Baisse progressive de la vision de loin depuis 1 an.",
+        "examen": "Le patient, âgé de 36 ans, lit bien de près. Il signale une baisse progressive de la vision de loin évoluant depuis 1 an.",
+        "conclusion_du_medecin": "Myopie probable, à confirmer par une mesure de la vue.",
+        "suite": "Rendez-vous chez l'opticien.",
+        "elements_absents": [
+          "Acuité visuelle mesurée (chiffres) pour chaque œil, droit et gauche",
+          "Résultat de la mesure de la vue (réfraction)",
+          "Examen du fond d'œil et du segment antérieur",
+          "Antécédents ophtalmologiques et médicaux du patient",
+          "Port actuel de lunettes ou de lentilles",
+          "Traitement prescrit"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la baisse progressive de la vision de loin depuis 1 an, la lecture de près conservée, l'âge de 36 ans, la conclusion « myopie probable, à confirmer par une mesure de la vue » (le doute est maintenu) et la suite « rendez-vous chez l'opticien ». Les reformulations ne changent ni le sens ni les chiffres, et aucun examen, diagnostic ou soin n'est ajouté.",
+      "cout_redaction": 0.006408,
+      "cout_juge": 0.00028869999999999997,
+      "tokens_sortie": 388,
+      "latence_s": 7.01
+    },
+    {
+      "bras": "B",
+      "note": "N18",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "La patiente, âgée de 42 ans, est vue en consultation pour des maux de tête évoluant depuis 3 jours.",
+        "examen": "La patiente ne présente pas de fièvre. Il n'y a pas de raideur de la nuque. L'examen neurologique est normal.",
+        "conclusion_du_medecin": "Céphalées de tension probables.",
+        "suite": "À revoir en cas d'aggravation.",
+        "elements_absents": [
+          "Caractéristiques des céphalées (localisation, type, intensité, horaire)",
+          "Antécédents de la patiente",
+          "Constantes (tension artérielle, température mesurée)",
+          "Traitement prescrit ou conseils donnés",
+          "Délai ou modalités précis de la réévaluation"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 5
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : durée de trois jours, absence de fièvre et de raideur de la nuque, examen neurologique normal, conclusion « céphalées de tension probables » avec le doute conservé, et condition de revue « en cas d'aggravation ». Aucune constatation n'est omise, ajoutée ou modifiée.",
+      "cout_redaction": 0.006126,
+      "cout_juge": 0.0002219,
+      "tokens_sortie": 362,
+      "latence_s": 14.68
+    },
+    {
+      "bras": "B",
+      "note": "N19",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Bourdonnements de l'oreille gauche évoluant depuis 2 semaines.",
+        "examen": "Le patient ne signale pas de douleur. L'otoscopie est normale. Le patient demande un avis spécialisé, point à discuter.",
+        "conclusion_du_medecin": null,
+        "suite": null,
+        "elements_absents": [
+          "Conclusion ou diagnostic du médecin",
+          "Suite prévue : la demande d'avis spécialisé du patient est notée « à discuter », sans décision",
+          "Côté de l'otoscopie (oreille droite et/ou gauche) non précisé",
+          "Examen audiométrique ou autre examen complémentaire",
+          "Traitement éventuel",
+          "Antécédents et facteurs associés (surdité, vertiges, exposition au bruit, traitements en cours)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 6
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : bourdonnements de l'oreille gauche depuis 2 semaines, absence de douleur, otoscopie normale, demande d'avis spécialisé à discuter. Il ne contient ni conclusion ni suite, comme les notes. Les reformulations (« évoluant », « ne signale pas ») ne modifient pas le sens.",
+      "cout_redaction": 0.006336,
+      "cout_juge": 0.0002493,
+      "tokens_sortie": 385,
+      "latence_s": 8.17
+    },
+    {
+      "bras": "B",
+      "note": "N20",
+      "repetition": 3,
+      "compte_rendu": {
+        "motif": "Le patient, âgé de 33 ans, consulte pour une douleur qui persiste à la marche. Il a eu une entorse de la cheville gauche il y a 3 semaines, prise en charge dans un autre établissement.",
+        "examen": "L'examen constate un œdème léger. Les notes ne mentionnent pas d'autre constatation.",
+        "conclusion_du_medecin": "Suites d'entorse, avec une évolution lente.",
+        "suite": "Une radiographie est demandée pour éliminer une fracture.",
+        "elements_absents": [
+          "Prise en charge et traitement reçus lors de la première consultation ailleurs (non précisés)",
+          "Siège exact de la douleur (non précisé)",
+          "Intensité de la douleur (non précisée)",
+          "Examen clinique détaillé (palpation, stabilité ligamentaire, mobilité, appui) non précisé",
+          "Traitement actuel ou antalgiques (non précisés)",
+          "Région de la radiographie demandée et délai (non précisés)",
+          "Date de la prochaine consultation ou modalités de suivi (non précisées)"
+        ]
+      },
+      "controles": {
+        "rendu": true,
+        "conclusion_inventee": false,
+        "conclusion_omise": false,
+        "reserve_perdue": false,
+        "ajouts": [],
+        "elements_absents": 7
+      },
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Chaque élément du compte rendu correspond aux notes : entorse de la cheville gauche il y a 3 semaines, douleur persistante à la marche, œdème léger, conclusion « suites d'entorse, évolution lente » et radiographie demandée pour éliminer une fracture. Aucun doute, côté, durée ou examen n'est modifié ou ajouté. La phrase « Les notes ne mentionnent pas d'autre constatation » est une remarque non clinique, mais elle est exacte et ne change aucune constatation, donc elle n'est pas un défaut au sens de la consigne. Elle devrait toutefois être retirée avant validation.",
+      "cout_redaction": 0.007354,
+      "cout_juge": 0.0005847000000000001,
+      "tokens_sortie": 479,
+      "latence_s": 10.67
+    }
+  ]
+}

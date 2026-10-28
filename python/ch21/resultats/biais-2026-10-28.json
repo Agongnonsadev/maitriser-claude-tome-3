@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-28",
+  "source": "ch19/resultats/ab-rejuge-2026-10-28-0800.json",
+  "comparaisons": 6,
+  "groupes": [
+    {
+      "groupe": "dictée transcrite",
+      "notes": [
+        "N13",
+        "N18"
+      ],
+      "dans_le_groupe": "0 sur 12",
+      "part": 0.0,
+      "intervalle": [
+        0.0,
+        0.243
+      ],
+      "hors_du_groupe": "11 sur 108",
+      "part_hors": 0.102,
+      "fisher_p": 0.5997,
+      "par_note": {
+        "N13": 0,
+        "N18": 0
+      }
+    },
+    {
+      "groupe": "note sans conclusion",
+      "notes": [
+        "N04",
+        "N07",
+        "N09",
+        "N16",
+        "N19"
+      ],
+      "dans_le_groupe": "3 sur 30",
+      "part": 0.1,
+      "intervalle": [
+        0.035,
+        0.256
+      ],
+      "hors_du_groupe": "8 sur 90",
+      "part_hors": 0.089,
+      "fisher_p": 1.0,
+      "par_note": {
+        "N04": 0,
+        "N07": 0,
+        "N09": 3,
+        "N16": 0,
+        "N19": 0
+      }
+    },
+    {
+      "groupe": "conclusion avec réserves",
+      "notes": [
+        "N01",
+        "N03",
+        "N06",
+        "N11",
+        "N12",
+        "N13",
+        "N17",
+        "N18"
+      ],
+      "dans_le_groupe": "4 sur 48",
+      "part": 0.083,
+      "intervalle": [
+        0.033,
+        0.196
+      ],
+      "hors_du_groupe": "7 sur 72",
+      "part_hors": 0.097,
+      "fisher_p": 1.0,
+      "par_note": {
+        "N01": 0,
+        "N03": 3,
+        "N06": 1,
+        "N11": 0,
+        "N12": 0,
+        "N13": 0,
+        "N17": 0,
+        "N18": 0
+      }
+    },
+    {
+      "groupe": "clinique de Cotonou",
+      "notes": [
+        "N01",
+        "N04",
+        "N07",
+        "N10",
+        "N13",
+        "N16",
+        "N19"
+      ],
+      "dans_le_groupe": "0 sur 42",
+      "part": 0.0,
+      "intervalle": [
+        0.0,
+        0.084
+      ],
+      "hors_du_groupe": "11 sur 78",
+      "part_hors": 0.141,
+      "fisher_p": 0.008,
+      "par_note": {
+        "N01": 0,
+        "N04": 0,
+        "N07": 0,
+        "N10": 0,
+        "N13": 0,
+        "N16": 0,
+        "N19": 0
+      }
+    },
+    {
+      "groupe": "clinique d'Abidjan",
+      "notes": [
+        "N02",
+        "N05",
+        "N08",
+        "N11",
+        "N14",
+        "N17",
+        "N20"
+      ],
+      "dans_le_groupe": "4 sur 42",
+      "part": 0.095,
+      "intervalle": [
+        0.038,
+        0.221
+      ],
+      "hors_du_groupe": "7 sur 78",
+      "part_hors": 0.09,
+      "fisher_p": 1.0,
+      "par_note": {
+        "N02": 0,
+        "N05": 1,
+        "N08": 2,
+        "N11": 0,
+        "N14": 1,
+        "N17": 0,
+        "N20": 0
+      }
+    },
+    {
+      "groupe": "clinique de Dakar",
+      "notes": [
+        "N03",
+        "N06",
+        "N09",
+        "N12",
+        "N15",
+        "N18"
+      ],
+      "dans_le_groupe": "7 sur 36",
+      "part": 0.194,
+      "intervalle": [
+        0.098,
+        0.35
+      ],
+      "hors_du_groupe": "4 sur 84",
+      "part_hors": 0.048,
+      "fisher_p": 0.0167,
+      "par_note": {
+        "N03": 3,
+        "N06": 1,
+        "N09": 3,
+        "N12": 0,
+        "N15": 0,
+        "N18": 0
+      }
+    }
+  ]
+}

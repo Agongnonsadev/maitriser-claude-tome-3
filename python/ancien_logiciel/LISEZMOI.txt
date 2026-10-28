@@ -1,0 +1,33 @@
+(Logiciel fictif, ecrit pour le livre « Deployer l'IA en entreprise avec Claude ». Kanvo Assurances
+et ses assures n'existent pas. Ce code imite un ancien logiciel : il n'est pas un modele a suivre.)
+
+LOGICIEL DES CONTRATS - KANVO ASSURANCES
+=======================================
+
+Version 3.4 (juin 2016). Premiere version : 2011. Maintenance : DSI, equipe applications.
+
+Lancer le menu        : python lancer.py
+Creer une base vide   : python lancer.py creer-base
+Prime d'un contrat    : python lancer.py prime KA-AUTO-0193
+Rapport portefeuille  : python lancer.py rapport
+
+Base de donnees : donnees/contrats.db (SQLite), voir base/schema.sql.
+Tarifs : dossier tarifs/, fichiers fournis par l'actuariat. NE PAS MODIFIER sans la note signee
+de l'actuariat.
+
+Organisation :
+  base/        acces a la base (connexion, requetes)
+  contrats/    creation, avenants, resiliation, numeros
+  primes/      calcul des primes, tarifs, remboursement au prorata
+  quittances/  echeancier et impression des quittances
+  sinistres/   declaration des sinistres, franchises
+  rapports/    portefeuille, exports CSV pour la direction
+  util/        dates, montants, fonctions diverses
+
+Historique :
+  2011  version 1 (KS)
+  2013  ajout de la sante, fractionnement mensuel (AB)
+  2016  exports CSV pour la direction (AB)
+  2019  arrondi des quittances corrige apres l'incident des primes a 0,5 FCFA (voir util/montants.py)
+
+Pas de tests automatiques. Verifier a la main avec la base de recette avant chaque mise en production.

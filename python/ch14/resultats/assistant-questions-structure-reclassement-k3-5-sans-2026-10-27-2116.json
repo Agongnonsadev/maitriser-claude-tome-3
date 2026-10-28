@@ -1,0 +1,2248 @@
+{
+ "date": "2026-10-27",
+ "modele": "claude-haiku-5-5",
+ "depense_dollars": 0.082161,
+ "resume": {
+  "octobre / structure / reclassement / 3 / False": {
+   "justes": "37/40",
+   "issues": {
+    "juste": 37,
+    "manquee": 2,
+    "source_absente": 1
+   },
+   "par_genre": {
+    "clause": "12/12",
+    "vocabulaire": "6/8",
+    "tableau": "6/6",
+    "procedure": "5/6",
+    "produit": "4/4",
+    "absent": "4/4"
+   },
+   "tokens_entree_moyens": 1620,
+   "duree_mediane_s": 4.63,
+   "dollars_par_question": 0.000996
+  },
+  "octobre / structure / reclassement / 5 / False": {
+   "justes": "38/40",
+   "issues": {
+    "juste": 38,
+    "manquee": 2
+   },
+   "par_genre": {
+    "clause": "12/12",
+    "vocabulaire": "6/8",
+    "tableau": "6/6",
+    "procedure": "6/6",
+    "produit": "4/4",
+    "absent": "4/4"
+   },
+   "tokens_entree_moyens": 2064,
+   "duree_mediane_s": 4.62,
+   "dollars_par_question": 0.001058
+  }
+ },
+ "essais": [
+  {
+   "question": "q01",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré doit déclarer le sinistre à Kanvô Assurances dans un délai de deux jours ouvrés à compter du jour où il en a eu connaissance (au lieu de cinq jours ouvrés pour les autres sinistres). Le dépôt de plainte doit être fait dans les quarante-huit heures auprès de la police ou de la gendarmerie. Ces règles s'appliquent aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026, période régie par CG-AUTO-2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-19"
+   ],
+   "duree_recherche_s": 3.852,
+   "duree_reponse_s": 1.655,
+   "tokens_entree": 1694,
+   "dollars": 0.0010087
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-7"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré doit déposer plainte auprès de la police ou de la gendarmerie dans les quarante-huit heures (CG-AUTO-2026, article 19, pour les sinistres survenus du 1er janvier 2026 au 31 décembre 2026). Il doit ensuite transmettre à Kanvô Assurances une copie du récépissé, avec toutes les clés du véhicule et la carte grise. Par ailleurs, la déclaration du vol à Kanvô Assurances doit être faite dans les deux jours ouvrés (article 17).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 3.404,
+   "duree_reponse_s": 1.907,
+   "tokens_entree": 1704,
+   "dollars": 0.0010248
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 21 de CG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), la vétusté des pièces remplacées est déduite du coût de la réparation, plafonnée à 50 %. La date du sinistre n'étant pas précisée, ce document ne s'applique que si le sinistre est survenu dans cette période.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 2.778,
+   "duree_reponse_s": 1.549,
+   "tokens_entree": 1853,
+   "dollars": 0.0010151
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-28"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 28 de CG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), toute action dérivant du contrat se prescrit par deux ans à compter de l'événement qui y donne naissance. La date exacte du sinistre n'étant pas précisée dans la question, je ne peux pas vérifier que cette édition s'applique ; le délai court à partir de l'événement, et non de la déclaration.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-28"
+   ],
+   "duree_recherche_s": 2.915,
+   "duree_reponse_s": 1.408,
+   "tokens_entree": 1132,
+   "dollars": 0.000928
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-3",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-1"
+   ],
+   "trouve": true,
+   "reponse": "Non : selon l'article 3 des CG-AUTO-2026 (sinistres du 1er janvier au 31 décembre 2026), les garanties s'exercent au Bénin et dans les pays limitrophes (Togo, Nigeria, Niger et Burkina Faso), le Ghana n'étant pas dans cette liste. Hors de ces pays, seule la responsabilité civile reste acquise, dans les limites fixées par la réglementation du pays où survient le sinistre.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-3"
+   ],
+   "duree_recherche_s": 3.315,
+   "duree_reponse_s": 1.57,
+   "tokens_entree": 1641,
+   "dollars": 0.0009682
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "PROC-SIN:proc-2"
+   ],
+   "trouve": true,
+   "reponse": "Les frais du troisième expert, désigné par les deux premiers experts en cas de désaccord persistant, sont partagés par moitié entre l'assuré et Kanvô Assurances (CG-AUTO-2026, article 20, applicable aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026). La procédure PROC-SIN (procédure 3) confirme ce partage par moitié et précise de suspendre le règlement jusqu'au rapport définitif, sauf pour la part non contestée. Les passages ne précisent pas de montant.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3"
+   ],
+   "duree_recherche_s": 4.146,
+   "duree_reponse_s": 1.723,
+   "tokens_entree": 1714,
+   "dollars": 0.0010440999999999998
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8",
+    "PROC-SIN:proc-7"
+   ],
+   "trouve": true,
+   "reponse": "Non : selon l'article 14 de CG-AUTO-2026, le vol commis alors que les clés étaient sur le véhicule ou à l'intérieur n'est pas garanti. Cette exclusion s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; la date exacte du sinistre n'est pas précisée dans la demande, mais elle doit être vérifiée pour appliquer le bon document.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-14"
+   ],
+   "duree_recherche_s": 2.664,
+   "duree_reponse_s": 2.058,
+   "tokens_entree": 1714,
+   "dollars": 0.0009792
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-19"
+   ],
+   "trouve": true,
+   "reponse": "Si le véhicule volé est retrouvé dans les trente jours suivant la déclaration, comme ici vingt jours après, l'assuré en reprend possession et Kanvô Assurances prend en charge les dommages subis pendant le vol (CG-AUTO-2026, article 24, applicable aux sinistres du 1er janvier au 31 décembre 2026). La procédure PROC-SIN impose d'attendre trente jours à compter de la déclaration avant d'indemniser, donc l'indemnisation ne doit pas être versée avant ce délai.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7"
+   ],
+   "duree_recherche_s": 2.472,
+   "duree_reponse_s": 1.862,
+   "tokens_entree": 1680,
+   "dollars": 0.001032
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-23",
+    "PROC-SIN:proc-4",
+    "CG-AUTO-2026:art-20"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 23 de CG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), l'indemnité est versée dans les quinze jours qui suivent l'accord de l'assuré sur son montant, ou la décision de justice, par virement bancaire ou Mobile Money au choix de l'assuré. La date du sinistre n'étant pas précisée, cette règle s'applique si le sinistre relève de cette période ; la procédure PROC-SIN 4 (règlement rapide, paiement sous 48 heures) ne concerne que les dossiers sans blessé de 150 000 francs CFA maximum et ne modifie pas ce délai contractuel.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-23",
+    "PROC-SIN:proc-4"
+   ],
+   "duree_recherche_s": 3.183,
+   "duree_reponse_s": 1.947,
+   "tokens_entree": 1694,
+   "dollars": 0.0010607
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-26"
+   ],
+   "trouve": true,
+   "reponse": "Si la prime reste impayée, les garanties sont suspendues trente jours après la mise en demeure, que Kanvô Assurances adresse lorsque la prime n'a pas été payée dans les dix jours suivant l'échéance. Ces règles figurent dans le CG-AUTO-2026 (article 26), applicable aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-26"
+   ],
+   "duree_recherche_s": 2.411,
+   "duree_reponse_s": 1.588,
+   "tokens_entree": 1195,
+   "dollars": 0.0009053
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-5"
+   ],
+   "trouve": true,
+   "reponse": "Oui : lorsque le tiers responsable est identifié et que le recours aboutit, Kanvô Assurances rembourse la franchise à l'assuré (CG-AUTO-2026, article 22, pour les sinistres survenus du 1er janvier au 31 décembre 2026). La procédure PROC-SIN prévoit la même chose à son étape 4 : rembourser la franchise à l'assuré quand le recours aboutit. La responsabilité civile ne comporte pas de franchise.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-5"
+   ],
+   "duree_recherche_s": 2.859,
+   "duree_reponse_s": 1.76,
+   "tokens_entree": 1681,
+   "dollars": 0.0009987000000000002
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:dommages-tous-accidents"
+   ],
+   "trouve": true,
+   "reponse": "En formule Tous risques, le remorquage du véhicule immobilisé par une panne ou un accident est pris en charge jusqu'au garage le plus proche, dans la limite de 50 kilomètres. Ces garanties s'appliquent aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (CG-AUTO-2026 et TG-AUTO-2026).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance"
+   ],
+   "duree_recherche_s": 2.734,
+   "duree_reponse_s": 1.535,
+   "tokens_entree": 1577,
+   "dollars": 0.0009621
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-15"
+   ],
+   "trouve": true,
+   "reponse": "Un impact de pierre sur la vitre avant est couvert par la garantie Bris de glace (CG-AUTO-2026, article 10), qui prévoit le remplacement ou la réparation du pare-brise brisé ou fêlé par un événement extérieur, la réparation étant préférée lorsque l'impact le permet. La garantie n'est pas couverte en formule Tiers, vol et incendie ni en formule Deux-roues vol, et elle est comprise en formule Tous risques ou optionnelle en Tiers étendu, avec une franchise de 15 000 (TG-AUTO-2026, tableau des garanties, période du 1er janvier au 31 décembre 2026). Les rayures et écaillures sont exclues (CG-AUTO-2026, article 15), donc à vérifier selon l'étendue réelle de l'impact ; le montant de franchise est indiqué sans unité dans le tableau.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-15"
+   ],
+   "duree_recherche_s": 2.728,
+   "duree_reponse_s": 2.769,
+   "tokens_entree": 1630,
+   "dollars": 0.0010738
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19"
+   ],
+   "trouve": true,
+   "reponse": "Oui, sous réserve de la date du sinistre : le vol par effraction du véhicule est garanti par l'article 8 de CG-AUTO-2026, qui couvre la disparition du véhicule et les dommages causés lors du vol, pour les sinistres survenus du 1er janvier 2026 au 31 décembre 2026. Il faut toutefois vérifier que les clés n'étaient pas à bord ou dans le véhicule, que le voleur n'est pas un membre de la famille ou une personne vivant sous le toit de l'assuré, et que la plainte est déposée dans les quarante-huit heures avec copie du récépissé, les clés et la carte grise transmis à Kanvô Assurances (articles 14 et 19).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19"
+   ],
+   "duree_recherche_s": 2.531,
+   "duree_reponse_s": 2.202,
+   "tokens_entree": 1714,
+   "dollars": 0.0010429
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-4"
+   ],
+   "trouve": true,
+   "reponse": "Non, pour les dommages subis par le véhicule assuré : l'article 13 exclut de la garantie les sinistres survenus alors que le conducteur présentait un taux d'alcoolémie supérieur au taux légal, ces dommages ne sont jamais garantis. En revanche, la responsabilité civile (dommages corporels et matériels causés aux tiers) reste due, car l'exclusion de l'article 13 ne s'applique qu'aux garanties de dommages et que l'article 4 n'en prévoit aucune pour ce cas ; cette garantie est obligatoire, sans franchise. Le sinistre étant de 2026, ce sont les CG-AUTO-2026 qui s'appliquent.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-4"
+   ],
+   "duree_recherche_s": 2.432,
+   "duree_reponse_s": 2.056,
+   "tokens_entree": 1736,
+   "dollars": 0.0010916
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-6"
+   ],
+   "trouve": true,
+   "reponse": "La sortie de route dans un fossé sans autre véhicule en cause relève de la garantie Dommages tous accidents (CG-AUTO-2026, article 7), qui couvre les dommages du véhicule quelle que soit la cause, y compris sans tiers identifié et même si l'assuré est responsable. Cette garantie n'est comprise que dans la formule Tous risques, avec une franchise de 100 000 (TG-AUTO-2026) ; elle n'est pas couverte dans les formules Tiers étendu, Tiers vol et incendie, ni Deux-roues vol. Ces passages s'appliquent aux sinistres survenus du 1er janvier au 31 décembre 2026 ; la date exacte du sinistre n'étant pas précisée, il faut la vérifier pour confirmer la période applicable.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-6"
+   ],
+   "duree_recherche_s": 2.328,
+   "duree_reponse_s": 2.248,
+   "tokens_entree": 1670,
+   "dollars": 0.0010829
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-6"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 17 de CG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), l'assuré doit déclarer le sinistre dans un délai de cinq jours ouvrés à compter du jour où il en a eu connaissance, ce délai étant réduit à deux jours ouvrés en cas de vol. Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances. La date exacte du sinistre n'est pas indiquée dans la question : si elle est antérieure au 1er janvier 2026, les passages fournis ne permettent pas de confirmer le délai applicable.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 2.585,
+   "duree_reponse_s": 2.052,
+   "tokens_entree": 1771,
+   "dollars": 0.0010378
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-21"
+   ],
+   "trouve": true,
+   "reponse": "L'assuré peut faire réaliser une contre-expertise à ses frais si les conclusions de l'expert ne lui conviennent pas (CG-AUTO-2026, article 20, applicable aux sinistres du 1er janvier au 31 décembre 2026) ; en cas de désaccord persistant, les deux experts désignent un troisième expert dont les frais sont partagés par moitié entre l'assuré et Kanvô Assurances. Procédure : demander ses motifs par écrit, l'informer de cette possibilité, et suspendre le règlement jusqu'au rapport définitif, sauf pour la part non contestée qui peut être réglée immédiatement (PROC-SIN, procédure 3).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3"
+   ],
+   "duree_recherche_s": 2.62,
+   "duree_reponse_s": 2.101,
+   "tokens_entree": 1740,
+   "dollars": 0.0010795
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-6"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne permettent pas de répondre : ils définissent le conducteur autorisé comme une personne titulaire d'un permis valable pour la catégorie du véhicule, conduisant avec l'accord du souscripteur (art. 2), mais ne précisent pas si un conducteur de dix-sept ans peut être couvert, ni les conditions d'âge ou de permis applicables. Les garanties dommages (art. 6 et 7) ne prévoient pas non plus de cas particulier pour un mineur, et la date du sinistre n'est pas connue, de sorte que seule l'édition CG-AUTO-2026 (sinistres 2026) est disponible ; il faut vérifier les conditions particulières du contrat et le permis du jeune conducteur avant de statuer.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-7"
+   ],
+   "duree_recherche_s": 3.325,
+   "duree_reponse_s": 2.3,
+   "tokens_entree": 1871,
+   "dollars": 0.0011086000000000002
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-9",
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis indiquent que l'incendie est garanti pour le véhicule assuré (CG-AUTO-2026, article 9), mais ils ne précisent pas la formule souscrite par l'assuré, dont dépend le montant de la franchise incendie (de 0 à 100 000 selon la formule dans le tableau des garanties). Il faut donc connaître la formule du contrat et la date du sinistre (période couverte : 1er janvier au 31 décembre 2026) pour répondre précisément, et vérifier si des conditions particulières modifient la franchise.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-9",
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-22"
+   ],
+   "duree_recherche_s": 2.37,
+   "duree_reponse_s": 2.142,
+   "tokens_entree": 1607,
+   "dollars": 0.0009849
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "En formule Tiers étendu, la garantie Vol est comprise avec une franchise de 75 000 (montant tel qu'indiqué au tableau des garanties TG-AUTO-2026, applicable aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026). La franchise s'applique par sinistre et par garantie mise en jeu, conformément à l'article 22 des CG-AUTO-2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-22"
+   ],
+   "duree_recherche_s": 2.274,
+   "duree_reponse_s": 2.097,
+   "tokens_entree": 1667,
+   "dollars": 0.0009633
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15"
+   ],
+   "trouve": true,
+   "reponse": "Non : selon le tableau des garanties TG-AUTO-2026 (sinistres du 1er janvier 2026 au 31 décembre 2026), la garantie Bris de glace n'est pas couverte par la formule Tiers, vol et incendie. Les passages ne précisent pas d'autres conditions pour cette formule.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace"
+   ],
+   "duree_recherche_s": 2.558,
+   "duree_reponse_s": 1.495,
+   "tokens_entree": 1623,
+   "dollars": 0.0009389
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1"
+   ],
+   "trouve": true,
+   "reponse": "Selon le tableau des garanties TG-AUTO-2026 (sinistres du 1er janvier 2026 au 31 décembre 2026), la garantie du conducteur est comprise dans la formule Tous risques avec un plafond de 5 000 000 (€). Elle indemnise les dommages corporels du conducteur autorisé, même responsable, dans la limite de ce plafond (CG-AUTO-2026, article 12). Les conditions particulières l'emportent en cas de contradiction (CG-AUTO-2026, article 1).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 3.53,
+   "duree_reponse_s": 1.638,
+   "tokens_entree": 1659,
+   "dollars": 0.0010256
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "En formule Tous risques, la garantie Dommages tous accidents est comprise avec une franchise de 100 000 (tableau des garanties TG-AUTO-2026, pour les sinistres survenus du 1er janvier au 31 décembre 2026). Une franchise s'applique par sinistre et par garantie mise en jeu, au montant fixé au tableau des garanties ou aux conditions particulières (article 22 de CG-AUTO-2026). Le montant de 100 000 est donné sans unité dans le tableau : il convient de vérifier la devise et l'unité auprès des conditions particulières du contrat.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-22"
+   ],
+   "duree_recherche_s": 3.1,
+   "duree_reponse_s": 3.842,
+   "tokens_entree": 1638,
+   "dollars": 0.0010075000000000001
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "Oui, la formule Deux-roues vol comprend la garantie Incendie, avec une franchise de 30 000 (TG-AUTO-2026, tableau des garanties). Cela s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026, et la franchise s'applique par sinistre et par garantie mise en jeu (CG-AUTO-2026, article 22).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-22"
+   ],
+   "duree_recherche_s": 2.348,
+   "duree_reponse_s": 1.544,
+   "tokens_entree": 1618,
+   "dollars": 0.0009636000000000001
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5",
+    "PROC-SIN:proc-5"
+   ],
+   "trouve": true,
+   "reponse": "Pour la formule Tiers étendu de TG-AUTO-2026 (sinistres du 1er janvier 2026 au 31 décembre 2026), la garantie Défense et recours est comprise avec un plafond de 1 000 000 (euros). Ce plafond s'applique aux frais de procédure, conformément à l'article 5 des CG-AUTO-2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5"
+   ],
+   "duree_recherche_s": 2.756,
+   "duree_reponse_s": 2.238,
+   "tokens_entree": 1656,
+   "dollars": 0.0009613000000000002
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "Le règlement rapide s'applique jusqu'à 150 000 francs CFA de montant évalué, pour un dossier sans blessé, avec un contrat actif et une identité vérifiée ; au-delà, ou en cas de doute, le dossier est transmis au responsable d'équipe. Le paiement part sous 48 heures par virement ou Mobile Money, après calcul de l'indemnité (montant évalué moins la franchise).",
+   "consultations": [],
+   "issue": "source_absente",
+   "faits_manquants": [],
+   "sources_citees": [
+    "proc-4"
+   ],
+   "duree_recherche_s": 2.209,
+   "duree_reponse_s": 1.62,
+   "tokens_entree": 1704,
+   "dollars": 0.0009808
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-8",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-10"
+   ],
+   "trouve": true,
+   "reponse": "Non : selon la procédure 8 de PROC-SIN, un bris de glace dont le devis ne dépasse pas 300 000 francs CFA ne nécessite aucune expertise, et l'assuré est orienté vers un réparateur agréé qui facture directement Kanvô Assurances, franchise déduite. Un devis de 250 000 francs CFA est donc en dessous du seuil, sans expert à mandater ; la procédure 2 ne s'applique qu'au-delà de 300 000 francs CFA. La date du sinistre n'étant pas précisée, je ne peux pas vérifier l'édition des conditions générales applicable, mais le passage CG-AUTO-2026 (sinistres du 1er janvier au 31 décembre 2026) ne contredit pas cette règle, il confirme la garantie du pare-brise et des vitres.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-8",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 2.461,
+   "duree_reponse_s": 3.218,
+   "tokens_entree": 1637,
+   "dollars": 0.0010529
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-19"
+   ],
+   "trouve": true,
+   "reponse": "Il faut attendre trente jours à compter de la déclaration du vol avant d'indemniser, le temps que le véhicule puisse être retrouvé ; passé ce délai, le véhicule est évalué à sa valeur à dire d'expert et l'indemnité proposée. Si le véhicule est retrouvé dans ces trente jours, l'assuré le reprend et Kanvô Assurances prend en charge les dommages subis pendant le vol (CG-AUTO-2026, article 24, pour les sinistres survenus en 2026). La date du sinistre n'étant pas précisée dans la question, ce délai s'applique tel qu'indiqué dans les passages disponibles.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24"
+   ],
+   "duree_recherche_s": 2.367,
+   "duree_reponse_s": 1.98,
+   "tokens_entree": 1673,
+   "dollars": 0.0010221000000000002
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "Les signaux d'alerte de fraude sont : une déclaration très tardive, un sinistre survenu dans les trente jours qui suivent la souscription, des pièces incohérentes entre elles, et plusieurs sinistres déclarés sur le même véhicule en moins de six mois. Un signal ne prouve rien : il ne faut jamais accuser l'assuré ni lui faire part de la suspicion, mais transmettre le dossier à la cellule fraude avec la liste des signaux observés, et poursuivre l'instruction normalement en attendant son avis.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-6"
+   ],
+   "duree_recherche_s": 2.664,
+   "duree_reponse_s": 1.505,
+   "tokens_entree": 1227,
+   "dollars": 0.0009483
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-4"
+   ],
+   "trouve": true,
+   "reponse": "Le sinistre étant prioritaire, le dossier doit être ouvert et affecté le jour même, et le médecin conseil de Kanvô Assurances doit être prévenu pour prendre contact avec le blessé ou sa famille (procédure 1, étape 4, qui renvoie à la procédure 9 avant toute autre étape). Le gestionnaire ne doit jamais proposer de règlement rapide ni promettre un montant d'indemnité, et doit informer le responsable d'équipe dans la journée.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1"
+   ],
+   "duree_recherche_s": 3.072,
+   "duree_reponse_s": 2.109,
+   "tokens_entree": 1706,
+   "dollars": 0.0010008999999999999
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-5"
+   ],
+   "trouve": true,
+   "reponse": "Selon la procédure PROC-SIN (procédure 5), l'assureur du tiers doit être relancé au bout de trente jours sans réponse, et le dossier est transmis au service juridique au bout de soixante jours. Les passages fournis ne précisent pas la date du sinistre ni d'édition particulière de cette procédure, la réponse est donc donnée sans distinction de période.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-5"
+   ],
+   "duree_recherche_s": 2.787,
+   "duree_reponse_s": 1.789,
+   "tokens_entree": 1622,
+   "dollars": 0.0009541
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-HAB-2026:vol",
+    "CG-HAB-2026:art-5",
+    "CG-HAB-2026:art-10"
+   ],
+   "trouve": true,
+   "reponse": "En formule Habitation confort, la garantie Vol comprend une franchise de 25 000 (TG-HAB-2026, tableau des garanties, sinistres survenus du 1er janvier 2026 au 31 décembre 2026). Le tableau ne précise pas l'unité monétaire de ce montant, et la date exacte du sinistre n'est pas indiquée dans la question.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-HAB-2026:vol"
+   ],
+   "duree_recherche_s": 2.221,
+   "duree_reponse_s": 1.83,
+   "tokens_entree": 1556,
+   "dollars": 0.0009086999999999999
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-HAB-2026:bris-de-glace",
+    "CG-HAB-2026:art-6",
+    "PROC-SIN:proc-8"
+   ],
+   "trouve": true,
+   "reponse": "Oui, en formule Habitation confort le bris de glace est compris, avec une franchise de 10 000 (TG-HAB-2026, sinistres du 1er janvier au 31 décembre 2026). La garantie couvre le remplacement des vitres des fenêtres, portes-fenêtres et baies vitrées brisées par un événement accidentel, à l'exclusion des miroirs, écrans et vitres d'appareils ménagers (CG-HAB-2026, article 6).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-HAB-2026:bris-de-glace",
+    "CG-HAB-2026:art-6"
+   ],
+   "duree_recherche_s": 3.505,
+   "duree_reponse_s": 1.525,
+   "tokens_entree": 1524,
+   "dollars": 0.0009362999999999999
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-HAB-2026:art-12",
+    "CG-HAB-2026:art-1",
+    "CG-HAB-2026:art-2"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 12 de CG-HAB-2026, les biens mobiliers sont indemnisés à leur valeur de remplacement, déduction faite de la vétusté, plafonnée à 25 %. Ce document régit les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; la date exacte du sinistre n'étant pas indiquée dans la question, cette période est à vérifier avant application.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-HAB-2026:art-12"
+   ],
+   "duree_recherche_s": 2.623,
+   "duree_reponse_s": 1.538,
+   "tokens_entree": 1686,
+   "dollars": 0.0009225
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-5",
+    "TG-HAB-2026:vol"
+   ],
+   "trouve": true,
+   "reponse": "Non : l'article 10 de CG-HAB-2026 exclut expressément le vol commis dans les parties communes, les jardins et les cours. Cette exclusion s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; la date exacte du sinistre n'étant pas précisée, il faut la vérifier pour appliquer l'édition correspondante.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-HAB-2026:art-10"
+   ],
+   "duree_recherche_s": 2.446,
+   "duree_reponse_s": 1.832,
+   "tokens_entree": 1557,
+   "dollars": 0.0009132000000000001
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [],
+   "trouve": false,
+   "reponse": "Je n'ai trouvé aucun passage dans la base concernant le bonus accordé à un assuré sans sinistre depuis cinq ans pour le produit auto. Je ne peux donc pas répondre à partir des documents disponibles ; il faudrait consulter les conditions générales ou le barème tarifaire auto.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [],
+   "duree_recherche_s": 3.035,
+   "duree_reponse_s": 2.297,
+   "tokens_entree": 1002,
+   "dollars": 0.0008867
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-12"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne contiennent pas de disposition sur la prise en charge d'un véhicule de location pendant les réparations : l'article 11 ne couvre que le remorquage (jusqu'à 50 km) et l'article 12 la garantie corporelle du conducteur. Je ne peux donc pas confirmer cette prise en charge ; il faudrait consulter le tableau des garanties et les conditions particulières du contrat concerné.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-12"
+   ],
+   "duree_recherche_s": 2.975,
+   "duree_reponse_s": 2.215,
+   "tokens_entree": 1664,
+   "dollars": 0.00102
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-29",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-17"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis indiquent que toute réclamation est adressée au service des réclamations de Kanvô Assurances, qui accuse réception sous cinq jours ouvrés et répond dans les trente jours (CG-AUTO-2026, article 29), mais ne donnent aucun numéro de téléphone pour ce service. Je ne peux donc pas fournir ce numéro à partir des documents disponibles.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-29"
+   ],
+   "duree_recherche_s": 2.165,
+   "duree_reponse_s": 1.705,
+   "tokens_entree": 1698,
+   "dollars": 0.0009691000000000001
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 3,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-21",
+    "PROC-SIN:proc-7"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne disent pas si les frais de gardiennage du véhicule au garage sont remboursés. L'article 11 de CG-AUTO-2026 ne prévoit que le remorquage jusqu'au garage le plus proche, dans la limite de 50 km, et la procédure PROC-SIN n°7 ne traite que du vol. Je ne peux pas répondre à partir de ces seuls passages : il faudrait consulter les conditions générales complètes ou le tableau des garanties.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "PROC-SIN:proc-7"
+   ],
+   "duree_recherche_s": 3.371,
+   "duree_reponse_s": 2.315,
+   "tokens_entree": 1678,
+   "dollars": 0.0010299000000000003
+  },
+  {
+   "question": "q01",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré doit déclarer le sinistre à Kanvô Assurances dans un délai de deux jours ouvrés à compter du jour où il en a eu connaissance, au lieu de cinq jours ouvrés pour les autres sinistres (sinistres survenus du 1er janvier au 31 décembre 2026). Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances. Le dépôt de plainte doit être fait dans les quarante-huit heures.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-19"
+   ],
+   "duree_recherche_s": 2.395,
+   "duree_reponse_s": 1.851,
+   "tokens_entree": 2198,
+   "dollars": 0.0010956
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré doit déposer plainte auprès de la police ou de la gendarmerie dans les quarante-huit heures (CG-AUTO-2026, article 19, sinistres survenus du 1er janvier 2026 au 31 décembre 2026). Il doit ensuite transmettre à Kanvô Assurances une copie du récépissé, avec toutes les clés du véhicule et la carte grise. Pour la déclaration du sinistre à Kanvô Assurances, le délai est réduit à deux jours ouvrés en cas de vol (article 17).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 2.174,
+   "duree_reponse_s": 1.976,
+   "tokens_entree": 2208,
+   "dollars": 0.0010828
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-20"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 21 de CG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), la vétusté des pièces remplacées est déduite du coût de la réparation, plafonnée à 50 %. Le passage ne précise pas la date du sinistre applicable ici ; la période de cette édition est celle indiquée ci-dessus.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 2.352,
+   "duree_reponse_s": 2.134,
+   "tokens_entree": 2352,
+   "dollars": 0.0010907999999999998
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-28",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-29",
+    "CG-AUTO-2026:art-26",
+    "CG-AUTO-2026:art-17"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 28 des CG-AUTO-2026, toute action dérivant du contrat se prescrit par deux ans à compter de l'événement qui y donne naissance. Ce document régit les sinistres survenus du 1er janvier 2026 au 31 décembre 2026, et la date du sinistre n'étant pas précisée dans la question, il convient de la vérifier pour confirmer l'application de cette édition.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-28"
+   ],
+   "duree_recherche_s": 2.331,
+   "duree_reponse_s": 2.563,
+   "tokens_entree": 2036,
+   "dollars": 0.0010419000000000001
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-3",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-13"
+   ],
+   "trouve": true,
+   "reponse": "Non : selon l'article 3 de CG-AUTO-2026 (sinistres du 1er janvier au 31 décembre 2026), les garanties s'exercent au Bénin et dans les pays limitrophes (Togo, Nigeria, Niger et Burkina Faso), et le Ghana ne figure pas dans cette liste. Hors de ces pays, seule la responsabilité civile reste acquise, dans les limites fixées par la réglementation du pays où survient le sinistre.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-3"
+   ],
+   "duree_recherche_s": 2.228,
+   "duree_reponse_s": 1.629,
+   "tokens_entree": 1737,
+   "dollars": 0.0009841000000000003
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-21",
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "Lorsque l'expert de Kanvô Assurances et celui de l'assuré ne s'accordent pas, les deux experts désignent un troisième expert dont les frais sont partagés par moitié entre l'assuré et Kanvô Assurances (CG-AUTO-2026, article 20, sinistres du 1er janvier au 31 décembre 2026). La procédure PROC-SIN (procédure 3) précise de suspendre le règlement jusqu'au rapport définitif, sauf pour la part non contestée, qui peut être réglée tout de suite. Les passages ne précisent pas de montant pour ces frais.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3"
+   ],
+   "duree_recherche_s": 2.387,
+   "duree_reponse_s": 2.162,
+   "tokens_entree": 2214,
+   "dollars": 0.0011157
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24"
+   ],
+   "trouve": true,
+   "reponse": "Non : l'article 14 de CG-AUTO-2026 exclut de la garantie le vol commis alors que les clés étaient sur le véhicule ou à l'intérieur. Ce passage s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026, période de la date du sinistre à vérifier pour appliquer ce document.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-14"
+   ],
+   "duree_recherche_s": 3.807,
+   "duree_reponse_s": 4.212,
+   "tokens_entree": 2177,
+   "dollars": 0.0010338
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "Si le véhicule volé est retrouvé dans les trente jours suivant la déclaration, comme ici vingt jours après, l'assuré en reprend possession et Kanvô Assurances prend en charge les dommages subis pendant le vol (CG-AUTO-2026, article 24). La procédure PROC-SIN impose d'attendre trente jours à compter de la déclaration avant d'indemniser, ce qui est cohérent avec ce cas (PROC-SIN, procédure 7). Ces règles valent pour les sinistres survenus du 1er janvier au 31 décembre 2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7"
+   ],
+   "duree_recherche_s": 4.576,
+   "duree_reponse_s": 3.005,
+   "tokens_entree": 2212,
+   "dollars": 0.0011173
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-23",
+    "PROC-SIN:proc-4",
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-3"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 23 de CG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), l'indemnité est versée dans les quinze jours qui suivent l'accord de l'assuré sur son montant, ou la décision de justice. Le paiement se fait par virement bancaire ou par Mobile Money, au choix de l'assuré. La date exacte du sinistre n'étant pas indiquée dans la demande, cette réponse suppose un sinistre survenu pendant la période couverte par CG-AUTO-2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-23"
+   ],
+   "duree_recherche_s": 3.207,
+   "duree_reponse_s": 2.26,
+   "tokens_entree": 2165,
+   "dollars": 0.0010833000000000001
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-26",
+    "CG-AUTO-2026:art-1"
+   ],
+   "trouve": true,
+   "reponse": "Si la prime n'est pas payée dans les dix jours suivant son échéance, Kanvô Assurances adresse une mise en demeure, et les garanties sont suspendues trente jours après cette mise en demeure si la prime reste impayée. Ces règles figurent à l'article 26 des CG-AUTO-2026, applicables aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; la date du sinistre n'est pas précisée ici, mais la question ne porte pas sur un sinistre particulier.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-26"
+   ],
+   "duree_recherche_s": 2.48,
+   "duree_reponse_s": 2.092,
+   "tokens_entree": 1445,
+   "dollars": 0.0009575999999999999
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-25",
+    "TG-AUTO-2026:defense-et-recours"
+   ],
+   "trouve": true,
+   "reponse": "Oui : lorsque le tiers responsable est identifié et que le recours aboutit, Kanvô Assurances rembourse la franchise à l'assuré (CG-AUTO-2026, article 22, sinistres du 1er janvier au 31 décembre 2026). La procédure PROC-SIN, procédure 5, confirme cette étape : le remboursement intervient quand le recours aboutit, après relance à trente jours et transmission au service juridique à soixante jours sans réponse de l'assureur du tiers. La responsabilité civile ne comporte pas de franchise.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-5"
+   ],
+   "duree_recherche_s": 2.736,
+   "duree_reponse_s": 1.649,
+   "tokens_entree": 2068,
+   "dollars": 0.0010726
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-11"
+   ],
+   "trouve": true,
+   "reponse": "En formule Tous risques, l'assistance est comprise et le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 50 kilomètres. Ces dispositions figurent dans le tableau des garanties TG-AUTO-2026 et dans l'article 11 des CG-AUTO-2026, applicables aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-11"
+   ],
+   "duree_recherche_s": 6.116,
+   "duree_reponse_s": 1.501,
+   "tokens_entree": 1384,
+   "dollars": 0.0009413
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15",
+    "PROC-SIN:proc-8",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "Un impact de pierre sur le pare-brise est couvert par la garantie Bris de glace (CG-AUTO-2026, art. 10), qui prévoit la réparation plutôt que le remplacement lorsque l'impact le permet ; la garantie n'est toutefois pas couverte en formule Tiers, vol et incendie ni en formule Deux-roues vol, et en formule Tiers étendu elle est en option. Pour les formules Tiers étendu (option) et Tous risques, la franchise est de 15 000 francs CFA (TG-AUTO-2026), et une franchise s'applique par sinistre et par garantie (CG-AUTO-2026, art. 22) ; un réparateur agréé peut être mandaté sans expertise si le devis ne dépasse pas 300 000 francs CFA (PROC-SIN, procédure 8). Les rayures et écaillures des vitres ne sont pas garanties (CG-AUTO-2026, art. 15), donc un simple impact sans bris ne relèverait pas de cette garantie si le dommage se limite à une écaille.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15",
+    "CG-AUTO-2026:art-22",
+    "TG-AUTO-2026:bris-de-glace",
+    "PROC-SIN:proc-8"
+   ],
+   "duree_recherche_s": 3.678,
+   "duree_reponse_s": 2.808,
+   "tokens_entree": 2049,
+   "dollars": 0.0011708
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-17"
+   ],
+   "trouve": true,
+   "reponse": "Oui, le vol est garanti : l'article 8 couvre la disparition du véhicule à la suite d'un vol commis par effraction du véhicule, et l'effraction de la portière répond à cette condition (les exclusions de l'article 14 ne semblent pas applicables, sous réserve de vérifier qu'aucune clé n'était à bord et que le véhicule n'était pas laissé non verrouillé sur la voie publique). L'assuré doit déposer plainte dans les quarante-huit heures (art. 19) et déclarer le sinistre dans les deux jours ouvrés, car en cas de vol ce délai est réduit (art. 17) ; il doit transmettre le récépissé, toutes les clés et la carte grise. Ces règles s'appliquent aux sinistres survenus en 2026 selon CG-AUTO-2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 3.273,
+   "duree_reponse_s": 2.554,
+   "tokens_entree": 2235,
+   "dollars": 0.001139
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "Non, les sinistres survenus alors que le conducteur présentait un taux d'alcoolémie supérieur au taux légal ne sont jamais garantis, selon l'article 13 de CG-AUTO-2026 (sinistres du 1er janvier au 31 décembre 2026). Ce passage ne prévoit pas d'exception pour les dommages au véhicule de l'assuré ; la responsabilité civile envers les tiers reste due, car l'exclusion ne vise pas cette garantie (article 4 : prise en charge obligatoire, sans franchise). Il faut vérifier la date exacte du sinistre pour confirmer l'application de cette édition.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-4"
+   ],
+   "duree_recherche_s": 2.938,
+   "duree_reponse_s": 2.1,
+   "tokens_entree": 2179,
+   "dollars": 0.0011468
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-2"
+   ],
+   "trouve": true,
+   "reponse": "Un véhicule sorti de la route seul, sans tiers identifié, relève de la garantie Dommages tous accidents (CG-AUTO-2026, article 7), qui couvre les sorties de route quelle que soit la cause, y compris lorsque l'assuré est responsable. Cette garantie n'est comprise que dans la formule Tous risques : pour les autres formules, elle n'est pas couverte. La date du sinistre doit se situer entre le 1er janvier 2026 et le 31 décembre 2026 pour que ce document s'applique.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-6"
+   ],
+   "duree_recherche_s": 3.488,
+   "duree_reponse_s": 1.981,
+   "tokens_entree": 2328,
+   "dollars": 0.0011227000000000001
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-18",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-20"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 17 de CG-AUTO-2026 (sinistres survenus du 1er janvier au 31 décembre 2026), l'assuré doit déclarer le sinistre dans un délai de cinq jours ouvrés à compter du jour où il en a eu connaissance, ce délai étant réduit à deux jours ouvrés en cas de vol. Une déclaration tardive n'entraîne la perte du droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances. La date du sinistre n'étant pas précisée dans la question, ce délai s'applique à un accrochage survenu en 2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 2.955,
+   "duree_reponse_s": 2.617,
+   "tokens_entree": 2243,
+   "dollars": 0.0010955000000000001
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-29",
+    "CG-AUTO-2026:art-22",
+    "PROC-SIN:proc-8"
+   ],
+   "trouve": true,
+   "reponse": "Si l'assuré conteste les conclusions de l'expert, il peut faire réaliser une contre-expertise à ses frais, et en cas de désaccord persistant, les deux experts désignent un troisième expert dont les frais sont partagés par moitié entre l'assuré et Kanvô Assurances (CG-AUTO-2026, art. 20, applicable aux sinistres du 1er janvier au 31 décembre 2026). Le gestionnaire doit demander les motifs par écrit, l'informer de cette possibilité, suspendre le règlement jusqu'au rapport définitif sauf pour la part non contestée, qui peut être réglée immédiatement (PROC-SIN, procédure 3). Si le désaccord persiste, l'assuré peut saisir le médiateur désigné aux conditions particulières, après une réponse du service des réclamations dans les trente jours (CG-AUTO-2026, art. 29).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-29"
+   ],
+   "duree_recherche_s": 2.352,
+   "duree_reponse_s": 2.214,
+   "tokens_entree": 2124,
+   "dollars": 0.0011352
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-12"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne permettent pas de répondre : ils n'indiquent pas si un sinistre causé par un conducteur de dix-sept ans est pris en charge. Le point déterminant semble être la validité du permis de ce conducteur (article 13 : sinistres exclus si le conducteur n'était pas titulaire d'un permis valable ; article 2 : conducteur autorisé = titulaire d'un permis valable pour la catégorie du véhicule, conduisant avec l'accord du souscripteur), mais les passages ne précisent pas si un mineur de dix-sept ans peut être titulaire d'un permis, ni la situation des dommages au véhicule dans ce cas ; il faut vérifier la date du sinistre et le permis du conducteur.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-2"
+   ],
+   "duree_recherche_s": 2.926,
+   "duree_reponse_s": 2.044,
+   "tokens_entree": 2357,
+   "dollars": 0.0011664
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-9",
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-21"
+   ],
+   "trouve": false,
+   "reponse": "Les passages indiquent que l'incendie du véhicule est garanti (article 9 de CG-AUTO-2026 : dommages subis du fait d'un incendie, d'une explosion ou de la foudre, pour les sinistres du 1er janvier au 31 décembre 2026), avec une franchise selon la formule : aucune pour Tiers, vol et incendie, 75 000 pour Tiers étendu, 100 000 pour Tous risques, et 30 000 pour Deux-roues vol. Cependant, la formule souscrite par l'assuré n'est pas précisée dans le dossier, et les passages ne permettent pas de confirmer la prise en charge pour ce sinistre sans connaître la formule et les conditions particulières, qui prévalent en cas de contradiction.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-9",
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-22"
+   ],
+   "duree_recherche_s": 4.789,
+   "duree_reponse_s": 2.336,
+   "tokens_entree": 2106,
+   "dollars": 0.0010968
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-24"
+   ],
+   "trouve": true,
+   "reponse": "La franchise vol en formule Tiers étendu est de 75 000 (TG-AUTO-2026, garantie Vol, sinistres survenus du 1er janvier 2026 au 31 décembre 2026). Elle s'applique par sinistre et par garantie mise en jeu, conformément à l'article 22 des CG-AUTO-2026. Les conditions particulières, si elles fixent un autre montant, l'emportent sur le tableau des garanties.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 2.897,
+   "duree_reponse_s": 1.756,
+   "tokens_entree": 2165,
+   "dollars": 0.0010494
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-15",
+    "CG-AUTO-2026:art-1",
+    "PROC-SIN:proc-8"
+   ],
+   "trouve": true,
+   "reponse": "Non : selon le tableau des garanties TG-AUTO-2026, la garantie Bris de glace n'est pas couverte par la formule Tiers, vol et incendie. Cette édition s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026, et la date du sinistre doit être vérifiée avant toute décision.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace"
+   ],
+   "duree_recherche_s": 3.331,
+   "duree_reponse_s": 1.794,
+   "tokens_entree": 2062,
+   "dollars": 0.0009968
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1"
+   ],
+   "trouve": true,
+   "reponse": "Selon le tableau des garanties TG-AUTO-2026 (sinistres survenus du 1er janvier 2026 au 31 décembre 2026), la garantie du conducteur est comprise dans la formule Tous risques avec un plafond de 5 000 000 (euros). Cette garantie indemnise les dommages corporels du conducteur autorisé, même responsable, dans la limite de ce plafond (article 12 des CG-AUTO-2026). En cas de contradiction, les conditions particulières du contrat l'emportent sur les conditions générales (article 1).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 2.971,
+   "duree_reponse_s": 1.592,
+   "tokens_entree": 1659,
+   "dollars": 0.0010328
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-7",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "En formule Tous risques, la garantie Dommages tous accidents est comprise avec une franchise de 100 000 (TG-AUTO-2026). Ces montants s'appliquent aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; les conditions particulières prévalent en cas de contradiction avec le tableau des garanties (CG-AUTO-2026, article 1).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-22"
+   ],
+   "duree_recherche_s": 2.883,
+   "duree_reponse_s": 1.463,
+   "tokens_entree": 2099,
+   "dollars": 0.0010416
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-22",
+    "TG-AUTO-2026:vol",
+    "CG-AUTO-2026:art-1"
+   ],
+   "trouve": true,
+   "reponse": "Oui, la formule Deux-roues vol couvre l'incendie (garantie comprise) avec une franchise de 30 000, selon le tableau des garanties TG-AUTO-2026 pour les sinistres survenus du 1er janvier 2026 au 31 décembre 2026. L'article 9 de CG-AUTO-2026 précise que sont garantis les dommages du fait d'un incendie, d'une explosion ou de la foudre, et l'article 22 rappelle qu'une franchise s'applique par sinistre et par garantie mise en jeu. Les conditions particulières, si elles fixent un autre montant, l'emportent sur ces documents.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:incendie",
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 3.4,
+   "duree_reponse_s": 1.955,
+   "tokens_entree": 2067,
+   "dollars": 0.0010825000000000001
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-1",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-22"
+   ],
+   "trouve": true,
+   "reponse": "Selon le tableau des garanties TG-AUTO-2026, la garantie Défense et recours en formule Tiers étendu est comprise dans le contrat, avec un plafond de 1 000 000 (euros). Ce plafond s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026. L'article 5 des CG-AUTO-2026 précise que les frais de procédure sont pris en charge dans la limite fixée au tableau des garanties.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5"
+   ],
+   "duree_recherche_s": 2.922,
+   "duree_reponse_s": 1.761,
+   "tokens_entree": 2136,
+   "dollars": 0.0010473000000000001
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-6",
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-23"
+   ],
+   "trouve": true,
+   "reponse": "Le règlement rapide s'applique aux dossiers sans blessé, avec un contrat actif et une identité vérifiée, dont le montant évalué ne dépasse pas 150 000 francs CFA. Au-delà de 150 000 francs CFA, ou en cas de doute, le dossier doit être transmis au responsable d'équipe.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-4"
+   ],
+   "duree_recherche_s": 2.953,
+   "duree_reponse_s": 1.425,
+   "tokens_entree": 2127,
+   "dollars": 0.0010211
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-8",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-20"
+   ],
+   "trouve": true,
+   "reponse": "Non, un bris de glace dont le devis ne dépasse pas 300 000 francs CFA ne nécessite aucune expertise : l'assuré est orienté vers un réparateur agréé, qui facture directement Kanvô Assurances, franchise déduite. Au-delà de 300 000 francs CFA, un expert doit être mandaté selon la procédure 2 (dans les dix jours ouvrés suivant la déclaration). Le montant de 250 000 francs CFA étant inférieur au seuil, aucune expertise n'est requise, sous réserve que la garantie s'applique au contrat (le tableau des garanties prévoit une franchise de 15 000 selon la formule).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-8",
+    "PROC-SIN:proc-2",
+    "TG-AUTO-2026:bris-de-glace"
+   ],
+   "duree_recherche_s": 2.547,
+   "duree_reponse_s": 2.145,
+   "tokens_entree": 2080,
+   "dollars": 0.0010793999999999999
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "La procédure interne PROC-SIN (procédure 7) prévoit d'attendre trente jours à compter de la déclaration avant d'indemniser un vol, car le véhicule peut être retrouvé ; passé ce délai, il faut faire évaluer le véhicule à sa valeur à dire d'expert et proposer l'indemnité. Selon CG-AUTO-2026 (article 24), si le véhicule est retrouvé dans ces trente jours, l'assuré en reprend possession et Kanvô prend en charge les dommages subis pendant le vol. Ces règles s'appliquent aux sinistres survenus du 1er janvier au 31 décembre 2026 ; la date du sinistre devra être vérifiée.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24"
+   ],
+   "duree_recherche_s": 3.361,
+   "duree_reponse_s": 3.237,
+   "tokens_entree": 2205,
+   "dollars": 0.0010976
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "Les signaux d'alerte de fraude sont : une déclaration très tardive, un sinistre survenu dans les trente jours suivant la souscription, des pièces incohérentes entre elles, et plusieurs sinistres déclarés sur le même véhicule en moins de six mois. Un signal ne prouve rien : il ne faut jamais accuser l'assuré ni lui faire part de la suspicion, mais transmettre le dossier à la cellule fraude avec la liste des signaux observés, et poursuivre l'instruction normalement en attendant son avis.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-6"
+   ],
+   "duree_recherche_s": 2.28,
+   "duree_reponse_s": 1.653,
+   "tokens_entree": 1227,
+   "dollars": 0.0009469999999999999
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-4"
+   ],
+   "trouve": true,
+   "reponse": "Un sinistre avec blessé est prioritaire : le dossier doit être ouvert et affecté le jour même, et la procédure 9 doit être appliquée avant toute autre étape. Il faut prévenir le médecin conseil de Kanvô Assurances, qui prend contact avec le blessé ou sa famille, sans jamais proposer de règlement rapide ni promettre un montant d'indemnité, et informer le responsable d'équipe dans la journée.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-9",
+    "PROC-SIN:proc-1"
+   ],
+   "duree_recherche_s": 2.23,
+   "duree_reponse_s": 1.612,
+   "tokens_entree": 2162,
+   "dollars": 0.0010651000000000002
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-6"
+   ],
+   "trouve": true,
+   "reponse": "Selon la procédure PROC-SIN (procédure 5), il faut relancer l'assureur du tiers au bout de trente jours sans réponse, puis transmettre le dossier au service juridique au bout de soixante jours. Les passages fournis ne précisent pas de date de sinistre pour cette procédure interne.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "PROC-SIN:proc-5"
+   ],
+   "duree_recherche_s": 2.348,
+   "duree_reponse_s": 1.353,
+   "tokens_entree": 2100,
+   "dollars": 0.0010076999999999998
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-HAB-2026:vol",
+    "CG-HAB-2026:art-5",
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-11",
+    "CG-HAB-2026:art-2"
+   ],
+   "trouve": true,
+   "reponse": "En formule Habitation confort, la franchise vol est de 25 000 (TG-HAB-2026, tableau des garanties, garantie Vol), applicable aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026. La garantie vol est comprise dans cette formule, avec un plafond de 500 000 pour les objets de valeur.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-HAB-2026:vol"
+   ],
+   "duree_recherche_s": 2.705,
+   "duree_reponse_s": 1.874,
+   "tokens_entree": 2053,
+   "dollars": 0.0009681
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "TG-HAB-2026:bris-de-glace",
+    "CG-HAB-2026:art-6",
+    "PROC-SIN:proc-8",
+    "CG-HAB-2026:art-1",
+    "CG-HAB-2026:art-2"
+   ],
+   "trouve": true,
+   "reponse": "En formule Habitation confort, le bris de glace est compris, avec une franchise de 10 000 (TG-HAB-2026, sinistres du 1er janvier au 31 décembre 2026). La garantie couvre le remplacement des vitres des fenêtres, portes-fenêtres et baies vitrées du logement brisées par un événement accidentel, mais pas les miroirs, écrans ni vitres d'appareils ménagers (CG-HAB-2026, article 6).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-HAB-2026:bris-de-glace",
+    "CG-HAB-2026:art-6"
+   ],
+   "duree_recherche_s": 2.939,
+   "duree_reponse_s": 1.793,
+   "tokens_entree": 2005,
+   "dollars": 0.0009979
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-HAB-2026:art-12",
+    "CG-HAB-2026:art-1",
+    "CG-HAB-2026:art-2"
+   ],
+   "trouve": true,
+   "reponse": "Selon l'article 12 de CG-HAB-2026, les biens mobiliers sont indemnisés à leur valeur de remplacement, déduction faite de la vétusté, plafonnée à 25 %. Ce document s'applique aux sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; la date du sinistre n'étant pas précisée, appliquez cette édition si le sinistre relève de cette période.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-HAB-2026:art-12"
+   ],
+   "duree_recherche_s": 2.282,
+   "duree_reponse_s": 1.368,
+   "tokens_entree": 1686,
+   "dollars": 0.0009308000000000001
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-5",
+    "CG-HAB-2026:art-2",
+    "TG-HAB-2026:vol",
+    "CG-HAB-2026:art-9"
+   ],
+   "trouve": true,
+   "reponse": "Non : l'article 10 de CG-HAB-2026 exclut les vols commis dans les parties communes, les jardins et les cours, pour les sinistres survenus du 1er janvier 2026 au 31 décembre 2026. Ce vol n'est donc pas garanti, quelle que soit la formule souscrite.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-HAB-2026:art-10"
+   ],
+   "duree_recherche_s": 2.384,
+   "duree_reponse_s": 1.285,
+   "tokens_entree": 2043,
+   "dollars": 0.0009617
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-23"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne contiennent pas d'information sur un bonus ou une réduction de prime pour un assuré sans sinistre depuis cinq ans : le tableau des garanties et les dispositions tarifaires ne figurent pas dans la base consultée. Je ne peux donc pas indiquer le montant ou le taux de ce bonus ; il faudrait consulter le tableau tarifaire ou les conditions particulières du contrat concerné.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [],
+   "duree_recherche_s": 2.141,
+   "duree_reponse_s": 1.47,
+   "tokens_entree": 2392,
+   "dollars": 0.0010907000000000002
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-21"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne mentionnent pas la prise en charge d'un véhicule de location pendant les réparations : l'article 11 ne traite que du remorquage (jusqu'à 50 km) et de l'assistance, et l'article 21 de l'évaluation des dommages. Je ne peux donc pas confirmer cette garantie à partir de la base ; il faudrait vérifier les conditions particulières du contrat ou une autre édition des conditions générales.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 3.119,
+   "duree_reponse_s": 1.864,
+   "tokens_entree": 2118,
+   "dollars": 0.0010718
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-29",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-20"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis indiquent que les réclamations sont adressées au service des réclamations de Kanvô Assurances, qui accuse réception sous cinq jours ouvrés et répond dans les trente jours (CG-AUTO-2026, article 29), mais ils ne contiennent pas le numéro de téléphone de ce service. Je n'ai pas trouvé ce numéro dans les documents consultés.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-29"
+   ],
+   "duree_recherche_s": 2.555,
+   "duree_reponse_s": 1.511,
+   "tokens_entree": 2197,
+   "dollars": 0.0010616000000000002
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "decoupage": "structure",
+   "strategie": "reclassement",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-5"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne contiennent pas de disposition sur la prise en charge des frais de gardiennage du véhicule au garage. L'article 11 de CG-AUTO-2026 ne traite que du remorquage jusqu'au garage le plus proche, dans la limite de 50 kilomètres, et la procédure PROC-SIN ne mentionne pas non plus ces frais : il faut consulter le tableau des garanties ou les conditions complètes pour trancher.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "PROC-SIN:proc-7"
+   ],
+   "duree_recherche_s": 2.359,
+   "duree_reponse_s": 1.845,
+   "tokens_entree": 2153,
+   "dollars": 0.0010857000000000002
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+  "_lisez_moi": "Les défauts posés exprès dans les demandes de fusion fictives du chapitre 17. Jamais montré à Claude. Un constat vise un défaut quand il porte sur l'un de ses fichiers et contient l'un de ses mots (texte normalisé : minuscules, sans accents). D1 à D5 sont posés exprès ; D6, réel, a été relevé par une revue et vérifié.",
+  "moto": [
+    {
+      "id": "D1",
+      "nom": "nouveau montant tronqué par int()",
+      "categorie": "montants",
+      "fichiers": [
+        "primes/calcul.py"
+      ],
+      "mots": [
+        "int(",
+        "tronqu",
+        "arrondir_fcfa"
+      ]
+    },
+    {
+      "id": "D2",
+      "nom": "numeros.valide ignore la branche MOTO",
+      "categorie": "integration",
+      "fichiers": [
+        "contrats/numeros.py",
+        "config.py"
+      ],
+      "mots": [
+        "valid",
+        "numero",
+        "liste blanche",
+        "codee en dur",
+        "code en dur"
+      ]
+    },
+    {
+      "id": "D3",
+      "nom": "requête SQL formatée avec %",
+      "categorie": "sql",
+      "fichiers": [
+        "base/requetes.py"
+      ],
+      "mots": [
+        "%",
+        "injection",
+        "parametre",
+        "?",
+        "format"
+      ]
+    },
+    {
+      "id": "D4",
+      "nom": "taux taxi-moto écrit en dur",
+      "categorie": "tarifs",
+      "fichiers": [
+        "primes/calcul.py"
+      ],
+      "mots": [
+        "1.65",
+        "1,65",
+        "en dur",
+        "usage_taxi_moto",
+        "code en dur",
+        "hardcod"
+      ]
+    },
+    {
+      "id": "D5",
+      "nom": "125 cm³ dans la mauvaise tranche",
+      "categorie": "logique",
+      "fichiers": [
+        "primes/calcul.py"
+      ],
+      "mots": [
+        "< 125",
+        "<125",
+        "<= 125",
+        "125 cm",
+        "tranche",
+        "borne"
+      ]
+    },
+    {
+      "id": "D6",
+      "nom": "le filtre LIKE ne retient pas les cylindrées au-dessus du seuil",
+      "categorie": "logique",
+      "fichiers": [
+        "base/requetes.py"
+      ],
+      "mots": [
+        "au-dessus",
+        "superieur",
+        "commencant",
+        "commence par",
+        "ne retient",
+        "comparaison"
+      ],
+      "origine": "non posé exprès : relevé par la revue d'essai du 28 octobre 2026, puis vérifié (LIKE '%cylindree=300%' ne retient que les valeurs qui commencent par 300)"
+    }
+  ],
+  "echeancier": []
+}

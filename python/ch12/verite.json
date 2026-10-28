@@ -1,0 +1,473 @@
+{
+  "_note": "Documents et vérité fabriqués par ch12/fabriquer.py (fictifs).",
+  "documents": [
+    {
+      "id": "constat-01",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-16",
+        "heure": "17:15",
+        "blesses": "non",
+        "plaque_a": "NA 7139 SJ",
+        "contrat_a": "KA-AUTO-8540",
+        "plaque_b": "ZW 4729 UA",
+        "assureur_b": "Ouémé Mutuelle"
+      }
+    },
+    {
+      "id": "constat-02",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-09-12",
+        "heure": "16:15",
+        "blesses": "non",
+        "plaque_a": "BV 4270 CT",
+        "contrat_a": "KA-AUTO-6521",
+        "plaque_b": "YN 2431 AB",
+        "assureur_b": "Ouémé Mutuelle"
+      }
+    },
+    {
+      "id": "constat-03",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-14",
+        "heure": null,
+        "blesses": "non",
+        "plaque_a": "EU 6120 WU",
+        "contrat_a": "KA-AUTO-3679",
+        "plaque_b": "ZB 3805 TC",
+        "assureur_b": "Atacora Garantie"
+      }
+    },
+    {
+      "id": "constat-04",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-16",
+        "heure": "06:00",
+        "blesses": "non",
+        "plaque_a": "GY 5285 MM",
+        "contrat_a": "KA-AUTO-7317",
+        "plaque_b": null,
+        "assureur_b": "Atacora Garantie"
+      }
+    },
+    {
+      "id": "constat-05",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-01",
+        "heure": "19:00",
+        "blesses": "oui",
+        "plaque_a": "TA 4639 YP",
+        "contrat_a": "KA-AUTO-1712",
+        "plaque_b": "NG 2681 UH",
+        "assureur_b": "Lagune Assurances"
+      }
+    },
+    {
+      "id": "constat-06",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-14",
+        "heure": "21:30",
+        "blesses": "non",
+        "plaque_a": "WX 1852 TR",
+        "contrat_a": "KA-AUTO-7034",
+        "plaque_b": "GL 5618 RS",
+        "assureur_b": null
+      }
+    },
+    {
+      "id": "constat-07",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-15",
+        "heure": "11:15",
+        "blesses": "unclear",
+        "plaque_a": "HW 1109 JL",
+        "contrat_a": "KA-AUTO-3941",
+        "plaque_b": "HA 9215 BH",
+        "assureur_b": "Ouémé Mutuelle"
+      }
+    },
+    {
+      "id": "constat-08",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-01",
+        "heure": null,
+        "blesses": "non",
+        "plaque_a": "HT 9228 SS",
+        "contrat_a": "KA-AUTO-6795",
+        "plaque_b": "JY 8288 FR",
+        "assureur_b": "Atacora Garantie"
+      }
+    },
+    {
+      "id": "constat-09",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-11",
+        "heure": "12:30",
+        "blesses": "non",
+        "plaque_a": "TJ 1467 YA",
+        "contrat_a": "KA-AUTO-1446",
+        "plaque_b": "EU 5355 PE",
+        "assureur_b": "Lagune Assurances"
+      }
+    },
+    {
+      "id": "constat-10",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-02",
+        "heure": "07:45",
+        "blesses": "non",
+        "plaque_a": "PV 2521 NG",
+        "contrat_a": "KA-AUTO-6693",
+        "plaque_b": null,
+        "assureur_b": "Lagune Assurances"
+      }
+    },
+    {
+      "id": "constat-11",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-09-26",
+        "heure": "08:45",
+        "blesses": "oui",
+        "plaque_a": "UG 7217 DZ",
+        "contrat_a": "KA-AUTO-6786",
+        "plaque_b": "GK 5435 ZY",
+        "assureur_b": "Ouémé Mutuelle"
+      }
+    },
+    {
+      "id": "constat-12",
+      "verite": {
+        "type": "constat",
+        "date_accident": "2026-10-07",
+        "heure": "13:00",
+        "blesses": "non",
+        "plaque_a": "PM 6301 CY",
+        "contrat_a": "KA-AUTO-6447",
+        "plaque_b": null,
+        "assureur_b": "Ouémé Mutuelle"
+      }
+    },
+    {
+      "id": "facture-01",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-737",
+        "date_facture": "2026-10-16",
+        "garage": "Mécanique générale Gbégamey",
+        "plaque": "SF 1928 YW",
+        "total_declare": 240000,
+        "somme_lignes": 240000,
+        "nombre_lignes": 3,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-02",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-329",
+        "date_facture": "2026-10-04",
+        "garage": "Garage de Houéyiho",
+        "plaque": "MM 5582 GZ",
+        "total_declare": 254000,
+        "somme_lignes": 254000,
+        "nombre_lignes": 3,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-03",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-613",
+        "date_facture": "2026-10-05",
+        "garage": "Garage du Carrefour Vêdoko",
+        "plaque": "FT 8612 NW",
+        "total_declare": 170500,
+        "somme_lignes": 170500,
+        "nombre_lignes": 3,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-04",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-975",
+        "date_facture": "2026-10-26",
+        "garage": "Garage de Houéyiho",
+        "plaque": "HP 9814 ZN",
+        "total_declare": 397000,
+        "somme_lignes": 372000,
+        "nombre_lignes": 4,
+        "incoherence": true
+      }
+    },
+    {
+      "id": "facture-05",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-684",
+        "date_facture": "2026-10-18",
+        "garage": "Garage du Carrefour Vêdoko",
+        "plaque": "MA 6279 SM",
+        "total_declare": 274500,
+        "somme_lignes": 274500,
+        "nombre_lignes": 4,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-06",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-920",
+        "date_facture": "2026-10-08",
+        "garage": "Atelier Akpakpa Auto",
+        "plaque": null,
+        "total_declare": 265000,
+        "somme_lignes": 265000,
+        "nombre_lignes": 4,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-07",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-473",
+        "date_facture": "2026-10-26",
+        "garage": "Garage du Carrefour Vêdoko",
+        "plaque": "PX 5633 NW",
+        "total_declare": 275000,
+        "somme_lignes": 275000,
+        "nombre_lignes": 3,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-08",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-133",
+        "date_facture": "2026-10-21",
+        "garage": "Mécanique générale Gbégamey",
+        "plaque": "PP 5312 LP",
+        "total_declare": 243000,
+        "somme_lignes": 243000,
+        "nombre_lignes": 3,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-09",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-287",
+        "date_facture": "2026-10-26",
+        "garage": "Atelier Akpakpa Auto",
+        "plaque": "GJ 2796 JT",
+        "total_declare": 214000,
+        "somme_lignes": 229000,
+        "nombre_lignes": 3,
+        "incoherence": true
+      }
+    },
+    {
+      "id": "facture-10",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-412",
+        "date_facture": "2026-10-24",
+        "garage": "Atelier Akpakpa Auto",
+        "plaque": "KG 1402 UK",
+        "total_declare": 80000,
+        "somme_lignes": 80000,
+        "nombre_lignes": 2,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-11",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-267",
+        "date_facture": "2026-10-07",
+        "garage": "Atelier Akpakpa Auto",
+        "plaque": null,
+        "total_declare": 145000,
+        "somme_lignes": 145000,
+        "nombre_lignes": 2,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "facture-12",
+      "verite": {
+        "type": "facture",
+        "numero_facture": "F-2026-982",
+        "date_facture": "2026-10-18",
+        "garage": "Garage de Houéyiho",
+        "plaque": "WD 6974 YS",
+        "total_declare": 338000,
+        "somme_lignes": 338000,
+        "nombre_lignes": 4,
+        "incoherence": false
+      }
+    },
+    {
+      "id": "rapport-01",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1100",
+        "date_expertise": "2026-10-18",
+        "plaque": "TA 3074 NT",
+        "montant_evalue": 420000,
+        "vetuste_pct": 20,
+        "conclusion": "reparable",
+        "expert": "Bureau d'expertise automobile Agontinkon"
+      }
+    },
+    {
+      "id": "rapport-02",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1364",
+        "date_expertise": "2026-10-21",
+        "plaque": "XN 7797 TA",
+        "montant_evalue": 515000,
+        "vetuste_pct": 20,
+        "conclusion": "reparable",
+        "expert": "Expert agréé A. Hounsou"
+      }
+    },
+    {
+      "id": "rapport-03",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1947",
+        "date_expertise": "2026-10-09",
+        "plaque": "ES 7003 ZD",
+        "montant_evalue": 180000,
+        "vetuste_pct": null,
+        "conclusion": "reparable",
+        "expert": "Expert agréé A. Hounsou"
+      }
+    },
+    {
+      "id": "rapport-04",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1415",
+        "date_expertise": "2026-10-26",
+        "plaque": "WM 2176 EM",
+        "montant_evalue": 1250000,
+        "vetuste_pct": 25,
+        "conclusion": "reparable",
+        "expert": "Cabinet Expertises Lokossa"
+      }
+    },
+    {
+      "id": "rapport-05",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1086",
+        "date_expertise": "2026-10-08",
+        "plaque": "BA 5088 AD",
+        "montant_evalue": 245000,
+        "vetuste_pct": 20,
+        "conclusion": "irreparable",
+        "expert": "Expert agréé A. Hounsou"
+      }
+    },
+    {
+      "id": "rapport-06",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1233",
+        "date_expertise": "2026-10-22",
+        "plaque": "VS 4384 RL",
+        "montant_evalue": 180000,
+        "vetuste_pct": 25,
+        "conclusion": "reparable",
+        "expert": "Bureau d'expertise automobile Agontinkon"
+      }
+    },
+    {
+      "id": "rapport-07",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1819",
+        "date_expertise": "2026-10-21",
+        "plaque": "HN 2428 XW",
+        "montant_evalue": 690000,
+        "vetuste_pct": null,
+        "conclusion": "reparable",
+        "expert": "Bureau d'expertise automobile Agontinkon"
+      }
+    },
+    {
+      "id": "rapport-08",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1305",
+        "date_expertise": "2026-10-02",
+        "plaque": "DS 3239 YJ",
+        "montant_evalue": 690000,
+        "vetuste_pct": 10,
+        "conclusion": "unclear",
+        "expert": "Cabinet Expertises Lokossa"
+      }
+    },
+    {
+      "id": "rapport-09",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1494",
+        "date_expertise": "2026-10-07",
+        "plaque": "PL 7640 LL",
+        "montant_evalue": 420000,
+        "vetuste_pct": 0,
+        "conclusion": "reparable",
+        "expert": "Expert agréé A. Hounsou"
+      }
+    },
+    {
+      "id": "rapport-10",
+      "verite": {
+        "type": "rapport_expert",
+        "numero_sinistre": "SIN-2026-1199",
+        "date_expertise": "2026-10-13",
+        "plaque": "WX 9780 WM",
+        "montant_evalue": 95000,
+        "vetuste_pct": 15,
+        "conclusion": "reparable",
+        "expert": "Cabinet Expertises Lokossa"
+      }
+    },
+    {
+      "id": "autre-01",
+      "verite": {
+        "type": "autre",
+        "detail": "mise en demeure d'un avocat"
+      }
+    },
+    {
+      "id": "autre-02",
+      "verite": {
+        "type": "autre",
+        "detail": "relevé d'informations"
+      }
+    }
+  ]
+}

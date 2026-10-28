@@ -1,0 +1,1244 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "juges": [
+    "v2"
+  ],
+  "repetitions": 2,
+  "depense_dollars": 0.023555,
+  "resume": {
+    "v2": {
+      "difficiles": {
+        "sensibilite": "16 sur 16",
+        "specificite": "12 sur 12"
+      },
+      "jugements": 90,
+      "illisibles": 0,
+      "accord": 1.0,
+      "sensibilite": "58 sur 58",
+      "specificite": "32 sur 32",
+      "par_defaut": {
+        "reserve_retiree": "6 sur 6",
+        "reserve_en_decision": "4 sur 4",
+        "conclusion_inventee": "6 sur 6",
+        "cote_inverse": "10 sur 10",
+        "duree_modifiee": "8 sur 8",
+        "ajout": "8 sur 8",
+        "omission": "8 sur 8",
+        "reserve_modifiee": "2 sur 2",
+        "constatation_modifiee": "6 sur 6"
+      },
+      "faux_negatifs": [],
+      "faux_positifs": [],
+      "cout_total": 0.023555
+    }
+  },
+  "jugements": [
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute, la douleur de la malléole externe droite, l'œdème modéré, l'appui possible et l'absence de déformation sont présents. Le doute « probable » et la condition « à confirmer si la douleur persiste au-delà de 8 jours » sont conservés, sans être transformés en certitude ni en décision. La suite « revoir à la demande » est identique aux notes, et aucun examen, soin ni diagnostic n'a été ajouté.",
+      "cout_dollars": 0.0002728
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N02",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : symptômes (toux sèche de 5 jours, écoulement nasal, absence de fièvre), examen (auscultation normale, gorge un peu rouge), conclusion (rhinopharyngite) et conditions de reconsultation (fièvre ou toux de plus de 3 semaines). Les reformulations (« en cas de », phrases complètes, abréviations développées) ne modifient pas le sens.",
+      "cout_dollars": 0.000342
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N03",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la plaque prurigineuse de l'avant-bras gauche depuis 2 semaines, l'absence d'autre lésion, le nouveau bracelet de montre depuis 3 semaines, la conclusion « eczéma de contact possible, origine à préciser » (le doute est conservé) et le suivi à 1 mois. Les abréviations sont développées et les phrases complètes, ce qui n'est pas un défaut.",
+      "cout_dollars": 0.0003294
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N04",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'oreille droite depuis 3 jours, sans écoulement ni fièvre, tympan droit difficile à voir à cause du cérumen, aucune conclusion, consultation interrompue et à reprendre. Aucune constatation n'est omise ni ajoutée, et les détails (côté, durée, absence de fièvre et d'écoulement) sont corrects.",
+      "cout_dollars": 0.0002833
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N05",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif (visite de contrôle annuelle demandée par l'employeur, sans plainte), examen clinique normal, tension 12/8, conclusion normale et suite (contrôle dans 1 an). Aucune constatation n'est omise, ajoutée ou modifiée, et aucun doute ou chiffre n'a été altéré.",
+      "cout_dollars": 0.00022160000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N06",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la suspicion de fracture du scaphoïde est conservée comme suspicion, le côté droit est correct, la radiographie demandée et la consigne de revoir avec la radiographie sont présentes. Aucune constatation n'est omise, ajoutée ou modifiée.",
+      "cout_dollars": 0.0002324
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N07",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleurs intermittentes depuis 10 jours surtout après les repas, absence de vomissement, transit normal, abdomen souple, et « à revoir » avec la mention patient pressé. Aucune conclusion n'est ajoutée, conformément aux notes, et aucune constatation n'est omise.",
+      "cout_dollars": 0.0002766
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N08",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (G), rougeur depuis la veille (hier), larmoiement, sensation de sable, vision normale, conclusion conjonctivite et suite conditionnelle « revoir si la vision baisse ». Aucune constatation omise, ajoutée ou modifiée, et la condition n'a pas été transformée en décision.",
+      "cout_dollars": 0.00024440000000000003
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N09",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : fatigue depuis 2 mois, sommeil correct, appétit conservé, examen sans particularité. Il indique qu'aucune conclusion n'est posée et que la conclusion est réservée, à discuter à la prochaine consultation, comme dans les notes. Le sommeil et l'appétit sont placés sous « Examen » alors que les notes les mentionnent avant l'examen, mais c'est un simple réordonnancement, sans altération du contenu.",
+      "cout_dollars": 0.0002869
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N10",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : côté gauche, 2 heures, plaie de 2 cm peu profonde et propre, mobilité et sensibilité des doigts normales, conclusion de plaie superficielle de la paume et suite de surveillance de la cicatrisation. Seules des abréviations sont développées et les phrases sont réécrites, ce qui n'est pas un défaut.",
+      "cout_dollars": 0.0001833
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "reserve_retiree",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_retiree",
+        "omission"
+      ],
+      "explication": "La note indique « probable entorse bénigne », mais le compte rendu écrit « Entorse bénigne de la cheville droite », ce qui retire le doute du médecin. La condition « à confirmer si douleur > 8 j » n'apparaît pas dans le compte rendu, alors qu'elle figure dans les notes.",
+      "cout_dollars": 0.0002452
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "reserve_retiree",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_retiree",
+        "conclusion_inventee"
+      ],
+      "explication": "La conclusion des notes est « eczéma de contact possible, origine à préciser ». Le compte rendu l'écrit comme un certain « eczéma de contact au bracelet de montre », ce qui retire le doute et attribue une origine que le médecin n'a pas établie.",
+      "cout_dollars": 0.00023180000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N06",
+      "annotation": "a_corriger",
+      "defaut": "reserve_retiree",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_retiree"
+      ],
+      "explication": "Les notes indiquent une suspicion de fracture du scaphoïde, alors que le compte rendu écrit « Fracture du scaphoïde », ce qui retire le doute du médecin et le transforme en certitude. Le reste est fidèle.",
+      "cout_dollars": 0.0001849
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "reserve_en_decision",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_en_decision"
+      ],
+      "explication": "La note « à confirmer si douleur > 8 j » est devenue une décision : « Consultation de contrôle prévue à 8 jours pour confirmer le diagnostic ». La condition du médecin doit être conservée telle quelle, sans programmer de contrôle. Le reste est fidèle : « probable » est maintenu, le côté droit, l'examen et la suite « revoir à la demande » correspondent aux notes.",
+      "cout_dollars": 0.000372
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "reserve_en_decision",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout",
+        "reserve_retiree"
+      ],
+      "explication": "Le compte rendu ajoute « Retrait du bracelet », une mesure absente des notes. Il écrit aussi « revoir dans 1 mois pour confirmer l'eczéma de contact », alors que les notes disent « à revoir dans 1 mois » après un diagnostic « possible, origine à préciser ». Cette formulation retire le doute du médecin en présentant l'eczéma comme un diagnostic à confirmer.",
+      "cout_dollars": 0.0003494
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N04",
+      "annotation": "a_corriger",
+      "defaut": "conclusion_inventee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "conclusion_inventee"
+      ],
+      "explication": "Le compte rendu ajoute « Conclusion du médecin : Otite externe probable », alors que les notes ne contiennent aucune conclusion diagnostique. Il faut retirer cette ligne ou la remplacer par l'avis du médecin. Le reste est fidèle : la douleur droite depuis 3 jours, l'absence d'écoulement et de fièvre, le tympan difficile à voir à cause du cérumen et la consultation à reprendre sont correctement rapportés.",
+      "cout_dollars": 0.0002753
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N07",
+      "annotation": "a_corriger",
+      "defaut": "conclusion_inventee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "conclusion_inventee"
+      ],
+      "explication": "Le compte rendu ajoute une conclusion absente des notes : « Douleurs abdominales d'allure fonctionnelle ». Les notes ne contiennent aucun diagnostic ni aucune orientation de ce type. Le reste est fidèle : durée de 10 jours, douleurs après les repas, absence de vomissement, transit normal, abdomen souple et suite « à revoir ».",
+      "cout_dollars": 0.0002094
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N09",
+      "annotation": "a_corriger",
+      "defaut": "conclusion_inventee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "conclusion_inventee"
+      ],
+      "explication": "La ligne « Conclusion du médecin : Fatigue sans cause organique retrouvée » ajoute une conclusion que les notes ne contiennent pas. Les notes indiquent au contraire que la conclusion est réservée et doit être discutée à la prochaine consultation, ce que la section « Suite » reprend correctement. Le reste du compte rendu (motif, sommeil, appétit, examen sans particularité) est fidèle.",
+      "cout_dollars": 0.0002343
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Dans l'examen, le compte rendu indique « malléole externe gauche » alors que les notes parlent de la cheville D (droite) pour cette chute et cette douleur. Le côté doit être corrigé en droit. Le reste est fidèle : le doute « probable » et la condition « à confirmer si douleur > 8 j » sont conservés, et la reformulation « au-delà de 8 jours » ne change pas le sens.",
+      "cout_dollars": 0.0002539
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Le motif indique « avant-bras droit » alors que les notes indiquent avant-bras gauche (G). L'examen mentionne bien le gauche, donc le compte rendu est incohérent avec lui-même et avec les notes. Le reste est fidèle : le doute « possible, origine à préciser » est conservé, la durée de 2 semaines et les 3 semaines du bracelet sont exactes, et le suivi à 1 mois est repris sans modification.",
+      "cout_dollars": 0.0002783
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N06",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Le motif indique « douleur du poignet gauche », alors que les notes mentionnent un poignet droit (« Douleur poignet D »). L'examen du compte rendu indique bien le pouce droit, ce qui rend l'erreur de côté incohérente. Le reste est fidèle : le doute « suspicion de fracture du scaphoïde » est conservé, et la radiographie et la suite sont correctement reportées.",
+      "cout_dollars": 0.0002305
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N08",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Les notes indiquent un œil gauche (« Oeil G »), alors que le compte rendu écrit « Œil droit ». Le côté est inversé, ce qui est une erreur grave. Les autres éléments (rougeur depuis la veille, larmoiement, sensation de sable, vision normale, conclusion conjonctivite, revoir si la vision baisse) sont fidèles.",
+      "cout_dollars": 0.0002113
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N10",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "La conclusion indique « paume droite » alors que les notes disent « paume G » (gauche). Le motif et l'examen sont fidèles, et les autres phrases ne contiennent pas d'autre écart.",
+      "cout_dollars": 0.0001537
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N02",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "Le compte rendu indique une toux sèche depuis 15 jours, alors que les notes indiquent 5 jours. Les autres éléments (écoulement nasal, absence de fièvre, auscultation normale, gorge un peu rouge, rhinopharyngite, consignes de reconsultation) sont fidèles aux notes.",
+      "cout_dollars": 0.0002065
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "Le motif indique « depuis 2 mois » alors que les notes disent « depuis 2 sem. » (2 semaines). Le reste du compte rendu est fidèle : le doute « possible, origine à préciser » est conservé, le côté gauche, le bracelet porté depuis 3 semaines et le suivi à 1 mois correspondent aux notes.",
+      "cout_dollars": 0.00021030000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N07",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "La durée des douleurs est modifiée : les notes indiquent « depuis 10 j », alors que le compte rendu écrit « depuis 1 mois ». Le reste est fidèle : absence de vomissement, transit normal, abdomen souple, absence de conclusion et suite « à revoir » correspondent aux notes.",
+      "cout_dollars": 0.00020360000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N02",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute une radiographie du thorax conditionnelle (« Radiographie du thorax si la toux persiste ») qui n'figure pas dans les notes. Les notes prévoient seulement de revoir le patient si fièvre ou si toux > 3 semaines. Le reste est fidèle : motif, examen, conclusion et la consigne de revoir sont correctement reproduits.",
+      "cout_dollars": 0.00025969999999999997
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N05",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute « Bilan sanguin à faire » dans la suite, alors que les notes ne prévoient qu'un prochain contrôle dans 1 an. Ce bilan sanguin n'apparaît nulle part dans les notes et doit être retiré. Le reste est fidèle : motif, absence de plainte, examen clinique normal, tension 12/8, conclusion et délai de contrôle.",
+      "cout_dollars": 0.00023280000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N08",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute « Examen à la lampe à fente à prévoir », qui ne figure pas dans les notes. Les notes indiquent seulement « Revoir si la vision baisse ». Le reste est fidèle : « depuis hier » devient « depuis la veille », une reformulation acceptable, et l'œil G est bien rendu par « œil gauche ».",
+      "cout_dollars": 0.00021710000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N05",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "omission"
+      ],
+      "explication": "Le compte rendu omet la constatation « Tension 12/8 » figurant dans les notes du médecin. Les autres éléments (motif, absence de plainte, examen clinique normal, conclusion, suite à 1 an) sont fidèles.",
+      "cout_dollars": 0.00018830000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N10",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "omission"
+      ],
+      "explication": "Le compte rendu omet la constatation des notes selon laquelle la mobilité et la sensibilité des doigts sont normales. Le reste est fidèle : la plaie de 2 cm, peu profonde et propre, la conclusion, la suite et le délai de 2 heures sont correctement reportés, et la paume gauche est bien identifiée.",
+      "cout_dollars": 0.0002225
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N02",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : toux sèche depuis cinq jours, rhinorrhée, apyrexie, auscultation normale, gorge un peu rouge, conclusion de rhinopharyngite et consigne de revoir en cas de fièvre ou de toux de plus de 3 semaines. Les seules différences sont des reformulations (abréviations développées, phrases complètes) et l'omission de l'âge et de l'identifiant du patient, qui ne sont pas des constatations cliniques.",
+      "cout_dollars": 0.0003073
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N05",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend toutes les constatations des notes sans ajout ni retrait : visite de contrôle demandée par l'employeur, absence de plainte, examen clinique normal, conclusion normale et prochain contrôle dans un an. La tension « 12/8 » est écrite « 120/80 mmHg », ce qui est une conversion d'unité (cmHg vers mmHg) et non un changement de valeur. Les autres reformulations sont fidèles.",
+      "cout_dollars": 0.0002905
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N08",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (G), rougeur depuis la veille (hier), larmoiement et sensation de sable, vision normale, conclusion de conjonctivite et suite conditionnelle « revoir si la vision baisse ». Seules des abréviations ont été développées et la formulation a été reprise en phrases complètes, sans ajout, omission ni modification de doute ou de côté.",
+      "cout_dollars": 0.0002672
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N10",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : main gauche, coupure au couteau de cuisine il y a 2 heures, plaie de 2 cm, propre et peu profonde (rendue par « superficielle »), mobilité et sensibilité des doigts normales, conclusion et suite identiques. Aucune réserve, durée, côté ou chiffre n'est modifié, et rien n'est ajouté ni omis.",
+      "cout_dollars": 0.0002575
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N06",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu conserve fidèlement les notes : la chute sur la main tendue, la douleur du poignet droit à la base du pouce, la mobilité limitée, et surtout la suspicion de fracture du scaphoïde (le doute n'est pas transformé en certitude) avec la demande de radiographie. La phrase « Nouvelle consultation avec le résultat de la radiographie » reformule « revoir avec la radiographie » sans changer le sens, ce qui est une reformulation admise.",
+      "cout_dollars": 0.0002874
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute de la veille dans un escalier, la douleur de la malléole externe droite, l'œdème modéré, l'appui possible et l'absence de déformation. La conclusion garde le « probable » et la condition « à confirmer si la douleur persiste au-delà de 8 jours » sans la transformer en décision, et « revoir à la demande » est conservé. Aucun ajout, omission ni changement de côté ou de durée.",
+      "cout_dollars": 0.0003009
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "La condition de confirmation est altérée : les notes disent « à confirmer si douleur > 8 j », alors que le compte rendu écrit « à confirmer si la douleur persiste », ce qui supprime le seuil de 8 jours. Le reste est fidèle : chute, côté droit, douleur de la malléole externe, œdème modéré, appui possible, absence de déformation, probable entorse bénigne et révision à la demande.",
+      "cout_dollars": 0.00027330000000000003
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "constatation_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "constatation_modifiee"
+      ],
+      "explication": "Les notes indiquent « appui possible », alors que le compte rendu écrit « appui douloureux ». Ce n'est pas la même constatation : la douleur à l'appui n'est pas notée par le médecin. Le reste est fidèle : « hier » devient « la veille », « > 8 j » devient « au-delà de 8 jours » et « douleur » devient « la douleur persiste », ce qui ne change pas le sens de la condition.",
+      "cout_dollars": 0.0002935
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "reserve_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_modifiee"
+      ],
+      "explication": "Le médecin a noté « eczéma de contact possible », le compte rendu écrit « eczéma de contact probable ». Le niveau de doute est modifié, ce qui change la portée de la conclusion. Le reste est fidèle.",
+      "cout_dollars": 0.00027939999999999996
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N02",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "omission"
+      ],
+      "explication": "Le compte rendu omet le caractère « sèche » de la toux, présent dans les notes (« Toux sèche depuis 5 j »). Le reste est fidèle : durée de 5 jours, écoulement nasal, absence de fièvre, auscultation normale, gorge un peu rouge, conclusion rhinopharyngite et conditions de revue (fièvre ou toux de plus de 3 semaines) sont correctement reproduits.",
+      "cout_dollars": 0.0003552
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N06",
+      "annotation": "a_corriger",
+      "defaut": "constatation_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "autre"
+      ],
+      "explication": "Les notes indiquent « radiographie demandée », alors que le compte rendu écrit « radiographie à envisager ». Il s'agit d'une action déjà décidée, présentée comme une simple possibilité. Le reste est fidèle : la chute, le côté droit, la douleur à la base du pouce, la mobilité limitée, la suspicion de fracture du scaphoïde (le doute est bien conservé) et la suite « revoir avec la radiographie ».",
+      "cout_dollars": 0.000326
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N10",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "Les notes indiquent une coupure survenue il y a 2 h, alors que le compte rendu écrit « dans la journée ». Cette durée doit être rétablie. Le reste (plaie de 2 cm, peu profonde et propre, mobilité et sensibilité des doigts normales, conclusion et suite) est fidèle aux notes.",
+      "cout_dollars": 0.000232
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N09",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout",
+        "reserve_en_decision"
+      ],
+      "explication": "La rubrique Suite annonce un bilan à prévoir à la prochaine consultation, alors que les notes indiquent seulement une conclusion réservée à discuter avec le patient. Le bilan est un ajout non présent dans les notes, et la formulation transforme une réserve en décision. Le reste du compte rendu (motif, sommeil, appétit, examen sans particularité, absence de conclusion) est fidèle.",
+      "cout_dollars": 0.000323
+    },
+    {
+      "juge": "v2",
+      "repetition": 1,
+      "note": "N05",
+      "annotation": "a_corriger",
+      "defaut": "constatation_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute la condition « si tout va bien » à la suite « prochain contrôle dans 1 an ». Les notes ne contiennent pas cette réserve, qui n'a pas été dictée par le médecin. Le reste est fidèle : motif, absence de plainte, examen normal, tension 12/8 et conclusion sont correctement reportés.",
+      "cout_dollars": 0.00029319999999999997
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute de la veille dans un escalier, la douleur de la malléole externe droite, l'œdème modéré, l'appui possible et l'absence de déformation. Le doute du médecin est conservé (« probable entorse bénigne », « à confirmer si la douleur persiste au-delà de 8 jours »), et la suite « revoir à la demande » est identique aux notes. Seules des reformulations sans altération du contenu sont présentes.",
+      "cout_dollars": 0.0002873
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N02",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : toux sèche depuis 5 jours, écoulement nasal, absence de fièvre, auscultation normale, gorge un peu rouge, conclusion de rhinopharyngite et consigne de revoir si fièvre ou toux de plus de 3 semaines. Les seules différences sont des reformulations (abréviations développées, phrases complètes) qui ne modifient ni le sens ni les chiffres.",
+      "cout_dollars": 0.0002905
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N03",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : plaque rouge prurigineuse de l'avant-bras gauche depuis 2 semaines, absence d'autre lésion, nouveau bracelet de montre depuis 3 semaines, conclusion maintenue au conditionnel (« eczéma de contact possible, origine à préciser ») et suivi à 1 mois. Les reformulations (« prurigineuse », « isolée », « porté depuis 3 semaines ») ne modifient ni le sens ni les durées.",
+      "cout_dollars": 0.0003674
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N04",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleur de l'oreille droite depuis 3 jours sans écoulement ni fièvre, tympan droit difficile à voir à cause du cérumen, aucune conclusion, consultation à reprendre après un appel en urgence. Aucune constatation n'est omise, ajoutée ou modifiée.",
+      "cout_dollars": 0.0002723
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N05",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif de visite de contrôle demandée par l'employeur sans plainte, examen clinique normal, tension à 12/8, conclusion d'examen normal et prochain contrôle dans 1 an. Aucune constatation n'est omise, modifiée ou ajoutée, et aucune réserve n'est retirée. Seules la mise en forme et le développement de l'abréviation « Tension » en « Tension artérielle » ont été faits, ce qui n'est pas une erreur.",
+      "cout_dollars": 0.0002436
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N06",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la suspicion de fracture du scaphoïde est conservée, la radiographie demandée et le revoir avec la radiographie figurent, la douleur du poignet et de la base du pouce droits est correctement rapportée, et aucun élément n'est ajouté ni retiré.",
+      "cout_dollars": 0.0002319
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N07",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : douleurs intermittentes depuis 10 jours, surtout après les repas, pas de vomissement, transit normal, abdomen souple, patient pressé et à revoir. Aucune conclusion n'est ajoutée (« aucune », comme dans les notes), et aucune constatation n'est omise ni modifiée.",
+      "cout_dollars": 0.0002771
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N08",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (G), rougeur depuis la veille (hier), larmoiement, sensation de sable, vision normale, conclusion conjonctivite, et la condition « revoir si la vision baisse » est conservée sans être transformée en décision. Seules des abréviations sont développées et les phrases sont réécrites, ce qui n'est pas un défaut.",
+      "cout_dollars": 0.0002364
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N09",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : fatigue depuis 2 mois, sommeil correct, appétit conservé, examen sans particularité, et conclusion réservée à discuter à la prochaine consultation. Il ne retire aucun doute, n'ajoute aucun examen ni diagnostic et ne modifie aucun chiffre. La mention « Conclusion du médecin : aucune » correspond à « conclusion réservée » dans les notes.",
+      "cout_dollars": 0.0003164
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N10",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": false,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : côté gauche, 2 cm, 2 heures, plaie peu profonde et propre, mobilité et sensibilité normales, conclusion et suivi identiques. Seules des abréviations sont développées et les phrases sont complètes, ce qui n'est pas un défaut.",
+      "cout_dollars": 0.00017030000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "reserve_retiree",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_retiree",
+        "omission"
+      ],
+      "explication": "Le compte rendu transforme « probable entorse bénigne » en « Entorse bénigne de la cheville droite », ce qui retire le doute du médecin. La condition « à confirmer si douleur > 8 j » est également omise, alors qu'elle figure dans les notes.",
+      "cout_dollars": 0.0002252
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "reserve_retiree",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_retiree",
+        "conclusion_inventee"
+      ],
+      "explication": "Les notes indiquent « eczéma de contact possible, origine à préciser ». Le compte rendu écrit « Eczéma de contact au bracelet de montre », ce qui retire le doute « possible » et affirme une origine que le médecin n'a pas établie.",
+      "cout_dollars": 0.0003368
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N06",
+      "annotation": "a_corriger",
+      "defaut": "reserve_retiree",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_retiree"
+      ],
+      "explication": "Les notes indiquent une « suspicion de fracture du scaphoïde », mais le compte rendu écrit « Fracture du scaphoïde » dans la conclusion, ce qui transforme un doute en diagnostic certain. Le reste du compte rendu est fidèle aux notes : côté droit, base du pouce, mobilité limitée et suite (revoir avec la radiographie) sont correctement reportés.",
+      "cout_dollars": 0.0002234
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "reserve_en_decision",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_en_decision",
+        "ajout"
+      ],
+      "explication": "La note « à confirmer si douleur > 8 j » devient dans le compte rendu « Consultation de contrôle prévue à 8 jours pour confirmer le diagnostic ». La condition est transformée en décision de contrôle, qui n'existe pas dans les notes. Les autres éléments (chute la veille, cheville droite, malléole externe, œdème modéré, appui possible, pas de déformation, « probable entorse bénigne », « revoir à la demande ») correspondent aux notes.",
+      "cout_dollars": 0.000357
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "reserve_en_decision",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout",
+        "reserve_retiree"
+      ],
+      "explication": "Le compte rendu ajoute « Retrait du bracelet », qui ne figure pas dans les notes. Il écrit aussi « revoir dans 1 mois pour confirmer l'eczéma de contact », alors que les notes ne donnent que « à revoir dans 1 mois » et gardent l'origine « à préciser ». Ce but de contrôle transforme le doute en diagnostic à confirmer. Le reste (motif, examen, conclusion « possible, origine à préciser ») est fidèle.",
+      "cout_dollars": 0.00044689999999999997
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N04",
+      "annotation": "a_corriger",
+      "defaut": "conclusion_inventee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "conclusion_inventee"
+      ],
+      "explication": "Le compte rendu ajoute une conclusion diagnostique (« Otite externe probable ») que les notes ne contiennent pas. Les notes indiquent seulement que le tympan droit est difficile à voir et que la consultation est à reprendre. Le reste est fidèle : côté droit, durée de 3 jours, absence d'écoulement et de fièvre, cérumen, interruption de la consultation.",
+      "cout_dollars": 0.0002198
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N07",
+      "annotation": "a_corriger",
+      "defaut": "conclusion_inventee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "conclusion_inventee"
+      ],
+      "explication": "Le compte rendu ajoute une conclusion absente des notes : « Douleurs abdominales d'allure fonctionnelle ». Les notes ne contiennent aucun diagnostic ni hypothèse de ce type. Le reste est fidèle : le motif, l'examen (pas de vomissement, transit normal, abdomen souple) et la suite (à revoir, patient pressé) correspondent aux notes.",
+      "cout_dollars": 0.0002279
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N09",
+      "annotation": "a_corriger",
+      "defaut": "conclusion_inventee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "conclusion_inventee"
+      ],
+      "explication": "Le compte rendu indique « Fatigue sans cause organique retrouvée » comme conclusion du médecin, alors que les notes disent que la conclusion est réservée et doit être discutée avec le patient. Il s'agit d'une conclusion ajoutée qui ne figure pas dans les notes. Le reste est fidèle.",
+      "cout_dollars": 0.00020480000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Le compte rendu indique « Douleur de la malléole externe gauche » alors que les notes mentionnent « Douleur malléole ext. » de la cheville D (droite). Le côté est inversé dans la partie examen. Le reste est fidèle : le doute « probable » et la condition « à confirmer si douleur > 8 j » sont conservés, et la reformulation de la durée reste équivalente.",
+      "cout_dollars": 0.0002469
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Le motif indique l'avant-bras droit alors que les notes indiquent l'avant-bras gauche (G). L'examen mentionne bien le gauche, donc le compte rendu est incohérent avec lui-même et avec les notes. Le reste est fidèle : le doute « possible, origine à préciser » est conservé, la durée de 2 semaines et 3 semaines et le suivi à 1 mois correspondent aux notes.",
+      "cout_dollars": 0.00024380000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N06",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Le motif indique « douleur du poignet gauche », alors que les notes indiquent un poignet droit (« Douleur poignet D »). L'examen du compte rendu mentionne bien le pouce droit, ce qui rend l'incohérence encore plus nette. Le reste est fidèle : le doute « suspicion de fracture » est conservé et la radiographie et la suite sont correctement reprises.",
+      "cout_dollars": 0.0002315
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N08",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "Les notes indiquent l'oeil gauche (« Oeil G »), alors que le compte rendu écrit « Œil droit ». Le côté est inversé, ce qui est une erreur à corriger. Le reste est fidèle : « depuis hier » devient « depuis la veille », le larmoiement, la sensation de sable, la vision normale, la conclusion de conjonctivite et la condition de revoir si la vision baisse sont correctement rendus.",
+      "cout_dollars": 0.0002143
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N10",
+      "annotation": "a_corriger",
+      "defaut": "cote_inverse",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "cote_inverse"
+      ],
+      "explication": "La conclusion du compte rendu indique « paume droite » alors que les notes du médecin indiquent « paume G » (gauche), et le motif et la suite le confirment comme gauche. Le côté est inversé dans la conclusion. Le reste (2 cm, peu profonde, propre, mobilité et sensibilité normales, il y a 2 h, surveiller la cicatrisation) est fidèle aux notes.",
+      "cout_dollars": 0.00022019999999999999
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N02",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "Le compte rendu indique une toux sèche depuis 15 jours, alors que les notes indiquent 5 jours. Il faut rétablir la durée de 5 jours. Le reste est fidèle : l'écoulement nasal, l'absence de fièvre, l'auscultation normale, la gorge un peu rouge, la conclusion de rhinopharyngite et la condition de revue (fièvre ou toux de plus de 3 semaines).",
+      "cout_dollars": 0.0002585
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "Le motif indique « depuis 2 mois », alors que les notes indiquent « depuis 2 sem. » : la durée de la plainte est modifiée et doit être corrigée en 2 semaines. Le reste est fidèle : le doute « possible, origine à préciser » est conservé, le côté gauche et la durée du bracelet (3 semaines) sont corrects, et aucune constatation n'est omise ni ajoutée.",
+      "cout_dollars": 0.0002408
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N07",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "La durée des douleurs est modifiée : les notes indiquent depuis 10 jours, le compte rendu écrit depuis 1 mois. Le reste est fidèle : absence de vomissement, transit normal, abdomen souple, mention « à revoir » et absence de conclusion, qui correspond aux notes.",
+      "cout_dollars": 0.00021360000000000001
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N02",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute une radiographie du thorax conditionnelle (« si la toux persiste ») que les notes ne mentionnent pas. Les notes prévoient seulement de revoir le patient si fièvre ou si toux > 3 semaines. Le reste (motif, auscultation, gorge un peu rouge, conclusion rhinopharyngite, reprise de revoir si fièvre ou toux > 3 semaines) est fidèle.",
+      "cout_dollars": 0.0002362
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N05",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute « Bilan sanguin à faire » dans la section Suite, alors que les notes ne prévoient qu'un prochain contrôle dans 1 an. Les autres éléments (motif, examen normal, tension 12/8, conclusion, contrôle dans 1 an) sont fidèles aux notes.",
+      "cout_dollars": 0.00022280000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N08",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute « Examen à la lampe à fente à prévoir », qui ne figure pas dans les notes du médecin. Les autres éléments sont fidèles : œil gauche (G), depuis la veille (hier), larmoiement, sensation de sable, vision normale, conclusion conjonctivite et consigne « revoir si la vision baisse ».",
+      "cout_dollars": 0.00023560000000000003
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N05",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "omission"
+      ],
+      "explication": "Le compte rendu omet la constatation de la tension artérielle (12/8) présente dans les notes du médecin. Les autres éléments (motif, absence de plainte, examen clinique normal, conclusion, suite à 1 an) sont fidèles.",
+      "cout_dollars": 0.00019380000000000002
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N10",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": false,
+      "verdict": "a_corriger",
+      "defauts": [
+        "omission"
+      ],
+      "explication": "Le compte rendu omet la constatation des notes selon laquelle la mobilité et la sensibilité des doigts sont normales. Le reste correspond aux notes : plaie de 2 cm, peu profonde et propre, il y a 2 heures, conclusion et suite identiques.",
+      "cout_dollars": 0.000202
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N02",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement chaque élément des notes : toux sèche depuis 5 jours, rhinorrhée, apyrexie, auscultation normale, gorge un peu rouge, conclusion de rhinopharyngite, et la consigne de revoir en cas de fièvre ou de toux dépassant 3 semaines. Aucune constatation n'est omise, modifiée ou ajoutée, et la condition reste une condition, sans être transformée en décision.",
+      "cout_dollars": 0.0002998
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N05",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : visite de contrôle annuelle demandée par l'employeur, absence de plainte, examen clinique normal, conclusion identique et prochain contrôle dans 1 an. La tension « 12/8 » des notes, exprimée en cmHg, correspond à 120/80 mmHg, soit la même valeur écrite dans l'unité usuelle. Aucune constatation n'est omise, ajoutée ou modifiée.",
+      "cout_dollars": 0.000265
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N08",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : œil gauche (G), rougeur depuis la veille (hier), larmoiement, sensation de sable, vision normale, conclusion de conjonctivite et la condition « revoir si la vision baisse » conservée telle quelle. Aucun doute n'est retiré, aucun côté ni délai n'est modifié, et aucun élément n'est ajouté ou omis.",
+      "cout_dollars": 0.00025719999999999996
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N10",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : motif (coupure de la paume gauche au couteau, il y a 2 heures), plaie propre et superficielle de 2 cm (« peu profonde » devient « superficielle », équivalent), mobilité et sensibilité des doigts normales, conclusion et suite identiques. Aucune omission, ajout ni changement de côté, durée ou chiffre.",
+      "cout_dollars": 0.0002655
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N06",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu conserve la suspicion de fracture du scaphoïde, le côté droit, la douleur à la base du pouce, la limitation de mobilité et la demande de radiographie. Développer les abréviations (D en droit, Concl. en conclusion) et reformuler « revoir avec la radiographie » en « nouvelle consultation avec le résultat » ne modifie pas le sens.",
+      "cout_dollars": 0.0002674
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "fidele",
+      "defaut": null,
+      "difficile": true,
+      "verdict": "fidele",
+      "defauts": [],
+      "explication": "Le compte rendu reprend fidèlement les notes : la chute, le côté droit, la douleur de la malléole externe, l'œdème modéré, l'appui possible et l'absence de déformation. La conclusion conserve le doute (« probable entorse bénigne ») et la condition (« à confirmer si la douleur persiste au-delà de 8 jours »), et la suite « revoir à la demande » est identique. Les reformulations (« la veille », « Œdème ») ne changent pas le sens.",
+      "cout_dollars": 0.0002934
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee",
+        "reserve_modifiee"
+      ],
+      "explication": "La condition de la réserve diagnostique est modifiée : les notes disent « à confirmer si douleur > 8 j », alors que le compte rendu écrit « à confirmer si la douleur persiste », ce qui supprime le seuil de 8 jours. Le reste (chute, malléole externe, œdème modéré, appui possible, absence de déformation, revoir à la demande) est fidèle.",
+      "cout_dollars": 0.0002923
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N01",
+      "annotation": "a_corriger",
+      "defaut": "constatation_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "constatation_modifiee"
+      ],
+      "explication": "Les notes indiquent « appui possible », alors que le compte rendu écrit « appui douloureux ». Ce n'est pas la même constatation : le médecin n'a pas noté une douleur à l'appui. Le reste est fidèle : le doute « probable » et la condition « à confirmer si douleur > 8 j » sont conservés, et « au-delà de 8 jours » est une reformulation équivalente.",
+      "cout_dollars": 0.000271
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N03",
+      "annotation": "a_corriger",
+      "defaut": "reserve_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "reserve_modifiee"
+      ],
+      "explication": "La conclusion des notes est « eczéma de contact possible », alors que le compte rendu écrit « probable ». Le médecin a renforcé sa réserve. Le reste est fidèle : côté gauche, durées de 2 et 3 semaines, absence d'autre lésion, « origine à préciser » et suivi à 1 mois.",
+      "cout_dollars": 0.0002474
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N02",
+      "annotation": "a_corriger",
+      "defaut": "omission",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "omission"
+      ],
+      "explication": "Le compte rendu omet le caractère « sèche » de la toux, constatation présente dans les notes (« Toux sèche depuis 5 j »). Le reste est fidèle : durée de 5 jours, écoulement nasal, absence de fièvre, auscultation normale, gorge un peu rouge, conclusion rhinopharyngite et conditions de revue (fièvre ou toux de plus de 3 semaines).",
+      "cout_dollars": 0.0003987
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N06",
+      "annotation": "a_corriger",
+      "defaut": "constatation_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "autre"
+      ],
+      "explication": "La radiographie est « demandée » dans les notes, mais le compte rendu écrit « à envisager ». C'est une décision transformée en simple possibilité, ce qui change la conduite prévue. Le reste correspond aux notes : la suspicion de fracture du scaphoïde est bien conservée, ainsi que le côté droit et la mention de revoir avec la radiographie.",
+      "cout_dollars": 0.000289
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N10",
+      "annotation": "a_corriger",
+      "defaut": "duree_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "duree_modifiee"
+      ],
+      "explication": "Le motif indique « dans la journée » alors que les notes précisent « il y a 2 h ». La durée est modifiée et doit être rétablie. Le reste (plaie de 2 cm, peu profonde et propre, mobilité et sensibilité normales, conclusion et suite) correspond aux notes.",
+      "cout_dollars": 0.0002285
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N09",
+      "annotation": "a_corriger",
+      "defaut": "ajout",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout",
+        "reserve_en_decision"
+      ],
+      "explication": "Les notes indiquent seulement « Conclusion réservée, à discuter avec le patient à la prochaine consultation ». Le compte rendu ajoute une suite qui n'existe pas dans les notes, « Bilan à prévoir à la prochaine consultation », et transforme ainsi la réserve en décision de bilan. Il faudrait écrire que la conclusion est réservée et doit être discutée avec le patient à la prochaine consultation, sans mentionner de bilan.",
+      "cout_dollars": 0.0003115
+    },
+    {
+      "juge": "v2",
+      "repetition": 2,
+      "note": "N05",
+      "annotation": "a_corriger",
+      "defaut": "constatation_modifiee",
+      "difficile": true,
+      "verdict": "a_corriger",
+      "defauts": [
+        "ajout"
+      ],
+      "explication": "Le compte rendu ajoute « si tout va bien » à la suite « prochain contrôle dans 1 an », alors que les notes ne contiennent aucune condition. Le reste est fidèle : motif, absence de plainte, examen normal, tension 12/8 et conclusion sont correctement reportés.",
+      "cout_dollars": 0.00024319999999999998
+    }
+  ]
+}

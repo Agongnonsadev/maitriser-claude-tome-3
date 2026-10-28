@@ -1,0 +1,2219 @@
+{
+ "date": "2026-10-27",
+ "modele": "claude-haiku-5-5",
+ "source": "echantillon-v1-v2-2026-10-27-1936.json",
+ "depense_dollars": 0.032937,
+ "resume": {
+  "auto": {
+   "champs_faux": 14,
+   "trouves": 14,
+   "manques": 0,
+   "fausses_alertes": 56,
+   "documents_fautifs_reperes": 13,
+   "documents_fautifs": 13,
+   "documents_justes_signales": 47,
+   "documents_justes": 57,
+   "depense_dollars": 0.022011
+  },
+  "independante": {
+   "champs_faux": 14,
+   "trouves": 14,
+   "manques": 0,
+   "fausses_alertes": 81,
+   "documents_fautifs_reperes": 13,
+   "documents_fautifs": 13,
+   "documents_justes_signales": 55,
+   "documents_justes": 57,
+   "depense_dollars": 0.010926
+  }
+ },
+ "relectures": [
+  {
+   "mode": "auto",
+   "document": "arch-0986",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00031130000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0811",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.000309
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0524",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003111
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0833",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003128
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0870",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003146
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0049",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003063
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0681",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "contrat_a",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "contrat_a",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00032480000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0460",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003095
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1095",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003143
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0645",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00031340000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0238",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00031190000000000005
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1077",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00031860000000000005
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0333",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.00031610000000000004
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0709",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003126
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1061",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003117
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0553",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0003086
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1002",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00032
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0713",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.000314
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0791",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00031240000000000006
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0099",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003199
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0815",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003122
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1016",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003108
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0960",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003182
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0279",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003167
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0470",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003097
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0024",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003174
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0537",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.000317
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0028",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003088
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0488",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003115
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0215",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003143
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0048",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0003199
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0967",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.00031130000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0839",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "blesses",
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses",
+    "heure"
+   ],
+   "cout_dollars": 0.00031519999999999996
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0636",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003202
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0963",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.00032290000000000004
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0726",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003167
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0981",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003168
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0800",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0003147
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0374",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00031590000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0084",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003196
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0103",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0003133
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1064",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0003153
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1073",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "date_accident"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "date_accident"
+   ],
+   "cout_dollars": 0.00031390000000000004
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1047",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0003202
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1055",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0003127
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0323",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.00031610000000000004
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1035",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0003207
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0311",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.00031410000000000005
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0678",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0003193
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0298",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.00031410000000000005
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0206",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0003115
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0089",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003109
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0696",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003167
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0640",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003076
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0104",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003115
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0444",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003174
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0685",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003083
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0651",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003163
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0081",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003174
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0565",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0003073
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0983",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0003088
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0708",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00031560000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-1037",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0003133
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0216",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "heure",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0003199
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0178",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003125
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0463",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.000309
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0166",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure",
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure",
+    "plaque_a"
+   ],
+   "cout_dollars": 0.00031340000000000003
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0317",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0003129
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0528",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.00031890000000000005
+  },
+  {
+   "mode": "auto",
+   "document": "arch-0714",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0003193
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0986",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "assureur_b",
+    "blesses",
+    "contrat_a",
+    "date_accident",
+    "heure",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b",
+    "blesses",
+    "contrat_a",
+    "date_accident",
+    "heure",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001722
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0811",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "assureur_b",
+    "blesses",
+    "contrat_a",
+    "date_accident",
+    "heure",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b",
+    "blesses",
+    "contrat_a",
+    "date_accident",
+    "heure",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00016790000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0524",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.000155
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0833",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015370000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0870",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "date_accident",
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "date_accident",
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0001615
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0049",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00014720000000000003
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0681",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001577
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0460",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "contrat_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "contrat_a"
+   ],
+   "cout_dollars": 0.0001504
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1095",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001552
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0645",
+   "difficulte": "propre",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001573
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0238",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001528
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1077",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001585
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0333",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.000157
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0709",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00015
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1061",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001526
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0553",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001495
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1002",
+   "difficulte": "ocr",
+   "faux": [],
+   "signales": [
+    "date_accident",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "date_accident",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001629
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0713",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001549
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0791",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a"
+   ],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [
+    "plaque_a"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00015230000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0099",
+   "difficulte": "ocr",
+   "faux": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_a",
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001598
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0815",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015309999999999998
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1016",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015170000000000003
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0960",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001581
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0279",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015759999999999998
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0470",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001506
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0024",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001573
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0537",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015690000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0028",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001497
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0488",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "date_accident"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "date_accident"
+   ],
+   "cout_dollars": 0.0001519
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0215",
+   "difficulte": "plaque_partielle",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001552
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0048",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001608
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0967",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001522
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0839",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001536
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0636",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "heure",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001631
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0963",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001628
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0726",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001591
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0981",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00016070000000000003
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0800",
+   "difficulte": "heure_double",
+   "faux": [],
+   "signales": [
+    "date_accident",
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "date_accident",
+    "heure"
+   ],
+   "cout_dollars": 0.0001571
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0374",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.00015580000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0084",
+   "difficulte": "heure_double",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001605
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0103",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0001532
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1064",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0001552
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1073",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses",
+    "date_accident"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses",
+    "date_accident"
+   ],
+   "cout_dollars": 0.0001573
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1047",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.00016109999999999999
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1055",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0001536
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0323",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses",
+    "date_accident"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses",
+    "date_accident"
+   ],
+   "cout_dollars": 0.00016
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1035",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.0001616
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0311",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000155
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0678",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.00015920000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0298",
+   "difficulte": "blesses_contradictoire",
+   "faux": [],
+   "signales": [
+    "blesses"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "blesses"
+   ],
+   "cout_dollars": 0.000153
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0206",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "contrat_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "contrat_a"
+   ],
+   "cout_dollars": 0.00015240000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0089",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001518
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0696",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001601
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0640",
+   "difficulte": "assureur_abrege",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001485
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0104",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.00015240000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0444",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001583
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0685",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001492
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0651",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.00015920000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0081",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001583
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0565",
+   "difficulte": "assureur_abrege",
+   "faux": [],
+   "signales": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015470000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0983",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001496
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0708",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "heure",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.0001584
+  },
+  {
+   "mode": "independante",
+   "document": "arch-1037",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.00015309999999999998
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0216",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [],
+   "cout_dollars": 0.0001577
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0178",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "assureur_b",
+    "contrat_a",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b",
+    "contrat_a",
+    "plaque_a",
+    "plaque_b"
+   ],
+   "cout_dollars": 0.0001604
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0463",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "plaque_b"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_b"
+   ],
+   "cout_dollars": 0.00015030000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0166",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "plaque_a"
+   ],
+   "cout_dollars": 0.0001522
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0317",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "heure"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "heure"
+   ],
+   "cout_dollars": 0.00015370000000000002
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0528",
+   "difficulte": "manquant",
+   "faux": [
+    "plaque_b"
+   ],
+   "signales": [
+    "assureur_b",
+    "plaque_b"
+   ],
+   "trouves": [
+    "plaque_b"
+   ],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b"
+   ],
+   "cout_dollars": 0.0001598
+  },
+  {
+   "mode": "independante",
+   "document": "arch-0714",
+   "difficulte": "manquant",
+   "faux": [],
+   "signales": [
+    "assureur_b",
+    "plaque_a"
+   ],
+   "trouves": [],
+   "manques": [],
+   "fausses_alertes": [
+    "assureur_b",
+    "plaque_a"
+   ],
+   "cout_dollars": 0.00016020000000000002
+  }
+ ]
+}

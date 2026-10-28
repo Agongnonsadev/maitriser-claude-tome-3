@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "fichier": "kanvo.json",
+  "marge": 1.5,
+  "mesure": false,
+  "depense_mesure_dollars": 0.0,
+  "chiffrages": [
+    {
+      "cas": "declaration",
+      "nom": "Aider l'assuré à déclarer son sinistre",
+      "modele": "claude-sonnet-5-5",
+      "unite": "déclaration",
+      "unites_par_mois": 2400,
+      "tours": 6,
+      "tokens_systeme": 245,
+      "tokens_message": 106,
+      "tokens_reponse": 250,
+      "reponse_mesuree": false,
+      "tokens_reflexion": 0,
+      "cout_unite": 0.029892,
+      "cout_mois": 71.7408,
+      "cout_mois_avec_marge": 107.6112
+    },
+    {
+      "cas": "declaration",
+      "nom": "Aider l'assuré à déclarer son sinistre",
+      "modele": "claude-haiku-5-5",
+      "unite": "déclaration",
+      "unites_par_mois": 2400,
+      "tours": 6,
+      "tokens_systeme": 245,
+      "tokens_message": 106,
+      "tokens_reponse": 250,
+      "reponse_mesuree": false,
+      "tokens_reflexion": 0,
+      "cout_unite": 0.0014946,
+      "cout_mois": 3.58704,
+      "cout_mois_avec_marge": 5.38056
+    },
+    {
+      "cas": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "modele": "claude-haiku-5-5",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "tokens_systeme": 161,
+      "tokens_message": 278,
+      "tokens_reponse": 300,
+      "reponse_mesuree": false,
+      "tokens_reflexion": 0,
+      "cout_unite": 0.0001939,
+      "cout_mois": 0.21329,
+      "cout_mois_avec_marge": 0.319935
+    },
+    {
+      "cas": "constats",
+      "nom": "Extraire les données des constats amiables",
+      "modele": "claude-sonnet-5-5",
+      "unite": "constat",
+      "unites_par_mois": 1100,
+      "tours": 1,
+      "tokens_systeme": 161,
+      "tokens_message": 278,
+      "tokens_reponse": 300,
+      "reponse_mesuree": false,
+      "tokens_reflexion": 0,
+      "cout_unite": 0.003878,
+      "cout_mois": 4.2658,
+      "cout_mois_avec_marge": 6.3987
+    }
+  ]
+}

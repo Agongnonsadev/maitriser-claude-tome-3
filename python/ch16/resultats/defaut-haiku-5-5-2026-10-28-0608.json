@@ -1,0 +1,2267 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "taches": [
+    "defaut"
+  ],
+  "variantes": null,
+  "repetitions": 4,
+  "depense_dollars": 0.076674,
+  "resume": {
+    "defaut:prose": {
+      "seances": 4,
+      "fins": {
+        "success": 4
+      },
+      "cout_total": 0.019024,
+      "cout_moyen": 0.004756,
+      "cout_recalcule_total": 0.019024,
+      "tours_moyens": 8.5,
+      "contexte_final_median": 26380.0,
+      "lectures_principales_moyennes": 3.8,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "quittances/echeancier.py": 4
+      },
+      "latence_mediane_s": 29.549999999999997,
+      "conventions": {
+        "reliquat réparti": 2,
+        "dernière ajustée, les autres arrondies": 2
+      },
+      "conformes": 0,
+      "total_juste": 4,
+      "autres_fichiers_modifies": {},
+      "commandes_pytest_moyennes": 0
+    },
+    "defaut:regle": {
+      "seances": 4,
+      "fins": {
+        "success": 4
+      },
+      "cout_total": 0.020673,
+      "cout_moyen": 0.005168,
+      "cout_recalcule_total": 0.020673,
+      "tours_moyens": 9.2,
+      "contexte_final_median": 27320.0,
+      "lectures_principales_moyennes": 3.5,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "quittances/echeancier.py": 4
+      },
+      "latence_mediane_s": 30.45,
+      "conventions": {
+        "mêlée : première ajustée, les autres arrondies, reliquat sur la première": 1,
+        "première ajustée, les autres arrondies": 3
+      },
+      "conformes": 0,
+      "total_juste": 4,
+      "autres_fichiers_modifies": {},
+      "commandes_pytest_moyennes": 0
+    },
+    "defaut:exemples": {
+      "seances": 4,
+      "fins": {
+        "success": 4
+      },
+      "cout_total": 0.018619,
+      "cout_moyen": 0.004655,
+      "cout_recalcule_total": 0.018619,
+      "tours_moyens": 8,
+      "contexte_final_median": 25170.5,
+      "lectures_principales_moyennes": 2.8,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "quittances/echeancier.py": 4
+      },
+      "latence_mediane_s": 27.55,
+      "conventions": {
+        "reliquat sur la première": 4
+      },
+      "conformes": 4,
+      "total_juste": 4,
+      "autres_fichiers_modifies": {},
+      "commandes_pytest_moyennes": 0
+    },
+    "defaut:tests": {
+      "seances": 4,
+      "fins": {
+        "success": 4
+      },
+      "cout_total": 0.018359,
+      "cout_moyen": 0.00459,
+      "cout_recalcule_total": 0.018359,
+      "tours_moyens": 7.8,
+      "contexte_final_median": 25574.5,
+      "lectures_principales_moyennes": 3.2,
+      "lectures_sous_agent_moyennes": 0,
+      "sous_agent": 0,
+      "fichiers_modifies": {
+        "quittances/echeancier.py": 4
+      },
+      "latence_mediane_s": 28.6,
+      "conventions": {
+        "reliquat sur la première": 4
+      },
+      "conformes": 4,
+      "total_juste": 4,
+      "autres_fichiers_modifies": {},
+      "commandes_pytest_moyennes": 0,
+      "tests_intacts": 4
+    }
+  },
+  "seances": [
+    {
+      "tache": "defaut",
+      "variante": "prose",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py`. Je n'ai pas pu exécuter le code : l'outil Bash a été refusé dans cette session. La vérification ci-dessous est donc faite à la main.\n\n**Le bug** : `int(prime / n)` tronque chaque quittance. Pour 134 318 FCFA en 12 mois, cela donne 11 193 × 12 = 134 316, soit 2 FCFA de moins.\n\n**La correction** : chaque quittance est la différence entre deux cumuls arrondis avec `montants.arrondir_fcfa()`, comme le demande `.claude/rules/montants.md`. Le cumul final vaut exactement la prime, donc la somme des quittances est égale à la prime annuelle. Je n'ai pas touché aux autres arrondis, conformément à la règle du ticket DSI-2019-114.\n\n**Résultat à la main pour 134 318 FCFA en mensuel** : les quittances sont de 11 193 FCFA, sauf trois de 11 194 FCFA et une de 11 192 FCFA (la dernière). Le total fait 134 318 FCFA.\n\n**Choix à valider** : j'ai réparti le reliquat par arrondi cumulé. La comptabilité préfère peut-être que l'écart tombe sur la première quittance, ou sur la dernière comme ici. Dans ce cas, il suffit de changer le calcul.\n\n**Vérification à faire** sur la base de recette :\n- `python lancer.py creer-base`\n- Appeler `echeancier(134318, date, 'mensuel')` et contrôler que `total(lignes)` vaut 134 318.\n- Faire la même vérification pour un contrat trimestriel et pour un contrat annuel.\n\nJe n'ai pas vérifié les autres appelants de `echeancier()` (impression des quittances, rapports) : il faut contrôler qu'ils n'attendent pas une quittance unique identique pour toutes les échéances.",
+      "tours": 6,
+      "cout_dollars": 0.004054555,
+      "cout_recalcule": 0.004054555,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 4238,
+          "cacheReadInputTokens": 76838,
+          "cacheCreationInputTokens": 9331,
+          "webSearchRequests": 0,
+          "costUSD": 0.004054555,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2415
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-dqs8pw9v/depot\" && ls -R | head -80 && echo ---- && cat quittances/echeancier.py && echo ---- && cat util/montants.py && ls .claude/rules 2>/dev/null && cat .claude/rules/* 2>/dev/null"
+      ],
+      "contexte_final": 24200,
+      "contexte_max": 24200,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11193,
+              11193,
+              11194
+            ],
+            "total": 134318,
+            "classe": "reliquat réparti"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8334,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "reliquat réparti"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25001,
+              25001,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat réparti"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10001,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "reliquat réparti"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25000,
+              25000,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat réparti"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20834,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "reliquat réparti"
+          }
+        },
+        "convention": "reliquat réparti",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -2,3 +2,3 @@\n # Echeancier des quittances selon le fractionnement. AB 2013\n-from util import dates\n+from util import dates, montants\n \n@@ -10,6 +10,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n     lignes = []\n+    # Chaque quittance est la difference de deux cumuls arrondis : la somme tombe\n+    # exactement sur la prime annuelle, les centimes restants vont aux bonnes echeances.\n+    cumul_avant = 0\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        cumul_apres = montants.arrondir_fcfa(prime_annuelle * (i + 1) / n)\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), cumul_apres - cumul_avant))\n+        cumul_avant = cumul_apres\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "1f271d86-ed3a-4e05-92e6-95e955403fb2",
+      "parties": 1,
+      "latence_s": 27.8,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "regle",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py` pour que le total des quittances soit égal à la prime annuelle. Je n'ai pas pu l'exécuter : l'outil Bash a été refusé dans cette session, donc la vérification est faite à la main.\n\n**Modification**\n- Le montant des échéances suivantes est `arrondir_fcfa(prime_annuelle / n)`. C'est le helper demandé par `.claude/rules/montants.md`, qui remplace l'ancien `int()` qui tronquait.\n- La première quittance prend le solde : `prime_annuelle - montant * (n - 1)`. Le reliquat va donc sur elle.\n- L'import `from util.montants import arrondir_fcfa` suit le style de `quittances/quittance.py`.\n\n**Vérification à la main (calcul sur papier)**\n- Mensuel, KA-AUTO-0412 : 134 318 / 12 = 11 193,17, arrondi à 11 193. Première quittance : 134 318 − 11 × 11 193 = 11 195. Total : 11 195 + 11 × 11 193 = 134 318. ✓\n- Annuel : une seule échéance de 134 318. ✓\n- Trimestriel : 134 318 / 4 = 33 579,5, arrondi à 33 580 (demi vers le haut). Première : 33 578, total 134 318. ✓\n\nPour le contrôler sur la base de recette : `python lancer.py creer-base`, puis une prime fractionnée mensuellement avec `python lancer.py prime <numéro>`, et vérifier que les 12 quittances sont de 11 193 FCFA, la première de 11 195 FCFA, pour un total de 134 318 FCFA. Le total doit aussi égaler la prime annuelle.\n\n**Points à connaître**\n- Je n'ai relu que `echeancier.py`, `util/montants.py`, `quittance.py` et l'appel dans `contrats/contrat.py`. Je n'ai pas revu `primes/`.\n- Si `prime_annuelle` était un flottant avec des centimes, le reliquat serait aussi flottant. Je suppose qu'elle est entière, comme l'indique la règle des montants.\n- Je n'ai pas touché aux autres arrondis du dépôt, en particulier ceux de `primes/` qui utilisent `int()`. La règle demande un ticket pour les corriger (DSI-2019-114), et ce ticket ne les couvre pas.",
+      "tours": 9,
+      "cout_dollars": 0.004876415,
+      "cout_recalcule": 0.004876415,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4863,
+          "cacheReadInputTokens": 101504,
+          "cacheCreationInputTokens": 11431,
+          "webSearchRequests": 0,
+          "costUSD": 0.004876415,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2311
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Glob",
+        "Glob",
+        "Read",
+        "Grep",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-wx42lw2l/depot\" && ls -la && ls -la quittances .claude/rules 2>/dev/null; cat quittances/echeancier.py; echo ----; cat util/montants.py 2>/dev/null",
+        "cd \"<temp>/kanvo-ch16-wx42lw2l/depot\" && cat .claude/rules/* 2>/dev/null; echo ----; ls primes; echo ----; cat primes/*.py | head -300"
+      ],
+      "contexte_final": 26300,
+      "contexte_max": 26300,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8332,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25000,
+              25001,
+              25001
+            ],
+            "total": 100003,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10000,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              24999,
+              25000,
+              25000
+            ],
+            "total": 99999,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20833,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "première ajustée, les autres arrondies"
+          }
+        },
+        "convention": "mêlée : première ajustée, les autres arrondies, reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +11,9 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    montant = arrondir_fcfa(prime_annuelle / n)\n+    # le reliquat de l'arrondi (ex. 2 FCFA sur 134 318 / 12) est porte par la premiere quittance\n+    premiere = prime_annuelle - montant * (n - 1)\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = premiere if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "fbdb9d2b-28c2-41b8-9769-9f7b3a86d033",
+      "parties": 1,
+      "latence_s": 27.6,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "exemples",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai modifié `quittances/echeancier.py`, mais je n'ai pas pu lancer le moindre test : l'exécution de Bash a été refusée (mode « don't ask »). Les trois exemples ne sont vérifiés qu'à la main, et je n'ai pas retenté l'appel.\n\n**Changement** (`quittances/echeancier.py`, fonction `echeancier`) : chaque quittance courante prend la part entière de la prime (`prime_annuelle // n`), et la première quittance ajoute le reliquat (`prime_annuelle - montant * n`). Le total vaut donc toujours la prime annuelle. `total()` et le reste du fichier ne sont pas touchés.\n\n**Vérification à la main :**\n- `echeancier(134318, …, 'mensuel')` : 134318 // 12 = 11193, reliquat 2 → 11195, puis onze fois 11193. Total 134316 + 2 = 134318 ✓\n- `echeancier(100006, …, 'mensuel')` : 100006 // 12 = 8333, reliquat 10 → 8343, puis onze fois 8333. Total 100006 ✓\n- `echeancier(100003, …, 'trimestriel')` : 100003 // 4 = 25000, reliquat 3 → 25003, 25000, 25000, 25000. Total 100003 ✓\n\nPour vérifier sur la base de recette : `python lancer.py creer-base`, puis `python lancer.py prime KA-AUTO-0193` et le contrôle de l'échéancier du contrat KA-AUTO-0412. Le total des lignes doit égaler la prime annuelle.\n\n**Point à trancher : conflit avec la règle `.claude/rules/montants.md`.** Elle demande que tout nouveau calcul de montant passe par `arrondir_fcfa()` et interdit `int()`. J'ai écrit `//` (troncature) parce que c'est la seule façon d'obtenir vos montants attendus. Avec `arrondir_fcfa(prime / n)`, le cas 100006 donnerait 8334 puis 8332, et le cas 100003 donnerait 25001 puis 25000 : ce ne sont pas vos exemples. Le reliquat absorbe bien la troncature, donc aucun franc n'est perdu, mais la règle n'est pas respectée à la lettre. Si vous préférez la règle, il faudra accepter d'autres montants pour la première et les suivantes ; dites-le-moi et je change.\n\nJe n'ai pas touché à `util/montants.py` ni aux autres calculs d'arrondi du dépôt, conformément au CLAUDE.md, mais le fichier `prime` et les calculs de primes arrondis autrement ne sont pas revus ici.",
+      "tours": 7,
+      "cout_dollars": 0.004647505,
+      "cout_recalcule": 0.004647505,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4590,
+          "cacheReadInputTokens": 102663,
+          "cacheCreationInputTokens": 10599,
+          "webSearchRequests": 0,
+          "costUSD": 0.004647505,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2621
+        }
+      },
+      "outils": [
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Edit",
+        "Bash"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py",
+        ".claude/rules/base.md"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-zzms4hfx/depot\" && python -I -c \"import sys; sys.path.insert(0,'.'); from quittances.echeancier import echeancier, total; [print(x, total(x)) for x in [echeancier(134318,'15/01/2026','mensuel'), echeancier(100006,'01/03/2026','mensuel'), echeancier(100003,'01/03/2026','trimestriel')]]\""
+      ],
+      "contexte_final": 25468,
+      "contexte_max": 25468,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -10,6 +10,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    # Les quittances courantes prennent la part entiere de la prime ; la premiere\n+    # porte le reliquat, pour que le total soit exactement la prime annuelle (DSI-2026-031).\n+    montant = prime_annuelle // n\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "9f9d178a-8aed-45be-9e09-aa92c32d2ce5",
+      "parties": 1,
+      "latence_s": 28.6,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "tests",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "Je n'ai pas pu lancer les tests : l'outil Bash est refusé dans cette session. Je vérifie donc à la main.\n\n**Modification faite** dans `quittances/echeancier.py` :\n- `int(prime_annuelle / n)` est remplacé par une prime arrondie au franc avec `arrondir_fcfa()`, puis une division entière `prime // n`.\n- Le reliquat `prime - montant * n` est ajouté à la première quittance.\n- Le fichier de tests n'a pas été touché.\n\n**Vérification à la main des cas de `tests/test_echeancier.py` :**\n- Mensuel 134318 : 134318 // 12 = 11193, reliquat 2 → `[11195] + [11193]*11`, total 134318. ✓\n- Mensuel 100006 : 100006 // 12 = 8333, reliquat 10 → `[8343] + [8333]*11`, total 100006. ✓\n- Trimestriel 100003 : 100003 // 4 = 25000, reliquat 3 → `[25003, 25000, 25000, 25000]`. ✓\n- Annuel 60000 : une seule ligne `('10/05/2026', 60000)`, inchangé. ✓ Ce résultat suppose que `dates.ajouter_mois` renvoie une chaîne, ce que je n'ai pas relu.\n- Dates : inchangées, le code de `dates.ajouter_mois` n'a pas été modifié.\n\n**Choix que je signale :**\n- J'ai évité `arrondir_fcfa()` pour la répartition elle-même : il arrondit au plus proche (100006/12 donnerait 8334 et non 8333, ce que les tests refusent). Le plancher vient de la division entière, l'arrondi de `arrondir_fcfa()` ne sert qu'à ramener la prime en francs entiers, conformément à `.claude/rules/montants.md`.\n- Je n'ai pas touché aux autres `int()` / `round()` du dépôt : `.claude/rules/montants.md` et le ticket DSI-2019-114 interdisent de corriger les calculs existants sans ticket. Ce ticket-ci concerne l'échéancier seul.\n\n**Pour vérifier vous-même**, depuis le dossier du dépôt :\n```\npython -m pytest tests/test_echeancier.py\n```\nPuis, sur la base de recette : `python lancer.py prime KA-AUTO-0193` (contrat fractionné mensuel) et contrôler que la somme des quittances de l'échéancier égale la prime annuelle.\n\nRemarque hors périmètre : `primes/` et `primes/prorata.py` utilisent encore `int()`, et la prime est reçue ici comme entier ; si une prime pouvait avoir des décimales, le total ne serait plus égal à la prime avant arrondi. Je n'ai pas vérifié ces modules.",
+      "tours": 9,
+      "cout_dollars": 0.004874765,
+      "cout_recalcule": 0.0048747650000000005,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4749,
+          "cacheReadInputTokens": 103014,
+          "cacheCreationInputTokens": 11753,
+          "webSearchRequests": 0,
+          "costUSD": 0.004874765,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1953
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Grep",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "tests/test_echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd <temp>/kanvo-ch16-lpsd84jw/depot 2>/dev/null || cd \"<temp>/kanvo-ch16-lpsd84jw/depot\"; ls -la; ls -la quittances tests util primes .claude/rules 2>&1; cat quittances/echeancier.py; echo ----; cat tests/test_echeancier.py",
+        "cd \"<temp>/kanvo-ch16-lpsd84jw/depot\"; cat .claude/rules/* 2>/dev/null; echo ----; cat util/montants.py 2>/dev/null; echo ----; grep -rn \"echeancier\" --include=*.py . | head -30"
+      ],
+      "contexte_final": 26622,
+      "contexte_max": 26622,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +11,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    prime = arrondir_fcfa(prime_annuelle)\n+    montant = prime // n\n+    reliquat = prime - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        # le reliquat (quelques francs) va sur la premiere quittance\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "tests_intacts": true,
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "29517bcf-2046-49a8-a264-e8c7048a4885",
+      "parties": 1,
+      "latence_s": 36.3,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "prose",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py` : le total des quittances est maintenant égal à la prime annuelle. Je n'ai pas pu l'exécuter, car l'outil Bash a été refusé. La vérification est donc faite à la main, sur le calcul.\n\n**Cause :** `int(prime_annuelle / n)` tronque. Pour KA-AUTO-0412, 134 318 / 12 = 11 193,17, tronqué à 11 193. Les 12 quittances font 134 316, soit 2 FCFA de moins. Le même défaut touche tous les contrats fractionnés.\n\n**Correction :**\n- Chaque quittance vaut `arrondir_fcfa(prime / n)`, comme le demande `.claude/rules/montants.md`. Le `int()` disparaît.\n- La dernière quittance porte l'écart d'arrondi : prime − montant × (n − 1).\n- La prime est d'abord arrondie au franc, pour que le total reste entier même si un montant décimal arrive en entrée.\n\n**Résultat attendu pour KA-AUTO-0412 (mensuel, 134 318 FCFA) :** 11 quittances de 11 193 FCFA, puis une de 11 195 FCFA. Total : 134 318 FCFA.\n\n**Vérification à la main sur la base de recette :**\n1. `python lancer.py creer-base`, puis créer un contrat auto en mensuel dont la prime annuelle tombe sur un reste non nul (par exemple 134 318 FCFA).\n2. Lancer `python lancer.py prime <numéro>` et regarder les quittances du contrat : 12 lignes, la dernière de 11 195 FCFA.\n3. Vérifier que la somme des 12 quittances égale la prime annuelle. Un contrat annuel doit garder une seule quittance égale à la prime.\n\n**Limites :**\n- Seuls les contrats créés après la correction reçoivent le nouvel échéancier. Les quittances déjà enregistrées en base ne changent pas. Si la comptabilité veut les corriger, il faut une décision séparée : la règle DSI-2019-114 interdit de toucher aux arrondis déjà facturés sans ticket.\n- Hors périmètre, donc non corrigé : `primes/calcul.py` (`prime_avec_frais` utilise `int()`), `primes/prorata.py` (`round()`). Ils relèvent de la même règle d'arrondi et méritent un examen séparé.",
+      "tours": 11,
+      "cout_dollars": 0.00525849,
+      "cout_recalcule": 0.00525849,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4179,
+          "cacheReadInputTokens": 137979,
+          "cacheCreationInputTokens": 14304,
+          "webSearchRequests": 0,
+          "costUSD": 0.00525849,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1612
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Edit",
+        "Grep"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        ".claude/rules/montants.md",
+        "util/montants.py",
+        "primes/calcul.py",
+        "quittances/quittance.py",
+        ".claude/rules/base.md",
+        "quittances/echeancier.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-76bs8_zl/depot\" && ls -la && ls -la quittances primes util .claude/rules 2>/dev/null && cat quittances/echeancier.py",
+        "cd \"<temp>/kanvo-ch16-76bs8_zl/depot\" && cat .claude/rules/* 2>/dev/null; echo ---; cat util/montants.py; echo ---; cat primes/*.py | head -300"
+      ],
+      "contexte_final": 29173,
+      "contexte_max": 29173,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11193,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la dernière"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8334,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25001,
+              25001,
+              25001
+            ],
+            "total": 100003,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10001,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25000,
+              25000,
+              25000
+            ],
+            "total": 99999,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20834,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "dernière ajustée, les autres arrondies"
+          }
+        },
+        "convention": "dernière ajustée, les autres arrondies",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -8,8 +9,14 @@\n def echeancier(prime_annuelle, date_effet, fractionnement='annuel'):\n+    # Le total des quittances doit egaler la prime annuelle (DSI-2026-031) :\n+    # les quittances valent le montant arrondi, la derniere porte l'ecart d'arrondi.\n     n = NB_ECHEANCES.get(fractionnement, 1)\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    prime = arrondir_fcfa(prime_annuelle)\n+    montant = arrondir_fcfa(prime / n)\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant\n+        if i == n - 1:\n+            m = prime - montant * (n - 1)\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "84b03432-1f8b-4f5d-a3e8-9775a4df2370",
+      "parties": 1,
+      "latence_s": 30.3,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "regle",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py`. Je n'ai pas pu lancer Python : l'exécution de commandes a été refusée. Le contrôle ci-dessous est donc fait à la main.\n\n**Ce qui change**\n- Le montant courant passe par `arrondir_fcfa()` au lieu de `int()`, que demande `.claude/rules/montants.md`.\n- La prime annuelle est d'abord arrondie au franc.\n- Le reliquat de l'arrondi (prime − montant × n) est ajouté à la première quittance, comme le demande la comptabilité.\n- La signature de `echeancier()`, la liste `NB_ECHEANCES` et `total()` ne bougent pas.\n\n**Vérification à la main**\n- KA-AUTO-0412, mensuel, prime 134 318 : 134318/12 = 11193,17, arrondi à 11193. Reliquat = 134318 − 134316 = 2. Première quittance 11 195, les 11 suivantes 11 193. Total = 11195 + 123123 = **134 318**.\n- Trimestriel, même prime : 33579,5 arrondi à 33580, reliquat −2. Première quittance 33 578, les trois autres 33 580. Total = **134 318**.\n- Annuel : une seule quittance de 134 318, reliquat 0.\n\n**Pour contrôler sur la base de recette**\n- `python lancer.py creer-base`, puis créer un contrat mensuel avec `creer_contrat` (par exemple depuis le menu).\n- Vérifier que la somme des montants de ses quittances égale `prime_annuelle` du contrat, et que la première quittance porte le reliquat.\n\n**À savoir**\n- Seuls les contrats créés après ce changement sont concernés. Les quittances déjà enregistrées en base (dont celles du ticket) ne sont pas recalculées. Recalculer des quittances déjà facturées est une décision de la comptabilité, à traiter sur un ticket à part.\n- Je ne sais pas si `primes/calcul.py` renvoie une prime entière : je ne l'ai pas lu. Si la prime contient des décimales, l'arrondi de `echeancier` la ramène au franc. La prime enregistrée sur le contrat, elle, n'est pas modifiée.\n- Le ticket parle de « tous les contrats fractionnés ». Le `int()` tronqué peut aussi se trouver ailleurs (`primes/` ou `primes/prorata.py`). Je ne les ai pas revus et ne les ai pas corrigés, comme le demande le CLAUDE.md du dépôt.\n- Rien n'a été commité.",
+      "tours": 10,
+      "cout_dollars": 0.00569297,
+      "cout_recalcule": 0.00569297,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 5532,
+          "cacheReadInputTokens": 131452,
+          "cacheCreationInputTokens": 12890,
+          "webSearchRequests": 0,
+          "costUSD": 0.00569297,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2757
+        }
+      },
+      "outils": [
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep",
+        "Read",
+        "Read",
+        "Edit",
+        "Bash"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py",
+        "quittances/quittance.py",
+        ".claude/rules/base.md",
+        "contrats/contrat.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-r1fpci71/depot\" && python -I -c \"\nfrom quittances import echeancier as e\nfor p, f in [(134318,'mensuel'),(134318,'trimestriel'),(134318,'annuel'),(100,'mensuel'),(134318.4,'mensuel')]:\n    l = e.echeancier(p, '2026-01-01', f) if False else None\n\" ; python -I -c \"\nimport sys; sys.path.insert(0,'.')\nfrom quittances import echeancier as e\nfrom util import dates\nimport inspect\nprint(inspect.signature(dates.ajouter_mois))\nfor p,f in [(134318,'mensuel'),(134318,'trimestriel'),(134318,'annuel'),(100,'mensuel'),(134318.4,'mensuel')]:\n    l = e.echeancier(p, dates.ajouter_mois('2026-01-01', 0) if False else __import__('datetime').date(2026,1,1), f)\n    print(p, f, [m for _,m in l], 'total=', e.total(l))\n\""
+      ],
+      "contexte_final": 27759,
+      "contexte_max": 27759,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8332,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25000,
+              25001,
+              25001
+            ],
+            "total": 100003,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10000,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              24999,
+              25000,
+              25000
+            ],
+            "total": 99999,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20833,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "première ajustée, les autres arrondies"
+          }
+        },
+        "convention": "première ajustée, les autres arrondies",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +11,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    prime = arrondir_fcfa(prime_annuelle)\n+    montant = arrondir_fcfa(prime / n)\n+    # le reliquat de l'arrondi va sur la premiere quittance, pour que le total soit la prime annuelle\n+    reliquat = prime - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "b505c883-01df-4b51-8496-419df0a6de39",
+      "parties": 1,
+      "latence_s": 44.5,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "exemples",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py` : la première quittance porte désormais le reliquat, et le total est égal à la prime annuelle. Je n'ai pas pu exécuter le code, car l'outil Bash est refusé dans cette session. La vérification ci-dessous est un calcul à la main.\n\n**Modification** (`quittances/echeancier.py`) : la base est `prime_annuelle // n`, le reliquat `prime_annuelle - base * n` s'ajoute à la première échéance.\n\n**Vérification à la main** (à refaire sur la base de recette avec `python lancer.py creer-base`, puis en appelant `echeancier` ; `total(lignes)` doit valoir la prime) :\n- `echeancier(134318, '15/01/2026', 'mensuel')` : base 11 193 (134318 // 12), reliquat 2 → 11 195, puis onze fois 11 193. Total 134 318. ✓\n- `echeancier(100006, '01/03/2026', 'mensuel')` : base 8 333, reliquat 10 → 8 343, puis onze fois 8 333. Total 100 006. ✓\n- `echeancier(100003, '01/03/2026', 'trimestriel')` : base 25 000, reliquat 3 → 25 003, 25 000, 25 000, 25 000. Total 100 003. ✓\n\n**Point à signaler** : `.claude/rules/montants.md` impose `arrondir_fcfa()` pour tout nouveau calcul de montant. Je ne l'ai pas utilisé, car il arrondit au plus proche : pour 100006/12 il donnerait 8 334, et les exemples attendus veulent 8 333. Les exemples imposent une troncature (division entière). J'ai donc écarté la règle sur ce point, et je le signale pour que vous décidiez. La solution propre serait un helper « arrondi vers le bas » dans `util/montants.py`, mais je n'ai pas touché ce fichier, qui n'entre pas dans la demande.\n\nAutres éléments :\n- Le `int(prime_annuelle / n)` d'origine passait par un flottant ; la division entière sur entier est exacte. Si `prime_annuelle` peut être un flottant côté appelant (`contrats/contrat.py:31`), le résultat resterait un flottant : à vérifier.\n- Je n'ai pas touché aux tarifs, ni aux primes et au prorata, qui relèvent d'autres tickets.",
+      "tours": 8,
+      "cout_dollars": 0.00386793,
+      "cout_recalcule": 0.00386793,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 3662,
+          "cacheReadInputTokens": 78563,
+          "cacheCreationInputTokens": 10004,
+          "webSearchRequests": 0,
+          "costUSD": 0.00386793,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1495
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Grep",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-rrpv2pet\\depot\" && ls -R .claude quittances util primes 2>/dev/null; echo ---; cat quittances/echeancier.py; echo ---; cat util/montants.py",
+        "cd \"<temp>/kanvo-ch16-rrpv2pet\\depot\" && cat .claude/rules/* 2>/dev/null; echo ---; grep -rn \"echeancier\" --include=*.py . | head -30"
+      ],
+      "contexte_final": 24873,
+      "contexte_max": 24873,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -10,6 +10,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    # quittance de base : division entiere (sans arrondi), le reliquat va sur la premiere\n+    # quittance pour que le total soit egal a la prime annuelle (DSI-2026-031)\n+    montant = prime_annuelle // n\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "7a0fe5aa-94a8-487e-b45c-13a65026c348",
+      "parties": 1,
+      "latence_s": 26.5,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "tests",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py`, mais je n'ai pas pu lancer les tests : la commande Bash a été refusée (mode « don't ask »). Je n'ai donc pas `python -m pytest tests/test_echeancier.py`. Je les ai vérifiés à la main, à relancer de votre côté.\n\n**Correction** : la fonction `echeancier` prend la prime annuelle divisée par le nombre d'échéances, en division entière, et met le reliquat sur la première quittance. Le total est toujours égal à la prime.\n\n```python\nmontant = prime_annuelle // n\nreliquat = prime_annuelle - montant * n\n...\nm = montant + reliquat if i == 0 else montant\n```\n\n**Vérification à la main des cas de test** :\n- 134318 mensuel : 11193 × 11 + 11195 = 134318 ✓\n- 100006 mensuel : 8333 × 11 + 8343 = 100006 ✓\n- 100003 trimestriel : 25000 × 3 + 25003 = 100003 ✓\n- 60000 annuel : une seule quittance de 60000 ✓\n- Dates : inchangées, la fonction ne touche qu'aux montants ✓\n\n**Point à trancher : la règle `.claude/rules/montants.md`.** Elle demande de passer tout nouveau calcul de montant par `arrondir_fcfa()`, et de ne pas utiliser `int()`. Je ne l'ai pas suivie à la lettre, pour deux raisons :\n- `arrondir_fcfa()` arrondit au plus proche. Avec lui, 100006 / 12 donnerait 8334 au lieu de 8333, et le test `test_mensuel_reliquat_au_dela_de_la_moitie` échouerait. Le test demande un arrondi au franc inférieur.\n- J'ai utilisé la division entière `//`, qui donne le même résultat que `int()` sur ces montants positifs, sans passer par un flottant. Elle n'utilise pas `int()`, mais elle ne passe pas non plus par `arrondir_fcfa()`.\n\nSi la règle doit s'appliquer telle quelle, il faudrait un helper « arrondi inférieur » dans `util/montants.py`, ce qui touche un fichier hors de cette demande. Dites-moi si vous le voulez.\n\nAutres points, sans les corriger :\n- `util/montants.py` et `.claude/rules/montants.md` disent que les anciens calculs (primes, prorata) n'ont pas été repris (ticket DSI-2019-114). Il faudrait vérifier si d'autres appels à `echeancier` dépendent de l'ancien arrondi (`int(prime / n)`), en particulier pour les contrats déjà facturés. Je ne l'ai pas vérifié.\n- Le nom du test `test_mensuel_reliquat_au_dela_de_la_moitie` ne correspond pas à ce qu'il vérifie : il contrôle un reliquat de 10 francs sur 12, pas une moitié.\n\nPour vérifier à la main sur la base de recette : `python lancer.py creer-base`, puis un contrat fractionné mensuel (comme KA-AUTO-0412), et contrôler que le total des quittances égale la prime annuelle.",
+      "tours": 8,
+      "cout_dollars": 0.004394315,
+      "cout_recalcule": 0.004394315,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4140,
+          "cacheReadInputTokens": 100494,
+          "cacheCreationInputTokens": 10547,
+          "webSearchRequests": 0,
+          "costUSD": 0.004394315,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1986
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "tests/test_echeancier.py",
+        "util/montants.py",
+        ".claude/rules/base.md"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-9gya4nmu\\depot\" && ls -la && ls -la quittances tests .claude/rules 2>/dev/null; cat quittances/echeancier.py; echo ----; cat tests/test_echeancier.py"
+      ],
+      "contexte_final": 25416,
+      "contexte_max": 25416,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -10,6 +10,9 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    # Quittances egales au franc inferieur ; le reliquat va sur la premiere (DSI-2026-031)\n+    montant = prime_annuelle // n\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "tests_intacts": true,
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "7c8e2a13-fffd-4b6c-865a-7beaa9273be1",
+      "parties": 1,
+      "latence_s": 26.9,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "prose",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "Le correctif est fait dans `quittances/echeancier.py`, mais je n'ai pas pu l'exécuter : Bash est refusé dans cette session. La vérification ci-dessous est faite à la main.\n\n**Modification**\n- `montant` est désormais calculé avec `arrondir_fcfa(prime_annuelle / n)` au lieu de `int(...)`, conformément à `.claude/rules/montants.md`.\n- La dernière quittance vaut `prime_annuelle - montant * (n - 1)`, arrondi par `arrondir_fcfa`. Elle absorbe donc l'écart d'arrondi, et le total est égal à la prime.\n- Choix à valider : l'écart est porté par la dernière quittance. L'autre option serait de répartir les francs restants sur les premières quittances (par exemple 11 194 × 2 puis 11 193 × 10 pour KA-AUTO-0412). Dites-moi si la comptabilité préfère cette répartition.\n\n**Calcul pour KA-AUTO-0412** (prime 134 318, mensuel, n = 12)\n- 134 318 / 12 = 11 193,17 → `arrondir_fcfa` → 11 193\n- Dernière quittance : 134 318 − 11 193 × 11 = 11 195\n- Total : 11 193 × 11 + 11 195 = 134 318 ✓\n\n**Vérification à faire sur la base de recette** (`python lancer.py creer-base`)\n1. Créer un contrat mensuel dont la prime annuelle n'est pas divisible par 12 (par exemple 134 318 FCFA), puis un trimestriel et un annuel.\n2. Contrôler que la somme des quittances enregistrées est égale à `prime_annuelle` dans chaque cas (`python lancer.py prime <numéro>` pour la prime, et la table des quittances pour les montants).\n3. Vérifier qu'un contrat annuel garde une seule quittance égale à la prime.\n\n**Points à signaler**\n- Le correctif ne touche que les nouveaux contrats : l'échéancier est écrit à la création (`contrats/contrat.py:31`). Les quittances déjà émises, comme celles de KA-AUTO-0412, restent à 11 193. Leur correction demande un traitement de données séparé, à valider avec la comptabilité.\n- `util/montants.py` prévoit que les anciens calculs (primes, prorata) n'ont pas été repris (DSI-2019-114). Je n'y ai pas touché, conformément à la demande.",
+      "tours": 9,
+      "cout_dollars": 0.00507503,
+      "cout_recalcule": 0.0050750299999999995,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4871,
+          "cacheReadInputTokens": 104678,
+          "cacheCreationInputTokens": 12734,
+          "webSearchRequests": 0,
+          "costUSD": 0.00507503,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2250
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Grep",
+        "Read",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py",
+        "contrats/contrat.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-nsz8pf6l/depot\" && ls -la && ls -la quittances primes util .claude/rules 2>/dev/null; cat quittances/echeancier.py",
+        "cd \"<temp>/kanvo-ch16-nsz8pf6l/depot\" && cat util/montants.py; echo ----; cat .claude/rules/* 2>/dev/null; echo ----; grep -rn \"echeancier\\|arrondi\" --include=*.py . | head -50"
+      ],
+      "contexte_final": 27603,
+      "contexte_max": 27603,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11193,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la dernière"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8334,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25001,
+              25001,
+              25001
+            ],
+            "total": 100003,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10001,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25000,
+              25000,
+              25000
+            ],
+            "total": 99999,
+            "classe": "dernière ajustée, les autres arrondies"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20834,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "dernière ajustée, les autres arrondies"
+          }
+        },
+        "convention": "dernière ajustée, les autres arrondies",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,3 +11,3 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    montant = arrondir_fcfa(prime_annuelle / n)\n     lignes = []\n@@ -14,2 +15,4 @@\n         lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+    # la derniere quittance reprend l'ecart d'arrondi : le total est la prime annuelle\n+    lignes[-1] = (lignes[-1][0], arrondir_fcfa(prime_annuelle - montant * (n - 1)))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "ab02fc6f-3c79-4d6d-a5cf-53a5d9b4967e",
+      "parties": 1,
+      "latence_s": 29.2,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "regle",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py` : le total des quittances est maintenant égal à la prime annuelle. Je n'ai pas pu l'exécuter, car l'outil Bash a été refusé. La vérification est donc faite à la main, à relancer sur la base de recette.\n\n**Ce qui change**\n\n- Le montant de base passe par `montants.arrondir_fcfa()` au lieu de `int()`, qui tronquait. La règle `.claude/rules/montants.md` impose cet arrondi pour tout nouveau calcul.\n- Le reliquat (`prime_annuelle - montant × n`) est ajouté à la première quittance.\n\n**Calcul pour KA-AUTO-0412** (prime 134 318, mensuel, n = 12)\n\n- 134 318 / 12 = 11 193,17, arrondi à 11 193 pour les 11 suivantes.\n- Reliquat : 134 318 − 12 × 11 193 = 2.\n- Première quittance : 11 195 ; les 11 autres : 11 193. Total : 134 318.\n\n**À savoir avant mise en production**\n\n- Le total est correct pour tout fractionnement : annuel, trimestriel, mensuel.\n- Les quittances sont écrites en base à la création du contrat (`contrats/contrat.py:31-32`). La correction ne touche donc que les contrats créés après. Les quittances déjà enregistrées, comme celles de KA-AUTO-0412, restent à 11 193 jusqu'à une régularisation. C'est une décision de la comptabilité et de la DSI, je n'ai rien modifié en base.\n- Le ticket DSI-2026-031 couvre ce changement, donc la règle « ne pas corriger les arrondis existants sans ticket » ne bloque pas.\n\n**Vérification à la main sur la base de recette**\n\n1. `python lancer.py creer-base`\n2. Créer un contrat auto en mensuel, puis contrôler les 12 quittances : la première doit être égale à la prime + 2 FCFA par rapport aux suivantes, et la somme doit égaler la prime annuelle affichée par `python lancer.py prime <numero>`.\n\n**Signalé, non corrigé** (hors demande, DSI-2019-114 ou autre ticket)\n\n- `primes/calcul.py` lignes 36, 48, 65, 83 : `int(p)` tronque le calcul de prime.\n- `primes/prorata.py` ligne 12 : `round()` arrondit au pair, ce que la règle interdit pour les nouveaux calculs.\n- `primes/tarifs.py` ligne 23 et `util/divers.py` ligne 23 : `int(valeur)` lit des valeurs de tarif, à vérifier avec l'actuariat.",
+      "tours": 9,
+      "cout_dollars": 0.00507025,
+      "cout_recalcule": 0.00507025,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4511,
+          "cacheReadInputTokens": 125205,
+          "cacheCreationInputTokens": 12492,
+          "webSearchRequests": 0,
+          "costUSD": 0.00507025,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2009
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Glob",
+        "Read",
+        "Grep",
+        "Read",
+        "Grep",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py",
+        "contrats/contrat.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-c8ijfr9z/depot\" && ls -la && ls -la .claude/rules 2>/dev/null; cat quittances/echeancier.py; echo ---; cat util/montants.py 2>/dev/null"
+      ],
+      "contexte_final": 27361,
+      "contexte_max": 27361,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8332,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25000,
+              25001,
+              25001
+            ],
+            "total": 100003,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10000,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              24999,
+              25000,
+              25000
+            ],
+            "total": 99999,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20833,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "première ajustée, les autres arrondies"
+          }
+        },
+        "convention": "première ajustée, les autres arrondies",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util import montants\n \n@@ -10,6 +11,9 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    montant = montants.arrondir_fcfa(prime_annuelle / n)\n+    # le reliquat de l'arrondi va sur la premiere quittance : le total doit egaler la prime annuelle\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "5d3261c2-e8cc-41de-bb76-6c33d286d4c2",
+      "parties": 1,
+      "latence_s": 28.6,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "exemples",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "Le correctif est écrit dans `quittances/echeancier.py`, mais je ne l'ai pas exécuté : la commande Python a été refusée par le mode de permission. La vérification ci-dessous est faite à la main.\n\n**Ce qui change** (`quittances/echeancier.py`) :\n- La prime est d'abord passée par `arrondir_fcfa()`, ce qui la rend entière même si on lui passe un flottant.\n- La quittance de base vaut `prime // n` (division entière exacte, donc le plancher).\n- Le reliquat `prime - base × n` s'ajoute à la première quittance. Le total est donc toujours égal à la prime.\n\n**Vérification à la main sur les trois exemples :**\n- `echeancier(134318, …, 'mensuel')` : 12 × 11 193 = 134 316, reliquat 2 → 11 195, puis onze fois 11 193. Total 134 318 ✓\n- `echeancier(100006, …, 'mensuel')` : 12 × 8 333 = 99 996, reliquat 10 → 8 343, puis onze fois 8 333. Total 100 006 ✓\n- `echeancier(100003, …, 'trimestriel')` : 4 × 25 000 = 100 000, reliquat 3 → 25 003, 25 000, 25 000, 25 000. Total 100 003 ✓\n\nPour la recette, lancez `python lancer.py prime KA-AUTO-0193` puis comparez avec le contrat KA-AUTO-0412 de la base de recette. Le total des quittances doit égaler la prime annuelle.\n\n**Point à trancher avec vous :** `.claude/rules/montants.md` demande que tout nouveau calcul passe par `arrondir_fcfa()`. Or les exemples attendus ont une base **tronquée** (100 006 / 12 = 8 333,8 ; `arrondir_fcfa` donnerait 8 334 et le reliquat tomberait à 8 332, ce qui ne correspond pas à 8 343). J'ai donc suivi vos exemples avec une division entière, sans `int()` ni `round()`. Si la règle doit primer, il faudra revoir les montants attendus avec la comptabilité. Je n'ai touché ni aux tarifs ni à `util/montants.py`.",
+      "tours": 6,
+      "cout_dollars": 0.0039185949999999995,
+      "cout_recalcule": 0.003918595,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 3826,
+          "cacheReadInputTokens": 80292,
+          "cacheCreationInputTokens": 9615,
+          "webSearchRequests": 0,
+          "costUSD": 0.0039185949999999995,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1743
+        }
+      },
+      "outils": [
+        "Read",
+        "Read",
+        "Glob",
+        "Edit",
+        "Bash"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-vjv2qqup/depot\" && python -I -c \"\nimport sys; sys.path.insert(0, '.')\nfrom quittances.echeancier import echeancier, total\nfor args in [(134318,'15/01/2026','mensuel'),(100006,'01/03/2026','mensuel'),(100003,'01/03/2026','trimestriel'),(120000,'01/01/2026','annuel')]:\n    l = echeancier(*args)\n    print([m for _, m in l], total(l) == args[0])\n\""
+      ],
+      "contexte_final": 24484,
+      "contexte_max": 24484,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +11,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    prime = arrondir_fcfa(prime_annuelle)\n+    # division entière : quittance de base arrondie à l'inférieur, le reliquat part sur la première\n+    montant = prime // n\n+    reliquat = prime - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "be117db3-9c84-403b-b408-8c64f7fbfba5",
+      "parties": 1,
+      "latence_s": 24.4,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "tests",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py`, mais je n'ai pas pu lancer `python -m pytest tests/test_echeancier.py` : l'outil Bash est refusé dans cette session.\n\n**Modification** (seule fonction touchée : `echeancier`)\n- La prime passe par `arrondir_fcfa()`, comme le demande `.claude/rules/montants.md`.\n- Le montant de base est `prime // n` (division entière exacte).\n- Le reliquat `prime - base * n` est ajouté à la première quittance.\n- L'ancien `int(prime_annuelle / n)` est supprimé : il tronquait et perdait les francs du reliquat.\n\n**Vérification à la main** (calcul sur le papier, à confirmer par les tests) :\n- KA-AUTO-0412, 134 318 mensuel : base 11 193, reliquat 2 → 11 195 puis 11 193 × 11, total 134 318.\n- 100 006 mensuel : base 8 333, reliquat 10 → 8 343 puis 8 333 × 11.\n- 100 003 trimestriel : base 25 000, reliquat 3 → 25 003, 25 000, 25 000, 25 000.\n- Annuel et dates : inchangés.\n\n**Points à connaître**\n- J'ai utilisé `//` plutôt que `arrondir_fcfa()` pour la base. `arrondir_fcfa()` arrondit au plus proche : sur 100 006 il donnerait 8 334 au lieu de 8 333, et le test de Yao échouerait. Le reliquat ramène quand même le total exact. Si la règle doit s'appliquer strictement, il faut trancher avec Yao et la comptabilité.\n- La correction ne touche que les échéanciers calculés à partir de maintenant. Les quittances déjà émises en base ne sont pas recalculées ; à vérifier avant la mise en production.\n\n**Pour vérifier**\n- Lancer `python -m pytest tests/test_echeancier.py`. Il faut que Bash soit autorisé, ou que vous le lanciez vous-même.\n- Sur la base de recette : `python lancer.py prime KA-AUTO-0193` (contrat mensuel) et vérifier que la somme des quittances égale la prime.",
+      "tours": 7,
+      "cout_dollars": 0.004608419999999999,
+      "cout_recalcule": 0.00460842,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4453,
+          "cacheReadInputTokens": 102292,
+          "cacheCreationInputTokens": 10864,
+          "webSearchRequests": 0,
+          "costUSD": 0.004608419999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2260
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "tests/test_echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-2w8c_ub3/depot\" && cat quittances/echeancier.py && echo ---- && cat tests/test_echeancier.py && echo ---- && cat util/montants.py && echo ---- && ls -la .claude/rules 2>/dev/null; ls"
+      ],
+      "contexte_final": 25733,
+      "contexte_max": 25733,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +11,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    prime = arrondir_fcfa(prime_annuelle)\n+    montant = prime // n\n+    # le reliquat de la division va sur la premiere quittance (DSI-2026-031)\n+    reliquat = prime - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "tests_intacts": true,
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "7f2f766f-4630-4cd0-ace5-41f9c55feeed",
+      "parties": 1,
+      "latence_s": 26.1,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "prose",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py`. Je n'ai pas pu lancer Python dans cet environnement (la commande Bash a été refusée), donc la vérification est faite à la main, à relancer sur la base de recette.\n\n**Cause :** `int(prime / n)` tronque. Pour 134 318 / 12 = 11 193,17, chaque quittance perdait 0,17 FCFA, soit 2 FCFA sur l'année.\n\n**Correction :** chaque quittance est maintenant l'écart entre deux cumuls arrondis de la prime, avec `arrondir_fcfa()` de `util/montants.py` comme le demande `.claude/rules/montants.md`. Le dernier cumul vaut exactement la prime, donc le total tombe toujours dessus. Les dates d'échéance et `total()` ne changent pas.\n\n**Choix que vous pouvez modifier :** l'écart est réparti sur les échéances, à 1 FCFA près, au lieu de tout mettre sur la dernière. Pour KA-AUTO-0412 en mensuel, on obtient dix quittances de 11 193 et deux de 11 194, soit 134 318. Si la comptabilité attend 11 195 sur la dernière, c'est une modification de trois lignes.\n\n**Vérification à la main sur la base de recette :**\n- Contrat mensuel de prime 134 318 : `python lancer.py prime KA-AUTO-0412` puis contrôler que la somme des 12 quittances vaut 134 318.\n- Contrôler aussi un trimestriel et un annuel, dont le montant doit rester égal à la prime.\n\nJe n'ai pas touché aux primes ni au prorata : leurs arrondis anciens relèvent du ticket DSI-2019-114. Je n'ai pas non plus vérifié les autres appels de `echeancier()`.",
+      "tours": 8,
+      "cout_dollars": 0.004635589999999999,
+      "cout_recalcule": 0.00463559,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4717,
+          "cacheReadInputTokens": 99009,
+          "cacheCreationInputTokens": 10288,
+          "webSearchRequests": 0,
+          "costUSD": 0.004635589999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2755
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py",
+        ".claude/rules/base.md",
+        ".claude/rules/tarifs.md"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-wk6q_xx2/depot\" && ls -R | head -100 && cat quittances/echeancier.py && ls .claude/rules 2>/dev/null && cat .claude/rules/* 2>/dev/null"
+      ],
+      "contexte_final": 25157,
+      "contexte_max": 25157,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11193,
+              11193,
+              11194
+            ],
+            "total": 134318,
+            "classe": "reliquat réparti"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8334,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "reliquat réparti"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25001,
+              25001,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat réparti"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10001,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "reliquat réparti"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25000,
+              25000,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat réparti"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20834,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "reliquat réparti"
+          }
+        },
+        "convention": "reliquat réparti",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -3,2 +3,3 @@\n from util import dates\n+from util import montants\n \n@@ -10,5 +11,8 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    # Chaque quittance est l'ecart entre deux cumuls arrondis de la prime :\n+    # le total des quittances tombe toujours sur la prime annuelle (DSI-2026-031).\n+    cumuls = [montants.arrondir_fcfa(prime_annuelle * (i + 1) / n) for i in range(n)]\n     lignes = []\n     for i in range(n):\n+        montant = cumuls[i] - (cumuls[i - 1] if i else 0)\n         lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "94ac637f-1600-4556-ba13-9348607e1a64",
+      "parties": 1,
+      "latence_s": 29.9,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "regle",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py` pour que le total des quittances égale la prime annuelle, avec le reliquat sur la première. Je n'ai pas pu exécuter le code : l'outil Bash a été refusé dans cette session, donc la vérification ci-dessous est un calcul à la main.\n\n**Modification** (`quittances/echeancier.py`) :\n- Le montant de chaque échéance passe par `arrondir_fcfa(prime_annuelle / n)` de `util/montants.py`, au lieu de `int()` qui tronquait. C'est la règle de `.claude/rules/montants.md`.\n- Le reliquat `prime_annuelle - montant * n` est ajouté à la première échéance.\n- Le commentaire d'en-tête mentionne DSI-2026-031.\n\n**Vérification à la main** :\n- KA-AUTO-0412, mensuel, prime 134 318 : 134 318 / 12 = 11 193,17, arrondi à 11 193. Reliquat 134 318 − 134 316 = 2. Première quittance 11 195, les 11 suivantes 11 193. Total 134 318.\n- Trimestriel, prime 10 001 : 2 500,25 arrondi à 2 500, reliquat 1, première quittance 2 501, total 10 001.\n- Annuel : une seule échéance égale à la prime, reliquat nul.\n\nPour le faire vraiment sur la base de recette : `python lancer.py creer-base`, puis créer un contrat fractionné mensuel de prime 134 318 et contrôler que les 12 quittances totalisent 134 318 (première 11 195).\n\n**Points à régler avant mise en production** :\n- Je n'ai pas lu `contrats/contrat.py` en entier. Il appelle `echeancier()` à la ligne 31. Si les quittances sont enregistrées en base à la création, les contrats déjà créés gardent leurs anciens montants et ne sont pas recalculés. Il faut le vérifier et décider d'une reprise.\n- Le calcul suppose une prime annuelle entière. Si elle peut être un décimal, le reliquat l'est aussi et le total n'est plus entier.\n- Je n'ai pas touché à `primes/` ni à `util/montants.py`. Les anciens calculs de primes et de prorata sont signalés dans le code comme laissés en l'état (ticket DSI-2019-114). Je ne les ai pas revus.\n\nJe n'ai rien committé.",
+      "tours": 9,
+      "cout_dollars": 0.0050332,
+      "cout_recalcule": 0.0050332,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4365,
+          "cacheReadInputTokens": 129825,
+          "cacheCreationInputTokens": 12410,
+          "webSearchRequests": 0,
+          "costUSD": 0.0050332,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1847
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Grep",
+        "Read",
+        "Read",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "util/montants.py",
+        "util/dates.py",
+        "quittances/quittance.py",
+        "quittances/echeancier.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-ouu8uyxp/depot\" && ls -la && ls quittances util primes && cat quittances/echeancier.py && ls .claude/rules 2>/dev/null && cat .claude/rules/* 2>/dev/null",
+        "cd \"<temp>/kanvo-ch16-ouu8uyxp/depot\" && cat util/montants.py && echo ---- && cat util/dates.py && echo ---- && grep -rn \"echeancier\\|total(\" --include=*.py . && echo ---- && cat quittances/quittance.py && echo ---- && cat lancer.py && cat base/schema.sql 2>/dev/null | head -50"
+      ],
+      "contexte_final": 27279,
+      "contexte_max": 27279,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8332,
+              8334,
+              8334
+            ],
+            "total": 100006,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25000,
+              25001,
+              25001
+            ],
+            "total": 100003,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10000,
+              10001,
+              10001
+            ],
+            "total": 120011,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              24999,
+              25000,
+              25000
+            ],
+            "total": 99999,
+            "classe": "première ajustée, les autres arrondies"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20833,
+              20834,
+              20834
+            ],
+            "total": 250007,
+            "classe": "première ajustée, les autres arrondies"
+          }
+        },
+        "convention": "première ajustée, les autres arrondies",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": false,
+        "diff": "--- avant\n+++ apres\n@@ -1,4 +1,6 @@\n # -*- coding: utf-8 -*-\n-# Echeancier des quittances selon le fractionnement. AB 2013\n+# Echeancier des quittances selon le fractionnement. AB 2013. DSI-2026-031 : le total\n+# des quittances doit egaler la prime annuelle, le reliquat de l'arrondi va sur la premiere.\n from util import dates\n+from util.montants import arrondir_fcfa\n \n@@ -10,6 +12,8 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    montant = arrondir_fcfa(prime_annuelle / n)\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "02bf1d09-91f9-48ab-a64d-4b653ee97c19",
+      "parties": 1,
+      "latence_s": 32.3,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "exemples",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py` pour que le reliquat de la division soit reporté sur la première quittance. Je n'ai pas pu exécuter le code : Bash est refusé dans cette session. J'ai donc vérifié les trois exemples du ticket à la main.\n\n**Le changement**\n\n```python\nmontant = prime_annuelle // n\nreliquat = prime_annuelle - montant * n\n...\nm = montant + reliquat if i == 0 else montant\n```\n\n- Le montant de base est la division entière, donc le franc inférieur. Le reliquat (au plus `n - 1` francs) va sur la première quittance, et le total vaut toujours la prime annuelle.\n- Les trois exemples donnent :\n  - 134318 en mensuel : base 11193, reliquat 2, donc 11195 puis onze fois 11193 (total 134318).\n  - 100006 en mensuel : base 8333, reliquat 10, donc 8343 puis onze fois 8333 (total 100006).\n  - 100003 en trimestriel : base 25000, reliquat 3, donc 25003, 25000, 25000, 25000 (total 100003).\n- Les primes sont déjà des entiers (`calcul.prime_avec_frais` renvoie `int`), donc la division ne passe pas par des flottants et les montants restent des entiers.\n\n**Écart avec `.claude/rules/montants.md`**\n\nLa règle demande de passer les nouveaux calculs de montant par `arrondir_fcfa()` et interdit `int()`. Je ne l'ai pas suivie à la lettre, pour deux raisons :\n- `arrondir_fcfa()` arrondit au plus proche. Il donnerait 8334 au lieu de 8333 pour le deuxième exemple, et ne respecterait donc pas les montants attendus par la comptabilité.\n- `int()` n'est pas utilisé. La division entière `//` sur des entiers ne tronque pas un flottant.\n\nSi vous voulez quand même passer par `arrondir_fcfa()`, il faudra d'abord trancher la règle, ou modifier `arrondir_fcfa()` pour qu'il tronque. Je ne l'ai pas fait.\n\n**Vérification à faire sur la base de recette**\n\n1. `python lancer.py creer-base`\n2. Créer un contrat fractionné mensuel (par exemple avec une prime de 134 318 FCFA) et contrôler les 12 quittances dans `quittances` : 11 195, puis onze fois 11 193.\n3. Vérifier que la somme des quittances de ce contrat est égale à `prime_annuelle`.\n\n**Hors périmètre, signalé sans correction**\n\n- `primes/calcul.py` utilise encore `int(p)` aux lignes 36, 48, 65 et 83. C'est une troncature sur le calcul de la prime, qui relève de la règle des anciens calculs (ticket DSI-2019-114). Je n'y ai pas touché.\n- `echeancier.total()` existe mais n'est pas appelé dans ce changement. Il peut servir au contrôle décrit au point 3.",
+      "tours": 11,
+      "cout_dollars": 0.006184555,
+      "cout_recalcule": 0.0061845550000000004,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 6248,
+          "cacheReadInputTokens": 130623,
+          "cacheCreationInputTokens": 14025,
+          "webSearchRequests": 0,
+          "costUSD": 0.006184555,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 3490
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Glob",
+        "Grep",
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "util/montants.py",
+        ".claude/rules/base.md",
+        "contrats/contrat.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-8d17ci_9/depot\" && ls -la && ls .claude/rules 2>/dev/null; cat quittances/echeancier.py; echo ----; cat util/montants.py 2>/dev/null",
+        "cd \"<temp>/kanvo-ch16-8d17ci_9/depot\" && cat .claude/rules/* 2>/dev/null; echo ----; grep -rn \"echeancier\" --include=*.py . | head -30"
+      ],
+      "contexte_final": 28894,
+      "contexte_max": 28894,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -10,6 +10,10 @@\n     pas = 12 // n\n-    montant = int(prime_annuelle / n)\n+    # division entiere : le reliquat (quelques francs) va sur la premiere quittance,\n+    # pour que le total des quittances soit egal a la prime annuelle\n+    montant = prime_annuelle // n\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "c8bb1019-71f2-4657-a6df-5a1150adac47",
+      "parties": 1,
+      "latence_s": 40.0,
+      "erreur": null
+    },
+    {
+      "tache": "defaut",
+      "variante": "tests",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai corrigé `quittances/echeancier.py`, mais je n'ai pas pu lancer `python -m pytest tests/test_echeancier.py` : l'outil Bash a été refusé en mode « ne pas demander ». Je n'ai donc pas contourné ce refus.\n\n**Ce qui a changé** (une seule fonction, `echeancier`) : le montant de base reste `int(prime_annuelle / n)`, comme avant. Le reliquat `prime_annuelle - montant * n` est ajouté à la première quittance. Le total vaut donc toujours la prime annuelle.\n\n**Vérification à la main, sans exécuter pytest.** Je contrôle chaque cas des tests :\n- 134318 mensuel : base 11193, reliquat 2 → `[11195] + [11193] * 11`, total 134318. ✓\n- 100006 mensuel : base 8333, reliquat 10 → `[8343] + [8333] * 11`. ✓\n- 100003 trimestriel : base 25000, reliquat 3 → `[25003, 25000, 25000, 25000]`. ✓\n- 60000 annuel : reliquat 0, inchangé. ✓\n- Les dates ne sont pas touchées. ✓\n\nPour la vérification réelle, lancez la commande sur votre poste, ou demandez-moi de la relancer si l'accès Bash est rétabli.\n\n**Point à signaler à l'actuariat et à Yao.** La règle `.claude/rules/montants.md` demande que les nouveaux calculs passent par `arrondir_fcfa()`, qui arrondit au plus proche. Avec cette fonction, les tests donneraient 8334 et 25001 au lieu de 8333 et 25000, donc ils échoueraient. J'ai gardé la troncature existante, qui est ce que les tests attendent. Le reliquat est une simple soustraction d'entiers, il n'introduit aucun arrondi. Si la comptabilité veut un arrondi au plus proche, il faudra changer les tests et ouvrir un ticket, car la règle interdit de modifier les arrondis existants sans ticket.\n\n**Autres points relevés, non corrigés** (hors du périmètre du ticket) :\n- Un `fractionnement` inconnu retombe silencieusement sur l'annuel (`NB_ECHEANCES.get(..., 1)`).\n- `int(prime_annuelle / n)` passe par une division flottante. Pour des montants très grands, un `//` serait plus sûr.",
+      "tours": 7,
+      "cout_dollars": 0.004481775,
+      "cout_recalcule": 0.0044817749999999995,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4324,
+          "cacheReadInputTokens": 100140,
+          "cacheCreationInputTokens": 10539,
+          "webSearchRequests": 0,
+          "costUSD": 0.004481775,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2391
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Edit"
+      ],
+      "outils_sous_agent": [],
+      "lectures": [
+        "quittances/echeancier.py",
+        "tests/test_echeancier.py",
+        "util/montants.py"
+      ],
+      "lectures_sous_agent": [],
+      "commandes": [
+        "cd \"<temp>/kanvo-ch16-8xi51qu3/depot\" && ls -la && ls -la .claude/rules quittances tests primes util 2>/dev/null; cat quittances/echeancier.py; echo ----; cat tests/test_echeancier.py"
+      ],
+      "contexte_final": 25408,
+      "contexte_max": 25408,
+      "fichiers_modifies": [
+        "quittances/echeancier.py"
+      ],
+      "plan": "",
+      "controles": {
+        "cas": {
+          "134318-mensuel": {
+            "montants": [
+              11195,
+              11193,
+              11193
+            ],
+            "total": 134318,
+            "classe": "reliquat sur la première"
+          },
+          "100006-mensuel": {
+            "montants": [
+              8343,
+              8333,
+              8333
+            ],
+            "total": 100006,
+            "classe": "reliquat sur la première"
+          },
+          "100003-trimestriel": {
+            "montants": [
+              25003,
+              25000,
+              25000
+            ],
+            "total": 100003,
+            "classe": "reliquat sur la première"
+          },
+          "60000-annuel": {
+            "montants": [
+              60000
+            ],
+            "total": 60000,
+            "classe": "reliquat sur la première"
+          },
+          "33000-mensuel": {
+            "montants": [
+              2750,
+              2750,
+              2750
+            ],
+            "total": 33000,
+            "classe": "reliquat sur la première"
+          },
+          "120011-mensuel": {
+            "montants": [
+              10011,
+              10000,
+              10000
+            ],
+            "total": 120011,
+            "classe": "reliquat sur la première"
+          },
+          "99999-trimestriel": {
+            "montants": [
+              25002,
+              24999,
+              24999
+            ],
+            "total": 99999,
+            "classe": "reliquat sur la première"
+          },
+          "250007-mensuel": {
+            "montants": [
+              20844,
+              20833,
+              20833
+            ],
+            "total": 250007,
+            "classe": "reliquat sur la première"
+          }
+        },
+        "convention": "reliquat sur la première",
+        "dates_justes": true,
+        "entiers": true,
+        "total_juste": true,
+        "conforme": true,
+        "diff": "--- avant\n+++ apres\n@@ -11,5 +11,8 @@\n     montant = int(prime_annuelle / n)\n+    # le reliquat de la division va sur la premiere quittance (DSI-2026-031)\n+    reliquat = prime_annuelle - montant * n\n     lignes = []\n     for i in range(n):\n-        lignes.append((dates.ajouter_mois(date_effet, i * pas), montant))\n+        m = montant + reliquat if i == 0 else montant\n+        lignes.append((dates.ajouter_mois(date_effet, i * pas), m))\n     return lignes",
+        "tests_intacts": true,
+        "autres_fichiers_modifies": []
+      },
+      "session_id": "de331d22-acc8-4f58-8699-6eddbbf8096b",
+      "parties": 1,
+      "latence_s": 30.3,
+      "erreur": null
+    }
+  ]
+}

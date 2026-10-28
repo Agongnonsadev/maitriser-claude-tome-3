@@ -1,0 +1,14 @@
+CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE
+1. Date de l'accident : 15 octobre 2026      Heure : 11 h 15
+2. Lieu : pont de Fidjrossè
+3. Blessés, même légers : [ ] oui  [ ] non
+VÉHICULE A
+   Conducteur : Mme Rosine Houngbo
+   Société d'assurance : Kanvô Assurances      Contrat n° KA-AUTO-3941
+   Immatriculation : HW 1109-JL
+VÉHICULE B
+   Conducteur : Mme Clarisse Tossou
+   Société d'assurance : Ouémé Mutuelle
+   Immatriculation : ha9215bh
+12. Circonstances : A cochée(s) : 8 (heurtait à l'arrière) ; B cochée(s) : 1 (en stationnement)
+Signatures : A et B

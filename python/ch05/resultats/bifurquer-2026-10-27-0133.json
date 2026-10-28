@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-27",
+  "seances": {
+    "tronc": {
+      "cas": "tronc",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci pour votre message. Votre dossier SIN-2026-0912, relatif à la collision avec une moto au carrefour Saint-Michel le 2 octobre 2026, est au stade **expertise planifiée**. Le passage de l'expert est prévu le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nJe ne peux pas vous indiquer de date d'indemnisation ni de montant à ce stade. Si vous souhaitez échanger avec un gestionnaire, par exemple pour confirmer le rendez-vous avec l'expert, je peux transmettre votre demande pour qu'il vous rappelle. Souhaitez-vous que je le fasse ?",
+      "outils": [
+        "consulter_assure",
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 2,
+      "reponses_outils_texte": 0,
+      "tours": 3,
+      "cout_dollars": 0.00042559999999999994,
+      "tokens_entree": 7328,
+      "tokens_sortie": 503,
+      "usage": {
+        "input_tokens": 6,
+        "cache_creation_input_tokens": 872,
+        "cache_read_input_tokens": 6450,
+        "output_tokens": 503,
+        "output_tokens_details": {
+          "thinking_tokens": 101
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 872
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 358,
+            "cache_read_input_tokens": 2415,
+            "cache_creation_input_tokens": 275,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 275,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 503,
+          "cacheReadInputTokens": 6450,
+          "cacheCreationInputTokens": 872,
+          "webSearchRequests": 0,
+          "costUSD": 0.00042559999999999994,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 101,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00042560000000000005,
+      "transmissions": 0,
+      "session_id": "5c9122ef-aba7-4528-8892-1baf6c32f95f",
+      "latence_s": 9.94,
+      "duree_s": 5.696,
+      "duree_api_s": 4.959,
+      "erreur": null,
+      "a_vu_le_changement": false
+    },
+    "A_bifurcation_sans_signalement": {
+      "cas": "A_bifurcation_sans_signalement",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "end_turn",
+      "reponse": "Bonjour Madame Akplogan. Votre dossier SIN-2026-0912 a évolué : le **rapport d'expertise a bien été reçu**. La prochaine étape est son étude par le gestionnaire de l'équipe automobile 2.\n\nJe constate une différence avec la date prévue : le passage de l'expert était initialement fixé au 29 octobre 2026, et non à hier. Je ne peux pas savoir à partir de mon système si la visite a été avancée ou si la date a été mise à jour.\n\nJe ne peux pas non plus vous indiquer le contenu du rapport, ni de délai ou de montant d'indemnisation. Si vous voulez des précisions, je peux transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0007987949999999999,
+      "tokens_entree": 6661,
+      "tokens_sortie": 425,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 815,
+        "cache_read_input_tokens": 5842,
+        "output_tokens": 425,
+        "output_tokens_details": {
+          "thinking_tokens": 71
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 815
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 278,
+            "cache_read_input_tokens": 3152,
+            "cache_creation_input_tokens": 353,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 353,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 928,
+          "thinkingTokens": 172,
+          "cacheReadInputTokens": 12292,
+          "cacheCreationInputTokens": 1687,
+          "webSearchRequests": 0,
+          "costUSD": 0.0007987949999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.000373195,
+      "transmissions": 0,
+      "session_id": "b4415548-f288-4205-97a7-5712b8266e22",
+      "latence_s": 7.13,
+      "duree_s": 3.856,
+      "duree_api_s": 8.526,
+      "erreur": null,
+      "a_vu_le_changement": true
+    },
+    "B_bifurcation_avec_signalement": {
+      "cas": "B_bifurcation_avec_signalement",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "stop_sequence",
+      "reponse": "API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)",
+      "outils": [
+        "consulter_sinistres"
+      ],
+      "reponses_avec_outils": 1,
+      "reponses_outils_texte": 0,
+      "tours": 2,
+      "cout_dollars": 0.0006623099999999999,
+      "tokens_entree": 6811,
+      "tokens_sortie": 135,
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 876,
+        "cache_read_input_tokens": 5931,
+        "output_tokens": 135,
+        "output_tokens_details": {
+          "thinking_tokens": 50
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 876
+        },
+        "inference_geo": "global",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 638,
+          "thinkingTokens": 151,
+          "cacheReadInputTokens": 12381,
+          "cacheCreationInputTokens": 1748,
+          "webSearchRequests": 0,
+          "costUSD": 0.0006623099999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "cout_recalcule": 0.00023671,
+      "transmissions": 0,
+      "session_id": "4f5c5775-9e13-4e11-89cf-ae0913f53a77",
+      "latence_s": 215.97,
+      "duree_s": 214.028,
+      "duree_api_s": 6.174,
+      "erreur": "ResultError: Claude Code returned an error result: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND) (exit code: 1)",
+      "a_vu_le_changement": false
+    },
+    "C_nouvelle_seance_avec_resume": {
+      "cas": "C_nouvelle_seance_avec_resume",
+      "repetition": 1,
+      "fin": "success",
+      "stop_reason": "stop_sequence",
+      "reponse": "API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND)",
+      "outils": [],
+      "reponses_avec_outils": 0,
+      "reponses_outils_texte": 0,
+      "tours": 1,
+      "cout_dollars": 0.0,
+      "tokens_entree": 0,
+      "tokens_sortie": 0,
+      "usage": {
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "input_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "model_usage": {},
+      "cout_recalcule": 0.0,
+      "transmissions": 0,
+      "session_id": "8a12e705-9303-44ac-a609-41111bdfe1fc",
+      "latence_s": 196.24,
+      "duree_s": 176.672,
+      "duree_api_s": 0.0,
+      "erreur": "ResultError: Claude Code returned an error result: API Error: Can't reach the API server — check your internet or DNS (ENOTFOUND) (exit code: 1)",
+      "a_vu_le_changement": false
+    }
+  },
+  "identifiants_distincts": true,
+  "fichiers_de_seance": [
+    "4f5c5775-9e13-4e11-89cf-ae0913f53a77",
+    "5c9122ef-aba7-4528-8892-1baf6c32f95f",
+    "8a12e705-9303-44ac-a609-41111bdfe1fc",
+    "b4415548-f288-4205-97a7-5712b8266e22"
+  ],
+  "depense_dollars": 0.001887
+}

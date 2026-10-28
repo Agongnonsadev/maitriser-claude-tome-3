@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 1,
+  "depense_dollars": 0.001477,
+  "resume": [
+    {
+      "variante": "essai",
+      "question": "q1",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 3,
+      "cout_moyen": 0.000774205
+    },
+    {
+      "variante": "essai",
+      "question": "q4",
+      "seances": 1,
+      "premieres_sources": {
+        "fichier": 1
+      },
+      "classement": {
+        "à jour": 1
+      },
+      "appels_moyens": 4,
+      "cout_moyen": 0.0007032000000000001
+    }
+  ],
+  "essais": [
+    {
+      "variante": "essai",
+      "question": "q1",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Grep",
+          "entree": {
+            "pattern": "SIN-2026-0912",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpju_c_9qh\\depot",
+            "output_mode": "content",
+            "-n": true
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*",
+            "path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpju_c_9qh\\depot"
+          }
+        },
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 2,
+        "mcp": 1
+      },
+      "nombre_appels": 3,
+      "serveur_appele": true,
+      "classement": "à jour",
+      "reponse": "Le sinistre SIN-2026-0912 est actuellement à l'état **« expertise planifiée »**.\n\n- **Contrat :** KA-AUTO-1180\n- **Date :** 2 octobre 2026\n- **Nature :** collision avec une moto au carrefour Saint-Michel, constat amiable\n- **Prochaine étape :** passage de l'expert le 29 octobre 2026\n- **Équipe en charge :** Équipe automobile 2\n\nCette information vient du système en direct. L'export CSV local du 15 octobre indiquait « déclaré » et « désignation d'un expert », donc il est plus ancien.",
+      "cout_dollars": 0.000774205,
+      "latence_s": 10.58
+    },
+    {
+      "variante": "essai",
+      "question": "q4",
+      "repetition": 1,
+      "fin": "success",
+      "erreur": null,
+      "appels": [
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*15*10*"
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*2026-10-15*"
+          }
+        },
+        {
+          "outil": "Glob",
+          "entree": {
+            "pattern": "**/*export*"
+          }
+        },
+        {
+          "outil": "Read",
+          "entree": {
+            "file_path": "C:\\Users\\hp\\AppData\\Local\\Temp\\tmpn7lazrpr\\depot\\exports\\sinistres-2026-10-15.csv"
+          }
+        }
+      ],
+      "premiere_source": "fichier",
+      "sources": {
+        "fichier": 4
+      },
+      "nombre_appels": 4,
+      "serveur_appele": false,
+      "classement": "à jour",
+      "reponse": "L'export du 15 octobre (`exports\\sinistres-2026-10-15.csv`) compte **5 sinistres**.\n\n- SIN-2026-0912 (KA-AUTO-1180, déclaré)\n- SIN-2026-0788 (KA-AUTO-0731, déclaré)\n- SIN-2026-0855 (KA-SANTE-0318, déclaré)\n- SIN-2025-1470 (KA-HAB-0264, clos)\n- SIN-2019-0207 (KA-HAB-0264, archivé)\n\nJe n'ai lu que le fichier d'export, pas le système en direct.",
+      "cout_dollars": 0.0007032000000000001,
+      "latence_s": 11.28
+    }
+  ]
+}

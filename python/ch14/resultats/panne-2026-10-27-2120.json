@@ -1,0 +1,2459 @@
+{
+ "date": "2026-10-27",
+ "modele": "claude-haiku-5-5",
+ "diagnostic": {
+  "absents_de_l_index": [
+   "cg-auto-2027",
+   "tableau-auto-2027"
+  ],
+  "modifies": [],
+  "retires_de_la_source": []
+ },
+ "depense_dollars": 0.028081,
+ "resume": {
+  "octobre / sans filtre de date / sans métadonnées": {
+   "justes": "6/16",
+   "sinistres_2026": "6/6",
+   "sinistres_2027": "0/10",
+   "je_ne_trouve_pas": 0,
+   "reponses_fausses": 10,
+   "duree_mediane_s": 2.22
+  },
+  "octobre / sans filtre de date / avec métadonnées": {
+   "justes": "6/16",
+   "sinistres_2026": "6/6",
+   "sinistres_2027": "0/10",
+   "je_ne_trouve_pas": 10,
+   "reponses_fausses": 0,
+   "duree_mediane_s": 1.9
+  },
+  "remplacee / sans filtre de date / avec métadonnées": {
+   "justes": "10/16",
+   "sinistres_2026": "0/6",
+   "sinistres_2027": "10/10",
+   "je_ne_trouve_pas": 6,
+   "reponses_fausses": 0,
+   "duree_mediane_s": 1.93
+  },
+  "deux_editions / sans filtre de date / avec métadonnées": {
+   "justes": "16/16",
+   "sinistres_2026": "6/6",
+   "sinistres_2027": "10/10",
+   "je_ne_trouve_pas": 0,
+   "reponses_fausses": 0,
+   "duree_mediane_s": 1.94
+  },
+  "deux_editions / avec filtre de date / avec métadonnées": {
+   "justes": "16/16",
+   "sinistres_2026": "6/6",
+   "sinistres_2027": "10/10",
+   "je_ne_trouve_pas": 0,
+   "reponses_fausses": 0,
+   "duree_mediane_s": 1.61
+  }
+ },
+ "essais": [
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour la formule Tiers étendu, la garantie Bris de glace est en option avec une franchise de 15 000 (tableau des garanties, p1). L'article 10 garantit le remplacement ou la réparation du pare-brise brisé ou fêlé par un événement extérieur, la réparation étant préférée lorsque l'impact peut être réparé (p2). Les passages ne précisent pas de période de validité distincte pour ce document, donc son application au sinistre du 12 janvier 2027 n'est pas confirmée par une mention explicite.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "25 ?000"
+   ],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 3.466,
+   "tokens_entree": 1698,
+   "dollars": 0.00030480000000000004
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour la formule Tiers étendu, la garantie Bris de glace est en option avec une franchise de 15 000 (tableau des garanties, p1). Le pare-brise est couvert par l'article 10 (remplacement ou réparation, la réparation étant préférée lorsque c'est possible) (p2). Les passages ne précisent pas l'unité de la franchise ni les conditions de souscription de l'option, et ne donnent pas de période de validité pour ce tableau au regard de la date du sinistre (12 janvier 2027).",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "25 ?000"
+   ],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.271,
+   "tokens_entree": 1698,
+   "dollars": 0.00030230000000000003
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour la formule Tiers étendu, la garantie Bris de glace est en option avec une franchise de 15 000 (tableau des garanties). Le pare-brise est garanti par l'article 10, qui couvre son remplacement ou sa réparation. Les passages ne précisent pas de période de validité distincte : le tableau retenu s'applique au sinistre du 3 novembre 2026, date à laquelle aucune autre édition n'est fournie.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.533,
+   "tokens_entree": 1698,
+   "dollars": 0.0002883
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour la formule Tiers étendu, la garantie Bris de glace est en option avec une franchise de 15 000 (le tableau ne précise pas l'unité monétaire ni la période d'application de cette édition). Le pare-brise est garanti par l'article 10, la réparation étant préférée au remplacement lorsque l'impact peut être réparé. Le passage ne précise pas de période de validité : je n'ai pas pu confirmer que cette édition régit un sinistre du 3 novembre 2026.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.34,
+   "tokens_entree": 1698,
+   "dollars": 0.00029780000000000003
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré disposait de deux jours ouvrés pour déclarer le sinistre à Kanvô Assurances, à compter du jour où il en a eu connaissance (article 17). Pour un vol survenu le 20 janvier 2027, ce délai court donc à partir de la date à laquelle l'assuré a eu connaissance du vol ; le passage ne précise pas de date de connaissance, ni la période d'application de cette édition de l'article 17.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "(trois|3) jours ouvrés"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.732,
+   "tokens_entree": 2052,
+   "dollars": 0.00032570000000000006
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré disposait de deux jours ouvrés pour déclarer le sinistre à Kanvô Assurances, délai réduit par rapport aux cinq jours ouvrés du droit commun (article 17). Le sinistre du 20 janvier 2027 étant un vol, ce délai de deux jours ouvrés s'appliquait.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "(trois|3) jours ouvrés"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.968,
+   "tokens_entree": 2052,
+   "dollars": 0.00030720000000000004
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré disposait de deux jours ouvrés à compter du jour où il a eu connaissance du sinistre pour le déclarer (article 17, délai réduit en cas de vol, par rapport aux cinq jours ouvrés de droit commun). Pour un vol survenu le 10 décembre 2026, le délai court donc à partir de sa prise de connaissance, et une déclaration tardive ne fait perdre le droit à indemnité que si elle a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.727,
+   "tokens_entree": 2052,
+   "dollars": 0.00033520000000000007
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "En cas de vol, l'assuré disposait de deux jours ouvrés pour déclarer le sinistre à Kanvô Assurances, à compter du jour où il en a eu connaissance (article 17, Déclaration du sinistre). Le délai est ainsi réduit par rapport au délai ordinaire de cinq jours ouvrés, et une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.567,
+   "tokens_entree": 2052,
+   "dollars": 0.00032770000000000005
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un accident du 15 février 2027, l'expert déduit la vétusté des pièces remplacées du coût de réparation, plafonnée à 50 %. Cette règle figure à l'article 21 (Chapitre IV — Le sinistre) ; aucun passage ne précise la période d'application de cette édition, mais la date du sinistre est connue et aucune autre édition n'est présentée comme contradictoire.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "40 ?%"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.168,
+   "tokens_entree": 2003,
+   "dollars": 0.00031130000000000003
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 15 février 2027, l'expert déduit la vétusté des pièces remplacées dans la limite d'un plafond de 50 % du coût de la réparation (article 21, chapitre IV, Le sinistre). Les passages fournis ne précisent pas de période de validité pour cette édition, mais la date du sinistre tombe dans la période de référence applicable. Ce passage est la seule disposition trouvée sur le plafond de vétusté.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "40 ?%"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.472,
+   "tokens_entree": 2003,
+   "dollars": 0.0003198
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un accident du 28 octobre 2026, l'expert applique une vétusté plafonnée à 50 % sur les pièces remplacées : les dommages sont évalués au coût de la réparation, déduction faite de la vétusté des pièces. Les passages fournis ne précisent pas de période d'application pour cette édition ; la date du sinistre étant connue, c'est ce passage qui s'applique, sous réserve de vérifier les conditions particulières, qui l'emportent en cas de contradiction.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.744,
+   "tokens_entree": 2005,
+   "dollars": 0.0003285
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un accident du 28 octobre 2026, l'expert évalue les dommages au coût de la réparation, déduction faite de la vétusté des pièces remplacées, cette vétusté étant plafonnée à 50 %. Les passages ne précisent pas de période de validité pour cet article, donc cette règle est retenue pour la date du sinistre fournie ; le tableau des garanties n'est pas fourni et n'a pas été consulté.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.585,
+   "tokens_entree": 2005,
+   "dollars": 0.000316
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "Pour une panne en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 50 kilomètres. Cette garantie Assistance est comprise dans la formule Tous risques (article 11 et tableau des garanties Assistance). Les passages ne précisent pas de période d'édition distincte, donc la règle s'applique au sinistre du 5 janvier 2027.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "100 ?(km|kilomètres)"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.704,
+   "tokens_entree": 1692,
+   "dollars": 0.00028370000000000007
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "Pour une panne en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 50 kilomètres. L'assistance y est comprise (article 11 et tableau des garanties, formule Tous risques : comprise, remorquage 50 km). Les passages ne précisent pas de période de validité distincte pour le sinistre du 5 janvier 2027, donc cette réponse s'applique à la date indiquée.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "100 ?(km|kilomètres)"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.992,
+   "tokens_entree": 1692,
+   "dollars": 0.00029020000000000006
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-18",
+    "CG-AUTO-2026:art-14"
+   ],
+   "trouve": true,
+   "reponse": "Le vol peut être garanti s'il a été commis par effraction du véhicule ou du local qui l'abrite, ou par violence contre le conducteur (article 8) ; les passages ne prévoient pas l'absence de carte grise dans la boîte à gants comme cause d'exclusion. Il faut toutefois vérifier les exclusions de l'article 14 : le vol n'est pas garanti si les clés étaient sur le véhicule ou à l'intérieur, si le véhicule était laissé non verrouillé sur la voie publique, ou s'il a été commis par un membre de la famille ou une personne vivant sous le toit de l'assuré, et l'assuré doit déposer plainte dans les 48 heures (article 19). Les passages ne précisent pas la date d'application de l'édition des conditions générales, mais aucune contradiction n'a été relevée entre les textes fournis.",
+   "consultations": [],
+   "issue": "source_absente",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 2.378,
+   "tokens_entree": 1900,
+   "dollars": 0.000384
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": false,
+   "passages": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-18",
+    "CG-AUTO-2026:art-14"
+   ],
+   "trouve": true,
+   "reponse": "Le vol peut être garanti, car l'article 8 couvre la disparition du véhicule à la suite d'un vol commis par effraction ou par violence, et les passages ne prévoient pas d'exclusion liée à la présence de la carte grise dans le véhicule ; l'article 14 exclut seulement le vol commis alors que les clés étaient sur le véhicule ou à l'intérieur, le vol par un membre de la famille ou une personne vivant sous le toit, le vol d'un véhicule laissé non verrouillé sur la voie publique, et le vol d'accessoires non fixés, d'objets ou de marchandises. Il faut vérifier que le vol a bien été commis par effraction ou violence, que les clés n'étaient pas dans le véhicule, et que le dépôt de plainte a été fait dans les quarante-huit heures avec copie du récépissé, toutes les clés et la carte grise transmises (article 19) ; la date du sinistre (8 janvier 2027) est postérieure à ces dispositions, qui s'appliquent, et aucune édition contradictoire n'a été fournie.",
+   "consultations": [],
+   "issue": "source_absente",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-19"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 2.501,
+   "tokens_entree": 1900,
+   "dollars": 0.000422
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis couvrent uniquement les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (TG-AUTO-2026 et CG-AUTO-2026), alors que le sinistre est daté du 12 janvier 2027 : ils ne s'appliquent donc pas à ce dossier. Aucun document couvrant la période du 12 janvier 2027 n'a été fourni, je ne peux pas indiquer la franchise bris de glace pour la formule Tiers étendu avec option. Il faut récupérer le tableau des garanties de la période 2027 pour répondre.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "25 ?000"
+   ],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.906,
+   "tokens_entree": 2049,
+   "dollars": 0.0003659
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis couvrent les sinistres survenus du 1er janvier 2026 au 31 décembre 2026, alors que le sinistre est daté du 12 janvier 2027 : le document TG-AUTO-2026 ne s'applique donc pas à cette date. Aucun passage ne contient le tableau des garanties applicable aux sinistres de 2027, et je ne peux pas confirmer la franchise bris de glace pour la formule Tiers étendu avec option. Il faut consulter le tableau des garanties de la période 2027 avant de répondre.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "25 ?000"
+   ],
+   "sources_citees": [],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.831,
+   "tokens_entree": 2049,
+   "dollars": 0.00033939999999999996
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 3 novembre 2026 (période TG-AUTO-2026), la formule Tiers étendu prévoit le bris de glace en option, avec une franchise de 15 000 (le tableau ne précise pas l'unité monétaire). L'article 10 des CG-AUTO-2026 couvre le remplacement ou la réparation du pare-brise, la réparation étant préférée lorsqu'elle est possible.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.897,
+   "tokens_entree": 2049,
+   "dollars": 0.00033539999999999997
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 3 novembre 2026 (période TG-AUTO-2026), la formule Tiers étendu prévoit le bris de glace en option, avec une franchise de 15 000 (le tableau ne précise pas l'unité monétaire, mais il s'agit du montant indiqué). L'article 10 de CG-AUTO-2026 couvre le remplacement ou la réparation du pare-brise, la réparation étant préférée lorsque l'impact peut être réparé.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 4.045,
+   "tokens_entree": 2049,
+   "dollars": 0.00034439999999999997
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne contiennent pas le délai applicable à un sinistre survenu le 20 janvier 2027 : l'article 17 de CG-AUTO-2026 ne régit que les sinistres survenus du 1er janvier au 31 décembre 2026, et aucun document couvrant 2027 ne figure dans la base. Il faut vérifier si une édition des conditions générales applicable à 2027 existe. À titre indicatif seulement, l'édition 2026 prévoit deux jours ouvrés en cas de vol, mais elle ne s'applique pas à cette date.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "(trois|3) jours ouvrés"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.002,
+   "tokens_entree": 2348,
+   "dollars": 0.0003808
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne contiennent pas le délai applicable à un sinistre survenu le 20 janvier 2027 : l'article 17 de CG-AUTO-2026 ne couvre que les sinistres survenus du 1er janvier 2026 au 31 décembre 2026, et aucun document de la base ne couvre cette période. Pour un vol, l'article 17 de CG-AUTO-2026 prévoit un délai de deux jours ouvrés, mais il ne s'applique pas à la date du sinistre, donc ce délai ne peut pas être retenu ici. Il faut vérifier auprès de la direction ou dans l'édition des conditions générales applicable aux sinistres de 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "(trois|3) jours ouvrés"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.036,
+   "tokens_entree": 2348,
+   "dollars": 0.0004008
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 10 décembre 2026, l'assuré disposait de deux jours ouvrés pour déclarer le sinistre, ce délai étant réduit à deux jours ouvrés en cas de vol (au lieu de cinq jours ouvrés pour les autres sinistres) selon l'article 17 de CG-AUTO-2026, applicable aux sinistres du 1er janvier au 31 décembre 2026. Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.757,
+   "tokens_entree": 2348,
+   "dollars": 0.0003798
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 10 décembre 2026, l'assuré disposait de deux jours ouvrés pour le déclarer, ce délai étant réduit en cas de vol (CG-AUTO-2026, article 17, sinistres du 1er janvier au 31 décembre 2026, date connue). Le délai ordinaire de cinq jours ouvrés ne s'applique donc pas. Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.637,
+   "tokens_entree": 2348,
+   "dollars": 0.0003728
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne couvrent que les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (CG-AUTO-2026) : le plafond de vétusté de 50 % (article 21) ne s'applique donc pas à un sinistre du 15 février 2027. Aucun document de la base ne régit cette période, et je ne peux pas indiquer le plafond applicable ; il faut consulter l'édition des conditions générales en vigueur pour les sinistres de 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "40 ?%"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.84,
+   "tokens_entree": 2338,
+   "dollars": 0.0003663
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne couvrent que les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (CG-AUTO-2026) ; le sinistre du 15 février 2027 ne tombe pas dans cette période, et aucun document applicable à 2027 n'est fourni. Le plafond de vétusté de 50 % indiqué à l'article 21 ne peut donc pas être appliqué à ce dossier sur la base des passages disponibles. Il faut récupérer les conditions générales de l'édition applicable à la période 2027 pour répondre.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "40 ?%"
+   ],
+   "sources_citees": [],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.76,
+   "tokens_entree": 2338,
+   "dollars": 0.00037180000000000004
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 28 octobre 2026, c'est l'édition CG-AUTO-2026 qui s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 50 % du coût de la réparation. Les conditions particulières priment sur les conditions générales en cas de contradiction, donc à vérifier également sur le contrat de l'assuré.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.661,
+   "tokens_entree": 2340,
+   "dollars": 0.000355
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "CG-AUTO-2026:art-1",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 28 octobre 2026, l'article 21 de CG-AUTO-2026 (sinistres du 1er janvier au 31 décembre 2026) s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 50 %. Les conditions particulières priment sur les conditions générales en cas de contradiction (article 1), donc ce plafond doit être vérifié dans les conditions particulières du contrat.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-1"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.555,
+   "tokens_entree": 2340,
+   "dollars": 0.000367
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis couvrent les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 ; or le sinistre est daté du 5 janvier 2027, hors de cette période. Je ne dispose donc d'aucun passage applicable à cette date pour fixer la distance de remorquage, et je ne peux pas appliquer le remorquage de 50 km prévu par CG-AUTO-2026 (art. 11) et TG-AUTO-2026, qui ne régissent que les sinistres de 2026. Il faut consulter l'édition des conditions générales et du tableau des garanties applicable aux sinistres de 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "100 ?(km|kilomètres)"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.129,
+   "tokens_entree": 2046,
+   "dollars": 0.00036960000000000004
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis couvrent uniquement les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (CG-AUTO-2026 et TG-AUTO-2026), alors que le sinistre date du 5 janvier 2027 : ces documents ne s'appliquent donc pas à ce dossier. Je ne dispose pas de l'édition applicable aux sinistres de 2027, je ne peux donc pas confirmer la distance de remorquage pour cette panne. Il faut consulter les conditions générales et le tableau des garanties en vigueur pour 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "100 ?(km|kilomètres)"
+   ],
+   "sources_citees": [],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.923,
+   "tokens_entree": 2046,
+   "dollars": 0.00034510000000000004
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-18",
+    "CG-AUTO-2026:art-14"
+   ],
+   "trouve": false,
+   "reponse": "Je ne peux pas répondre : les passages fournis couvrent les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (CG-AUTO-2026), et le sinistre du 8 janvier 2027 n'est régi par aucun document de la base. Les passages disponibles ne traitent pas de la question de la carte grise laissée dans la boîte à gants ; ils indiquent seulement que le vol doit être commis par effraction ou par violence (art. 8) et que les clés laissées dans le véhicule ou à l'intérieur font partie des exclusions (art. 14), sans que ces éléments ne permettent de conclure pour ce sinistre de 2027. Il faut consulter les conditions générales applicables aux sinistres de 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "(^non\\b|n.est pas (couvert|garanti)|ne sont pas (couverts|garantis)|pas (couvert|garanti)|\\bexclu(e|s|es|t|ent)?\\b|aucune garantie)"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 3.021,
+   "tokens_entree": 2196,
+   "dollars": 0.00040510000000000003
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-18",
+    "CG-AUTO-2026:art-14"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne couvrent que les sinistres survenus du 1er janvier 2026 au 31 décembre 2026 (CG-AUTO-2026), alors que le vol date du 8 janvier 2027 : je ne dispose d'aucun document applicable à cette période. Je ne peux donc pas dire si le vol est garanti ; il faut consulter l'édition des conditions générales applicable aux sinistres de 2027. À titre indicatif, les passages de 2026 n'excluent pas le vol du véhicule dont la carte grise était à l'intérieur (seuls les clés laissées dans le véhicule et les vols sans effraction ni violence sont visés par l'article 8 et l'article 14), mais cela ne vaut pas pour 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.584,
+   "tokens_entree": 2196,
+   "dollars": 0.0004036
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2027:assistance",
+    "TG-AUTO-2027:garantie-du-conducteur",
+    "TG-AUTO-2027:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 12 janvier 2027 en formule Tiers étendu avec l'option Bris de glace, la franchise est de 25 000 (le tableau ne précise pas l'unité monétaire). Le pare-brise est garanti par l'article 10 des conditions générales, qui prévoit son remplacement ou sa réparation si l'impact est réparable.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.729,
+   "tokens_entree": 2009,
+   "dollars": 0.0003204
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2027:assistance",
+    "TG-AUTO-2027:garantie-du-conducteur",
+    "TG-AUTO-2027:responsabilite-civile"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 12 janvier 2027 en formule Tiers étendu avec l'option Bris de glace, la franchise est de 25 000 (TG-AUTO-2027, garantie Bris de glace : « en option, franchise 25 000 »). Le pare-brise est couvert par l'article 10 des CG-AUTO-2027, qui garantit son remplacement ou sa réparation, la réparation étant préférée lorsque l'impact le permet.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.056,
+   "tokens_entree": 2009,
+   "dollars": 0.0003364
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2027:assistance",
+    "TG-AUTO-2027:garantie-du-conducteur",
+    "TG-AUTO-2027:responsabilite-civile"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne couvrent que les sinistres survenus à partir du 1er janvier 2027 (TG-AUTO-2027 et CG-AUTO-2027), alors que le sinistre date du 3 novembre 2026. Je ne dispose donc d'aucun tableau des garanties applicable à cette date pour la formule Tiers étendu, et je ne peux pas indiquer la franchise du bris de glace pour ce sinistre. Il faut consulter l'édition des conditions générales et du tableau des garanties en vigueur avant le 1er janvier 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "15 ?000"
+   ],
+   "sources_citees": [],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 3.148,
+   "tokens_entree": 2009,
+   "dollars": 0.0003384
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2027:assistance",
+    "TG-AUTO-2027:garantie-du-conducteur",
+    "TG-AUTO-2027:responsabilite-civile"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne couvrent que les sinistres survenus à partir du 1er janvier 2027 (TG-AUTO-2027 et CG-AUTO-2027), alors que le sinistre date du 3 novembre 2026. Je n'ai donc pas de tableau des garanties applicable à cette date, et je ne peux pas indiquer la franchise bris de glace pour la formule Tiers étendu. Il faut consulter l'édition des conditions générales et du tableau des garanties en vigueur pour les sinistres de 2026.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "15 ?000"
+   ],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 3.036,
+   "tokens_entree": 2009,
+   "dollars": 0.0003494
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2027:art-17",
+    "CG-AUTO-2027:art-24",
+    "CG-AUTO-2027:art-8"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 20 janvier 2027, l'assuré disposait de trois jours ouvrés pour déclarer le sinistre, ce délai étant réduit en cas de vol par rapport aux cinq jours ouvrés de droit commun (CG-AUTO-2027, article 17, sinistres survenus à partir du 1er janvier 2027). Le retard ne fait perdre le droit à indemnité que s'il a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.563,
+   "tokens_entree": 2316,
+   "dollars": 0.00036110000000000005
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2027:art-17",
+    "CG-AUTO-2027:art-24",
+    "CG-AUTO-2027:art-8"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 20 janvier 2027, l'assuré disposait de trois jours ouvrés pour le déclarer, ce délai étant réduit en cas de vol par rapport au délai général de cinq jours ouvrés (CG-AUTO-2027, article 17, applicable aux sinistres survenus à partir du 1er janvier 2027). Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.525,
+   "tokens_entree": 2316,
+   "dollars": 0.0003636
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2027:art-17",
+    "CG-AUTO-2027:art-24",
+    "CG-AUTO-2027:art-8"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne contiennent pas le délai applicable aux sinistres du 10 décembre 2026 : l'article 17 de CG-AUTO-2027 (délai de trois jours ouvrés en cas de vol) ne régit que les sinistres survenus à partir du 1er janvier 2027, et aucun document couvrant la période antérieure n'a été fourni. Il faut consulter l'édition des conditions générales applicable au 10 décembre 2026 pour connaître le délai exact.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "(deux|2) jours ouvrés"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.928,
+   "tokens_entree": 2316,
+   "dollars": 0.00036310000000000004
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2027:art-17",
+    "CG-AUTO-2027:art-24",
+    "CG-AUTO-2027:art-8"
+   ],
+   "trouve": false,
+   "reponse": "Les passages fournis ne permettent pas de répondre : l'article 17 de CG-AUTO-2027 fixe un délai de trois jours ouvrés en cas de vol, mais il ne s'applique qu'aux sinistres survenus à partir du 1er janvier 2027, alors que le vol date du 10 décembre 2026. Aucun passage ne donne le délai applicable à un sinistre de décembre 2026 ni le document de cette période ; il faut donc consulter les conditions générales en vigueur avant le 1er janvier 2027.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "(deux|2) jours ouvrés"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.447,
+   "tokens_entree": 2316,
+   "dollars": 0.0003711
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2027:art-12",
+    "CG-AUTO-2027:art-1",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre survenu le 15 février 2027, l'expert applique la vétusté des pièces remplacées, plafonnée à 40 % du coût de la réparation (CG-AUTO-2027, article 21, édition applicable aux sinistres à partir du 1er janvier 2027). Les conditions particulières prévalent en cas de contradiction avec les conditions générales (article 1).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-1"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.341,
+   "tokens_entree": 2298,
+   "dollars": 0.0003508
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2027:art-12",
+    "CG-AUTO-2027:art-1",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 15 février 2027, l'expert applique le plafond de vétusté de 40 % sur les pièces remplacées, déduit du coût de la réparation (CG-AUTO-2027, article 21, qui régit les sinistres survenus à partir du 1er janvier 2027). Ce plafond figure dans les conditions générales de cette édition et n'a pas été contredit par un autre passage.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.936,
+   "tokens_entree": 2298,
+   "dollars": 0.0003463
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2027:art-12",
+    "CG-AUTO-2027:art-1",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": false,
+   "reponse": "Je ne peux pas répondre : le sinistre du 28 octobre 2026 est antérieur au 1er janvier 2027, et les passages fournis ne concernent que CG-AUTO-2027, qui ne s'applique qu'aux sinistres survenus à partir du 1er janvier 2027 (plafond de vétusté de 40 % à l'article 21). Aucun passage ne donne le plafond de vétusté applicable aux sinistres antérieurs à cette date ; il faut consulter l'édition des conditions générales en vigueur en octobre 2026.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "50 ?%"
+   ],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.657,
+   "tokens_entree": 2300,
+   "dollars": 0.0003725
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2027:art-12",
+    "CG-AUTO-2027:art-1",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": false,
+   "reponse": "Je n'ai pas trouvé de réponse applicable à ce sinistre : le seul passage relatif au plafond de vétusté (article 21 de CG-AUTO-2027) ne régit que les sinistres survenus à partir du 1er janvier 2027, alors que le sinistre date du 28 octobre 2026. Les passages fournis ne contiennent pas les conditions générales applicables à une date antérieure au 1er janvier 2027, donc je ne peux pas indiquer le plafond de vétusté retenu par l'expert pour cet accident.",
+   "consultations": [],
+   "issue": "manquee",
+   "faits_manquants": [
+    "50 ?%"
+   ],
+   "sources_citees": [],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.96,
+   "tokens_entree": 2300,
+   "dollars": 0.000363
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance",
+    "CG-AUTO-2027:art-5",
+    "TG-AUTO-2027:dommages-tous-accidents",
+    "TG-AUTO-2027:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 5 janvier 2027 en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 100 kilomètres. Cette garantie Assistance est comprise dans la formule Tous risques (CG-AUTO-2027, article 11 ; TG-AUTO-2027, tableau Assistance).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.527,
+   "tokens_entree": 2006,
+   "dollars": 0.00032010000000000003
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance",
+    "CG-AUTO-2027:art-5",
+    "TG-AUTO-2027:dommages-tous-accidents",
+    "TG-AUTO-2027:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "Pour une panne survenue le 5 janvier 2027 en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 100 kilomètres. Cette garantie Assistance est comprise dans la formule Tous risques (CG-AUTO-2027, article 11, et tableau des garanties TG-AUTO-2027, applicables aux sinistres survenus à partir du 1er janvier 2027).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.682,
+   "tokens_entree": 2006,
+   "dollars": 0.0003326
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2027:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Non, le vol n'est pas garanti : selon l'article 14 de CG-AUTO-2027, applicable aux sinistres survenus à partir du 1er janvier 2027 (sinistre du 8 janvier 2027), sont exclus les vols commis alors que la carte grise était laissée dans le véhicule. Le vol n'étant pas garanti, la procédure d'indemnisation ne s'applique pas ; les autres éléments du dossier (dépôt de plainte, clés) ne modifient pas cette exclusion.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-14"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.747,
+   "tokens_entree": 2190,
+   "dollars": 0.0003555
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "remplacee",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2027:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Non, le vol n'est pas garanti : selon l'article 14 de CG-AUTO-2027 (sinistres à partir du 1er janvier 2027, applicable à votre sinistre du 8 janvier 2027), ne sont pas garantis les vols commis alors que la carte grise était laissée dans le véhicule. Le fait que la carte grise était dans la boîte à gants entre dans cette exclusion. Les passages consultés ne prévoient pas d'autre motif de garantie pour ce cas.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-14"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.799,
+   "tokens_entree": 2190,
+   "dollars": 0.000352
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2026:assistance"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 12 janvier 2027, c'est le tableau TG-AUTO-2027 qui s'applique : en formule Tiers étendu avec l'option bris de glace, la franchise est de 25 000 (TG-AUTO-2027). Le pare-brise est bien garanti par l'article 10 de CG-AUTO-2027 (remplacement ou réparation, la réparation étant préférée si l'impact est réparable).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 2.114,
+   "tokens_entree": 2048,
+   "dollars": 0.0003368
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2026:assistance"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 12 janvier 2027 (formule Tiers étendu avec option bris de glace), la franchise est de 25 000 selon le tableau des garanties TG-AUTO-2027, qui s'applique aux sinistres survenus à partir du 1er janvier 2027. Le pare-brise est garanti (remplacement ou réparation) par l'article 10 de CG-AUTO-2027. Le tableau TG-AUTO-2026 (franchise 15 000) ne s'applique pas à cette date.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 2.264,
+   "tokens_entree": 2048,
+   "dollars": 0.0003508
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2026:assistance"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 3 novembre 2026, c'est le tableau TG-AUTO-2026 qui s'applique : en formule Tiers étendu avec l'option bris de glace, la franchise est de 15 000 pour le bris de glace, pare-brise compris. Le tableau TG-AUTO-2027 (franchise de 25 000, sinistres à partir du 1er janvier 2027) ne s'applique pas à cette date. L'article 10 de CG-AUTO-2026 confirme que le pare-brise est garanti, sa réparation étant préférée au remplacement lorsque l'impact le permet.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.83,
+   "tokens_entree": 2048,
+   "dollars": 0.0003668
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2026:assistance"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 3 novembre 2026, c'est le tableau des garanties TG-AUTO-2026 qui s'applique : en formule Tiers étendu avec l'option bris de glace, la franchise est de 15 000 (unité monétaire telle qu'indiquée dans le tableau). Le pare-brise est garanti par l'article 10 de CG-AUTO-2026 (remplacement ou réparation, la réparation étant préférée lorsque l'impact le permet). La franchise de 25 000 du TG-AUTO-2027 ne s'applique qu'aux sinistres survenus à partir du 1er janvier 2027.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.854,
+   "tokens_entree": 2048,
+   "dollars": 0.0003713
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2027:art-17"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 20 janvier 2027, c'est l'édition CG-AUTO-2027 qui s'applique : l'assuré disposait de trois jours ouvrés pour déclarer le sinistre (contre deux jours ouvrés dans CG-AUTO-2026, qui ne s'applique pas à cette date). Le délai général reste de cinq jours ouvrés à compter du jour où l'assuré en a eu connaissance, et une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.155,
+   "tokens_entree": 2399,
+   "dollars": 0.0003874
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2027:art-17"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 20 janvier 2027, c'est l'édition CG-AUTO-2027 qui s'applique : l'assuré disposait de trois jours ouvrés pour déclarer le sinistre (délai réduit en cas de vol, contre cinq jours ouvrés pour les autres sinistres). Le délai de l'édition CG-AUTO-2026 (deux jours ouvrés en cas de vol) ne s'applique pas à cette date.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.387,
+   "tokens_entree": 2399,
+   "dollars": 0.00036639999999999996
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2027:art-17"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 10 décembre 2026, c'est l'édition CG-AUTO-2026 qui s'applique : en cas de vol, l'assuré disposait de deux jours ouvrés pour déclarer le sinistre (délai ordinaire de cinq jours ouvrés, réduit à deux en cas de vol). L'édition CG-AUTO-2027, qui fixe ce délai à trois jours ouvrés, ne s'applique qu'aux sinistres survenus à partir du 1er janvier 2027.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 1.629,
+   "tokens_entree": 2399,
+   "dollars": 0.0003854
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2027:art-17"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 10 décembre 2026, c'est l'édition CG-AUTO-2026 qui s'applique : l'assuré disposait de deux jours ouvrés pour déclarer le sinistre (délai réduit en cas de vol, à compter du jour où il en a eu connaissance). À titre indicatif, l'édition CG-AUTO-2027 (sinistres à partir du 1er janvier 2027) porte ce délai à trois jours ouvrés, mais elle ne s'applique pas à ce dossier.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.647,
+   "tokens_entree": 2399,
+   "dollars": 0.0003859
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2026:art-12"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre survenu le 15 février 2027, c'est le CG-AUTO-2027 qui s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 40 %. (Le CG-AUTO-2026, qui prévoyait un plafond de 50 %, ne régit que les sinistres survenus du 1er janvier au 31 décembre 2026.)",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.491,
+   "tokens_entree": 2488,
+   "dollars": 0.0003643
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2026:art-12"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 15 février 2027, c'est le CG-AUTO-2027 qui s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 40 %. (Le CG-AUTO-2026, qui prévoyait un plafond de 50 %, ne régit que les sinistres survenus en 2026.)",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 1.312,
+   "tokens_entree": 2488,
+   "dollars": 0.0003563
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2026:art-12"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 28 octobre 2026, c'est l'édition CG-AUTO-2026 qui s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 50 % (article 21). L'édition CG-AUTO-2027, qui fixe ce plafond à 40 %, ne régit que les sinistres survenus à partir du 1er janvier 2027.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.094,
+   "tokens_entree": 2490,
+   "dollars": 0.000373
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2026:art-12"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 28 octobre 2026, c'est l'article 21 de CG-AUTO-2026 qui s'applique : la vétusté des pièces remplacées est déduite du coût de la réparation, plafonnée à 50 %. (L'édition CG-AUTO-2027, plafonnant à 40 %, ne s'applique qu'aux sinistres survenus à partir du 1er janvier 2027.)",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.201,
+   "tokens_entree": 2490,
+   "dollars": 0.000376
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2027:assistance",
+    "CG-AUTO-2026:art-5"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 5 janvier 2027 en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 100 kilomètres (CG-AUTO-2027, article 11, et TG-AUTO-2027 : « remorquage 100 km »). Ce plafond de 100 km s'applique car la date du sinistre tombe dans la période de la version 2027 ; la version 2026 prévoyait 50 km, mais elle ne s'applique pas à ce sinistre.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 1.905,
+   "tokens_entree": 2021,
+   "dollars": 0.0003481
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2027:assistance",
+    "CG-AUTO-2026:art-5"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 5 janvier 2027 en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 100 kilomètres. Ce plafond résulte de CG-AUTO-2027 (article 11) et du tableau des garanties TG-AUTO-2027, applicables aux sinistres survenus à partir du 1er janvier 2027 ; l'édition 2026 (50 km) ne s'applique pas à cette date.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance"
+   ],
+   "duree_recherche_s": 0.002,
+   "duree_reponse_s": 1.528,
+   "tokens_entree": 2021,
+   "dollars": 0.0003411
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2027:art-19"
+   ],
+   "trouve": true,
+   "reponse": "Le sinistre étant du 8 janvier 2027, c'est la CG-AUTO-2027 qui s'applique. Son article 14 exclut les vols commis alors que la carte grise était laissée dans le véhicule : ce vol n'est donc pas garanti. (Le dépôt de plainte dans les 48 heures avec copie du récépissé, toutes les clés et la carte grise reste requis, article 19.)",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-19"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 1.978,
+   "tokens_entree": 2223,
+   "dollars": 0.0003478
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "produit",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2027:art-19"
+   ],
+   "trouve": true,
+   "reponse": "Non, le vol n'est pas garanti : le sinistre du 8 janvier 2027 relève de CG-AUTO-2027, dont l'article 14 exclut le vol commis alors que la carte grise était laissée dans le véhicule. Les conditions de l'article 8 (effraction ou violence contre le conducteur) ne changent rien à cette exclusion. Par ailleurs, l'assuré doit tout de même déposer plainte dans les 48 heures et transmettre le récépissé, les clés et la carte grise (article 19).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2027:art-19"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 2.063,
+   "tokens_entree": 2223,
+   "dollars": 0.00037580000000000003
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2027:assistance",
+    "TG-AUTO-2027:responsabilite-civile",
+    "TG-AUTO-2027:vol"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 12 janvier 2027 (formule Tiers étendu avec l'option Bris de glace), la franchise applicable au pare-brise est de 25 000 (TG-AUTO-2027). Le pare-brise est garanti au titre de l'article 10 de CG-AUTO-2027, qui prévoit la réparation préférée au remplacement lorsque l'impact peut être réparé.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.513,
+   "tokens_entree": 1994,
+   "dollars": 0.00032589999999999995
+  },
+  {
+   "question": "v1",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10",
+    "TG-AUTO-2027:assistance",
+    "TG-AUTO-2027:responsabilite-civile",
+    "TG-AUTO-2027:vol"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 12 janvier 2027 en formule Tiers étendu avec l'option bris de glace, la franchise applicable au pare-brise est de 25 000 (TG-AUTO-2027, garantie Bris de glace, formule Tiers étendu : en option, franchise 25 000). Le pare-brise est couvert au titre de l'article 10 des CG-AUTO-2027, qui prévoit le remplacement ou la réparation du pare-brise brisé ou fêlé par un événement extérieur, la réparation étant préférée lorsque l'impact peut être réparé. Ces montants sont ceux de l'édition applicable aux sinistres survenus à partir du 1er janvier 2027.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2027:bris-de-glace",
+    "CG-AUTO-2027:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.914,
+   "tokens_entree": 1994,
+   "dollars": 0.00037739999999999996
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:vol"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 3 novembre 2026 relevant de la formule Tiers étendu avec l'option bris de glace, la franchise applicable au pare-brise est de 15 000 (TG-AUTO-2026, garantie Bris de glace, formule Tiers étendu : en option, franchise 15 000). L'article 10 des CG-AUTO-2026 garantit le remplacement ou la réparation du pare-brise brisé ou fêlé par un événement extérieur, la réparation étant préférée lorsqu'elle est possible. Les montants sont indiqués dans les passages sans unité monétaire précisée ; ils sont à confirmer dans le document source.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.873,
+   "tokens_entree": 2034,
+   "dollars": 0.0003739
+  },
+  {
+   "question": "v2",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:vol"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 3 novembre 2026, la formule Tiers étendu avec l'option bris de glace (garantie Bris de glace, qui couvre le pare-brise selon l'article 10 des CG-AUTO-2026) comporte une franchise de 15 000. Le tableau des garanties TG-AUTO-2026 précise que cette franchise s'applique à l'option en formule Tiers étendu.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-10"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.62,
+   "tokens_entree": 2034,
+   "dollars": 0.00033089999999999997
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2027:art-17",
+    "CG-AUTO-2027:art-24",
+    "PROC-SIN:proc-2"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 20 janvier 2027, l'assuré disposait de trois jours ouvrés pour le déclarer, ce délai étant réduit en cas de vol (l'article 17 prévoit cinq jours ouvrés en général). Le délai court à compter du jour où l'assuré a eu connaissance du sinistre. Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.603,
+   "tokens_entree": 2290,
+   "dollars": 0.0003575
+  },
+  {
+   "question": "v3",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2027:art-17",
+    "CG-AUTO-2027:art-24",
+    "PROC-SIN:proc-2"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 20 janvier 2027, l'assuré disposait de trois jours ouvrés pour le déclarer : l'article 17 de CG-AUTO-2027 (sinistres à partir du 1er janvier 2027) réduit le délai de cinq à trois jours ouvrés en cas de vol. Le délai court à compter du jour où l'assuré en a eu connaissance. Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-17"
+   ],
+   "duree_recherche_s": 0.001,
+   "duree_reponse_s": 1.581,
+   "tokens_entree": 2290,
+   "dollars": 0.000368
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-2"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 10 décembre 2026, l'assuré disposait de deux jours ouvrés pour le déclarer, ce délai étant réduit en cas de vol par rapport au délai de cinq jours ouvrés applicable aux autres sinistres (CG-AUTO-2026, article 17, sinistres survenus du 1er janvier au 31 décembre 2026, date du sinistre connue). Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.211,
+   "tokens_entree": 2314,
+   "dollars": 0.0003724
+  },
+  {
+   "question": "v4",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-13",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-2"
+   ],
+   "trouve": true,
+   "reponse": "Pour un vol survenu le 10 décembre 2026, l'assuré disposait de deux jours ouvrés pour déclarer le sinistre, ce délai étant réduit en cas de vol par rapport aux cinq jours ouvrés de droit commun (CG-AUTO-2026, article 17, applicable aux sinistres survenus du 1er janvier au 31 décembre 2026). Une déclaration tardive ne fait perdre le droit à indemnité que si le retard a causé un préjudice à Kanvô Assurances.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-17"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.803,
+   "tokens_entree": 2314,
+   "dollars": 0.00036839999999999996
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2027:art-12",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 15 février 2027, c'est le CG-AUTO-2027 qui s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 40 % du coût de la réparation. Cette règle figure à l'article 21 du chapitre IV (Le sinistre).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.54,
+   "tokens_entree": 2281,
+   "dollars": 0.00032910000000000003
+  },
+  {
+   "question": "v5",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-21",
+    "CG-AUTO-2027:art-2",
+    "CG-AUTO-2027:art-12",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 15 février 2027, relevant de CG-AUTO-2027 (sinistres survenus à partir du 1er janvier 2027), l'expert déduit la vétusté des pièces remplacées dans la limite d'un plafond de 40 %. Ce plafond s'applique au coût de la réparation avant évaluation des dommages.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.473,
+   "tokens_entree": 2281,
+   "dollars": 0.0003351
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 28 octobre 2026, relevant de CG-AUTO-2026 (sinistres du 1er janvier au 31 décembre 2026), l'expert déduit la vétusté des pièces remplacées, plafonnée à 50 %. Cette déduction s'applique au coût de la réparation évalué par l'expert.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.497,
+   "tokens_entree": 2315,
+   "dollars": 0.0003365
+  },
+  {
+   "question": "v6",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-12",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Pour un sinistre du 28 octobre 2026, c'est l'édition CG-AUTO-2026 qui s'applique : l'expert déduit la vétusté des pièces remplacées, plafonnée à 50 % du coût de la réparation (article 21). Aucun autre plafond de vétusté n'apparaît dans les passages fournis.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2026:art-21"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.426,
+   "tokens_entree": 2315,
+   "dollars": 0.000337
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance",
+    "CG-AUTO-2027:art-5",
+    "TG-AUTO-2027:dommages-tous-accidents",
+    "TG-AUTO-2027:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "Pour une panne survenue le 5 janvier 2027 en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 100 kilomètres. Cette assistance est comprise dans la formule Tous risques (CG-AUTO-2027, article 11 ; tableau des garanties TG-AUTO-2027, garantie Assistance).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.47,
+   "tokens_entree": 2006,
+   "dollars": 0.0003221
+  },
+  {
+   "question": "v7",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance",
+    "CG-AUTO-2027:art-5",
+    "TG-AUTO-2027:dommages-tous-accidents",
+    "TG-AUTO-2027:collision-avec-un-tiers-identifie"
+   ],
+   "trouve": true,
+   "reponse": "Pour une panne survenue le 5 janvier 2027 en formule Tous risques, le remorquage est pris en charge jusqu'au garage le plus proche, dans la limite de 100 kilomètres. Cette garantie Assistance est comprise dans la formule Tous risques (CG-AUTO-2027, article 11 ; tableau des garanties TG-AUTO-2027).",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-11",
+    "TG-AUTO-2027:assistance"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.436,
+   "tokens_entree": 2006,
+   "dollars": 0.00032010000000000003
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2027:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Non, le vol n'est pas garanti : l'article 14 de CG-AUTO-2027 exclut le vol commis alors que la carte grise était laissée dans le véhicule, et ce document s'applique aux sinistres survenus à partir du 1er janvier 2027, donc au sinistre du 8 janvier 2027. Les autres conditions de l'article 8 (effraction ou violence) restent à vérifier, mais l'exclusion suffit à refuser la garantie.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.672,
+   "tokens_entree": 2190,
+   "dollars": 0.0003545
+  },
+  {
+   "question": "v8",
+   "genre": "edition",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "deux_editions",
+   "metadonnees": true,
+   "passages": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8",
+    "CG-AUTO-2027:art-19",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2027:art-18"
+   ],
+   "trouve": true,
+   "reponse": "Non, le vol n'est pas garanti : l'article 14 de CG-AUTO-2027 exclut le vol commis alors que la carte grise était laissée dans le véhicule, et ce document s'applique aux sinistres survenus à partir du 1er janvier 2027, ce qui est le cas ici (sinistre du 8 janvier 2027). Les autres conditions de l'article 8 (effraction ou violence contre le conducteur) ne changent pas ce résultat, l'exclusion s'appliquant de toute façon. Il s'agit de l'application de l'exclusion aux seuls faits déclarés ; la vérification de la réalité de la carte grise dans la boîte à gants relève du gestionnaire.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "CG-AUTO-2027:art-14",
+    "CG-AUTO-2027:art-8"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.104,
+   "tokens_entree": 2190,
+   "dollars": 0.000395
+  }
+ ]
+}

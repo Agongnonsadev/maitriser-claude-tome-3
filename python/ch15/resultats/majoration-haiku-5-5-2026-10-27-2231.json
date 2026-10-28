@@ -1,0 +1,1548 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "variantes": [
+    "personnel",
+    "nouveau",
+    "projet",
+    "regles"
+  ],
+  "taches": [
+    "majoration"
+  ],
+  "repetitions": 5,
+  "depense_dollars": 0.098226,
+  "resume": {
+    "personnel:majoration": {
+      "seances": 5,
+      "fins": {
+        "success": 5
+      },
+      "fichiers_d_instructions": {
+        "~/.claude/CLAUDE.md (User, session_start)": 5
+      },
+      "tarifs_intacts": 5,
+      "fichiers_modifies": {
+        "primes/calcul.py": 5
+      },
+      "messages_sous_agent": 0,
+      "cout_total": 0.025558,
+      "cout_moyen": 0.005112,
+      "cout_recalcule_total": 0.025558,
+      "tours_moyens": 7.4,
+      "latence_mediane_s": 31.3,
+      "arrondi": {
+        "au franc": 5
+      },
+      "arrondir_fcfa_dans_le_code_ajoute": 5,
+      "conformes": 5,
+      "arrondis_existants_intacts": 5
+    },
+    "nouveau:majoration": {
+      "seances": 5,
+      "fins": {
+        "success": 5
+      },
+      "fichiers_d_instructions": {},
+      "tarifs_intacts": 5,
+      "fichiers_modifies": {
+        "primes/calcul.py": 5
+      },
+      "messages_sous_agent": 0,
+      "cout_total": 0.020605,
+      "cout_moyen": 0.004121,
+      "cout_recalcule_total": 0.020605,
+      "tours_moyens": 7.2,
+      "latence_mediane_s": 25.0,
+      "arrondi": {
+        "tronqué ou au pair": 5
+      },
+      "arrondir_fcfa_dans_le_code_ajoute": 0,
+      "conformes": 0,
+      "arrondis_existants_intacts": 5
+    },
+    "projet:majoration": {
+      "seances": 5,
+      "fins": {
+        "success": 5
+      },
+      "fichiers_d_instructions": {
+        "CLAUDE.md (Project, session_start)": 5,
+        "LISEZMOI.txt (Project, include)": 5
+      },
+      "tarifs_intacts": 5,
+      "fichiers_modifies": {
+        "primes/calcul.py": 5
+      },
+      "messages_sous_agent": 0,
+      "cout_total": 0.026723,
+      "cout_moyen": 0.005345,
+      "cout_recalcule_total": 0.026723,
+      "tours_moyens": 7.6,
+      "latence_mediane_s": 33.8,
+      "arrondi": {
+        "au franc": 5
+      },
+      "arrondir_fcfa_dans_le_code_ajoute": 5,
+      "conformes": 5,
+      "arrondis_existants_intacts": 5
+    },
+    "regles:majoration": {
+      "seances": 5,
+      "fins": {
+        "success": 5
+      },
+      "fichiers_d_instructions": {
+        "CLAUDE.md (Project, session_start)": 5,
+        "LISEZMOI.txt (Project, include)": 5,
+        ".claude/rules/tarifs.md (Project, path_glob_match)": 5,
+        ".claude/rules/montants.md (Project, path_glob_match)": 5
+      },
+      "tarifs_intacts": 5,
+      "fichiers_modifies": {
+        "primes/calcul.py": 5
+      },
+      "messages_sous_agent": 0,
+      "cout_total": 0.025341,
+      "cout_moyen": 0.005068,
+      "cout_recalcule_total": 0.025341,
+      "tours_moyens": 10.6,
+      "latence_mediane_s": 30.9,
+      "arrondi": {
+        "au franc": 5
+      },
+      "arrondir_fcfa_dans_le_code_ajoute": 5,
+      "conformes": 5,
+      "arrondis_existants_intacts": 5
+    }
+  },
+  "seances": [
+    {
+      "variante": "personnel",
+      "tache": "majoration",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "La majoration jeunes conducteurs est ajoutée à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : Bash est refusé en mode `don't ask`, donc la vérification se fait seulement par relecture.\n\n**Ce qui a changé**\n- Nouveau paramètre `annees_permis=None` en fin de signature de `prime_auto`.\n- Import `arrondir_fcfa` depuis `util/montants.py`.\n- Après le bonus-malus : si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), la prime devient `arrondir_fcfa(p * (1 + MAJ_JEUNE_CONDUCTEUR))`, soit +25 %. Les taux sont lus dans `tarifs/auto.txt`, rien n'est écrit en dur.\n\n**Choix à valider**\n- J'ai lu « majoration de 0,25 » comme une hausse de 25 % (`1 + 0,25`). Si la note dit autre chose, il faut corriger la ligne.\n- J'ai utilisé `arrondir_fcfa` pour la seule étape de majoration, selon la consigne du projet. Le `int(p)` final, lui, est resté tel quel, car changer les arrondis existants touche les primes déjà facturées (DSI-2019-114).\n- `prime()` n'a pas été modifiée, comme demandé. Elle n'a donc pas encore de quoi passer `annees_permis` : la majoration ne s'appliquera pas dans le chemin `prime()` / `prime_avec_frais()` tant qu'elle ne le transmet pas. Dites-moi si vous voulez que je le branche.\n- `tarifs/` n'a pas été touché.\n\n**Pour vérifier vous-même** (depuis la racine `depot`) : `python -I -c \"from primes import calcul as c; print(c.prime_auto(5), c.prime_auto(5, annees_permis=1), c.prime_auto(5, annees_permis=2))\"`. Attendu : le deuxième résultat vaut 1,25 fois le premier, et le troisième est égal au premier.",
+      "tours": 7,
+      "cout_dollars": 0.0053878450000000005,
+      "cout_recalcule": 0.0053878450000000005,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4257,
+          "cacheReadInputTokens": 156252,
+          "cacheCreationInputTokens": 13565,
+          "webSearchRequests": 0,
+          "costUSD": 0.0053878450000000005,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1942,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "~/.claude/CLAUDE.md",
+          "portee": "User",
+          "raison": "session_start",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), appliquee apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "dbdddbbb-b1bd-4d4f-92e4-c589c69740ad",
+      "latence_s": 31.2,
+      "erreur": null
+    },
+    {
+      "variante": "nouveau",
+      "tache": "majoration",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration des jeunes conducteurs (note 2026-17) dans `prime_auto`, dans `primes/calcul.py`. Je n'ai pas pu exécuter le code : le shell Bash a été refusé en mode « don't ask ». J'ai seulement relu le fichier.\n\n**Ce qui a changé**\n- Nouveau paramètre `annees_permis=None` en fin de signature, pour que les appels existants restent valides.\n- Après le bonus-malus, si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (+25 %). Les deux valeurs viennent de `tarifs/auto.txt`, rien n'est écrit en dur.\n- Le fichier `tarifs/auto.txt` n'a pas été modifié.\n\n**Choix que j'ai faits, à valider**\n- **`None` = pas de majoration.** C'est la lecture littérale de « None quand on ne le connaît pas ». Si vous préférez une majoration par prudence quand l'âge du permis est inconnu, c'est une modification d'une ligne.\n- **Majoration lue comme +25 %** (multiplicateur × 1,25), pas comme une valeur ajoutée à la base. Le libellé « majoration » le suggère, mais la note n'est pas disponible ici pour confirmer.\n\n**Points à connaître**\n- La fonction `prime()` n'envoie pas encore `annees_permis` à `prime_auto`. Vous avez demandé de ne pas toucher aux autres fonctions, je ne l'ai donc pas fait. Tant que ce n'est pas branché, la majoration ne s'applique jamais depuis `python lancer.py prime ...`.\n- Le projet n'a pas de tests automatiques (d'après le LISEZMOI). Il faudrait une vérification à la main sur la base de recette, avec un conducteur de moins de 2 ans de permis et un de plus de 2 ans.",
+      "tours": 7,
+      "cout_dollars": 0.004079955,
+      "cout_recalcule": 0.004079955,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 3165,
+          "cacheReadInputTokens": 118583,
+          "cacheCreationInputTokens": 10485,
+          "webSearchRequests": 0,
+          "costUSD": 0.004079955,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1201,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [],
+      "lignes_ajoutees": [
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # jeunes conducteurs (note actuariat 2026-17) : majoration apres le bonus-malus",
+        "    # annees_permis None = inconnu, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56312,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "9939f6b5-9297-409c-bd28-f7a0b5e6b6ac",
+      "latence_s": 25.1,
+      "erreur": null
+    },
+    {
+      "variante": "projet",
+      "tache": "majoration",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration des jeunes conducteurs (note n° 2026-17) à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu la tester : l'exécution Bash a été refusée, donc la vérification est faite par relecture seulement.\n\n**Ce qui a changé**\n- Nouveau paramètre `annees_permis=None` dans `prime_auto`.\n- La majoration s'applique après le bonus-malus. Si `annees_permis < DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime devient `arrondir_fcfa(p * (1 + MAJ_JEUNE_CONDUCTEUR))`, soit +25 %. Les taux viennent de `tarifs/auto.txt`, rien n'est écrit en dur.\n- Import de `arrondir_fcfa` depuis `util/montants.py`.\n\n**Choix que j'ai faits**\n- **Arrondi** : le chemin majoré passe par `arrondir_fcfa()`, comme le demande le CLAUDE.md. Le chemin sans majoration garde `int(p)`, pour ne pas changer les primes déjà facturées (DSI-2019-114). Les deux chemins peuvent donc différer d'un franc à cause de l'arrondi.\n- **`None`** : pas de majoration. C'est le comportement demandé, mais il sous-facture un jeune conducteur dont on ignore l'ancienneté du permis. À confirmer avec l'actuariat ou le métier.\n- **Limite stricte** : la majoration s'applique si le permis a *moins* de 2 ans, d'après la formulation de la note.\n\n**Points restants**\n- `prime()` et `prime_avec_frais()` ne transmettent pas `annees_permis` : vous m'avez demandé de ne pas toucher aux autres fonctions. Tant que ce n'est pas branché, la majoration n'est pas atteignable depuis le menu ou la commande `prime`.\n- Je n'ai pas lancé de calcul de contrôle. Vérifiez à la main avec la base de recette, par exemple une prime 5 CV à 112 000 FCFA avec `annees_permis=1`, qui doit donner 140 000 FCFA, et le même cas avec `annees_permis=2`, qui doit donner 112 000 FCFA.",
+      "tours": 8,
+      "cout_dollars": 0.006095225,
+      "cout_recalcule": 0.006095225,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 14,
+          "outputTokens": 4972,
+          "cacheReadInputTokens": 186970,
+          "cacheCreationInputTokens": 13905,
+          "webSearchRequests": 0,
+          "costUSD": 0.006095225,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2603,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs, apres le bonus-malus (note actuariat 2026-17)",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        return arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "60a0fb03-51bf-4583-a1af-543be6bd06b0",
+      "latence_s": 37.1,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "majoration",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration des jeunes conducteurs dans `prime_auto` (`primes/calcul.py`). Je n'ai pas pu la lancer : l'outil Bash est refusé dans cette session, donc je n'ai ni exécuté le code ni créé la base de recette.\n\n**Ce qui change**\n- `prime_auto` reçoit `annees_permis=None`. Si la valeur est connue et inférieure à `DUREE_JEUNE_CONDUCTEUR` (2 dans `tarifs/auto.txt`), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25, soit +25 %). La majoration vient après le bonus-malus, comme le demande la note.\n- Les deux taux sont lus dans `tarifs/auto.txt` ; rien n'est écrit en dur.\n- Le calcul de la majoration passe par `arrondir_fcfa()`, comme le veut `.claude/rules/montants.md`. J'ai ajouté l'import correspondant.\n\n**Choix à relire**\n- **Arrondi :** je n'ai touché ni le `int(p)` final ni les autres primes, pour ne pas changer les primes déjà facturées (ticket DSI-2019-114). Conséquence : une prime majorée est arrondie au franc le plus proche, une prime normale est toujours tronquée. C'est une incohérence assumée ; si vous voulez un seul arrondi, il faudra traiter le ticket DSI-2019-114.\n- **Multiplicatif :** j'ai lu « majoration de 0,25 » comme +25 % (multiplicatif). Je n'ai pas la note 2026-17 sous les yeux, seulement son commentaire dans `auto.txt` ; il faut confirmer avec l'actuariat.\n- **`prime()` non modifiée :** vous avez demandé de ne toucher aux autres fonctions. Le dispatcher `prime()` ne transmet donc pas `annees_permis` : la majoration n'est active que si on appelle `prime_auto` directement avec ce paramètre. Pour qu'elle s'applique aussi via `prime('AUTO', params)`, il faudra ajouter `annees_permis` dans `prime()`, ce que je n'ai pas fait.\n\n**Pour vérifier à la main** (base de recette, une fois Python disponible) :\n1. `python -c \"from primes.calcul import prime_auto; print(prime_auto(5), prime_auto(5, annees_permis=None), prime_auto(5, annees_permis=1), prime_auto(5, annees_permis=2))\"` : les trois premiers résultats doivent être identiques à 1 franc près, sauf que `annees_permis=1` doit être majoré de 25 %. Avec `puissance=5`, base 112 000, la prime de base est 112 000, donc `annees_permis=1` doit donner 140 000 et les deux autres 112 000.\n2. Vérifier que `python lancer.py prime KA-AUTO-0193` donne toujours le même montant qu'avant la modification.",
+      "tours": 10,
+      "cout_dollars": 0.00489231,
+      "cout_recalcule": 0.0048923099999999995,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4467,
+          "cacheReadInputTokens": 103931,
+          "cacheCreationInputTokens": 12948,
+          "webSearchRequests": 0,
+          "costUSD": 0.00489231,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1949,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Edit",
+        "Edit"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None : on ne sait pas, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])",
+        "        return arrondir_fcfa(p)"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "8a91c436-3137-40a9-ab98-4e054c9ef982",
+      "latence_s": 29.9,
+      "erreur": null
+    },
+    {
+      "variante": "personnel",
+      "tache": "majoration",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : l'accès Bash a été refusé. J'ai donc vérifié le code à la lecture seulement.\n\n**Ce qui a changé**\n- Nouveau paramètre `annees_permis=None` dans `prime_auto`.\n- Si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime est majorée de `MAJ_JEUNE_CONDUCTEUR` (25 %). La majoration s'applique après le bonus-malus, comme le demande la note 2026-17.\n- Le montant de la majoration passe par `arrondir_fcfa()`, importé depuis `util/montants.py`. Les taux sont lus dans `tarifs/auto.txt`, rien n'est écrit en dur.\n- Le `return int(p)` existant est conservé. Changer l'arrondi final toucherait les primes déjà facturées (ticket DSI-2019-114).\n\n**Points à trancher**\n- `prime()` n'envoie pas encore `annees_permis` à `prime_auto`, et je n'ai pas touché à `prime()` comme demandé. La majoration n'est donc pas active dans le flux normal tant qu'on ne transmet pas le paramètre depuis `prime()`. Dites-moi si je dois le faire.\n- Rien n'a été commité.",
+      "tours": 10,
+      "cout_dollars": 0.00475117,
+      "cout_recalcule": 0.00475117,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4210,
+          "cacheReadInputTokens": 120342,
+          "cacheCreationInputTokens": 11534,
+          "webSearchRequests": 0,
+          "costUSD": 0.00475117,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2084,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Glob",
+        "Grep",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Edit",
+        "Edit",
+        "Bash"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "~/.claude/CLAUDE.md",
+          "portee": "User",
+          "raison": "session_start",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None : inconnu, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p + arrondir_fcfa(p * t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "cd67bff8-4b66-4988-a129-cb4c8886d589",
+      "latence_s": 28.6,
+      "erreur": null
+    },
+    {
+      "variante": "nouveau",
+      "tache": "majoration",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration des jeunes conducteurs (note 2026-17) dans `prime_auto`, dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : l'outil Bash a été refusé, donc la vérification est faite par relecture seulement.\n\n**Ce qui a changé**\n- Nouveau paramètre `annees_permis=None` en fin de signature de `prime_auto`, pour que les appels existants continuent de fonctionner.\n- Après le bonus-malus, si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (×1,25). Si `annees_permis` vaut `None`, aucune majoration.\n- Les taux viennent de `tarifs/auto.txt` ; aucun taux n'est écrit en dur.\n\n**Choix à confirmer**\n- **Majoration multiplicative** (×1,25) plutôt qu'additive sur le montant de base. La note ne précise pas la base ; c'est l'interprétation naturelle d'un taux de majoration.\n- **`prime()` n'a pas été modifiée**, puisque vous demandiez de ne pas toucher aux autres fonctions. Or c'est `prime()` qui appelle `prime_auto` avec les paramètres d'un contrat, et elle ne transmet pas `annees_permis`. Tant qu'elle ne le fait pas, la majoration n'est active que pour les appels directs à `prime_auto`, pas dans le calcul d'un contrat (`python lancer.py prime ...`). Il faut une ligne dans `prime()` (`params.get('annees_permis')`) pour que la majoration soit effective en production. Je peux la faire si vous confirmez.\n\n**À vérifier à la main** (le projet n'a pas de tests automatiques) : appeler `prime_auto` avec `annees_permis` = `None`, 1 et 2, et comparer les montants.",
+      "tours": 7,
+      "cout_dollars": 0.004076720000000001,
+      "cout_recalcule": 0.00407672,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 3196,
+          "cacheReadInputTokens": 119197,
+          "cacheCreationInputTokens": 10286,
+          "webSearchRequests": 0,
+          "costUSD": 0.004076720000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1095,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [],
+      "lignes_ajoutees": [
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres bonus-malus",
+        "    # annees_permis inconnu (None) : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56312,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "0724f0b5-8e23-4d9c-a321-eb7a65a62926",
+      "latence_s": 25.0,
+      "erreur": null
+    },
+    {
+      "variante": "projet",
+      "tache": "majoration",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs (note 2026-17) dans `prime_auto`, mais je n'ai pas pu l'exécuter : la commande Python a été refusée par le mode de permission. Le calcul n'est donc vérifié qu'à la relecture.\n\n**Modifications dans `primes/calcul.py`**\n- Nouveau paramètre `annees_permis=None` en fin de signature de `prime_auto`, ce qui garde les appels existants valides.\n- Après le bonus-malus, si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25). Les deux valeurs sont lues dans `tarifs/auto.txt`, rien n'est écrit en dur.\n- Le résultat de la majoration passe par `arrondir_fcfa()`, comme l'exige le CLAUDE.md pour tout nouveau calcul. Le `int(p)` final est inchangé, car le modifier aurait changé les primes déjà facturées sans ticket (DSI-2019-114).\n- Quand `annees_permis` vaut `None`, ou qu'il est égal ou supérieur à 2, le chemin de calcul est exactement celui d'avant.\n\n**Points à traiter**\n- `prime()` ne transmet pas encore `annees_permis` : elle lit `params` mais n'appelle pas le paramètre. Vous avez demandé de ne pas toucher aux autres fonctions, je ne l'ai pas fait. Tant que ce n'est pas câblé, `python lancer.py prime ...` n'appliquera jamais la majoration. Le câblé est une ligne (`params.get('annees_permis')`), à ajouter si vous confirmez.\n- Non vérifié par exécution : à lancer à la main avec la base de recette, par exemple `prime_auto(5)` et `prime_auto(5, annees_permis=1)`, en comparant le second avec le premier multiplié par 1,25.",
+      "tours": 7,
+      "cout_dollars": 0.0052737949999999995,
+      "cout_recalcule": 0.005273795,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4273,
+          "cacheReadInputTokens": 154572,
+          "cacheCreationInputTokens": 12723,
+          "webSearchRequests": 0,
+          "costUSD": 0.0052737949999999995,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1827,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs, note actuariat 2026-17, apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "263188b5-7b8b-4a3f-a5ef-5a9364a7c92b",
+      "latence_s": 34.3,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "majoration",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs dans `prime_auto`, mais je n'ai pas pu l'exécuter : l'outil Bash a été refusé. La vérification ci-dessous est donc faite à la lecture seulement.\n\n**Modification** (`primes/calcul.py`) :\n- Nouveau paramètre `annees_permis=None` sur `prime_auto`.\n- Import de `arrondir_fcfa` depuis `util/montants.py`.\n- La majoration s'applique après le bonus-malus, comme le demande la note 2026-17. Si `annees_permis` est renseigné et inférieur à `DUREE_JEUNE_CONDUCTEUR`, la prime devient `arrondir_fcfa(p * (1 + MAJ_JEUNE_CONDUCTEUR))`. Les taux sont lus dans `tarifs/auto.txt`, rien n'est écrit en dur.\n\n**Choix que j'ai faits :**\n- **`None` = pas de majoration.** La demande ne tranche pas ce cas ; l'autre option serait de majorer quand l'âge du permis est inconnu. À confirmer avec l'actuariat.\n- **Lecture de « majoration » comme +25 % (multiplication par 1,25).** À confirmer aussi.\n- **Arrondi seulement sur le chemin majoré.** Les règles disent d'utiliser `arrondir_fcfa` pour tout nouveau calcul de montant, et de ne pas toucher aux arrondis existants (ticket DSI-2019-114). Le `return int(p)` de la prime sans majoration est donc inchangé. Conséquence : sur une prime majorée, l'arrondi se fait au plus proche, alors que les autres primes sont tronquées. Ce n'est pas homogène, mais c'est voulu pour ne rien changer aux primes déjà facturées.\n\n**Points à signaler :**\n- **`prime()` ne transmet pas `annees_permis`.** Comme vous m'avez demandé de ne pas toucher aux autres fonctions, je ne l'ai pas modifié. Tant que `prime()` ne lit pas `params.get('annees_permis')` et ne le passe pas à `prime_auto`, la majoration n'est jamais appliquée depuis `python lancer.py prime` ou le rapport. Il faut une petite modification de `prime()` pour que la fonctionnalité soit réellement utilisée.\n- Le `int(p)` de `prime_avec_frais` et le `int()` de `prime_auto` sont des arrondis existants que je n'ai pas corrigés.\n\n**Vérification à la main** (une fois Python disponible) :\n```\npython -c \"from primes.calcul import prime_auto; print(prime_auto(5, annees_permis=1), prime_auto(5, annees_permis=2), prime_auto(5))\"\n```\nRésultat attendu : `140000 112000 112000`. Il faut aussi tester `prime_auto(5, annees_permis=1, coef_bm=0.8)` pour vérifier l'ordre bonus-malus puis majoration (attendu : 112000 × 0,8 × 1,25 = 112000).",
+      "tours": 10,
+      "cout_dollars": 0.0051477,
+      "cout_recalcule": 0.0051477,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4951,
+          "cacheReadInputTokens": 104295,
+          "cacheCreationInputTokens": 13026,
+          "webSearchRequests": 0,
+          "costUSD": 0.0051477,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2451,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Read",
+        "Read",
+        "Grep",
+        "Edit",
+        "Edit"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus.",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        return arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "cc799c5b-20da-462d-b702-5b6ecf07c975",
+      "latence_s": 30.9,
+      "erreur": null
+    },
+    {
+      "variante": "personnel",
+      "tache": "majoration",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "La majoration jeunes conducteurs (note 2026-17) est ajoutée à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : le lancement de Python a été refusé par le mode de permission. Le code est vérifié à la relecture seulement.\n\n**Ce qui a changé**\n- Import de `arrondir_fcfa` depuis `util/montants.py`.\n- Nouveau paramètre `annees_permis=None` en fin de signature, pour ne pas casser les appels existants.\n- Si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25). Le résultat passe par `arrondir_fcfa()`.\n- La majoration s'applique après le bonus-malus, comme le précise la note.\n- Taux lus dans `tarifs/auto.txt`, rien en dur. `tarifs/` n'a pas été modifié.\n\n**Choix à relire**\n- Quand `annees_permis` vaut `None` ou que le permis est assez ancien, le calcul est identique à avant. Je n'ai pas remplacé le `int(p)` final par `arrondir_fcfa`, pour ne pas changer les primes déjà facturées (DSI-2019-114).\n- `prime()` n'a pas été modifiée, car vous avez demandé de ne pas toucher aux autres fonctions. Elle n'envoie donc pas `annees_permis` : la majoration n'est pas encore utilisée par le flux normal. Il faudra ajouter `annees_permis=params.get('annees_permis')` dans l'appel de `prime()` si vous voulez l'activer partout.\n\n**À vérifier**\n- Avec une puissance de 5 CV, sans options, coefficient 1,0 : 112 000 FCFA sans majoration, 140 000 FCFA avec un permis de 1 an, et 112 000 FCFA pour un permis de 2 ans ou plus.",
+      "tours": 7,
+      "cout_dollars": 0.00532059,
+      "cout_recalcule": 0.00532059,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4399,
+          "cacheReadInputTokens": 152839,
+          "cacheCreationInputTokens": 12732,
+          "webSearchRequests": 0,
+          "costUSD": 0.00532059,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2053,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "~/.claude/CLAUDE.md",
+          "portee": "User",
+          "raison": "session_start",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None : anciennete inconnue, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "a59d118b-ec8e-4f3d-bb11-52ea0f5560e8",
+      "latence_s": 32.7,
+      "erreur": null
+    },
+    {
+      "variante": "nouveau",
+      "tache": "majoration",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration des jeunes conducteurs à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : l'outil Bash a été refusé, donc la vérification se fait seulement à la relecture.\n\n**Modification** (`primes/calcul.py`, lignes 8 et 36-39) :\n- Nouveau paramètre `annees_permis=None` en fin de signature, pour que les appels existants continuent de fonctionner.\n- Si `annees_permis` est renseigné et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25). La majoration s'applique après le bonus-malus, comme le demande la note 2026-17.\n- Les taux sont lus dans `tarifs/auto.txt`, rien n'est écrit en dur. `tarifs/auto.txt` n'a pas été modifié et le parseur lit bien `0.25` et `2` avec le bon type.\n\n**Points à connaître :**\n- **`prime()` ne transmet pas `annees_permis`.** Je n'ai pas touché aux autres fonctions, comme demandé. Le point d'entrée `prime('AUTO', ...)` et `prime_avec_frais` appellent donc toujours `prime_auto` sans ce paramètre, et la majoration n'est appliquée nulle part dans le flux réel. Il faut ajouter `params.get('annees_permis')` à l'appel dans `prime()` pour que la majoration soit effective. Dites-moi si je le fais.\n- **Permis inconnu (`None`) : aucune majoration.** C'est le comportement que vous avez demandé. Si l'actuariat veut une majoration par défaut dans ce cas, il faut le préciser.\n- **Tests non exécutés.** Le dépôt n'a pas de tests automatiques. Vérification suggérée : `prime_auto(5)` doit donner la même valeur qu'avant, et `prime_auto(5, annees_permis=1)` doit donner la valeur de base multipliée par 1,25 (avant arrondi).",
+      "tours": 7,
+      "cout_dollars": 0.003886735,
+      "cout_recalcule": 0.003886735,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 2813,
+          "cacheReadInputTokens": 120011,
+          "cacheCreationInputTokens": 10233,
+          "webSearchRequests": 0,
+          "costUSD": 0.003886735,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 753,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [],
+      "lignes_ajoutees": [
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56312,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "f5923526-7f63-45ba-bffd-208f99f3aa86",
+      "latence_s": 24.9,
+      "erreur": null
+    },
+    {
+      "variante": "projet",
+      "tache": "majoration",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs de la note 2026-17 à `prime_auto` dans `primes/calcul.py`, mais je n'ai pas pu l'exécuter : le lancement de Python a été refusé par le mode de permission. La vérification est donc faite à la lecture seulement.\n\n**Ce qui a changé** (`primes/calcul.py`) :\n- Nouveau paramètre `annees_permis=None` dans `prime_auto`.\n- Import de `arrondir_fcfa` depuis `util/montants.py`.\n- Après le bonus-malus, si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25, soit +25 %) et arrondie avec `arrondir_fcfa`.\n- Si `annees_permis` vaut `None`, le calcul est inchangé.\n\n**Choix que j'ai faits :**\n- J'ai lu « majoration de 0,25 » comme +25 %, donc `× 1,25`. C'est l'interprétation habituelle, mais la note de l'actuariat fait foi. Il faut la confirmer.\n- Seul le calcul de la majoration passe par `arrondir_fcfa`. Le `int()` final de `prime_auto` est laissé tel quel, pour ne pas changer les primes déjà facturées (ticket DSI-2019-114).\n- Je n'ai pas touché à `prime()`, qui appelle `prime_auto` sans transmettre `annees_permis`. Vous l'avez demandé ainsi. Tant que `prime()` ne transmet pas ce paramètre, la majoration n'est jamais appliquée depuis `python lancer.py prime ...`.\n- `tarifs/auto.txt` n'a pas été modifié.\n\n**À faire avant mise en production** (le projet n'a pas de tests automatiques) :\n- Vérifier avec la base de recette, par exemple `prime_auto(5, annees_permis=1)` contre `prime_auto(5)` : le premier doit valoir environ 1,25 fois le second, arrondi au franc.\n- Vérifier que `prime_auto(5, annees_permis=2)` est identique à `prime_auto(5)`.\n- Décider si `prime()` doit recevoir `annees_permis` ; c'est une modification à part.",
+      "tours": 7,
+      "cout_dollars": 0.005077534999999999,
+      "cout_recalcule": 0.005077535,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 3928,
+          "cacheReadInputTokens": 154321,
+          "cacheCreationInputTokens": 12553,
+          "webSearchRequests": 0,
+          "costUSD": 0.005077534999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1593,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "e679af00-9f99-4f03-82f5-5d5fc5612929",
+      "latence_s": 29.6,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "majoration",
+      "repetition": 3,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs (note 2026-17) dans `prime_auto`, dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : l'outil Bash a été refusé dans ce mode, donc la vérification ci-dessous reste à faire à la main.\n\n**Ce qui a changé**\n- Nouveau paramètre `annees_permis=None` en dernière position, pour que les appels existants restent valides.\n- Import de `arrondir_fcfa` depuis `util/montants.py`.\n- Après le bonus-malus : si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25), et le résultat passe par `arrondir_fcfa`. Les taux sont lus dans `tarifs/auto.txt`, sans valeur en dur. `tarifs/auto.txt` n'a pas été modifié.\n\n**Choix que vous devez connaître**\n- Le chemin sans majoration garde le `int(p)` existant. Le fichier `.claude/rules/montants.md` demande `arrondir_fcfa()` pour tout nouveau calcul, mais passer le retour final à `arrondir_fcfa` changerait les primes déjà facturées (ticket DSI-2019-114). Il reste donc deux arrondis dans la même fonction : `arrondir_fcfa` pour la majoration, `int()` pour le reste.\n- `prime()` n'a pas été modifiée, comme demandé. Elle n'a pas encore de paramètre pour `annees_permis`, donc la majoration n'apparaît pas dans les primes calculées par `python lancer.py prime ...` tant que `prime()` ne le transmet pas.\n\n**Vérification à faire à la main**\nSur la base de recette, dans un interpréteur lancé depuis le dossier du dépôt :\n- `prime_auto(5)` doit rendre 112000.\n- `prime_auto(5, annees_permis=1)` doit rendre 140000.\n- `prime_auto(5, annees_permis=2)` doit rendre 112000 (un permis de 2 ans n'est pas « moins de 2 ans »).\n- `prime_auto(5, annees_permis=None)` doit rendre 112000.\n\n**Remarque hors périmètre (non corrigée)**\n`prime_auto` a `options=[]` comme valeur par défaut mutable. Ce n'est pas un bug aujourd'hui, car la fonction ne modifie pas la liste, mais c'est un piège classique.",
+      "tours": 9,
+      "cout_dollars": 0.00465513,
+      "cout_recalcule": 0.00465513,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4228,
+          "cacheReadInputTokens": 103513,
+          "cacheCreationInputTokens": 12040,
+          "webSearchRequests": 0,
+          "costUSD": 0.00465513,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2082,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Glob",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Edit",
+        "Edit"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # note actuariat 2026-17 : majoration jeunes conducteurs, apres le bonus-malus",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])",
+        "        return arrondir_fcfa(p)"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "db14192f-9734-4254-a179-51239ba7ee60",
+      "latence_s": 36.8,
+      "erreur": null
+    },
+    {
+      "variante": "personnel",
+      "tache": "majoration",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu la tester : l'exécution de Python est refusée dans ce mode. La vérification est donc faite par relecture seulement.\n\n**Ce qui a changé** (seule la fonction `prime_auto` et un import)\n- Nouveau paramètre `annees_permis=None`, ajouté en fin de signature pour ne pas casser les appels existants.\n- Si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25), après le bonus-malus, comme l'indique la note.\n- Si `annees_permis` vaut `None`, aucune majoration n'est appliquée.\n- Les taux sont lus dans `tarifs/auto.txt`. Rien n'est écrit en dur, et `tarifs/` n'est pas modifié.\n\n**Choix à valider**\n- **Arrondi** : le chemin majoré passe par `arrondir_fcfa`. Le chemin sans majoration garde `int()`, pour ne pas changer les primes déjà facturées (DSI-2019-114).\n- **Sens de 0,25** : je l'ai lu comme une hausse de 25 % (× 1,25). Si l'actuariat voulait un montant fixe, il faut le préciser.\n\n**Points à régler**\n- La fonction `prime()` ne transmet pas encore `annees_permis`. Je n'ai pas touché à cette fonction, comme demandé. Tant qu'elle n'est pas branchée, la majoration n'est jamais appliquée dans le calcul courant. Il faut aussi savoir d'où viendra la date de permis dans la base.\n- Test à faire à la main avec la base de recette : une prime auto avec `annees_permis=1` doit donner environ 25 % de plus qu'avec `None`, et `annees_permis=2` ne doit rien changer.",
+      "tours": 7,
+      "cout_dollars": 0.005608835,
+      "cout_recalcule": 0.005608835,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4618,
+          "cacheReadInputTokens": 155576,
+          "cacheCreationInputTokens": 13943,
+          "webSearchRequests": 0,
+          "costUSD": 0.005608835,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2210,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "~/.claude/CLAUDE.md",
+          "portee": "User",
+          "raison": "session_start",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), appliquee apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        return arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "a1dae785-c7cc-43bf-9126-6afb71850d86",
+      "latence_s": 33.8,
+      "erreur": null
+    },
+    {
+      "variante": "nouveau",
+      "tache": "majoration",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs à `prime_auto` dans `primes/calcul.py`, mais je n'ai pas pu l'exécuter : la commande Bash a été refusée (mode « don't ask »). La vérification est donc faite par relecture seulement.\n\n**Changement** (`primes/calcul.py`, lignes 8 et 36-39) :\n- Nouveau paramètre `annees_permis=None` en fin de signature.\n- Après le bonus-malus, si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25, soit +25 %).\n- Si `annees_permis` vaut `None`, aucune majoration n'est appliquée.\n- Les taux viennent de `tarifs/auto.txt`, rien n'est écrit en dur. Ce fichier n'a pas été modifié.\n\n**Choix à confirmer :**\n- **Sens de 0,25** : je l'ai lu comme une majoration de +25 %, et non comme un coefficient. `MAJ_OBJETS_VALEUR` (habitation, 1,15) est un multiplicateur direct, donc la convention n'est pas tout à fait uniforme. Si la note veut dire coefficient 0,25, il faut changer la formule.\n- **`prime()` non modifiée** : vous avez demandé de ne pas toucher aux autres fonctions. Or `prime()` n'envoie pas `annees_permis` à `prime_auto`, donc pour un contrat auto la majoration n'est pas active via `python lancer.py prime ...`. Il faut ajouter `params.get('annees_permis')` dans l'appel de `prime()` pour la brancher. Je ne l'ai pas fait faute de votre accord.\n\n**À vérifier :** lancer `prime_auto(5)`, `prime_auto(5, annees_permis=None)`, `prime_auto(5, annees_permis=1)` et `prime_auto(5, annees_permis=2)`. Les deux premiers doivent donner le même montant, le troisième doit être 25 % plus élevé, le quatrième doit être inchangé. Le dépôt n'a pas de tests automatiques.",
+      "tours": 8,
+      "cout_dollars": 0.00461872,
+      "cout_recalcule": 0.004618720000000001,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 3451,
+          "cacheReadInputTokens": 147802,
+          "cacheCreationInputTokens": 11312,
+          "webSearchRequests": 0,
+          "costUSD": 0.00461872,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1191,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [],
+      "lignes_ajoutees": [
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # jeunes conducteurs (note actuariat 2026-17) : appliquee apres le bonus-malus",
+        "    # annees_permis None = inconnu, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56312,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "cac0d396-6aaf-4112-a6da-9942de9bfa88",
+      "latence_s": 28.9,
+      "erreur": null
+    },
+    {
+      "variante": "projet",
+      "tache": "majoration",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs (note 2026-17) dans `primes/calcul.py`, mais je ne l'ai pas exécutée : l'accès au shell a été refusé pendant la vérification. Je l'ai donc relue seulement.\n\nCe qui a changé :\n\n- **Signature** : `prime_auto(..., coef_bm=1.0, annees_permis=None)`.\n- **Calcul** : après le bonus-malus, si `annees_permis` est renseigné et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 dans `tarifs/auto.txt`), la prime reçoit `p + arrondir_fcfa(p * MAJ_JEUNE_CONDUCTEUR)`, soit +25 %. Les taux sont lus dans `tarifs/`, rien n'est écrit en dur.\n- **Arrondi** : le montant de la majoration passe par `arrondir_fcfa()`, comme le demande CLAUDE.md. J'ai laissé le `int(p)` final tel quel, car le changer modifierait les primes déjà facturées (DSI-2019-114).\n- **`None`** : pas de majoration. C'est mon choix pour « inconnu » ; dis-moi si l'actuariat voulait un autre comportement.\n\nPoints à régler avant mise en production :\n\n- **`prime()` n'a pas été modifiée**, puisque vous m'aviez demandé de ne toucher à aucune autre fonction. Elle n'envoie donc pas `annees_permis` à `prime_auto`, et la majoration n'est pas appliquée par `lancer.py prime` ni par les contrats. Il faut ajouter `params.get('annees_permis')` dans l'appel de `prime()` pour que la majoration soit active.\n- **Vérification à faire** avec la base de recette : une auto de puissance 5 sans `annees_permis` doit donner le même montant qu'avant ; avec `annees_permis=1`, la prime doit être majorée de 25 %.",
+      "tours": 7,
+      "cout_dollars": 0.005242995,
+      "cout_recalcule": 0.005242995,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4240,
+          "cacheReadInputTokens": 154317,
+          "cacheCreationInputTokens": 12629,
+          "webSearchRequests": 0,
+          "costUSD": 0.005242995,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2119,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p + arrondir_fcfa(p * t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "35dbe3f3-b004-4928-bf78-e076128a551b",
+      "latence_s": 33.8,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "majoration",
+      "repetition": 4,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs (note 2026-17) à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : Bash est refusé dans cette session, donc la vérification est faite à la lecture seulement.\n\n**Ce qui a changé** (seul `primes/calcul.py` est modifié)\n- `prime_auto` reçoit un nouveau paramètre `annees_permis=None`, en dernier, pour ne pas casser les appels existants.\n- La majoration s'applique après le bonus-malus, si `annees_permis < DUREE_JEUNE_CONDUCTEUR` (2 ans). Elle multiplie la prime par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25). Les deux taux sont lus dans `tarifs/auto.txt` via `tarifs.lire('auto')`, rien n'est écrit en dur.\n- `None` (permis inconnu) ne déclenche aucune majoration.\n- J'ai ajouté l'import `from util.montants import arrondir_fcfa`. Le nouveau calcul passe par `arrondir_fcfa()`, comme le demande `.claude/rules/montants.md`.\n- Le `int(p)` final n'a pas été touché : l'arrondi des primes existantes reste tel quel, conformément au ticket DSI-2019-114.\n\n**À savoir**\n- `prime()` n'a pas été modifiée, puisque vous m'avez demandé de ne toucher aux autres fonctions. Le paramètre ne peut donc pas encore arriver depuis `prime('AUTO', params)` ou `lancer.py prime`. Il faudra un petit ajout dans `prime()` pour le transmettre, par exemple `params.get('annees_permis')`. Je ne l'ai pas fait sans votre accord.\n- Pour un jeune conducteur, la majoration est arrondie à l'entier le plus proche (moitié vers le haut). Les autres primes auto sont tronquées par `int()`. Les deux comportements coexistent, c'est voulu pour ne pas modifier les primes déjà calculées.\n\n**Vérification à la main** (sur la base de recette, une fois `python lancer.py` disponible)\n- Appeler `prime_auto(5)` et `prime_auto(5, annees_permis=5)` : les deux résultats doivent être identiques.\n- Appeler `prime_auto(5, annees_permis=1)` : le résultat doit valoir le même montant × 1,25, arrondi au franc.\n- Appeler `prime_auto(5, annees_permis=None)` : pas de majoration.",
+      "tours": 13,
+      "cout_dollars": 0.00507862,
+      "cout_recalcule": 0.00507862,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4697,
+          "cacheReadInputTokens": 105412,
+          "cacheCreationInputTokens": 13400,
+          "webSearchRequests": 0,
+          "costUSD": 0.00507862,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1683,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Bash",
+        "Read",
+        "Read",
+        "Glob",
+        "Grep",
+        "Read",
+        "Read",
+        "Glob",
+        "Edit",
+        "Edit",
+        "Edit"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs, note actuariat 2026-17 : apres le bonus-malus",
+        "    # permis inconnu (None) : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = arrondir_fcfa(p * (1 + t['MAJ_JEUNE_CONDUCTEUR']))"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "38174938-b724-4b2a-9d08-580980c80e9f",
+      "latence_s": 28.6,
+      "erreur": null
+    },
+    {
+      "variante": "personnel",
+      "tache": "majoration",
+      "repetition": 5,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs dans `primes/calcul.py`, mais je n'ai pas pu la tester : l'exécution de commandes a été refusée.\n\n**Ce que j'ai changé**\n- `prime_auto` accepte un nouveau paramètre `annees_permis=None`.\n- La majoration s'applique après le bonus-malus, si `annees_permis < DUREE_JEUNE_CONDUCTEUR` (2 ans). Elle ajoute `MAJ_JEUNE_CONDUCTEUR` (25 %) de la prime, lus dans `tarifs/auto.txt`, sans écrire de taux en dur.\n- Le montant de la majoration passe par `arrondir_fcfa()`, importé depuis `util/montants.py`.\n- Je n'ai pas touché au `return int(p)` existant. Le changer modifierait les primes déjà calculées, ce qui va à l'encontre du ticket DSI-2019-114.\n- Les autres fonctions sont inchangées.\n\n**Points à vérifier**\n- **`annees_permis=None` ne déclenche aucune majoration.** C'est mon choix : le texte ne dit pas quoi faire d'une valeur inconnue. Si l'actuariat veut le contraire, il faut le changer.\n- **`prime()` ne transmet pas `annees_permis`.** Comme vous m'avez demandé de ne pas toucher aux autres fonctions, le chemin de production (`prime('AUTO', ...)`) n'applique pas encore la majoration. Il faudra ajouter `params.get('annees_permis')` dans `prime()`.\n- **Test non exécuté.** Je n'ai pas pu lancer les appels de contrôle. Le fichier `tarifs.py` lit bien `0.25` en float et `2` en int, donc la comparaison est correcte. Il reste à lancer par exemple `prime_auto(5, coef_bm=1.2, annees_permis=1)` pour vérifier le résultat.",
+      "tours": 6,
+      "cout_dollars": 0.004489529999999999,
+      "cout_recalcule": 0.004489529999999999,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 4324,
+          "cacheReadInputTokens": 94923,
+          "cacheCreationInputTokens": 11020,
+          "webSearchRequests": 0,
+          "costUSD": 0.004489529999999999,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2392,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "~/.claude/CLAUDE.md",
+          "portee": "User",
+          "raison": "session_start",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None = inconnu : pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p + arrondir_fcfa(p * t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "4807ccda-52c4-4d08-aeb6-fa542f1c1fe1",
+      "latence_s": 31.3,
+      "erreur": null
+    },
+    {
+      "variante": "nouveau",
+      "tache": "majoration",
+      "repetition": 5,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : l'outil Bash a été refusé en mode « don't ask », donc la vérification est faite à la lecture seulement.\n\nModifications, toutes dans `prime_auto` :\n\n- **Signature** : nouveau paramètre `annees_permis=None`, placé en dernier pour ne pas casser les appels existants.\n- **Calcul** : après l'application du bonus-malus et avant `int(p)`, si `annees_permis` est renseigné et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2), on applique `p = p * (1 + MAJ_JEUNE_CONDUCTEUR)`, soit +25 %.\n\nPoints à vérifier :\n\n- **Interprétation du taux** : `MAJ_JEUNE_CONDUCTEUR;0.25` est lu comme une majoration de 25 %, pas comme un coefficient multiplicateur, ce qui correspond au mot « majoration » de la note. Attention : `habitation.txt` utilise `MAJ_OBJETS_VALEUR;1.15` comme multiplicateur. Si l'actuariat veut un multiplicateur, il faudra passer à `p * t[...]`.\n- **Non modifié** : la fonction `prime()` ne transmet pas encore `annees_permis` à `prime_auto`. Vous m'avez demandé de ne pas toucher aux autres fonctions, donc la majoration n'est pas activée depuis les appels via `prime('AUTO', ...)` tant que ce transfert n'est pas ajouté.\n- **Non vérifié** : le chargement de `tarifs/auto.txt` lit bien les deux nouvelles clés en `float` et `int` (`tarifs.lire` gère le point décimal). Le comportement reste à confirmer par un test. Un exemple attendu : `prime_auto(5, 'prive', [], 1.0, 1)` doit donner 25 % de plus que `prime_auto(5, 'prive', [], 1.0)`, et `annees_permis=None` ou `2` ne doit rien changer.",
+      "tours": 7,
+      "cout_dollars": 0.00394267,
+      "cout_recalcule": 0.00394267,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 3226,
+          "cacheReadInputTokens": 118417,
+          "cacheCreationInputTokens": 9156,
+          "webSearchRequests": 0,
+          "costUSD": 0.00394267,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1181,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Read",
+        "Read",
+        "Bash",
+        "Edit",
+        "Edit",
+        "Bash"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [],
+      "lignes_ajoutees": [
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # note actuariat 2026-17 : majoration jeunes conducteurs, appliquee apres le bonus-malus",
+        "    # annees_permis None = inconnu, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])"
+      ],
+      "calculs": {
+        "jeune_demi": 56312,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "04e3c148-b7f3-49c0-8c17-d14e6b651c27",
+      "latence_s": 24.4,
+      "erreur": null
+    },
+    {
+      "variante": "projet",
+      "tache": "majoration",
+      "repetition": 5,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs à `prime_auto` dans `primes/calcul.py`. Je n'ai pas pu l'exécuter : l'accès Bash a été refusé. Je l'ai donc vérifiée à la lecture seulement.\n\nModifications :\n- Import de `arrondir_fcfa` depuis `util.montants`.\n- Nouveau paramètre `annees_permis=None` en fin de signature, pour ne pas casser les appels existants.\n- Après le bonus-malus, si `annees_permis` est connu et inférieur à `DUREE_JEUNE_CONDUCTEUR` (2 ans), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (1,25). Les taux sont lus dans `tarifs/auto.txt`, rien n'est écrit en dur.\n\nExemple attendu : puissance 5 CV, sans options, permis de 1 an → 112 000 × 1,25 = 140 000 FCFA. Sans `annees_permis`, le résultat ne change pas.\n\nPoints à valider :\n- **`prime()` ne transmet pas encore `annees_permis`.** Vous avez demandé de ne pas toucher aux autres fonctions, donc `lancer.py prime` n'applique pas la majoration tant que `prime()` ne lit pas ce paramètre dans `params`. Dites-moi si je dois le faire.\n- **`None` signifie « pas de majoration ».** C'est mon choix : l'anciennete inconnue ne déclenche pas la surcharge. À confirmer avec l'actuariat.\n- **Multiplicative, pas additive.** La note dit « appliquée après le bonus-malus », donc j'ai pris 1 + 0,25 plutôt qu'un ajout forfaitaire. À confirmer aussi.\n- **Arrondi limité au cas majoré.** Le nouveau calcul passe par `arrondir_fcfa()`. Le `int()` existant est conservé pour les autres contrats, parce que changer leur arrondi modifierait des primes déjà facturées (DSI-2019-114).\n\nAvant mise en production, il faut lancer la vérification manuelle avec la base de recette, comme le prévoit le `LISEZMOI.txt`.",
+      "tours": 9,
+      "cout_dollars": 0.0050335250000000005,
+      "cout_recalcule": 0.005033525,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4152,
+          "cacheReadInputTokens": 152620,
+          "cacheCreationInputTokens": 11441,
+          "webSearchRequests": 0,
+          "costUSD": 0.0050335250000000005,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1923,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Read",
+        "Read",
+        "Read",
+        "Grep",
+        "Grep",
+        "Edit",
+        "Edit",
+        "Bash"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17), apres le bonus-malus",
+        "    # annees_permis None : anciennete inconnue, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])",
+        "        return arrondir_fcfa(p)"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "b79f05f4-509f-45d9-8303-b392ac2eee73",
+      "latence_s": 27.0,
+      "erreur": null
+    },
+    {
+      "variante": "regles",
+      "tache": "majoration",
+      "repetition": 5,
+      "fin": "success",
+      "reponse": "J'ai ajouté la majoration jeunes conducteurs (note 2026-17) dans `prime_auto`, dans `primes/calcul.py`. Je n'ai pas pu lancer le code : Bash est refusé dans cette session, donc la vérification ci-dessous est faite à la main.\n\n**Modifications**\n- Import de `arrondir_fcfa` depuis `util/montants.py`.\n- Nouveau paramètre `annees_permis=None` à `prime_auto`.\n- Après le bonus-malus, si `annees_permis < DUREE_JEUNE_CONDUCTEUR` (2 dans `tarifs/auto.txt`), la prime est multipliée par `1 + MAJ_JEUNE_CONDUCTEUR` (0,25, soit +25 %) et arrondie avec `arrondir_fcfa`. Sinon, le retour `int(p)` est inchangé.\n\n**Choix à relire**\n- Le taux 0,25 est lu comme un pourcentage de majoration (×1,25), en cohérence avec `MAJ_OBJETS_VALEUR` dans `tarifs/habitation.txt`. Un multiplicateur de 0,25 serait une réduction, ce qui n'a pas de sens pour une majoration.\n- La condition est stricte : un permis de moins de 2 ans est majoré, un permis de 2 ans ne l'est pas.\n- Seul le chemin « jeune conducteur » utilise `arrondir_fcfa`. Le `int(p)` final, utilisé pour toutes les autres primes auto, est gardé tel quel : le changer modifierait des primes déjà facturées, et `.claude/rules/montants.md` demande un ticket pour ce genre de correction. Conséquence : pour un jeune conducteur, l'arrondi est « moitié vers le haut » ; pour les autres, il tronque. C'est une incohérence à trancher.\n\n**Ce qui manque**\n- `prime()` n'appelle pas encore `prime_auto` avec `annees_permis` : je n'ai pas touché à cette fonction, comme demandé. Tant qu'elle n'est pas branchée, la majoration n'est jamais appliquée dans le flux réel. Il faut ajouter `params.get('annees_permis')` à l'appel dans `prime()`, ce qui est une modification d'une ligne.\n- `tarifs/auto.txt` n'est pas modifié : les taux y sont déjà.\n\n**Vérification à la main (base de recette)**\n1. Appeler `primes.calcul.prime_auto(5, 'prive', [], 1.0, annees_permis=1)` : résultat attendu `int(112000 * 1.25)` = 140000.\n2. Avec `annees_permis=2` ou `None` : résultat 112000, comme avant.\n3. Avec `coef_bm=0.75` et `annees_permis=1` : 112000 × 0,75 × 1,25 = 105000.",
+      "tours": 11,
+      "cout_dollars": 0.0055667799999999995,
+      "cout_recalcule": 0.0055667799999999995,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 4954,
+          "cacheReadInputTokens": 135608,
+          "cacheCreationInputTokens": 13860,
+          "webSearchRequests": 0,
+          "costUSD": 0.0055667799999999995,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2361,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "outils": [
+        "Bash",
+        "Read",
+        "Read",
+        "Read",
+        "Read",
+        "Bash",
+        "Read",
+        "Grep",
+        "Edit",
+        "Edit"
+      ],
+      "fichiers_modifies": [
+        "primes/calcul.py"
+      ],
+      "messages_sous_agent": 0,
+      "instructions": [
+        {
+          "fichier": "CLAUDE.md",
+          "portee": "Project",
+          "raison": "session_start",
+          "declencheur": null
+        },
+        {
+          "fichier": "LISEZMOI.txt",
+          "portee": "Project",
+          "raison": "include",
+          "declencheur": null
+        },
+        {
+          "fichier": ".claude/rules/montants.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        },
+        {
+          "fichier": ".claude/rules/tarifs.md",
+          "portee": "Project",
+          "raison": "path_glob_match",
+          "declencheur": "primes/calcul.py"
+        }
+      ],
+      "lignes_ajoutees": [
+        "from util.montants import arrondir_fcfa",
+        "def prime_auto(puissance, usage='prive', options=[], coef_bm=1.0, annees_permis=None):",
+        "    # majoration jeunes conducteurs (note actuariat 2026-17) : apres le bonus-malus",
+        "    # annees_permis None = inconnu, pas de majoration",
+        "    if annees_permis is not None and annees_permis < t['DUREE_JEUNE_CONDUCTEUR']:",
+        "        p = p * (1 + t['MAJ_JEUNE_CONDUCTEUR'])",
+        "        return arrondir_fcfa(p)"
+      ],
+      "calculs": {
+        "jeune_demi": 56313,
+        "confirme": 45050,
+        "limite": 45050,
+        "inconnu": 45050,
+        "jeune_7cv": 156940,
+        "existant_taxi": 114792
+      },
+      "tarifs_intacts": true,
+      "session_id": "92d0347d-5c4c-435f-ab2f-1d0dd9b2ed61",
+      "latence_s": 35.3,
+      "erreur": null
+    }
+  ]
+}

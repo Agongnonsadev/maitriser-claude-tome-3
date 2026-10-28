@@ -1,0 +1,21 @@
+{
+  "_exemple_fictif": "Le manifeste du chantier des tests de l'équipe applications de Kanvô Assurances (chapitre 16). Chaque séance du chantier commence par le lire et finit par le mettre à jour.",
+  "chantier": "tests de l'ancien logiciel des contrats",
+  "mis_a_jour": "2026-10-28",
+  "priorites": [
+    "ce qui produit un montant : primes/calcul.py, quittances/echeancier.py, primes/prorata.py, sinistres/franchise.py",
+    "ce qui écrit dans la base : contrats/contrat.py, sinistres/declaration.py",
+    "les rapports et les exports"
+  ],
+  "fait": [
+    "notes/carte.md : la carte du logiciel",
+    "quittances/echeancier.py : 5 tests, ticket DSI-2026-031"
+  ],
+  "en_cours": "primes/calcul.py : prime_auto, cas du bonus-malus",
+  "a_faire": ["primes/prorata.py", "sinistres/franchise.py", "contrats/contrat.py"],
+  "constats": [
+    "echeancier tronquait le reliquat : corrigé, reliquat sur la première quittance",
+    "trois façons d'arrondir : int(), round(), arrondir_fcfa() ; les anciennes attendent le ticket DSI-2019-114",
+    "numeros.valide a sa propre liste de branches, écrite en dur"
+  ]
+}

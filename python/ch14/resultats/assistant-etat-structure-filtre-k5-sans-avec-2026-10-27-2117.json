@@ -1,0 +1,511 @@
+{
+ "date": "2026-10-27",
+ "modele": "claude-haiku-5-5",
+ "depense_dollars": 0.007187,
+ "resume": {
+  "octobre / structure / filtre / 5 / False": {
+   "justes": "2/8",
+   "issues": {
+    "fait_manquant": 6,
+    "juste": 2
+   },
+   "par_genre": {
+    "etat": "2/8"
+   },
+   "tokens_entree_moyens": 1933,
+   "duree_mediane_s": 2.1,
+   "dollars_par_question": 0.000301
+  },
+  "octobre / structure / filtre / 5 / True": {
+   "justes": "8/8",
+   "issues": {
+    "juste": 8
+   },
+   "par_genre": {
+    "etat": "8/8"
+   },
+   "tokens_entree_moyens": 4530,
+   "duree_mediane_s": 2.63,
+   "dollars_par_question": 0.000597
+  }
+ },
+ "essais": [
+  {
+   "question": "e1",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "Le dossier SIN-2026-0912 (contrat KA-AUTO-1180, sinistre du 2 octobre 2026) était au statut « Déclaré, en attente d'affectation » au 20 octobre 2026. La prochaine étape est d'affecter un gestionnaire.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "29 octobre"
+   ],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0912"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.642,
+   "tokens_entree": 1933,
+   "dollars": 0.00029330000000000003
+  },
+  {
+   "question": "e1",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "Le dossier SIN-2026-0912 (contrat KA-AUTO-1180, sinistre du 2026-10-02) était au statut « Déclaré, en attente d'affectation » au 20 octobre 2026. La prochaine étape est d'affecter un gestionnaire au dossier.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "29 octobre"
+   ],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0912"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.008,
+   "tokens_entree": 1933,
+   "dollars": 0.0002943
+  },
+  {
+   "question": "e2",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "La prochaine étape du dossier SIN-2026-0903 (contrat KA-AUTO-0388, déclaré le 2026-10-20) est la réception du devis d'un réparateur agréé, son statut étant « Déclaré » au 20 octobre 2026. Cette information provient de l'export des dossiers de sinistres daté du 20 octobre 2026.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "règlement"
+   ],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0903"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.948,
+   "tokens_entree": 1941,
+   "dollars": 0.00030710000000000004
+  },
+  {
+   "question": "e2",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "La prochaine étape du dossier SIN-2026-0903 (contrat KA-AUTO-0388, déclaré le 2026-10-20) est la réception du devis d'un réparateur agréé, selon l'export au 20 octobre 2026. Le statut du dossier à cette date est « Déclaré ».",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "règlement"
+   ],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0903"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.949,
+   "tokens_entree": 1941,
+   "dollars": 0.0002976
+  },
+  {
+   "question": "e3",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "PROC-SIN:proc-4",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "trouve": true,
+   "reponse": "Non, le dossier SIN-2026-0931 (contrat KA-AUTO-0619, sinistre du 12 octobre 2026) n'est pas encore évalué : au 20 octobre 2026 son statut est « Expertise planifiée », la prochaine étape étant le passage de l'expert. Aucun montant évalué n'apparaît dans l'export.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "(oui|a été évalué|est évalué|déjà évalué)"
+   ],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0931"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.183,
+   "tokens_entree": 1933,
+   "dollars": 0.0003058
+  },
+  {
+   "question": "e3",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "PROC-SIN:proc-4",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "trouve": true,
+   "reponse": "Non, le dossier SIN-2026-0931 (contrat KA-AUTO-0619, sinistre du 12 octobre 2026) n'est pas encore évalué : au 20 octobre 2026, son statut est « Expertise planifiée », la prochaine étape étant le passage de l'expert. Aucun montant évalué n'apparaît dans l'export.",
+   "consultations": [],
+   "issue": "fait_manquant",
+   "faits_manquants": [
+    "(oui|a été évalué|est évalué|déjà évalué)"
+   ],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0931"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.292,
+   "tokens_entree": 1933,
+   "dollars": 0.0003058
+  },
+  {
+   "question": "e4",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "Le dossier SIN-2026-0788 (contrat KA-AUTO-0731, sinistre du 14 septembre 2026) est en attente de pièces au 20 octobre 2026 ; la pièce manquante est la copie du dépôt de plainte, qui reste à recevoir. Le passage ne précise pas d'autres pièces manquantes.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 1.913,
+   "tokens_entree": 1924,
+   "dollars": 0.0003034
+  },
+  {
+   "question": "e4",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": false,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "Au 20 octobre 2026, le dossier SIN-2026-0788 (contrat KA-AUTO-0731, sinistre du 14 septembre 2026) est en attente de pièces : la pièce attendue est la copie du dépôt de plainte, qui reste à recevoir. Le passage ne précise pas d'autre pièce manquante.",
+   "consultations": [],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.837,
+   "tokens_entree": 1924,
+   "dollars": 0.0003024
+  },
+  {
+   "question": "e1",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "Le dossier SIN-2026-0912 (contrat KA-AUTO-1180, sinistre du 2 octobre 2026) est au statut « expertise planifiée », gestionnaire « Équipe automobile 2 ». La prochaine étape est le passage de l'expert le 29 octobre 2026. Note : l'export du 20 octobre 2026 indiquait encore « déclaré, en attente d'affectation », mais cette information est périmée, le logiciel de gestion faisant foi.",
+   "consultations": [
+    "SIN-2026-0912"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.612,
+   "tokens_entree": 4534,
+   "dollars": 0.0006114
+  },
+  {
+   "question": "e1",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "Le dossier SIN-2026-0912 (contrat KA-AUTO-1180, sinistre du 2 octobre 2026) est en expertise planifiée, et le passage de l'expert est prévu le 29 octobre 2026 ; il est suivi par l'équipe automobile 2. Cette information provient du logiciel de gestion, consulté à l'instant, et non de l'export du 20 octobre 2026, qui indiquait alors « Déclaré, en attente d'affectation » et est donc périmé.",
+   "consultations": [
+    "SIN-2026-0912"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.694,
+   "tokens_entree": 4534,
+   "dollars": 0.0006139000000000001
+  },
+  {
+   "question": "e2",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "La prochaine étape du dossier SIN-2026-0903 (bris de pare-brise, gestionnaire Équipe automobile 1, montant évalué 95 000 FCFA) est le règlement, selon le logiciel de gestion qui indique le statut « évalué ». L'export du 20 octobre 2026, qui indiquait « Devis d'un réparateur agréé à recevoir », est périmé et ne doit pas être utilisé.",
+   "consultations": [
+    "SIN-2026-0903"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.626,
+   "tokens_entree": 4545,
+   "dollars": 0.0006035000000000001
+  },
+  {
+   "question": "e2",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "PROC-SIN:proc-1"
+   ],
+   "trouve": true,
+   "reponse": "La prochaine étape du dossier SIN-2026-0903 (bris de pare-brise, géré par l'Équipe automobile 1) est le règlement, le dossier étant au statut « évalué » avec un montant évalué de 95 000 FCFA. L'export du 20 octobre 2026, qui indiquait « devis d'un réparateur agréé à recevoir », est périmé et ne doit pas être utilisé.",
+   "consultations": [
+    "SIN-2026-0903"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.673,
+   "tokens_entree": 4545,
+   "dollars": 0.0005995
+  },
+  {
+   "question": "e3",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "PROC-SIN:proc-4",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "trouve": true,
+   "reponse": "Oui, le dossier SIN-2026-0931 est évalué : il est au statut « évalué », avec un montant évalué de 420 000 FCFA, et la prochaine étape est le règlement (gestionnaire : Équipe automobile 2). L'export du 20 octobre 2026 indiquait encore « Expertise planifiée », mais cette information est périmée, le logiciel de gestion faisant foi.",
+   "consultations": [
+    "SIN-2026-0931"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.239,
+   "tokens_entree": 4539,
+   "dollars": 0.0005979000000000001
+  },
+  {
+   "question": "e3",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "PROC-SIN:proc-4",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "trouve": true,
+   "reponse": "Oui, le dossier SIN-2026-0931 est évalué selon le logiciel de gestion : montant évalué de 420 000 francs CFA, prochaine étape « règlement », géré par l'Équipe automobile 2. L'export du 20 octobre 2026 indiquant « Expertise planifiée » est périmé et ne doit pas être utilisé.",
+   "consultations": [
+    "SIN-2026-0931"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 3.202,
+   "tokens_entree": 4539,
+   "dollars": 0.0005894000000000001
+  },
+  {
+   "question": "e4",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "La pièce manquante au dossier SIN-2026-0788 est la copie du dépôt de plainte, qui reste à recevoir ; le dossier est en attente de pièces (gestionnaire : Équipe automobile 1). Cette information provient du logiciel de gestion, consulté à l'instant.",
+   "consultations": [
+    "SIN-2026-0788"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.616,
+   "tokens_entree": 4502,
+   "dollars": 0.0005752
+  },
+  {
+   "question": "e4",
+   "genre": "etat",
+   "decoupage": "structure",
+   "strategie": "filtre",
+   "k": 5,
+   "systeme": true,
+   "base": "octobre",
+   "passages": [
+    "EXP-SIN-2026-10-20:sin-2026-0788",
+    "EXP-SIN-2026-10-20:sin-2026-0931",
+    "EXP-SIN-2026-10-20:sin-2026-0912",
+    "EXP-SIN-2026-10-20:sin-2026-0903",
+    "PROC-SIN:proc-6"
+   ],
+   "trouve": true,
+   "reponse": "La pièce manquante au dossier SIN-2026-0788 est la copie du dépôt de plainte, qui reste à recevoir (dossier en attente de pièces, gestionnaire : Équipe automobile 1). Le logiciel de gestion confirme ce statut à la date de consultation.",
+   "consultations": [
+    "SIN-2026-0788"
+   ],
+   "issue": "juste",
+   "faits_manquants": [],
+   "sources_citees": [
+    "logiciel de gestion",
+    "EXP-SIN-2026-10-20:sin-2026-0788"
+   ],
+   "duree_recherche_s": 0.0,
+   "duree_reponse_s": 2.642,
+   "tokens_entree": 4502,
+   "dollars": 0.0005862
+  }
+ ]
+}

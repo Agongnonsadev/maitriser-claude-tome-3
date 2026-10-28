@@ -1,0 +1,14 @@
+CONSTAT AMIABLE D'ACCIDENT AUTOMOBILE
+1. Date de l'accident : 2026-10-16      Heure : 06 h 00
+2. Lieu : pont de Fidjrossè
+3. Blessés, même légers : [ ] oui  [X] non
+VÉHICULE A
+   Conducteur : Mme Clarisse Tossou
+   Société d'assurance : Kanvô Assurances      Contrat n° KA-AUTO-7317
+   Immatriculation : GY 5285 MM
+VÉHICULE B
+   Conducteur : Mme Viviane Gnonlonfoun
+   Société d'assurance : Atacora Garantie
+   Immatriculation : [illisible : tache d'encre]
+12. Circonstances : A cochée(s) : 8 (heurtait à l'arrière) ; B cochée(s) : 1 (en stationnement)
+Signatures : A et B

@@ -1,0 +1,22 @@
+{
+  "note": "Questions qu'un développeur de l'équipe informatique pose à Claude Code dans le dépôt ch07/depot_dsi. « attendue » : la source qui donne la bonne réponse. « a_jour » et « perime » : des motifs cherchés dans la réponse (sans tenir compte des majuscules) ; un motif « a_jour » l'emporte. Les réponses se relisent.",
+  "questions": [
+    {"id": "q1", "texte": "Quel est le statut actuel du sinistre SIN-2026-0912 ?", "attendue": "mcp",
+     "a_jour": ["expertise planifiée"], "perime": ["déclaré", "désignation d'un expert"]},
+    {"id": "q2", "texte": "Le dossier SIN-2026-0788 attend-il encore quelque chose de l'assuré ?", "attendue": "mcp",
+     "a_jour": ["dépôt de plainte"], "perime": ["déclaré", "demande des pièces"]},
+    {"id": "q3", "texte": "Où en est le sinistre SIN-2026-0855 ?", "attendue": "mcp",
+     "a_jour": ["équipe santé", "réservé", "accès", "permission"], "perime": ["hospitalisation", "facture de la clinique"]},
+    {"id": "q4", "texte": "Combien de sinistres compte l'export du 15 octobre ?", "attendue": "fichier",
+     "a_jour": ["\\b5\\b", "cinq"], "perime": []},
+    {"id": "q5", "texte": "Quels statuts peut prendre un sinistre dans le système de gestion, et que signifie « archivé » ?",
+     "attendue": "ressource", "a_jour": ["cinq ans"], "perime": []},
+    {"id": "q6", "texte": "Sous quelle forme s'écrit un numéro de contrat santé dans le système de gestion ?",
+     "attendue": "ressource", "a_jour": ["KA-SANTE-"], "perime": []}
+  ],
+  "variantes": {
+    "courtes": {"descriptions": "courtes", "ressource": "oui", "questions": ["q1", "q2", "q3", "q4"]},
+    "riches": {"descriptions": "riches", "ressource": "oui", "questions": ["q1", "q2", "q3", "q4", "q5", "q6"]},
+    "sans-referentiel": {"descriptions": "riches", "ressource": "non", "questions": ["q5", "q6"]}
+  }
+}

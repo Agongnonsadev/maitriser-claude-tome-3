@@ -1,0 +1,91 @@
+{
+  "_note": "La bibliothèque des prompts de Kanvô Assurances (chapitre 11). Chaque prompt a ses versions ; chaque version est un fichier, ou une suite de modules de modules/ assemblés dans l'ordre, le plus stable d'abord, pour le cache. Une version ne passe « en service » qu'avec une évaluation enregistrée.",
+  "prompts": {
+    "sinistres": {
+      "role": "Agent de déclaration et de suivi des sinistres",
+      "modele": "claude-haiku-5-5",
+      "reglages": {},
+      "en_service": "2",
+      "versions": {
+        "1": {
+          "fichier": "sinistres_v1.md",
+          "statut": "retiree",
+          "date": "2026-10-27",
+          "note": "Chapitre 5. Ignore le règlement rapide.",
+          "evaluation": "ch05/resultats/agent-sdk-2026-10-27-0126.json"
+        },
+        "2": {
+          "fichier": "sinistres_v2.md",
+          "statut": "en_service",
+          "date": "2026-10-27",
+          "note": "Chapitre 8. Règlement rapide, escalade, relais.",
+          "evaluation": "ch08/resultats/agent-v2-2026-10-27-0708.json"
+        }
+      }
+    },
+    "tri-declarations": {
+      "role": "Tri des déclarations à l'arrivée : branche, et file des urgences",
+      "modele": "claude-haiku-5-5",
+      "reglages": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "en_service": "4",
+      "versions": {
+        "1": {
+          "modules": [
+            "contexte_kanvo",
+            "tri_tache",
+            "tri_prudence",
+            "tri_format"
+          ],
+          "statut": "retiree",
+          "note": "« Soyez prudent ». Fausses urgences avec les deux modèles, décisions instables.",
+          "date": "2026-10-27",
+          "evaluation": "ch11/resultats/tri-haiku-5-5-2026-10-27-1814.json"
+        },
+        "2": {
+          "modules": [
+            "contexte_kanvo",
+            "tri_tache",
+            "tri_confiance",
+            "tri_format"
+          ],
+          "statut": "retiree",
+          "note": "« Seulement si vous êtes sûr ». Haiku 5.5 manque un blessé 2 fois sur 3.",
+          "date": "2026-10-27",
+          "evaluation": "ch11/resultats/tri-haiku-5-5-2026-10-27-1814.json"
+        },
+        "3": {
+          "modules": [
+            "contexte_kanvo",
+            "tri_tache",
+            "tri_criteres",
+            "garde_fou_donnees",
+            "tri_format"
+          ],
+          "statut": "retiree",
+          "note": "Critères explicites. Haiku 5.5 sans erreur ; Sonnet 5.5 manque un blessé déjà soigné, 2 fois sur 2.",
+          "date": "2026-10-27",
+          "evaluation": "ch11/resultats/tri-haiku-5-5-2026-10-27-1814.json"
+        },
+        "4": {
+          "modules": [
+            "contexte_kanvo",
+            "tri_tache",
+            "tri_criteres",
+            "garde_fou_donnees",
+            "tri_exemples",
+            "tri_format"
+          ],
+          "statut": "en_service",
+          "note": "Critères explicites et trois exemples. Haiku 5.5 : aucune erreur de tri en 96 ; Sonnet 5.5 : aucune en 64, et les mêmes décisions que Haiku.",
+          "date": "2026-10-27",
+          "evaluation": "ch11/resultats/tri-haiku-5-5-2026-10-27-1814.json",
+          "evaluation_autre_modele": "ch11/resultats/tri-sonnet-5-5-2026-10-27-1817.json"
+        }
+      }
+    }
+  }
+}

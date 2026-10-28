@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-28",
+  "modele": "claude-haiku-5-5",
+  "mesures": [
+    "criteres"
+  ],
+  "variantes": [
+    "criteres"
+  ],
+  "repetitions": 1,
+  "depense_dollars": 0.011389,
+  "resume": {
+    "criteres:criteres:moto": {
+      "revues": 1,
+      "fins": {
+        "success": 1
+      },
+      "appels": 1,
+      "structures": 1,
+      "cout_total": 0.006486,
+      "cout_moyen": 0.006486,
+      "cout_recalcule_total": 0.006486,
+      "constats_moyens": 6,
+      "hors_defauts_moyens": 1,
+      "latence_mediane_s": 31.1,
+      "defauts": {
+        "D1": 1,
+        "D2": 0,
+        "D3": 1,
+        "D4": 1,
+        "D5": 1
+      },
+      "defauts_trouves_moyens": 4,
+      "gravites": {
+        "bloquant": 2,
+        "a_corriger": 4
+      }
+    },
+    "criteres:criteres:echeancier": {
+      "revues": 1,
+      "fins": {
+        "success": 1
+      },
+      "appels": 1,
+      "structures": 1,
+      "cout_total": 0.004902,
+      "cout_moyen": 0.004902,
+      "cout_recalcule_total": 0.004902,
+      "constats_moyens": 2,
+      "hors_defauts_moyens": 2,
+      "latence_mediane_s": 30.3,
+      "gravites": {
+        "a_corriger": 2
+      }
+    }
+  },
+  "revues": [
+    {
+      "mesure": "criteres",
+      "variante": "criteres",
+      "demande": "moto",
+      "repetition": 1,
+      "fin": "success",
+      "appels": 1,
+      "tours": 5,
+      "cout_dollars": 0.006486285,
+      "cout_recalcule": 0.006486285,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 5175,
+          "cacheReadInputTokens": 48806,
+          "cacheCreationInputTokens": 27281,
+          "webSearchRequests": 0,
+          "costUSD": 0.006486285,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 3495
+        }
+      },
+      "structures": 1,
+      "constats": [
+        {
+          "fichier": "primes/calcul.py",
+          "ligne": 82,
+          "categorie": "bogue",
+          "gravite": "bloquant",
+          "description": "Le montant de la prime moto est calculé avec int(p), qui tronque, au lieu de arrondir_fcfa(). La règle du dépôt (.claude/rules/montants.md, util/montants.py) impose arrondir_fcfa() pour tout nouveau calcul de montant. Avec le coefficient taxi 1.65 (flottant), la troncature peut aussi donner un franc de moins que la valeur attendue.",
+          "detected_pattern": "return int(p)",
+          "confiance": 0.9
+        },
+        {
+          "fichier": "primes/calcul.py",
+          "ligne": 71,
+          "categorie": "bogue",
+          "gravite": "bloquant",
+          "description": "Erreur de borne : le tarif s'appelle CYLINDREE_1_125, donc 125 cm3 doit être dans la première tranche. Avec 'cylindree < 125', une moto de 125 cm3 tombe dans la tranche 126-500 (46000 FCFA au lieu de 28000). Le montant facturé est faux pour toutes les 125 cm3.",
+          "detected_pattern": "if cylindree < 125:",
+          "confiance": 0.9
+        },
+        {
+          "fichier": "primes/calcul.py",
+          "ligne": 79,
+          "categorie": "conception",
+          "gravite": "a_corriger",
+          "description": "Le coefficient taxi 1.65 est écrit en dur dans le code alors qu'il existe dans tarifs/moto.txt (USAGE_TAXI_MOTO). Le code doit le lire avec tarifs.lire('moto') ; sinon un changement de tarif par l'actuariat ne sera pas pris en compte.",
+          "detected_pattern": "p = p * 1.65",
+          "confiance": 0.9
+        },
+        {
+          "fichier": "base/requetes.py",
+          "ligne": 20,
+          "categorie": "securite",
+          "gravite": "a_corriger",
+          "description": "La requête est construite avec l'opérateur % au lieu de paramètres ?. %d force un entier, donc pas d'injection exploitable aujourd'hui, mais la règle du dépôt interdit cette forme et le motif reste fragile pour une évolution future.",
+          "detected_pattern": "\"SELECT * FROM contrats WHERE branche = 'MOTO' AND parametres LIKE '%%cylindree=%d%%'\" % cylindree_min",
+          "confiance": 0.85
+        },
+        {
+          "fichier": "base/requetes.py",
+          "ligne": 20,
+          "categorie": "bogue",
+          "gravite": "a_corriger",
+          "description": "Le filtre ne fait pas « au-dessus d'une cylindrée » : LIKE 'cylindree=125%' ne retient que les valeurs commençant par 125 (125, 1250...), et exclut 200 ou 600. Le motif ne traduit pas la comparaison voulue ; il faut lire la cylindrée et comparer, ou stocker la valeur dans une colonne numérique.",
+          "detected_pattern": "parametres LIKE '%%cylindree=%d%%'",
+          "confiance": 0.8
+        },
+        {
+          "fichier": "contrats/numeros.py",
+          "ligne": 22,
+          "categorie": "bogue",
+          "gravite": "a_corriger",
+          "description": "La liste blanche des branches de valid() n'a pas été mise à jour avec MOTO alors que config.BRANCHES l'inclut. Un numéro KA-MOTO-0001 est refusé, donc le changement rend cette fonction incohérente avec la nouvelle branche.",
+          "detected_pattern": "if morceaux[1] not in ('AUTO', 'HAB', 'SANTE'):",
+          "confiance": 0.85
+        }
+      ],
+      "defauts_trouves": [
+        "D1",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "hors_defauts": 1,
+      "precedents": [],
+      "controles": {},
+      "version": "2.1.310 (Claude Code)",
+      "latence_s": 31.1,
+      "erreur": null
+    },
+    {
+      "mesure": "criteres",
+      "variante": "criteres",
+      "demande": "echeancier",
+      "repetition": 1,
+      "fin": "success",
+      "appels": 1,
+      "tours": 8,
+      "cout_dollars": 0.00490229,
+      "cout_recalcule": 0.00490229,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 4022,
+          "cacheReadInputTokens": 115779,
+          "cacheCreationInputTokens": 13860,
+          "webSearchRequests": 0,
+          "costUSD": 0.00490229,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2542
+        }
+      },
+      "structures": 1,
+      "constats": [
+        {
+          "fichier": "quittances/echeancier.py",
+          "ligne": 13,
+          "categorie": "conception",
+          "gravite": "a_corriger",
+          "description": "Les nouveaux montants (la quittance courante `montant` et le `reliquat`) sont calculés par division entière `//` et soustraction, sans passer par `arrondir_fcfa()` de util/montants.py, ce que exige .claude/rules/montants.md pour tout nouveau calcul de montant. Dans le chemin actuel le résultat est juste, car `prime_avec_frais` rend un int (primes/calcul.py:83), mais la règle n'est pas respectée et rien ne garantit que `prime_annuelle` restera un entier.",
+          "detected_pattern": "montant = prime_annuelle // n",
+          "confiance": 0.85
+        },
+        {
+          "fichier": "quittances/echeancier.py",
+          "ligne": 17,
+          "categorie": "conception",
+          "gravite": "a_corriger",
+          "description": "Le reliquat ajouté à la première quittance est un nouveau montant calculé hors de `arrondir_fcfa()`, même remarque que ligne 13.",
+          "detected_pattern": "montant + (reliquat if i == 0 else 0)",
+          "confiance": 0.7
+        }
+      ],
+      "defauts_trouves": [],
+      "hors_defauts": 2,
+      "precedents": [],
+      "controles": {},
+      "version": "2.1.310 (Claude Code)",
+      "latence_s": 30.3,
+      "erreur": null
+    }
+  ]
+}

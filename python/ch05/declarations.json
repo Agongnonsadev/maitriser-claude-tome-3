@@ -1,0 +1,25 @@
+{
+  "note": "Déclarations fabriquées pour le livre. d1 à d6 reprennent le banc du chapitre 3 ; d7 est nouvelle ; h1 à h3 sont hors sujet. « outils_attendus » dit ce qu'un bon agent devrait consulter, « transmission_attendue » s'il devrait passer la main.",
+  "declarations": [
+    {"id": "d1", "sujet": true, "outils_attendus": ["consulter_contrat"], "transmission_attendue": false,
+     "texte": "Bonjour, ce matin vers 7 h 30 au carrefour de l'Étoile rouge, un taxi-moto m'a percuté par l'arrière. Mon pare-chocs arrière est enfoncé et le feu gauche est cassé. Le conducteur est parti sans s'arrêter. J'ai ma police auto KA-AUTO-0193. Comment je fais ?"},
+    {"id": "d2", "sujet": true, "outils_attendus": [], "transmission_attendue": false,
+     "texte": "Depuis les pluies d'hier soir, l'eau est entrée dans le salon par le toit. Le plafond a cédé dans un coin, le canapé et la télévision sont mouillés. Le contrat habitation est au nom de ma mère, elle a 74 ans, je déclare pour elle."},
+    {"id": "d3", "sujet": true, "outils_attendus": [], "transmission_attendue": false,
+     "texte": "J'ai été hospitalisé trois jours à la clinique pour un paludisme grave et j'ai payé 185 000 FCFA. Je veux être remboursé. Je n'ai pas encore la facture détaillée, seulement le reçu de caisse."},
+    {"id": "d4", "sujet": true, "outils_attendus": [], "transmission_attendue": true,
+     "texte": "C'est la troisième fois que j'écris !!! Mon dossier pour le vol de ma moto, déposé il y a six semaines, n'avance pas. Je veux parler à quelqu'un, pas à une machine."},
+    {"id": "d5", "sujet": true, "outils_attendus": ["consulter_contrat"], "transmission_attendue": false,
+     "texte": "Bonsoir. Mon camion de livraison est tombé en panne puis a pris feu sur l'axe Cotonou-Porto-Novo cet après-midi, personne n'est blessé. Police KA-AUTO-0410. Combien je vais toucher, et quand ?"},
+    {"id": "d6", "sujet": true, "outils_attendus": [], "transmission_attendue": false,
+     "texte": "Mon voisin a cassé ma clôture en reculant avec sa voiture, et la même semaine on m'a volé mon téléphone dans la maison. Est-ce que mon assurance habitation couvre les deux ?"},
+    {"id": "d7", "sujet": true, "outils_attendus": ["consulter_sinistres"], "transmission_attendue": false,
+     "texte": "Bonjour, je suis Mme Akplogan, numéro d'assurée KA-AS-1002. Où en est mon dossier pour l'accident du 2 octobre au carrefour Saint-Michel ? L'expert devait passer."},
+    {"id": "h1", "sujet": false, "outils_attendus": [], "transmission_attendue": false,
+     "texte": "Bonjour, quel temps fera-t-il demain à Cotonou ? Je dois sortir la voiture."},
+    {"id": "h2", "sujet": false, "outils_attendus": [], "transmission_attendue": false,
+     "texte": "Écrivez-moi un petit poème pour l'anniversaire de ma femme, s'il vous plaît."},
+    {"id": "h3", "sujet": false, "outils_attendus": [], "transmission_attendue": false,
+     "texte": "Je voudrais résilier mon contrat habitation KA-HAB-0264 et souscrire plutôt une assurance vie pour ma fille."}
+  ]
+}

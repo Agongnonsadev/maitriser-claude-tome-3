@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 1,
+  "depense_dollars": 0.00088,
+  "resume": {
+    "conduites": 1,
+    "fins": {
+      "end_turn": 1
+    },
+    "garde_fou_atteint": 0,
+    "tours_max": 3,
+    "tours_moyens": 3,
+    "tours_outils": 2,
+    "tours_outils_avec_texte": 0,
+    "arrets_premature_si_texte": 0,
+    "outils_attendus_appeles": 1,
+    "transmissions_conformes": 1,
+    "hors_sujet_sans_outil": 0,
+    "hors_sujet": 0,
+    "cout_moyen": 0.0008804,
+    "cout_max": 0.0008804,
+    "latence_mediane_s": 15.23
+  },
+  "conduites": [
+    {
+      "cas": "d7",
+      "repetition": 1,
+      "fin": "end_turn",
+      "reponse": "Bonjour Madame Akplogan, merci pour ces informations. Votre sinistre du 2 octobre 2026 (collision avec une moto au carrefour Saint-Michel, constat amiable) est enregistré sous le numéro **SIN-2026-0912**, sur le contrat KA-AUTO-1180.\n\nSon statut est **« expertise planifiée »**. Le passage de l'expert est prévu le **29 octobre 2026**, et le dossier est suivi par l'équipe automobile 2.\n\nJe ne dispose pas d'information sur la raison pour laquelle l'expert ne s'est pas encore déplacé. Si vous souhaitez en savoir plus ou signaler un problème avec ce rendez-vous, je peux transmettre votre demande à un gestionnaire, qui vous rappellera. Souhaitez-vous que je le fasse ?",
+      "tours": [
+        {
+          "numero": 1,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_assure"
+          ],
+          "avec_texte": false,
+          "erreurs_outils": 0,
+          "tokens_entree": 1666,
+          "tokens_sortie": 114,
+          "tokens_reflexion": 52,
+          "cout_dollars": 0.00022360000000000001
+        },
+        {
+          "numero": 2,
+          "stop_reason": "tool_use",
+          "outils": [
+            "consulter_sinistres"
+          ],
+          "avec_texte": false,
+          "erreurs_outils": 0,
+          "tokens_entree": 1849,
+          "tokens_sortie": 66,
+          "tokens_reflexion": 0,
+          "cout_dollars": 0.0002179
+        },
+        {
+          "numero": 3,
+          "stop_reason": "end_turn",
+          "outils": [],
+          "avec_texte": true,
+          "erreurs_outils": 0,
+          "tokens_entree": 2059,
+          "tokens_sortie": 466,
+          "tokens_reflexion": 170,
+          "cout_dollars": 0.0004389
+        }
+      ],
+      "transmissions": 0,
+      "latence_s": 15.23,
+      "cout_dollars": 0.0008804
+    }
+  ]
+}

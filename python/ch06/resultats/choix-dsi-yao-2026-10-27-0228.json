@@ -1,0 +1,4182 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "repetitions": 3,
+  "depense_dollars": 0.095424,
+  "resume": [
+    {
+      "variante": "dsi",
+      "conduites": 60,
+      "fins": {
+        "end_turn": 60
+      },
+      "premier_choix_juste": 0.75,
+      "demandes_mal_orientees": {
+        "c07": 3,
+        "c09": 1,
+        "c12": 3,
+        "c18": 3,
+        "c20": 3,
+        "c14": 1,
+        "c19": 1
+      },
+      "premiers_choix_faux": {
+        "c07:rechercher_dossier": 2,
+        "c09:consulter_contrat": 1,
+        "c12:consulter_contrat": 3,
+        "c18:consulter_contrat": 1,
+        "c20:consulter_contrat": 1,
+        "c07:aucun": 1,
+        "c18:consulter_contrat+rechercher_dossier": 2,
+        "c20:consulter_contrat+rechercher_dossier": 2,
+        "c14:rechercher_dossier": 1,
+        "c19:consulter_contrat": 1
+      },
+      "appels_moyens": 1.7833333333333334,
+      "outil_interdit_appele": 0,
+      "fausses_conclusions": 11,
+      "cout_moyen": 0.0006761983333333333,
+      "latence_mediane_s": 4.775
+    },
+    {
+      "variante": "yao",
+      "conduites": 60,
+      "fins": {
+        "end_turn": 60
+      },
+      "premier_choix_juste": 1.0,
+      "demandes_mal_orientees": {},
+      "premiers_choix_faux": {},
+      "appels_moyens": 1.45,
+      "outil_interdit_appele": 0,
+      "fausses_conclusions": 0,
+      "cout_moyen": 0.0009142050000000001,
+      "latence_mediane_s": 5.12
+    }
+  ],
+  "essais": [
+    {
+      "variante": "dsi",
+      "demande": "c01",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, votre contrat automobile KA-AUTO-1180 (Hyundai Tucson, CD 2271 RB) est bien actif. Je peux donc vous aider à déclarer votre sinistre.\n\nPour l'ouvrir, pouvez-vous me dire :\n1. Quand et où les faits se sont-ils produits ?\n2. Que s'est-il passé, et quels dommages constatez-vous ?\n3. Y a-t-il un tiers impliqué (autre véhicule, piéton, témoin) et disposez-vous de pièces (constat, photos, devis, dépôt de plainte) ?",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007516000000000001,
+      "latence_s": 4.79,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c02",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, ouvert le 2 octobre 2026 suite à une collision avec une moto au carrefour Saint-Michel (constat amiable), est actuellement au statut **« expertise planifiée »**.\n\nLa prochaine étape est le **passage de l'expert, prévu le 29 octobre 2026**. Il est géré par l'équipe automobile 2.\n\nSi vous avez des documents à transmettre avant cette visite, comme le constat amiable, des photos des dommages ou des devis de réparation, vous pouvez me les indiquer. Je peux aussi transmettre une demande à un gestionnaire si vous souhaitez être rappelé.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0912"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005039,
+      "latence_s": 3.83,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c03",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912** lié au contrat KA-AUTO-1180 concerne une collision avec une moto au carrefour Saint-Michel, déclarée par constat amiable le 2 octobre 2026.\n\nIl est actuellement au statut **« expertise planifiée »**. La prochaine étape est le passage de l'expert le **29 octobre 2026**. Il est suivi par l'équipe automobile 2.\n\nPour préparer ce passage, vous pouvez tenir à disposition le constat amiable complet, les photos des véhicules et des dégâts, ainsi que les devis de réparation si vous en avez. Si vous avez de nouveaux éléments à ajouter au dossier, je peux créer un ticket pour le gestionnaire. Souhaitez-vous que je le fasse ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006554,
+      "latence_s": 4.25,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c04",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_client"
+      ],
+      "reponse": "Bonjour Madame Akplogan, je vous ai bien retrouvée dans nos fichiers. Votre dossier d'assurée est associé au contrat automobile KA-AUTO-1180.\n\nPour déclarer votre sinistre, pourriez-vous me dire :\n1. Ce qui s'est passé, et à quelle date et en quel lieu ?\n2. Quels dommages avez-vous subis, et y a-t-il des tiers impliqués (autre conducteur, témoin) ?\n3. Disposez-vous de pièces justificatives, comme un constat amiable, des photos ou un devis ?",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Félicité Akplogan"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005229,
+      "latence_s": 4.97,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c05",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-HAB-0264 (formule Habitation confort, statut actif) couvre le vol **uniquement avec effraction constatée**, avec une franchise de 25 000 FCFA. Un vol sans effraction, par exemple un téléphone dérobé hors du domicile, ne semble pas relever de cette garantie.\n\nSi vous souhaitez tout de même déclarer ce vol, pourriez-vous me préciser :\n\n1. La date et le lieu du vol ?\n2. Y a-t-il eu une effraction (porte forcée, fenêtre brisée) et avez-vous déposé plainte ?\n3. Le téléphone a-t-il été volé à votre domicile ou ailleurs ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007758999999999999,
+      "latence_s": 6.03,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c06",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 4,
+      "outils": [
+        "rechercher_client",
+        "rechercher_dossier",
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Oui, un dossier est déjà ouvert sur votre contrat automobile KA-AUTO-0731 (moto Bajaj Boxer, 4471 RB) :\n\n- **Dossier :** SIN-2026-0788\n- **Objet :** vol de la moto devant votre domicile, déclaré le 14/09/2026\n- **Statut :** en attente de pièces\n- **Prochaine étape :** réception de la copie de votre dépôt de plainte\n- **Gestionnaire :** Équipe automobile 1\n\nPour avancer, il vous suffit de transmettre la copie du dépôt de plainte. Avez-vous déjà cette copie, ou avez-vous besoin d'aide pour la récupérer auprès du commissariat ?",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010518,
+      "latence_s": 6.66,
+      "premier": [
+        "rechercher_client",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 4,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c07",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 4,
+      "outils": [
+        "rechercher_dossier",
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Je n'ai trouvé aucun dossier de sinistre ouvert au nom de Mme Rosalie Houngbédji. Son contrat habitation **KA-HAB-0264** est actif. Il couvre la maison d'Abomey-Calavi, avec les garanties dégâts des eaux, tempête et inondation, vol (avec effraction constatée) et responsabilité civile.\n\nJe ne vois pas de changement d'adresse enregistré depuis son déménagement. Je ne peux pas modifier les informations du contrat : pour cela, l'agence de Kanvô Assurances pourra vous aider.\n\nSi vous souhaitez déclarer un sinistre survenu sur ce contrat, dites-moi ce qui s'est passé, quand et où. Indiquez-moi aussi si vous agissez pour votre mère.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "Rosalie Houngbédji"
+          }
+        },
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Rosalie Houngbédji"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0011283,
+      "latence_s": 8.62,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c08",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat **KA-AUTO-0193** (formule Tiers étendu, Toyota Yaris AA 2290 RB, actif) comporte les franchises suivantes :\n\n- **Collision avec un tiers identifié** : 50 000 FCFA\n- **Vol et incendie** : 75 000 FCFA\n- **Bris de glace** : 15 000 FCFA\n\nLa responsabilité civile est couverte. Les dommages tous accidents ne le sont pas.\n\nSi vous souhaitez déclarer un sinistre, dites-moi ce qui s'est passé, où et quand.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.00047809999999999997,
+      "latence_s": 3.12,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c09",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788** (vol de votre moto devant votre domicile) est ouvert et en attente de pièces. Votre contrat KA-AUTO-0731 est actif et couvre le vol, avec une franchise de 30 000 FCFA.\n\n**Il manque la copie du dépôt de plainte.** Dès que vous la transmettez, le dossier pourra passer à l'étape suivante. Le gestionnaire en charge est l'équipe automobile 1.\n\nSi vous avez d'autres documents liés au vol, comme la carte grise ou un justificatif d'achat, vous pouvez les joindre au dossier avec la plainte. Je ne peux pas vous indiquer de délai de traitement ni de montant d'indemnisation.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0009045,
+      "latence_s": 5.6,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c10",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je comprends que vous déménagiez à Parakou. La résiliation d'un contrat ne relève pas de mon rôle : je gère uniquement les déclarations et le suivi des sinistres. Pour résilier votre contrat KA-HAB-0264, veuillez vous adresser à l'agence de Kanvô Assurances, qui pourra vous accompagner dans cette démarche.\n\nEn revanche, si vous souhaitez déclarer un sinistre survenu sur ce contrat, je peux vous aider. Dans ce cas, merci de me préciser la date et le lieu des faits, les dommages constatés et les éventuels tiers impliqués.",
+      "appels": [],
+      "cout_dollars": 0.00035489999999999995,
+      "latence_s": 2.7,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c11",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je comprends que vous souhaitez résilier votre contrat auto KA-AUTO-0193. Cette demande ne relève malheureusement pas de mon rôle : je ne traite que les déclarations et le suivi des sinistres. Pour résilier votre contrat, rapprochez-vous de l'agence Kanvô Assurances, qui pourra vous accompagner dans cette démarche et vous indiquer les modalités et les délais applicables.\n\nSi vous avez également un sinistre à déclarer ou un dossier en cours à suivre, je peux vous aider dès maintenant.",
+      "appels": [],
+      "cout_dollars": 0.0003311,
+      "latence_s": 2.25,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c12",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "consulter_contrat",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour, merci pour votre message. Je n'arrive pas à consulter votre contrat KA-AS-1001 pour le moment, il y a une erreur de notre système. Je ne peux donc pas vous indiquer précisément vos garanties.\n\nPourriez-vous réessayer dans quelques instants ? Si vous êtes en train de déclarer un sinistre, dites-le-moi : je prendrai note des faits. Sinon, je peux transmettre votre demande à un gestionnaire, qui vous rappellera. Vous pouvez aussi vous adresser à l'agence de Kanvô Assurances.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1001"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1001"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006419,
+      "latence_s": 6.82,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c13",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Je ne trouve aucun sinistre ouvert ou clos sur le contrat KA-HAB-0264. Le contrat est bien actif (formule Habitation confort, maison individuelle à Abomey-Calavi).\n\nPour vérifier, pourriez-vous me préciser :\n1. Le numéro de votre dossier de sinistre, s'il vous a été communiqué ?\n2. La date et le lieu de l'événement, ainsi que la nature des dommages (dégâts des eaux, tempête, vol, etc.) ?\n\nSi vous avez déjà déclaré ce sinistre, je peux transmettre votre demande à un gestionnaire, qui pourra vous indiquer son état d'avancement.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "sinistre contrat KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005636,
+      "latence_s": 3.95,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c14",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 4,
+      "outils": [
+        "rechercher_dossier",
+        "rechercher_client",
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Bonjour M. Zinsou, j'ai retrouvé votre dossier **SIN-2026-0788**, ouvert pour le vol de votre moto Bajaj Boxer (4471 RB) devant votre domicile, sous le contrat KA-AUTO-0731.\n\nIl est actuellement **en attente de pièces** : la prochaine étape est la réception de la **copie de votre dépôt de plainte**. Pouvez-vous nous la transmettre dès que possible ?\n\nLe dossier est suivi par l'équipe automobile 1. Si vous souhaitez échanger directement avec un gestionnaire, je peux transmettre votre demande pour qu'il vous rappelle.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "vol moto Zinsou"
+          }
+        },
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Zinsou"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010768000000000002,
+      "latence_s": 8.14,
+      "premier": [
+        "rechercher_dossier",
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 4,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c15",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788** concerne le vol de votre moto devant votre domicile, rattaché au contrat KA-AUTO-0731. Il est actuellement **en attente de pièces**.\n\nLa prochaine étape est la **copie du dépôt de plainte** auprès des autorités. Dès réception, le dossier pourra être poursuivi par l'équipe automobile 1.\n\nPouvez-vous me confirmer :\n1. Avez-vous déjà déposé plainte, et si oui, à quelle date et dans quel commissariat ou quelle gendarmerie ?\n2. Pouvez-vous transmettre cette copie à votre gestionnaire, et par quel moyen ?\n\nJe ne peux pas vous indiquer de montant ni de délai de traitement. Si vous souhaitez échanger directement avec un gestionnaire, je peux lui transmettre votre demande de rappel.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0788"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008132,
+      "latence_s": 5.86,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c16",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre contrat KA-AUTO-0410 est actif, pour le camion Isuzu NPR (EF 7781 RB), à usage professionnel. Il couvre la responsabilité civile ainsi que le vol et l'incendie. Il ne comprend pas la garantie dommages tous accidents.\n\nJe ne trouve aucun sinistre déjà enregistré sur ce contrat.\n\nSouhaitez-vous déclarer un sinistre aujourd'hui ? Si oui, merci de me préciser :\n1. La date, le lieu et les circonstances de l'événement ;\n2. Les dommages constatés et les éventuels tiers impliqués ;\n3. Les pièces dont vous disposez, comme un constat, des photos ou un dépôt de plainte.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0410"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006100000000000001,
+      "latence_s": 3.91,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c17",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Monsieur Tossou, j'ai retrouvé votre contrat : **KA-AUTO-0410**, automobile, actif, pour le camion Isuzu NPR (EF 7781 RB). Il s'agit de la formule Tiers, vol et incendie.\n\nPour déclarer votre sinistre, pouvez-vous me préciser :\n1. Quand et où les faits se sont-ils produits ?\n2. Que s'est-il passé, et quels dommages constatez-vous ?\n3. Des tiers sont-ils impliqués (autre conducteur, témoin, piéton) ?\n\nVous pourrez ensuite me transmettre les pièces justificatives, comme le constat, les photos ou un devis. Je ne peux pas vous indiquer à ce stade si le sinistre sera pris en charge : son traitement relève d'un gestionnaire.",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Arnaud Tossou"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007811,
+      "latence_s": 5.62,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c18",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Je suis désolé, mais je n'ai pas pu retrouver votre contrat KA-AS-1002 ni de dossier de sinistre associé à ce numéro. Le système a renvoyé une erreur, et la recherche n'a donné aucun résultat. Je ne peux donc pas savoir si un expert est déjà passé.\n\nPour vérifier, pourriez-vous me préciser :\n1. La date et le lieu de l'accident ?\n2. Le numéro de votre dossier de sinistre, s'il vous a été communiqué ?\n3. Le nom de l'expert, ou la date à laquelle il vous a contactée, si vous en avez connaissance ?\n\nSi vous le souhaitez, je peux transmettre votre demande à un gestionnaire, qui pourra vérifier votre dossier et vous rappeler.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1002"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008485999999999999,
+      "latence_s": 5.51,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c19",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788** (contrat KA-AUTO-0731, moto Bajaj Boxer, 4471 RB) concerne le vol de votre moto devant votre domicile. Il est **en attente de pièces**.\n\nLa prochaine étape est la réception de la **copie de votre dépôt de plainte**. Si vous ne l'avez pas encore transmise, pouvez-vous me confirmer :\n\n1. La date et le lieu où vous avez déposé plainte ?\n2. Si vous disposez déjà de la copie du dépôt de plainte ?\n\nVotre dossier est suivi par l'équipe automobile 1. Si vous souhaitez parler directement à un gestionnaire, je peux transmettre votre demande avec un résumé pour qu'il vous rappelle.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006324,
+      "latence_s": 4.06,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c20",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 5,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_client",
+        "rechercher_dossier",
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Bonjour M. Agbo, je n'ai trouvé aucun dossier de sinistre ouvert sur votre contrat automobile KA-AUTO-0552 (formule Tiers étendu, Toyota Corolla AB 4417 RB). L'accident d'hier semble donc ne pas encore avoir été déclaré.\n\nPour l'enregistrer, pouvez-vous me préciser :\n1. Où et à quelle heure l'accident s'est-il produit ?\n2. Un tiers était-il impliqué (identité, immatriculation, assureur) ?\n3. Quels dommages constatez-vous, et disposez-vous de photos ou d'un constat amiable ?\n\nJe ne peux pas, à ce stade, vous indiquer la suite donnée à votre demande ni un montant. Un gestionnaire pourra vous renseigner à ce sujet.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "Sèna Agbo KA-AS-1004 accident"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0552"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0552"
+          }
+        }
+      ],
+      "cout_dollars": 0.0016803,
+      "latence_s": 12.03,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 5,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c01",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, votre identité est bien retrouvée. Votre contrat automobile **KA-AUTO-1180** (formule Tous risques, Hyundai Tucson, CD 2271 RB) est actif.\n\nPour ouvrir votre dossier, pouvez-vous me préciser :\n\n1. S'agit-il d'un nouveau sinistre, ou d'un dossier déjà ouvert ? Si c'est le cas, donnez-moi son numéro.\n2. Quand et où l'incident s'est-il produit ?\n3. Quels dommages le véhicule a-t-il subis, et d'autres personnes ou véhicules étaient-ils impliqués ?\n\nVous pourrez ensuite m'indiquer les pièces justificatives disponibles, comme le constat ou les photos.",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008596000000000001,
+      "latence_s": 8.26,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c02",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, rattaché au contrat automobile KA-AUTO-1180 (actif), est au statut **expertise planifiée**.\n\n- **Sinistre déclaré le :** 2 octobre 2026\n- **Nature :** collision avec une moto au carrefour Saint-Michel, constat amiable\n- **Prochaine étape :** passage de l'expert le **29 octobre 2026**\n- **Gestionnaire :** Équipe automobile 2\n\nSi vous avez des documents à ajouter, comme des photos des dommages, le constat amiable ou un devis de réparation, vous pouvez me les indiquer. Je peux aussi transmettre votre demande à un gestionnaire si vous souhaitez être rappelé.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0912"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008629999999999999,
+      "latence_s": 5.54,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c03",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, ouvert le 2 octobre 2026 suite à la collision avec une moto au carrefour Saint-Michel, est au statut **expertise planifiée**.\n\nLa prochaine étape est le passage de l'expert le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nPour préparer cette visite, vous pouvez rassembler le constat amiable, les photos des dégâts et tout document concernant le véhicule.\n\nJe ne peux pas vous indiquer à ce stade le montant ni le délai de traitement. Si vous souhaitez un point précis avec un gestionnaire, je peux lui transmettre votre demande avec un résumé de votre dossier.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006794,
+      "latence_s": 4.57,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c04",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_client"
+      ],
+      "reponse": "Bonjour Madame Akplogan, je vous ai bien retrouvée dans nos fichiers.\n\nPour déclarer votre sinistre, pourriez-vous me préciser :\n1. La date et le lieu exacts de l'événement ?\n2. Ce qui s'est passé, en quelques mots, et les dommages constatés ?\n3. Si un tiers est impliqué (autre véhicule, personne blessée), ses coordonnées si vous les avez ?\n\nVous pouvez aussi me donner votre numéro de contrat si vous le connaissez. Sinon, je peux le retrouver à partir de votre dossier. Nous vous demanderons ensuite les pièces justificatives, comme le constat amiable ou les photos des dommages.",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Félicité Akplogan"
+          }
+        }
+      ],
+      "cout_dollars": 0.0004348,
+      "latence_s": 3.87,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c05",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-HAB-0264 (formule Habitation confort) comprend une garantie **vol**, mais elle est soumise à la condition d'une **effraction constatée**. Je ne peux pas vous confirmer la prise en charge à ce stade, et je ne peux rien promettre quant à une indemnisation.\n\nPour mieux comprendre votre situation, j'aurais besoin de savoir :\n1. Quand et où le téléphone vous a-t-il été volé ?\n2. Le vol s'est-il produit dans votre logement, avec effraction (porte ou fenêtre forcée, par exemple), ou à l'extérieur ?\n3. Avez-vous déposé plainte auprès des autorités ?\n\nSi vous le souhaitez, je peux ensuite ouvrir une déclaration de sinistre pour que le gestionnaire étudie votre dossier.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005984,
+      "latence_s": 4.68,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c06",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Monsieur Zinsou, j'ai retrouvé votre contrat automobile **KA-AUTO-0731** (deux-roues vol, moto Bajaj Boxer, 4471 RB), qui est actif. Je n'ai trouvé aucun dossier de sinistre ouvert sous votre numéro d'assuré KA-AS-1006.\n\nSouhaitez-vous déclarer un sinistre ? Si oui, pouvez-vous me dire :\n1. Ce qui s'est passé, et à quelle date et à quel endroit ?\n2. Quels dommages constatez-vous, et y a-t-il un tiers impliqué ?\n\nSi vous disposez déjà d'un numéro de dossier, indiquez-le-moi et je le rechercherai.",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007934000000000001,
+      "latence_s": 5.5,
+      "premier": [
+        "rechercher_client",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c07",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je peux vous aider à faire le point sur un dossier de sinistre. Avant de consulter des informations concernant Mme Houngbédji, j'ai besoin de vérifier que vous êtes autorisé à y accéder. Pourriez-vous me indiquer :\n\n1. Le numéro de contrat de votre mère, si vous le avez ?\n2. Êtes-vous mandaté par elle, par exemple comme personne désignée ou représentant légal ?\n\nPour le changement d'adresse suite au déménagement, cette démarche ne relève pas de mon rôle. L'agence de Kanvô Assurances pourra vous indiquer la marche à suivre.",
+      "appels": [],
+      "cout_dollars": 0.00045180000000000003,
+      "latence_s": 4.41,
+      "premier": [],
+      "premier_juste": false,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c08",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat **KA-AUTO-0193** (Toyota Yaris, AA 2290 RB, formule Tiers étendu) est actif. Les franchises sont les suivantes :\n\n- **Collision avec un tiers identifié** : 50 000 FCFA\n- **Vol et incendie** : 75 000 FCFA\n- **Bris de glace** : 15 000 FCFA\n\nLa garantie « dommages tous accidents » n'est pas couverte par ce contrat, et la responsabilité civile l'est.\n\nSi vous souhaitez déclarer un sinistre, dites-moi ce qui s'est passé, avec la date et le lieu.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0004612,
+      "latence_s": 3.02,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c09",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Vous déclarez le vol de votre moto Bajaj Boxer (4471 RB) sous le contrat KA-AUTO-0731. Ce contrat est actif et couvre le vol, avec une franchise de 30 000 FCFA. Je n'ai pas trouvé de dossier ouvert pour ce contrat. Si vous avez déjà un numéro de dossier, indiquez-le-moi.\n\nPour compléter votre déclaration, pourriez-vous me préciser :\n\n1. La date et le lieu exacts du vol ?\n2. Avez-vous déposé plainte ? Si oui, quel est le numéro du récépissé ?\n3. Disposez-vous de la carte grise, des clés et de tout document prouvant la propriété ou la valeur de la moto ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "vol moto KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008071,
+      "latence_s": 5.41,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c10",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Bonjour, je comprends votre projet de déménagement. Toutefois, la résiliation d'un contrat ne relève pas de mon rôle : je ne traite que les déclarations et le suivi des sinistres. Pour résilier le contrat KA-HAB-0264, je vous invite à contacter l'agence de Kanvô Assurances, qui pourra vous accompagner dans cette démarche et vous indiquer les pièces à fournir.\n\nSi vous avez un sinistre à déclarer, par exemple un dommage survenu lors du déménagement, je peux vous aider. Dans ce cas, indiquez-moi la date et le lieu des faits, la nature des dommages et si d'autres personnes sont impliquées.",
+      "appels": [],
+      "cout_dollars": 0.00037739999999999996,
+      "latence_s": 2.88,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c11",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je suis désolé, mais la résiliation de contrat ne relève pas de mon rôle. Je gère uniquement les déclarations et le suivi des sinistres. Pour mettre fin à votre contrat automobile KA-AUTO-0193, l'agence de Kanvô Assurances pourra vous aider.\n\nSi vous souhaitez en revanche déclarer un sinistre survenu sur ce véhicule, je peux vous aider à le faire. Dans ce cas, pourriez-vous me décrire ce qui s'est passé, en précisant la date et le lieu ?",
+      "appels": [],
+      "cout_dollars": 0.00033360000000000003,
+      "latence_s": 2.44,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c12",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour, je vous remercie pour votre message.\n\nJe n'ai pas pu consulter votre contrat KA-AS-1001 : le système a renvoyé une erreur. Je ne peux donc pas vous indiquer les garanties dont vous disposez pour le moment.\n\nPour avancer, vous pouvez :\n- vérifier que le numéro est bien saisi sans faute, puis me le redonner ;\n- me décrire le sinistre que vous souhaitez déclarer, si c'est le cas. Je pourrai alors transmettre votre demande à un gestionnaire ;\n- être rappelé par un gestionnaire, si vous préférez un échange direct.\n\nSouhaitez-vous que je réessaie la consultation ou que je transmette votre demande à un gestionnaire ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1001"
+          }
+        }
+      ],
+      "cout_dollars": 0.0004936000000000001,
+      "latence_s": 4.22,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c13",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre contrat habitation KA-HAB-0264 est actif. Le sinistre le plus récent, **SIN-2025-1470** (infiltration d'eau dans une chambre, déclaré le 3 juillet 2025), est **clos** et n'a aucune étape en attente.\n\nUn autre dossier, **SIN-2019-0207** (dégâts des eaux dans la cuisine, 11 mars 2019), est archivé.\n\nEst-ce bien de ce premier sinistre que vous parlez ? Si vous avez un nouveau dommage à déclarer, ou si la clôture ne correspond pas à votre situation, dites-le-moi. Je peux alors vous aider à compléter la déclaration ou transmettre votre demande à un gestionnaire.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006573,
+      "latence_s": 4.85,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c14",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_dossier",
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour M. Zinsou, j'ai bien retrouvé votre contrat KA-AUTO-0731 (Bajaj Boxer, 4471 RB), qui comporte la garantie vol et incendie. En revanche, je ne trouve aucun dossier de vol ouvert à votre nom avec les informations dont je dispose.\n\nPour vérifier le suivi, pourriez-vous me indiquer :\n1. Le numéro de dossier de sinistre, s'il vous en a été communiqué ?\n2. La date et le lieu du vol ?\n3. La date à laquelle vous avez déposé plainte ou déclaré le vol, si vous l'avez fait ?\n\nSi vous ne retrouvez pas ces éléments, je peux transmettre votre demande à un gestionnaire, qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "Zinsou vol moto"
+          }
+        },
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Zinsou"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008641,
+      "latence_s": 5.84,
+      "premier": [
+        "rechercher_dossier",
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c15",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788**, ouvert pour le vol de votre moto devant votre domicile le 14 septembre 2026, est actuellement **en attente de pièces**.\n\nLa prochaine étape est la **copie de votre dépôt de plainte**. Vous pouvez nous la transmettre dès que vous l'avez en votre possession.\n\nLe dossier est suivi par l'équipe automobile 1. Si le courrier que vous avez reçu demande d'autres documents, indiquez-moi lesquels, et je vérifierai avec vous ce qui manque.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0788"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005011,
+      "latence_s": 4.33,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c16",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Je n'ai trouvé aucun sinistre enregistré sur le contrat KA-AUTO-0410 à ce jour.\n\nCe contrat est actif et couvre le camion Isuzu NPR (EF 7781 RB) au titre de la formule « Tiers, vol et incendie ». Il comprend la responsabilité civile et les garanties vol et incendie, mais pas les dommages tous accidents.\n\nSouhaitez-vous déclarer un sinistre ? Si oui, merci de me préciser :\n1. La date et le lieu de l'événement ;\n2. Ce qui s'est passé et les dommages constatés ;\n3. Si un tiers est impliqué.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0410"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005908,
+      "latence_s": 3.96,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c17",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_client"
+      ],
+      "reponse": "Bonjour Monsieur Tossou, je suis l'assistant de déclaration de sinistres de Kanvô Assurances.\n\nJ'ai retrouvé un dossier client à votre nom. Avant de vous communiquer le numéro de contrat, je dois vérifier votre identité. Pouvez-vous me confirmer :\n\n1. Votre date de naissance ?\n2. Votre adresse postale complète ?\n\nPourriez-vous aussi me dire si vous souhaitez déclarer un sinistre et, si oui, ce qui s'est passé (date, lieu, dommages) ?",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Arnaud Tossou"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006081,
+      "latence_s": 4.76,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c18",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Je n'ai pas pu consulter votre contrat KA-AS-1002 : le système a renvoyé une erreur. Aucun dossier de sinistre ouvert n'apparaît non plus sous ce numéro, je ne peux donc pas vous dire si un expert est passé.\n\nPour avancer, pourriez-vous me préciser :\n1. La date et le lieu de l'accident, ainsi que le numéro de votre dossier de sinistre s'il vous a été communiqué ?\n2. Le nom de l'expert ou de la société qui devait vous contacter, si vous le connaissez ?\n\nSi vous préférez, je peux transmettre votre demande à un gestionnaire, qui pourra vérifier la situation et vous rappeler.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "sinistre accident expert KA-AS-1002"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005985000000000001,
+      "latence_s": 4.16,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c19",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788**, ouvert au titre du contrat KA-AUTO-0731, concerne le vol de votre moto devant votre domicile. Il est **en attente de pièces**.\n\nLa pièce manquante est la **copie du dépôt de plainte**. Dès que vous nous l'aurez transmise, le dossier pourra être poursuivi par l'équipe automobile 1.\n\nAvez-vous déjà déposé plainte auprès des autorités ? Si oui, pouvez-vous me préciser la date et le lieu du dépôt, afin que je complète le dossier ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006107,
+      "latence_s": 4.03,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c20",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Monsieur Agbo, merci de votre message.\n\nJe ne parviens pas à consulter votre contrat KA-AS-1004 pour le moment, et ma recherche de dossier n'a donné aucun résultat avec ce numéro. Je ne peux donc pas confirmer si votre dossier est complet.\n\nPour avancer, pourriez-vous me préciser :\n1. Le numéro de dossier de sinistre, s'il vous a été communiqué ?\n2. La date et le lieu exacts de l'accident, ainsi que ce qui s'est passé ?\n3. Les pièces déjà envoyées (constat amiable, photos, devis) ?\n\nSi le problème persiste, je peux transmettre votre demande à un gestionnaire, qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1004 sinistre accident"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1004"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008366,
+      "latence_s": 5.9,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c01",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, votre identité est confirmée et votre contrat automobile **KA-AUTO-1180** (Hyundai Tucson, CD 2271 RB) est actif.\n\nPour ouvrir votre déclaration de sinistre, pouvez-vous me dire :\n\n1. **Ce qui s'est passé** : quelle est la nature de l'incident (accrochage, vol, incendie, bris de glace, autre) ?\n2. **La date et le lieu** de l'incident.\n3. **Les tiers impliqués** : y a-t-il un autre véhicule ou une autre personne concernée ? Si oui, notez leurs coordonnées et, si possible, leur numéro d'immatriculation.\n\nVous pourrez ensuite m'indiquer les dommages constatés et les pièces dont vous disposez, comme le constat amiable, les photos ou le dépôt de plainte.",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008073,
+      "latence_s": 5.05,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c02",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, ouvert le 2 octobre 2026 après votre collision avec une moto au carrefour Saint-Michel (constat amiable), est au stade **expertise planifiée**.\n\nLa prochaine étape est le **passage de l'expert le 29 octobre 2026**. Il est géré par l'équipe automobile 2.\n\nSi vous avez des photos des véhicules, le constat amiable ou des coordonnées de témoins, vous pouvez me les indiquer. Je peux aussi transmettre une demande à un gestionnaire si vous souhaitez un rappel.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0912"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007764,
+      "latence_s": 4.94,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c03",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912** est au statut **« expertise planifiée »**. Il concerne la collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026 et déclarée par constat amiable. Le passage de l'expert est prévu le **29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nPour préparer cette expertise, vous pouvez rassembler le constat amiable, les photos des véhicules et des dommages, ainsi que les devis de réparation éventuels.\n\nSouhaitez-vous que je transmette une demande de rappel à un gestionnaire, ou avez-vous d'autres éléments à ajouter à votre dossier ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-1180"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006313,
+      "latence_s": 3.73,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c04",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_client"
+      ],
+      "reponse": "Bonjour Madame Akplogan, j'ai bien retrouvé un dossier d'assurée à votre nom dans nos fichiers.\n\nPour déclarer votre sinistre, pouvez-vous me préciser :\n\n1. Quand et où les faits se sont-ils produits ?\n2. Quel est le numéro de votre contrat, si vous l'avez sous la main ?\n3. Quels dommages avez-vous constatés, et y a-t-il des tiers impliqués ?\n\nSi vous disposez de photos, d'un constat ou d'un devis, vous pourrez les joindre ensuite à votre déclaration.",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Félicité Akplogan"
+          }
+        }
+      ],
+      "cout_dollars": 0.0004948,
+      "latence_s": 6.05,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c05",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-HAB-0264 (formule Habitation confort) comprend une garantie **vol**, mais uniquement **avec effraction constatée**, avec une franchise de 25 000 FCFA. Un téléphone volé hors de votre domicile, sans effraction, n'est donc en principe pas couvert par cette garantie.\n\nSi vous souhaitez déclarer un sinistre, pouvez-vous me préciser :\n1. Quand et où le vol a-t-il eu lieu ?\n2. Y a-t-il eu une effraction (porte ou fenêtre forcée, par exemple) ou le téléphone a-t-il été pris hors du domicile ?\n3. Avez-vous déposé plainte auprès de la police ou de la gendarmerie ?\n\nJe ne peux pas vous garantir une indemnisation : l'étude de votre dossier déterminera ce qui est couvert.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005875,
+      "latence_s": 4.71,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c06",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "rechercher_client",
+        "rechercher_dossier",
+        "consulter_contrat"
+      ],
+      "reponse": "Monsieur Zinsou, je ne trouve aucun dossier de sinistre ouvert pour votre numéro d'assuré KA-AS-1006.\n\nVotre contrat automobile KA-AUTO-0731 (formule deux-roues vol, moto Bajaj Boxer 4471 RB) est actif. Il couvre la responsabilité civile ainsi que le vol et l'incendie, avec une franchise de 30 000 FCFA pour ces dernières garanties.\n\nSouhaitez-vous déclarer un sinistre ? Si oui, pouvez-vous me préciser :\n1. La date et le lieu de l'événement, et ce qui s'est passé ?\n2. Les dommages constatés et les tiers éventuellement impliqués ?\n3. Les pièces dont vous disposez, comme un constat, un récépissé de plainte ou des photos ?",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008018000000000001,
+      "latence_s": 6.03,
+      "premier": [
+        "rechercher_client",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c07",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "reponse": "Je n'ai trouvé aucun dossier au nom de Rosalie Houngbédji. Pourriez-vous me communiquer le numéro de dossier ou le numéro de contrat de votre mère, ainsi que la date du sinistre ? Je ne peux consulter un dossier que si vous êtes l'assuré ou si vous êtes autorisé à le gérer. Pour la mise à jour de son adresse suite au déménagement, cela ne relève pas de la déclaration de sinistre : l'agence de Kanvô Assurances pourra vous aider.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "Rosalie Houngbédji"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005386,
+      "latence_s": 4.12,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c08",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-AUTO-0193 (Toyota Yaris, AA 2290 RB, formule Tiers étendu) est actif. Les franchises dépendent de la garantie :\n\n- **Collision avec un tiers identifié** : 50 000 FCFA\n- **Vol et incendie** : 75 000 FCFA\n- **Bris de glace** : 15 000 FCFA\n\nLa garantie « dommages tous accidents » n'est pas couverte par ce contrat.\n\nSouhaitez-vous déclarer un sinistre ? Si oui, pouvez-vous me dire :\n1. La date, l'heure et le lieu des faits ?\n2. Ce qui s'est passé, et quels dommages sont constatés ?\n3. Si un tiers est impliqué, pouvez-vous me donner ses coordonnées ou son numéro d'immatriculation ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005439,
+      "latence_s": 3.73,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c09",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "J'ai bien retrouvé votre contrat **KA-AUTO-0731** (Bajaj Boxer, 4471 RB), actif, avec la garantie vol. En revanche, ma recherche n'a trouvé aucun dossier de sinistre ouvert sous ce contrat. Si vous avez un numéro de dossier, merci de me le communiquer.\n\nPour déclarer le vol, il me manque :\n\n1. **La date et le lieu du vol**, et les circonstances (stationnement, clés laissées ou non, etc.).\n2. **Le numéro de récépissé de votre dépôt de plainte** auprès de la police ou de la gendarmerie.\n3. **Les pièces justificatives** que vous pourrez fournir, comme la carte grise et les photos de l'emplacement, ou tout élément sur la moto.\n\nDès que vous me les aurez transmis, je pourrai compléter votre déclaration.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731 vol moto"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007683,
+      "latence_s": 6.03,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c10",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je vous remercie pour votre message. La résiliation d'un contrat ne relève pas de mon rôle : je ne traite que les déclarations et le suivi de sinistres. Pour résilier le contrat KA-HAB-0264 et étudier les conséquences de votre déménagement à Parakou, je vous invite à contacter l'agence de Kanvô Assurances, qui pourra vous accompagner.\n\nEn revanche, si un sinistre est survenu sur ce contrat, je peux vous aider à le déclarer. Dans ce cas, pourriez-vous me indiquer la date et le lieu de l'incident, la nature des dommages et les éventuels tiers impliqués ?",
+      "appels": [],
+      "cout_dollars": 0.0003519,
+      "latence_s": 2.77,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c11",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je comprends que vous souhaitez résilier votre contrat auto KA-AUTO-0193. Cette demande ne relève malheureusement pas de mon rôle : je ne traite que les déclarations et le suivi des sinistres. Je ne peux donc ni résilier ni modifier votre contrat.\n\nL'agence de Kanvô Assurances pourra vous accompagner dans cette démarche.\n\nEn revanche, si vous avez subi un sinistre lié à ce véhicule, je peux vous aider à le déclarer. Décrivez-moi ce qui s'est passé.",
+      "appels": [],
+      "cout_dollars": 0.0003286,
+      "latence_s": 2.67,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c12",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "consulter_contrat",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour, je vous remercie pour votre message.\n\nJe n'arrive pas à consulter votre contrat KA-AS-1001 pour le moment : le système renvoie une erreur. Je ne peux donc pas vous indiquer précisément vos garanties.\n\nSi vous souhaitez déclarer un sinistre, je peux commencer dès maintenant. Pourriez-vous me décrire brièvement ce qui s'est passé ? Je vous poserai ensuite les questions utiles, notamment la date et le lieu.\n\nSi vous préférez, je peux aussi transmettre votre demande à un gestionnaire, qui vous rappellera pour faire le point sur vos garanties.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1001"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1001"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005840999999999999,
+      "latence_s": 9.89,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c13",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre contrat habitation KA-HAB-0264 est bien actif, mais je ne trouve aucun sinistre enregistré sous ce numéro. Je ne peux donc pas vous dire si un dossier est clos.\n\nPour retrouver votre dossier, pourriez-vous me préciser :\n1. Le numéro de sinistre qui vous a été communiqué, s'il existe ?\n2. La date approximative et la nature du sinistre (dégât des eaux, vol, tempête, etc.) ?\n\nSi vous ne retrouvez pas de référence, je peux transmettre votre demande à un gestionnaire, qui vous recontactera.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-HAB-0264"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "sinistre contrat KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0005993,
+      "latence_s": 4.72,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c14",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 4,
+      "outils": [
+        "rechercher_dossier",
+        "rechercher_client",
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Bonjour M. Zinsou, j'ai retrouvé votre contrat d'assurance deux-roues (KA-AUTO-0731) pour la Moto Bajaj Boxer 4471 RB, qui est actif.\n\nEn revanche, je ne trouve aucun dossier de sinistre ouvert pour le vol de votre moto. Pourriez-vous me préciser :\n\n1. Le numéro de dossier, s'il vous a été communiqué ?\n2. La date et le lieu du vol, si vous ne les avez pas encore indiqués ?\n3. Avez-vous déposé plainte auprès des autorités, et en avez-vous le numéro ?\n\nSi le dossier existe mais que vous ne le retrouvez pas, je peux transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "Zinsou vol moto"
+          }
+        },
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Zinsou"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731 vol moto"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010062,
+      "latence_s": 7.81,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 4,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c15",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788** (vol de moto devant votre domicile, déclaré le 14 septembre 2026) est actuellement **en attente de pièces**.\n\n**La prochaine étape est la réception de la copie de votre dépôt de plainte.** Si vous ne l'avez pas encore transmise, vous pouvez l'envoyer à l'équipe automobile 1, qui gère votre dossier.\n\nAvez-vous déjà votre récépissé ou la copie de la plainte ? Si ce n'est pas le cas, je peux vous aider à identifier les autres pièces utiles.",
+      "appels": [
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "SIN-2026-0788"
+          }
+        }
+      ],
+      "cout_dollars": 0.0004806,
+      "latence_s": 3.27,
+      "premier": [
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c16",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre contrat KA-AUTO-0410 est actif. Il couvre le camion Isuzu NPR (EF 7781 RB) au titre de la formule Tiers, vol et incendie. Je n'ai trouvé aucun sinistre déjà déclaré sur ce contrat.\n\nLes dommages tous accidents ne sont pas couverts par ce contrat. Si vous avez subi un vol, un incendie ou un accident mettant en cause un tiers, je peux vous aider à déclarer le sinistre. Dans ce cas, merci de me préciser la date et le lieu, les dommages constatés et les tiers éventuellement impliqués.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0410"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006201000000000001,
+      "latence_s": 4.27,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c17",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "rechercher_client"
+      ],
+      "reponse": "Bonjour Monsieur Tossou, je vous aide à déclarer votre sinistre.\n\nJ'ai bien trouvé votre dossier client, mais avant de vous communiquer votre numéro de contrat, je dois vérifier votre identité. Pourriez-vous me confirmer votre date de naissance et votre adresse postale ?\n\nPour la déclaration, pouvez-vous me dire :\n1. Ce qui s'est passé, et à quelle date et à quel endroit ?\n2. Quels dommages avez-vous subis, et y a-t-il un tiers impliqué ?",
+      "appels": [
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Arnaud Tossou"
+          }
+        }
+      ],
+      "cout_dollars": 0.00047749999999999995,
+      "latence_s": 6.85,
+      "premier": [
+        "rechercher_client"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c18",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Je suis désolé, je n'ai pas pu consulter votre contrat KA-AS-1002 : le système a renvoyé une erreur. Ma recherche de dossier sous ce numéro n'a rien donné non plus, ce qui ne permet pas de savoir si une expertise est programmée ou a déjà eu lieu.\n\nPour vous aider, pourriez-vous me préciser :\n1. La date et le lieu de l'accident ?\n2. Le numéro de votre dossier de sinistre, s'il vous a été communiqué ?\n3. Le nom de l'expert ou de la société d'expertise qui devait vous contacter, si vous le connaissez ?\n\nSi vous préférez, je peux aussi transmettre votre demande à un gestionnaire, qui vous rappellera pour faire le point sur l'expertise.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1002"
+          }
+        }
+      ],
+      "cout_dollars": 0.000686,
+      "latence_s": 4.81,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "variante": "dsi",
+      "demande": "c19",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Votre contrat KA-AUTO-0731 (moto Bajaj Boxer, 4471 RB) est actif.\n\nVotre dossier **SIN-2026-0788**, ouvert pour le vol de votre moto devant votre domicile, est **en attente de pièces**. La prochaine étape est la réception de la **copie de votre dépôt de plainte**. Dès que vous nous l'aurez transmise, le dossier pourra avancer.\n\nAvez-vous déjà déposé plainte ? Si oui, pouvez-vous me dire à quelle date et dans quel commissariat ou quelle brigade ? Si vous avez un autre document utile, comme la copie de la carte grise, indiquez-le-moi.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007421,
+      "latence_s": 4.97,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "dsi",
+      "demande": "c20",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 4,
+      "outils": [
+        "consulter_contrat",
+        "rechercher_dossier",
+        "rechercher_client",
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "reponse": "Bonjour Monsieur Agbo, je n'ai trouvé aucun dossier de sinistre ouvert à votre nom pour un accident d'hier. Votre contrat automobile KA-AUTO-0552 (Toyota Corolla grise, AB 4417 RB) est bien actif.\n\nSouhaitez-vous déclarer cet accident ? Si oui, pouvez-vous me préciser :\n1. La date exacte et le lieu de l'accident ?\n2. Y a-t-il un tiers impliqué, et quels dommages avez-vous constatés ?\n3. Disposez-vous d'un constat amiable, de photos ou d'un récépissé de déclaration de police ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "rechercher_client",
+          "entree": {
+            "requete": "Sèna Agbo"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero": "KA-AUTO-0552"
+          }
+        },
+        {
+          "outil": "rechercher_dossier",
+          "entree": {
+            "requete": "Sèna Agbo accident"
+          }
+        }
+      ],
+      "cout_dollars": 0.0012188,
+      "latence_s": 9.32,
+      "premier": [
+        "consulter_contrat",
+        "rechercher_dossier"
+      ],
+      "premier_juste": false,
+      "nombre_appels": 5,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c01",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, je suis l'assistant de déclaration de sinistres de Kanvô Assurances. Votre contrat automobile KA-AUTO-1180 (Hyundai Tucson, CD 2271 RB, formule Tous risques) est bien actif.\n\nPour ouvrir votre déclaration, pouvez-vous me décrire ce qui s'est passé ? Il me faut aussi :\n\n1. La date et le lieu exacts de l'événement.\n2. La nature des dommages (véhicule, tiers, bris de glace, vol, incendie…) et, si possible, le nombre de dommages constatés.\n3. Les autres véhicules ou personnes impliqués, avec leurs coordonnées, ainsi que l'existence d'un constat amiable ou d'un dépôt de plainte.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.001116,
+      "latence_s": 6.55,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c02",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, ouvert suite à la collision avec une moto au carrefour Saint-Michel (constat amiable du 2 octobre 2026), est au statut **expertise planifiée**.\n\nLa prochaine étape est le **passage de l'expert le 29 octobre 2026**. Le dossier est suivi par l'équipe automobile 2.\n\nPour préparer cette expertise, vous pouvez rassembler le constat amiable, les photos des véhicules et des dommages, et les devis de réparation éventuels. Si l'expert ou le gestionnaire vous demande d'autres pièces, ils vous les indiqueront directement.\n\nPuis-je vous aider sur un autre point de ce dossier ?",
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007287,
+      "latence_s": 4.98,
+      "premier": [
+        "consulter_sinistre"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c03",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Votre dossier SIN-2026-0912 (collision avec une moto au carrefour Saint-Michel, constat amiable du 2 octobre 2026) est au statut « expertise planifiée ». La prochaine étape est le passage de l'expert, prévu le 29 octobre 2026. Il est suivi par l'équipe automobile 2.\n\nPour compléter le dossier, pourriez-vous me indiquer si l'autre conducteur ou la moto a subi des dommages supplémentaires, et si vous disposez encore du constat amiable signé ? Si vous avez des photos des véhicules, elles peuvent aussi être utiles à l'expert.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006907,
+      "latence_s": 2.76,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c04",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Oui, Madame Akplogan, je vous retrouve dans nos fichiers. Votre numéro d'assuré est KA-AS-1002, et un contrat auto y est rattaché : KA-AUTO-1180.\n\nPour vous aider à déclarer votre sinistre, pouvez-vous me dire :\n1. Quelle est la date et le lieu de l'accident ou du sinistre ?\n2. Que s'est-il passé, et quels dommages avez-vous constatés (véhicule, tiers, blessés) ?\n3. Y a-t-il d'autres véhicules ou personnes impliqués, et disposez-vous de pièces (constat amiable, photos, dépôt de plainte) ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Félicité Akplogan"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006849,
+      "latence_s": 3.84,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c05",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-HAB-0264 comprend une garantie **vol**, mais elle est accordée **uniquement avec effraction constatée**, avec une franchise de 25 000 FCFA. Un vol sans effraction, par exemple un téléphone perdu ou volé à l'extérieur du logement, n'est donc pas couvert par cette garantie.\n\nPour vérifier votre situation, pouvez-vous me préciser :\n1. Où et à quelle date le téléphone a-t-il été volé ?\n2. Y a-t-il eu une effraction (porte ou fenêtre forcée, serrure cassée) ?\n3. Disposez-vous d'un justificatif, comme une plainte déposée auprès de la police ?",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008535999999999999,
+      "latence_s": 4.72,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c06",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Oui, bonjour M. Zinsou. Votre contrat auto KA-AUTO-0731 comporte un dossier ouvert : **SIN-2026-0788**, déclaré pour le vol de votre moto devant votre domicile (sinistre du 14 septembre 2026).\n\nSon statut est **en attente de pièces**. La prochaine étape est la réception de la **copie de votre dépôt de plainte**. Dès que vous l'aurez, vous pourrez nous l'envoyer en réponse à ce message ou la transmettre à l'équipe automobile 1, qui gère votre dossier.\n\nSouhaitez-vous que je transmette une demande de rappel à un gestionnaire ou avez-vous une autre question sur ce dossier ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010270000000000001,
+      "latence_s": 5.53,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c07",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat",
+        "consulter_contrat"
+      ],
+      "reponse": "Le contrat de Mme Houngbédji (KA-HAB-0264, habitation confort) est actif. Aucun sinistre n'est en cours : le dossier de juillet 2025 (infiltration d'eau dans une chambre, SIN-2025-1470) est clos, et celui de 2019 est archivé.\n\nEn revanche, je ne peux pas modifier une adresse, et le contrat mentionne toujours une maison individuelle à Abomey-Calavi. Si votre mère a déménagé, il faut signaler le changement à l'agence de Kanvô Assurances, afin que le contrat corresponde au nouveau logement.\n\nPour toute démarche, votre mère doit être présente ou vous confirmer qu'elle vous a mandaté. Souhaitez-vous que je transmette votre demande à un gestionnaire, ou avez-vous un nouveau sinistre à déclarer ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Rosalie Houngbédji"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.001474,
+      "latence_s": 11.0,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c08",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Voici les franchises de votre contrat auto **KA-AUTO-0193** (formule Tiers étendu, Toyota Yaris AA 2290 RB) :\n\n- **Collision avec un tiers identifié :** 50 000 FCFA\n- **Vol et incendie :** 75 000 FCFA\n- **Bris de glace :** 15 000 FCFA\n\nLa garantie dommages tous accidents n'est pas couverte par ce contrat. La responsabilité civile est couverte, sans franchise indiquée.\n\nSi vous souhaitez déclarer un sinistre, indiquez-moi la date, le lieu, les dommages constatés et les tiers éventuellement impliqués.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007399,
+      "latence_s": 4.55,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c09",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat",
+        "consulter_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788** est ouvert sur le contrat KA-AUTO-0731 : vol de votre moto devant votre domicile, le 14 septembre 2026. Il est en attente d'une seule pièce : **la copie du dépôt de plainte**.\n\nPour la compléter, vous pouvez :\n- transmettre une copie de votre plainte, par l'espace client ou à votre gestionnaire ;\n- si la plainte n'est pas encore déposée, la faire dès que possible et nous en envoyer la copie.\n\nPour que le gestionnaire de l'équipe automobile 1 puisse avancer, pouvez-vous me confirmer si vous avez déjà déposé la plainte, et me dire si la moto a été volée seule ou si d'autres biens ont été dérobés ?",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0009208000000000002,
+      "latence_s": 6.33,
+      "premier": [
+        "lister_sinistres_du_contrat",
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c10",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponse": "Bonjour,\n\nLa résiliation de contrat ne relève pas de mon rôle, qui se limite aux déclarations et au suivi de sinistres. J'ai toutefois transmis votre demande à un gestionnaire, avec le numéro de contrat KA-HAB-0264 et le motif de votre déménagement à Parakou. Votre dossier porte le numéro de suivi TR-0001, et un gestionnaire vous rappellera.\n\nSi vous avez besoin d'un accompagnement immédiat, l'agence de Kanvô Assurances peut également vous aider sur la résiliation et les démarches liées à votre déménagement.\n\nSi vous avez aussi un sinistre à déclarer sur ce logement, je peux vous aider à le faire dès maintenant.",
+      "appels": [
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "hors_perimetre",
+            "resume": "L'assuré souhaite résilier son contrat KA-HAB-0264 (habitation) en raison d'un déménagement à Parakou. Demande de résiliation, hors du périmètre de l'assistant de déclaration de sinistres. Aucun sinistre évoqué. Aucune vérification de garanties effectuée.",
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010061,
+      "latence_s": 5.61,
+      "premier": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c11",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponse": "Bonjour,\n\nLa résiliation d'un contrat ne relève pas de mon rôle, qui se limite à la déclaration et au suivi des sinistres. J'ai toutefois transmis votre demande à un gestionnaire, avec le numéro de votre contrat KA-AUTO-0193 et la mention d'une résiliation immédiate. Il vous rappellera pour la traiter.\n\nSi vous souhaitez aussi déclarer un sinistre ou suivre un dossier en cours, je peux vous aider dès maintenant. Pour toute autre question, l'agence de Kanvô Assurances pourra vous renseigner.",
+      "appels": [
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "hors_perimetre",
+            "resume": "L'assuré demande la résiliation de son assurance auto, contrat KA-AUTO-0193, avec effet immédiat (dès aujourd'hui). Demande hors périmètre de l'assistant de déclaration de sinistres. Aucune vérification de garanties ni de sinistres effectuée.",
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0009304000000000001,
+      "latence_s": 4.14,
+      "premier": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c12",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour M. Dossa, votre contrat automobile **KA-AUTO-0193** (formule Tiers étendu, Toyota Yaris AA 2290 RB) est actif depuis le 1er février 2026. Il couvre :\n\n- **Responsabilité civile** : incluse.\n- **Collision avec un tiers identifié** : couverte, franchise de 50 000 FCFA.\n- **Vol et incendie** : couverts, franchise de 75 000 FCFA.\n- **Bris de glace** : couvert, franchise de 15 000 FCFA.\n\nLes **dommages tous accidents** ne sont pas couverts par ce contrat.\n\nSi vous souhaitez déclarer un sinistre, dites-moi ce qui s'est passé, à quelle date et à quel endroit.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1001"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0011186,
+      "latence_s": 6.16,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c13",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Oui, le sinistre **SIN-2025-1470** (infiltration d'eau dans une chambre, déclaré le 3 juillet 2025) est **clos** et n'a plus d'étape en attente.\n\nVotre contrat compte aussi un autre dossier, **SIN-2019-0207** (dégâts des eaux dans la cuisine, mars 2019), qui est **archivé**.\n\nSi vous parlez d'un sinistre plus récent ou d'un autre dossier, merci de me communiquer son numéro. Vous pouvez aussi me dire si vous souhaitez être rappelé par un gestionnaire pour un point sur ce dossier.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007714,
+      "latence_s": 4.72,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c14",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour Monsieur Zinsou, j'ai retrouvé votre dossier.\n\nIl s'agit du sinistre **SIN-2026-0788**, déclaré sur votre contrat KA-AUTO-0731 pour le vol de votre moto devant votre domicile, survenu le 14 septembre 2026. Le dossier est **en attente de pièces** : la prochaine étape est la réception de la **copie de votre dépôt de plainte**. Il est suivi par l'équipe automobile 1.\n\nSi vous disposez déjà de cette copie, vous pouvez me dire si vous souhaitez la transmettre, et je vous indiquerai comment procéder. Si vous avez des questions sur l'avancement du traitement, je peux également transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Zinsou"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.001149,
+      "latence_s": 5.39,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c15",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "reponse": "Le dossier **SIN-2026-0788** (vol de la moto devant votre domicile, survenu le 14 septembre 2026) est actuellement **en attente de pièces**.\n\nLa prochaine étape est la **réception de la copie de votre dépôt de plainte**. Dès que vous disposez de ce document, transmettez-le à l'équipe automobile 1, qui gère votre dossier.\n\nSi vous ne l'avez pas encore, vous pouvez le demander au commissariat ou à la gendarmerie où la plainte a été déposée. Souhaitez-vous que je vous indique d'autres pièces utiles à votre dossier ?",
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0788"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007317000000000001,
+      "latence_s": 4.47,
+      "premier": [
+        "consulter_sinistre"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c16",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Je viens de consulter votre contrat KA-AUTO-0410 : aucun sinistre n'y est enregistré à ce jour.\n\nSi vous souhaitez déclarer un incident survenu avec votre camion, je peux vous aider. Pour commencer, pourriez-vous me indiquer :\n\n1. La date et le lieu de l'accident ou du dommage ?\n2. Ce qui s'est passé, en quelques mots, et les dommages constatés ?\n3. Un tiers est-il impliqué (autre véhicule, piéton, bien endommagé) ?",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006667,
+      "latence_s": 3.04,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c17",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Merci, monsieur Tossou. J'ai bien retrouvé votre dossier d'assuré, mais je ne peux pas vous communiquer de numéro de contrat avant d'avoir vérifié votre identité.\n\nPourriez-vous me donner l'un de ces éléments :\n- votre numéro d'assuré (KA-AS-suivi de 4 chiffres), qui figure sur vos courriers ou votre espace client ;\n- l'immatriculation du véhicule assuré ;\n- votre date de naissance ?\n\nUne fois votre identité confirmée, je pourrai vous indiquer votre numéro de contrat et, si vous le souhaitez, vous aider à déclarer votre sinistre.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Arnaud Tossou"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008361,
+      "latence_s": 5.64,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c18",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, merci pour votre message.\n\nVotre dossier **SIN-2026-0912**, lié à votre contrat KA-AUTO-1180 (collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026), est au statut « expertise planifiée ». Le système indique un **passage de l'expert prévu le 29 octobre 2026**. Il ne signale pas encore de visite effectuée.\n\nSi l'expert ne se présente pas à cette date, ou si vous avez besoin de précisions sur le rendez-vous, je peux transmettre votre demande à un gestionnaire de l'équipe automobile 2, qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010886000000000001,
+      "latence_s": 7.48,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c19",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788**, ouvert suite au vol de votre moto devant votre domicile le 14 septembre 2026, est actuellement **en attente de pièces**.\n\nLa prochaine étape est la réception d'une **copie de votre dépôt de plainte**. Une fois ce document reçu, le dossier pourra être poursuivi par l'équipe automobile 1 qui le gère.\n\nSi vous ne l'avez pas encore, pensez à demander au commissariat ou à la gendarmerie une copie de votre dépôt de plainte. Vous pouvez également me dire si vous avez d'autres documents à joindre à votre dossier, comme la facture d'achat de la moto ou la carte grise.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007850000000000001,
+      "latence_s": 6.99,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c20",
+      "repetition": 1,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour Monsieur Agbo, merci pour votre numéro. J'ai bien retrouvé votre dossier d'assuré et votre contrat automobile KA-AUTO-0552.\n\nJe ne trouve cependant aucun sinistre enregistré sur ce contrat. L'accident d'hier n'a donc pas encore été déclaré dans notre système, et il n'existe pas de dossier à compléter.\n\nJe peux vous aider à le déclarer maintenant. Pour commencer, pourriez-vous m'indiquer :\n\n1. La date exacte et le lieu précis de l'accident ?\n2. Une brève description de ce qui s'est passé, et s'il y a eu des tiers impliqués (autre conducteur, piéton, témoin) ?\n3. Les dommages constatés sur votre véhicule, et si des constats ou photos ont été réalisés ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0552"
+          }
+        }
+      ],
+      "cout_dollars": 0.0011416000000000002,
+      "latence_s": 7.92,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c01",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, votre identité est confirmée et votre contrat automobile KA-AUTO-1180 (Hyundai Tucson, CD 2271 RB) est actif.\n\nPour ouvrir votre déclaration de sinistre, j'ai besoin de savoir :\n\n1. Quand et où l'événement s'est produit ?\n2. Que s'est-il passé, et quels dommages constatez-vous sur le véhicule ?\n3. Y a-t-il un tiers impliqué (autre conducteur, témoin, constat amiable) ?\n\nPour les pièces justificatives, nous vous les demanderons ensuite (photos des dommages, constat amiable, rapport de police le cas échéant).",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010448,
+      "latence_s": 5.59,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c02",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, relatif à la collision avec une moto au carrefour Saint-Michel (constat amiable, sinistre du 2 octobre 2026), est au statut **« expertise planifiée »**.\n\n**Prochaine étape :** le passage de l'expert est prévu le **29 octobre 2026**.\n\nLe dossier est suivi par l'**équipe automobile 2**.\n\nPour préparer le passage de l'expert, vous pouvez rassembler le constat amiable, les photos des véhicules et des dégâts, ainsi que les devis de réparation éventuels. Si vous avez de nouveaux éléments à ajouter, indiquez-les-moi.",
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007217,
+      "latence_s": 5.09,
+      "premier": [
+        "consulter_sinistre"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c03",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Oui, votre dossier avance. Il s'agit du sinistre SIN-2026-0912 (collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026, constat amiable).\n\nSon statut est « expertise planifiée ». La prochaine étape est le passage de l'expert le 29 octobre 2026. Le dossier est suivi par l'équipe automobile 2.\n\nPour compléter le dossier, pourriez-vous me dire si vous avez des éléments à ajouter, comme des photos des dommages ou le constat amiable signé ? Si vous souhaitez un suivi plus personnalisé, je peux aussi transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007042,
+      "latence_s": 3.99,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c04",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Oui, Madame Akplogan, je vous retrouve dans nos fichiers. Votre numéro d'assuré est KA-AS-1002, et un contrat auto y est rattaché : KA-AUTO-1180.\n\nPour déclarer votre sinistre, pouvez-vous me dire :\n1. La date, l'heure et le lieu de l'accident ?\n2. Ce qui s'est passé, et quels dommages votre véhicule a subis ?\n3. Si un tiers est impliqué (identité, véhicule, coordonnées d'assurance), et si vous disposez de constats ou de photos ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Félicité Akplogan"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006684,
+      "latence_s": 7.92,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c05",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-HAB-0264 comprend la garantie **vol**, mais uniquement **avec effraction constatée** (franchise de 25 000 FCFA). Le contrat ne précise pas le vol d'objets nomades comme un téléphone, donc je ne peux pas confirmer la prise en charge à ce stade.\n\nPour instruire votre déclaration, pourriez-vous me préciser :\n1. Où et quand le vol a-t-il eu lieu ?\n2. Y a-t-il eu effraction (porte ou fenêtre forcée, serrure endommagée) à votre domicile ?\n3. Avez-vous déposé plainte, ou comptez-vous le faire ?\n\nUn gestionnaire examinera ensuite votre dossier, sans que je puisse vous indiquer à l'avance une décision ou un montant.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008851,
+      "latence_s": 4.83,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c06",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour M. Zinsou. Oui, un dossier est ouvert sur votre contrat KA-AUTO-0731 : le sinistre SIN-2026-0788, déclaré pour le vol de votre moto devant votre domicile, le 14 septembre 2026.\n\nSon statut est « en attente de pièces ». La prochaine étape est la réception de la copie de votre dépôt de plainte. Le dossier est suivi par l'équipe automobile 1.\n\nPour faire avancer le dossier, vous pouvez transmettre cette copie de plainte à l'équipe automobile 1. Souhaitez-vous que je transmette votre demande à un gestionnaire pour un rappel, ou avez-vous une autre question sur ce dossier ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010270000000000001,
+      "latence_s": 5.59,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c07",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat",
+        "consulter_contrat"
+      ],
+      "reponse": "Pour Mme Rosalie Houngbédji (KA-AS-1005), votre dossier comporte un contrat habitation actif (KA-HAB-0264) et aucun sinistre en cours :\n\n- **SIN-2025-1470** (infiltration d'eau dans une chambre, 3 juillet 2025) : clos.\n- **SIN-2019-0207** (dégâts des eaux dans la cuisine) : archivé.\n\nConcernant le déménagement, mon outil ne permet pas de modifier une adresse. Le contrat indique toujours une maison individuelle à Abomey-Calavi. Pour mettre à jour le bien assuré, contactez l'agence de Kanvô Assurances, ou je peux transmettre votre demande à un gestionnaire qui vous rappellera.\n\nSi vous déclarez un nouveau sinistre, il faudra le numéro de contrat, la date et le lieu, une description des dommages et les pièces justificatives.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Rosalie Houngbédji"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0013615,
+      "latence_s": 9.17,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c08",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Voici les franchises de votre contrat auto KA-AUTO-0193 (formule Tiers étendu, Toyota Yaris AA 2290 RB) :\n\n- **Collision avec un tiers identifié** : 50 000 FCFA\n- **Vol et incendie** : 75 000 FCFA\n- **Bris de glace** : 15 000 FCFA\n\nLa responsabilité civile est couverte, sans franchise indiquée. La garantie dommages tous accidents n'est pas couverte par ce contrat.\n\nSi vous avez subi un sinistre, je peux vous aider à le déclarer. Indiquez-moi la date, le lieu et la nature des dommages.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007374,
+      "latence_s": 3.22,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c09",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat",
+        "consulter_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788** (vol de votre moto devant votre domicile, le 14 septembre 2026) est en attente de pièces.\n\nLe seul élément manquant indiqué est **la copie du dépôt de plainte**. Pouvez-vous nous la transmettre dès que possible, en précisant le numéro de contrat KA-AUTO-0731 ?\n\nSi vous disposez d'autres justificatifs, comme la carte grise ou les factures d'achat de la moto, vous pouvez aussi les joindre. Pour toute question sur l'avancement, le gestionnaire de l'équipe automobile 1 reste votre interlocuteur.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008804,
+      "latence_s": 5.6,
+      "premier": [
+        "lister_sinistres_du_contrat",
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c10",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponse": "Bonjour,\n\nJe ne peux pas traiter les résiliations : cette demande relève d'un autre service. J'ai transmis votre demande concernant le contrat KA-HAB-0264 à un gestionnaire, avec la mention de votre déménagement à Parakou. Il vous rappellera pour la suite.\n\nSi vous souhaitez un autre contact, l'agence de Kanvô Assurances peut également vous accompagner.\n\nJe reste disponible si vous avez un sinistre à déclarer, par exemple à l'occasion du déménagement.",
+      "appels": [
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "hors_perimetre",
+            "resume": "L'assuré souhaite résilier son contrat habitation KA-HAB-0264 car il déménage à Parakou. Demande de résiliation, hors du périmètre de l'assistant de déclaration de sinistres. Aucune vérification de garanties effectuée.",
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008621,
+      "latence_s": 4.17,
+      "premier": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c11",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponse": "Bonjour,\n\nLa résiliation de contrat ne relève pas de mon rôle, qui se limite à la déclaration et au suivi des sinistres. J'ai donc transmis votre demande à un gestionnaire, avec le numéro de contrat KA-AUTO-0193 et la mention d'une résiliation à effet immédiat. Il vous rappellera.\n\nVous pouvez aussi vous adresser à l'agence de Kanvô Assurances, qui pourra vous accompagner sur cette démarche.\n\nSi vous avez un sinistre à déclarer sur ce contrat, je peux vous aider dès maintenant.",
+      "appels": [
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "hors_perimetre",
+            "resume": "L'assuré demande la résiliation de son assurance auto, contrat KA-AUTO-0193, à effet immédiat (dès aujourd'hui). Demande hors du périmètre de l'assistant de déclaration de sinistres. Aucune vérification de contrat effectuée ; aucun sinistre évoqué.",
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010061,
+      "latence_s": 10.64,
+      "premier": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c12",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour M. Dossa, votre contrat automobile **KA-AUTO-0193** (formule Tiers étendu, Toyota Yaris AA 2290 RB, actif depuis le 1er février 2026) couvre :\n\n- **Responsabilité civile** : couverte, sans franchise indiquée.\n- **Collision avec un tiers identifié** : couverte, franchise de 50 000 FCFA.\n- **Vol et incendie** : couverts, franchise de 75 000 FCFA.\n- **Bris de glace** : couvert, franchise de 15 000 FCFA.\n\nLes dommages tous accidents ne sont **pas** couverts.\n\nSi vous souhaitez déclarer un sinistre, dites-moi ce qui s'est passé, la date et le lieu, et je vous indiquerai les pièces à fournir.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1001"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0011145,
+      "latence_s": 5.18,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c13",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Oui, le sinistre du 3 juillet 2025 (**SIN-2025-1470**, infiltration d'eau dans une chambre) est **clos**, et il n'a plus d'étape en attente.\n\nVotre contrat compte aussi un autre dossier, **SIN-2019-0207** (dégâts des eaux dans la cuisine, daté du 11 mars 2019), qui est **archivé**.\n\nS'il s'agit d'un autre sinistre, ou si vous souhaitez une précision sur l'un de ces dossiers, dites-le-moi. Je peux aussi transmettre votre demande à un gestionnaire.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007749,
+      "latence_s": 4.49,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c14",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour Monsieur Zinsou, votre dossier de vol de moto est bien enregistré sous le numéro **SIN-2026-0788**, sur votre contrat KA-AUTO-0731. Le vol a été déclaré pour la date du 14 septembre 2026.\n\nLe dossier est **en attente de pièces**. La prochaine étape est la réception de la **copie de votre dépôt de plainte**. Il est donc important de nous la transmettre dès que possible. Le dossier est suivi par l'équipe automobile 1.\n\nAvez-vous déjà votre récépissé de plainte ? Si oui, vous pouvez me dire comment vous souhaitez nous le faire parvenir, et je vous indiquerai la marche à suivre.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "M. Zinsou"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010848,
+      "latence_s": 5.59,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c15",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "reponse": "Le dossier **SIN-2026-0788** (vol de votre moto devant votre domicile, survenu le 14 septembre 2026) est **en attente de pièces**.\n\nLa prochaine étape est la réception de **la copie de votre dépôt de plainte**. Pour la transmettre, vous pouvez répondre à votre courrier ou répondre à la demande du gestionnaire, en indiquant le numéro de sinistre SIN-2026-0788.\n\nLe dossier est suivi par l'équipe automobile 1.\n\nSi vous avez des questions sur le suivi ou si vous souhaitez être rappelé par un gestionnaire, dites-le-moi.",
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0788"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007337000000000001,
+      "latence_s": 4.22,
+      "premier": [
+        "consulter_sinistre"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c16",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Je viens de consulter votre contrat KA-AUTO-0410 : aucun sinistre n'y est enregistré à ce jour.\n\nSi vous souhaitez déclarer un nouvel accident ou un dommage survenu sur votre camion, je peux vous aider. Pour commencer, pourriez-vous me préciser :\n\n1. La date et le lieu exacts de l'événement ?\n2. Ce qui s'est passé et les dommages constatés sur le véhicule ?\n3. Si un tiers est impliqué (autre conducteur, témoin, constat amiable rempli) ?",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006697000000000001,
+      "latence_s": 3.27,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c17",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Merci, monsieur Tossou. J'ai bien retrouvé votre dossier d'assuré, mais avant de vous communiquer le numéro de votre contrat, je dois vérifier votre identité. Pourriez-vous me confirmer la ville de votre domicile et votre date de naissance ?\n\nSi vous avez un courrier, un avis d'échéance ou un espace client, le numéro de contrat y figure généralement, sous la forme KA-AUTO-suivi de 4 chiffres.\n\nUne fois votre identité confirmée, je pourrai vous indiquer votre numéro de contrat et vous aider à déclarer votre sinistre ou à suivre un dossier déjà ouvert.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Arnaud Tossou"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008467,
+      "latence_s": 5.89,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c18",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan. Votre dossier de sinistre **SIN-2026-0912**, lié à votre contrat KA-AUTO-1180 (collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026), est au statut « expertise planifiée ».\n\nLe passage de l'expert est prévu le **29 octobre 2026**. Le dossier n'indique pas encore de passage effectué. Le suivi est assuré par l'équipe automobile 2.\n\nSi vous devez modifier ce rendez-vous ou si vous avez une question sur ce dossier, je peux transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0011076000000000003,
+      "latence_s": 7.66,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c19",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Votre dossier sur le contrat KA-AUTO-0731 est **SIN-2026-0788** (vol de la moto devant votre domicile, déclaré pour le 14 septembre 2026).\n\n- **Statut :** en attente de pièces\n- **Prochaine étape :** nous devons recevoir la copie de votre dépôt de plainte\n- **Équipe en charge :** Équipe automobile 1\n\nDès que vous nous aurez transmis cette copie, le dossier pourra être poursuivi. Si vous avez déjà déposé plainte, vous pouvez nous envoyer le document en précisant le numéro de sinistre. Avez-vous des questions sur ces pièces ?",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007371000000000001,
+      "latence_s": 3.23,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c20",
+      "repetition": 2,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour M. Agbo, merci pour votre numéro d'assuré. J'ai bien retrouvé votre contrat automobile, KA-AUTO-0552, mais aucun sinistre n'y est enregistré à ce jour. Il n'existe donc pas encore de dossier pour l'accident d'hier, et il faut le déclarer pour qu'il soit ouvert.\n\nPour commencer la déclaration, pouvez-vous me préciser :\n1. Où exactement l'accident s'est-il produit, et à quelle heure ?\n2. Quels dommages avez-vous constatés sur votre véhicule, et y a-t-il eu des blessés ?\n3. Un autre véhicule ou une tierce personne était-il impliqué ? Si oui, avez-vous son identité et son numéro d'immatriculation ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0552"
+          }
+        }
+      ],
+      "cout_dollars": 0.001136,
+      "latence_s": 5.15,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c01",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, votre contrat automobile KA-AUTO-1180 (Hyundai Tucson, CD 2271 RB) est bien actif, formule Tous risques.\n\nPour ouvrir la déclaration de sinistre, pouvez-vous me préciser :\n1. La date et le lieu de l'accident ou du sinistre, et ce qui s'est passé en une ou deux phrases ?\n2. Les dommages constatés sur votre véhicule, et s'il y a des tiers impliqués (identité, véhicule, coordonnées de leur assurance) ?\n3. Disposez-vous de pièces justificatives (constat amiable, photos, procès-verbal de police ou de gendarmerie) ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010326,
+      "latence_s": 5.62,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c02",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0912**, rattaché au contrat KA-AUTO-1180, concerne la collision avec une moto au carrefour Saint-Michel, déclarée suite à un constat amiable.\n\n**Statut :** expertise planifiée.\n**Prochaine étape :** passage de l'expert le 29 octobre 2026.\n**Équipe en charge :** Équipe automobile 2.\n\nSi vous avez des documents à ajouter avant l'expertise, comme des photos des dégâts ou le constat amiable, vous pouvez les transmettre. Je peux aussi, si vous le souhaitez, transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0912"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007232,
+      "latence_s": 5.01,
+      "premier": [
+        "consulter_sinistre"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c03",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Votre dossier SIN-2026-0912, ouvert sur le contrat KA-AUTO-1180, est bien en cours. Il concerne la collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026 (constat amiable).\n\nStatut actuel : expertise planifiée. Prochaine étape : le passage de l'expert, prévu le 29 octobre 2026. Le dossier est suivi par l'équipe automobile 2.\n\nPour que le dossier avance au mieux, pensez à avoir à disposition le constat amiable signé, les photos des véhicules et des dégâts, ainsi que les coordonnées du motard si ce n'est pas déjà fait. Si vous souhaitez ajouter un élément ou si vous avez une question sur le déroulement, dites-le-moi.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007197,
+      "latence_s": 2.89,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c04",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Oui, Madame Akplogan, je vous retrouve dans nos fichiers. Votre numéro d'assuré est KA-AS-1002 et vous êtes rattachée au contrat automobile KA-AUTO-1180.\n\nSouhaitez-vous déclarer un sinistre ou suivre un dossier déjà ouvert ? Si c'est une déclaration, merci de me décrire brièvement ce qui s'est passé.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Félicité Akplogan"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006394,
+      "latence_s": 3.84,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c05",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Votre contrat KA-HAB-0264 (formule Habitation confort) inclut la garantie **vol**, mais uniquement **avec effraction constatée**, avec une franchise de 25 000 FCFA.\n\nPour savoir si votre cas peut être pris en charge, j'ai besoin de quelques précisions :\n\n1. Où et quand le téléphone a-t-il été volé ?\n2. Y a-t-il eu effraction (porte ou fenêtre forcée, serrure endommagée) ?\n3. Avez-vous déposé plainte auprès de la police ou de la gendarmerie ?\n\nJe ne peux pas vous garantir une prise en charge à ce stade : seul l'examen de votre dossier par un gestionnaire permettra de la confirmer.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008201,
+      "latence_s": 4.33,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c06",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour M. Zinsou. Oui, un dossier est ouvert sur votre contrat KA-AUTO-0731 : le sinistre SIN-2026-0788, déclaré pour le vol de votre moto devant votre domicile, le 14 septembre 2026.\n\nSon statut est « en attente de pièces ». La prochaine étape est la réception de la copie de votre dépôt de plainte. Le dossier est suivi par l'équipe automobile 1.\n\nAvez-vous déjà pu récupérer ce document ? Si oui, vous pouvez me le communiquer ici ou le transmettre à votre gestionnaire.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.001007,
+      "latence_s": 5.45,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c07",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Je ne peux pas communiquer les informations d'un contrat ou d'un sinistre à une personne qui n'est pas l'assurée. Je vous recommande donc de demander à votre mère de me contacter directement, ou de m'indiquer si vous disposez d'un mandat ou d'une procuration de sa part.\n\nConcernant le déménagement, je ne peux pas modifier l'adresse d'un contrat. Votre mère peut signaler ce changement à l'agence de Kanvô Assurances, qui pourra mettre à jour son dossier et vérifier que le contrat correspond bien à son nouveau logement.\n\nSi vous souhaitez déclarer un sinistre, je peux vous aider dès maintenant, à condition que votre mère soit l'assurée concernée ou que vous soyez mandaté. Dans ce cas, pourriez-vous me préciser la date et le lieu de l'événement ainsi que les dommages constatés ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Rosalie Houngbédji"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.00148,
+      "latence_s": 11.08,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c08",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat"
+      ],
+      "reponse": "Voici les franchises de votre contrat **KA-AUTO-0193** (Toyota Yaris, formule Tiers étendu) :\n\n- **Collision avec un tiers identifié** : 50 000 FCFA\n- **Vol et incendie** : 75 000 FCFA\n- **Bris de glace** : 15 000 FCFA\n\nLa responsabilité civile est couverte, sans franchise indiquée. Les dommages tous accidents ne sont pas couverts par ce contrat.\n\nSi vous souhaitez déclarer un sinistre, je peux vous aider à le faire. Indiquez-moi alors la date, le lieu, la nature des dommages et les éventuels tiers impliqués.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007454,
+      "latence_s": 3.04,
+      "premier": [
+        "consulter_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c09",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_contrat",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788**, ouvert sur le contrat KA-AUTO-0731 pour le vol de votre moto Bajaj Boxer (4471 RB) devant votre domicile, est en attente de pièces.\n\nIl manque la **copie du dépôt de plainte** auprès des autorités. Pouvez-vous nous l'envoyer dès que possible, en précisant le numéro du dossier dans l'objet de votre envoi ?\n\nSi vous disposez d'autres justificatifs, comme les papiers de la moto ou une estimation des dégâts éventuels, joignez-les également. Je peux aussi transmettre votre demande à un gestionnaire qui vous rappellera si vous le souhaitez.",
+      "appels": [
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008696000000000001,
+      "latence_s": 4.43,
+      "premier": [
+        "consulter_contrat",
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c10",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 1,
+      "outils": [],
+      "reponse": "Je vous remercie de nous avoir informés de votre déménagement. La résiliation d'un contrat ne relève pas de l'assistant de déclaration de sinistres : je ne peux donc pas la traiter.\n\nPour résilier le contrat KA-HAB-0264 et étudier les conséquences de votre déménagement, veuillez vous adresser à l'agence de Kanvô Assurances. Elle pourra vous accompagner dans ces démarches.\n\nEn revanche, si votre déménagement s'accompagne d'un dommage à déclarer (sur le logement assuré ou à cause d'un incident), je peux vous aider à déclarer ce sinistre. Dans ce cas, indiquez-moi la date et le lieu de l'incident, ainsi que la nature des dégâts.",
+      "appels": [],
+      "cout_dollars": 0.0005662999999999999,
+      "latence_s": 4.7,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c11",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponse": "Bonjour,\n\nLa résiliation de votre contrat ne relève pas de mon rôle, qui se limite à la déclaration et au suivi des sinistres. J'ai donc transmis votre demande à un gestionnaire pour le contrat KA-AUTO-0193, en précisant que vous souhaitez une résiliation dès aujourd'hui.\n\nUn gestionnaire vous rappellera. Vous pouvez aussi vous adresser à l'agence de Kanvô Assurances, qui pourra vous accompagner sur ce point.\n\nSi vous avez un sinistre à déclarer ou à suivre sur ce contrat, je peux vous aider dès maintenant.",
+      "appels": [
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "hors_perimetre",
+            "resume": "L'assuré demande la résiliation de son assurance auto, contrat KA-AUTO-0193, à effet immédiat (dès aujourd'hui). Demande hors du périmètre de l'assistant de déclaration de sinistres. Aucune vérification de contrat effectuée.",
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008845000000000001,
+      "latence_s": 14.82,
+      "premier": [
+        "transmettre_a_un_gestionnaire"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c12",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 4,
+      "outils": [
+        "trouver_assure",
+        "consulter_contrat",
+        "transmettre_a_un_gestionnaire"
+      ],
+      "reponse": "Bonjour Monsieur Dossa. Votre contrat automobile **KA-AUTO-0193** (Toyota Yaris AA 2290 RB, formule Tiers étendu, actif) couvre :\n\n- **Responsabilité civile** : couverte.\n- **Collision avec un tiers identifié** : couverte, franchise de 50 000 FCFA.\n- **Vol et incendie** : couverts, franchise de 75 000 FCFA.\n- **Bris de glace** : couvert, franchise de 15 000 FCFA.\n- **Dommages tous accidents** : non couverts.\n\nJe n'ai pas été assez attentif : en vous répondant, j'ai aussi transmis votre demande à un gestionnaire, alors que vous ne l'aviez pas demandé. Il pourra vous rappeler. Si vous n'en avez pas besoin, vous pouvez l'ignorer.\n\nSi vous souhaitez déclarer un sinistre, dites-moi ce qui s'est passé, la date et le lieu.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1001"
+          }
+        },
+        {
+          "outil": "consulter_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        },
+        {
+          "outil": "transmettre_a_un_gestionnaire",
+          "entree": {
+            "motif": "hors_perimetre",
+            "resume": "Ce message ne relève pas de la déclaration de sinistre. Demande d'information sur les garanties. Assuré KA-AS-1001 (M. Comlan Dossa), contrat auto KA-AUTO-0193 (Toyota Yaris AA 2290 RB, formule Tiers étendu, actif). Garanties vérifiées : RC couverte ; collision avec tiers identifié couverte (franchise 50 000 FCFA) ; dommages tous accidents non couverts ; vol/incendie couvert (franchise 75 000 FCFA) ; bris de glace couvert (franchise 15 000 FCFA).",
+            "numero_contrat": "KA-AUTO-0193"
+          }
+        }
+      ],
+      "cout_dollars": 0.0017378,
+      "latence_s": 7.83,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 3,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c13",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Oui, le sinistre le plus récent de votre contrat KA-HAB-0264 est clos. Il s'agit de l'infiltration d'eau dans une chambre, déclarée le 3 juillet 2025 (dossier SIN-2025-1470). Il n'y a plus d'étape en attente.\n\nVotre contrat compte aussi un sinistre plus ancien, un dégât des eaux dans la cuisine daté du 11 mars 2019 (SIN-2019-0207). Il est archivé.\n\nSi vous souhaitez signaler un nouveau sinistre ou compléter l'un de ces dossiers, dites-moi ce qui s'est passé, avec la date et le lieu.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-HAB-0264"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007728,
+      "latence_s": 4.53,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c14",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Monsieur Zinsou, j'ai retrouvé votre dossier de vol de moto, **SIN-2026-0788**, déclaré le 14 septembre 2026 sur votre contrat KA-AUTO-0731.\n\nIl est **en attente de pièces**. La prochaine étape est la réception de la **copie de votre dépôt de plainte**. Si vous l'avez déjà, vous pouvez nous la transmettre. Le dossier est suivi par l'équipe automobile 1.\n\nAvez-vous déjà cette copie de plainte, et souhaitez-vous que je transmette une demande de rappel à un gestionnaire ?",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "M. Zinsou"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010638,
+      "latence_s": 4.34,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c15",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "consulter_sinistre"
+      ],
+      "reponse": "Le dossier **SIN-2026-0788** concerne le vol de votre moto devant votre domicile, déclaré le 14 septembre 2026. Il est en attente de pièces.\n\n**Prochaine étape :** nous devons recevoir une copie de votre dépôt de plainte.\n\nVous pouvez nous l'envoyer en répondant à votre courrier ou en la transmettant à votre gestionnaire, l'équipe automobile 1, en précisant le numéro de dossier.\n\nSi le courrier demande d'autres documents, indiquez-moi lesquels et je vous aiderai à les identifier.",
+      "appels": [
+        {
+          "outil": "consulter_sinistre",
+          "entree": {
+            "numero_sinistre": "SIN-2026-0788"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007242,
+      "latence_s": 7.39,
+      "premier": [
+        "consulter_sinistre"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c16",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Je viens de vérifier votre contrat KA-AUTO-0410 : aucun sinistre n'y est enregistré à ce jour.\n\nSi vous souhaitez déclarer un nouvel accident ou un dommage, je peux vous aider. Pour commencer, pourriez-vous me dire :\n1. Quand et où les faits se sont-ils produits ?\n2. Que s'est-il passé, et quels dommages le camion a-t-il subis ?\n3. Y a-t-il un tiers impliqué (autre véhicule, piéton, bien endommagé) ?",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0410"
+          }
+        }
+      ],
+      "cout_dollars": 0.0006672,
+      "latence_s": 3.84,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c17",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "trouver_assure"
+      ],
+      "reponse": "Je retrouve un dossier au nom d'Arnaud Tossou, avec un contrat automobile rattaché. Avant de vous communiquer le numéro de ce contrat, pouvez-vous confirmer :\n\n1. La ville de domiciliation indiquée sur votre contrat ?\n2. La marque et le modèle du véhicule assuré, ou son immatriculation ?\n\nUne fois ces éléments vérifiés, je pourrai vous indiquer le numéro de votre contrat et vous aider à déclarer votre sinistre. Si vous ne parvenez pas à répondre à ces questions, je peux aussi transmettre votre demande à un gestionnaire qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "nom": "Arnaud Tossou"
+          }
+        }
+      ],
+      "cout_dollars": 0.0008466000000000001,
+      "latence_s": 5.72,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c18",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour Madame Akplogan, merci pour votre demande.\n\nVotre dossier **SIN-2026-0912** (collision avec une moto au carrefour Saint-Michel, survenue le 2 octobre 2026) est au statut « expertise planifiée ». Le passage de l'expert est prévu le **29 octobre 2026**. Notre système n'indique donc pas encore de visite effectuée.\n\nSi la date ne vous convient pas, ou si vous souhaitez un point précis sur votre dossier, je peux transmettre votre demande à un gestionnaire de l'équipe automobile, qui vous rappellera.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1002"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-1180"
+          }
+        }
+      ],
+      "cout_dollars": 0.0010776000000000002,
+      "latence_s": 7.22,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c19",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 2,
+      "outils": [
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Votre dossier **SIN-2026-0788**, ouvert pour le vol de votre moto devant votre domicile (date du sinistre : 14 septembre 2026), est actuellement **en attente de pièces**.\n\nLa prochaine étape est la réception de la **copie de votre dépôt de plainte**. Le dossier est suivi par l'équipe automobile 1.\n\nAvez-vous déjà une copie de ce dépôt de plainte ? Si oui, vous pouvez me dire comment vous comptez la transmettre, ou la faire parvenir directement à votre gestionnaire en précisant votre numéro de sinistre.",
+      "appels": [
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0731"
+          }
+        }
+      ],
+      "cout_dollars": 0.0007807000000000001,
+      "latence_s": 4.13,
+      "premier": [
+        "lister_sinistres_du_contrat"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 1,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    },
+    {
+      "variante": "yao",
+      "demande": "c20",
+      "repetition": 3,
+      "fin": "end_turn",
+      "tours": 3,
+      "outils": [
+        "trouver_assure",
+        "lister_sinistres_du_contrat"
+      ],
+      "reponse": "Bonjour M. Agbo, merci pour votre numéro d'assuré.\n\nJ'ai bien retrouvé votre contrat auto **KA-AUTO-0552**, mais aucun dossier de sinistre n'y est enregistré à ce jour. Il n'existe donc pas encore de dossier à compléter pour l'accident d'hier : il faut le déclarer.\n\nPour l'ouvrir, pourriez-vous me préciser :\n1. L'heure et le lieu précis de l'accident, et ce qui s'est passé en une ou deux phrases ?\n2. Les dommages constatés sur votre véhicule, et s'il y a eu des blessés ?\n3. L'identité des autres conducteurs ou témoins éventuels, ainsi que les références de leurs véhicules ?\n\nVous pourrez ensuite joindre les pièces utiles, comme le constat amiable, les photos et les devis.",
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1004"
+          }
+        },
+        {
+          "outil": "lister_sinistres_du_contrat",
+          "entree": {
+            "numero_contrat": "KA-AUTO-0552"
+          }
+        }
+      ],
+      "cout_dollars": 0.0011293,
+      "latence_s": 5.09,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": false
+    }
+  ]
+}

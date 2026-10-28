@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(tarifs/**)",
+      "Read(donnees/**)",
+      "Bash(rm *)"
+    ]
+  }
+}

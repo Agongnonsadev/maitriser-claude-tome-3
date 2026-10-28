@@ -1,0 +1,186 @@
+{
+ "etape": "renvoi",
+ "version": "v3",
+ "modele": "claude-haiku-5-5",
+ "lot_initial": "msgbatch_01E2HwTYeHTCwscp7SYUDw4n",
+ "lot": "msgbatch_016FmaSmzuqdTW4AbUMczYbb",
+ "cree": "2026-10-27T19:04:13.229310+00:00",
+ "expire": "2026-10-28T19:04:13.229310+00:00",
+ "requetes": 3,
+ "termine": "2026-10-27T19:06:04.682626+00:00",
+ "duree_minutes": 1.9,
+ "depense_dollars": 0.00041,
+ "resultats": [
+  {
+   "document": "arch-0058",
+   "difficulte": "ocr",
+   "mois": "2026-01",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-01-02",
+    "heure": "09:00",
+    "lieu": "boulevard de la Marina, Cotonou",
+    "blesses": "oui",
+    "vehicule_a": {
+     "plaque": "UZ 919I DH",
+     "numero_contrat": "KA-AUTO-1725"
+    },
+    "vehicule_b": {
+     "plaque": "CX 8485-CR",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.9,
+     "heure": 0.9,
+     "blesses": 0.85,
+     "plaque_a": 0.6,
+     "contrat_a": 0.9,
+     "plaque_b": 0.8,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_016rp2vPDXBbifytzgSHtLxd",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00013612999999999999,
+   "lecture_cache": 1646,
+   "ecriture_cache": 0,
+   "entree": 833,
+   "sortie": 345,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.9,
+    "heure": 0.9,
+    "blesses": 0.85,
+    "plaque_a": 0.6,
+    "contrat_a": 0.9,
+    "plaque_b": 0.8,
+    "assureur_b": 0.95
+   }
+  },
+  {
+   "document": "arch-0647",
+   "difficulte": "propre",
+   "mois": "2024-11",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-11-15",
+    "heure": "08:30",
+    "lieu": "PONT DE FIDJROSSÈ",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "7046-BJ",
+     "numero_contrat": "KA-AUTO-4389"
+    },
+    "vehicule_b": {
+     "plaque": "NF 8362 UG",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.9,
+     "plaque_a": 0.6,
+     "contrat_a": 0.9,
+     "plaque_b": 0.9,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_01WuzZA9NxmT93XWg2VqUikR",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00013612999999999999,
+   "lecture_cache": 1646,
+   "ecriture_cache": 0,
+   "entree": 848,
+   "sortie": 342,
+   "reussi": false,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "faux",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [
+    "vehicule_a.plaque : « 7046-BJ » n'est pas au format AA 9999 AA."
+   ],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.9,
+    "plaque_a": 0.6,
+    "contrat_a": 0.9,
+    "plaque_b": 0.9,
+    "assureur_b": 0.95
+   }
+  },
+  {
+   "document": "arch-0758",
+   "difficulte": "propre",
+   "mois": "2026-09",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-09-17",
+    "heure": "10:10",
+    "lieu": "Voie Express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "WD 1537 SV",
+     "numero_contrat": "KA-AUTO-3152"
+    },
+    "vehicule_b": {
+     "plaque": "AB 3629 CR",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.5,
+     "heure": 0.95,
+     "blesses": 0.9,
+     "plaque_a": 0.8,
+     "contrat_a": 0.9,
+     "plaque_b": 0.9,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_01Xqk5WoxGfcww5YdSbDS3tS",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00013763,
+   "lecture_cache": 1646,
+   "ecriture_cache": 0,
+   "entree": 868,
+   "sortie": 344,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.5,
+    "heure": 0.95,
+    "blesses": 0.9,
+    "plaque_a": 0.8,
+    "contrat_a": 0.9,
+    "plaque_b": 0.9,
+    "assureur_b": 0.95
+   }
+  }
+ ],
+ "cache": "prefixe"
+}

@@ -1,0 +1,373 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "variantes": [
+    "objectifs"
+  ],
+  "attendre": false,
+  "depense_dollars": 0.016917,
+  "resume": {
+    "objectifs:q1-inondation": {
+      "etudes": 2,
+      "fins": [
+        "success",
+        "success"
+      ],
+      "sous_agents_lances": [
+        [
+          "analyste-documents"
+        ],
+        [
+          "analyste-documents"
+        ]
+      ],
+      "sous_agents_inutiles": [
+        [],
+        []
+      ],
+      "reponses_multi_agents": [
+        1,
+        1
+      ],
+      "simultanes_max": [
+        1,
+        1
+      ],
+      "recherches_web": [
+        0,
+        0
+      ],
+      "documents_lus": [
+        [
+          "SOUS-01",
+          "SOUS-02",
+          "SOUS-03",
+          "SOUS-04",
+          "SOUS-06"
+        ],
+        [
+          "SOUS-01",
+          "SOUS-02",
+          "SOUS-03",
+          "SOUS-04",
+          "SOUS-06"
+        ]
+      ],
+      "hors_role": [
+        [],
+        []
+      ],
+      "refus": [
+        1,
+        1
+      ],
+      "aspects_couverts": [
+        4,
+        4
+      ],
+      "aspects": 5,
+      "aspects_manques": [
+        [
+          "sources_publiques"
+        ],
+        [
+          "sources_publiques"
+        ]
+      ],
+      "rapport": [
+        false,
+        false
+      ],
+      "cout_moyen": 0.008458705,
+      "duree_mediane_s": 57.8605
+    }
+  },
+  "etudes": [
+    {
+      "question": "q1-inondation",
+      "variante": "objectifs",
+      "repetition": 1,
+      "fin": "success",
+      "reponse": "**Conclusion provisoire : oui, l'option inondation doit être revue pour 2027, et le zonage en premier.** Cette réponse repose uniquement sur les documents internes. Le volet externe (données publiques sur les inondations et l'offre d'assurance au Bénin) n'a pas été couvert, et aucun rapport n'a été enregistré.\n\n**Ce qui est établi (documents internes)**\n- Le ratio sinistres/primes de l'option inondation passe de 82 % en 2022 à 62 % en 2023, puis 97 % en 2024, 116 % en 2025 et 139 % pour janvier à septembre 2026 (provisoire). SOUS-01, section 2. Le chiffre de 2026 compare neuf mois de charge à neuf mois de primes et doit être lu avec prudence.\n- En 2025, la zone C concentre 23 % des contrats et 66 % de la charge, avec une fréquence de sinistres de 22,1 % contre 2,0 % en zone A et 6,5 % en zone B. SOUS-01, section 3.\n- À Abomey-Calavi, 620 contrats (41 % de la commune) sont classés en zone B par défaut, car le zonage de 2019 ne couvre pas les lotissements récents. Leur fréquence de sinistres est de 11,5 %, contre 4,5 % pour les autres contrats de zone B. SOUS-01, section 4.\n- Le zonage de 2019 n'a jamais été revu, alors que le guide prévoit une révision tous les trois ans. SOUS-04, section 2, et SOUS-02, section 2.\n- Le réassureur estime que le tarif et le zonage ne reflètent plus l'exposition. Pour le renouvellement du 1er janvier 2027, il demande : un zonage mis à jour dès la campagne 2027 ; un cumul plafonné à 30 milliards de FCFA en zone C (Kanvô en déclare 23,1 milliards au 30 juin 2026) ; à défaut, une part de sinistres conservée qui passe de 20 % à 35 %. Réponse attendue avant le 30 novembre 2026. SOUS-03, sections 1 à 3.\n\n**Ce qui est contesté ou à confirmer**\n- Les chiffres de 2022 ne concordent pas entre l'étude de 2023 (312 sinistres déclarés) et SOUS-01 (298 sinistres survenus). SOUS-06 et SOUS-01, section 6.\n- SOUS-01 exclut les sinistres classés sans suite, ce qui peut sous-estimer la fréquence.\n- Le cumul de 23,1 milliards n'est pas explicitement limité à la zone C. À vérifier auprès de la souscription.\n\n**Ce qui manque**\n- Aucune donnée externe sur l'exposition (événements pluviométriques récents, cartes d'aléas, projections).\n- Les quartiers et le calendrier des travaux d'assainissement pluvial annoncés à Cotonou sont inconnus. SOUS-04, section 2.\n- Aucun chiffrage des options (coût d'un zonage révisé, effet d'une part conservée de 35 %, effet d'un plafond de cumul).\n- Pas de sinistralité par zone pour 2022 à 2024, ni pour la période 2014-2018 qui a servi de base au zonage.\n\n**Ce que cela implique pour la décision**\n1. Réviser le zonage pour la campagne 2027, en priorité pour les lotissements d'Abomey-Calavi aujourd'hui classés en zone B par défaut.\n2. Traiter le cumul en zone C et la part conservée comme des points de négociation avec le réassureur, à arbitrer avant le 30 novembre 2026. Leur coût reste à chiffrer.\n\nPour compléter l'étude, il faudrait une recherche sur les sources publiques et un chiffrage des options. Je ne peux pas les lancer dans le cadre de cette étude, qui a atteint son plafond de sous-agents. Dites-moi si vous voulez que j'ouvre une nouvelle étude pour ce volet.",
+      "rapport": "",
+      "outils_seance": [
+        "Task",
+        "WebSearch",
+        "mcp__etudes__enregistrer_rapport",
+        "mcp__etudes__lire_document",
+        "mcp__etudes__lister_documents"
+      ],
+      "delegations": [
+        {
+          "type": "analyste-documents",
+          "description": "Documents internes sur inondation",
+          "t": 17.85,
+          "prompt": "Question de la souscription (Kanvô Assurances, Cotonou, Bénin ; portefeuille Bénin = Cotonou, Abomey-Calavi, Sèmè-Podji ; montants en FCFA) : « Faut-il revoir l'option inondation de l'assurance habitation pour la campagne 2027 ? »\n\nVotre périmètre : les documents internes de la souscription uniquement. Listez les documents (lister_documents), puis lisez ceux qui concernent l'habitation, la sinistralité (en particulier les sinistres inondation), la tarification ou les garanties/exclusions de l'option inondation, les comités ou études sur le sujet, et la réassurance si elle touche l'inondation.\n\nPour chaque fait rendu : le chiffre ou l'affirmation exacte, le document (identifiant SOUS-xx et titre), la section, et la date du document. Signalez aussi ce que les documents ne disent pas (données manquantes, périodes non couvertes, incohérences). Ne cherchez rien sur le web."
+        }
+      ],
+      "reponses_multi_agents": 1,
+      "nom_outil": [
+        "Agent",
+        "Agent"
+      ],
+      "textes_coordinateur": [
+        "J'ai lancé l'analyse des documents internes de la souscription, qui tourne en arrière-plan. Je ne peux pas encore conclure.\n\nLa recherche des sources publiques (inondations à Cotonou, Abomey-Calavi et Sèmè-Podji, coût des sinistres, offre d'assurance inondation au Bénin) n'a pas pu être lancée : le système limite cette étude à un seul sous-agent. Cette partie reste donc à couvrir, et une conclusion sur la révision de l'option inondation resterait incomplète sans elle. Je vous présenterai le résultat dès que l'analyse documentaire sera rendue, avec les lacunes signalées, et je vous dirai si une autre étude est nécessaire pour le volet externe.",
+        "**Conclusion provisoire : oui, l'option inondation doit être revue pour 2027, et le zonage en premier.** Cette réponse repose uniquement sur les documents internes. Le volet externe (données publiques sur les inondations et l'offre d'assurance au Bénin) n'a pas été couvert, et aucun rapport n'a été enregistré.\n\n**Ce qui est établi (documents internes)**\n- Le ratio sinistres/primes de l'option inondation passe de 82 % en 2022 à 62 % en 2023, puis 97 % en 2024, 116 % en 2025 et 139 % pour janvier à septembre 2026 (provisoire). SOUS-01, section 2. Le chiffre de 2026 compare neuf mois de charge à neuf mois de primes et doit être lu avec prudence.\n- En 2025, la zone C concentre 23 % des contrats et 66 % de la charge, avec une fréquence de sinistres de 22,1 % contre 2,0 % en zone A et 6,5 % en zone B. SOUS-01, section 3.\n- À Abomey-Calavi, 620 contrats (41 % de la commune) sont classés en zone B par défaut, car le zonage de 2019 ne couvre pas les lotissements récents. Leur fréquence de sinistres est de 11,5 %, contre 4,5 % pour les autres contrats de zone B. SOUS-01, section 4.\n- Le zonage de 2019 n'a jamais été revu, alors que le guide prévoit une révision tous les trois ans. SOUS-04, section 2, et SOUS-02, section 2.\n- Le réassureur estime que le tarif et le zonage ne reflètent plus l'exposition. Pour le renouvellement du 1er janvier 2027, il demande : un zonage mis à jour dès la campagne 2027 ; un cumul plafonné à 30 milliards de FCFA en zone C (Kanvô en déclare 23,1 milliards au 30 juin 2026) ; à défaut, une part de sinistres conservée qui passe de 20 % à 35 %. Réponse attendue avant le 30 novembre 2026. SOUS-03, sections 1 à 3.\n\n**Ce qui est contesté ou à confirmer**\n- Les chiffres de 2022 ne concordent pas entre l'étude de 2023 (312 sinistres déclarés) et SOUS-01 (298 sinistres survenus). SOUS-06 et SOUS-01, section 6.\n- SOUS-01 exclut les sinistres classés sans suite, ce qui peut sous-estimer la fréquence.\n- Le cumul de 23,1 milliards n'est pas explicitement limité à la zone C. À vérifier auprès de la souscription.\n\n**Ce qui manque**\n- Aucune donnée externe sur l'exposition (événements pluviométriques récents, cartes d'aléas, projections).\n- Les quartiers et le calendrier des travaux d'assainissement pluvial annoncés à Cotonou sont inconnus. SOUS-04, section 2.\n- Aucun chiffrage des options (coût d'un zonage révisé, effet d'une part conservée de 35 %, effet d'un plafond de cumul).\n- Pas de sinistralité par zone pour 2022 à 2024, ni pour la période 2014-2018 qui a servi de base au zonage.\n\n**Ce que cela implique pour la décision**\n1. Réviser le zonage pour la campagne 2027, en priorité pour les lotissements d'Abomey-Calavi aujourd'hui classés en zone B par défaut.\n2. Traiter le cumul en zone C et la part conservée comme des points de négociation avec le réassureur, à arbitrer avant le 30 novembre 2026. Leur coût reste à chiffrer.\n\nPour compléter l'étude, il faudrait une recherche sur les sources publiques et un chiffrage des options. Je ne peux pas les lancer dans le cadre de cette étude, qui a atteint son plafond de sous-agents. Dites-moi si vous voulez que j'ouvre une nouvelle étude pour ce volet."
+      ],
+      "sous_agents": [
+        {
+          "agent_id": "a64c52d956037e9cb",
+          "type": "analyste-documents",
+          "debut": 17.89,
+          "fin": 218.88,
+          "outils": [
+            "mcp__etudes__lister_documents",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document"
+          ],
+          "dernier_message": "{\"resultats\": [{\"affirmation\": \"Le rapport sinistres/primes de l'option inondation est passé de 82 % en 2022 à 62 % en 2023, puis monte à 97 % en 2024, 116 % en 2025 et 139 % pour janvier à septembre 2026 (provisoire).\", \"extrait\": \"| 2022 | 4 120 | 298 | 7,2 % | 214 | 718 000 | 260 | 82 % |; | 2023 | 4 480 | 251 | 5,6 % | 176 | 701 000 | 283 | 62 % |; | 2024 | 4 910 | 377 | 7,7 % | 301 | 798 000 | 310 | 97 % |; | 2025 | 5 350 | 446 | 8,3 % | 392 | 879 000 | 338 | 116 % |; | 2026, janvier à septembre | 5 620 | 402 | 7,2 % sur neuf mois | 371 | 923 000 | 266 | 139 %, provisoire |\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"En 2025, la charge des sinistres inondation atteint 392 M FCFA pour 446 sinistres et 338 M FCFA de primes ; le coût moyen par sinistre est de 879 000 FCFA.\", \"extrait\": \"2025 | 5 350 | 446 | 8,3 % | 392 | 879 000 | 338 | 116 %\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"À fin septembre 2026, le nombre de sinistres inondation atteint déjà 90 % de celui de toute l'année 2025 (402 sinistres contre 446).\", \"extrait\": \"À fin septembre 2026, le nombre de sinistres atteint déjà 90 % de celui de toute l'année 2025.\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"En 2025, la zone C (exposition forte) porte 23 % des contrats et 66 % de la charge : 1 210 contrats, 268 sinistres, fréquence 22,1 %, charge 260 M FCFA. La zone A a une fréquence de 2,0 % et la zone B de 6,5 %.\", \"extrait\": \"| C, exposition forte | 1 210 | 268 | 22,1 % | 260 | 66 % |; La zone C porte 23 % des contrats et 66 % de la charge.\", \"document\": \"SOUS-01\", \"section\": \"3. Par zone du zonage de 2019, année 2025\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"À Abomey-Calavi, 620 contrats (41 % des contrats de la commune) sont classés en zone B par défaut car le zonage de 2019 ne couvre pas les lotissements récents ; ils ont connu 71 sinistres en 2025, soit une fréquence de 11,5 %, contre 4,5 % pour les autres contrats de la zone B.\", \"extrait\": \"Le zonage de 2019 ne couvre pas les lotissements récents de la commune : 620 contrats y sont classés en zone B par défaut, soit 41 % des contrats de la commune. Ces 620 contrats ont connu 71 sinistres en 2025, une fréquence de 11,5 %, contre 4,5 % pour les autres contrats de la zone B.\", \"document\": \"SOUS-01\", \"section\": \"4. Par commune, année 2025\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"En 2025, Cotonou concentre 3 280 contrats, 301 sinistres et 268 M FCFA de charge ; Abomey-Calavi 1 520 contrats, 118 sinistres et 99 M FCFA ; Sèmè-Podji 550 contrats, 27 sinistres et 25 M FCFA. Le nombre de contrats d'Abomey-Calavi est passé de 870 en 2022 à 1 520 en 2025.\", \"extrait\": \"| Cotonou | 3 280 | 301 | 268 |; | Abomey-Calavi | 1 520 | 118 | 99 |; | Sèmè-Podji | 550 | 27 | 25 |; À Abomey-Calavi, le nombre de contrats est passé de 870 en 2022 à 1 520 en 2025.\", \"document\": \"SOUS-01\", \"section\": \"4. Par commune, année 2025\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"En 2025, 63 % des sinistres inondation sont survenus d'avril à juillet.\", \"extrait\": \"En 2025, 63 % des sinistres sont survenus d'avril à juillet.\", \"document\": \"SOUS-01\", \"section\": \"5. Répartition dans l'année\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Le zonage de 2019 classe les quartiers en trois zones (A, B, C) d'après la sinistralité de 2014 à 2018 et la carte des bas-fonds ; un quartier absent du zonage est classé en zone B par défaut ; le zonage est revu tous les trois ans.\", \"extrait\": \"Le zonage de 2019 classe les quartiers de Cotonou, d'Abomey-Calavi et de Sèmè-Podji en trois zones, A, B et C, d'après la sinistralité de 2014 à 2018 et la carte des bas-fonds. Un quartier absent du zonage est classé en zone B par défaut. Le zonage est revu tous les trois ans.\", \"document\": \"SOUS-02\", \"section\": \"2. Le zonage\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Surprime selon la zone : zone A au tarif de base, zone B à +15 % du tarif de base, zone C à +40 % du tarif de base.\", \"extrait\": \"zone A : tarif de base ; zone B : 15 % de plus que le tarif de base ; zone C : 40 % de plus que le tarif de base.\", \"document\": \"SOUS-02\", \"section\": \"3. Le tarif\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Conditions d'acceptation en zone C : visite préalable obligatoire, refus pour un logement en rez-de-chaussée sans surélévation d'au moins 50 cm, capital assuré plafonné à 25 millions de FCFA par contrat. Zones A et B : acceptation sur déclaration de l'assuré.\", \"extrait\": \"Zone C : visite préalable obligatoire ; refus pour un logement en rez-de-chaussée sans surélévation d'au moins 50 centimètres ; capital assuré plafonné à 25 millions de FCFA par contrat. Zones A et B : acceptation sur déclaration de l'assuré.\", \"document\": \"SOUS-02\", \"section\": \"4. Les conditions d'acceptation\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Franchise de 10 % du montant du sinistre, avec un minimum de 50 000 FCFA, dans toutes les zones. Les agents commerciaux acceptent seuls les affaires des zones A et B ; une affaire de zone C exige l'accord de la souscription.\", \"extrait\": \"10 % du montant du sinistre, avec un minimum de 50 000 FCFA, dans toutes les zones. ; Les agents commerciaux acceptent seuls les affaires des zones A et B. Une affaire de zone C exige l'accord de la souscription.\", \"document\": \"SOUS-02\", \"section\": \"5. La franchise et 6. La délégation\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Le rapport sinistres/primes de l'option inondation, sur le portefeuille cédé, est passé de 62 % en 2023 à 116 % en 2025 ; le réassureur estime que le tarif et le zonage actuels ne reflètent plus l'exposition.\", \"extrait\": \"Le rapport sinistres/primes de l'option inondation, sur le portefeuille cédé, est passé de 62 % en 2023 à 116 % en 2025. Le réassureur estime que le tarif et le zonage actuels ne reflètent plus l'exposition.\", \"document\": \"SOUS-03\", \"section\": \"1. Le constat du réassureur\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Le réassureur demande, pour le renouvellement du 1er janvier 2027 : (1) un zonage mis à jour, appliqué aux affaires nouvelles dès la campagne 2027 ; (2) un cumul des capitaux assurés en zone C plafonné à 30 milliards de FCFA ; (3) à défaut des deux premières mesures, la part des sinistres inondation conservée par Kanvô passe de 20 % à 35 %.\", \"extrait\": \"1. Un zonage mis à jour, appliqué aux affaires nouvelles dès la campagne 2027. 2. Un cumul des capitaux assurés en zone C plafonné à 30 milliards de FCFA. ... 3. À défaut des deux premières mesures, la part des sinistres inondation conservée par Kanvô Assurances passe de 20 % à 35 %.\", \"document\": \"SOUS-03\", \"section\": \"2. Les demandes pour le renouvellement\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Le cumul déclaré par Kanvô au 30 juin 2026 est de 23,1 milliards de FCFA, contre un plafond demandé de 30 milliards en zone C.\", \"extrait\": \"Le cumul déclaré par Kanvô Assurances au 30 juin 2026 est de 23,1 milliards de FCFA.\", \"document\": \"SOUS-03\", \"section\": \"2. Les demandes pour le renouvellement\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Le réassureur attend la réponse de Kanvô avant le 30 novembre 2026.\", \"extrait\": \"Le réassureur attend la réponse de Kanvô Assurances avant le 30 novembre 2026.\", \"document\": \"SOUS-03\", \"section\": \"3. Le calendrier\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Le comité du 29 septembre 2026 constate que la sinistralité se dégrade depuis 2024, que le zonage de 2019 n'a jamais été revu alors que le guide prévoit une révision tous les trois ans, et que le réseau signale une forte demande dans les nouveaux lotissements d'Abomey-Calavi, absents du zonage.\", \"extrait\": \"1. La sinistralité de l'option inondation se dégrade depuis 2024 (SOUS-01). ... 3. Le réseau commercial signale une forte demande dans les nouveaux lotissements d'Abomey-Calavi, absents du zonage. 4. Le zonage de 2019 n'a jamais été revu, alors que le guide de souscription prévoit une révision tous les trois ans (SOUS-02).\", \"document\": \"SOUS-04\", \"section\": \"2. Points examinés\", \"date_document\": \"2026-09-29\"}, {\"affirmation\": \"Le comité indique que les autorités ont annoncé des travaux d'assainissement pluvial à Cotonou, sans savoir quels quartiers ils concernent ni quand ils doivent s'achever.\", \"extrait\": \"Les autorités ont annoncé des travaux d'assainissement pluvial à Cotonou. Le comité ne sait ni quels quartiers ils concernent, ni quand ils doivent s'achever.\", \"document\": \"SOUS-04\", \"section\": \"2. Points examinés\", \"date_document\": \"2026-09-29\"}, {\"affirmation\": \"Mme Sossa commande l'étude « Faut-il revoir l'option inondation de l'assurance habitation pour la campagne 2027 ? », avec échéance au 15 novembre 2026. Elle doit présenter l'évolution et les causes probables, les zones à reclasser, les sources publiques sur l'exposition, des options chiffrées pour le réassureur et les incertitudes.\", \"extrait\": \"Mme Sossa commande une étude : « Faut-il revoir l'option inondation de l'assurance habitation pour la campagne 2027 ? » ... Échéance : 15 novembre 2026.\", \"document\": \"SOUS-04\", \"section\": \"3. Décision\", \"date_document\": \"2026-09-29\"}, {\"affirmation\": \"L'étude de mars 2023 comptait les sinistres inondation déclarés à 187 (2019), 224 (2020), 265 (2021) et 312 (2022), et ne recommandait pas de réviser le zonage avant 2025.\", \"extrait\": \"| 2019 | 187 | | 2020 | 224 | | 2021 | 265 | | 2022 | 312 |; L'étude ne recommande pas de réviser le zonage avant 2025.\", \"document\": \"SOUS-06\", \"section\": \"2. Sinistres inondation déclarés et 3. Conclusion\", \"date_document\": \"2023-03-20\"}], \"limites\": [\"SOUS-01 compte les sinistres à la date de survenance ; SOUS-06 les comptait à la date de déclaration. Les chiffres 2019-2022 de SOUS-06 (312 en 2022) ne se comparent pas directement à ceux de SOUS-01 (298 en 2022), comme le signale SOUS-01 section 6.\", \"SOUS-01 exclut les sinistres classés sans suite (garantie refusée, montant sous la franchise), ce qui peut sous-estimer le nombre de sinistres déclarés.\", \"Les chiffres de 2026 de SOUS-01 couvrent janvier à septembre et sont provisoires (des sinistres de septembre peuvent encore être déclarés). Le ratio 139 % compare neuf mois de charge à neuf mois de primes ; la prime 2026 (266 M) n'est pas une prime annuelle.\", \"SOUS-01 ne donne le détail par zone et par commune que pour 2025 ; il n'y a pas de ventilation par zone pour 2022-2024 ni pour 2026.\", \"SOUS-03 ne précise pas explicitement que le cumul de 23,1 milliards FCFA est limité à la zone C, bien que la demande de plafond porte sur la zone C ; il faut le confirmer auprès de la souscription.\", \"SOUS-02 (guide, version 3, daté du 15 janvier 2024) décrit les règles en vigueur à cette date ; les documents ne disent pas si des modifications ont été apportées depuis.\", \"Le zonage de 2019 a été fondé sur les sinistres de 2014-2018 ; les documents ne donnent pas les chiffres de cette période.\", \"Les chiffres de tarif et de franchise de SOUS-02 sont des paramètres de règle, non des chiffres de sinistralité ; ils ne permettent pas de calculer seuls l'effet d'une révision tarifaire.\", \"Le périmètre des sinistres (SOUS-01) couvre l'option inondation des contrats habitation de Cotonou, Abomey-Calavi et Sèmè-Podji ; les documents ne disent pas si les chiffres incluent la commune de Sèmè-Podji avec un zonage propre.\"], \"non_trouve\": [\"Aucune donnée d'exposition externe (événements pluviométriques récents, cartes d'aléas, projections climatiques) dans les documents internes ; le comité demande de telles sources publiques, qui sont hors périmètre de cette recherche.\", \"Aucune information sur les quartiers concernés par les travaux d'assainissement pluvial de Cotonou ni sur leur calendrier (SOUS-04 le signale comme inconnu).\", \"Aucun chiffrage des options pour la réponse au réassureur (coût d'un zonage révisé, effet d'une hausse de la part conservée de 20 % à 35 %, effet d'un plafond de cumul) ; l'étude de SOUS-04 doit le produire.\", \"Aucune donnée de sinistralité par zone ou par commune pour 2022 à 2024 ; pas de répartition des 620 contrats non zonés d'Abomey-Calavi avant 2025.\", \"Aucun chiffre de sinistralité de l'option inondation pour 2014 à 2018, période servant de base au zonage de 2019.\", \"Aucune analyse de la révision du zonage prévue tous les trois ans (2022 et 2025 échus) ni de motif documenté de son report.\", \"Aucune mention de la répartition des capitaux assurés par zone (cumul de 23,1 milliards ventilé par zone), ni du nombre de contrats de zone C plafonnés à 25 millions de FCFA.\", \"Aucun document sur le sinistre moyen ou la prime moyenne par zone, ni sur le taux de refus en zone C ou le nombre de visites préalables effectuées.\", \"Aucune réponse de Kanvô Assurances au réassureur n'est présente dans les documents (échéance du 30 novembre 2026).\", \"SOUS-05 (vols de deux-roues) a été écarté car hors périmètre de l'habitation.\"]}",
+          "duree": 200.99
+        }
+      ],
+      "simultanes_max": 1,
+      "documents_lus": [
+        "SOUS-01",
+        "SOUS-02",
+        "SOUS-03",
+        "SOUS-04",
+        "SOUS-06"
+      ],
+      "recherches_web": 0,
+      "hors_role": [],
+      "refus": [
+        {
+          "par": "coordinateur",
+          "outil": "Agent",
+          "entree": "{\"description\": \"Sources publiques inondation Bénin\", \"prompt\": \"Contexte : Kanvô Assurances, assureur à Cotonou (Bénin), se demande s'il faut revoir l'option inondation de son assurance habitation pour la campagne 2027. Portefeuille : Cotonou, Abomey-Calavi, Sèmè-Podji.\\n\\nRecherchez des sources pu…"
+        }
+      ],
+      "aspects": {
+        "sinistralite": true,
+        "zones": true,
+        "reassureur": true,
+        "sources_publiques": false,
+        "incertitudes": true
+      },
+      "transmis_au_synthetiseur": {
+        "appels": []
+      },
+      "evenements_taches": [
+        {
+          "subtype": "task_started",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a64c52d956037e9cb",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_updated",
+          "task_id": "a64c52d956037e9cb"
+        },
+        {
+          "subtype": "task_notification",
+          "task_id": "a64c52d956037e9cb",
+          "status": "completed"
+        }
+      ],
+      "tours": 1,
+      "cout_dollars": 0.00820133,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 12,
+          "outputTokens": 11328,
+          "cacheReadInputTokens": 17738,
+          "cacheCreationInputTokens": 18870,
+          "webSearchRequests": 0,
+          "costUSD": 0.00820133,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2319,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "duree_s": 14.672,
+      "erreur": null
+    },
+    {
+      "question": "q1-inondation",
+      "variante": "objectifs",
+      "repetition": 2,
+      "fin": "success",
+      "reponse": "**Conclusion : oui, l'option inondation doit être revue pour 2027.** Les documents internes le montrent clairement. Je n'ai en revanche pas pu vérifier les causes de la hausse ni le risque physique par source publique, faute de capacité de sous-agents.\n\n**Ce qui est établi (documents internes)**\n\n- **Sinistralité qui se dégrade.** Le ratio sinistres/primes de l'option passe de 82 % (2022) à 62 % (2023), 97 % (2024), 116 % (2025), puis 139 % sur janvier-septembre 2026 (chiffre provisoire). Les sinistres sont passés de 298 en 2022 à 446 en 2025, et 402 sont déjà comptés à fin septembre 2026 (SOUS-01, « 2. Évolution annuelle », 6 oct. 2026).\n- **Concentration en zone C.** En 2025, la zone C porte 23 % des contrats mais 66 % de la charge, avec une fréquence de sinistres de 22,1 % contre 6,5 % en zone B et 2,0 % en zone A (SOUS-01, « 3. Par zone »).\n- **Le zonage est dépassé.** Le zonage de 2019 repose sur les sinistres de 2014 à 2018 (SOUS-02, « 2. Le zonage », 15 janv. 2024). Il n'a jamais été revu, alors que le guide prévoit une révision tous les trois ans (SOUS-04, « 2. Points examinés », 29 sept. 2026).\n- **Abomey-Calavi.** 620 contrats des lotissements récents sont classés en zone B par défaut, soit 41 % des contrats de la commune. Leur fréquence est de 11,5 %, contre 4,5 % pour les autres contrats de zone B (SOUS-01, « 4. Par commune »). Le portefeuille de la commune passe de 870 contrats (2022) à 1 520 (2025).\n- **Cotonou.** 301 sinistres en 2025, avec 268 M FCFA de charge (SOUS-01, « 4. Par commune »).\n- **Exigences du réassureur** (SOUS-03, « 2. Les demandes », 15 sept. 2026) pour le renouvellement au 1er janvier 2027 :\n  1. un zonage mis à jour, appliqué aux affaires nouvelles dès 2027 ;\n  2. un cumul de capitaux en zone C plafonné à 30 Md FCFA, alors qu'il est de 23,1 Md au 30 juin 2026 ;\n  3. à défaut, la part des sinistres inondation conservée par Kanvô passe de 20 % à 35 %.\n  La réponse est attendue avant le 30 novembre 2026.\n- **Dispositif actuel** (SOUS-02) : surprime de 15 % en zone B et de 40 % en zone C, franchise de 10 % (minimum 50 000 FCFA). En zone C, une visite préalable est obligatoire, le rez-de-chaussée sans surélévation de 50 cm est refusé, et le capital est plafonné à 25 M FCFA. Les agents acceptent seuls les zones A et B, la zone C exige l'accord de la souscription.\n- **Étude demandée.** Le comité du 29 septembre 2026 a commandé l'étude pour le 15 novembre 2026 (SOUS-04, « 3. Décision »).\n\n**Ce qui est contesté ou à nuancer**\n\n- L'étude de 2023 (SOUS-06) concluait qu'il n'y avait pas lieu de réviser le zonage avant 2025. Elle est aujourd'hui dépassée.\n- Les chiffres ne se comparent pas directement : SOUS-01 compte les sinistres à la date de survenance, SOUS-06 à la date de déclaration (312 déclarés contre 298 survenus en 2022).\n- Les sinistres classés sans suite ne sont pas comptés, ce qui peut sous-estimer la fréquence.\n- Les chiffres 2026 sont provisoires.\n\n**Ce qui manque**\n\n- **Causes de la hausse** : pluviométrie, urbanisation, bas-fonds. Aucune étude interne ne les traite.\n- **Risque physique externe** : événements récents, cartes d'aléa, projections climatiques, et travaux d'assainissement pluvial à Cotonou, dont on ignore les quartiers et la date de fin (SOUS-04). Je n'ai pas pu rechercher ces sources publiques.\n- **Tarif de base en FCFA**, donc les surprimes en FCFA et la prime moyenne par zone. La prime moyenne implicite de 2025 est d'environ 63 200 FCFA, calcul que les documents ne publient pas.\n- **Résultat économique net** de l'option (frais et charges non fournis).\n- **Ventilation 2026 par zone et par commune**, et capitaux par zone autres que le cumul zone C.\n\n**Pistes pour la décision**\n\n1. Reclasser en zone C, ou au minimum en zone à visite, les 620 contrats d'Abomey-Calavi classés par défaut, et appliquer un zonage révisé aux affaires nouvelles dès 2027. C'est la demande 1 du réassureur.\n2. Préparer la réponse au réassureur avant le 30 novembre 2026, en chiffrant le coût de la demande 3 (retenue à 35 %) face au coût du reclassement.\n3. Obtenir le tarif de base et le résultat net de l'option avant de fixer les nouvelles surprimes.\n\nJe n'ai enregistré aucun rapport : seul l'analyste-documents a produit des résultats, et une synthèse ou un rapport n'est pas justifié pour une seule source. Si vous voulez l'étude complète pour le comité du 15 novembre, il faudra relancer la recherche externe (événements, projections, assainissement) dans une nouvelle demande.\n\nSources : SOUS-01 (6 oct. 2026), SOUS-02 (15 janv. 2024), SOUS-03 (15 sept. 2026), SOUS-04 (29 sept. 2026), SOUS-06 (20 mars 2023), sections citées ci-dessus.",
+      "rapport": "",
+      "outils_seance": [
+        "Task",
+        "WebSearch",
+        "mcp__etudes__enregistrer_rapport",
+        "mcp__etudes__lire_document",
+        "mcp__etudes__lister_documents"
+      ],
+      "delegations": [
+        {
+          "type": "analyste-documents",
+          "description": "Documents internes sur inondation",
+          "t": 54.57,
+          "prompt": "Question de la souscription (Kanvô Assurances, Bénin : Cotonou, Abomey-Calavi, Sèmè-Podji ; montants en FCFA) : faut-il revoir l'option inondation de l'assurance habitation pour la campagne 2027 ?\n\nVotre périmètre : les documents internes uniquement. Commencez par lister_documents, puis lisez ceux qui concernent l'habitation, la sinistralité, l'inondation / catastrophes naturelles, la tarification, la réassurance, les comités et les études de souscription.\n\nRendez, pour chaque fait trouvé : le chiffre ou l'énoncé exact, le document (identifiant SOUS-xx et titre), la section, et la date. Indiquez notamment : sinistres inondation (nombre, montant, fréquence, zones, périodes), primes et taux de l'option inondation si disponibles, franchises, exclusions, conditions de souscription, résultats de l'option, engagements de réassurance liés, décisions ou recommandations antérieures des comités. Signalez explicitement les données manquantes ou contradictoires entre documents. Ne cherchez pas sur le web.",
+          "run_in_background": false
+        }
+      ],
+      "reponses_multi_agents": 1,
+      "nom_outil": [
+        "Agent",
+        "Agent"
+      ],
+      "textes_coordinateur": [
+        "**Conclusion : oui, l'option inondation doit être revue pour 2027.** Les documents internes le montrent clairement. Je n'ai en revanche pas pu vérifier les causes de la hausse ni le risque physique par source publique, faute de capacité de sous-agents.\n\n**Ce qui est établi (documents internes)**\n\n- **Sinistralité qui se dégrade.** Le ratio sinistres/primes de l'option passe de 82 % (2022) à 62 % (2023), 97 % (2024), 116 % (2025), puis 139 % sur janvier-septembre 2026 (chiffre provisoire). Les sinistres sont passés de 298 en 2022 à 446 en 2025, et 402 sont déjà comptés à fin septembre 2026 (SOUS-01, « 2. Évolution annuelle », 6 oct. 2026).\n- **Concentration en zone C.** En 2025, la zone C porte 23 % des contrats mais 66 % de la charge, avec une fréquence de sinistres de 22,1 % contre 6,5 % en zone B et 2,0 % en zone A (SOUS-01, « 3. Par zone »).\n- **Le zonage est dépassé.** Le zonage de 2019 repose sur les sinistres de 2014 à 2018 (SOUS-02, « 2. Le zonage », 15 janv. 2024). Il n'a jamais été revu, alors que le guide prévoit une révision tous les trois ans (SOUS-04, « 2. Points examinés », 29 sept. 2026).\n- **Abomey-Calavi.** 620 contrats des lotissements récents sont classés en zone B par défaut, soit 41 % des contrats de la commune. Leur fréquence est de 11,5 %, contre 4,5 % pour les autres contrats de zone B (SOUS-01, « 4. Par commune »). Le portefeuille de la commune passe de 870 contrats (2022) à 1 520 (2025).\n- **Cotonou.** 301 sinistres en 2025, avec 268 M FCFA de charge (SOUS-01, « 4. Par commune »).\n- **Exigences du réassureur** (SOUS-03, « 2. Les demandes », 15 sept. 2026) pour le renouvellement au 1er janvier 2027 :\n  1. un zonage mis à jour, appliqué aux affaires nouvelles dès 2027 ;\n  2. un cumul de capitaux en zone C plafonné à 30 Md FCFA, alors qu'il est de 23,1 Md au 30 juin 2026 ;\n  3. à défaut, la part des sinistres inondation conservée par Kanvô passe de 20 % à 35 %.\n  La réponse est attendue avant le 30 novembre 2026.\n- **Dispositif actuel** (SOUS-02) : surprime de 15 % en zone B et de 40 % en zone C, franchise de 10 % (minimum 50 000 FCFA). En zone C, une visite préalable est obligatoire, le rez-de-chaussée sans surélévation de 50 cm est refusé, et le capital est plafonné à 25 M FCFA. Les agents acceptent seuls les zones A et B, la zone C exige l'accord de la souscription.\n- **Étude demandée.** Le comité du 29 septembre 2026 a commandé l'étude pour le 15 novembre 2026 (SOUS-04, « 3. Décision »).\n\n**Ce qui est contesté ou à nuancer**\n\n- L'étude de 2023 (SOUS-06) concluait qu'il n'y avait pas lieu de réviser le zonage avant 2025. Elle est aujourd'hui dépassée.\n- Les chiffres ne se comparent pas directement : SOUS-01 compte les sinistres à la date de survenance, SOUS-06 à la date de déclaration (312 déclarés contre 298 survenus en 2022).\n- Les sinistres classés sans suite ne sont pas comptés, ce qui peut sous-estimer la fréquence.\n- Les chiffres 2026 sont provisoires.\n\n**Ce qui manque**\n\n- **Causes de la hausse** : pluviométrie, urbanisation, bas-fonds. Aucune étude interne ne les traite.\n- **Risque physique externe** : événements récents, cartes d'aléa, projections climatiques, et travaux d'assainissement pluvial à Cotonou, dont on ignore les quartiers et la date de fin (SOUS-04). Je n'ai pas pu rechercher ces sources publiques.\n- **Tarif de base en FCFA**, donc les surprimes en FCFA et la prime moyenne par zone. La prime moyenne implicite de 2025 est d'environ 63 200 FCFA, calcul que les documents ne publient pas.\n- **Résultat économique net** de l'option (frais et charges non fournis).\n- **Ventilation 2026 par zone et par commune**, et capitaux par zone autres que le cumul zone C.\n\n**Pistes pour la décision**\n\n1. Reclasser en zone C, ou au minimum en zone à visite, les 620 contrats d'Abomey-Calavi classés par défaut, et appliquer un zonage révisé aux affaires nouvelles dès 2027. C'est la demande 1 du réassureur.\n2. Préparer la réponse au réassureur avant le 30 novembre 2026, en chiffrant le coût de la demande 3 (retenue à 35 %) face au coût du reclassement.\n3. Obtenir le tarif de base et le résultat net de l'option avant de fixer les nouvelles surprimes.\n\nJe n'ai enregistré aucun rapport : seul l'analyste-documents a produit des résultats, et une synthèse ou un rapport n'est pas justifié pour une seule source. Si vous voulez l'étude complète pour le comité du 15 novembre, il faudra relancer la recherche externe (événements, projections, assainissement) dans une nouvelle demande.\n\nSources : SOUS-01 (6 oct. 2026), SOUS-02 (15 janv. 2024), SOUS-03 (15 sept. 2026), SOUS-04 (29 sept. 2026), SOUS-06 (20 mars 2023), sections citées ci-dessus."
+      ],
+      "sous_agents": [
+        {
+          "agent_id": "a740b0ac4d0abe653",
+          "type": "analyste-documents",
+          "debut": 54.6,
+          "fin": 116.5,
+          "outils": [
+            "mcp__etudes__lister_documents",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document",
+            "mcp__etudes__lire_document"
+          ],
+          "dernier_message": "{\"resultats\": [{\"affirmation\": \"Le nombre de sinistres inondation par an passe de 298 en 2022 à 446 en 2025, et atteint 402 de janvier à septembre 2026 (provisoire).\", \"extrait\": \"| 2022 | 4 120 | 298 | 7,2 % | 214 | 718 000 | 260 | 82 % |  | 2025 | 5 350 | 446 | 8,3 % | 392 | 879 000 | 338 | 116 % |  | 2026, janvier à septembre | 5 620 | 402 | 7,2 % sur neuf mois | 371 | 923 000 | 266 | 139 %, provisoire |\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Le rapport sinistres/primes de l'option inondation est de 82 % (2022), 62 % (2023), 97 % (2024), 116 % (2025) et 139 % (2026, provisoire, janvier à septembre).\", \"extrait\": \"Colonne « Sinistres / primes » du tableau d'évolution annuelle ; 2026 : « 139 %, provisoire ».\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Charge sinistres inondation (réserves comprises) : 214 M FCFA en 2022, 176 M en 2023, 301 M en 2024, 392 M en 2025, 371 M de janvier à septembre 2026. Primes de l'option : 260, 283, 310, 338 et 266 M FCFA sur les mêmes périodes.\", \"extrait\": \"Colonnes « Charge (M FCFA) » et « Primes de l'option (M FCFA) » du tableau d'évolution annuelle.\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Fréquence des sinistres inondation : 7,2 % (2022), 5,6 % (2023), 7,7 % (2024), 8,3 % (2025), 7,2 % sur neuf mois en 2026. Contrats avec l'option : 4 120 (2022), 4 480 (2023), 4 910 (2024), 5 350 (2025), 5 620 (2026, neuf mois).\", \"extrait\": \"Colonnes « Contrats avec l'option » et « Fréquence ».\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"À fin septembre 2026, le nombre de sinistres atteint déjà 90 % de celui de toute l'année 2025.\", \"extrait\": \"« À fin septembre 2026, le nombre de sinistres atteint déjà 90 % de celui de toute l'année 2025. »\", \"document\": \"SOUS-01\", \"section\": \"2. Évolution annuelle\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"En 2025, la zone C (exposition forte) porte 23 % des contrats (1 210 sur 5 350) mais 268 sinistres (fréquence 22,1 %) et 66 % de la charge (260 M FCFA). La zone B a 2 140 contrats, 139 sinistres, 6,5 %, 28 % de la charge (108 M). La zone A a 2 000 contrats, 39 sinistres, 2,0 %, 6 % de la charge (24 M).\", \"extrait\": \"« La zone C porte 23 % des contrats et 66 % de la charge. » Tableau : A 2 000 / 39 / 2,0 % / 24 / 6 % ; B 2 140 / 139 / 6,5 % / 108 / 28 % ; C 1 210 / 268 / 22,1 % / 260 / 66 %.\", \"document\": \"SOUS-01\", \"section\": \"3. Par zone du zonage de 2019, année 2025\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Par commune en 2025 : Cotonou 3 280 contrats, 301 sinistres, 268 M FCFA de charge ; Abomey-Calavi 1 520 contrats, 118 sinistres, 99 M ; Sèmè-Podji 550 contrats, 27 sinistres, 25 M.\", \"extrait\": \"Tableau « Par commune, année 2025 ».\", \"document\": \"SOUS-01\", \"section\": \"4. Par commune, année 2025\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"À Abomey-Calavi, 620 contrats (41 % des contrats de la commune) sont classés en zone B par défaut car absents du zonage de 2019 (lotissements récents). Ces 620 contrats ont eu 71 sinistres en 2025 (fréquence 11,5 %), contre 4,5 % pour les autres contrats de zone B. Le nombre de contrats à Abomey-Calavi est passé de 870 en 2022 à 1 520 en 2025.\", \"extrait\": \"« Le zonage de 2019 ne couvre pas les lotissements récents de la commune : 620 contrats y sont classés en zone B par défaut, soit 41 % des contrats de la commune. Ces 620 contrats ont connu 71 sinistres en 2025, une fréquence de 11,5 %, contre 4,5 % pour les autres contrats de la zone B. »\", \"document\": \"SOUS-01\", \"section\": \"4. Par commune, année 2025\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"En 2025, 63 % des sinistres sont survenus d'avril à juillet. Le mois le plus chargé de la période citée est juin 2024, avec 141 sinistres à Cotonou.\", \"extrait\": \"« En 2025, 63 % des sinistres sont survenus d'avril à juillet. Le mois le plus chargé de la période est juin 2024, avec 141 sinistres à Cotonou. »\", \"document\": \"SOUS-01\", \"section\": \"5. Répartition dans l'année\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Les sinistres sont comptés à la date de survenance ; les sinistres classés sans suite (garantie refusée, montant sous la franchise) ne sont pas comptés ; les chiffres 2026 sont provisoires (sinistres de septembre pouvant être déclarés plus tard).\", \"extrait\": \"« Les sinistres sont comptés à la date de survenance. » ; « Les sinistres classés sans suite (garantie refusée, montant sous la franchise) ne sont pas comptés. » ; « Les chiffres de 2026 sont provisoires. »\", \"document\": \"SOUS-01\", \"section\": \"1. Périmètre et 6. Limites des données\", \"date_document\": \"2026-10-06\"}, {\"affirmation\": \"Le zonage de 2019 classe les quartiers en zones A, B et C d'après la sinistralité de 2014 à 2018 et la carte des bas-fonds ; un quartier absent du zonage est classé en zone B par défaut ; le zonage est revu tous les trois ans.\", \"extrait\": \"« Le zonage de 2019 classe les quartiers de Cotonou, d'Abomey-Calavi et de Sèmè-Podji en trois zones, A, B et C, d'après la sinistralité de 2014 à 2018 et la carte des bas-fonds. Un quartier absent du zonage est classé en zone B par défaut. Le zonage est revu tous les trois ans. »\", \"document\": \"SOUS-02\", \"section\": \"2. Le zonage\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Surprime de l'option selon la zone : zone A tarif de base ; zone B +15 % par rapport au tarif de base ; zone C +40 % par rapport au tarif de base. Le montant du tarif de base en FCFA n'est pas donné dans l'extrait.\", \"extrait\": \"« zone A : tarif de base ; zone B : 15 % de plus que le tarif de base ; zone C : 40 % de plus que le tarif de base. »\", \"document\": \"SOUS-02\", \"section\": \"3. Le tarif\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Conditions d'acceptation zone C : visite préalable obligatoire ; refus pour un logement en rez-de-chaussée sans surélévation d'au moins 50 cm ; capital assuré plafonné à 25 millions de FCFA par contrat. Zones A et B : acceptation sur déclaration de l'assuré.\", \"extrait\": \"« Zone C : visite préalable obligatoire ; refus pour un logement en rez-de-chaussée sans surélévation d'au moins 50 centimètres ; capital assuré plafonné à 25 millions de FCFA par contrat. Zones A et B : acceptation sur déclaration de l'assuré. »\", \"document\": \"SOUS-02\", \"section\": \"4. Les conditions d'acceptation\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Franchise de l'option inondation : 10 % du montant du sinistre, minimum 50 000 FCFA, dans toutes les zones.\", \"extrait\": \"« 10 % du montant du sinistre, avec un minimum de 50 000 FCFA, dans toutes les zones. »\", \"document\": \"SOUS-02\", \"section\": \"5. La franchise\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Délégation : les agents commerciaux acceptent seuls les affaires des zones A et B ; une affaire de zone C exige l'accord de la souscription.\", \"extrait\": \"« Les agents commerciaux acceptent seuls les affaires des zones A et B. Une affaire de zone C exige l'accord de la souscription. »\", \"document\": \"SOUS-02\", \"section\": \"6. La délégation\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Périmètre de l'option inondation : dommages au logement et à son contenu par inondation, débordement de cours d'eau ou de lagune, remontée de nappe ou ruissellement.\", \"extrait\": \"« Elle couvre les dommages causés au logement et à son contenu par une inondation, un débordement de cours d'eau ou de lagune, une remontée de nappe ou un ruissellement. »\", \"document\": \"SOUS-02\", \"section\": \"1. L'option inondation\", \"date_document\": \"2024-01-15\"}, {\"affirmation\": \"Le rapport sinistres/primes de l'option inondation, sur le portefeuille cédé au réassureur, est passé de 62 % en 2023 à 116 % en 2025 ; le réassureur estime que le tarif et le zonage actuels ne reflètent plus l'exposition.\", \"extrait\": \"« Le rapport sinistres/primes de l'option inondation, sur le portefeuille cédé, est passé de 62 % en 2023 à 116 % en 2025. Le réassureur estime que le tarif et le zonage actuels ne reflètent plus l'exposition. »\", \"document\": \"SOUS-03\", \"section\": \"1. Le constat du réassureur\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Le réassureur demande, pour le renouvellement du traité habitation au 1er janvier 2027 : (1) un zonage mis à jour, appliqué aux affaires nouvelles dès 2027 ; (2) un cumul des capitaux assurés en zone C plafonné à 30 milliards de FCFA, le cumul déclaré au 30 juin 2026 étant de 23,1 milliards ; (3) à défaut des deux premières mesures, la part des sinistres inondation conservée par Kanvô passe de 20 % à 35 %.\", \"extrait\": \"« 1. Un zonage mis à jour, appliqué aux affaires nouvelles dès la campagne 2027. 2. Un cumul des capitaux assurés en zone C plafonné à 30 milliards de FCFA. Le cumul déclaré par Kanvô Assurances au 30 juin 2026 est de 23,1 milliards de FCFA. 3. À défaut des deux premières mesures, la part des sinistres inondation conservée par Kanvô Assurances passe de 20 % à 35 %. »\", \"document\": \"SOUS-03\", \"section\": \"2. Les demandes pour le renouvellement\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Le réassureur attend la réponse de Kanvô Assurances avant le 30 novembre 2026.\", \"extrait\": \"« Le réassureur attend la réponse de Kanvô Assurances avant le 30 novembre 2026. »\", \"document\": \"SOUS-03\", \"section\": \"3. Le calendrier\", \"date_document\": \"2026-09-15\"}, {\"affirmation\": \"Comité de souscription du 29 septembre 2026 : constat d'une dégradation de la sinistralité depuis 2024 ; réponse au réassureur attendue avant le 30 novembre 2026 ; forte demande du réseau commercial dans les nouveaux lotissements d'Abomey-Calavi absents du zonage ; zonage de 2019 jamais revu alors que le guide prévoit une révision tous les trois ans ; travaux d'assainissement pluvial annoncés à Cotonou dont le comité ne connaît ni les quartiers ni la date de fin.\", \"extrait\": \"« 1. La sinistralité de l'option inondation se dégrade depuis 2024 (SOUS-01). ... 3. Le réseau commercial signale une forte demande dans les nouveaux lotissements d'Abomey-Calavi, absents du zonage. 4. Le zonage de 2019 n'a jamais été revu, alors que le guide de souscription prévoit une révision tous les trois ans (SOUS-02). 5. Les autorités ont annoncé des travaux d'assainissement pluvial à Cotonou. Le comité ne sait ni quels quartiers ils concernent, ni quand ils doivent s'achever. »\", \"document\": \"SOUS-04\", \"section\": \"2. Points examinés\", \"date_document\": \"2026-09-29\"}, {\"affirmation\": \"Le comité de souscription a commandé une étude, sous la responsabilité de Mme Sossa, intitulée « Faut-il revoir l'option inondation de l'assurance habitation pour la campagne 2027 ? », à remettre le 15 novembre 2026. Elle doit présenter l'évolution et les causes probables de la sinistralité, les zones à reclasser, les sources publiques sur l'exposition (événements, assainissement, projections), des options chiffrées pour le réassureur, et les incertitudes.\", \"extrait\": \"« Mme Sossa commande une étude : « Faut-il revoir l'option inondation de l'assurance habitation pour la campagne 2027 ? » ... Échéance : 15 novembre 2026. »\", \"document\": \"SOUS-04\", \"section\": \"3. Décision\", \"date_document\": \"2026-09-29\"}, {\"affirmation\": \"Étude 2023 (2019 à 2022) : sinistres inondation déclarés 187 (2019), 224 (2020), 265 (2021), 312 (2022). Conclusion : la hausse suit celle du portefeuille ; l'étude ne recommande pas de réviser le zonage avant 2025.\", \"extrait\": \"Tableau « Sinistres inondation déclarés » : 2019 : 187 ; 2020 : 224 ; 2021 : 265 ; 2022 : 312. « L'étude ne recommande pas de réviser le zonage avant 2025. »\", \"document\": \"SOUS-06\", \"section\": \"2. Sinistres inondation déclarés et 3. Conclusion\", \"date_document\": \"2023-03-20\"}], \"limites\": [\"Les chiffres 2026 (janvier à septembre) sont provisoires : des sinistres de septembre peuvent encore être déclarés (SOUS-01, section 1 et 6).\", \"Les sinistres sont comptés à la date de survenance dans SOUS-01, et à la date de déclaration dans SOUS-06 : les chiffres ne se comparent pas directement. Par exemple 2022 : 298 sinistres survenus (SOUS-01) contre 312 déclarés (SOUS-06).\", \"Les sinistres classés sans suite (garantie refusée, montant sous la franchise) ne sont pas comptés dans SOUS-01, ce qui peut sous-estimer la fréquence réelle.\", \"Le zonage de 2019 repose sur la sinistralité 2014 à 2018 (SOUS-02), donc sur une période antérieure aux données de SOUS-01 et SOUS-06.\", \"Les montants de primes sont des totaux annuels de l'option ; aucun tarif de base en FCFA ni prime moyenne par contrat n'est donné dans les documents. Le ratio de 2025 (338 M FCFA de primes pour 5 350 contrats) implique une prime moyenne d'environ 63 200 FCFA par contrat, calcul non publié par les documents.\", \"Le cumul de capitaux en zone C est donné au 30 juin 2026 seulement ; il ne figure pas dans SOUS-01 (pas de capitaux par zone).\", \"Les zones 2026 ne sont pas ventilées ; seule l'année 2025 est ventilée par zone et par commune.\", \"SOUS-04 indique que le zonage de 2019 « n'a jamais été revu », alors que SOUS-02 prévoit une révision tous les trois ans ; SOUS-06 (2023) indiquait ne pas recommander de révision avant 2025. Ces points sont cohérents entre eux mais montrent que la révision est en retard par rapport au guide.\", \"Le document SOUS-05 (assurance moto) ne concerne pas l'habitation et n'a pas été lu.\"], \"non_trouve\": [\"Aucune étude de causes probables de la hausse de sinistralité (pluviométrie, urbanisation, bas-fonds) dans les documents lus.\", \"Aucune donnée sur les quartiers de Cotonou concernés par les travaux d'assainissement pluvial, ni sur leur date d'achèvement (SOUS-04 indique que le comité ne le sait pas).\", \"Aucune source publique sur les événements récents, les projections climatiques ou l'exposition de Cotonou, Abomey-Calavi et Sèmè-Podji : ces éléments relèvent d'une recherche externe, exclue du périmètre.\", \"Aucune réponse écrite de Kanvô Assurances au réassureur ni décision du comité sur le zonage ou le tarif (le comité du 29 septembre 2026 se limite à commander l'étude).\", \"Aucun montant de tarif de base en FCFA, donc pas de surprime en FCFA par zone ni de prime par zone.\", \"Aucune ventilation 2022 à 2024 par zone ou par commune, ni d'historique des primes par zone.\", \"Aucune donnée sur les sinistres par quartier, sauf l'indication générale du zonage ; pas de liste des quartiers à reclasser.\", \"Aucun détail de la dérive des 620 contrats d'Abomey-Calavi en zone B par défaut au-delà de 2025.\", \"Aucune donnée sur la part de la charge refusée ou sans suite, ni sur les coûts de franchise effectivement appliqués.\", \"Aucune donnée sur le résultat économique net de l'option (charges de gestion et frais non fournis) ; seul le ratio sinistres/primes est disponible.\", \"Aucune précision sur la date exacte du zonage de 2019 ni sur la méthode de revue prévue.\"]}",
+          "duree": 61.9
+        }
+      ],
+      "simultanes_max": 1,
+      "documents_lus": [
+        "SOUS-01",
+        "SOUS-02",
+        "SOUS-03",
+        "SOUS-04",
+        "SOUS-06"
+      ],
+      "recherches_web": 0,
+      "hors_role": [],
+      "refus": [
+        {
+          "par": "coordinateur",
+          "outil": "Agent",
+          "entree": "{\"description\": \"Risque inondation public Bénin\", \"prompt\": \"Recherche sur le web, en français ou en anglais, pour éclairer une décision d'assurance : faut-il revoir l'option inondation de l'assurance habitation au Bénin (Cotonou, Abomey-Calavi, Sèmè-Podji) pour la campagne 2027 ? Date du jour : 27 …"
+        }
+      ],
+      "aspects": {
+        "sinistralite": true,
+        "zones": true,
+        "reassureur": true,
+        "sources_publiques": false,
+        "incertitudes": true
+      },
+      "transmis_au_synthetiseur": {
+        "appels": []
+      },
+      "evenements_taches": [
+        {
+          "subtype": "task_started",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_progress",
+          "task_id": "a740b0ac4d0abe653",
+          "description": "Documents internes sur inondation"
+        },
+        {
+          "subtype": "task_updated",
+          "task_id": "a740b0ac4d0abe653"
+        },
+        {
+          "subtype": "task_notification",
+          "task_id": "a740b0ac4d0abe653",
+          "status": "completed"
+        }
+      ],
+      "tours": 3,
+      "cout_dollars": 0.008716080000000001,
+      "model_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 10,
+          "outputTokens": 13087,
+          "cacheReadInputTokens": 13383,
+          "cacheCreationInputTokens": 16302,
+          "webSearchRequests": 0,
+          "costUSD": 0.008716080000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 2804,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "duree_s": 101.049,
+      "erreur": null
+    }
+  ]
+}

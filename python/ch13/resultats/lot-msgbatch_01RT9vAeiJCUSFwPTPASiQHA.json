@@ -1,0 +1,3585 @@
+{
+ "etape": "lot",
+ "version": "v3",
+ "modele": "claude-sonnet-5-5",
+ "lot": "msgbatch_01RT9vAeiJCUSFwPTPASiQHA",
+ "cree": "2026-10-27T18:46:27.105632+00:00",
+ "expire": "2026-10-28T18:46:27.105632+00:00",
+ "requetes": 70,
+ "cache": "automatique",
+ "termine": "2026-10-27T19:37:42.029255+00:00",
+ "duree_minutes": 51.2,
+ "depense_dollars": 0.365145,
+ "resultats": [
+  {
+   "document": "arch-0024",
+   "difficulte": "plaque_partielle",
+   "mois": "2025-05",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-05-16",
+    "heure": "16:20",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "AZ 9027 CZ",
+     "numero_contrat": "KA-AUTO-2656"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.96,
+     "contrat_a": 0.96,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01Ek65Pj84igvU5PEqFo4QQw",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006111,
+   "lecture_cache": 0,
+   "ecriture_cache": 1971,
+   "entree": 4,
+   "sortie": 433,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.96,
+    "contrat_a": 0.96,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0028",
+   "difficulte": "plaque_partielle",
+   "mois": "2026-04",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-04-14",
+    "heure": "12:00",
+    "lieu": "voie express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "ZA 8313 TY",
+     "numero_contrat": "KA-AUTO-7440"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.96,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01FmDiJANP8hbC5XPrtY3jCy",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005669,
+   "lecture_cache": 0,
+   "ecriture_cache": 1895,
+   "entree": 4,
+   "sortie": 375,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.96,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0048",
+   "difficulte": "heure_double",
+   "mois": "2025-08",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-08-09",
+    "heure": "15:00",
+    "lieu": "carrefour de l'Étoile rouge, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "CU 1870 KH",
+     "numero_contrat": "KA-AUTO-4431"
+    },
+    "vehicule_b": {
+     "plaque": "CU-8204-AE",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.95,
+     "plaque_a": 0.95,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01WNTdP2yFNjmSvaAxAYzRh5",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.0025394000000000003,
+   "lecture_cache": 2008,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 487,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.95,
+    "plaque_a": 0.95,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0049",
+   "difficulte": "propre",
+   "mois": "2025-03",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-03-02",
+    "heure": "10:20",
+    "lieu": "voie express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "BV-8314-ZR",
+     "numero_contrat": "KA-AUTO-2625"
+    },
+    "vehicule_b": {
+     "plaque": "kn4815ba",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01GekxVt7zgKeU5DAnbPk6XB",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.0023186,
+   "lecture_cache": 1892,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 444,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0081",
+   "difficulte": "assureur_abrege",
+   "mois": "2024-10",
+   "statut": "canceled"
+  },
+  {
+   "document": "arch-0084",
+   "difficulte": "heure_double",
+   "mois": "2026-01",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-01-15",
+    "heure": "09:40",
+    "lieu": "boulevard de la Marina, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "XE 2163 FE",
+     "numero_contrat": "KA-AUTO-6586"
+    },
+    "vehicule_b": {
+     "plaque": "FU-6885-LH",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.9,
+     "blesses": 0.95,
+     "plaque_a": 0.97,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01DJaxffcH7zkJ69g7ZWDd5C",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00642,
+   "lecture_cache": 0,
+   "ecriture_cache": 2003,
+   "entree": 4,
+   "sortie": 482,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.9,
+    "blesses": 0.95,
+    "plaque_a": 0.97,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0089",
+   "difficulte": "assureur_abrege",
+   "mois": "2025-07",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-07-04",
+    "heure": "17:20",
+    "lieu": "Pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "TF-4103-AE",
+     "numero_contrat": "KA-AUTO-7931"
+    },
+    "vehicule_b": {
+     "plaque": "HB4366HB",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.9,
+     "assureur_b": 0.8
+    }
+   },
+   "tool_use_id": "toolu_01AHEsSu7rCLmP8Yg9riNst8",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00576,
+   "lecture_cache": 0,
+   "ecriture_cache": 1908,
+   "entree": 4,
+   "sortie": 388,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.9,
+    "assureur_b": 0.8
+   }
+  },
+  {
+   "document": "arch-0099",
+   "difficulte": "ocr",
+   "mois": "2026-03",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-03-06",
+    "heure": "19:30",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "RY 5933-XU",
+     "numero_contrat": "KA-AUTO-7409"
+    },
+    "vehicule_b": {
+     "plaque": "UZ II50 CR",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.96,
+     "plaque_a": 0.9,
+     "contrat_a": 0.97,
+     "plaque_b": 0.85,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_01EYUYAwfAasfcThNapj4XXU",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005971,
+   "lecture_cache": 0,
+   "ecriture_cache": 1971,
+   "entree": 4,
+   "sortie": 405,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.96,
+    "plaque_a": 0.9,
+    "contrat_a": 0.97,
+    "plaque_b": 0.85,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-0103",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2026-08",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-08-01",
+    "heure": "07:50",
+    "lieu": "voie express, sortie Akpakpa",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "SF 5035-RA",
+     "numero_contrat": "KA-AUTO-6620"
+    },
+    "vehicule_b": {
+     "plaque": "HH 2987 UP",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.8,
+     "plaque_a": 0.9,
+     "contrat_a": 0.95,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_0131RTcTwBijowSn9ynjnjtf",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006257,
+   "lecture_cache": 0,
+   "ecriture_cache": 1929,
+   "entree": 4,
+   "sortie": 479,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.8,
+    "plaque_a": 0.9,
+    "contrat_a": 0.95,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0104",
+   "difficulte": "assureur_abrege",
+   "mois": "2024-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-10-20",
+    "heure": "18:40",
+    "lieu": "Avenue Steinmetz, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "CW 2540 GT",
+     "numero_contrat": "KA-AUTO-4492"
+    },
+    "vehicule_b": {
+     "plaque": "XF-8751-WL",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.96,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.93,
+     "assureur_b": 0.9
+    }
+   },
+   "tool_use_id": "toolu_01Ryk3yJtXwqmE163wotHXeQ",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00243465,
+   "lecture_cache": 1913,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 467,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.96,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.93,
+    "assureur_b": 0.9
+   }
+  },
+  {
+   "document": "arch-0166",
+   "difficulte": "manquant",
+   "mois": "2025-05",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-05-28",
+    "heure": null,
+    "lieu": "route de Porto-Novo, à hauteur de Sèmè-Podji",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "BG6071WH",
+     "numero_contrat": "KA-AUTO-5622"
+    },
+    "vehicule_b": {
+     "plaque": "RY 4371-NH",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.8,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_011g6Vb4PvFscrfJm8zUuh5r",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005814,
+   "lecture_cache": 0,
+   "ecriture_cache": 1905,
+   "entree": 4,
+   "sortie": 400,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.8,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0178",
+   "difficulte": "manquant",
+   "mois": "2026-09",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-09-19",
+    "heure": "12:30",
+    "lieu": "avenue Steinmetz, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "ER6404DJ",
+     "numero_contrat": "KA-AUTO-2820"
+    },
+    "vehicule_b": {
+     "plaque": "TG 1994-ZH",
+     "assureur": null
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.96,
+     "plaque_a": 0.85,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_0181DWaNBZmJtYTLaoXdTxTr",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005846,
+   "lecture_cache": 0,
+   "ecriture_cache": 1896,
+   "entree": 4,
+   "sortie": 410,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.96,
+    "plaque_a": 0.85,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-0206",
+   "difficulte": "assureur_abrege",
+   "mois": "2026-05",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-05-14",
+    "heure": "17:10",
+    "lieu": "Carrefour Vêdoko, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "CK4561XU",
+     "numero_contrat": "KA-AUTO-8677"
+    },
+    "vehicule_b": {
+     "plaque": "LG 9078-LZ",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.9,
+     "contrat_a": 0.95,
+     "plaque_b": 0.9,
+     "assureur_b": 0.88
+    }
+   },
+   "tool_use_id": "toolu_01BU74APnAacZcQsgo64sQeF",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00624,
+   "lecture_cache": 0,
+   "ecriture_cache": 1908,
+   "entree": 4,
+   "sortie": 484,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.9,
+    "contrat_a": 0.95,
+    "plaque_b": 0.9,
+    "assureur_b": 0.88
+   }
+  },
+  {
+   "document": "arch-0215",
+   "difficulte": "plaque_partielle",
+   "mois": "2025-08",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-08-18",
+    "heure": "16:30",
+    "lieu": "Route de Porto-Novo, à hauteur de Sèmè-Podji",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "SY 8880-AH",
+     "numero_contrat": "KA-AUTO-8395"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01RnyFK7eXZXxZeLJVT39vBe",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005807,
+   "lecture_cache": 0,
+   "ecriture_cache": 1939,
+   "entree": 4,
+   "sortie": 385,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0216",
+   "difficulte": "manquant",
+   "mois": "2025-04",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-04-19",
+    "heure": null,
+    "lieu": "avenue Steinmetz, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "CE 6254 FA",
+     "numero_contrat": "KA-AUTO-3413"
+    },
+    "vehicule_b": {
+     "plaque": "YW-4610-BW",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.97,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_017e1wpJjxsbFMhYW21NPEqx",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005844,
+   "lecture_cache": 0,
+   "ecriture_cache": 1975,
+   "entree": 4,
+   "sortie": 378,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.97,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0238",
+   "difficulte": "ocr",
+   "mois": "2026-04",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-04-08",
+    "heure": "19:40",
+    "lieu": "route de Porto-Novo, à hauteur de Sèmè-Podji",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "XM 1494 PA",
+     "numero_contrat": "KA-AUTO-7588"
+    },
+    "vehicule_b": {
+     "plaque": "RX 9I25 BT",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01Exb5C9Bt4dhopTeKEp1DsT",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006133,
+   "lecture_cache": 0,
+   "ecriture_cache": 1907,
+   "entree": 4,
+   "sortie": 463,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0279",
+   "difficulte": "plaque_partielle",
+   "mois": "2024-12",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-12-14",
+    "heure": "12:40",
+    "lieu": "carrefour Vêdoko, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "XD 9011-GP",
+     "numero_contrat": "KA-AUTO-1540"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_014yrHLkFgjiqhyCz5rRisd5",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.0058,
+   "lecture_cache": 0,
+   "ecriture_cache": 1973,
+   "entree": 4,
+   "sortie": 370,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-0298",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2025-04",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-04-28",
+    "heure": "17:20",
+    "lieu": "avenue Steinmetz, Cotonou",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "WP2211LL",
+     "numero_contrat": "KA-AUTO-3470"
+    },
+    "vehicule_b": {
+     "plaque": "YC 9654-WS",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.8,
+     "plaque_a": 0.8,
+     "contrat_a": 0.96,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_015SNEi17DgUtCauCgkuJRhh",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00266025,
+   "lecture_cache": 1925,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 512,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.8,
+    "plaque_a": 0.8,
+    "contrat_a": 0.96,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0311",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2025-09",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-09-21",
+    "heure": "21:10",
+    "lieu": "Boulevard de la Marina, Cotonou",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "PT 8051-VC",
+     "numero_contrat": "KA-AUTO-1800"
+    },
+    "vehicule_b": {
+     "plaque": "WM 2142 KN",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.96,
+     "blesses": 0.8,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_0128SZG6VGxiUJuVWipgimwr",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006093,
+   "lecture_cache": 0,
+   "ecriture_cache": 1942,
+   "entree": 4,
+   "sortie": 441,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.96,
+    "blesses": 0.8,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0317",
+   "difficulte": "manquant",
+   "mois": "2026-09",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-09-13",
+    "heure": null,
+    "lieu": "CARREFOUR DE L'ÉTOILE ROUGE, COTONOU",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "KW-4848-WJ",
+     "numero_contrat": "KA-AUTO-4741"
+    },
+    "vehicule_b": {
+     "plaque": "XT5427YA",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.93,
+     "blesses": 0.93,
+     "plaque_a": 0.9,
+     "contrat_a": 0.95,
+     "plaque_b": 0.88,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_01WoHUpF2mFM96tvCDL3HWZ9",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005889,
+   "lecture_cache": 0,
+   "ecriture_cache": 1930,
+   "entree": 4,
+   "sortie": 405,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.93,
+    "blesses": 0.93,
+    "plaque_a": 0.9,
+    "contrat_a": 0.95,
+    "plaque_b": 0.88,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-0323",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2025-11",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-11-26",
+    "heure": "07:30",
+    "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "GB 5207-WT",
+     "numero_contrat": "KA-AUTO-5392"
+    },
+    "vehicule_b": {
+     "plaque": "FP 8007 ES",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.85,
+     "heure": 0.97,
+     "blesses": 0.8,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01EsYhUwURb8MX2TFemtotiB",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006952,
+   "lecture_cache": 0,
+   "ecriture_cache": 1954,
+   "entree": 4,
+   "sortie": 608,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.85,
+    "heure": 0.97,
+    "blesses": 0.8,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0333",
+   "difficulte": "ocr",
+   "mois": "2026-03",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-03-01",
+    "heure": "15:30",
+    "lieu": "rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "VF S263 LA",
+     "numero_contrat": "KA-AUTO-1832"
+    },
+    "vehicule_b": {
+     "plaque": "KF8142BU",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.85,
+     "contrat_a": 0.96,
+     "plaque_b": 0.8,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01XQXZhMGGdQGExqFZyxgxpQ",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005863,
+   "lecture_cache": 0,
+   "ecriture_cache": 1967,
+   "entree": 4,
+   "sortie": 385,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.85,
+    "contrat_a": 0.96,
+    "plaque_b": 0.8,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0374",
+   "difficulte": "heure_double",
+   "mois": "2024-11",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-11-11",
+    "heure": "13:10",
+    "lieu": "Boulevard de la Marina, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "RM3899SJ",
+     "numero_contrat": "KA-AUTO-5508"
+    },
+    "vehicule_b": {
+     "plaque": "VF 6789-AT",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.93,
+     "plaque_a": 0.9,
+     "contrat_a": 0.96,
+     "plaque_b": 0.9,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_01JLYGqJb27H1MKncR8j4gKM",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00313655,
+   "lecture_cache": 1951,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 607,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.93,
+    "plaque_a": 0.9,
+    "contrat_a": 0.96,
+    "plaque_b": 0.9,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-0444",
+   "difficulte": "assureur_abrege",
+   "mois": "2025-02",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-02-09",
+    "heure": "12:00",
+    "lieu": "boulevard de la Marina, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "SC 9087 RB",
+     "numero_contrat": "KA-AUTO-9854"
+    },
+    "vehicule_b": {
+     "plaque": "CN-4574-JP",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.96,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.85
+    }
+   },
+   "tool_use_id": "toolu_01FF14nbG7RT1gizeEFS1doL",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00607,
+   "lecture_cache": 0,
+   "ecriture_cache": 1973,
+   "entree": 4,
+   "sortie": 424,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.96,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.85
+   }
+  },
+  {
+   "document": "arch-0460",
+   "difficulte": "propre",
+   "mois": "2025-09",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-09-13",
+    "heure": "17:30",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "CB 6358 LL",
+     "numero_contrat": "KA-AUTO-8457"
+    },
+    "vehicule_b": {
+     "plaque": "KJ-2113-CJ",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.88,
+     "heure": 0.95,
+     "blesses": 0.93,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.93,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_01V3LCHq6nwhz8uQheeSKNQa",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006488,
+   "lecture_cache": 0,
+   "ecriture_cache": 1897,
+   "entree": 4,
+   "sortie": 538,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.88,
+    "heure": 0.95,
+    "blesses": 0.93,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.93,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-0463",
+   "difficulte": "manquant",
+   "mois": "2026-06",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-06-25",
+    "heure": null,
+    "lieu": "voie express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "EM 3866-WT",
+     "numero_contrat": "KA-AUTO-6013"
+    },
+    "vehicule_b": {
+     "plaque": "PT 4791 CW",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.93,
+     "plaque_a": 0.9,
+     "contrat_a": 0.95,
+     "plaque_b": 0.93,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_01PZ2Q356KAFST5hmLfmDoLo",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006129,
+   "lecture_cache": 0,
+   "ecriture_cache": 1895,
+   "entree": 4,
+   "sortie": 467,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.93,
+    "plaque_a": 0.9,
+    "contrat_a": 0.95,
+    "plaque_b": 0.93,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-0470",
+   "difficulte": "plaque_partielle",
+   "mois": "2026-06",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-06-24",
+    "heure": "11:30",
+    "lieu": "Rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "TY4574KE",
+     "numero_contrat": "KA-AUTO-9790"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.93,
+     "plaque_a": 0.9,
+     "contrat_a": 0.95,
+     "plaque_b": 0.93,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_013F2ojsFEX6tmtZrE1NYXpb",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006257,
+   "lecture_cache": 0,
+   "ecriture_cache": 1909,
+   "entree": 4,
+   "sortie": 487,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.93,
+    "plaque_a": 0.9,
+    "contrat_a": 0.95,
+    "plaque_b": 0.93,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0488",
+   "difficulte": "plaque_partielle",
+   "mois": "2026-06",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-06-14",
+    "heure": "12:40",
+    "lieu": "Carrefour Vêdoko, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "YH 2079 VG",
+     "numero_contrat": "KA-AUTO-9465"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.7,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.95,
+     "contrat_a": 0.96,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01MNT3h5ne5gTzuKMMN7UMHk",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006503,
+   "lecture_cache": 0,
+   "ecriture_cache": 1917,
+   "entree": 4,
+   "sortie": 533,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.7,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.95,
+    "contrat_a": 0.96,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0524",
+   "difficulte": "propre",
+   "mois": "2025-01",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-01-22",
+    "heure": "15:10",
+    "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "NL 2307 MN",
+     "numero_contrat": "KA-AUTO-3797"
+    },
+    "vehicule_b": {
+     "plaque": "AP-5792-NN",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.92,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01XDbCUoJzK8g9E7CNGsJAPD",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005975,
+   "lecture_cache": 0,
+   "ecriture_cache": 1933,
+   "entree": 4,
+   "sortie": 421,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.92,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0528",
+   "difficulte": "manquant",
+   "mois": "2024-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-10-21",
+    "heure": "17:50",
+    "lieu": "avenue Steinmetz, Cotonou",
+    "blesses": "oui",
+    "vehicule_a": {
+     "plaque": "BB 9306 NM",
+     "numero_contrat": "KA-AUTO-2315"
+    },
+    "vehicule_b": {
+     "plaque": "AH-5235-AC",
+     "assureur": null
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.95,
+     "contrat_a": 0.96,
+     "plaque_b": 0.93,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_01HmZXx18DJY3Ux6YwGevTtn",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006037,
+   "lecture_cache": 0,
+   "ecriture_cache": 1969,
+   "entree": 4,
+   "sortie": 419,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.95,
+    "contrat_a": 0.96,
+    "plaque_b": 0.93,
+    "assureur_b": 0.95
+   }
+  },
+  {
+   "document": "arch-0537",
+   "difficulte": "plaque_partielle",
+   "mois": "2025-08",
+   "statut": "canceled"
+  },
+  {
+   "document": "arch-0553",
+   "difficulte": "ocr",
+   "mois": "2025-03",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-03-18",
+    "heure": "13:40",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "DE 9999 8P",
+     "numero_contrat": "KA-AUTO-3528"
+    },
+    "vehicule_b": {
+     "plaque": "LC6288VX",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.8,
+     "contrat_a": 0.95,
+     "plaque_b": 0.8,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01BgHKQ2Lge6KsmrR6KyJVuE",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005904,
+   "lecture_cache": 0,
+   "ecriture_cache": 1890,
+   "entree": 4,
+   "sortie": 424,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.8,
+    "contrat_a": 0.95,
+    "plaque_b": 0.8,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0565",
+   "difficulte": "assureur_abrege",
+   "mois": "2026-07",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-07-14",
+    "heure": "09:10",
+    "lieu": "carrefour de l'Étoile rouge, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "PL-5522-DE",
+     "numero_contrat": "KA-AUTO-3167"
+    },
+    "vehicule_b": {
+     "plaque": "AB3129SB",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.6,
+     "heure": 0.95,
+     "blesses": 0.93,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.88,
+     "assureur_b": 0.88
+    }
+   },
+   "tool_use_id": "toolu_01MFixJmN5pp8Btze16k6Da9",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.007278,
+   "lecture_cache": 0,
+   "ecriture_cache": 1897,
+   "entree": 4,
+   "sortie": 696,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.6,
+    "heure": 0.95,
+    "blesses": 0.93,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.88,
+    "assureur_b": 0.88
+   }
+  },
+  {
+   "document": "arch-0636",
+   "difficulte": "heure_double",
+   "mois": "2026-06",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-06-25",
+    "heure": "17:30",
+    "lieu": "avenue Steinmetz, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "BA 9922 AU",
+     "numero_contrat": "KA-AUTO-4945"
+    },
+    "vehicule_b": {
+     "plaque": "GN-6312-XJ",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.93,
+     "plaque_a": 0.96,
+     "contrat_a": 0.97,
+     "plaque_b": 0.93,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01LKtYPoUbSTDCkyf9KDMLTQ",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006417,
+   "lecture_cache": 0,
+   "ecriture_cache": 2009,
+   "entree": 4,
+   "sortie": 479,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.93,
+    "plaque_a": 0.96,
+    "contrat_a": 0.97,
+    "plaque_b": 0.93,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0640",
+   "difficulte": "assureur_abrege",
+   "mois": "2025-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-10-06",
+    "heure": "14:40",
+    "lieu": "rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "VR 5434 SS",
+     "numero_contrat": "KA-AUTO-7819"
+    },
+    "vehicule_b": {
+     "plaque": "MC-2710-DE",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.85,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.95,
+     "contrat_a": 0.97,
+     "plaque_b": 0.93,
+     "assureur_b": 0.93
+    }
+   },
+   "tool_use_id": "toolu_01A3TujFr63HXLUFsnKkegJj",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006932,
+   "lecture_cache": 0,
+   "ecriture_cache": 1889,
+   "entree": 4,
+   "sortie": 630,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.85,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.95,
+    "contrat_a": 0.97,
+    "plaque_b": 0.93,
+    "assureur_b": 0.93
+   }
+  },
+  {
+   "document": "arch-0645",
+   "difficulte": "propre",
+   "mois": "2024-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-10-07",
+    "heure": "09:30",
+    "lieu": "rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "PP-5605-AU",
+     "numero_contrat": "KA-AUTO-9914"
+    },
+    "vehicule_b": {
+     "plaque": "KS7401FJ",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_01M5eDiQMJvtySGzhBqpPjr7",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006325,
+   "lecture_cache": 0,
+   "ecriture_cache": 1968,
+   "entree": 4,
+   "sortie": 477,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-0651",
+   "difficulte": "assureur_abrege",
+   "mois": "2025-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-10-08",
+    "heure": "16:00",
+    "lieu": "boulevard de la Marina, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "GV 5301-CG",
+     "numero_contrat": "KA-AUTO-2235"
+    },
+    "vehicule_b": {
+     "plaque": "UA 5287 FK",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.9,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.9
+    }
+   },
+   "tool_use_id": "toolu_0191aGSfxEELrvyJADxF8h3F",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006162,
+   "lecture_cache": 0,
+   "ecriture_cache": 1979,
+   "entree": 4,
+   "sortie": 440,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.9,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.9
+   }
+  },
+  {
+   "document": "arch-0678",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2026-04",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-04-18",
+    "heure": "16:50",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "CL6571AL",
+     "numero_contrat": "KA-AUTO-9981"
+    },
+    "vehicule_b": {
+     "plaque": "JP 3711-NM",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.98,
+     "heure": 0.97,
+     "blesses": 0.8,
+     "plaque_a": 0.75,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_015uef3fFBqWri5J1BJhyQDT",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006828,
+   "lecture_cache": 0,
+   "ecriture_cache": 1992,
+   "entree": 4,
+   "sortie": 568,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.98,
+    "heure": 0.97,
+    "blesses": 0.8,
+    "plaque_a": 0.75,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0681",
+   "difficulte": "propre",
+   "mois": "2025-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-10-12",
+    "heure": "09:20",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "NT-5654-RA",
+     "numero_contrat": "KA-AUTO-8089"
+    },
+    "vehicule_b": {
+     "plaque": "FV8080FS",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.97,
+     "plaque_b": 0.8,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_016BCUdKd4pSEL1NAhTYpNfb",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006187,
+   "lecture_cache": 0,
+   "ecriture_cache": 1969,
+   "entree": 4,
+   "sortie": 449,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.97,
+    "plaque_b": 0.8,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0685",
+   "difficulte": "assureur_abrege",
+   "mois": "2025-12",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-12-08",
+    "heure": "10:10",
+    "lieu": "rond-point de Godomey",
+    "blesses": "oui",
+    "vehicule_a": {
+     "plaque": "HR-9716-LS",
+     "numero_contrat": "KA-AUTO-1940"
+    },
+    "vehicule_b": {
+     "plaque": "RZ5290LZ",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.85,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.9,
+     "assureur_b": 0.88
+    }
+   },
+   "tool_use_id": "toolu_01QG3xRU79cbYLrubMQwZbm7",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00292325,
+   "lecture_cache": 1885,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 565,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.85,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.9,
+    "assureur_b": 0.88
+   }
+  },
+  {
+   "document": "arch-0696",
+   "difficulte": "assureur_abrege",
+   "mois": "2026-08",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-08-22",
+    "heure": "07:00",
+    "lieu": "rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "MS 5067 AA",
+     "numero_contrat": "KA-AUTO-7939"
+    },
+    "vehicule_b": {
+     "plaque": "KB-6074-RP",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.96,
+     "blesses": 0.95,
+     "plaque_a": 0.97,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.88
+    }
+   },
+   "tool_use_id": "toolu_01VCkh7jJndRTKQyDqrXkjQe",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006083,
+   "lecture_cache": 0,
+   "ecriture_cache": 1967,
+   "entree": 4,
+   "sortie": 429,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.96,
+    "blesses": 0.95,
+    "plaque_a": 0.97,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.88
+   }
+  },
+  {
+   "document": "arch-0708",
+   "difficulte": "manquant",
+   "mois": "2026-05",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-05-07",
+    "heure": null,
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "PZ 7092 UD",
+     "numero_contrat": "KA-AUTO-6604"
+    },
+    "vehicule_b": {
+     "plaque": "AD-5589-UH",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.96,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01NpetUfj943Dg2UToFyRBDW",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006032,
+   "lecture_cache": 0,
+   "ecriture_cache": 1969,
+   "entree": 4,
+   "sortie": 418,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.96,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0709",
+   "difficulte": "ocr",
+   "mois": "2025-03",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-03-10",
+    "heure": "19:10",
+    "lieu": "voie express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "TG 411B DJ",
+     "numero_contrat": "KA-AUTO-9084"
+    },
+    "vehicule_b": {
+     "plaque": "CL8692SF",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.95,
+     "blesses": 0.93,
+     "plaque_a": 0.85,
+     "contrat_a": 0.96,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_015EaYFzSpmNKCboiku5v8Nu",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005918,
+   "lecture_cache": 0,
+   "ecriture_cache": 1892,
+   "entree": 4,
+   "sortie": 426,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.95,
+    "blesses": 0.93,
+    "plaque_a": 0.85,
+    "contrat_a": 0.96,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0713",
+   "difficulte": "ocr",
+   "mois": "2025-11",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-11-04",
+    "heure": "19:50",
+    "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+    "blesses": "oui",
+    "vehicule_a": {
+     "plaque": "FX-7781-NA",
+     "numero_contrat": "KA-AUTO-1194"
+    },
+    "vehicule_b": {
+     "plaque": "EN 972S PN",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.85,
+     "heure": 0.96,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01A4sE27FP7rbPsiNPYrsU1e",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.007032,
+   "lecture_cache": 0,
+   "ecriture_cache": 1924,
+   "entree": 4,
+   "sortie": 636,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.85,
+    "heure": 0.96,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0714",
+   "difficulte": "manquant",
+   "mois": "2025-01",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-01-21",
+    "heure": "16:50",
+    "lieu": "carrefour Vêdoko, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "HH 5536 BP",
+     "numero_contrat": "KA-AUTO-7730"
+    },
+    "vehicule_b": {
+     "plaque": "GM 1125-CS",
+     "assureur": null
+    },
+    "confiance": {
+     "date_accident": 0.98,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.92,
+     "contrat_a": 0.97,
+     "plaque_b": 0.9,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_01CRhjbqMac3V2M3scS1vom4",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006259,
+   "lecture_cache": 0,
+   "ecriture_cache": 1965,
+   "entree": 4,
+   "sortie": 465,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.98,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.92,
+    "contrat_a": 0.97,
+    "plaque_b": 0.9,
+    "assureur_b": 0.95
+   }
+  },
+  {
+   "document": "arch-0726",
+   "difficulte": "heure_double",
+   "mois": "2024-11",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-11-20",
+    "heure": "07:30",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "CE5664YR",
+     "numero_contrat": "KA-AUTO-4375"
+    },
+    "vehicule_b": {
+     "plaque": "TV 9021-ZR",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.93,
+     "plaque_a": 0.85,
+     "contrat_a": 0.97,
+     "plaque_b": 0.93,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_01XkhwaKjdjfXi7N3LUxz4Pw",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006799,
+   "lecture_cache": 0,
+   "ecriture_cache": 2000,
+   "entree": 4,
+   "sortie": 559,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.93,
+    "plaque_a": 0.85,
+    "contrat_a": 0.97,
+    "plaque_b": 0.93,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-0791",
+   "difficulte": "ocr",
+   "mois": "2025-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-10-11",
+    "heure": "21:00",
+    "lieu": "Rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "LH 643S VC",
+     "numero_contrat": "KA-AUTO-9616"
+    },
+    "vehicule_b": {
+     "plaque": "LP 8585 FH",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.85,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.85,
+     "contrat_a": 0.93,
+     "plaque_b": 0.93,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_013W4uVcJ8azR3w7sUcZcY21",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006194,
+   "lecture_cache": 0,
+   "ecriture_cache": 1915,
+   "entree": 4,
+   "sortie": 472,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.85,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.85,
+    "contrat_a": 0.93,
+    "plaque_b": 0.93,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0800",
+   "difficulte": "heure_double",
+   "mois": "2026-02",
+   "statut": "canceled"
+  },
+  {
+   "document": "arch-0811",
+   "difficulte": "propre",
+   "mois": "2024-11",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-11-20",
+    "heure": "16:10",
+    "lieu": "pont de Fidjrossè",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "BJ 8510-JV",
+     "numero_contrat": "KA-AUTO-6838"
+    },
+    "vehicule_b": {
+     "plaque": "XF 8274 HD",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.96,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01B2Kk6zbU6doW5k4XWGzkrS",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005925,
+   "lecture_cache": 0,
+   "ecriture_cache": 1893,
+   "entree": 4,
+   "sortie": 427,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.96,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0815",
+   "difficulte": "plaque_partielle",
+   "mois": "2025-07",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-07-12",
+    "heure": "15:20",
+    "lieu": "Voie Express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "BS 9638-JR",
+     "numero_contrat": "KA-AUTO-2545"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.85,
+     "contrat_a": 0.93,
+     "plaque_b": 0.9,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_01Jz8ShAM3mNzDuCkWfaJRUp",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006156,
+   "lecture_cache": 0,
+   "ecriture_cache": 1921,
+   "entree": 4,
+   "sortie": 462,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.85,
+    "contrat_a": 0.93,
+    "plaque_b": 0.9,
+    "assureur_b": 0.95
+   }
+  },
+  {
+   "document": "arch-0833",
+   "difficulte": "propre",
+   "mois": "2025-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-10-01",
+    "heure": "06:30",
+    "lieu": "Carrefour de l'Étoile Rouge, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "KW-1289-WD",
+     "numero_contrat": "KA-AUTO-7284"
+    },
+    "vehicule_b": {
+     "plaque": "NV5518FH",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.75,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.9,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01BtqJny5g88UGh46JKpvsMb",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006544,
+   "lecture_cache": 0,
+   "ecriture_cache": 1920,
+   "entree": 4,
+   "sortie": 540,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.75,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.9,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0839",
+   "difficulte": "heure_double",
+   "mois": "2024-12",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-12-03",
+    "heure": "12:30",
+    "lieu": "Rond-point de Godomey",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "EB 2032-JG",
+     "numero_contrat": "KA-AUTO-2854"
+    },
+    "vehicule_b": {
+     "plaque": "YD 2484 MV",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.95,
+     "assureur_b": 0.93
+    }
+   },
+   "tool_use_id": "toolu_01AaiRExqEoWiHgQBwwxLcK9",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006636,
+   "lecture_cache": 0,
+   "ecriture_cache": 1941,
+   "entree": 4,
+   "sortie": 550,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.95,
+    "assureur_b": 0.93
+   }
+  },
+  {
+   "document": "arch-0870",
+   "difficulte": "propre",
+   "mois": "2024-10",
+   "statut": "canceled"
+  },
+  {
+   "document": "arch-0960",
+   "difficulte": "plaque_partielle",
+   "mois": "2025-07",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-07-25",
+    "heure": "06:10",
+    "lieu": "boulevard de la Marina, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "BC 4694 BZ",
+     "numero_contrat": "KA-AUTO-9854"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.98,
+     "heure": 0.97,
+     "blesses": 0.96,
+     "plaque_a": 0.97,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_01CDK648bXJES2vnRyWsNiTV",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005989,
+   "lecture_cache": 0,
+   "ecriture_cache": 1975,
+   "entree": 4,
+   "sortie": 407,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.98,
+    "heure": 0.97,
+    "blesses": 0.96,
+    "plaque_a": 0.97,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-0963",
+   "difficulte": "heure_double",
+   "mois": "2026-06",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-06-14",
+    "heure": "13:10",
+    "lieu": "route de Porto-Novo, à hauteur de Sèmè-Podji",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "PY 6059-BK",
+     "numero_contrat": "KA-AUTO-4246"
+    },
+    "vehicule_b": {
+     "plaque": "TH 7784 MK",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.93,
+     "plaque_a": 0.9,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_012ArLFkmkn2WnreZdMBEJMs",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006779,
+   "lecture_cache": 0,
+   "ecriture_cache": 2020,
+   "entree": 4,
+   "sortie": 547,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.93,
+    "plaque_a": 0.9,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-0967",
+   "difficulte": "heure_double",
+   "mois": "2025-01",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-01-07",
+    "heure": "15:30",
+    "lieu": "avenue Steinmetz, Cotonou",
+    "blesses": "oui",
+    "vehicule_a": {
+     "plaque": "BD 5436-KF",
+     "numero_contrat": "KA-AUTO-2009"
+    },
+    "vehicule_b": {
+     "plaque": "TB 5300 MP",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.85,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.97,
+     "plaque_b": 0.95,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_012Wswb5MjpzMfCUMFjzaMFY",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006726,
+   "lecture_cache": 0,
+   "ecriture_cache": 1926,
+   "entree": 4,
+   "sortie": 574,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.85,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.97,
+    "plaque_b": 0.95,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-0981",
+   "difficulte": "heure_double",
+   "mois": "2025-12",
+   "statut": "canceled"
+  },
+  {
+   "document": "arch-0983",
+   "difficulte": "manquant",
+   "mois": "2025-10",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-10-07",
+    "heure": null,
+    "lieu": "ROND-POINT DE GODOMEY",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "GW 4615-MU",
+     "numero_contrat": "KA-AUTO-7997"
+    },
+    "vehicule_b": {
+     "plaque": "BR 1481 BT",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.6,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.85,
+     "contrat_a": 0.93,
+     "plaque_b": 0.9,
+     "assureur_b": 0.95
+    }
+   },
+   "tool_use_id": "toolu_01W4HU8s7Mb2zX3Pbqd8eEnk",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006302,
+   "lecture_cache": 0,
+   "ecriture_cache": 1909,
+   "entree": 4,
+   "sortie": 496,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.6,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.85,
+    "contrat_a": 0.93,
+    "plaque_b": 0.9,
+    "assureur_b": 0.95
+   }
+  },
+  {
+   "document": "arch-0986",
+   "difficulte": "propre",
+   "mois": "2024-12",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2024-12-07",
+    "heure": "13:20",
+    "lieu": "Voie Express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "ZC 7018 YC",
+     "numero_contrat": "KA-AUTO-4183"
+    },
+    "vehicule_b": {
+     "plaque": "DY 6910-NJ",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.85,
+     "contrat_a": 0.95,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_015B5hmbyU4zUE8WcqF2rygD",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006412,
+   "lecture_cache": 0,
+   "ecriture_cache": 1919,
+   "entree": 4,
+   "sortie": 514,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.85,
+    "contrat_a": 0.95,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-1002",
+   "difficulte": "ocr",
+   "mois": "2025-12",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-12-26",
+    "heure": "20:40",
+    "lieu": "carrefour de l'Étoile rouge, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "ST6041EJ",
+     "numero_contrat": "KA-AUTO-8448"
+    },
+    "vehicule_b": {
+     "plaque": "JZ 743S Z8",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.93,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.8,
+     "contrat_a": 0.97,
+     "plaque_b": 0.75,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_01GdPX4fg1Z59giE3wMfytiv",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.0038129,
+   "lecture_cache": 1978,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 742,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.93,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.8,
+    "contrat_a": 0.97,
+    "plaque_b": 0.75,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-1016",
+   "difficulte": "plaque_partielle",
+   "mois": "2026-02",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-02-21",
+    "heure": "21:50",
+    "lieu": "Avenue Steinmetz, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "RW 5507 GM",
+     "numero_contrat": "KA-AUTO-6221"
+    },
+    "vehicule_b": {
+     "plaque": null,
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.96,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.9,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_01L3kh4XpLK9rV8dUNAAKPr3",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005787,
+   "lecture_cache": 0,
+   "ecriture_cache": 1914,
+   "entree": 4,
+   "sortie": 391,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.96,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.9,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-1035",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2026-08",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-08-24",
+    "heure": "20:30",
+    "lieu": "carrefour de l'Étoile rouge, Cotonou",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "WM 6136-XA",
+     "numero_contrat": "KA-AUTO-8107"
+    },
+    "vehicule_b": {
+     "plaque": "TU 4564 JB",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.98,
+     "heure": 0.97,
+     "blesses": 0.8,
+     "plaque_a": 0.95,
+     "contrat_a": 0.97,
+     "plaque_b": 0.97,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_01DqFn31dPYhXwkb2LNnHoXP",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.00227445,
+   "lecture_cache": 2009,
+   "ecriture_cache": 0,
+   "entree": 4,
+   "sortie": 434,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.98,
+    "heure": 0.97,
+    "blesses": 0.8,
+    "plaque_a": 0.95,
+    "contrat_a": 0.97,
+    "plaque_b": 0.97,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-1037",
+   "difficulte": "manquant",
+   "mois": "2026-09",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-09-17",
+    "heure": null,
+    "lieu": "VOIE EXPRESS, SORTIE AKPAKPA",
+    "blesses": "oui",
+    "vehicule_a": {
+     "plaque": "VP-2222-MS",
+     "numero_contrat": "KA-AUTO-1817"
+    },
+    "vehicule_b": {
+     "plaque": "UD9567FZ",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.95,
+     "plaque_a": 0.9,
+     "contrat_a": 0.93,
+     "plaque_b": 0.9,
+     "assureur_b": 0.96
+    }
+   },
+   "tool_use_id": "toolu_01FCDjHRn3RMnCT3p5SUZgqu",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.005871,
+   "lecture_cache": 0,
+   "ecriture_cache": 1926,
+   "entree": 4,
+   "sortie": 403,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.95,
+    "plaque_a": 0.9,
+    "contrat_a": 0.93,
+    "plaque_b": 0.9,
+    "assureur_b": 0.96
+   }
+  },
+  {
+   "document": "arch-1047",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2026-03",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-03-15",
+    "heure": "10:10",
+    "lieu": "carrefour de l'Étoile rouge, Cotonou",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "TC 7100-VX",
+     "numero_contrat": "KA-AUTO-1300"
+    },
+    "vehicule_b": {
+     "plaque": "FM 3110 GN",
+     "assureur": "Lagune Assurances"
+    },
+    "confiance": {
+     "date_accident": 0.85,
+     "heure": 0.95,
+     "blesses": 0.8,
+     "plaque_a": 0.93,
+     "contrat_a": 0.97,
+     "plaque_b": 0.96,
+     "assureur_b": 0.98
+    }
+   },
+   "tool_use_id": "toolu_019thF52UarrWgNwet1yH7bW",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006372,
+   "lecture_cache": 0,
+   "ecriture_cache": 2004,
+   "entree": 4,
+   "sortie": 472,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.85,
+    "heure": 0.95,
+    "blesses": 0.8,
+    "plaque_a": 0.93,
+    "contrat_a": 0.97,
+    "plaque_b": 0.96,
+    "assureur_b": 0.98
+   }
+  },
+  {
+   "document": "arch-1055",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2026-05",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-05-26",
+    "heure": "10:10",
+    "lieu": "Pont de Fidjrossè",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "VD 5114-HG",
+     "numero_contrat": "KA-AUTO-2528"
+    },
+    "vehicule_b": {
+     "plaque": "CT 5342 SX",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.95,
+     "heure": 0.95,
+     "blesses": 0.8,
+     "plaque_a": 0.9,
+     "contrat_a": 0.95,
+     "plaque_b": 0.92,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01AvzS7aseBPv5LXXSY49t5Y",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006167,
+   "lecture_cache": 0,
+   "ecriture_cache": 1934,
+   "entree": 4,
+   "sortie": 459,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.95,
+    "heure": 0.95,
+    "blesses": 0.8,
+    "plaque_a": 0.9,
+    "contrat_a": 0.95,
+    "plaque_b": 0.92,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-1061",
+   "difficulte": "ocr",
+   "mois": "2026-06",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2026-06-28",
+    "heure": "19:10",
+    "lieu": "Avenue Steinmetz, Cotonou",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "PM-3597-YB",
+     "numero_contrat": "KA-AUTO-5564"
+    },
+    "vehicule_b": {
+     "plaque": "NB 2B94 AG",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.97,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.96,
+     "plaque_b": 0.9,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01RZLJ1aKdg7De9PQMzDzg1W",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006272,
+   "lecture_cache": 0,
+   "ecriture_cache": 1914,
+   "entree": 4,
+   "sortie": 488,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.97,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.96,
+    "plaque_b": 0.9,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-1064",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2026-04",
+   "statut": "canceled"
+  },
+  {
+   "document": "arch-1073",
+   "difficulte": "blesses_contradictoire",
+   "mois": "2025-05",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-05-24",
+    "heure": "16:20",
+    "lieu": "Avenue Steinmetz, Cotonou",
+    "blesses": "unclear",
+    "vehicule_a": {
+     "plaque": "UZ-1163-NP",
+     "numero_contrat": "KA-AUTO-4443"
+    },
+    "vehicule_b": {
+     "plaque": "FM1883ZY",
+     "assureur": "Atacora Garantie"
+    },
+    "confiance": {
+     "date_accident": 0.6,
+     "heure": 0.95,
+     "blesses": 0.8,
+     "plaque_a": 0.93,
+     "contrat_a": 0.95,
+     "plaque_b": 0.93,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01UaESry2xnCaZs89u2yhJY2",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006726,
+   "lecture_cache": 0,
+   "ecriture_cache": 1936,
+   "entree": 4,
+   "sortie": 570,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.6,
+    "heure": 0.95,
+    "blesses": 0.8,
+    "plaque_a": 0.93,
+    "contrat_a": 0.95,
+    "plaque_b": 0.93,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-1077",
+   "difficulte": "ocr",
+   "mois": "2025-07",
+   "statut": "succeeded",
+   "arguments": {
+    "date_accident": "2025-07-17",
+    "heure": "17:40",
+    "lieu": "voie express, sortie Akpakpa",
+    "blesses": "non",
+    "vehicule_a": {
+     "plaque": "FV-5367-ZT",
+     "numero_contrat": "KA-AUTO-2254"
+    },
+    "vehicule_b": {
+     "plaque": "ET 855B SZ",
+     "assureur": "Ouémé Mutuelle"
+    },
+    "confiance": {
+     "date_accident": 0.9,
+     "heure": 0.97,
+     "blesses": 0.95,
+     "plaque_a": 0.93,
+     "contrat_a": 0.97,
+     "plaque_b": 0.85,
+     "assureur_b": 0.97
+    }
+   },
+   "tool_use_id": "toolu_01TXrkduY4KwdUZ7ceMfn3qx",
+   "stop_reason": "tool_use",
+   "cout_dollars": 0.006103,
+   "lecture_cache": 0,
+   "ecriture_cache": 1972,
+   "entree": 4,
+   "sortie": 431,
+   "reussi": true,
+   "issues": {
+    "date_accident": "juste",
+    "heure": "juste",
+    "blesses": "juste",
+    "plaque_a": "juste",
+    "contrat_a": "juste",
+    "plaque_b": "juste",
+    "assureur_b": "juste"
+   },
+   "erreurs": [],
+   "confiance": {
+    "date_accident": 0.9,
+    "heure": 0.97,
+    "blesses": 0.95,
+    "plaque_a": 0.93,
+    "contrat_a": 0.97,
+    "plaque_b": 0.85,
+    "assureur_b": 0.97
+   }
+  },
+  {
+   "document": "arch-1095",
+   "difficulte": "propre",
+   "mois": "2026-06",
+   "statut": "canceled"
+  }
+ ]
+}

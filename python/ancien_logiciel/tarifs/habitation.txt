@@ -1,0 +1,8 @@
+# Tarif habitation - fourni par l'actuariat - NE PAS MODIFIER sans note signee
+# Prix au m2 par zone (1 : Cotonou centre, 2 : Cotonou et environs, 3 : autres villes), en FCFA par an
+PRIX_M2_ZONE_1;420
+PRIX_M2_ZONE_2;360
+PRIX_M2_ZONE_3;310
+MINIMUM;18000
+MAJ_OBJETS_VALEUR;1.15
+FORFAIT_DEPENDANCES;6500

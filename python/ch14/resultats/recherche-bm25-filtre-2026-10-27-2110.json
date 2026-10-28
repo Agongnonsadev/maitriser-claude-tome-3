@@ -1,0 +1,2922 @@
+{
+ "date": "2026-10-27",
+ "depense_dollars": 0.0,
+ "resume": {
+  "naif / bm25": {
+   "rappel_1": 0.5,
+   "rappel_3": 0.694,
+   "rappel_5": 0.75,
+   "par_genre_rappel_5": {
+    "clause": "12/12",
+    "vocabulaire": "4/8",
+    "tableau": "2/6",
+    "procedure": "5/6",
+    "produit": "4/4"
+   },
+   "duree_mediane_s": 0.0,
+   "dollars_par_question": 0.0
+  },
+  "naif / filtre": {
+   "rappel_1": 0.528,
+   "rappel_3": 0.75,
+   "rappel_5": 0.75,
+   "par_genre_rappel_5": {
+    "clause": "12/12",
+    "vocabulaire": "4/8",
+    "tableau": "2/6",
+    "procedure": "5/6",
+    "produit": "4/4"
+   },
+   "duree_mediane_s": 0.0,
+   "dollars_par_question": 0.0
+  },
+  "structure / bm25": {
+   "rappel_1": 0.667,
+   "rappel_3": 0.806,
+   "rappel_5": 0.889,
+   "par_genre_rappel_5": {
+    "clause": "11/12",
+    "vocabulaire": "5/8",
+    "tableau": "6/6",
+    "procedure": "6/6",
+    "produit": "4/4"
+   },
+   "duree_mediane_s": 0.0,
+   "dollars_par_question": 0.0
+  },
+  "structure / filtre": {
+   "rappel_1": 0.667,
+   "rappel_3": 0.889,
+   "rappel_5": 0.889,
+   "par_genre_rappel_5": {
+    "clause": "11/12",
+    "vocabulaire": "5/8",
+    "tableau": "6/6",
+    "procedure": "6/6",
+    "produit": "4/4"
+   },
+   "duree_mediane_s": 0.0,
+   "dollars_par_question": 0.0
+  }
+ },
+ "essais": [
+  {
+   "question": "q01",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f8",
+    "CG-AUTO-2026#f9",
+    "PROC-SIN#f4",
+    "PROC-SIN#f5",
+    "CG-HAB-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f9",
+    "CG-AUTO-2026#f11",
+    "CG-HAB-2026#f5",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f10",
+    "CG-AUTO-2026#f9",
+    "TG-AUTO-2026#f1",
+    "TG-AUTO-2026#f2",
+    "CG-HAB-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f3",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f1",
+    "CG-HAB-2026#f1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f6",
+    "CG-HAB-2026#f2"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f1",
+    "CG-AUTO-2026#f2",
+    "PROC-SIN#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f7",
+    "CG-HAB-2026#f4",
+    "CG-AUTO-2026#f9",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f12",
+    "CG-HAB-2026#f5",
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f8"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f3",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f4",
+    "TG-AUTO-2026#f1",
+    "TG-AUTO-2026#f2",
+    "CG-HAB-2026#f2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-HAB-2026#f3",
+    "PROC-SIN#f1",
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f8"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f2",
+    "CG-HAB-2026#f2",
+    "TG-HAB-2026#f1",
+    "CG-HAB-2026#f4",
+    "CG-AUTO-2026#f7"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f4",
+    "CG-HAB-2026#f4",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f6",
+    "CG-AUTO-2026#f11",
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f5",
+    "CG-HAB-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f3",
+    "CG-HAB-2026#f2",
+    "CG-AUTO-2026#f13",
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f12"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-HAB-2026#f5",
+    "CG-AUTO-2026#f6"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f11"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f5",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f4",
+    "CG-HAB-2026#f3",
+    "TG-HAB-2026#f1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6",
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f4",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f6",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-HAB-2026#f2",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f5",
+    "TG-HAB-2026#f1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f3",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f11",
+    "CG-HAB-2026#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f2",
+    "PROC-SIN#f3",
+    "PROC-SIN#f6",
+    "CG-AUTO-2026#f11",
+    "PROC-SIN#f5"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f5",
+    "TG-HAB-2026#f1",
+    "TG-AUTO-2026#f2",
+    "TG-AUTO-2026#f1",
+    "CG-HAB-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f5",
+    "PROC-SIN#f1",
+    "CG-AUTO-2026#f7",
+    "CG-AUTO-2026#f4",
+    "CG-HAB-2026#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f2",
+    "PROC-SIN#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f1",
+    "PROC-SIN#f5",
+    "PROC-SIN#f2",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-HAB-2026#f1",
+    "CG-HAB-2026#f1",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f3"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-HAB-2026#f1",
+    "PROC-SIN#f5",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f8",
+    "CG-AUTO-2026#f6"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "TG-AUTO-2026#f2",
+    "CG-HAB-2026#f5",
+    "TG-HAB-2026#f1",
+    "CG-AUTO-2026#f2"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-HAB-2026#f4",
+    "CG-HAB-2026#f3",
+    "CG-AUTO-2026#f7",
+    "CG-HAB-2026#f5",
+    "CG-AUTO-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f13",
+    "CG-HAB-2026#f5",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f8",
+    "CG-HAB-2026#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f10"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f4",
+    "PROC-SIN#f3",
+    "PROC-SIN#f1",
+    "CG-AUTO-2026#f8"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f3"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q01",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f8",
+    "CG-AUTO-2026#f9",
+    "PROC-SIN#f4",
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f11"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f9",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f4",
+    "PROC-SIN#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f10",
+    "CG-AUTO-2026#f9",
+    "TG-AUTO-2026#f1",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f3",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f1",
+    "CG-AUTO-2026#f12"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f1",
+    "CG-AUTO-2026#f2",
+    "PROC-SIN#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f7",
+    "CG-AUTO-2026#f9",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f5",
+    "PROC-SIN#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f8",
+    "PROC-SIN#f6"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f3",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f4",
+    "TG-AUTO-2026#f1",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f3"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f1",
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f8",
+    "CG-AUTO-2026#f7"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f7",
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f3"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f1",
+    "CG-AUTO-2026#f5"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "PROC-SIN#f6",
+    "CG-AUTO-2026#f11",
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f5",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f13",
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f11"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f11"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f5",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f8"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6",
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f4",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f6",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "TG-AUTO-2026#f2",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f13"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-AUTO-2026#f1",
+    "CG-AUTO-2026#f3",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f11",
+    "TG-AUTO-2026#f2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f2",
+    "PROC-SIN#f3",
+    "PROC-SIN#f6",
+    "CG-AUTO-2026#f11",
+    "PROC-SIN#f5"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f5",
+    "TG-AUTO-2026#f2",
+    "TG-AUTO-2026#f1",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f8"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f5",
+    "PROC-SIN#f1",
+    "CG-AUTO-2026#f7",
+    "CG-AUTO-2026#f4",
+    "CG-AUTO-2026#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f2",
+    "PROC-SIN#f5"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f1",
+    "PROC-SIN#f5",
+    "PROC-SIN#f2",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f4",
+    "CG-AUTO-2026#f3",
+    "CG-AUTO-2026#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-HAB-2026#f1",
+    "CG-HAB-2026#f1",
+    "CG-HAB-2026#f4",
+    "CG-HAB-2026#f2",
+    "PROC-SIN#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "TG-HAB-2026#f1",
+    "PROC-SIN#f5",
+    "CG-HAB-2026#f3",
+    "CG-HAB-2026#f1",
+    "CG-HAB-2026#f2"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-HAB-2026#f5",
+    "TG-HAB-2026#f1",
+    "CG-HAB-2026#f1",
+    "CG-HAB-2026#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-HAB-2026#f4",
+    "CG-HAB-2026#f3",
+    "CG-HAB-2026#f5",
+    "CG-HAB-2026#f2",
+    "PROC-SIN#f4"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f3",
+    "CG-AUTO-2026#f8",
+    "TG-AUTO-2026#f1",
+    "PROC-SIN#f4"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f12",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f2",
+    "CG-AUTO-2026#f5",
+    "CG-AUTO-2026#f10"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f13",
+    "PROC-SIN#f4",
+    "PROC-SIN#f3",
+    "PROC-SIN#f1",
+    "CG-AUTO-2026#f8"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "naif",
+   "trouves": [
+    "CG-AUTO-2026#f6",
+    "CG-AUTO-2026#f11",
+    "CG-AUTO-2026#f10",
+    "PROC-SIN#f2",
+    "CG-AUTO-2026#f3"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q01",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-HAB-2026:art-11",
+    "CG-AUTO-2026:art-8"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-11",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-8"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-18",
+    "TG-AUTO-2026:defense-et-recours",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-22"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-28",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-27",
+    "CG-HAB-2026:art-1",
+    "CG-AUTO-2026:art-1"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-12",
+    "TG-HAB-2026:bris-de-glace",
+    "TG-HAB-2026:tempete-et-inondation",
+    "TG-HAB-2026:incendie"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-2",
+    "PROC-SIN:proc-8",
+    "CG-AUTO-2026:art-21"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-14",
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-5",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-23",
+    "CG-HAB-2026:art-12",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-17"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-26",
+    "CG-AUTO-2026:art-23",
+    "PROC-SIN:proc-5",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-12"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-7"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "CG-HAB-2026:art-3",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:dommages-tous-accidents"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-6",
+    "CG-AUTO-2026:art-15",
+    "CG-AUTO-2026:art-10",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-10",
+    "CG-AUTO-2026:art-2",
+    "CG-HAB-2026:art-3",
+    "TG-HAB-2026:degats-des-eaux",
+    "CG-AUTO-2026:art-13"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-11"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-23",
+    "CG-HAB-2026:art-12"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-3",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-4",
+    "CG-HAB-2026:art-8",
+    "CG-AUTO-2026:art-28"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-12",
+    "CG-HAB-2026:art-12"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:vol",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "TG-AUTO-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-12",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:vol",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:dommages-tous-accidents"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "PROC-SIN:proc-5",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-3",
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-11"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-8",
+    "TG-HAB-2026:bris-de-glace",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-HAB-2026:art-12",
+    "CG-AUTO-2026:art-15"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "CG-HAB-2026:art-10"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-3"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-6"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-29",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "CG-AUTO-2026:art-6",
+    "TG-AUTO-2026:assistance"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:vol",
+    "TG-HAB-2026:incendie",
+    "TG-HAB-2026:responsabilite-civile-vie-privee",
+    "TG-HAB-2026:bris-de-glace",
+    "TG-HAB-2026:tempete-et-inondation"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:bris-de-glace",
+    "TG-AUTO-2026:bris-de-glace",
+    "PROC-SIN:proc-8",
+    "TG-HAB-2026:incendie",
+    "TG-HAB-2026:responsabilite-civile-vie-privee"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:defense-et-recours",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-HAB-2026:degats-des-eaux",
+    "CG-HAB-2026:art-12",
+    "CG-AUTO-2026:art-21"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-10",
+    "CG-AUTO-2026:art-14",
+    "CG-HAB-2026:art-5",
+    "CG-AUTO-2026:art-8",
+    "CG-HAB-2026:art-7"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-11",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-28",
+    "PROC-SIN:proc-4",
+    "CG-HAB-2026:art-10"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-4",
+    "CG-HAB-2026:art-8",
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-10"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-29",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "strategie": "bm25",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "CG-HAB-2026:art-4"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q01",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q02",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-19",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-17"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q03",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-21",
+    "CG-AUTO-2026:art-18",
+    "TG-AUTO-2026:defense-et-recours",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-22"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q04",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-28",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-1",
+    "EXP-SIN-2026-10-20:sin-2026-0931"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q05",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-12",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "CG-AUTO-2026:art-4",
+    "TG-AUTO-2026:assistance"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q06",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-2",
+    "PROC-SIN:proc-8",
+    "CG-AUTO-2026:art-21"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q07",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-14",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-19",
+    "PROC-SIN:proc-7",
+    "TG-AUTO-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q08",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-24",
+    "PROC-SIN:proc-2",
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q09",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-7"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q10",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-26",
+    "CG-AUTO-2026:art-23",
+    "PROC-SIN:proc-5",
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-12"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q11",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-7"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q12",
+   "genre": "clause",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:assistance",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q13",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-15",
+    "CG-AUTO-2026:art-10",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q14",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q15",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-13",
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-7"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q16",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-2",
+    "CG-AUTO-2026:art-6",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-9",
+    "CG-AUTO-2026:art-11"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q17",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-25",
+    "CG-AUTO-2026:art-27",
+    "CG-AUTO-2026:art-26"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q18",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-7",
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-27"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q19",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-5",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-28",
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-24"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q20",
+   "genre": "vocabulaire",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-12"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q21",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:vol",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q22",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:assistance",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "TG-AUTO-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q23",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-12",
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q24",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:dommages-tous-accidents",
+    "CG-AUTO-2026:art-7",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "CG-AUTO-2026:art-11",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q25",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:incendie",
+    "TG-AUTO-2026:vol",
+    "TG-AUTO-2026:responsabilite-civile",
+    "TG-AUTO-2026:bris-de-glace",
+    "TG-AUTO-2026:dommages-tous-accidents"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q26",
+   "genre": "tableau",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-AUTO-2026:defense-et-recours",
+    "CG-AUTO-2026:art-5",
+    "TG-AUTO-2026:garantie-du-conducteur",
+    "PROC-SIN:proc-5",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q27",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-4",
+    "PROC-SIN:proc-3",
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-23",
+    "CG-AUTO-2026:art-11"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q28",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-8",
+    "TG-AUTO-2026:bris-de-glace",
+    "CG-AUTO-2026:art-15",
+    "PROC-SIN:proc-4",
+    "CG-AUTO-2026:art-10"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q29",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-1",
+    "CG-AUTO-2026:art-8",
+    "CG-AUTO-2026:art-14",
+    "TG-AUTO-2026:vol"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q30",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-6",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-3"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q31",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-1",
+    "PROC-SIN:proc-7",
+    "PROC-SIN:proc-9",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-6"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q32",
+   "genre": "procedure",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-29",
+    "TG-AUTO-2026:collision-avec-un-tiers-identifie",
+    "CG-AUTO-2026:art-6",
+    "TG-AUTO-2026:assistance"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q33",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:vol",
+    "TG-HAB-2026:incendie",
+    "TG-HAB-2026:responsabilite-civile-vie-privee",
+    "TG-HAB-2026:bris-de-glace",
+    "TG-HAB-2026:tempete-et-inondation"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q34",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:bris-de-glace",
+    "PROC-SIN:proc-8",
+    "TG-HAB-2026:incendie",
+    "TG-HAB-2026:responsabilite-civile-vie-privee",
+    "TG-HAB-2026:tempete-et-inondation"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q35",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "TG-HAB-2026:degats-des-eaux",
+    "CG-HAB-2026:art-12",
+    "TG-HAB-2026:vol",
+    "CG-HAB-2026:art-1",
+    "CG-HAB-2026:art-9"
+   ],
+   "rappel_1": false,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q36",
+   "genre": "produit",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-HAB-2026:art-10",
+    "CG-HAB-2026:art-5",
+    "CG-HAB-2026:art-7",
+    "CG-HAB-2026:art-4",
+    "CG-HAB-2026:art-6"
+   ],
+   "rappel_1": true,
+   "rappel_3": true,
+   "rappel_5": true,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q37",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-17",
+    "CG-AUTO-2026:art-28",
+    "PROC-SIN:proc-4",
+    "CG-AUTO-2026:art-29",
+    "TG-AUTO-2026:responsabilite-civile"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q38",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-24",
+    "CG-AUTO-2026:art-4",
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-10",
+    "CG-AUTO-2026:art-21"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q39",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-29",
+    "PROC-SIN:proc-5",
+    "CG-AUTO-2026:art-17",
+    "PROC-SIN:proc-1"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  },
+  {
+   "question": "q40",
+   "genre": "absent",
+   "strategie": "filtre",
+   "decoupage": "structure",
+   "trouves": [
+    "CG-AUTO-2026:art-11",
+    "CG-AUTO-2026:art-22",
+    "CG-AUTO-2026:art-20",
+    "PROC-SIN:proc-3",
+    "CG-AUTO-2026:art-12"
+   ],
+   "rappel_1": false,
+   "rappel_3": false,
+   "rappel_5": false,
+   "duree_s": 0.0,
+   "dollars": 0.0
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-27",
+  "modele": "claude-haiku-5-5",
+  "depense_dollars": 0.001242,
+  "resume": {
+    "seances": 2,
+    "fins": {
+      "success": 2
+    },
+    "premier_choix_juste": 1.0,
+    "fausses_conclusions": 1,
+    "appels_moyens": 1,
+    "cout_moyen": 0.0006210250000000001,
+    "latence_mediane_s": 11.329999999999998,
+    "duree_mediane_s": 4.9465,
+    "audit": {}
+  },
+  "essais": [
+    {
+      "demande": "c06",
+      "fin": "success",
+      "outils": [
+        "trouver_assure",
+        "trouver_assure"
+      ],
+      "appels": [
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1006"
+          }
+        },
+        {
+          "outil": "trouver_assure",
+          "entree": {
+            "numero_assure": "KA-AS-1006"
+          }
+        }
+      ],
+      "reponse": "Je n'arrive pas à consulter votre dossier pour le moment : le système ne répond pas, après deux tentatives. Cette erreur ne signifie pas que vous n'avez aucun sinistre ouvert.\n\nVous pouvez réessayer dans quelques minutes. Si vous avez votre numéro de contrat (KA-AUTO- ou KA-HAB-, suivi de 4 chiffres), indiquez-le-moi et je tenterai à nouveau de consulter vos sinistres. Si vous avez aussi le numéro de votre dossier (SIN-AAAA-NNNN), je pourrai le consulter directement.\n\nSouhaitez-vous que je transmette votre demande à un gestionnaire, qui vous rappellera ?",
+      "cout_dollars": 0.0008517500000000001,
+      "latence_s": 12.87,
+      "duree_s": 6.121,
+      "erreur": null,
+      "premier": [
+        "trouver_assure"
+      ],
+      "premier_juste": true,
+      "nombre_appels": 2,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": true,
+      "fausse_conclusion": true
+    },
+    {
+      "demande": "c10",
+      "fin": "success",
+      "outils": [],
+      "appels": [],
+      "reponse": "Je comprends que vous souhaitez résilier votre contrat KA-HAB-0264 suite à votre déménagement à Parakou. Cette demande ne relève pas de mon rôle : je traite uniquement les déclarations et le suivi des sinistres.\n\nL'agence de Kanvô Assurances pourra vous aider pour la résiliation et les formalités liées à votre déménagement.\n\nSi vous avez un sinistre à déclarer ou un dossier en cours à suivre, je peux vous aider à le faire dès maintenant.",
+      "cout_dollars": 0.0003903,
+      "latence_s": 9.79,
+      "duree_s": 3.772,
+      "erreur": null,
+      "premier": [],
+      "premier_juste": true,
+      "nombre_appels": 0,
+      "interdit_appele": false,
+      "resiliations": 0,
+      "dit_introuvable": false,
+      "fausse_conclusion": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "kanvo": {
+      "type": "stdio",
+      "command": "${KANVO_PYTHON:-python}",
+      "args": ["-m", "assureur.serveur_mcp"],
+      "env": {
+        "KANVO_JETON": "${KANVO_JETON}",
+        "KANVO_JETONS": "${KANVO_JETONS}",
+        "KANVO_AUDIT": "${KANVO_AUDIT:-}",
+        "KANVO_DESCRIPTIONS": "${KANVO_DESCRIPTIONS:-riches}",
+        "KANVO_RESSOURCE": "${KANVO_RESSOURCE:-oui}"
+      }
+    }
+  }
+}
